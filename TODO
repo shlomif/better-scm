@@ -5,4 +5,6 @@
 
 * Comparison: write an XSLT transformation to render the comparison into
 HTML.
+    - Generate the table of contents.
 
+* Add the VSS input from the E-mails.
