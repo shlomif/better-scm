@@ -9,3 +9,5 @@ tag.
 * Comparison: write an XSLT transformation to render the comparison into
 HTML.
 
+* Comparison: merge the common code of render.pl and render-docbook.pl.
+
