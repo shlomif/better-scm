@@ -1,0 +1,35 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Vesta" />
+
+<h2>Homepage</h2>
+
+<a href="http://www.vestasys.org/">http://www.vestasys.org/</a>
+
+<h2>Summary</h2>
+
+<p>
+Vesta is a mature software configuration management system that originated
+from an internal use by Digital Equipment Corporation (now Compaq/HP). It 
+is a replacement for both CVS and make and provides more than mundane revison
+control systems. It is fully open-source under the LGPL.
+</p>
+
+<p>
+Vesta's main problem is that momentarily, it is the only tool capable of 
+building itself. While I agree that it is probable that the Vesta team came 
+up with something better than Make, Autoconf/Automake/Libtool and friends, I 
+still think the ability to compile from source is important. My suggestion
+to them, should they want it to become popular, is to swallow their pride and
+maintain an Autoconf-based distribution of it. That will make it much more
+accessible. (Peter Miller did the same thing with Aegis, which is fully
+autoconfisicated and can be built as an RPM).
+</p>
+
+<p>
+Until then, an due to the fact binaries for it are only available for Linux
+(i386 and Alpha AXP) and Compaq Tru64, I don't expect it to become very 
+popular. Few people will take a look at a only-self-can-build-self tool like 
+that.
+</p>
+

@@ -1,0 +1,16 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Aegis" />
+
+<p>
+<a href="mark_veltzer_transcripts.log.txt">The Mark Veltzer/Shlomi Fish Transcripts</a> - 
+these are IRC transcripts of a session where Mark Veltzer taught me how to use
+Aegis step by step. They could be of use to Aegis beginners.
+</p>
+
+<p>
+<a href="overcoming_childhood_diseases.html">Overcoming Aegis' Childhood Diseases</a> - Aegis is a mature software configuration management system, but users 
+of other modern systems (such as BitKeeper) may find it unsuitable due to some of its childhood diseases. This article explains what they are and how they can
+be overcome.
+</p>
+

@@ -1,0 +1,75 @@
+#include '../template.wml'
+
+<subject "Response to Richard Stallman's LKML Post" />
+
+<p>
+Richard Stallman has written 
+<a href="http://www.uwsg.iu.edu/hypermail/linux/kernel/0210.1/1767.html">a post</a> 
+to the Linux Kernel mailing list where he criticizes the BitKeeper license 
+(especially the non-compete clause) and the Linux developers for choosing to
+use it. Yet, his outrage is not founded and misleading. There are better ways
+to confront BitKeeper.
+</p>
+
+<p>
+The first thing is to calm down. The use of BitKeeper by the Linux developers
+will not plague other projects. The BitKeeper license is too restrictive for
+most developers (including me, who considers himself an "in-for-free-beer" one)
+and BitKeeper got so much bad publicity that no-one will want to use it. Most
+free software developers out there do not wish to alienate their more 
+"idealistic" members, or to drive away such future ones. While BitMover can 
+boast that it hosts the Linux Kernel, BitKeeper will not become the next CVS 
+with its current licensing.
+</p>
+
+<p>
+I used BitKeeper at a point. The reason for it is that I ran into CVS' 
+limitations and was looking for a better alternative. Of all the alternatives
+I could find (BitKeeper, Aegis, Arch and Subversion) only BitKeeper had a 
+public hosting service - bkbits.net. Eventually, the license change that
+restricted the contents of the repositories to be free software drived me
+away from it, but until then I was very happy with the service.
+</p>
+
+<p>
+At the moment, I am using Subversion, which while not as feature rich as 
+BitKeeper, is certainly very delightful to work with. But I don't have a public
+server somewhere. If Stallman wishes to eliminate BitKeeper's edge, it needs to
+give a centralized service (a la 
+<a href="http://sourceforge.net/">SourceForge</a> and friends) for Subversion
+, Aegis or Arch and preferablly all of them. The Free Software Foundation runs
+<a href="http://savannah.gnu.org/">Savannah</a> and he can introduce public 
+hosting there for free software to use with an open-source tool.
+</p>
+
+<p>
+I believe this and only this, will make Larry McVoy rethink BitKeeper's 
+licensing terms. Mr. McVoy is a very capable engineer, but lacks a lot of 
+marketing wisdom common among vendors of marketplace software. To put it in 
+<a href="http://www.joelonsoftware.com/">Joel Spolsky's</a> terms - BitMover is 
+a Ben and Jerry's company trying to make a land-grab on a market dominated by
+CVS, a reliable workhorse. Now CVS is fully open-source and free for use, and
+if he wants that BitKeeper would replace it, its license needs to appeal to 
+free software developers. Technical superiority is not alone. (Spolsky and Eric
+Raymond have more on it in their many writings).
+</p>
+
+<p>
+I don't hold McVoy as guilty for trying to sell BitKeeper, which is an 
+excellent product that took a long time to develop and produce, to vendors
+of internal, closed-source and hardware-assisting software, which are his 
+main market. (despite the fact that the free software movement holds internal
+software as sacred and even FS licenses must give way to it) However, I think
+he is over-possesive of BitKeeper to the extent that open-source developers 
+(who are his main evangelizers) cannot use it. And without them, BitKeeper would
+be very slowly accepted or even eventually replaced by an equivalent open-source
+alternative.
+</p>
+
+<p>
+In <a href="relicensing_bk.html">this document</a> I outlined why a change
+of license would do good for BitMover in the long run. Meanwhile, while Mr. 
+McVoy is being stubburn and irrational, we can at least force him to re-think
+the license (which is the only problem BitKeeper has), by offering a similar
+service.
+</p>

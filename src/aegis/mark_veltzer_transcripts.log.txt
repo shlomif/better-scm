@@ -1,0 +1,1018 @@
+**** BEGIN LOGGING AT Mon Sep 23 20:30:33 2002
+
+Sep 23 20:30:33 -->	Mark27 ([Gh5dnFwdf@line106-15.adsl.actcom.co.il) has joined #aegis
+Sep 23 20:30:33 ---	Topic for #aegis is aegis.sf.net - a transaction-based software configuration management system.
+Sep 23 20:30:33 ---	Topic for #aegis set by ChanServ at Mon Sep 23 20:17:46
+Sep 23 20:30:38 <Mark27>	Hi
+Sep 23 20:30:48 <Mark27>	Shlomi Fish here ?
+Sep 23 20:30:51 <rindolf>	Hi, I'm Shlomi Fish
+Sep 23 20:30:54 <Mark27>	Hello
+Sep 23 20:30:56 <Mark27>	I'm mark
+Sep 23 20:31:00 <rindolf>	rindolf is my alter-ago.
+Sep 23 20:31:01 <Mark27>	I've got your email
+Sep 23 20:31:02 <rindolf>	Hi mark
+Sep 23 20:31:07 <rindolf>	Yes.
+Sep 23 20:31:13 <Mark27>	It sounds elvish...
+Sep 23 20:31:36 <rindolf>	Listen, I'm too tired now to actually do anything, but I'd like to get some concepts straights.
+Sep 23 20:31:51 <rindolf>	Actually, Rindolf was the name of a Dwarf Warrior I played.
+Sep 23 20:31:54 <Mark27>	(Ok. BTW: You probably know mulix - I worked with him in Qlusters)
+Sep 23 20:32:10 <Mark27>	Ok...:)
+Sep 23 20:32:13 <rindolf>	And of a Perl dialect I'm developing
+Sep 23 20:32:18 <rindolf>	I know Muli, yes.
+Sep 23 20:32:32 <rindolf>	Does muli knows aegis?
+Sep 23 20:32:36 <Mark27>	Nope
+Sep 23 20:32:40 <rindolf>	I know he uses BitKeeper.
+Sep 23 20:32:59 <Mark27>	If you say so (I don't know what he uses)
+Sep 23 20:33:07 <Mark27>	(I use Aegis extensivly)
+Sep 23 20:33:15 <rindolf>	OK. I managed to get the calculator project to work.
+Sep 23 20:33:26 <Mark27>	calculator ?!?
+Sep 23 20:33:34 <rindolf>	But I want to import my i-bex project
+Sep 23 20:33:44 <rindolf>	calculator: the example aegis project
+Sep 23 20:33:50 <Mark27>	Oh...:)
+Sep 23 20:33:52 <Mark27>	Ok.
+Sep 23 20:33:56 <rindolf>	Make+RCS
+Sep 23 20:34:05 <Mark27>	Before you start let me show you the pitfalls.
+Sep 23 20:34:14 <rindolf>	Cool.
+Sep 23 20:34:33 <Mark27>	The BIGGEST problem/advantage of aegis is the multi-path feature
+Sep 23 20:34:46 <rindolf>	Which means?
+Sep 23 20:34:58 <Mark27>	Ok. Let me give an example
+Sep 23 20:35:05 <Mark27>	lets say that you want to patch the linux kernel
+Sep 23 20:35:13 <rindolf>	Ack
+Sep 23 20:35:21 <Mark27>	You copy a full version of the kernel beside a modified one.
+Sep 23 20:35:27 <Mark27>	the diff and send the patch off
+Sep 23 20:35:31 <Mark27>	then diff and send the patch off
+Sep 23 20:35:46 <rindolf>	OK.
+Sep 23 20:35:51 <Mark27>	This means that even for changing a SINGLE source file you need to have two copies of the ENTIRE kernel
+Sep 23 20:36:06 <Mark27>	Peter Miller wanted this out of the way...
+Sep 23 20:36:09 <rindolf>	Ahah.
+Sep 23 20:36:29 <Mark27>	This means he wanted the "size" of the change to be proportional to the size of source+products that you're actually changing
+Sep 23 20:36:34 <rindolf>	So, there are two parallel pathes.
+Sep 23 20:36:45 <Mark27>	There is a "search path" for aegis...
+Sep 23 20:36:55 <Mark27>	It points first to the directory where you are working
+Sep 23 20:36:59 <Mark27>	and then to the master source
+Sep 23 20:37:16 <rindolf>	And there is a patch in the middle
+Sep 23 20:37:19 <Mark27>	This means that the directory where you are working only contains the changed files and the relevant products
+Sep 23 20:37:25 <Mark27>	No - there no patch
+Sep 23 20:37:30 <Mark27>	No - theres no patch
+Sep 23 20:37:48 <Mark27>	Ok. Lets say that I want to work on the Linux kernel on Aegis
+Sep 23 20:37:55 <rindolf>	You can phone me at 03-6424668 if you want
+Sep 23 20:38:02 <Mark27>	Sure.
+Sep 23 20:38:05 <Mark27>	I'm calling
+Sep 23 20:38:43 <Mark27>	It's busy
+Sep 23 20:39:00 <rindolf>	Yes, my sister is on.
+Sep 23 20:39:12 <Mark27>	Ok. Let her talk...:)
+Sep 23 20:39:41 <Mark27>	What I was saying is that if you want to work on 5 different patch to the kernel in parallel
+Sep 23 20:39:47 <rindolf>	In any case, I'm too tired to get anything into this head.
+Sep 23 20:39:53 <rindolf>	s/this/my/
+Sep 23 20:40:00 <Mark27>	you don't have to use diskspace=kernel space * 5...:)
+Sep 23 20:40:10 <Mark27>	Ok...:)
+Sep 23 20:40:13 <rindolf>	Please send me an E-mail with all your info
+Sep 23 20:40:21 <Mark27>	Sure...:0
+Sep 23 20:40:41 <rindolf>	I'll contact you when I need help.
+Sep 23 20:40:45 <Mark27>	BTW: Aegis is an excellent choice. I don't know the internals of BK but Aegis is terrific for very robust development
+Sep 23 20:40:46 <rindolf>	Just a question:
+Sep 23 20:40:56 <rindolf>	OK
+Sep 23 20:40:59 <rindolf>	A question:
+Sep 23 20:41:16 <Mark27>	Shoot
+Sep 23 20:41:22 <rindolf>	Let's suppose I have a perl script that starts with #!/usr/bin/perl -w
+Sep 23 20:41:39 <Mark27>	ok
+Sep 23 20:41:58 <rindolf>	and I want developer choo, who uses an old installation of perl to work on it without the -w switch. Can it be done in Aegis?
+Sep 23 20:42:31 <Mark27>	This has nothing to do with Aegis
+Sep 23 20:42:44 <Mark27>	First - I usually don't code the path to perl in the first line
+Sep 23 20:42:52 <Mark27>	I use a first line like this "#!/usr/bin/env perl"
+Sep 23 20:43:08 <Mark27>	This means that the script will run under the first perl in the users path
+Sep 23 20:43:25 <Mark27>	(this is much more robust as the user may have installed a different perl that he prefers)
+Sep 23 20:43:32 <rindolf>	Mark27: I know, but let's suppose everybody is happy with #!/usr/bin/perl
+Sep 23 20:44:00 <rindolf>	It could be re-incarnated in all sort of ways.
+Sep 23 20:44:08 <rindolf>	I want an in-trigger and out-trigger.
+Sep 23 20:44:16 <Mark27>	Ok. Let me ask you another question - how would you do it in CVS ?
+Sep 23 20:44:41 <Mark27>	What I'm saying is that you have to use the regular perl mechanisms...
+Sep 23 20:44:54 <Mark27>	(I think you can pass options to the perl interpreter using an envrionment variable)
+Sep 23 20:44:56 <rindolf>	I'll have a separate diff, with a script that checks upon an env var, and applies it only if the env var is set.
+Sep 23 20:45:17 <rindolf>	I.e: the script would be a template for the final script.
+Sep 23 20:45:40 <Mark27>	Ok. Then you mean that the script is not a source but rather a product...:)
+Sep 23 20:45:55 <rindolf>	Exactly.
+Sep 23 20:45:56 <Mark27>	The actual script has something like [% perl_runline %] in the first line
+Sep 23 20:46:07 <rindolf>	OK.
+Sep 23 20:46:17 <Mark27>	And it gets transferred using Perl Template toolkit or autoconf to the script which is run...
+Sep 23 20:46:21 <Mark27>	There is no problem. 
+Sep 23 20:46:28 <Mark27>	Just define this rule in your build system.
+Sep 23 20:46:32 <Mark27>	It has nothing to do with Aegis...
+Sep 23 20:46:33 <rindolf>	And can Aegis do it transparently?
+Sep 23 20:46:43 <Mark27>	Aegis is NOT a build system
+Sep 23 20:46:51 <Mark27>	Make is your build system (if you are using make that is)
+Sep 23 20:46:55 <Mark27>	If you have a rule like:
+Sep 23 20:47:02 <Mark27>	myscript.pl: myscript.input
+Sep 23 20:47:15 <rindolf>	I see.
+Sep 23 20:47:16 <Mark27>	        trasform myscript.input > myscript.pl
+Sep 23 20:47:32 <Mark27>	In your Makefile then aegis will run the build process and after the build process you could run myscript.pl
+Sep 23 20:48:02 <rindolf>	And what if I modify myscript.pl?
+Sep 23 20:48:10 <Mark27>	Would you modify an object file ?
+Sep 23 20:48:12 <Mark27>	:)
+Sep 23 20:48:24 <Mark27>	You don't modify products unless you want them overwritten the next time around
+Sep 23 20:48:39 <rindolf>	No, but I was hoping for a trigger like that - 
+Sep 23 20:48:52 <rindolf>	a patch that would be applied upon checkout
+Sep 23 20:48:58 <rindolf>	and would be unapplied upon checkin
+Sep 23 20:49:12 <Mark27>	Oh!!!!
+Sep 23 20:49:14 <Mark27>	I get it!!!
+Sep 23 20:49:19 <Mark27>	Yes - you could do that...:)
+Sep 23 20:49:28 <rindolf>	With Aegis?
+Sep 23 20:49:43 <Mark27>	There is a hook in aegis for checkout and checkin and you can do ANYTHING you want to the content of the file in the script...
+Sep 23 20:49:54 <Mark27>	Let me give an example
+Sep 23 20:50:02 <Mark27>	I have a history listing in every file in my project
+Sep 23 20:50:09 <rindolf>	An example would not be necessary at this point.
+Sep 23 20:50:12 <Mark27>	When ever I checkout a file I add a history entry
+Sep 23 20:50:17 <rindolf>	Peter Miller kicks ass!
+Sep 23 20:50:30 <rindolf>	Did you have any experience with BitKeeper?
+Sep 23 20:50:37 <Mark27>	Nope...:)
+Sep 23 20:50:54 <Mark27>	I think (from reading LKML) that BK is better at patches...
+Sep 23 20:51:04 <rindolf>	Mark27: you should try it sometimes for something not so serious.
+Sep 23 20:51:07 <Mark27>	(Removing old patches after new ones went in and various other stuff)
+Sep 23 20:51:25 <Mark27>	The biggest strength of Aegis is that it helps you do things right...
+Sep 23 20:51:27 <rindolf>	It feels very slick, and is very nice.
+Sep 23 20:51:35 <Mark27>	(BK doesn't have that)
+Sep 23 20:51:52 <Mark27>	For instance: aegis won't let you commit changes which don't compile or pass tests
+Sep 23 20:52:32 <rindolf>	And we should rob ideas out of it.
+Sep 23 20:52:33 <Mark27>	Also the multi-path feature is an advantage as far as I see it... 
+Sep 23 20:53:03 <rindolf>	OK. Got to sleep now. Talk to you later.
+Sep 23 20:53:08 <Mark27>	(NO other, and I mean NO OTHER SCS has that feature...:)
+Sep 23 20:53:27 <Mark27>	Ok. Good night. I'll send you my contact info...
+Sep 23 20:53:31 <rindolf>	It was fun.
+Sep 23 20:53:41 <Mark27>	Sure...:)
+Sep 23 20:53:43 <rindolf>	Yes, please do that, I'll keep your last E-mail.
+Sep 23 20:53:50 <rindolf>	Bye!!!
+Sep 23 20:53:52 <Mark27>	Bye bye
+Sep 23 20:53:55 <--	rindolf has quit ("[x]chat")
+**** ENDING LOGGING AT Mon Sep 23 20:54:02 2002
+
+**** BEGIN LOGGING AT Wed Sep 25 15:00:18 2002
+
+Sep 25 15:00:18 -->	Mark27 ([yTL58nCyc@line106-15.adsl.actcom.co.il) has joined #aegis
+Sep 25 15:00:18 ---	Topic for #aegis is aegis.sf.net - a transaction-based software configuration management system.
+Sep 25 15:00:18 ---	Topic for #aegis set by ChanServ at Wed Sep 25 14:36:29
+Sep 25 15:00:23 <Mark27>	Shlomi ?
+Sep 25 15:00:55 >rindolf<	CTCP TIME
+Sep 25 15:01:10 >rindolf<	CTCP FINGER
+Sep 25 15:02:14 <Mark27>	Hello ?!?
+Sep 25 15:11:33 <rindolf>	Hi Mark
+Sep 25 15:11:36 <rindolf>	Mark27: Hi!
+Sep 25 15:14:41 <Mark27>	Hi
+Sep 25 15:14:51 <Mark27>	(Went to the bathroom)
+Sep 25 15:14:58 <rindolf>	Hi
+Sep 25 15:15:06 <rindolf>	You can ignore my DCC Chat offer if you wish
+Sep 25 15:15:21 <rindolf>	Can I call you somewhere?
+Sep 25 15:15:22 <Mark27>	Ok. It's simpler to talk here.
+Sep 25 15:15:51 <Mark27>	You can try but I think my portable phone is dead (battery).
+Sep 25 15:15:58 <rindolf>	OK. I can send you the BitKeeper snapshot as of now.
+Sep 25 15:16:16 <Mark27>	BitKeeper snapshot of what ?
+Sep 25 15:16:17 <rindolf>	BTW, it seems my projects repositories somehow disappeared from bkbits.net
+Sep 25 15:16:26 <Mark27>	What ?!?
+Sep 25 15:16:26 <rindolf>	Of the code I'm working on.
+Sep 25 15:16:30 <Mark27>	Did you have backups ?
+Sep 25 15:17:01 <rindolf>	I did. Of the entire repositories. But still they were filled with data, and I did not instruct Larry & Co. to remove them.
+Sep 25 15:17:22 <Mark27>	Did they do that on purpose ?
+Sep 25 15:17:41 <rindolf>	I have no idea. I sent an E-mail to support@bitkeeper.com and received no reply as of yet.
+Sep 25 15:17:42 <Mark27>	(I thought bkbits.net was a sourceforge like deal for GPLd code...)
+Sep 25 15:18:05 <rindolf>	Which is expected, because they are on San-Fransisco Time
+Sep 25 15:18:20 <Mark27>	Oh ok.
+Sep 25 15:18:30 <rindolf>	It was sort-of. But once I opened a repository and did not fill it in and it also disappear.
+Sep 25 15:19:02 <Mark27>	This I can understand (they don't to hold hundreds of empty repositories)
+Sep 25 15:19:03 <rindolf>	I don't know. I like McVoy less and less as time goes by.
+Sep 25 15:19:19 <rindolf>	Me too
+Sep 25 15:19:30 <rindolf>	But my repositories were filled in and quite active
+Sep 25 15:19:47 <Mark27>	That's a whole different ball game. Do they do backups on a regular basis ?
+Sep 25 15:19:48 <rindolf>	I did piss him off quite a bit
+Sep 25 15:19:57 <rindolf>	They do, yes.
+Sep 25 15:20:12 <Mark27>	HOPEFULLY it was an honest mistake...:)
+Sep 25 15:20:16 <rindolf>	In any case, nothing important was lost
+Sep 25 15:20:34 <rindolf>	Never mind. I'd like to try Aegis again.
+Sep 25 15:20:40 <Mark27>	Ok. Shoot.
+Sep 25 15:20:44 <rindolf>	I looked at arch, and could not make heads nor tails of it.
+Sep 25 15:20:56 <rindolf>	It is way too complicated, even for me?
+Sep 25 15:21:03 <rindolf>	Do you read "Joel on Software"?
+Sep 25 15:21:03 <Mark27>	Ok. Can't help you with that. Never looked at it.
+Sep 25 15:21:22 <Mark27>	No I didn't. Can you give me a URL ?
+Sep 25 15:21:37 <rindolf>	Sure. http://www.joelonsoftware.com/
+Sep 25 15:21:57 <Mark27>	Is this an article or a slashdot type system ?
+Sep 25 15:22:01 <rindolf>	Joel Spolsky is contreversial, but I think he is also very wise. At least most of the time.
+Sep 25 15:22:17 <rindolf>	He has a diary there.
+Sep 25 15:22:21 <rindolf>	Or a weblog
+Sep 25 15:22:29 <rindolf>	But look at the complete archive.
+Sep 25 15:22:39 <rindolf>	He has several articles there.
+Sep 25 15:22:53 <rindolf>	The one about UI Design for Programmers is especially enlightening
+Sep 25 15:23:14 <Mark27>	Ok. I'll check them out.
+Sep 25 15:23:21 <Mark27>	What did he code ?
+Sep 25 15:24:00 <rindolf>	He worked at Microsoft (on Visual Basic for Apps), Viacom and Juno and now has his own software house called FogCreek software.
+Sep 25 15:24:11 <Mark27>	Is he pro open source ?
+Sep 25 15:24:19 <rindolf>	He's also a former Israeli Parachuter, and he's gay?
+Sep 25 15:24:19 <Mark27>	(Or even free source ?)
+Sep 25 15:24:29 <Mark27>	:)
+Sep 25 15:24:35 <rindolf>	Sure, he uses CVS, and admits he has several Linux servers.
+Sep 25 15:24:40 <Mark27>	So I guess it's Yoel...
+Sep 25 15:24:52 <rindolf>	I call him djoel.
+Sep 25 15:25:07 <Mark27>	Ok. I'll read...:)
+Sep 25 15:25:09 <rindolf>	And so does everybody I know, but he insists that it's yoel in Hebrew.
+Sep 25 15:25:44 <rindolf>	Nevermind. Joel once said that "If you don't understand a SPEC - don't worry. Nobody else will".
+Sep 25 15:26:07 <rindolf>	So I'm not too worried about Arch
+Sep 25 15:26:14 <rindolf>	I'll wait for Version 1.2.0
+Sep 25 15:26:36 <Mark27>	Sounds reasonable.
+Sep 25 15:26:52 <rindolf>	I translated some of Joel's articles for him to Hebrew with help from the good Hackers-IL guys
+Sep 25 15:27:09 <rindolf>	In any case, let's get to business: getting my project into Aegis.
+Sep 25 15:27:17 <Mark27>	Is "hackers-il" a different list than "linux-il" ?
+Sep 25 15:27:28 <Mark27>	Ok... Shoot
+Sep 25 15:27:41 <Mark27>	Do you have aegis installed ?
+Sep 25 15:28:23 <rindolf>	Ahah. Check: http://groups.yahoo.com/group/hackers-il/
+Sep 25 15:28:40 <rindolf>	Yep. From the RPM. Could not compile the source RPM because of the Icon.
+Sep 25 15:28:53 <rindolf>	I can send you a snapshot of my work.
+Sep 25 15:29:17 <Mark27>	(regarding hackers-il - I'll join it).
+Sep 25 15:29:32 <Mark27>	Regarding Aegis installation - I never install anything from srpm
+Sep 25 15:29:36 <rindolf>	Basically: it's a perl script, two boards with layouts, several gimp .xcf files, and a perl script that generates pngs out of them.
+Sep 25 15:29:37 <Mark27>	Either from source or from rpm
+Sep 25 15:29:53 <rindolf>	Mark27: hackers-il is lots of fun.
+Sep 25 15:30:04 <rindolf>	IMHO, at least
+Sep 25 15:30:23 <Mark27>	You'll have a better experiece with installing Aegis from sources.
+Sep 25 15:30:36 <Mark27>	After ./configure;make
+Sep 25 15:30:42 <Mark27>	You can check aegis using "make sure"
+Sep 25 15:30:58 <rindolf>	Mark27: Aegis builds using Cook, right?
+Sep 25 15:31:10 <Mark27>	Which will run about 180 tests which last about 40 minutes and makes sure that Aegis is running right on YOUR machine
+Sep 25 15:31:39 <Mark27>	No. You get a makefile. (Peter uses cook but you don't have to know about it)
+Sep 25 15:32:04 <Mark27>	Peter didnt want to make cook a prerequisite to Aegis
+Sep 25 15:32:19 <Mark27>	(that would discouraged a lot of users)
+Sep 25 15:32:50 <rindolf>	OK, went out to check E-mail
+Sep 25 15:33:07 <Mark27>	Ok.
+Sep 25 15:33:11 <rindolf>	Do you know Dave Goehrig?
+Sep 25 15:33:15 <Mark27>	Nope
+Sep 25 15:33:32 <rindolf>	The Perl/SDL guy. Nice guy, but we are complete opposites.
+Sep 25 15:34:03 <rindolf>	In any case, how do I start putting them into Aegis?
+Sep 25 15:34:10 <Mark27>	Did you create a project ?
+Sep 25 15:34:17 <rindolf>	How do I do that?
+Sep 25 15:34:29 <Mark27>	Ok. I guess you didn't...:)
+Sep 25 15:34:38 <Mark27>	Did you add aegis shortcuts to your bash ?
+Sep 25 15:34:53 <Mark27>	(I assume that you are using bash - tell me if you are not)
+Sep 25 15:34:55 <rindolf>	I installed from rpm, so I don't think so.
+Sep 25 15:35:05 <Mark27>	Ok. Good.
+Sep 25 15:35:09 <rindolf>	I use bash, yes. tcsh is crap and zsh is too bloated.
+Sep 25 15:35:22 <Mark27>	Please let me know if you did ANYTHING with aegis up to this point.
+Sep 25 15:35:37 <rindolf>	I unpacked the example with make and rcs
+Sep 25 15:35:45 <Mark27>	And that's it ?
+Sep 25 15:35:49 <rindolf>	and built it to get a nice calculator
+Sep 25 15:35:54 <rindolf>	Yes, that's it.
+Sep 25 15:36:04 <Mark27>	Did you build it as an Aegis project ?
+Sep 25 15:36:15 <rindolf>	What do you mean by that?
+Sep 25 15:36:16 <Mark27>	(did you actually use aegis and created a project for it ?)
+Sep 25 15:36:22 <rindolf>	I just typed make.
+Sep 25 15:36:36 <Mark27>	Ok. Then what you did has nothing to do with Aegis.
+Sep 25 15:36:52 <Mark27>	The idea was to show how to write correct aegis configuration...:)
+Sep 25 15:36:53 <rindolf>	It was on the Aegis site.
+Sep 25 15:36:57 <rindolf>	aedist and all.
+Sep 25 15:37:08 <Mark27>	How did you unpack the aedist file ?
+Sep 25 15:37:15 <Mark27>	(cpio ?!?)
+Sep 25 15:37:21 <rindolf>	The way the webpage said so.
+Sep 25 15:37:33 <Mark27>	Ok. So you DID use Aegis.
+Sep 25 15:37:45 <rindolf>	Let's say I know nothing about Aegis except what you told me.
+Sep 25 15:37:49 <Mark27>	You did something like aegis -Import or something....:)
+Sep 25 15:37:52 <rindolf>	Mark27: yes I di.
+Sep 25 15:38:06 <rindolf>	I know about the -Project and stuff like that
+Sep 25 15:38:09 <Mark27>	Ok. So you probably already have one project registered with aegis (the example one)
+Sep 25 15:38:25 <Mark27>	Ok. Now well set up short cuts for aegis operations for you.
+Sep 25 15:38:30 <rindolf>	Yes. But I want to create an altogether new one for my perl game.
+Sep 25 15:38:32 <Mark27>	do "type ael" on the cmdline
+Sep 25 15:38:42 <Mark27>	Ok... were getting there.
+Sep 25 15:38:56 <Mark27>	(meaning check if ael is a recognized shortcut ?)
+Sep 25 15:39:02 <rindolf>	ael is a function
+Sep 25 15:39:08 <Mark27>	Great...:)
+Sep 25 15:39:12 <rindolf>	ael is a function
+Sep 25 15:39:12 <rindolf>	ael ()
+Sep 25 15:39:12 <rindolf>	{
+Sep 25 15:39:12 <rindolf>	    aegis -l "$@" -v
+Sep 25 15:39:12 <rindolf>	}
+Sep 25 15:39:29 <Mark27>	All commands in aegis start with "ae"
+Sep 25 15:39:38 <Mark27>	you can do "ae"[tab] to see a list.
+Sep 25 15:39:39 <rindolf>	I noticed that, yes.
+Sep 25 15:39:56 <rindolf>	Mark27: I know. :)
+Sep 25 15:39:58 <Mark27>	ok. Do "ael projects" to see your projects.
+Sep 25 15:40:23 <rindolf>	Geez: lots of junk: example . example.1 test test.2
+Sep 25 15:40:33 <Mark27>	(I'm sorry if I'm saying things which are obvious I just don't want you to miss anything and think that Aegis sucks as a result...:)
+Sep 25 15:40:47 <rindolf>	Mark27: no problem.
+Sep 25 15:40:54 <Mark27>	ok. Do you want to remove them all ? (I think it would be cleaner that way)
+Sep 25 15:41:06 <rindolf>	Mark27: sure. if it can't hurt
+Sep 25 15:41:39 <Mark27>	It can't hurt if you didn't add anything important to these projects.
+Sep 25 15:41:53 <rindolf>	Mark27: I have a great design for a new logo in mind, but it will probably take me ages to do it in the gimp.
+Sep 25 15:42:17 <Mark27>	That would be cook.
+Sep 25 15:42:20 <Mark27>	That would be cool...:)
+Sep 25 15:42:24 <Mark27>	(sorry...:)
+Sep 25 15:42:31 <rindolf>	Freudian Slip.
+Sep 25 15:42:40 <Mark27>	Ok. Do "aegis -ReMove_PRoject [project name]" to remove any old projects.
+Sep 25 15:43:10 <Mark27>	or for short "aermpr [project_name]"
+Sep 25 15:43:29 <rindolf>	it says for example that there are outstanding changes
+Sep 25 15:43:41 <Mark27>	Ok. This means that you need to remove them too.
+Sep 25 15:43:53 <rindolf>	Mark27: how do I do that?
+Sep 25 15:44:04 <rindolf>	You know forget about cleaning them up for the while.
+Sep 25 15:44:14 <rindolf>	Let's create a new one for I-Bex
+Sep 25 15:44:18 <Mark27>	Ok.
+Sep 25 15:44:23 <rindolf>	(that's the name of the game)
+Sep 25 15:44:32 <Mark27>	aenpr [project_name]
+Sep 25 15:44:43 <rindolf>	OK.
+Sep 25 15:44:47 <Mark27>	(or Aegis -New_Project [project_name])
+Sep 25 15:44:48 <rindolf>	And where would it put it?
+Sep 25 15:45:00 <Mark27>	Ok. A little explanation.
+Sep 25 15:45:05 <Mark27>	Aegis is running suid.
+Sep 25 15:45:09 <rindolf>	I want it somewhere under $HOME/Projects/Aegis
+Sep 25 15:45:24 <Mark27>	This means there is a user called aegis which is in charge of the repositories
+Sep 25 15:45:36 <Mark27>	That's is exactly the point.
+Sep 25 15:45:53 <Mark27>	The idea in aegis is that you (the user which you are) could NOT change the master source even you want to.
+Sep 25 15:46:08 <Mark27>	(you would only be able to change the source via the regular aegis mechanisms)
+Sep 25 15:46:27 <Mark27>	(and ofcourse - as root - but that is not playing by the rules)
+Sep 25 15:47:24 <rindolf>	OK. Understood.
+Sep 25 15:47:28 <Mark27>	Checkout the -Directory flag if you want everything in your account...:)
+Sep 25 15:47:37 <Mark27>	(But then you don't get the benefits)
+Sep 25 15:47:46 <rindolf>	In any case, is this channel logged?
+Sep 25 15:47:56 <Mark27>	I don't know...:)
+Sep 25 15:47:58 <rindolf>	it could help newbies eventually?
+Sep 25 15:48:15 <Mark27>	I log all my Xchat conversations so I have a transcript.
+Sep 25 15:48:29 <rindolf>	Good. send it to me when you're done.
+Sep 25 15:48:32 <Mark27>	Sure.
+Sep 25 15:48:55 <Mark27>	Did you create the project ?
+Sep 25 15:49:09 <rindolf>	OK. Let's suppose i want to create a project named i-bex under directory ~/Projects/Aegis - what do I do?
+Sep 25 15:49:19 <rindolf>	Exact command please.
+Sep 25 15:49:29 <Mark27>	aenpr i-bex -Directory ~/Projects/Aegis
+Sep 25 15:49:41 <Mark27>	(you may need to create the directory first - I'm not sure)
+Sep 25 15:50:08 <Mark27>	(It's been quite some time since I last created a new project...:)
+Sep 25 15:50:20 <rindolf>	It says: aegis: mkdir("/home/shlomi/Projects/Aegis/", 02755): File exists]
+Sep 25 15:50:29 <Mark27>	Oh ok...:)
+Sep 25 15:50:32 <rindolf>	I guess I need ~/Projects/Aegis/i-bex
+Sep 25 15:50:40 <Mark27>	Then remove it...:) (it probably wants to create it itself...:)
+Sep 25 15:50:49 <rindolf>	Oh.
+Sep 25 15:51:07 <rindolf>	OK. It worked.
+Sep 25 15:51:16 <Mark27>	great. do you see it in ael projects ?
+Sep 25 15:51:29 <rindolf>	Wait a sec, let me play some mp3's (which you can't hear, but at least I can)
+Sep 25 15:51:39 <Mark27>	(it should appear as 3 lines...)
+Sep 25 15:52:32 <rindolf>	Yes i-bex, i-bex.1 and i-bex.1.0
+Sep 25 15:53:16 <Mark27>	Great. Why is it three lines ? Because it already created a perliminary branch for you...:)
+Sep 25 15:53:30 <Mark27>	(Just in case you forget and want to branch afterwards and find out that you cant...)
+Sep 25 15:53:32 <rindolf>	Mark27: cool. Good human eng.
+Sep 25 15:54:02 <Mark27>	It also gave a version...
+Sep 25 15:54:21 <Mark27>	You don't have to use that version inside your product
+Sep 25 15:54:35 <rindolf>	Mark27: of course.
+Sep 25 15:54:37 <Mark27>	(You can have a totally different version for your product coded inside your product)
+Sep 25 15:54:44 <rindolf>	Now how do I put files in there?
+Sep 25 15:54:50 <Mark27>	BUT!!! It's better to use the aegis version...:)
+Sep 25 15:55:09 <Mark27>	Then you can translate bug reports to the EXACT source that produced the version in question...:)
+Sep 25 15:55:15 <Mark27>	Just a thought...:)
+Sep 25 15:55:17 <rindolf>	Mark27: that's ok I like the ver.txt version management.
+Sep 25 15:55:45 <rindolf>	And I can write a Perl script to look the version Aegis gave me.
+Sep 25 15:55:51 <Mark27>	Ok. But then you need to remmember to bump it yourself and you do the translation between the content of "ver.txt" and the source that produce it yourself...:)
+Sep 25 15:56:12 <Mark27>	Sure you can. There are several perl scripts which interface Aegis (I'm the author of one)
+Sep 25 15:56:20 <Mark27>	You can even write one yourself...:)
+Sep 25 15:56:33 <rindolf>	Mark27: I'll look for one.
+Sep 25 15:56:40 <Mark27>	Finding out what aegis knows about AYNTHING involves running the "aesub" command.
+Sep 25 15:57:12 <Mark27>	Ok. Now you want to start working I guest....:)
+Sep 25 15:57:23 <rindolf>	Mark27: I think we're digressing. Let's put files
+Sep 25 15:57:32 <rindolf>	in the repository I mean.
+Sep 25 15:57:36 <Mark27>	Yes.
+Sep 25 15:57:41 <Mark27>	Create your first change.
+Sep 25 15:57:48 <rindolf>	How?
+Sep 25 15:58:00 <Mark27>	you do it using "aenc"
+Sep 25 15:58:09 <Mark27>	(aegis -New_Change)
+Sep 25 15:58:12 <rindolf>	Where should I run it?
+Sep 25 15:58:22 <Mark27>	Where ever you want.
+Sep 25 15:58:29 <Mark27>	Where do you want to change to reside ?
+Sep 25 15:58:38 <rindolf>	I mean in which directory?
+Sep 25 15:59:01 <Mark27>	Yep...
+Sep 25 15:59:04 <rindolf>	aegis: you must give the project name explicitly to this command
+Sep 25 15:59:14 <rindolf>	That's the error I received
+Sep 25 15:59:29 <rindolf>	I'm sorry that I'm wasting so much of your time.
+Sep 25 15:59:35 <Mark27>	yep. aenc -Project i-bex [change_number]
+Sep 25 15:59:49 <rindolf>	BTW, can I put this transcript online as part of the "Better CVS" project?
+Sep 25 15:59:49 <Mark27>	(you can leave out the change number and accept the default if you want.
+Sep 25 15:59:58 <Mark27>	Sure...
+Sep 25 16:00:43 <rindolf>	OK. Now I have a joe (my favourite editor screen) opened and what do I do there?
+Sep 25 16:01:07 <Mark27>	Does it show various details that you need to fill in ?
+Sep 25 16:01:14 <rindolf>	yes,
+Sep 25 16:01:28 <Mark27>	Ok. You can leave most of them with the defaults.
+Sep 25 16:01:29 <rindolf>	brief_description: initial_version ?
+Sep 25 16:01:41 <Mark27>	Exactly...:)
+Sep 25 16:02:03 <rindolf>	Done:
+Sep 25 16:02:08 <rindolf>	aegis: project "i-bex": change 10: create
+Sep 25 16:02:16 <Mark27>	Great.
+Sep 25 16:02:23 <Mark27>	You are now the proud owner of a change.
+Sep 25 16:02:36 <Mark27>	The change directory is NOT yet created.
+Sep 25 16:02:43 <rindolf>	Good. But I don't have any files in it yet.
+Sep 25 16:02:53 <Mark27>	You have not started development on the change - only stated that such a change needs to exist and logged it
+Sep 25 16:03:00 <Mark27>	Wait...:)
+Sep 25 16:03:03 <rindolf>	ok
+Sep 25 16:03:16 <Mark27>	no start developing it using "aedb" or "Develop Begin".
+Sep 25 16:03:23 <Mark27>	sorry - now start developing it using "aedb" or "Develop Begin".
+Sep 25 16:03:42 <Mark27>	Give it the change number (10)
+Sep 25 16:04:24 <rindolf>	But it does so for the wrong project.
+Sep 25 16:04:30 <rindolf>	"example"
+Sep 25 16:04:40 <rindolf>	Is there anyway I can change the default project to i-bex
+Sep 25 16:04:41 <Mark27>	Ok. ok. Don't panick...:)
+Sep 25 16:04:45 <Mark27>	Yes.
+Sep 25 16:05:05 <Mark27>	export AEGIS_PROJECT=i-bex
+Sep 25 16:05:18 <Mark27>	Now you don't have to put -Project on every command...:)
+Sep 25 16:05:43 <rindolf>	Mark27: Excellent! (to quote that duo whose names I cannot remember)
+Sep 25 16:05:50 <rindolf>	Todd and something
+Sep 25 16:06:09 <Mark27>	In addition export AEGIS_CHANGE=10 may help as well...:)
+Sep 25 16:06:29 <rindolf>	Done. Guard.
+Sep 25 16:06:31 <Mark27>	(so you won't have to specify the change all the time).
+Sep 25 16:06:42 <Mark27>	You can put these in your .bashrc if you want...
+Sep 25 16:06:56 <rindolf>	Of course
+Sep 25 16:07:02 <Mark27>	Changing projects would mean changing these envs.
+Sep 25 16:07:10 <rindolf>	Naturally
+Sep 25 16:07:22 <Mark27>	Another way is to have a ~/.aegisrc with all of those in it...
+Sep 25 16:07:23 <rindolf>	Now how do I put my files there?
+Sep 25 16:07:35 <rindolf>	OK
+Sep 25 16:07:43 <Mark27>	Aegis look at 1. Environment 2. ~/.aegisrc 3. command line
+Sep 25 16:07:50 <rindolf>	Files!!! FILES!!! My kingdom for files.
+Sep 25 16:07:55 <Mark27>	Ok ok...
+Sep 25 16:07:59 <Mark27>	Anything to please the masses.
+Sep 25 16:08:04 <Mark27>	did aedb succeed ?
+Sep 25 16:08:10 <rindolf>	Or stupid old Shlomi.
+Sep 25 16:08:30 <rindolf>	user shlomi is not a developer
+Sep 25 16:08:36 <Mark27>	Oh. yes.
+Sep 25 16:08:36 <rindolf>	aegis: project "i-bex": user "shlomi" is not a developer
+Sep 25 16:08:44 <Mark27>	We have to add you as a developer.
+Sep 25 16:09:06 <Mark27>	use "aend shlomi"
+Sep 25 16:09:22 <rindolf>	aegis: project "i-bex": user "shlomi" is now a developer
+Sep 25 16:09:34 <Mark27>	(the fact that you are the project administrator does not make you a developer since the roles may be played by different UNIX users)
+Sep 25 16:09:43 <Mark27>	great.
+Sep 25 16:09:47 <Mark27>	Now try the aedb again
+Sep 25 16:10:02 <rindolf>	aegis: project "i-bex": change 10: development directory
+Sep 25 16:10:02 <rindolf>	        "/home/shlomi/i-bex.C010"
+Sep 25 16:10:02 <rindolf>	aegis: logging to "/home/shlomi/i-bex.C010/aegis.log"
+Sep 25 16:10:02 <rindolf>	aegis: project "i-bex": change 10: user "shlomi" has begun development
+Sep 25 16:10:07 <Mark27>	great.
+Sep 25 16:10:18 <Mark27>	The directory /home/shlomi/i-bex.C010 is your change directory.
+Sep 25 16:10:25 <rindolf>	OK.
+Sep 25 16:10:31 <Mark27>	Go to it...
+Sep 25 16:10:38 <Mark27>	and look at the aegis.log file
+Sep 25 16:10:39 <rindolf>	Done.
+Sep 25 16:10:51 <rindolf>	aegis: project "i-bex": change 10: user "shlomi" has begun development
+Sep 25 16:10:53 <Mark27>	The file contains the last message you got from aegis...:)
+Sep 25 16:10:59 <Mark27>	Great...
+Sep 25 16:11:05 <Mark27>	Now you can ADD FILES!!!
+Sep 25 16:11:22 <Mark27>	create a small file called "sample.txt" in that directory...
+Sep 25 16:11:29 <rindolf>	There at ~/i-bex
+Sep 25 16:11:39 <Mark27>	Exactly...
+Sep 25 16:11:46 <Mark27>	That is the directory where you do the work.
+Sep 25 16:11:56 <Mark27>	The repository is the MASTER source which is now empty...
+Sep 25 16:11:56 <rindolf>	Ok I wrote "Hello World" Hello Aegis there
+Sep 25 16:12:08 <Mark27>	great. now do "aenf sample.txt"
+Sep 25 16:12:14 <Mark27>	(nf= New File)
+Sep 25 16:12:30 <rindolf>	Done
+Sep 25 16:12:36 <rindolf>	And seems to have worked.
+Sep 25 16:12:58 <Mark27>	good. do "ael cf" to see your file...
+Sep 25 16:13:14 <Mark27>	ael cf = "aegis could you please list all files which are part of the current change ?"
+Sep 25 16:13:31 <rindolf>	Project "i-bex"  Change 10                                               Page 1
+Sep 25 16:13:31 <rindolf>	List of Change's Files                                 Wed Sep 25 15:58:43 2002
+Sep 25 16:13:31 <rindolf>	Type    Action   Edit         File Name
+Sep 25 16:13:31 <rindolf>	------- -------- -------      -----------
+Sep 25 16:13:31 <rindolf>	source  create                sample.txt
+Sep 25 16:13:37 <Mark27>	Great...:)
+Sep 25 16:13:39 <Mark27>	That's it.
+Sep 25 16:13:44 <Mark27>	You can add all of your files now...
+Sep 25 16:13:58 <rindolf>	OK, will be done.
+Sep 25 16:14:14 <Mark27>	use aenf for all of them...
+Sep 25 16:14:40 <Mark27>	You can remove the "sample.txt" file using "aenfu" = New File Undo.
+Sep 25 16:14:42 <rindolf>	Brrr.. I added an entire directory and it added a lot of temp files.
+Sep 25 16:14:57 <Mark27>	Temp files = files which are not sources ?
+Sep 25 16:15:11 <rindolf>	Mark27: yes . *~ and .swp thingies.
+Sep 25 16:15:20 <Mark27>	Ok. Undo them using "aenfu".
+Sep 25 16:15:43 <Mark27>	Please note that they will be removed from the development directory when you di "aenfu"
+Sep 25 16:16:34 <rindolf>	ael cf
+Sep 25 16:16:35 <rindolf>	Project "i-bex"  Change 10                                               Page 1
+Sep 25 16:16:35 <rindolf>	List of Change's Files                                 Wed Sep 25 16:01:57 2002
+Sep 25 16:16:35 <rindolf>	Type    Action   Edit         File Name
+Sep 25 16:16:35 <rindolf>	------- -------- -------      -----------
+Sep 25 16:16:35 <rindolf>	source  create                code/board.txt
+Sep 25 16:16:37 <rindolf>	source  create                code/board2.txt
+Sep 25 16:16:39 <rindolf>	source  create                code/i-bex
+Sep 25 16:16:41 <rindolf>	source  create                images/actor.xcf
+Sep 25 16:16:43 <rindolf>	source  create                images/chasm.xcf
+Sep 25 16:16:45 <rindolf>	source  create                images/exit.xcf
+Sep 25 16:16:47 <rindolf>	source  create                images/gen-images.pl
+Sep 25 16:16:49 <rindolf>	source  create                images/platform.xcf
+Sep 25 16:16:51 <rindolf>	source  create                images/tile_base.xcf
+Sep 25 16:16:53 <rindolf>	source  create                images/tile_u.xcf
+Sep 25 16:16:55 <rindolf>	source  create                images/wall.xcf
+Sep 25 16:16:57 <rindolf>	source  create                images/you_win.xcf
+Sep 25 16:16:58 <Mark27>	Great...
+Sep 25 16:16:59 <rindolf>	source  create                sample.txt
+Sep 25 16:17:01 <rindolf>	Looks good, me thinks.
+Sep 25 16:17:05 <rindolf>	Now, how do I check it in?
+Sep 25 16:17:14 <rindolf>	Or commit it? Whatever the terminology here?
+Sep 25 16:17:29 <Mark27>	The terminology is "integrate the change"...
+Sep 25 16:17:40 <rindolf>	About Terminology: I think sourcesafe uses label for tags
+Sep 25 16:17:57 <rindolf>	OK: how do I integrate?
+Sep 25 16:17:58 <Mark27>	I realy hate sourcesafe...:)
+Sep 25 16:18:19 <Mark27>	Before you integrate I want to ask something...
+Sep 25 16:18:25 <rindolf>	Mark27: so does Joel Spolsky and a lot of Microsoft. They use a variation of Perforce while Joel use CVS,
+Sep 25 16:18:35 <rindolf>	Mark27: shoot!
+Sep 25 16:18:51 <Mark27>	Do you want Aegis to make sure that the project compiles/builds/passes tests when you integrate ?
+Sep 25 16:19:08 <rindolf>	Mark27: not for now.
+Sep 25 16:19:10 <Mark27>	Ok.
+Sep 25 16:19:15 <rindolf>	Mark27: maybe in the future.
+Sep 25 16:19:18 <Mark27>	One more thing before you integrate.
+Sep 25 16:19:26 <rindolf>	Yes?
+Sep 25 16:19:27 <Mark27>	You need to add one more file to the project before you can do that.
+Sep 25 16:19:39 <Mark27>	That file is the aegis configuration for your project.
+Sep 25 16:19:41 <rindolf>	Mark27: OK? What it is?
+Sep 25 16:19:54 <rindolf>	How do I create it?
+Sep 25 16:19:55 <Mark27>	It's called config and it should be at the root of your project (where sample.txt is right now)
+Sep 25 16:20:07 <Mark27>	BYW: you can remove "sample.txt" using "aenfu sample.txt"
+Sep 25 16:20:21 <Mark27>	Any editor you like
+Sep 25 16:20:32 <Mark27>	Create an empty config at first
+Sep 25 16:20:42 <rindolf>	Done.
+Sep 25 16:20:46 <rindolf>	What should I put there?
+Sep 25 16:20:56 <Mark27>	Ok. There are a few things you need to put there.
+Sep 25 16:21:16 <Mark27>	Copy a template of the file from the example projects that you downloaded off the net
+Sep 25 16:21:28 <Mark27>	Do you have fhist installed ?
+Sep 25 16:22:49 <rindolf>	How do I know if I have fhist installed?
+Sep 25 16:23:08 <Mark27>	fhist --version ?
+Sep 25 16:23:26 <rindolf>	fhist: command not found.
+Sep 25 16:23:54 <Mark27>	Ok. You don't have fhist installed. Do you want to use fhist as your history tool ?
+Sep 25 16:23:55 <rindolf>	Where can I get it?
+Sep 25 16:23:59 <Mark27>	(I recommend it...)
+Sep 25 16:24:14 <rindolf>	Yes, I would. It's better than RCS, right?
+Sep 25 16:24:35 <Mark27>	Yes it is...:)
+Sep 25 16:24:51 <Mark27>	Peter Miller is the author
+Sep 25 16:25:11 <Mark27>	You can get it from peters site...
+Sep 25 16:25:20 <Mark27>	You can also use RCS...
+Sep 25 16:25:40 <rindolf>	But I'd rather not. Let me get rhist.
+Sep 25 16:25:46 <rindolf>	s/rhist/fhist/
+Sep 25 16:26:03 <Mark27>	(Its all up to you - Aegis is independant of the history mechanism which is very good...:)
+Sep 25 16:27:20 <rindolf>	Hmmpf. Pretty slow connection.
+Sep 25 16:27:40 <rindolf>	Should be sourceforged or berliosed.
+Sep 25 16:27:53 <Mark27>	Yes. I agree...:)
+Sep 25 16:30:35 <rindolf>	OK, compilinig it with rpm -tb now.
+Sep 25 16:30:50 <rindolf>	BTW, is fhist better than SCCS?
+Sep 25 16:31:19 <Mark27>	Yep...:)
+Sep 25 16:31:37 <rindolf>	How? Not that I understood SCCS too much.
+Sep 25 16:31:53 <Mark27>	It doesn't have locking (which you don't need since it's the job of aegis)
+Sep 25 16:32:04 <Mark27>	And it handles binary files better
+Sep 25 16:32:45 <rindolf>	OK. fhist is installed.
+Sep 25 16:33:01 <Mark27>	Great. Now get a template based on fhist...
+Sep 25 16:33:21 <rindolf>	OK. Ready and taking orders.
+Sep 25 16:34:01 <Mark27>	Great. Edit the config file
+Sep 25 16:34:16 <Mark27>	Let review the entries...
+Sep 25 16:34:24 <rindolf>	Done. What should I put there?
+Sep 25 16:35:07 <Mark27>	Lets go over every entry...
+Sep 25 16:35:17 <rindolf>	OK.
+Sep 25 16:35:35 <Mark27>	Read them out
+Sep 25 16:35:45 <rindolf>	There are none!
+Sep 25 16:36:02 <rindolf>	Did I miss something?
+Sep 25 16:36:46 <Mark27>	yes. Did you copy the config example from some example project which supports fhist ?
+Sep 25 16:36:58 <rindolf>	No.
+Sep 25 16:37:01 <rindolf>	Should I?
+Sep 25 16:37:11 <Mark27>	Yes...:)
+Sep 25 16:37:11 <rindolf>	Can you give me a URL?
+Sep 25 16:37:25 <Mark27>	The same URL for aegis where you got the Make-SCCS example from
+Sep 25 16:37:38 <rindolf>	Make-RCS, you meant.
+Sep 25 16:38:37 <Mark27>	Right
+Sep 25 16:38:58 <rindolf>	How do I unpack it again? (the web page is a bit more crowded)
+Sep 25 16:39:07 <Mark27>	you can use cpio...
+Sep 25 16:39:25 <rindolf>	I'm not a big cpio expert.
+Sep 25 16:39:44 <Mark27>	Ok. Let me try and find it somewhere here....:)
+Sep 25 16:41:48 <rindolf>	Mark27: Waiting.
+Sep 25 16:41:57 <Mark27>	Ok. Looking for it.
+Sep 25 16:46:46 <Mark27>	I can't seem to find it.
+Sep 25 16:47:48 <rindolf>	I unpacked it using aedist
+Sep 25 16:48:10 <Mark27>	ok.
+Sep 25 16:48:16 <Mark27>	Do you have the config file ?
+Sep 25 16:48:24 <Mark27>	(that's all you need)
+Sep 25 16:49:17 <rindolf>	Where should I find them?
+Sep 25 16:49:37 <Mark27>	The config file ?
+Sep 25 16:49:45 <Mark27>	It's in the root of the distribution you got
+Sep 25 16:49:47 <rindolf>	Yes.
+Sep 25 16:49:57 <Mark27>	Found it ?
+Sep 25 16:50:28 <Mark27>	Just copy it and make it your version...
+Sep 25 16:50:44 <rindolf>	Huoston: we're on.
+Sep 25 16:50:54 <Mark27>	Ok. Lets run through it....:)
+Sep 25 16:51:02 <rindolf>	But will the fact that it is cook based make it not good.
+Sep 25 16:51:34 <rindolf>	Ihave a build_command
+Sep 25 16:51:46 <rindolf>	I have a build_command
+Sep 25 16:51:54 <Mark27>	good. You don't want it to actually build. So put a "yes" there.
+Sep 25 16:51:57 <rindolf>	Which is a cook garbage
+Sep 25 16:52:05 <Mark27>	I know...
+Sep 25 16:52:09 <rindolf>	Instead of what is already there.
+Sep 25 16:53:19 <Mark27>	Exactly.
+Sep 25 16:53:26 <Mark27>	This is the command that aegis runs to build the project
+Sep 25 16:53:35 <Mark27>	What you're saying is "my build always works".
+Sep 25 16:53:58 <Mark27>	(since the command line "yes" always returns an "ALL OK" system code value)
+Sep 25 16:54:25 <Mark27>	(Come to think of it better put "echo" there since yes never terminates)
+Sep 25 16:54:41 <rindolf>	Mark27: I'll put true
+Sep 25 16:55:28 <Mark27>	Even better !!!
+Sep 25 16:55:32 <Mark27>	Next field...
+Sep 25 16:55:55 <Mark27>	development_build_command="true";
+Sep 25 16:56:30 <Mark27>	(is there a development_build_command in your file ? If not then there is no need to put one)
+Sep 25 16:59:13 <Mark27>	rindolf: ?
+Sep 25 17:00:04 <rindolf>	Yes.
+Sep 25 17:00:13 <Mark27>	What is the next field ?
+Sep 25 17:00:31 <rindolf>	link_integration_directory
+Sep 25 17:00:42 <rindolf>	Oh and I have a bkbits.net update
+Sep 25 17:01:20 <Mark27>	is it set to "true" ?
+Sep 25 17:04:55 <Mark27>	Shlomi - have to go. Be back in 15 min...
+Sep 25 17:07:05 <rindolf>	OK. Thanks god UNIX is mostly stateless.
+Sep 25 17:07:27 <rindolf>	I'll go out biking and talk to you in the evenining.
+Sep 25 17:07:31 <--	rindolf has quit ("[x]chat")
+Sep 25 21:45:46 -->	rindolf (~shlomi@80.178.35.191) has joined #aegis
+Sep 25 21:45:55 <rindolf>	Mark27: Hello?
+Sep 25 21:46:16 <Mark27>	Hi
+Sep 25 21:46:30 <rindolf>	Hi. Can we proceed from where we left. editing the config file.
+Sep 25 21:47:45 <Mark27>	Sure
+Sep 25 21:47:52 <Mark27>	What entry were we on ?
+Sep 25 21:48:00 <rindolf>	What is this fcomp thing? Do I need to install it too?
+Sep 25 21:48:08 <Mark27>	No. It's part of fhist
+Sep 25 21:48:16 <rindolf>	There were several fhist entries that I skipped.
+Sep 25 21:48:24 <rindolf>	And fmerge?
+Sep 25 21:48:26 <Mark27>	Good. Those are correct.
+Sep 25 21:48:28 <Mark27>	Same thing
+Sep 25 21:48:39 <rindolf>	Now file_template
+Sep 25 21:48:40 <Mark27>	(fhist)
+Sep 25 21:48:54 <Mark27>	Ok. This is a nice feature which you don't have to use.
+Sep 25 21:49:06 <Mark27>	When you do aenf and add a new file which does not yet exist on the disk
+Sep 25 21:49:13 <rindolf>	integrate_begin_exceptions
+Sep 25 21:49:19 <Mark27>	(unlike what you did when you added your project files)
+Sep 25 21:49:19 <rindolf>	?
+Sep 25 21:49:31 <Mark27>	Then aegis uses a template for the file.
+Sep 25 21:49:40 <Mark27>	You can have a different file template for perl, C, C++ etc...
+Sep 25 21:49:42 <rindolf>	Mark27: Oh OK.
+Sep 25 21:49:55 <rindolf>	What about integrate_begin_exceptions
+Sep 25 21:50:03 <Mark27>	This way most of the boring stuff (copyright, structure etc..) is already written for you
+Sep 25 21:50:13 <Mark27>	You don't need it.
+Sep 25 21:50:27 <rindolf>	Ah. Like a pre-checkout trigger
+Sep 25 21:50:29 <Mark27>	(its files which are to not be put into the baseline after integration)
+Sep 25 21:50:40 <rindolf>	OK, I'll skip it - it's a perl project.
+Sep 25 21:50:43 <Mark27>	Do you want to set the trigget noe ?
+Sep 25 21:50:49 <Mark27>	Do you want to set the trigger now ?
+Sep 25 21:50:58 <rindolf>	Mark27: no. I'll skip it
+Sep 25 21:51:00 <Mark27>	Ok.
+Sep 25 21:51:16 <Mark27>	Anything else interesting in there ?
+Sep 25 21:51:18 <rindolf>	trojan_horse_suspect - I'll leave them as is.
+Sep 25 21:51:35 <rindolf>	No.
+Sep 25 21:51:43 <Mark27>	Yes (it's for being careful about integrating patches from other participatns...)
+Sep 25 21:52:02 <Mark27>	Ok. Youre done.
+Sep 25 21:52:07 <Mark27>	now issue "aeb".
+Sep 25 21:52:10 <Mark27>	(Aegis Build)
+Sep 25 21:52:12 <rindolf>	Mark27: Yes so I realized.
+Sep 25 21:52:19 <Mark27>	It should pass with no problem.
+Sep 25 21:52:26 <rindolf>	I need to set these env vars first.
+Sep 25 21:52:31 <Mark27>	Oh yes.
+Sep 25 21:52:38 <Mark27>	AEGIS_PROJECT and AEGIS_CHANGE
+Sep 25 21:53:31 <rindolf>	Fixed a typo and I'm on.
+Sep 25 21:53:54 <rindolf>	Listen, I'm completely tired right now. Can we stop at this point?
+Sep 25 21:54:02 <Mark27>	Sure
+Sep 25 21:54:35 <Mark27>	Have a nice night...:)
+Sep 25 21:54:44 <rindolf>	You've been a great heko. Send me the transcript. Hopefully I can make a nice quick start guide out of it 
+Sep 25 21:54:48 <rindolf>	Yeah, you too.
+Sep 25 21:54:56 <rindolf>	s/heko/help/
+Sep 25 21:55:19 <rindolf>	Or I can cook a nice quick start guide out of it.
+Sep 25 21:55:27 <rindolf>	;-)
+Sep 25 21:55:57 <rindolf>	Bye.
+Sep 25 21:55:59 <--	rindolf has quit ("[x]chat")
+**** ENDING LOGGING AT Thu Sep 26 03:37:56 2002
+
+**** BEGIN LOGGING AT Thu Sep 26 12:32:31 2002
+
+Sep 26 12:32:31 -->	mark ([ZItstduzf@line106-15.adsl.actcom.co.il) has joined #aegis
+Sep 26 12:32:31 ---	card.freenode.net sets mode +n #aegis
+Sep 26 12:32:31 ---	ChanServ sets mode +n #aegis
+Sep 26 12:32:31 ---	ChanServ sets mode +t #aegis
+Sep 26 12:32:31 ---	ChanServ has changed the topic to: aegis.sf.net - a transaction-based software configuration management system.
+Sep 26 12:32:31 ---	ChanServ removes channel operator status from mark
+Sep 26 12:32:55 <mark>	When ever you get it rindolf please DCC me so I can see it....:)
+Sep 26 12:33:11 <mark>	(Im right here at 12:33 AM thursday..)
+Sep 26 12:33:31 <mark>	(Im right here at 12:33 AM thursday..) - sorry 12:23 (my computer time is 10 minutes into the future)
+Sep 26 14:04:55 -->	rindolf (~shlomi@80.178.35.207) has joined #aegis
+Sep 26 14:05:02 <rindolf>	mark:hi
+Sep 26 14:05:26 <mark>	Hi
+Sep 26 14:05:32 <rindolf>	Hi
+Sep 26 14:05:37 <mark>	I dont get it
+Sep 26 14:05:45 <rindolf>	OK. Let me see, set the AEGIS env vars
+Sep 26 14:05:48 <rindolf>	don't get what?
+Sep 26 14:05:53 <mark>	when ever you offer DCC I press accept and X chat doesnt open a DCC tab ?!?
+Sep 26 14:06:09 <rindolf>	Because, I only do that to grab your attention. ;-)
+Sep 26 14:06:17 <mark>	Oh....:)
+Sep 26 14:06:30 <rindolf>	I can stop doing that.
+Sep 26 14:06:43 <mark>	You are tricky!!! You almost fooled me into going to the xchat development mailing list archive ...:)
+Sep 26 14:06:57 <rindolf>	sorry about that.
+Sep 26 14:07:21 <mark>	No. Actually it's good because I didn't configure Xchat to beep or something on new people coming in...:)
+Sep 26 14:07:35 <mark>	(So I wouldn't know you arrived otherwise)
+Sep 26 14:07:38 <rindolf>	OK. I'm quite clueless in configuring xchat
+Sep 26 14:07:46 <rindolf>	How do I configure it to log everything?
+Sep 26 14:07:51 <mark>	What client do you recommend ?
+Sep 26 14:07:58 <mark>	Let me check...
+Sep 26 14:07:59 <rindolf>	I use xchat
+Sep 26 14:08:16 <mark>	Settings/IRC/Logging
+Sep 26 14:08:41 <rindolf>	Done.
+Sep 26 14:08:45 <rindolf>	10x
+Sep 26 14:09:10 <mark>	Great... (It takes really little space and it's worth it if you want to get something out of a previous conversation...:)
+Sep 26 14:09:20 <rindolf>	OK. Now, the changes I commited were integrated into the repository already, right?
+Sep 26 14:09:32 <mark>	It isn't worth it though if you hand out in rooms where there are hundreds of people shouting...:)
+Sep 26 14:09:41 <mark>	No. They weren't...
+Sep 26 14:09:46 <mark>	You are still in the change
+Sep 26 14:09:54 <rindolf>	Hmm. So how do I submit them?
+Sep 26 14:09:59 <mark>	do "ael changes" and you'll see that your change is under development
+Sep 26 14:10:06 <rindolf>	Do you have the old changes
+Sep 26 14:10:27 <rindolf>	s/changes/transcripts/
+Sep 26 14:10:28 <mark>	You have the info about them but they are considered "completed"
+Sep 26 14:10:36 <mark>	Oh.... Yes.
+Sep 26 14:10:42 <mark>	I'll email them after this one.
+Sep 26 14:11:00 <rindolf>	mark: OK, how do I integrate them?
+Sep 26 14:11:08 <mark>	Ok. You need to pass a build first.
+Sep 26 14:11:11 <mark>	Do "aeb".
+Sep 26 14:11:15 <mark>	(Aegis build).
+Sep 26 14:11:23 <rindolf>	In any specific directory?
+Sep 26 14:11:42 <mark>	Doesnt matter (that's the whole beauty of using a system like Aegis)
+Sep 26 14:11:46 <rindolf>	aegis: logging to "/home/shlomi/i-bex.C010/aegis.log"
+Sep 26 14:11:47 <rindolf>	aegis: project "i-bex": change 10: development build started 13:56
+Sep 26 14:11:47 <rindolf>	aegis: true
+Sep 26 14:11:47 <rindolf>	aegis: project "i-bex": change 10: development build complete 13:56
+Sep 26 14:11:56 <mark>	Great. Your project just built.
+Sep 26 14:12:05 <mark>	Now do aede (Aegis development end)
+Sep 26 14:12:08 <rindolf>	At least built virtually
+Sep 26 14:12:26 <mark>	(Yes... but you can add other stuff as you go along - creation of ".tar.gz" file or whatever...)
+Sep 26 14:12:30 <rindolf>	aegis: project "i-bex": change 10: found 14 errors, this change remains in the
+Sep 26 14:12:30 <rindolf>	        'being_developed' state
+Sep 26 14:12:38 <mark>	What ?!?
+Sep 26 14:12:42 <rindolf>	And lots of other stuff beforhand
+Sep 26 14:12:48 <mark>	Show me the stuff...
+Sep 26 14:12:53 <mark>	(Just a snipplet will do)
+Sep 26 14:13:01 <rindolf>	aegis: project "i-bex": change 10: file "code/board.txt,D" not found
+Sep 26 14:13:02 <rindolf>	aegis: project "i-bex": change 10: the "code/board.txt" file was modified after
+Sep 26 14:13:02 <rindolf>	        the last difference, this change must successfully complete another
+Sep 26 14:13:02 <rindolf>	        'aegis -Diff' before it can leave the 'being_developed' state
+Sep 26 14:13:02 <rindolf>	aegis: project "i-bex": change 10: file "code/board2.txt,D" not found
+Sep 26 14:13:02 <rindolf>	aegis: project "i-bex": change 10: file "code/i-bex,D" not found
+Sep 26 14:13:04 <rindolf>	aegis: project "i-bex": change 10: file "images/actor.xcf,D" not found
+Sep 26 14:13:06 <rindolf>	aegis: project "i-bex": change 10: file "images/chasm.xcf,D" not found
+Sep 26 14:13:08 <rindolf>	aegis: project "i-bex": change 10: file "images/exit.xcf,D" not found
+Sep 26 14:13:10 <rindolf>	aegis: project "i-bex": change 10: file "images/gen-images.pl,D" not found
+Sep 26 14:13:11 <mark>	Oh...:)
+Sep 26 14:13:12 <rindolf>	aegis: project "i-bex": change 10: file "images/platform.xcf,D" not found
+Sep 26 14:13:14 <rindolf>	aegis: project "i-bex": change 10: file "images/tile_base.xcf,D" not found
+Sep 26 14:13:15 <mark>	Ok. No prob.
+Sep 26 14:13:16 <rindolf>	aegis: project "i-bex": change 10: file "images/tile_u.xcf,D" not found
+Sep 26 14:13:18 <rindolf>	aegis: project "i-bex": change 10: file "images/wall.xcf,D" not found
+Sep 26 14:13:20 <rindolf>	aegis: project "i-bex": change 10: file "images/you_win.xcf,D" not found
+Sep 26 14:13:22 <rindolf>	aegis: project "i-bex": change 10: this change must successfully complete an
+Sep 26 14:13:24 <rindolf>	        'aegis -Test'  before it can end development
+Sep 26 14:13:27 <mark>	do "aed". It will diff your "change" with the "baseline" (which is now empty)
+Sep 26 14:13:28 <rindolf>	aegis: project "i-bex": change 10: found 14 errors, this change remains in the
+Sep 26 14:13:30 <rindolf>	        'being_developed' state
+Sep 26 14:13:45 <rindolf>	aegis: project "i-bex": change 10: difference complete
+Sep 26 14:13:48 <mark>	Great.
+Sep 26 14:13:50 <rindolf>	and lots of stuff before it
+Sep 26 14:14:05 <mark>	Those are the diffs (You defined how to do them in the "config" file)
+Sep 26 14:14:13 <mark>	now "aede" (development end)
+Sep 26 14:14:31 <rindolf>	aegis: project "i-bex": change 10: this change must successfully complete an
+Sep 26 14:14:32 <rindolf>	        'aegis -Test'  before it can end development
+Sep 26 14:14:32 <rindolf>	aegis: project "i-bex": change 10: found 1 error, this change remains in the
+Sep 26 14:14:32 <rindolf>	        'being_developed' state
+Sep 26 14:14:48 <mark>	Great. Aegis wants you to test. You don't. Let Aegis know that.
+Sep 26 14:14:58 <rindolf>	How?
+Sep 26 14:15:00 <mark>	do "aeca" and change all test requirements to "false".
+Sep 26 14:15:11 <mark>	aeca = Aegis change attributes
+Sep 26 14:15:23 <rindolf>	OK.
+Sep 26 14:15:28 <rindolf>	Now aede again?
+Sep 26 14:15:29 <mark>	now "aede" (development end)
+Sep 26 14:15:32 <mark>	Yes.
+Sep 26 14:15:46 <rindolf>	aegis: project "i-bex": change 10: this change must successfully complete an
+Sep 26 14:15:47 <rindolf>	        'aegis -Test'  before it can end development
+Sep 26 14:15:47 <rindolf>	aegis: project "i-bex": change 10: this change must successfully complete an
+Sep 26 14:15:47 <rindolf>	        'aegis -Test -BaseLine'  before it can end development
+Sep 26 14:15:47 <rindolf>	aegis: project "i-bex": change 10: this change must successfully complete an
+Sep 26 14:15:47 <rindolf>	        'aegis -Test -REGression'  before it can end development
+Sep 26 14:15:49 <rindolf>	aegis: project "i-bex": change 10: found 3 errors, this change remains in the
+Sep 26 14:15:51 <rindolf>	        'being_developed' state
+Sep 26 14:16:03 <mark>	did you "aeca" ?
+Sep 26 14:16:11 <rindolf>	Before that?
+Sep 26 14:16:22 <mark>	Before the aede ?
+Sep 26 14:16:25 <rindolf>	I don't think so.
+Sep 26 14:16:50 <mark>	Oh sorry!!!! You need to change the test requirements to true (The attributes are about exemption from tests)
+Sep 26 14:17:01 <rindolf>	OK.
+Sep 26 14:17:08 <mark>	When I meant false I meant to tell aegis not to require testing...
+Sep 26 14:17:30 <rindolf>	shlomi:~/i-bex.C010# aede
+Sep 26 14:17:31 <rindolf>	aegis: project "i-bex": change 10: development completed
+Sep 26 14:17:31 <rindolf>	shlomi:~/i-bex.C010#
+Sep 26 14:17:35 <mark>	Great !!!!
+Sep 26 14:17:40 <mark>	You finished development.
+Sep 26 14:17:48 <mark>	This does NOT mean that your change is integrated...:)
+Sep 26 14:17:49 <rindolf>	I use # as my prompt. (don't worry - I'm not root - I just hate $)
+Sep 26 14:17:59 <rindolf>	mark: OK.
+Sep 26 14:18:11 <mark>	It means that it is now supposed to pass review and then integration
+Sep 26 14:18:13 <rindolf>	Now how do I integrate it?
+Sep 26 14:18:44 <mark>	do "aerpass" to pass review (there is a way to disable revies completely but I forgot how - need to look it up in the docs)
+Sep 26 14:18:55 <mark>	"aerpass" = Aegis review pass
+Sep 26 14:19:11 <rindolf>	aegis: project "i-bex": user "shlomi" is not a reviewer
+Sep 26 14:19:14 <mark>	Great.
+Sep 26 14:19:20 <rindolf>	Man, aegis is very pedantic
+Sep 26 14:19:35 <mark>	aenr shlomi (add shlomi as a reviewer)
+Sep 26 14:19:49 <mark>	Yes. It is pedantic because the reviewer could be a different UNIX user
+Sep 26 14:19:52 <rindolf>	aenr: command not found
+Sep 26 14:20:13 <rindolf>	maybe you meant aenrv
+Sep 26 14:20:18 <mark>	Exactly!!!
+Sep 26 14:20:34 <rindolf>	OK, I'm now a reviewer
+Sep 26 14:20:35 <mark>	(It's been about a year since I last did it).
+Sep 26 14:20:39 <mark>	Great. now aerpass.
+Sep 26 14:20:54 <rindolf>	aegis: project "i-bex": change 10: the developer of a change may not also
+Sep 26 14:20:55 <rindolf>	        review it
+Sep 26 14:21:13 <mark>	ok ok. This is pedantic by aegis but can be over ridden.
+Sep 26 14:21:24 <rindolf>	Great, how?
+Sep 26 14:21:34 <mark>	do "aepa" and allow developers to review. While you are at it allow developers to integrate too.
+Sep 26 14:21:41 <mark>	aepa = aegis project attributes.
+Sep 26 14:22:08 <rindolf>	Set all to true.
+Sep 26 14:22:11 <mark>	Great.
+Sep 26 14:22:15 <mark>	Now aerpass again.
+Sep 26 14:22:22 <rindolf>	aegis: project "i-bex": change 10: passed review
+Sep 26 14:22:30 <mark>	Great. Your change is now ready for integration.
+Sep 26 14:22:32 <rindolf>	Now my change is integrated?
+Sep 26 14:22:37 <rindolf>	Oh OK
+Sep 26 14:23:05 <mark>	(What you have to realize that there may be dozens of developers working on the same project submitting changes and the integrator is the one that gets to choose which go in and in what order)
+Sep 26 14:23:20 <mark>	(You will now take the role of Linus and decide to integrate your change)
+Sep 26 14:23:24 <rindolf>	BTW, regarding your "ultimate SCM". You may consider using XBase instead of SQL. It would be faster.
+Sep 26 14:23:40 <rindolf>	mark: OK.
+Sep 26 14:23:42 <mark>	There are reasons for SQL...:)
+Sep 26 14:23:50 <mark>	do "aeib" (aegis integrate begin)
+Sep 26 14:24:03 <rindolf>	As usual:
+Sep 26 14:24:08 <rindolf>	aegis: project "i-bex": user "shlomi" is not an integrator
+Sep 26 14:24:17 <mark>	(It may complain that you are not an integrator and so aeni shlomi)
+Sep 26 14:24:42 <rindolf>	OK. user shlomi is now an integrator
+Sep 26 14:24:45 <mark>	Great.
+Sep 26 14:24:48 <mark>	now "aeib".
+Sep 26 14:25:02 <rindolf>	aegis: project "i-bex": change 10: linking baseline to integration directory
+Sep 26 14:25:03 <rindolf>	aegis: project "i-bex": change 10: applying the change to the integration
+Sep 26 14:25:03 <rindolf>	        directory
+Sep 26 14:25:03 <rindolf>	aegis: logging to "/home/shlomi/Projects/Aegis//delta2303.001/aegis.log"
+Sep 26 14:25:03 <rindolf>	aegis: project "i-bex": change 10: integration has begun
+Sep 26 14:25:10 <mark>	Great. What aegis did is this:
+Sep 26 14:25:22 <mark>	1. It created a temp directory where the integration will take place.
+Sep 26 14:25:31 <mark>	2. It put the baseline there (currently nothing)
+Sep 26 14:25:38 <mark>	3. It applied your change on top of the baseline.
+Sep 26 14:25:51 <rindolf>	OK.
+Sep 26 14:25:54 <mark>	It is now ready to build a clean version and commit it.
+Sep 26 14:25:57 <mark>	do "aeb".
+Sep 26 14:26:06 <mark>	(Aegis build)
+Sep 26 14:26:10 <rindolf>	aegis: project "i-bex": change 10: you must create a "config" file
+Sep 26 14:26:26 <mark>	Did you not have a config file in your development directory ?
+Sep 26 14:26:52 <rindolf>	I did
+Sep 26 14:26:58 <mark>	Did you aenf it ?
+Sep 26 14:27:02 <mark>	(Tell aegis about it ?!?)
+Sep 26 14:27:04 <rindolf>	Let me see.
+Sep 26 14:27:09 <mark>	(do ael cf)
+Sep 26 14:27:19 <rindolf>	shlomi:~/i-bex.C010# aenf config
+Sep 26 14:27:20 <rindolf>	aegis: appending log to "/home/shlomi/Projects/Aegis/delta2303.001/aegis.log"
+Sep 26 14:27:20 <rindolf>	aegis: project "i-bex": change 10: this change is in the 'being_integrated'
+Sep 26 14:27:20 <rindolf>	        state, it must be in the 'being developed' state to create new files
+Sep 26 14:27:20 <rindolf>	        with it
+Sep 26 14:27:33 <mark>	You can't do that now... That will be cheating...:)
+Sep 26 14:27:48 <rindolf>	Ahhh.
+Sep 26 14:27:50 <mark>	You can't alter files in a change once they are submitted for review and integration.
+Sep 26 14:28:17 <mark>	(What if you alter things and they break the project ? the whole point of having you build and test is so that your change does NOT break the project)
+Sep 26 14:28:21 <rindolf>	So I'll have to rollback the change?
+Sep 26 14:28:28 <mark>	Exactly.
+Sep 26 14:28:31 <mark>	do "aeifail"
+Sep 26 14:28:36 <mark>	(integration fail)
+Sep 26 14:28:54 <rindolf>	What should I write in the editor? A comment.
+Sep 26 14:29:12 <mark>	This is a comment by the integrator to the developer about why he failed the integration...
+Sep 26 14:29:24 <mark>	Write whatever you want (you are playing all parts here).
+Sep 26 14:29:44 <rindolf>	OK. I said that I did not include the config file.
+Sep 26 14:29:59 <mark>	Great. If you config it right it will send the developer email with this in it...:)
+Sep 26 14:30:05 <rindolf>	Now, all over again. I don't recall the command by heart.
+Sep 26 14:30:24 <mark>	First go to your change and "aenf config"
+Sep 26 14:30:36 <rindolf>	Done
+Sep 26 14:30:48 <mark>	do "ael cf" and make sure you see "config" there.
+Sep 26 14:31:00 <rindolf>	OK. it is.
+Sep 26 14:31:05 <mark>	Actually make sure that every file you want is there and that there are no junk files there
+Sep 26 14:31:23 <mark>	Great. Now aeb.
+Sep 26 14:31:27 <mark>	(Build)
+Sep 26 14:31:34 <rindolf>	OK.
+Sep 26 14:31:40 <mark>	now "aede" (development end)
+Sep 26 14:31:55 <mark>	now "aerpass" (review pass)
+Sep 26 14:31:56 <rindolf>	aegis: project "i-bex": change 10: file "config,D" not found
+Sep 26 14:31:56 <rindolf>	aegis: project "i-bex": change 10: the "config" file was modified after the
+Sep 26 14:31:56 <rindolf>	        last difference, this change must successfully complete another 'aegis
+Sep 26 14:31:56 <rindolf>	        -Diff' before it can leave the 'being_developed' state
+Sep 26 14:31:56 <rindolf>	aegis: project "i-bex": change 10: found 2 errors, this change remains in the
+Sep 26 14:31:57 <rindolf>	        'being_developed' state
+Sep 26 14:32:06 <mark>	Oh ok. do "aed".
+Sep 26 14:32:14 <rindolf>	did aerpass
+Sep 26 14:32:16 <mark>	(to diff your change)
+Sep 26 14:32:24 <rindolf>	egis: logging to "/home/shlomi/i-bex.C010/aegis.log"
+Sep 26 14:32:25 <rindolf>	aegis: fcomp -w /dev/null /home/shlomi/i-bex.C010/config -o
+Sep 26 14:32:25 <rindolf>	        /home/shlomi/i-bex.C010/config,D
+Sep 26 14:32:25 <rindolf>	aegis: project "i-bex": change 10: difference complete
+Sep 26 14:32:35 <mark>	good. Now aede (development end)
+Sep 26 14:32:48 <rindolf>	aegis: project "i-bex": change 10: development completed
+Sep 26 14:32:52 <mark>	aerpass
+Sep 26 14:32:59 <rindolf>	again?
+Sep 26 14:33:13 <mark>	(it didn't succeed the first time - you were in development and not in review)
+Sep 26 14:33:17 <mark>	(see the log)
+Sep 26 14:33:20 <rindolf>	aegis: project "i-bex": change 10: passed review
+Sep 26 14:33:27 <mark>	good. aeib (begin integration)
+Sep 26 14:33:40 <rindolf>	aegis: project "i-bex": change 10: linking baseline to integration directory
+Sep 26 14:33:41 <rindolf>	aegis: project "i-bex": change 10: applying the change to the integration
+Sep 26 14:33:41 <rindolf>	        directory
+Sep 26 14:33:41 <rindolf>	aegis: logging to "/home/shlomi/Projects/Aegis//delta2348.001/aegis.log"
+Sep 26 14:33:41 <rindolf>	aegis: project "i-bex": change 10: integration has begun
+Sep 26 14:33:45 <mark>	great. 
+Sep 26 14:33:49 <mark>	Now aeb to build.
+Sep 26 14:33:59 <rindolf>	aegis: appending log to "/home/shlomi/Projects/Aegis/delta2348.001/aegis.log"
+Sep 26 14:33:59 <rindolf>	aegis: project "i-bex": change 10: integration build started 14:19
+Sep 26 14:33:59 <rindolf>	aegis: cd /home/shlomi/Projects/Aegis/delta2348.001
+Sep 26 14:33:59 <rindolf>	aegis: true
+Sep 26 14:33:59 <rindolf>	aegis: project "i-bex": change 10: integration build complete 14:19
+Sep 26 14:34:06 <mark>	Great. 
+Sep 26 14:34:14 <mark>	Now aeipass (aegis integration pass)
+Sep 26 14:34:35 <rindolf>	egis: project "i-bex": change 10: adjusting file modification times
+Sep 26 14:34:35 <rindolf>	aegis: project "i-bex": change 10: discarding old directories
+Sep 26 14:34:35 <rindolf>	aegis: project "i-bex": change 10: integrate pass
+Sep 26 14:34:41 <rindolf>	That's the final stuff
+Sep 26 14:34:43 <mark>	It's now integrated...
+Sep 26 14:34:47 <mark>	That's it.
+Sep 26 14:34:52 <rindolf>	Hallelujah!
+Sep 26 14:35:03 <mark>	If you want to change anything you need to open a new change with "aenc" (Aegis new change)
+Sep 26 14:35:05 <rindolf>	Now I want to make another change.
+Sep 26 14:35:24 <rindolf>	And how do I checkout files?
+Sep 26 14:35:30 <mark>	Remmebmer to change your environment variable AEGIS_CHANGE to point to the new change number
+Sep 26 14:35:36 <mark>	aecp (Aegis copy file)
+Sep 26 14:35:50 <mark>	Then they will be in your change and you can edit them
+Sep 26 14:35:57 <mark>	Before that your change directory will be empty
+Sep 26 14:35:58 <rindolf>	I must say BitKeeper was much less of an overkill.
+Sep 26 14:36:10 <mark>	Yes. But take heed of this:
+Sep 26 14:36:19 <mark>	1. Adding shlomi for everything is a one time deal.
+Sep 26 14:36:32 <mark>	2. The reveiw phase can be discarded and you wont have to pass through it
+Sep 26 14:36:46 <mark>	3. the config file was a one time deal
+Sep 26 14:37:01 <rindolf>	mark:of course.
+Sep 26 14:37:09 <mark>	So you actually did much more than what you will usually do to get a change in.
+Sep 26 14:37:12 <rindolf>	I suppose I'll get used to aegis eventually.
+Sep 26 14:37:31 <mark>	I want to emphasize something:
+Sep 26 14:37:45 <mark>	The most important aspects of Aegis in my mind is the build and test stuff.
+Sep 26 14:37:50 <mark>	Aegis requires that you pass them.
+Sep 26 14:37:58 <mark>	You can put anyhing in them.
+Sep 26 14:38:06 <mark>	You can check that every file has a "copyright" notice.
+Sep 26 14:38:11 <mark>	You can build C sources
+Sep 26 14:38:19 <mark>	You can verify that all perl files have pod documentation.
+Sep 26 14:38:35 <mark>	And Aegis will force you time and again to pass all of those when you change stuff...
+Sep 26 14:38:44 <rindolf>	OK. And I can make sure my HTML files are XHTML 1.0 Strict!
+Sep 26 14:38:49 <rindolf>	;-)
+Sep 26 14:38:51 <mark>	I do that all the time....
+Sep 26 14:38:59 <mark>	(it's part of my build process)
+Sep 26 14:39:09 <mark>	Let me tell you what I use the build and test of aegis for:
+Sep 26 14:39:29 <mark>	1. I check that all C++ classes are words in the dictionary catenated with first capital letter.
+Sep 26 14:39:33 <mark>	2. I run lint.
+Sep 26 14:39:45 <mark>	3. I check all pod documentation and embed history from aegis into the pod.
+Sep 26 14:39:52 <mark>	4. I spell check documents.
+Sep 26 14:40:10 <mark>	5. I convert Docbook files into html,ps,pdf,dvi and whatever.
+Sep 26 14:40:19 <mark>	6. I produce a "tar.gz" distribution of my project.
+Sep 26 14:40:31 <mark>	7. I check XML files according to DTD.
+Sep 26 14:40:40 <mark>	And numerous other things which I don't remmember...
+Sep 26 14:40:48 <rindolf>	Cool.
+Sep 26 14:41:05 <rindolf>	At the moment I don't need any tests.
+Sep 26 14:41:09 <mark>	That's the good thing. You do it once and aegis keeps nagging you about them...
+Sep 26 14:41:23 <mark>	The software solves puzzles right ?
+Sep 26 14:41:27 <rindolf>	I just need code in -> code out -> modify code
+Sep 26 14:41:34 <rindolf>	LM-Solve, yes.
+Sep 26 14:41:55 <mark>	Ok. How about a simple perl script that checks a specific instance is solved right ?
+Sep 26 14:41:57 <rindolf>	Oh no. what I added now, was i-bex, which is a StoneAge clone.
+Sep 26 14:42:08 <mark>	Oh. Ok.
+Sep 26 14:42:18 <rindolf>	mark: I can check that it is solvable, yes.
+Sep 26 14:42:29 <mark>	That would be great for the other project then.
+Sep 26 14:42:43 <mark>	The thing is that sometimes someone points out a bug to you
+Sep 26 14:42:49 <mark>	You think that the bug is trivial
+Sep 26 14:42:53 <mark>	You fix it.
+Sep 26 14:42:56 <rindolf>	Listen, at the moment I'm in "let's get to business, I'm a super-dummy" aegis user mode.
+Sep 26 14:43:15 <mark>	And you rush to release a new version only to find out a day later you broke the whole code
+Sep 26 14:43:26 <rindolf>	I'll learn more features as I get therer.
+Sep 26 14:43:30 <mark>	Ok.
+Sep 26 14:43:34 <rindolf>	mark: granted! <sigh>
+Sep 26 14:43:45 <rindolf>	But my software for the while is not mission critical.
+Sep 26 14:43:58 <mark>	Aegis will prevent this scenario from happening...
+Sep 26 14:44:06 <mark>	It doesn't really matter.
+Sep 26 14:44:26 <mark>	If your users don't get broken versions they learn to trust you more and they confidence in your software
+Sep 26 14:44:32 <mark>	(That's important as well)
+Sep 26 14:44:35 <rindolf>	mark: that's OK. Like I said, one step at a time. Or as Joel Spolsky used to say "Fire and Motion".
+Sep 26 14:44:47 <mark>	For instance - that is the reason that Aegis itself is so god damn stable
+Sep 26 14:45:00 <mark>	(Peter has about 180 tests that he runs before every release)
+Sep 26 14:45:01 <rindolf>	mark: granted.
+Sep 26 14:45:08 <mark>	(I never saw a bug twice)
+Sep 26 14:45:25 <mark>	(Once a bug is discovered peter adds a test specifically to detect if that bug is there)
+Sep 26 14:45:36 <mark>	(Then you know that you will never see it again...)
+Sep 26 14:45:59 <rindolf>	mark: unfortunately for me, in Freecell Solver it's hard to detect bugs. Once I made things better, and did not know what I did to do so.
+Sep 26 14:46:02 <mark>	(And I've been following Aegis for 5-6 years now)
+Sep 26 14:46:11 <rindolf>	I keep changing the solving algorithm
+Sep 26 14:46:25 <mark>	That is ok. But there a simple way to check that a solution is right ?
+Sep 26 14:46:36 <mark>	Write the code that checks a solution and run it on the result
+Sep 26 14:46:39 <rindolf>	I want to write a script that will do it.
+Sep 26 14:46:44 <mark>	That would be great.
+Sep 26 14:46:47 <rindolf>	But did not have the time yet.
+Sep 26 14:47:10 <rindolf>	And for the time being Freecell Solver is managed using CVS and I'm perfectly happy with it.
+Sep 26 14:47:12 <mark>	Once you write it you add it as a test with a single aegis command
+Sep 26 14:47:39 <rindolf>	I have written quite a lot of CVS glue already.
+Sep 26 14:47:45 <mark>	Actually you can do the same thing with CVS if you remmember to run the tests manually every time before a release...
+Sep 26 14:47:52 <rindolf>	OK, can you send me the transcripts now?
+Sep 26 14:47:55 <mark>	Sure
+Sep 26 14:48:34 <mark>	I'm searching for them...:)
+Sep 26 14:49:07 <mark>	I need lot out so the transcript will be written.
+Sep 26 14:49:12 <mark>	I need log out so the transcript will be written.

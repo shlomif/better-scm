@@ -1,0 +1,21 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : BitKeeper" />
+<p>
+<a href="bk_suitability.html">The Suitability of BitKeeper for Free Software
+Developers</a>
+</p>
+
+<p>
+<a href="relicensing_bk.html">Why a change of the BitKeeper licensing would
+be a good idea</a>. (from BitMover's POV).
+</p>
+
+<h2>Deprecated but Still Pertinent</h2>
+
+<p>
+<a href="gpling_bk.html">Why BitKeeper should be Open-Sourced Now</a> - I
+eventually decided it would not be a good idea to fully open-source it, but
+the document gives some reasons that it could benefit from something similar.
+</p>
+

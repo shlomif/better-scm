@@ -1,0 +1,92 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative" />
+
+<h2>Introduction</h2>
+
+<p>
+<a href="http://www.cvshome.org/">CVS</a> is the most commonly used revision 
+control system in the Open-Source world as of this writing. It 
+works well and is relatively reliable but has many limitations. It does not
+do file renames or copies, send the files to the server, no atomicity of 
+operations, and no good handling of binary files. Clearly it is showing its
+age.
+</p>
+
+<p>
+To address this problem several alternatives emerged, some of which are either
+open-source or available to the community of open-source developers. The 
+<b>Better SCM</b> project aims to empower them, to compare them, and criticize
+them, hopefully leading to each being a more complete and accessible 
+replacement.
+</p>
+
+<h2>Available CVS Alternatives</h2>
+
+<h3><a href="./arch/">Arch</a></h3>
+
+<p>
+A revision control system originally developed by Tom Lord that is distributed,
+can be networked and serviced by a large number of common networking protocols
+, and is very complete. GPLed.
+</p>
+
+<h3><a href="./aegis/">Aegis</a></h3>
+
+<p>
+A complete Software Configuration Management system by Peter Miller licensed
+under the GPL. Is distributed, very feature rich, and is designed for use
+by large projects and large teams.
+</p>
+
+
+<h3><a href="./bk/">BitKeeper</a></h3>
+
+<p>
+A proprietary revision control system by BitMover Inc. that is available for
+free software developers under a gratis license. There are many strings attached
+to it, so <a href="./bk/">read on</a>.
+</p>
+
+<h3><a href="./monotone/">Monotone</a></h3>
+
+<p>
+A capable version control system with a different philosophy, and strong
+reliance on strong cryptography.
+</p>
+
+<h3><a href="./subversion/">Subversion</a></h3>
+
+<p>
+A revision control system that was designed and programmed from the ground's
+up to be modular and scalable, yet resembling CVS a bit in nature. Not as 
+feature-rich as BitKeeper yet, but fully open-source.
+</p>
+
+<h3><a href="./vesta/">Vesta</a></h3>
+
+<p>
+A software configuration management system originally designed by Digital 
+Corp. Now distributed under the LGPL. Replaces both Make and CVS, and so
+can only be built with itself for the time being.
+</p>
+
+<h2>General Documents</h2>
+
+<p>
+<a href="http://www.advogato.org/article/546.html">$20 million needed for the
+"Better CVS" Initiative</a> - a call for arms stressing the need for work
+on better revision control tools and hosting for them.
+</p>
+
+<p>
+<a href="./docs/shlomif-evolution.html">Shlomi Fish' Evolution as a Revision
+Control User</a>
+</p>
+
+<p>
+<a href="./docs/nice_trys.html">Nice tries, but...</a> - what I think of 
+OpenCM, Meta-CVS and other attempts to make an incomplete version control 
+solution.
+</p>
+

@@ -1,0 +1,294 @@
+#include '../template.wml'
+
+<subject "Changing the BitKeeper License and Why it is Needed" />
+    
+<h2>Introduction</h2>
+
+<p>
+As was seen in the "Suitability of BitKeeper for Free Software 
+Developers", the BitKeeper License and its dynamics prevents it
+from being employed for free software projects. This is unfortunate
+since Larry McVoy's original intention was that BitKeeper would
+eventually be adopted by all free software projects out there.
+</p>
+
+<p>
+In this document, I will show that the restrictions on the BitKeeper
+license have other bad side-effects as far as BitMover is concerned. I
+believe that in order for BitKeeper to be widely deployed and become
+a popular replacement for CVS, its license needs to drastically 
+changed. Take notice that I do not suggest making BitKeeper fully open-source
+(see below), but the majority of developers out there will have no
+problem using a solution that is only almost open-source.
+</p>
+
+<h2>Life and Death in the Hands of the License</h2>
+
+<p>
+There are several examples that show that the choice of a license is
+the most important choice a project can take. Linus Torvalds claimed
+in <a href="http://www.webreview.com/1998/04_10/developers/04_10_98_4.shtml">an interview</a> 
+with him that "making Linux GPL'd was definitely the best thing I ever did". 
+Many people claim its GPL nature gave Linux a very good advantage over the 
+BSD-licensed BSDs.
+</p>
+
+<p>
+There is another example: MySQL. MySQL emerged at a time when the two 
+available SQL database systems were Postgres, which was BSD-licensed 
+and quite heavyweight, and mSQL or Mini-SQL, which was lightweight, with
+a reduced functionality, freely distributable but required a license. 
+MySQL started as an internally used database by T.c.X DataKonsulter, 
+a Swedish consultants company. They decided to release it as
+shrinkwrap as a not fully free but usable license, that required no
+payment for depolyment on UNIX. As a result, MySQL became very popular 
+and is the most widely used Database server today.
+</p>
+
+<p>
+So popular that many web applications (including one of my own) depend
+on it and would not work with any other application. This is partly due
+to the fact, that programmers work directly with the MySQL specific 
+API, and partly due to the fact that writing SQL that is portable 
+between various databases is surprisingly hard and many times one have 
+to rely on proprietary extensions. When MySQL.com was formed to 
+maintain the database, its investors requested that MySQL would be made         open-source, so they will have a guarantee that it remain accessible for
+use in case something happens to the company. MySQL AB released it under
+the GPL.
+</p>
+
+<p>
+Now, I believe releasing MySQL under the GPL in the first case would 
+have caused it to flourish, but there would have been little 
+possibility to earn money out of it for T.c.X/MySQL AB. By having 
+conquered the market first and then only GPLing it, MySQL was able
+to gain a market dominance while still eventually being able to 
+open-source the code.
+</p>
+
+<p>
+I think a similar analogy can be made to BitKeeper, which while being 
+a relatively successful commercial product, has yet to be widely 
+deployed among open-source developers.
+</p>
+
+<p>
+Note that I'm not one of those people who believe the GPL is ideal for
+everything. I think every project has an appropriate license depending
+on the niche it is trying to fill. For example, I believe the Public 
+Domain was a very good choice for 
+<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell Solver</a> 
+(shameless plug) because it made it an excellent choice for vendors of 
+freeware and shareware Freecell implementations who cannot comply with the 
+restrictions of the GPL. Similarily, I believe the change of Wine's
+license to LGPL was a mistake and that they should have kept it as X11.
+</p>
+
+<h2>BitMover's Intentions</h2>
+
+<p>
+BitMover wishes to make a land-grab on the market of Software Configuration
+Managements systems and revision control systems. However, there are in fact
+two markets here. The first is that of companies who are used to pay a lot
+of money for such solutions (such as ClearCase or Perforce). The second
+is that of open-source projects and of companies who will not pay a dime
+for it.
+</p>
+
+<p>
+Getting hold of the former should be quite easy since BitKeeper is much 
+superior to the current competition. However, the free-users will not fall
+so easily. After all, CVS is <b>fine</b> - it is reliable, and many very
+large projects were managed with it. It has its limitations, but is still
+nice to work with. And then there are Open-Source alternatives (Aegis, 
+Subversion, Arch, etc) - which are better than CVS, to choose from should you
+want something better.
+</p>
+
+<p>
+These clients will not use BitKeeper out of technical superiority alone. No 
+sir! They will need it to be accessible and free enough to use so it will
+replace their convenient CVS deployment. If BitMover wishes to get hold of 
+this market it needs to make sure BitKeeper is not only programmed write,
+but also licensed right.
+</p>
+
+<h2>A Glimpse into the Future</h2>
+
+<p>
+Let's suppose the development of BitKeeper is present at 
+point x=3.0 and advances in speed 2t. Now let's suppose the development
+of Subversion is at point x=1.0 and advances at speed 1t. (this is a
+worst case scenario). However, the license of BitKeeper prevents it from
+being deployed by free software developers. 
+</p>
+
+<p>
+Thus, BitKeeper would probably become the next ClearCase. (albeit 
+probably, a better one) Subversion (or something else) would become the
+next CVS. Fair enough.
+</p>
+
+<p>
+Now for two questions:
+</p>
+
+<ol>
+    <li>Do you use ClearCase at home for your pet projects and revision control needs?</li>
+    <li>
+    Would you recommend ClearCase for your small workplace?
+    </li>
+</ol>
+
+<p>
+In the history of revision control systems, many of them went into 
+oblivion. SCCS, for instance. The Google 
+<a href="http://directory.google.com/Top/Computers/Software/Configuration_Management/Tools/">Configuration Management Tools</a> 
+directory lists many such implementations most of them are yet to make
+a difference somewhere. SCCS died because it was made proprietary by
+AT&amp;T and replaced by RCS and later on CVS. BitKeeper may might as
+well be a footnote in the history of SCMs, something very good that 
+persisted for a while until superceded by something better or more
+readily available. Like ClearCase.
+</p>
+
+<h2>Why MvCoy's Attitude towards free users is wrong</h2>
+
+<p>
+The BitKeeper gratis license forces the user to upgrade to the 
+newer version should it come out. Furthermore, the license may 
+be changed between version to version. The new BitKeeper License 
+contains other restrictions such as a non-compete clause or the
+fact the the source inside the repositories must be made available
+under a free software license. And naturally, the source code is not
+available, because someone may patch it to remove the OpenLogging 
+restrictions.
+</p>
+
+<p>
+McVoy placed all these restrictions to prevent people from abusing 
+BitKeeper. What he does not realize that they would have abused it
+with or without these restrictions, and that he is only harming free
+users who are are doing nothing wrong but somehow are affected by
+these restrictions. Moreover, it it very improbable that the abusers
+would become paying customers. Most vendors of commercial, internal,
+embedded or hardware-accompanied software, would either pay for 
+BitKeeper or use something else free-of-charge like CVS, Subversion
+or Aegis. Those who don't respect copyright law enough to do so,
+can hardly be expected to become paying customers.
+</p>
+
+<p>
+Requiring the source to be published under a free software license is
+draconic. Many times, free software developers keep not-so-free content
+in the repositories, which they did not originate with. Other times, the
+software is close to being open-source but not quite. OpenLogging and a 
+requirement that the repository be made online is enough. Even if the 
+contents are proprietary (and just sourceware), a person should be able
+to use it. That's because he would pay should he wish to continue using
+BitKeeper while keeping the source for himself.
+</p>
+
+<p>
+The non-compete clause is especially useless. Even if I'm a developer
+of a competing solution, using the BitKeeper binary will only help me
+learn about its features. Even the source would only be enough to learn
+about how it is implemented as I cannot directly use the soure in my 
+project, legally and practically. (the codebases may be completely 
+different)
+</p>
+
+<p>
+To sum up, all the restrictions that were added to BitKeeper along the 
+way, would not protect it from being abused, but would harm those users
+who wish to happily use it, without doing anything wrong.
+</p>
+
+<h2>A Utopian Vision</h2>
+
+<ol>
+    <li>
+    BitKeeper is distributed as part of major distributions such as
+    RedHat, Mandrake, S.u.s.e.
+    </li>
+    <li>
+    BitKeeper is the most commonly used revision control system in
+    the open-source world, replacing CVS.
+    </li>
+    <li>
+    BitKeeper is deployed in many software houses who pay for 
+    licensing for it.
+    </li>
+    <li>
+    BitMover is flooded with patches contributing functionality to 
+    BitKeeper, some of them of very high quality. Thus, development
+    is much more rapid.
+    </li>
+    <li>
+    BitMover is very successful and the size of Rational.
+    </li>
+</ol>
+
+<p>
+How is it possible? By changing the license to make sure users can 
+continue using older versions, even modified. Removing the non-compete 
+clause and other irrational restrictions. Revealing the source 
+code is optional, but will do good in the long run.
+</p>
+
+<p>
+BitMover is profitable now, which is good. But if Larry McVoy wishes
+to make a greater difference he has to look beyond the near-term short
+and false corporate interests, take a chance and make sure BitKeeper 
+is present everywhere. This cannot happen with its current licensing 
+scheme. Without it, BitKeeper would never become the next CVS, which
+was his intention in the first place.
+</p>
+
+<table border="1" summary="A Quote">
+<tr>
+<td>
+<p>
+"Far better it is to dare mighty things, to win glorious triumphs, 
+even though checkered by failure, than to rank with those poor 
+spirits who neither enjoy much nor suffer much, because they 
+live in the gray twilight that knows not victory nor defeat." 
+(Theodore Roosevelt)
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+The choice McVoy and Co. must make is now. Subversion and other 
+open-source alternatives may not be feature by feature compatible
+with BitKeeper at present, but they may become so in the future. There
+were times where an open-source project surpassed the functionality
+of a proprietary alternative, even though seemingly the latter had
+more resources at its disposal. This may happen to BitKeeper. Or 
+just most open-source developers would settle for something less 
+able. 
+</p>
+
+<p>
+I am already involved in Subversion, and while it progresses 
+slowly, there are many interested developers there. The limitations
+of CVS and attempts to resolve them are the talk of the day in
+several Internet forums I subscribe to, or visit. If enough people
+want something better than CVS and Open-Source or something similar, 
+you can be sure they get it. The question is whether it would be 
+BitKeeper.
+</p>
+
+<h2>References</h2>
+
+<p>
+<a href="http://www.joelonsoftware.com/articles/Platforms.html">Platforms</a>
+- an article by Joel Spolsky that explains how a platform vendor should
+ship his platform.
+</p>
+
+<p>
+<a href="http://better-scm.berlios.de/bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
+</p>
+

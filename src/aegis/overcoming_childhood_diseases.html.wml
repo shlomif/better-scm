@@ -1,0 +1,117 @@
+#include '../template.wml'
+
+<subject "Overcoming Aegis Childhood Diseases" />
+
+<define-tag problem>
+<h3 class="problem">Problem</h3>
+</define-tag>
+
+<define-tag solution>
+<h3 class="solution">Solution</h3>
+</define-tag>
+
+
+<p>
+Aegis is a mature SCM with many powerful features and may seem like a good
+candidate for an open-source alternative that can take on both BitKeeper
+and ClearCase. However, as a former CVS and BitKeeper user I was not able
+to properly use it for my relatively limited projects due to its complexity
+and idiosyncrecies. I believe Aegis suffers from several childhood diseases
+that should be remedied in order for it to be widely accepted by the community
+at large.
+</p>
+<p>
+This document should be considered as a todo list.
+</p>
+<h2>File Copies</h2>
+
+<problem />
+<p>
+Copying one file to another is possible in Aegis, but in a twisted way: you
+have to move the file and then undo the deletion of the old name. In BitKeeper,
+file copies are possible and in Subversion they are one of the most elementary
+(and cheap) operations. I believe Aegis should have a dedicated command for
+copying files. The people want them.
+</p>
+
+<solution />
+
+<p>
+Implement another command that does just that. (more job for me.)
+</p>
+
+<h2>An Internal Permission System</h2>
+<p>
+Aegis relies on the UNIX Filesystem permissions' system to decide who can do
+what in the project. While this gives greater security, it also means it is
+harder to run it in userland, and harder to port to other systems such as
+Win32. Aegis in-fact runs SUID root.
+</p>
+<p>
+I believe one should give the option of using an internal permissions system
+that is equivalent to the UNIX filesystem one (with all modern enhancements such
+as capabilities and access-control lists). Aegis would still be able to work
+with the raw filesystem permissions, but can also safely deployed in user-land.
+</p>
+<h2>Version Numbers with More than Two Digits</h2>
+<problem />
+<p>
+Aegis currently supports only two digits in its version numbers. This is
+inadequate for most projects as most of them use at least three. I suggest
+Aegis convert to using an arbitrary number of digits, that can be chosen
+at the project configuration time. This would make its versioning system
+suitable for more projects to default on.
+</p>
+<solution />
+<p>
+Use Aegis' Branches - it's there and it's working.
+</p>
+
+<h2>The Command Organization</h2>
+<problem />
+<p>
+When invoked on the command line, the command <tt>aegis</tt> is followed by
+a verbose command like <tt>-Change_Directory</tt> or <tt>-ReMove_Project</tt>,
+or alternatively there are the <tt>ae*</tt> shortcuts that are present as shell
+functions. Most other revision control systems (CVS, Arch, BitKeeper and
+Subversion) use a <tt>[Program] [short-command] [parameters]</tt> scheme, which
+make more sense.
+</p>
+<p>
+The <tt>ae</tt> shortcuts pollute the main shell namespace and are confusing.
+I suggest aegis converts to <tt>aegis [mycommand] parameters</tt> like:
+</p>
+<p>
+<pre>
+aegis review
+aegis cp myfile1.txt
+aegis rm myfile1.txt
+aegis annotate myfile
+</pre>
+</p>
+<p>
+Which is the more standard and more sensible.
+</p>
+
+<solution />
+
+<p>
+It is possible. <tt>aegis -cp</tt> will copy a file and abbreviations can be
+done very largely.
+</p>
+
+<h2>Better Documentation</h2>
+
+Most of Aegis' documentation is released as PostScripts or PDFs. Furthermore,
+the PDFs are not very Acrobat Readerish: they have no Bookmarks, hyperlinks or
+other bells and whistles. I believe HTML documentation and better PDFs (and
+possibly MS-Word documents) are in order, which could be achieved by converting
+the documentation to DocBook/XML.
+</p>
+
+<p>
+Naturally, it will require a lot of work, but even I was personally bothered by
+it.
+</p>
+
+

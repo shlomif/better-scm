@@ -1,0 +1,12 @@
+<table border="1" summary="Arch Quick Information">
+<tr>
+<td>
+<b>Homepage:</b> <a href="http://gnuarch.org/">http://gnuarch.org/</a><br />
+<b>License:</b> GPL<br />
+<b>Building Process:</b> Autoconf-like<br />
+<b>Depends on:</b> a GNU system with GNU make, patch, diff and ftp<br />
+<b>Distributed:</b> Yes, via FTP or something similar.<br />
+</td>
+</tr>
+</table>
+

@@ -1,0 +1,86 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Comparison" />
+
+<h2>Introduction</h2>
+
+<p>
+This is a comparison between various version control systems, on an 
+item-by-item basis. Its HTML file is self-contained and can be easily
+sent as an attachment.
+</p>
+
+<p>
+If there's something you feel should be added, or wish to correct the
+information of a version control system or add information about a 
+new one, <a href="mailto:shlomif@vipe.technion.ac.il">send me an E-mail</a>.
+</p>
+
+<h2 style="background-color : transparent"><a href="comparison.html">The Comparison Itself</a></h2>
+
+<h2>Covered Systems</h2>
+
+<ul>
+<li>
+<a href="http://www.cvshome.org/">CVS</a>
+</li>
+<li>
+<a href="http://aegis.sourceforge.net/">Aegis</a>
+</li>
+<li>
+<a href="http://gnuarch.org/">Arch Revision Control System</a>
+</li>
+<li>
+<a href="http://www.bitkeeper.com/">BitKeeper</a>
+</li>
+<li>
+<a href="http://www.telelogic.com/products/synergy/index.cfm">CM Synergy</a>
+by Telelogic.
+</li>
+<li>
+<a href="http://www.relisoft.com/co_op/">Code Co-Op</a>
+</li>
+<li>
+<a href="http://www.venge.net/monotone/">Monotone</a>
+</li>
+<li>
+<a href="http://www.opencm.org/">OpenCM</a>
+</li>
+<li>
+<a href="http://www.perforce.com/">Perforce</a>
+</li>
+<li>
+<a href="http://subversion.tigris.org/">Subversion</a>
+</li>
+<li>
+<a href="http://svk.elixus.org/">svk</a>
+</li>
+<li>
+<a href="http://www.vestasys.org/">Vesta</a>
+</li>
+<li>
+<a href="http://msdn.microsoft.com/ssafe/">Visual SourceSafe</a> by Microsoft
+Corp.
+</li>
+</ul>
+
+<h2>Sources of the Comparison</h2>
+
+<p>
+The comparison is generated from an XML file by a Perl script. The script
+uses the XML::LibXML bindings to libxml. Following are the sources:
+</p>
+
+<ul>
+<li><a href="scm-comparison.xml">scm-comparison.xml</a> - the XML source of the comparison</li>
+<li><a href="gen-dtd.pl">gen-dtd.pl</a> - a Perl script to generate the DTD.</li>
+<li><a href="render.pl">render.pl</a> - a Perl script to render the comparison
+into HTML.</li>
+<li><a href="bk-license.html">bk-license.html</a> - a note about the BitKeeper license.</li>
+<li><a href="Makefile">Makefile</a> - a makefile to automate the task of maintaining the comparison.</li>
+<li><a href="render-docbook.pl">render-docbook.pl</a> - a Perl script to render
+the comparison into DocBook/XML.</li>
+<li><a href="ScmCompare.pm">ScmCompare.pm</a> - a Perl module required by the
+two rendering scripts.</li>
+</ul>
+

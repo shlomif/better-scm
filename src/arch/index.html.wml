@@ -1,0 +1,42 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Arch" />
+
+<h2>Homepage</h2>
+
+<p>
+<a href="http://gnuarch.org/">Homepage of Arch</a>
+</p>
+
+<p>
+<a href="http://www.gnu.org/software/gnu-arch/">Homepage of tla, the most common
+Arch implementation</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Arch was created by Tom Lord to satisfy his and others revision control 
+needs. It handles file renames, branching, changesets and other things that 
+CVS lacks. 
+</p>
+
+<p>
+In <a href="http://subversion.tigris.org/servlets/ReadMsg?list=dev&msgNo=24695">a message to the Subversion Development Team</a> Tom Lord noted that it is 
+worthwhile to unify Arch' approach to distribution and Subversion's approach to storage management. When the following will take course has yet to be seen.
+</p>
+
+<p>
+Arch has the advantage that its service is nothing more than a dumb remote
+file-transfer protocol (FTP, SFTP and WebDAV over HTTP or HTTPS are supported).
+This makes it very easy to set up a service of it.
+</p>
+
+<h2>Links</h2>
+
+<p>
+<a href="http://gnuarch.org/bin/view/Main/ArchComparisons">Comparisons of 
+Arch to BitKeeper, CVS, Darcs, Monotone and Subversion.</a>.
+</p>
+
+
