@@ -5,6 +5,3 @@
 
 * Comparison: write an XSLT transformation to render the comparison into
 HTML.
-
-* Fix the possible HTML injection problems in the processing of plain
-text blocks in the converters.
