@@ -8,7 +8,7 @@
 
 <p>
 When you are a DOS programmer in the late 80's and early 90's people don't
-tell you about UNIX or about Source Control. Even, when you start programming 
+tell you about UNIX or about Source Control. Even when you start programming 
 in Windows and then in UNIX, not everybody use it. So you use poor man's methods
 of <tt>cp myfile myfile.bak</tt> or <tt>myfile.txt.1</tt> <tt>myfile.txt.2</tt>
 or copying everything to a different directory. Stuff like that.
@@ -26,9 +26,9 @@ only had a vague idea of what revision control was and what it was good for.
 
 <p>
 I remember reading the <a href="http://www.joelonsoftware.com/articles/fog0000000043.html">Joel Test</a> 
-and was surprised that Joel Spolsky necessitates use of source control and 
+and was surprised that Joel Spolsky necessitated the use of source control and 
 actually sais CVS is fine in comparison to commercial offerings. This made me
-intrigued of what I did wrong so far.
+intrigued of what I had done wrong so far.
 </p>
 
 <h2>The Pleasant CVS Experience</h2>
@@ -56,7 +56,7 @@ When I started working on
 <a href="http://vipe.technion.ac.il/~shlomif/lm-solve/">LM-Solve</a>, I used 
 CVS (naturally) and quickly ran into some of its limitations like no file 
 renames, copies, etc. I had previously attended a lecture by Moshe Zadka about
-CVS (half of it I did not understand or it was still too advanced for me), 
+CVS (half of which I did not understand or it was still too advanced for me), 
 where he said a project called Subversion will address all the limitations 
 of CVS. I looked at Subversion and even joined the mailing list but could not 
 get a public hosting for it.
@@ -67,7 +67,9 @@ I looked for something better and found <a href="http://www.bitkeeper.com/">
 BitKeeper</a>, which was free for open-source developers and it was clear on
 the site that they had a hosting service. I read a Linux Weekly News editorial
 about it and was quite impressed with Larry McVoy's, BitKeeper architect's 
-attitude towards his product and the free software developers community. (as it turned out it changed a lot since the editorial had been written).
+attitude towards his product and the free software developers community. 
+(As it turned out, it has changed a lot since the editorial had 
+been written).
 </p>
 
 <p>
@@ -79,7 +81,7 @@ customers.
 </p>
 
 <p>
-In any case, after a while of neglect, I set up a repository and started 
+In any case, after a period of neglect, I set up a repository and started 
 hacking. The only thing I can say about BitKeeper is that it is wonderful. It 
 feels very slick and is very slick. One works with a copy of the repository,
 so there isn't a constant client-server traffic, and its offers a lot of other
@@ -87,11 +89,11 @@ power. I was very much impressed.
 </p>
 
 <p>
-I ran into a few problems which I consulted the mailing list or was able to 
-solve on my own and I believe that once was able to help a newbie out. I also
-discovered the BitKeeper source code was no longer available online for all to 
-download, which did not bother me much, as I was hoping I could eventually win
-the vendor's trust to get it myself.
+I ran into a few problems for which I consulted the mailing list or was able 
+to solve on my own and I believe that once was able to help a newbie out. I 
+also discovered the BitKeeper source code was no longer available online for 
+all to download, which did not bother me much, as I was hoping I could 
+eventually win the vendor's trust to get it myself.
 </p>
 
 <p>
@@ -113,7 +115,7 @@ a different license. So BitKeeper was taken right out of my hands.
 
 <p>
 I sent a letter to bitkeeper-users titled "Larry - You Lost Me". Larry calmly 
-responded that he is sorry to hear that, but such discussions are off topic 
+responded that he was sorry to hear that, but such discussions were off topic 
 their. This caused an entire chain of events whose end results were:
 </p>
 
@@ -131,17 +133,17 @@ open-source alternatives that were better than CVS (but perhaps not
 as good as BitKeeper)
 </li>
 <li>
-I decided that I wish to contribute to one source control project or another.
+I decided that I wished to contribute to one source control project or another.
 </li>
 </ol>
 </p>
 
 <p>
-I liked BitKeeper and still would love to use it, but was appaled by Mr. 
+I liked BitKeeper and still would love to use it, but was appalled by Mr. 
 McVoy's attitude towards free users. Note that this was before the fiasco 
 with the non-compete clause was Slashdotted. (Note that I still respect Larry 
 as an engineer and a software vendor who is trying to sell BitKeeper to 
-software houses)
+software houses.)
 </p>
 
 <p>
@@ -152,7 +154,7 @@ So I was looking for something else.
 
 <p>
 When I was first directed to the Aegis homepage by a user who read my Advogato
-diary where I told I was looking for something better than CVS, I could not 
+diary where I had said I was looking for something better than CVS, I could not 
 understand half of the features that were presented there. But after I used
 BitKeeper, all those features made sense, and I was impressed by its 
 capabilites.
@@ -181,22 +183,22 @@ Subversion.
 <h2>Subversion - The Silver Bullet, that was not made of Gold</h2>
 
 <p>
-I started using Subversion, and immidiately saw that it was very nice
+I started using Subversion, and immediately saw that it was very nice
 to use, a bit like CVS. It felt very slick and was very slick. Setting up
 was a bit hard, with having to set Berkeley DB 4.0 and Apache 2.0 beforehand,
 but afterwards it worked nicely. Upgrading turned out to be slightly easier,
-with the ability to check the latest copy out of the repository, build it and install it.
+with the ability to check out the latest copy out of the repository, build it and install it.
 </p>
 
 <p>
 As opposed to BitKeeper, Subversion is not distributed, but this feature is 
 planned. Still, it is very stable and usable, (with a few quirks that can be 
-avoided with some expertise), so I used it ever since. I still maintain 
+avoided with some expertise), so I have used it ever since. I still maintain 
 Freecell Solver with CVS, because I don't have Subversion hosting. 
 Nevertheless, I can probably become a junior partner in a Co-oped server 
 hosted at an Israeli ISP, where I can set up Subversion hosting. I'll have to 
 pay some money for it, but I guess there's no such thing as a free lunch 
-(until at least the hosting services start supporting Subversion as well, 
+(at least until the hosting services start supporting Subversion as well, 
 which I hope will happen soon).
 </p>
 
@@ -217,15 +219,17 @@ will adopt it as well, and this will provide an even more accessible
 alternative to csie.org.
 </p>
 <p>
-An Arch can be set up very easily because it just requires a space with a 
-remote filesystem protocol access. (such as FTP, SFTP or WebDAV). As a result
-many Arch repositories became hosted on the Net. (Here's a <a href="http://mirrors.sourcecontrol.net/">partial mirror of the public ones</a>)
+An Arch repository can be set up very easily because it just requires a space 
+with a  remote filesystem protocol access. (such as FTP, SFTP or WebDAV). As 
+a result many Arch repositories became hosted on the Net. (Here's a 
+<a href="http://mirrors.sourcecontrol.net/">partial 
+mirror of the public ones</a>)
 </p>
 <p>
 With the accessibility and ease of setup of Arch, Subversion and other similar 
-open source version control sysetms, it is probable that BitKeeper will 
+open source version control systems, it is probable that BitKeeper will 
 eventually have very little use among open source hackers, and have nothing
-too much besides the Linux kernel repositories to show for. (and a whole slew
+too much besides the Linux kernel repositories to show for. (And a whole slew
 of flamewars in the <a href="http://www.tux.org/lkml/">Linux Kernel Mailing 
 List</a> about it).
 </p>
@@ -254,7 +258,7 @@ the attitude and license change.
 <p>
 Larry may be confident that there is not an open-source alternative that is 
 up-to-par with BitKeeper at present. But it does not mean there will never be 
-one. Smallteams of open source hackers, were known to create products that 
+one. Small teams of open source hackers, were known to create products that 
 surpass in quality those of competing commercial companies who seemingly had 
 much more personnel and resources on their hands. (e.g: gcc, GNU Emacs, The 
 GIMP, KDE and GNOME, GNU/Linux itself, Perl/Python/PHP, Apache, Zope) While I 
