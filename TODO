@@ -8,6 +8,3 @@ HTML.
 
 * Fix the possible HTML injection problems in the processing of plain
 text blocks in the converters.
-
-* Merge ScmCompare.pm into XML::CompareML::Base.
-
