@@ -7,7 +7,8 @@ D = dest
 
 WML_FLAGS = -DBERLIOS=BERLIOS
 
-IMAGES_PRE1 = $(shell cd src && (ls *.tar.gz *.zip *.patch *.css *.png bk/*.html aegis/*.txt subversion/*.txt))
+include include.mak
+# IMAGES_PRE1 = $(shell cd src && (ls *.tar.gz *.zip *.patch *.css *.png bk/*.html aegis/*.txt subversion/*.txt))
 IMAGES = $(addprefix $(D)/,$(IMAGES_PRE1))
 
 # WML_FLAGS = -DBERLIOS=BERLIOS
