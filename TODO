@@ -1,3 +1,11 @@
 * CSS tweaks:
     - Add padding to the main layout body.
 
+* Integrate the comparison generation with the main site.
+
+* Comparison: make sure the Perl script understands the implementations
+tag.
+
+* Comparison: write an XSLT transformation to render the comparison into
+HTML.
+
