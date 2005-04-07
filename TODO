@@ -3,8 +3,6 @@
 
 * Integrate the comparison generation with the main site.
 
-* Comparison: write an XSLT transformation to render the comparison into
-HTML.
-    - Generate the table of contents.
+* Comparison: fix the XSLT transformation to render the <a href> hyperlinks
+as <a href's in the HTML.
 
-* Add the VSS input from the E-mails.
