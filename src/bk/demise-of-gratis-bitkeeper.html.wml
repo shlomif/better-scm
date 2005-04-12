@@ -1,0 +1,59 @@
+#include '../template.wml'
+
+<subject "The Demise of the Gratis BitKeeper Licensing" />
+
+<p>
+<b>Written at:</b> 12-April-2005
+</p>
+
+<p>
+BitMover, <a href="http://www.bitkeeper.com/">BitKeeper</a>'s parent company,
+<a href="http://www.bitkeeper.com/press/2005-04-05.html">announced 
+that it will discontinue the gratis version of BitKeeper intended for 
+development of Open Source Software</a>. The implications of this 
+are layed out in <a href="http://kerneltrap.org/node/4966">this KernelTrap
+editorial</a>. A NewsForge article 
+<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;tid=25&amp;tid=3">interviews the parties involved in this decision and what
+they think</a>.
+</p>
+
+<p>
+You can also find some discussion of it <a href="http://developers.slashdot.org/article.pl?sid=05/04/06/140202&amp;tid=163&amp;tid=8&amp;tid=106">in this 
+Slashdot discussion</a>, <a href="http://linux.slashdot.org/article.pl?sid=05/04/11/1413232&amp;tid=99&amp;tid=106">in 
+this one</a> and 
+<a href="http://linux.slashdot.org/article.pl?sid=05/04/09/2136247&amp;tid=106">in 
+this one</a> 
+</p>
+
+<p>
+As a result, the <a href="http://subversion.tigris.org/">Subversion</a> 
+developers issued 
+<a href="http://subversion.tigris.org/subversion-linus.html">a statement
+in which they say that Subversion is not a suitable alternative to 
+BitKeeper for the distributed development-model used by the kernel 
+developers</a>, and that Subversion advocates should
+not attempt to convince people to use it instead of the no-longer-available
+BitKeeper.
+</p>
+
+<p>
+Finally one can refer to <a href="http://kerneltrap.org/node/4968">this thread
+in KernelTrap about "Life after BitKeeper"</a>.
+</p>
+
+<p>
+The implication of all of this is that developers of open source software
+who desire to use BitKeeper to maintain their codebase, will require getting
+a commercial license proper from BitMover (possibly for no charge). Linus 
+Torvalds, the chief developer of the Linux kernel, has announced that he will 
+not take this option, and instead that he is seeking an alternative to 
+BitKeeper for maintaining the Linux kernel.
+</p>
+
+<p>
+These announcements invalidate a large part of what was said about BitKeeper
+and its licensing terms, on this site and elsewhere. The content of the 
+pages here will remain, but a notice will be added to indicate that it
+may no longer be relevant.
+</p>
+

@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Better SCM Initiative : BitKeeper" />
+
 <p>
 <a href="bk_suitability.html">The Suitability of BitKeeper for Free Software
 Developers</a>
@@ -9,6 +10,11 @@ Developers</a>
 <p>
 <a href="relicensing_bk.html">Why a change of the BitKeeper licensing would
 be a good idea</a>. (from BitMover's POV).
+</p>
+
+<p>
+<a href="demise-of-gratis-bitkeeper.html">The Demise of the Gratis BitKeeper
+Licensing</a> and its implications for free software developers.
 </p>
 
 <h2>Deprecated but Still Pertinent</h2>
