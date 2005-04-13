@@ -46,7 +46,7 @@ ul.toc
     border-color : black;
     padding : 0.3em;
 }
-:link:hover { background-color : yellow }
+a:hover { background-color : yellow }
 tt { color : #8A2BE2 /* The BlueViolet Color */ }
 </style>
 </head>
