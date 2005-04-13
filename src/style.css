@@ -32,6 +32,10 @@ ul.my li
    font-size: 80%;
    width: 30%;
 }
+.righty img
+{
+    border : 0;
+}
 .webmaster
 {
     float : left;
