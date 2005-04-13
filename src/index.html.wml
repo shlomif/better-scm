@@ -74,24 +74,7 @@ Corp. Now distributed under the LGPL. Replaces both Make and CVS, and so
 can only be built with itself for the time being.
 </p>
 
-<h2>General Documents</h2>
-
-<p>
-<a href="http://www.advogato.org/article/546.html">$20 million needed for the
-"Better CVS" Initiative</a> - a call for arms stressing the need for work
-on better revision control tools and hosting for them.
-</p>
-
-<p>
-<a href="./docs/shlomif-evolution.html">Shlomi Fish' Evolution as a Revision
-Control User</a>
-</p>
-
-<p>
-<a href="./docs/nice_trys.html">Nice tries, but...</a> - what I think of
-OpenCM, Meta-CVS and other attempts to make an incomplete version control 
-solution.
-</p>
+<h2 class="link"><a href="./docs/">General Documents</a></h2>
 
 <h2>General Links</h2>
 

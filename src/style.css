@@ -27,6 +27,7 @@ a:hover { color : red }
 
 p.desc { margin-left : 3em }
 h2 { background-color: #FFEE00  }
+.link { background : transparent; }
 ul.navbarmain
 { 
     padding-left : 1em; 

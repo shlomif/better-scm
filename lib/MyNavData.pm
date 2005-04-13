@@ -20,6 +20,32 @@ my $tree_contents =
             'url' => "",
         },
         {
+            'text' => "General Docs",
+            'url' => "docs/",
+            'title' => ("General Documents that don't Belong to " . 
+                "Anywhere More Specific."),
+            'subs' =>
+            [
+                {
+                    'text' => "Call for Arms",
+                    'url' => "http://www.advogato.org/article/546.html",
+                    'skip' => 1,
+                    'url_is_abs' => 1,
+                },
+                {
+                    'text' => "Evolution as a VCS User",
+                    'url' => "docs/shlomif-evolution.html",
+                    'title' => "Shlomi Fish' Evolution as a Revision Control User",
+                },
+                {
+                    'text' => "Nice Tries, but...",
+                    'url' => "docs/nice_trys.html",
+                    'title' => ("Opinion on Several Attempts to Make an " .
+                        "Incomplete Version Control System"),
+                },
+            ],
+        },
+        {
             'text' => "Alternatives",
             'url' => "alternatives/",
             'expand' => { 're' => ""},

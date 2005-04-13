@@ -24,7 +24,8 @@ HTMLS_PROTO = call-for-hosting.html index.html links.html mailing-list.html  \
 	vesta/index.html                                                         \
 	docs/shlomif-evolution.html docs/nice_trys.html                          \
 	comparison/index.html                                                    \
-	alternatives/index.html
+	alternatives/index.html                                                  \
+	docs/index.html
 
 HTMLS = $(addprefix $(D)/,$(HTMLS_PROTO))
 
