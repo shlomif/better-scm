@@ -10,12 +10,12 @@ on better revision control tools and hosting for them.
 </p>
 
 <p>
-<a href="./docs/shlomif-evolution.html">Shlomi Fish' Evolution as a Revision
+<a href="./shlomif-evolution.html">Shlomi Fish' Evolution as a Revision
 Control User</a>
 </p>
 
 <p>
-<a href="./docs/nice_trys.html">Nice tries, but...</a> - what I think of
+<a href="./nice_trys.html">Nice tries, but...</a> - what I think of
 OpenCM, Meta-CVS and other attempts to make an incomplete version control 
 solution.
 </p>
