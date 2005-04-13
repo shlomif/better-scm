@@ -64,6 +64,10 @@ $(RAW_SUBDIRS) :: $(D)/% : src/%
 
 .PHONY: 
 
+
+src/comparison/comparison.html: src/comparison/scm-comparison.xml
+	(cd src/comparison && make)
+
 # Build index.html pages for the appropriate sub-directories.
 $(INDEXES) :: $(D)/%/index.html : src/% gen_index.pl
 	perl gen_index.pl $< $@
