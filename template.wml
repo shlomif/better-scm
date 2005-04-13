@@ -1,5 +1,6 @@
 # #use wml::des::navbar
 #include 'std/logo.wml'
+#include '../lib/bk-note.wml'
 
 # The Definition of the page itself
 <?xml version="1.0" encoding="iso-8859-1"?>

@@ -15,5 +15,13 @@ ul.navbarnested { list-style-type : none ; padding-left : 2em }
     border-color : black; 
     border-style : double;
     padding : 0.5em;
-    background-color : LemonChiffon;
+    background-color : palegreen;
+}
+.note h2
+{
+   background: transparent;
+}
+ul.my li
+{
+    padding-bottom: 0.5em;
 }

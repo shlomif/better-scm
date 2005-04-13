@@ -2,20 +2,24 @@
 
 <subject "Better SCM Initiative : BitKeeper" />
 
-<p>
+<bk_note />
+
+<h2>Documents</h2>
+
+<ul class="my">
+<li>
 <a href="bk_suitability.html">The Suitability of BitKeeper for Free Software
 Developers</a>
-</p>
-
-<p>
+</li>
+<li>
 <a href="relicensing_bk.html">Why a change of the BitKeeper licensing would
 be a good idea</a>. (from BitMover's POV).
-</p>
-
-<p>
+</li>
+<li>
 <a href="demise-of-gratis-bitkeeper.html">The Demise of the Gratis BitKeeper
 Licensing</a> and its implications for free software developers.
-</p>
+</li>
+</ul>
 
 <h2>Deprecated but Still Pertinent</h2>
 

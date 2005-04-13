@@ -16,6 +16,7 @@ IMAGES = $(addprefix $(D)/,$(IMAGES_PRE1))
 HTMLS_PROTO = call-for-hosting.html index.html links.html mailing-list.html  \
 	bk/index.html bk/relicensing_bk.html bk/response_to_rms.html             \
 	bk/demise-of-gratis-bitkeeper.html                                   \
+	bk/bk_suitability.html            \
 	aegis/index.html aegis/overcoming_childhood_diseases.html                \
 	arch/index.html                                                          \
 	monotone/index.html                                                      \

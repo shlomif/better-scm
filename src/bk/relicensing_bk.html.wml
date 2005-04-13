@@ -1,7 +1,9 @@
 #include '../template.wml'
 
 <subject "Changing the BitKeeper License and Why it is Needed" />
-    
+ 
+<bk_note />
+
 <h2>Introduction</h2>
 
 <p>
