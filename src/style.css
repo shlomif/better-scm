@@ -5,7 +5,7 @@ a:hover { color : red }
     background-color : #C5CAE2;
     width : 20%;
     padding-left : 0.5em;
-    padding-top : 1em;
+    padding-top : 0.5em;
 }
 
 .main
@@ -70,6 +70,19 @@ ul.my li
 .center
 {
     text-align : center;
+}
+.nav_links
+{
+    text-align: center;
+    padding-left : 0em;
+    padding-top : 0em;
+}
+.nav_links li
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 0.2em;
+    padding-top: 0em;
 }
 .leading_path
 {
