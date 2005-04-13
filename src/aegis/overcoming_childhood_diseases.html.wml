@@ -81,14 +81,14 @@ make more sense.
 The <tt>ae</tt> shortcuts pollute the main shell namespace and are confusing.
 I suggest aegis converts to <tt>aegis [mycommand] parameters</tt> like:
 </p>
-<p>
+
 <pre>
 aegis review
 aegis cp myfile1.txt
 aegis rm myfile1.txt
 aegis annotate myfile
 </pre>
-</p>
+
 <p>
 Which is the more standard and more sensible.
 </p>
@@ -102,6 +102,7 @@ done very largely.
 
 <h2>Better Documentation</h2>
 
+<p>
 Most of Aegis' documentation is released as PostScripts or PDFs. Furthermore,
 the PDFs are not very Acrobat Readerish: they have no Bookmarks, hyperlinks or
 other bells and whistles. I believe HTML documentation and better PDFs (and

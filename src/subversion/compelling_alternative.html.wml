@@ -76,8 +76,8 @@ without changing the working model.
 <p>
 As for BitKeeper, it is <a href="$(ROOT)/bk/bk_suitability.html">not 
 suitable for wide deployment by open-source projects</a> because of 
-its license. If this license <a href="$(ROOT)/relicensing_bk.html">is modified 
-to a much more reasonable one</a>, 
+its license. If this license <a href="$(ROOT)/bk/relicensing_bk.html">is 
+modified to a much more reasonable one</a>, 
 one can expect open source projects to widely convert to it. Still, 
 subversion may still be useful for the development of in-house and 
 proprietary software, as it requires no licensing, which some software

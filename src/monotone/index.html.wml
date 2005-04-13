@@ -25,6 +25,3 @@ SHA1 checksum. Thus, it can identify when a file was copied or moved, if
 the signature is identical and merge the two copies. It also has a command
 set that tries to emulate CVS as much as possible.
 </p>
-
-
-</p>
