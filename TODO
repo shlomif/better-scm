@@ -3,17 +3,10 @@
     - Fix the CSS stylesheet after the new additions.
     - Convert to a non-table layout.
 
-* Add the "Spread Firefox" button.
-
 * Change the DOCTYPE to XHTML 1.1.
-
-* Integrate the comparison generation with the main site.
 
 * Comparison: fix the XSLT transformation to render the <a href> hyperlinks
 as <a href's in the HTML.
 
 * Comparison: generate a list of systems under comparison/index.html from
 the XML.
-
-* Update the site to reflect the demise of the gratis BitKeeper.
-
