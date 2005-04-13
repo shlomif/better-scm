@@ -25,3 +25,14 @@ ul.my li
 {
     padding-bottom: 0.5em;
 }
+.righty
+{
+   float: right;
+   text-align: center;
+   font-size: 80%;
+   width: 30%;
+}
+.webmaster
+{
+    float : left;
+}
