@@ -60,6 +60,7 @@ $leading_path_string =
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
 <title>{#SUBJECT_LOC#}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="StyleSheet" href="$(ROOT)/style.css" type="text/css" />
 <:{
 my @keys = (sort { $a cmp $b } keys(%$nav_links));
@@ -69,20 +70,15 @@ foreach my $key (@keys)
     print "<link rel=\"$key\" href=\"$url\" />\n"
 }
 }:>
-<meta http-equiv="Content-Type" content="text/html; charset=iso8859-1" />
 </head>
 <body>
 
-<table summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%">
-<tr>
-<td colspan="2" class="leading_path">
+<div class="leading_path">
 <:{ 
     print $leading_path_string;
 }:>
-</td>
-</tr>
-<tr>
-<td valign="top" class="navbar" style="width:20%">
+</div>
+<div class="navbar">
 <:{ 
     my $nav_buttons_html = "";
     foreach my $button 
@@ -142,15 +138,15 @@ width="100" height="50" /></a>
 
 <validhtml />
 
-</td>
-<td valign="top" class="main">
+</div>
+
+<div class="main">
 <h1>{#SUBJECT_LOC#}</h1>
 {#BODY#}
 
-</td>
-</tr>
-</table>
+</div>
 
+<div class="footer">
 <hr />
 <p class="webmaster">
 Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
@@ -198,6 +194,7 @@ License</a>.
 </rdf:RDF>
 
 -->
+</div>
 </div>
 
 </body>

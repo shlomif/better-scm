@@ -1,15 +1,42 @@
 a:hover { color : red }
-.navbar 
-{ 
-    background-color: #C5CAE2;
-    width : 20% ;
+
+.navbar {
+    float : left;
+    background-color : #C5CAE2;
+    width : 20%;
     padding-left : 0.5em;
+    padding-top : 1em;
 }
-.main { padding-left : 1em; }
+
+.main
+{
+    float : left;
+    padding-left : 1em;
+    padding-bottom : 1em;
+    padding-top : 0em;
+    margin-left : 1em;
+    /*
+    border-width : thin;
+    border-color : black;
+    border-style : solid;
+    */
+    background-color : white;
+    width: 70%;
+}
+
 p.desc { margin-left : 3em }
 h2 { background-color: #FFEE00  }
-ul.navbarmain { padding-left : 1em }
-ul.navbarnested { padding-left : 0em ; margin-left : 2em }
+ul.navbarmain
+{ 
+    padding-left : 1em; 
+    font-size: 80%;
+    font-family: sans-serif;
+}
+ul.navbarnested 
+{ 
+    padding-left : 0em ; 
+    margin-left : 2em;
+}
 .note 
 { 
     border-color : black; 
@@ -46,10 +73,20 @@ ul.my li
 }
 .leading_path
 {
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     background-color : #40C040;
     /* background-color: #FF7070; */
+    margin-bottom : 0.2em;
 }
 .leading_path :hover
 {
     color : yellow;
 }
+.footer {
+    clear : both;
+    margin-right : 30px;
+    padding-top: 0.5em;
+}
+
