@@ -128,9 +128,22 @@ my $tree_contents =
             'title' => "Links of Relevance",
         },
         {
+            'separator' => 1,
+            'skip' => 1,
+        },
+        {
             'url' => "comparison/",
             'text' => "Comparison",
             'title' => "A Detailed Comparison of Many Version Control Systems",
+        },
+        {
+            'separator' => 1,
+            'skip' => 1,
+        },
+        {
+            'url' => "site-map/",
+            'text' => "Site Map",
+            'title' => "A Page Concentrating all the Pages on the Site",
         },
     ],
 };

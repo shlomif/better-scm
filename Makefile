@@ -25,7 +25,8 @@ HTMLS_PROTO = call-for-hosting.html index.html links.html mailing-list.html  \
 	docs/shlomif-evolution.html docs/nice_trys.html                          \
 	comparison/index.html                                                    \
 	alternatives/index.html                                                  \
-	docs/index.html
+	docs/index.html                                     \
+	site-map/index.html
 
 HTMLS = $(addprefix $(D)/,$(HTMLS_PROTO))
 
@@ -35,7 +36,7 @@ INCLUDES = $(addprefix src/,$(INCLUDES_PROTO)) lib/MyNavData.pm
 # SUBDIRS_WITH_INDEXES = $(D)/win32_build $(D)/win32_build/bootstrap $(D)/win32_build/dynamic $(D)/win32_build/static
 SUBDIRS_WITH_INDEXES = 
 
-SUBDIRS_PROTO = aegis alternatives arch bk comparison docs images subversion monotone vesta 
+SUBDIRS_PROTO = aegis alternatives arch bk comparison docs images site-map subversion monotone vesta 
 
 SUBDIRS = $(SUBDIRS_WITH_INDEXES) $(D) $(addprefix $(D)/,$(SUBDIRS_PROTO))
 
