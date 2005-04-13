@@ -73,6 +73,10 @@ foreach my $key (@keys)
 </head>
 <body>
 
+<p style="display:none;">
+<a href="#main">Go to main content</a>
+</p>
+
 <div class="leading_path">
 <:{ 
     print $leading_path_string;
@@ -140,7 +144,7 @@ width="100" height="50" /></a>
 
 </div>
 
-<div class="main">
+<div class="main" id="main">
 <h1>{#SUBJECT_LOC#}</h1>
 {#BODY#}
 
