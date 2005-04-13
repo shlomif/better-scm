@@ -107,8 +107,15 @@ foreach my $key (@keys)
         my $dir = $button->{dir};
         my $key = substr($dir, 0, 1);
         my $key_uc = uc($key);
-        $nav_buttons_html .= "<li><a href=\"" . CGI::escapeHTML($nav_links->{$button->{dir}}) . 
-            "\" title=\"$button->{title} (Alt+$key_uc)\" accesskey=\"$key\"><img src=\"$(ROOT)/images/arrow-$button->{button}.png\" alt=\"$button->{title}\" style=\"border:0\" /></a></li>\n";
+        my $exists = exists($nav_links->{$dir});
+        my $img_suffix = $exists ? "" : "-disabled";
+        $nav_buttons_html .= "<li>" . 
+            ($exists ? ("<a href=\"" . CGI::escapeHTML($nav_links->{$dir}) . 
+            "\" title=\"$button->{title} (Alt+$key_uc)\" accesskey=\"$key\">"):
+            
+            "" ) . 
+            "<img src=\"$(ROOT)/images/arrow-$button->{button}${img_suffix}.png\" alt=\"$button->{title}\" style=\"border:0\" />" . 
+            ($exists ? "</a>" : "") . "</li>\n";
    }
    print "<ul class=\"nav_links\">\n$nav_buttons_html\n</ul>";
 }:>    
