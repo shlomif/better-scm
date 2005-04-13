@@ -8,14 +8,14 @@ a:hover { color : red }
 .main { padding-left : 1em; }
 p.desc { margin-left : 3em }
 h2 { background-color: #FFEE00  }
-ul.navbarmain { list-style-type: none ; padding-left : 0em }
-ul.navbarnested { list-style-type : none ; padding-left : 2em }
+ul.navbarmain { padding-left : 1em }
+ul.navbarnested { padding-left : 0em ; margin-left : 2em }
 .note 
 { 
     border-color : black; 
     border-style : double;
     padding : 0.5em;
-    background-color : palegreen;
+    background-color : #98FB98; /* PaleGreen */
 }
 .note h2
 {
@@ -39,4 +39,17 @@ ul.my li
 .webmaster
 {
     float : left;
+}
+.center
+{
+    text-align : center;
+}
+.leading_path
+{
+    background-color : #40C040;
+    /* background-color: #FF7070; */
+}
+.leading_path :hover
+{
+    color : yellow;
 }

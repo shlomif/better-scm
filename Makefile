@@ -23,17 +23,18 @@ HTMLS_PROTO = call-for-hosting.html index.html links.html mailing-list.html  \
 	subversion/index.html subversion/compelling_alternative.html             \
 	vesta/index.html                                                         \
 	docs/shlomif-evolution.html docs/nice_trys.html                          \
-	comparison/index.html
+	comparison/index.html                                                    \
+	alternatives/index.html
 
 HTMLS = $(addprefix $(D)/,$(HTMLS_PROTO))
 
 INCLUDES_PROTO = std/logo.wml
-INCLUDES = $(addprefix src/,$(INCLUDES_PROTO))
+INCLUDES = $(addprefix src/,$(INCLUDES_PROTO)) lib/MyNavData.pm
 
 # SUBDIRS_WITH_INDEXES = $(D)/win32_build $(D)/win32_build/bootstrap $(D)/win32_build/dynamic $(D)/win32_build/static
 SUBDIRS_WITH_INDEXES = 
 
-SUBDIRS_PROTO = aegis arch bk subversion monotone vesta docs comparison
+SUBDIRS_PROTO = aegis alternatives arch bk comparison docs images subversion monotone vesta 
 
 SUBDIRS = $(SUBDIRS_WITH_INDEXES) $(D) $(addprefix $(D)/,$(SUBDIRS_PROTO))
 
@@ -43,7 +44,8 @@ INDEXES = $(addsuffix /index.html,$(SUBDIRS_WITH_INDEXES))
 
 all: dummy
 
-WML_FLAGS += --passoption=2,-X
+WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
+	--passoption=3,-w -I../lib/ -DROOT~.
 
 dummy : $(SUBDIRS) $(HTMLS) $(IMAGES) $(RAW_SUBDIRS) $(INDEXES)
 
@@ -52,7 +54,7 @@ $(SUBDIRS) :: % :
 		mkdir $@ ; \
 	fi
 
-$(HTMLS) :: $(D)/% : src/%.wml src/.wmlrc template.wml $(INCLUDES)
+$(HTMLS) :: $(D)/% : src/%.wml template.wml $(INCLUDES)
 	(cd src && wml $(WML_FLAGS) -DFILENAME="$(patsubst src/%.wml,%,$<)"  $(patsubst src/%,%,$<)) > $@
 
 $(IMAGES) :: $(D)/% : src/%

@@ -2,6 +2,56 @@
 #include 'std/logo.wml'
 #include '../lib/bk-note.wml'
 
+<:{
+use MyNavData;
+use HTML::Widgets::NavMenu;
+use CGI qw();
+
+my $filename = "$(FILENAME)";
+$filename =~ s!index\.html$!!;
+$filename = "/$filename";
+
+use vars qw($nav_bar);
+
+$nav_bar = HTML::Widgets::NavMenu->new(
+    'path_info' => $filename,
+    'current_host' => "berlios",
+    MyNavData::get_params(),
+    'ul_classes' => [ "navbarmain", ("navbarnested") x 10 ],
+    );
+
+my $rendered_results = $nav_bar->render();
+
+use vars qw($nav_links);
+
+$nav_links = $rendered_results->{nav_links};
+
+use vars qw($nav_html);
+
+$nav_html = $rendered_results->{html};
+
+my $leading_path = $rendered_results->{leading_path};
+
+my $render_leading_path_component = sub {
+    my $component = shift;
+    my $title = $component->title();
+    my $title_attr = defined($title) ? " title=\"$title\"" : "";
+    return "<a href=\"" . CGI::escapeHTML($component->direct_url()) .
+        "\"$title_attr>" .
+        $component->label() . "</a>";
+};
+
+use vars qw($leading_path_string);
+
+$leading_path_string =
+    join(" &rarr; ",
+        (map
+        { $render_leading_path_component->($_) }
+        @$leading_path
+        ));
+
+}:>
+
 # The Definition of the page itself
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html 
@@ -11,70 +61,86 @@
 <head>
 <title>{#SUBJECT_LOC#}</title>
 <link rel="StyleSheet" href="$(ROOT)/style.css" type="text/css" />
+<:{
+my @keys = (sort { $a cmp $b } keys(%$nav_links));
+foreach my $key (@keys)
+{
+    my $url = CGI::escapeHTML($nav_links->{$key});
+    print "<link rel=\"$key\" href=\"$url\" />\n"
+}
+}:>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-1" />
 </head>
 <body>
 
-<define-tag navbarlink>
-<if
-    ;;; Determine if %0 matches this document
-    <ifeq "$(FILENAME)" "%0"
-        "1"
-        <ifeq "$(FILENAME)" "%0index.html"
-            "1"
-            ""
-        />
-
-    />
-    ;;; If so - bolds the text
-    "<b>%1</b>"
-    ;;; If not - makes a hyperlink
-    "<a href="$(ROOT)/%0">%1</a>"
-/>
-</define-tag>
-
-
 <table summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%">
 <tr>
+<td colspan="2" class="leading_path">
+<:{ 
+    print $leading_path_string;
+}:>
+</td>
+</tr>
+<tr>
 <td valign="top" class="navbar" style="width:20%">
-<ul class="navbarmain">
-<li><navbarlink "" "Home" /></li>
-<li><b>Alternatives</b></li>
-<li>
-<ul class="navbarnested">
-<li><navbarlink "aegis/" "Aegis" /></li>
-<li><navbarlink "arch/" "Arch" /></li>
-<li><navbarlink "bk/" "BitKeeper" /></li>
-<li><navbarlink "monotone/" "Monotone" /></li>
-<li><navbarlink "subversion/" "Subversion" /></li>
-</ul>
-</li>
-<li></li>
-<li><navbarlink "mailing-list.html" "Mailing List" /></li>
-<li><navbarlink "links.html" "Links" /></li>
-<li></li>
-<li><navbarlink "comparison/" "Comparison" /></li>
-</ul>
-
+<:{ 
+    my $nav_buttons_html = "";
+    foreach my $button 
+        (
+            { 
+                'dir' => "prev", 
+                'button' => "left", 
+                'title' => "Previous Page",
+            },
+            { 
+                'dir' => "up", 
+                'button' => "up", 
+                'title' => "Up in the Site",
+            },
+            {
+                'dir' => "next", 
+                'button' => "right", 
+                'title' => "Next Page",
+            },
+       )
+   {
+        my $dir = $button->{dir};
+        my $key = substr($dir, 0, 1);
+        my $key_uc = uc($key);
+        $nav_buttons_html .= "<a href=\"" . CGI::escapeHTML($nav_links->{$button->{dir}}) . 
+            "\" title=\"$button->{title} (Alt+$key_uc)\" accesskey=\"$key\"><img src=\"$(ROOT)/images/arrow-$button->{button}.png\" alt=\"$button->{title}\" style=\"border:0\" /></a>\n";
+   }
+   print "<div class=\"center\">\n$nav_buttons_html\n</div>";
+}:>    
+<:{ print join("\n", @$nav_html); }:>
 <define-tag validhtml>
-<br /><br /><br /><br />
 <p>
-<a href="http://validator.w3.org/check/referer"><img 
-    style="border:0" src="http://www.w3.org/Icons/valid-xhtml10" 
+<a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=0&amp;t=70"><img 
+   style="margin-top:1em; border:0;" alt="Get Firefox!" 
+   title="Get Firefox! A safer, faster, better web-browser." 
+   src="$(ROOT)/images/get-firefox.png" /></a>
+</p>
+<p>
+<a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0!"><img 
+    class="highlight" style="border:0;" 
+    src="$(ROOT)/images/valid-xhtml10.png" 
     alt="Valid XHTML 1.0!" height="31" width="88" 
     /></a>
 </p>
 <p>
-<a href="http://jigsaw.w3.org/css-validator/"><img 
-    style="border:0;width:88px;height:31px"
-    src="http://jigsaw.w3.org/css-validator/images/vcss" 
+ <a href="http://jigsaw.w3.org/css-validator/" title="Valid CSS!"><img 
+    class="highlight" style="border:0;"
+    src="$(ROOT)/images/valid-css.png" 
     alt="Valid CSS!" /></a>
 </p>
 <p>
-<logo />
+<a href="http://thewml.org/" title="Website META Language"><img 
+src="$(ROOT)/images/logo-wml.png" alt="Website Meta Language" style="border:0" 
+width="100" height="50" /></a>
 </p>
 </define-tag>
 
-<ifeq "$(FILENAME)" "index.html" "<validhtml />" "" />
+<validhtml />
 
 </td>
 <td valign="top" class="main">
@@ -87,7 +153,7 @@
 
 <hr />
 <p class="webmaster">
-Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">E-mail - shlomif@iglu.org.il</a>)
+Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
 </p>
 
 <div class="righty">
@@ -95,7 +161,7 @@ Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto
 <!-- Creative Commons License -->
 <a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img 
 alt="Creative Commons License"
-src="http://creativecommons.org/images/public/somerights20.gif" /></a><br />
+src="$(ROOT)/images/somerights20.png" /></a><br />
 This work is licensed under a <a rel="license" 
 href="http://creativecommons.org/licenses/by/2.0/">Creative Commons 
 License</a>.
