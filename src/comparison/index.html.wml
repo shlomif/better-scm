@@ -74,19 +74,27 @@ Corp.
 
 <p>
 The comparison is generated from an XML file by a Perl script. The script
-uses the XML::LibXML bindings to libxml. Following are the sources:
+uses the <a href="http://search.cpan.org/dist/XML-LibXML/">XML::LibXML 
+bindings</a> to libxml, and
+<a href="http://web-cpan.berlios.de/modules/XML-CompareML/">XML::CompareML</a>. 
+To use the makefile, you need 
+<a href="http://www.gnu.org/software/make/">GNU Make</a>. Following are the 
+sources:
 </p>
 
 <ul>
-<li><a href="scm-comparison.xml">scm-comparison.xml</a> - the XML source of the comparison</li>
+<li><a href="scm-comparison.xml">scm-comparison.xml</a> - the XML 
+source of the comparison</li>
 <li><a href="gen-dtd.pl">gen-dtd.pl</a> - a Perl script to generate the DTD.</li>
 <li><a href="render.pl">render.pl</a> - a Perl script to render the comparison
 into HTML.</li>
-<li><a href="bk-license.html">bk-license.html</a> - a note about the BitKeeper license.</li>
-<li><a href="Makefile">Makefile</a> - a makefile to automate the task of maintaining the comparison.</li>
+<li><a href="bk-license.html">bk-license.html</a> - a note about the
+BitKeeper license.</li>
+<li><a href="Makefile">Makefile</a> - a makefile to automate the task of 
+maintaining the comparison.</li>
 <li><a href="render-docbook.pl">render-docbook.pl</a> - a Perl script to render
 the comparison into DocBook/XML.</li>
-<li><a href="ScmCompare.pm">ScmCompare.pm</a> - a Perl module required by the
-two rendering scripts.</li>
+<li><a href="compare-ml.xsl">compare-ml.xsl</a> - an XSLT stylesheet to render
+the XML into HTML.</li>
 </ul>
 
