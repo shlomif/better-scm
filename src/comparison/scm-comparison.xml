@@ -1092,11 +1092,13 @@ TODO:
             <s id="arch">GNU GPL (open source)</s>
             <s id="darcs">GNU GPL (open source)</s>
             <s id="bitkeeper">
-                Proprietary, binary only license. Comes in
-                two versions: gratis and pay per use. The gratis license
-                is intended for development of free software only and is 
-                <a href="bk-license.html">problematic</a>. The pay 
-                per use license is free of most of its problems.
+                Proprietary, binary only license. Pay per use license,
+                with an option for a costless license for developers of
+                open-source software. Used to have a gratis, downloadable 
+                license, which was intended for the develpoment of open
+                source software. It had <a href="bk-license.html">a 
+                    problematic license</a>,
+                and was discontinued starting at April 2005.
             </s>
             <s id="aegis">
                 GNU GPL (open source)
