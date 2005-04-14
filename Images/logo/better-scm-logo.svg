@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="better-scm-logo.svg"
+   sodipodi:docbase="/home/shlomi/Docs/programming/SCM/better-scm/site/trunk/Images/logo"
+   inkscape:version="0.41"
+   sodipodi:version="0.32"
+   id="svg2"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:window-y="57"
+     inkscape:window-x="267"
+     inkscape:window-height="590"
+     inkscape:window-width="640"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="786.07098"
+     inkscape:cx="418.64043"
+     inkscape:zoom="0.69146549"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF
+       id="RDF5">
+      <cc:Work
+         id="Work6"
+         rdf:about="">
+        <dc:format
+           id="format7">image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+           id="type9" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <text
+       sodipodi:linespacing="100%"
+       id="text1291"
+       y="264.37448"
+       x="66.952484"
+       style="font-size:229.30426;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Blue Highway;text-anchor:start;writing-mode:lr-tb"
+       xml:space="preserve"><tspan
+         y="264.37448"
+         x="66.952484"
+         id="tspan1293"
+         sodipodi:role="line">Better</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text1295"
+       y="323.50934"
+       x="319.58746"
+       style="font-size:152.86951;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#9800c9;fill-opacity:0.77664977;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Crillee;text-anchor:start;writing-mode:lr-tb"
+       xml:space="preserve"><tspan
+         y="323.50934"
+         x="319.58746"
+         id="tspan1297"
+         sodipodi:role="line">SCM</tspan></text>
+  </g>
+</svg>
