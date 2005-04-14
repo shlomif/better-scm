@@ -1,5 +1,4 @@
 # #use wml::des::navbar
-#include 'std/logo.wml'
 #include '../lib/bk-note.wml'
 
 <:{
