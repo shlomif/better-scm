@@ -24,9 +24,9 @@
      inkscape:window-width="640"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="786.07098"
-     inkscape:cx="418.64043"
-     inkscape:zoom="0.69146549"
+     inkscape:cy="625.44048"
+     inkscape:cx="425.09162"
+     inkscape:zoom="0.54783841"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -52,6 +52,18 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
+    <path
+       transform="matrix(0.000000,-0.252673,0.399804,0.000000,-41.96443,493.3957)"
+       sodipodi:end="1.5639046"
+       sodipodi:start="0.0000000"
+       d="M 489.67987,506.96555 A 96.523438,65.133698 0 0 1 393.82164,572.09770 L 393.15643,506.96555 z"
+       sodipodi:ry="65.133698"
+       sodipodi:rx="96.523438"
+       sodipodi:cy="506.96555"
+       sodipodi:cx="393.15643"
+       id="path3579"
+       style="fill:#1000c9;fill-opacity:0.0000000;fill-rule:nonzero;stroke:#55e331;stroke-width:6.2925549;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
+       sodipodi:type="arc" />
     <text
        sodipodi:linespacing="100%"
        id="text1291"
@@ -74,5 +86,10 @@
          x="319.58746"
          id="tspan1297"
          sodipodi:role="line">SCM</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccccc"
+       id="rect2816"
+       d="M 104.86055,368.68953 L 161.17056,368.68953 L 161.17056,394.63592 L 187.20222,394.55065 L 187.20222,492.72195 L 104.86055,491.27575 L 104.86055,368.68953 z "
+       style="fill:#9800c9;fill-opacity:0.0000000;fill-rule:nonzero;stroke:#000000;stroke-width:2.4074690;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000" />
   </g>
 </svg>
