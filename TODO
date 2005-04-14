@@ -1,11 +1,17 @@
+* Point to the site's sources online.
+
 * Implement the rest of the suggestions from Freenode #web.
 
 * Submit to Webdesign-L for feedback.
 
-* Make a better gen_helpers.sh + Makefile.
+* Make sure the files that are added to the buckets of src/ are present
+in the Subversion repository.
 
 * Comparison: generate a list of systems under comparison/index.html from
 the XML.
+
+* Add a square logo to the top part of the navigation column. Right above
+the nav links buttons.
 
 * Submit to Open Source Web Designs.
 
