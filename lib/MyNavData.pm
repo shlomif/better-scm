@@ -145,6 +145,15 @@ my $tree_contents =
             'text' => "Site Map",
             'title' => "A Page Concentrating all the Pages on the Site",
         },
+        {
+            'separator' => 1,
+            'skip' => 1,
+        },
+        {
+            'url' => "source/",
+            'text' => "Site Sources",
+            'title' => "How to Get and Manipulate the Source Code of this Site",
+        },
     ],
 };
 
