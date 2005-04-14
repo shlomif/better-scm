@@ -3,18 +3,17 @@ a:hover { color : red }
 .navbar {
     float : left;
     background-color : #C5CAE2;
-    width : 20%;
+    width : 200px;
     padding-left : 0.5em;
     padding-top : 0.5em;
 }
 
 .main
 {
-    float : left;
     padding-left : 1em;
     padding-bottom : 1em;
     padding-top : 0em;
-    margin-left : 1em;
+    margin-left : 210px;
     /*
     Remmed out - maybe I'll add something along this vein later.
     border-width : thin;
@@ -116,3 +115,9 @@ pre
     border-color: #004000;
     border-style: solid;
 }
+/* Border-less */
+.bless
+{
+    border : none;
+}
+
