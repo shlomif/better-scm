@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Better SCM Initiative : Arch" />
+<more_keywords "Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" />
 
 <h2>Homepage</h2>
 
@@ -8,10 +9,24 @@
 <a href="http://gnuarch.org/">Homepage of Arch</a>
 </p>
 
-<p>
-<a href="http://www.gnu.org/software/gnu-arch/">Homepage of tla, the most common
-Arch implementation</a>
-</p>
+<h2>Implementations</h2>
+
+<ul>
+<li>
+<a href="http://www.gnu.org/software/gnu-arch/">tla</a> - the most common
+Arch implementation. Written in C, and maintained by Tom Lord, the originator
+of Arch.
+</li>
+<li>
+<a href="http://www.nongnu.org/arx/">ArX</a> - a version of Arch that is
+incompatible with tla, and has some advantages.
+</li>
+<li>
+<a href="http://www.bazaar-ng.org/">Bazaar-NG</a> - an Arch implementation
+written in <a href="http://www.python.org/">Python</a>, which offers some 
+advantages.
+</li>
+</ul>
 
 <h2>Summary</h2>
 
@@ -23,7 +38,7 @@ CVS lacks.
 
 <p>
 In <a href="http://subversion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=24695">a 
-message to the Subversion Development Team</a> Tom Lord noted that it is 
+message to the Subversion Development Team</a> Tom Lord noted that it is
 worthwhile to unify Arch' approach to distribution and Subversion's approach to storage management. When the following will take course has yet to be seen.
 </p>
 
@@ -35,9 +50,20 @@ This makes it very easy to set up a service of it.
 
 <h2>Links</h2>
 
+<ul>
+<li>
+<a href="http://gnuarch.org/">gnuarch.org</a> - a portal for all things Arch.
+Contains a wiki, many links, bug list, a roadmap, popular essays, and other
+resources.
+</li>
+<li>
+<a href="http://dmoz.org/Computers/Software/Configuration_Management/Tools/Arch/">Dmoz.org 
+Category of Arch Resource</a> - contains other links.
+</li>
+</ul>
+<!--
 <p>
-<a href="http://gnuarch.org/bin/view/Main/ArchComparisons">Comparisons of 
+<a href="http://gnuarch.org/bin/view/Main/ArchComparisons">Comparisons of
 Arch to BitKeeper, CVS, Darcs, Monotone and Subversion.</a>.
 </p>
-
-
+-->
