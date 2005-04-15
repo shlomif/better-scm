@@ -9,12 +9,12 @@
 <p>
 BitMover, <a href="http://www.bitkeeper.com/">BitKeeper</a>'s parent company,
 <a href="http://www.bitkeeper.com/press/2005-04-05.html">announced 
-that it will discontinue the gratis version of BitKeeper intended for 
-development of Open Source Software</a>. The implications of this 
+that it will discontinue</a> the gratis version of BitKeeper intended for 
+development of Open Source Software. The implications of this 
 are layed out in <a href="http://kerneltrap.org/node/4966">this KernelTrap
 editorial</a>. A NewsForge article 
-<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;tid=25&amp;tid=3">interviews the parties involved in this decision and what
-they think</a>.
+<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;tid=25&amp;tid=3">interviews the parties involved in this decision</a> and what
+they think.
 </p>
 
 <p>
@@ -28,10 +28,10 @@ this one</a>
 <p>
 As a result, the <a href="http://subversion.tigris.org/">Subversion</a> 
 developers issued 
-<a href="http://subversion.tigris.org/subversion-linus.html">a statement
+<a href="http://subversion.tigris.org/subversion-linus.html">a statement</a>
 in which they say that Subversion is not a suitable alternative to 
 BitKeeper for the distributed development-model used by the kernel 
-developers</a>, and that Subversion advocates should
+developers, and that Subversion advocates should
 not attempt to convince people to use it instead of the no-longer-available
 BitKeeper.
 </p>
