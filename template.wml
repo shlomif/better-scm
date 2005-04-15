@@ -5,6 +5,7 @@
 use MyNavData;
 use HTML::Widgets::NavMenu;
 use CGI qw();
+use MyNavLinks;
 
 my $filename = "$(FILENAME)";
 $filename =~ s!index\.html$!!;
@@ -48,7 +49,6 @@ $leading_path_string =
         { $render_leading_path_component->($_) }
         @$leading_path
         ));
-
 }:>
 
 # The Definition of the page itself
@@ -85,41 +85,13 @@ foreach my $key (@keys)
 <a href="$(ROOT)/" title="Home"><img 
     src="$(ROOT)/images/better-scm-logo.png"
     alt="Better SCM" class="bless" /></a>
-<:{ 
-    my $nav_buttons_html = "";
-    foreach my $button 
-        (
-            { 
-                'dir' => "prev", 
-                'button' => "left", 
-                'title' => "Previous Page",
-            },
-            { 
-                'dir' => "up", 
-                'button' => "up", 
-                'title' => "Up in the Site",
-            },
-            {
-                'dir' => "next", 
-                'button' => "right", 
-                'title' => "Next Page",
-            },
-       )
-   {
-        my $dir = $button->{dir};
-        my $key = substr($dir, 0, 1);
-        my $key_uc = uc($key);
-        my $exists = exists($nav_links->{$dir});
-        my $img_suffix = $exists ? "" : "-disabled";
-        $nav_buttons_html .= "<li>" . 
-            ($exists ? ("<a href=\"" . CGI::escapeHTML($nav_links->{$dir}) . 
-            "\" title=\"$button->{title} (Alt+$key_uc)\" accesskey=\"$key\">"):
-            
-            "" ) . 
-            "<img src=\"$(ROOT)/images/arrow-$button->{button}${img_suffix}.png\" alt=\"$button->{title}\" class=\"bless\" />" . 
-            ($exists ? "</a>" : "") . "</li>\n";
-   }
-   print "<ul class=\"nav_links\">\n$nav_buttons_html\n</ul>";
+<:{
+   print "<ul class=\"nav_links\">\n" .
+    MyNavLinks->new(
+        'nav_links' => $nav_links,
+        'root' => "$(ROOT)",
+        )->get_nav_buttons_html() .
+    "\n</ul>";
 }:>    
 <:{ print join("\n", @$nav_html); }:>
 <define-tag validhtml>

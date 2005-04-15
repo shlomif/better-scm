@@ -15,7 +15,7 @@ IMAGES = $(addprefix $(D)/,$(IMAGES_PRE1))
 
 HTMLS = $(addprefix $(D)/,$(HTMLS_PROTO))
 
-INCLUDES = lib/MyNavData.pm
+INCLUDES = lib/MyNavData.pm lib/MyNavLinks.pm
 
 # SUBDIRS_WITH_INDEXES = $(D)/win32_build $(D)/win32_build/bootstrap $(D)/win32_build/dynamic $(D)/win32_build/static
 SUBDIRS_WITH_INDEXES = 

@@ -1,3 +1,5 @@
+* Convert the arrow icons to Unicode characters.
+
 * Make sure the files that are added to the buckets of src/ are present
 in the Subversion repository.
 
