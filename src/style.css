@@ -92,6 +92,7 @@ ul.my li
     background-color : #40C040;
     /* background-color: #FF7070; */
     margin-bottom : 0.2em;
+    font-size: 85%;
 }
 .leading_path :hover
 {
