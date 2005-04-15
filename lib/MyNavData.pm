@@ -89,10 +89,22 @@ my $tree_contents =
                     ],
                 },
                 {
+                    'text' => "Darcs",
+                    'url' => "alternatives/darcs/",
+                    'title' => ("Darcs - an Open Source Distributed " .
+                        "Version Control System"),
+                },
+                {
                     'text' => "Monotone",
                     'url' => "monotone/",
                     'title' => ("Monotone - an Open Source Distributed " .
                         "Version Control System"),
+                },
+                {
+                    'text' => "Perforce",
+                    'url' => "alternatives/perforce/",
+                    'title' => ("Perforce - a Commercial Version " .
+                        "Control Solution"),
                 },
                 {
                     'text' => "Subversion",
@@ -115,6 +127,12 @@ my $tree_contents =
                             'skip' => 1,
                         },
                     ],
+                },
+                {
+                    'text' => "Vesta",
+                    'url' => "vesta/",
+                    'title' => ("Vesta - a Distributed SCM with a " . 
+                        "special filesystem service"),
                 },
             ],
         },
