@@ -95,7 +95,7 @@ sub get_nav_buttons_html
 [% SET key = b.dir.substr(0, 1) %]
 <li>
 [% IF b.exists %]
-<a href="[% HTML.escape(b.link) %]" title="[% b.title %] (Alt+[% uc(key) %])"
+<a href="[% HTML.escape(b.link) %]" title="[% b.title %] (Alt+[% key FILTER upper %])"
 [% IF with_accesskey %]
 accesskey="[% key %]"
 [% END %]
