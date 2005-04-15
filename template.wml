@@ -67,6 +67,8 @@ $nav_links_renderer = MyNavLinks->new(
 <head>
 <title>{#SUBJECT_LOC#}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Author" content="Shlomi Fish" />
+<meta name="Keywords" content="Better SCM, SCM, version control, source control, revision control, source configuration management, CVS, Subversion, BitKeeper, open source, Shlomi Fish{#MORE_KEYWORDS#}" />
 <link rel="StyleSheet" href="$(ROOT)/style.css" type="text/css" />
 <:{
 my @keys = (sort { $a cmp $b } keys(%$nav_links));
@@ -191,6 +193,10 @@ License</a>.
 
 <define-tag subject>
 {#SUBJECT_LOC#:%0:##}
+</define-tag>
+
+<define-tag more_keywords>
+{#MORE_KEYWORDS#:%0:##}
 </define-tag>
 
 #   per default we are in body

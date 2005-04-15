@@ -8,7 +8,7 @@
 <b>Version control systems</b> (or Source Configuration Management systems) 
 allow developers or authors to keep track of the history of their projects
 source code - to checkout older versions, maintain several branches, and merge
-results. <a href="http://www.cvshome.org/">CVS</a> is the most commonly used 
+results. <a href="https://www.cvshome.org/">CVS</a> is the most commonly used 
 revision control system in the Open-Source world as of this writing. It 
 works well and is relatively reliable but has many limitations. It does not
 do file renames or copies, send the files to the server, no atomicity of 
