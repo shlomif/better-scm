@@ -1,4 +1,54 @@
 #include '../template.wml'
 
-<subject "Alternatives" />
+<subject "Available CVS Alternatives" />
+
+<more_keywords "Arch, Aegis, Monotone, Vesta" />
+
+<h3><a href="$(ROOT)/arch/">Arch</a></h3>
+
+<p>
+A revision control system originally developed by Tom Lord that is distributed,
+can be networked and serviced by a large number of common networking protocols
+, and is very complete. GPLed.
+</p>
+
+<h3><a href="$(ROOT)/aegis/">Aegis</a></h3>
+
+<p>
+A complete Software Configuration Management system by Peter Miller licensed
+under the GPL. Is distributed, very feature rich, and is designed for use
+by large projects and large teams.
+</p>
+
+
+<h3><a href="$(ROOT)/bk/">BitKeeper</a></h3>
+
+<p>
+A proprietary revision control system by BitMover Inc. that is available for
+free software developers under a gratis license. There are many strings attached
+to it, so <a href="./bk/">read on</a>.
+</p>
+
+<h3><a href="$(ROOT)/monotone/">Monotone</a></h3>
+
+<p>
+A capable version control system with a different philosophy, and strong
+reliance on strong cryptography.
+</p>
+
+<h3><a href="$(ROOT)/subversion/">Subversion</a></h3>
+
+<p>
+A revision control system that was designed and programmed from the ground's
+up to be modular and scalable, yet resembling CVS a bit in nature. Not as 
+feature-rich as BitKeeper yet, but fully open-source.
+</p>
+
+<h3><a href="$(ROOT)/vesta/">Vesta</a></h3>
+
+<p>
+A software configuration management system originally designed by Digital 
+Corp. Now distributed under the LGPL. Replaces both Make and CVS, and so
+can only be built with itself for the time being.
+</p>
 
