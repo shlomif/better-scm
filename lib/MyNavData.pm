@@ -137,6 +137,11 @@ my $tree_contents =
             ],
         },
         {
+            'text' => "What to Avoid",
+            'url' => "to-avoid/",
+            'title' => "Version Control Systems to Avoid",
+        },
+        {
             'text' => "Mailing List",
             'url' => "mailing-list.html",
         },

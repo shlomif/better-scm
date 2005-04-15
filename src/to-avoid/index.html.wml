@@ -1,0 +1,44 @@
+#include '../template.wml'
+
+<subject "Version Control Systems to Avoid" />
+<more_keywords "Visual SourceSafe, VSS" />
+
+<h2>Introduction</h2>
+
+<p>
+Based on the <a href="$(ROOT)/">front page</a> you've probably guessed that
+CVS is no longer a good option for a version control system to use for your
+projects. If you're looking for a VCS that is a much better superset of CVS,
+take a look at <a href="$(ROOT)/subversion/">Subversion</a>; other version 
+control systems may fit the bill even better.
+</p>
+
+<p>
+But there are other commonly used version control systems that should be
+avoided at all costs. Some of them are even worse than CVS. The purpose of
+this page is to list exactly those systems. 
+</p>
+
+<h2>List of Systems to Avoid</h2>
+
+<h3>Microsoft Visual SourceSafe</h3>
+
+<p>
+Little positive can be said on MS Visual SourceSafe. Check for example,
+<a href="http://www.joelonsoftware.com/articles/fog0000000013.html">this
+entry on the Joel on Software site</a>. It is very weak, unreliable, and
+idiosyncratic even in comparison to CVS. The only reason people are using
+it is because it's the solution offered by Microsoft.
+</p>
+
+<p>
+Another bad thing about SourceSafe is the fact it is limited to Microsoft 
+Windows alone (if we don't take into account the UNIX ports that Mainsoft are 
+doing, which probably don't work too well.). If you are using SourceSafe now, 
+you should 
+<a href="http://www.riseup.com/~brettw/dev/VSS2Subversion.html">migrate 
+to Subversion</a> or a different alternative now. Subversion and other systems
+work very well on Win32, and are much more reliable, robust, feature-rich and 
+portable than Microsoft Visual SourceSafe.
+</p>
+
