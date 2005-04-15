@@ -11,6 +11,15 @@ __PACKAGE__->mk_accessors(qw(root nav_links));
 
 use Template;
 
+# load Template::Stash to make method tables visible
+use Template::Stash;
+
+# Define a method to return a substring.
+$Template::Stash::SCALAR_OPS->{ 'substr' } = sub {
+    return substr($_[0], $_[1], $_[2]);
+};
+
+
 sub new
 {
     my $class = shift;
@@ -83,12 +92,12 @@ sub get_nav_buttons_html
     my $nav_links_template = <<'EOF';
 [% USE HTML %]
 [% FOREACH b = buttons %]
-[% SET key = substr(b.dir, 0, 1) %]
+[% SET key = b.dir.substr(0, 1) %]
 <li>
 [% IF b.exists %]
 <a href="[% HTML.escape(b.link) %]" title="[% b.title %] (Alt+[% uc(key) %])"
 [% IF with_accesskey %]
-acceskey="[% key %]"
+accesskey="[% key %]"
 [% END %]
 >[% END %]<img src="[% root %]/images/arrow-[% b.button %][% UNLESS b.exists %]-disabled[% END %].png"
 alt="[% b.title %]" class="bless" />[% IF b.exists %]</a>
@@ -101,6 +110,15 @@ EOF
     
     $template->process(\$nav_links_template, $vars, \$nav_buttons_html);
     return $nav_buttons_html;
+}
+
+sub get_total_html
+{
+    my $self = shift;
+
+    return "<ul class=\"nav_links\">\n" .
+        $self->get_nav_buttons_html(@_) .
+        "\n</ul>";
 }
 
 1;
