@@ -91,13 +91,19 @@ foreach my $key (@keys)
 }:>
 </div>
 <div class="navbar">
+<p style="display:none;">
+<a href="#nav_menu">Go to the navigation menu</a>
+</p>
+
 <a href="$(ROOT)/" title="Home"><img 
     src="$(ROOT)/images/better-scm-logo.png"
     alt="Better SCM" class="bless" /></a>
 <:{
    print $nav_links_renderer->get_total_html('with_accesskey' => 1);
 }:>
+<div id="nav_menu">
 <:{ print join("\n", @$nav_html); }:>
+</div>
 <define-tag validhtml>
 <p>
 <a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=0&amp;t=70"><img 
