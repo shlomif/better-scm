@@ -69,7 +69,8 @@ $nav_links_renderer = MyNavLinks->new(
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="Author" content="Shlomi Fish" />
 <meta name="Keywords" content="Better SCM, SCM, version control, source control, revision control, source configuration management, CVS, Subversion, BitKeeper, open source, Shlomi Fish{#MORE_KEYWORDS#}" />
-<link rel="StyleSheet" href="$(ROOT)/style.css" type="text/css" />
+<link rel="stylesheet" href="$(ROOT)/style.css" type="text/css" media="screen, projection" title="Normal" />
+<link rel="stylesheet" href="$(ROOT)/print.css" type="text/css" media="print" />
 <:{
 my @keys = (sort { $a cmp $b } keys(%$nav_links));
 foreach my $key (@keys)
