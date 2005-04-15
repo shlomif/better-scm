@@ -4,6 +4,14 @@
 
 <more_keywords "Arch, Aegis, Monotone, Vesta" />
 
+<h3><a href="$(ROOT)/aegis/">Aegis</a></h3>
+
+<p>
+A complete Software Configuration Management system by Peter Miller licensed
+under the GPL. Is distributed, very feature rich, and is designed for use
+by large projects and large teams.
+</p>
+
 <h3><a href="$(ROOT)/arch/">Arch</a></h3>
 
 <p>
@@ -12,14 +20,6 @@ A revision control architecutre originally developed by
 is distributed, and can be networked and serviced by a large number of 
 common networking protocols (without a special configuration of the 
 server). Has several open-source implementations.
-</p>
-
-<h3><a href="$(ROOT)/aegis/">Aegis</a></h3>
-
-<p>
-A complete Software Configuration Management system by Peter Miller licensed
-under the GPL. Is distributed, very feature rich, and is designed for use
-by large projects and large teams.
 </p>
 
 
