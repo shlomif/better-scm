@@ -34,7 +34,9 @@ intrigued of what I had done wrong so far.
 <h2>The Pleasant CVS Experience</h2>
 
 <p>
-When I worked on Freecell Solver, I kept a tar.gz containing every single 
+When I worked on 
+<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell 
+Solver</a>, I kept a tar.gz containing every single 
 minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise 
 Simulator project Roy Glasberg and I took for the Technion, I decided to use
 CVS. So, we registered a project at <a href="http://developer.berlios.de/">
