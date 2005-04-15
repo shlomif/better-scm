@@ -196,7 +196,7 @@ License</a>.
 </define-tag>
 
 <define-tag more_keywords>
-{#MORE_KEYWORDS#:%0:##}
+{#MORE_KEYWORDS#:, %0:##}
 </define-tag>
 
 #   per default we are in body
