@@ -12,8 +12,8 @@
 
 <p>
 Monotone is a distributed version control system with a different 
-philosophy. Namely, changesets are posted to a depot (that can be a
-CGI script, an NNTP newsgroup or a mailing list), which collects
+philosophy. Namely, changesets are posted to a depot (which the communication
+with is done using a custom protocol called netsync), which collects
 changesets from various sources. Afterwards, each developer commits
 the desirable changesets into his own private repository based on 
 their RSA certificates and possibly other parameters.
@@ -25,3 +25,16 @@ SHA1 checksum. Thus, it can identify when a file was copied or moved, if
 the signature is identical and merge the two copies. It also has a command
 set that tries to emulate CVS as much as possible.
 </p>
+
+<p>
+The Monotone architecture makes implementation of many features easier. It
+is not without it flaws, however. Monotone is slow, doesn't scale well to 
+large codebases and historeis. Finally it identifies the various revisions of
+files by their cryptographical digests, which makes it have some not 
+so-user-friendly identifiers 
+(such as: <tt>9fb38dee24fa6f6a7afc2bfd4b09f1dd65edcd79</tt>). Another potential
+problem is that because the common history is only in the depot, it is possible
+the repositories of the individual developers will become unsyncrhonized with
+each other.
+</p>
+
