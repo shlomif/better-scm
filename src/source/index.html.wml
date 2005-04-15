@@ -43,6 +43,7 @@ The following <a href="http://www.cpan.org/">CPAN</a> modules:<br />
 <cpan_link "HTML-Widgets-NavMenu" />
 <cpan_link "Find-File-Rule" />
 <cpan_link "XML-CompareML" />
+<cpan_link "Template" />
 </ul>
 </li>
 </ol>
