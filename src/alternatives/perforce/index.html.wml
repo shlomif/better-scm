@@ -1,0 +1,25 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Perforce" />
+<more_keywords "Perforce, P4" />
+
+<h2>Homepage</h2>
+
+<p>
+<a href="http://www.perforce.com/">Homepage of Perforce</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Perforce is a centralized, commercial (non-free) solution for version 
+control. It is very fast, very stable and robust, scales very well, and has a 
+good reputation. It requires an annual per-seat licensing, but is also 
+available for interested open-source developers under a gratis license.
+</p>
+
+<p>
+(If you're looking for something open-source which is more or less equivalent,
+then look at <a href="$(ROOT)/subversion/">Subversion</a>.)
+</p>
+
