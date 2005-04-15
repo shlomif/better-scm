@@ -121,10 +121,9 @@ my $tree_contents =
                         },
                         {
                             'text' => "Win32 Installation Guide",
-                            'url' => "subversion/Subversion-Win32-Installation-Guide.txt",
+                            'url' => "subversion/Svn-Win32-Inst-Guide.html",
                             'title' => ("A Quick-start guide for Installing " . 
                                 "Subversion on a Microsoft Windows System"),
-                            'skip' => 1,
                         },
                     ],
                 },
