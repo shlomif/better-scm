@@ -58,7 +58,11 @@ src/comparison/comparison.html: src/comparison/scm-comparison.xml
 $(INDEXES) :: $(D)/%/index.html : src/% gen_index.pl
 	perl gen_index.pl $< $@
 
-upload: all
+upload_beta: all
+	cd $(D) && \
+	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
+	
+upload_stable: all
 	cd $(D) && \
 	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/
 
