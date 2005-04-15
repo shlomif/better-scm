@@ -1,0 +1,31 @@
+#include '../template.wml'
+
+<subject "Better SCM Initiative : Darcs" />
+
+<h2>Homepage</h2>
+
+<p>
+<a href="http://abridgegame.org/darcs/">Homepage of Darcs</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Darcs is an open source (GNU GPL), distributed, version control system.
+It is easy to set up a repository for it, is based on an underlying "Theory
+of Patches", and it has some interesting features.
+</p>
+
+<p>
+One possible drawback to it is that it is written in 
+<a href="http://www.haskell.org/">Haskell</a> and has to be compiled with 
+<a href="http://www.haskell.org/ghc/">GHC</a>. GHC is a Haskell compiler 
+which is itself written in Haskell, with a problematic bootstrapping 
+procedure, and Haskell may not be entirely scalable due to the limitations of
+the language.
+</p>
+
+<p>
+Neverthelss Darcs is worth looking at.
+</p>
+
