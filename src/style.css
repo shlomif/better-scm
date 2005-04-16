@@ -61,15 +61,22 @@ ul.my li
 {
     border : 0;
 }
-.webmaster
+.foot_left
 {
     float : left;
 }
-.vcs
+.webmaster
 {
-    font-size: 80%;
-    margin-top:0.5em;
+    margin-bottom: 0em;
+}
+.vcs
+{    
+    margin-top: 0.5em;
     clear: left;
+}
+.vcs tt
+{
+    font-size: 83%;
 }
 
 .center
