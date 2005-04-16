@@ -49,18 +49,25 @@ Windows systems.
 
 <h2>Links</h2>
 
-<p>
+<ul>
+<li>
 <a href="http://dmoz.org/Computers/Software/Configuration_Management/Tools/Subversion/">Dmoz.org's Subversion Category</a> - contains many links.
-</p>
-
-<p>
+</li>
+<li>
 <a href="http://svk.elixus.org/">svk</a> - a version control systems based
-on Subversion that aims to offer other advantages.
-</p>
-
-<p>
+on Subversion that aims to offer other advantages. (like distributed 
+repositories)
+</li>
+<li>
 <a href="http://www.red-bean.com/sussman/svn-anti-fud.html">Dispelling 
 Subversion FUD</a> - an essay by Ben Collins-Sussman, that attempts to 
 dispel a lot of common dis-information regarding Subversion.
-</p>
-
+</li>
+<li>
+<a href="http://subversion.tigris.org/bitmover-svn.html">Debunking BitMover's
+Subversion Comparison</a> - an essay on the subversion site, which debunks the
+<a href="http://www.bitkeeper.com/Comparisons.Subversion.html">comparison 
+between BitKeeper and Subversion</a> that was published on the BitKeeper 
+site.
+</li>
+</ul>

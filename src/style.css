@@ -13,14 +13,12 @@ a:hover { color : red }
     padding-left : 1em;
     padding-bottom : 1em;
     padding-top : 0em;
-    margin-left : 210px;
-    /*
-    Remmed out - maybe I'll add something along this vein later.
-    border-width : thin;
-    border-color : black;
-    border-style : solid;
-    */
+    padding-right: 1em;
+    margin-left : 220px;
+    margin-top: 1em;
+    margin-right: 1em;
     background-color : white;
+    border: thin solid black;
 }
 
 p.desc { margin-left : 3em }
