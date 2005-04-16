@@ -22,9 +22,13 @@ of Arch.
 incompatible with tla, and has some advantages.
 </li>
 <li>
-<a href="http://www.bazaar-ng.org/">Bazaar-NG</a> - an Arch implementation
-written in <a href="http://www.python.org/">Python</a>, which offers some 
-advantages.
+<A href="http://bazaar.canonical.com/">Bazaar</a> - a fork of tla, which aims
+to provide better Subversion compatibility, and other nice features.
+</li>
+<li>
+<a href="http://www.bazaar-ng.org/">Bazaar-NG</a> - a rewrite of Bazaar (from
+the same source) written in <a href="http://www.python.org/">Python</a>, which 
+offers some advantages.
 </li>
 </ul>
 
