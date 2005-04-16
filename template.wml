@@ -191,13 +191,14 @@ License</a>.
 -->
 </div>
 
-<p class="webmaster">
+<div class="webmaster">
+<p>
 Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
 </p>
 <p class="vcs">
 <b>Version Control ID:</b> <tt>{#VERSION_CONTROL_ID#}</tt>
 </p>
-
+</div>
 
 </div>
 
