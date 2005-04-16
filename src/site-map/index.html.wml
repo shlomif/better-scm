@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Site Map" />
+<version_control_id "$Id$" />
 
 <div class="sitemap">
 <:{

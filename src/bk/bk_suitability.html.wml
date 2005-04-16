@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "The Suitability of BitKeeper and bkbits.net for Free Software Projects" />
+<version_control_id "$Id$" />
 
 <bk_note />
 
