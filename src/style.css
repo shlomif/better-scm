@@ -64,14 +64,12 @@ ul.my li
 .webmaster
 {
     float : left;
-    margin-bottom: 0;
 }
 .vcs
 {
-    float : left;
     font-size: 80%;
-    clear : left;
     margin-top:0.5em;
+    clear: left;
 }
 
 .center
