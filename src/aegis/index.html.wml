@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Better SCM Initiative : Aegis" />
+<version_control_id "$Id$" />
 
 <p>
 <a href="mark_veltzer_transcripts.log.txt">The Mark Veltzer/Shlomi Fish Transcripts</a> - 

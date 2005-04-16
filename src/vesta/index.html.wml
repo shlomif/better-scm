@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Better SCM Initiative : Vesta" />
+<version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 

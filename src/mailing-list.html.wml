@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Mailing List" />
+<version_control_id "$Id$" />
 
 <set-var mailing-list-url="https://lists.berlios.de/mailman/listinfo/better-scm-discuss/" />
 

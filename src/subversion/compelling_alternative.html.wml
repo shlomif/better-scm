@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Subversion - A Compelling Alternative to CVS and BitKeeper" />
+<version_control_id "$Id$" />
     
 <h2>Introduction</h2>
 

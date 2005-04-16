@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "General Documents" />
+<version_control_id "$Id$" />
 
 
 <p>

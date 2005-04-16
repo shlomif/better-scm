@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "The Demise of the Gratis BitKeeper Licensing" />
+<version_control_id "$Id$" />
 
 <p>
 <b>Written at:</b> 12-April-2005

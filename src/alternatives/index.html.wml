@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Available CVS Alternatives" />
+<version_control_id "$Id$" />
 
 <more_keywords "Arch, Aegis, Monotone, Vesta" />
 

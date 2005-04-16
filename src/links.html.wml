@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Links" />
+<version_control_id "$Id$" />
 
 <h2>Articles</h2>
 

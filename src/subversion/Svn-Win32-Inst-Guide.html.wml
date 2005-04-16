@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Subversion Installation Tutorial for Win32" />
+<version_control_id "$Id$" />
 <more_keywords "installation, tutorial, win32" />
 
 <pre style="background: transparent;">

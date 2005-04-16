@@ -1,6 +1,7 @@
 #include '../template.wml'
 
 <subject "Shlomi Fish - Evolution of a Revision Control User" />
+<version_control_id "$Id$" />
 
 <h3>Last Updated: 5-February-2004</h3>
 
