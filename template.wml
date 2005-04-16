@@ -191,8 +191,8 @@ License</a>.
 -->
 </div>
 
-<div class="webmaster">
-<p>
+<div class="foot_left">
+<p class="webmaster">
 Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
 </p>
 <p class="vcs">
