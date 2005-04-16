@@ -146,9 +146,6 @@ width="100" height="50" /></a>
 
 <div class="footer">
 <hr />
-<p class="webmaster">
-Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
-</p>
 
 <div class="righty">
 <p>
@@ -193,6 +190,15 @@ License</a>.
 
 -->
 </div>
+
+<p class="webmaster">
+Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@iglu.org.il">shlomif@iglu.org.il</a>)
+</p>
+<p class="vcs">
+<b>Version Control ID:</b> <tt>{#VERSION_CONTROL_ID#}</tt>
+</p>
+
+
 </div>
 
 </body>
@@ -204,6 +210,10 @@ License</a>.
 
 <define-tag more_keywords>
 {#MORE_KEYWORDS#:, %0:##}
+</define-tag>
+
+<define-tag version_control_id>
+{#VERSION_CONTROL_ID#:%0:##}
 </define-tag>
 
 #   per default we are in body
