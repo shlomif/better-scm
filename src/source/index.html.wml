@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "Site Source Code" />
-<version_control_id "$Id$" />
+<latemp_subject "Site Source Code" />
+<latemp_version_control_id "$Id$" />
 
 <p>
 The site source code is present in 
