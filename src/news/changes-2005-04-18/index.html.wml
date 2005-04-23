@@ -1,0 +1,145 @@
+#include '../template.wml'
+
+<subject "Recent Changes in the Better SCM Site" />
+<more_keywords "recent changes, log" />
+<version_control_id "2005-Apr-18" />
+
+<p>
+The purpose of this document is to list the recent changes that were applied
+to the <a href="http://better-scm.berlios.de/">Better SCM</a> site. It is
+our sincere hope that you will find these changes.
+</p>
+
+<h2>Added or Revised Content</h2>
+
+<ul>
+<li>
+Added <a href="$(ROOT)/bk/demise-of-gratis-bitkeeper.html">a
+page about the dis-continuation of the gratis BitKeeper license</a>. This page
+is linked from other pages that are relevant to BitKeeper.
+</li>
+<li>
+Modified the <a href="$(ROOT)/aegis/">page about Aegis</a>, to have a more
+meaningful content.
+</li>
+<li>
+Added <a href="$(ROOT)/alternatives/darcs/">a page about the Darcs version
+control system.</a>.
+</li>
+<li>
+Added <a href="$(ROOT)/alternatives/perforce/">a page about Perforce</a>.
+</li>
+<li>
+Added <a href="$(ROOT)/to-avoid/">a page with version control systems that
+should be avoided</a>.
+</li>
+<li>
+Added content to <a href="$(ROOT)/monotone/">the Monotone page</a>.
+</li>
+<li>
+Added a page about <a href="$(ROOT)/irc/">our new 
+IRC channel</a>.
+</li>
+<li>
+New links were added.
+</li>
+</ul>
+
+<h2>Organization and Site Flow</h2>
+
+<ul>
+<li>
+Created a better navigation menu. More pages were made part to it.
+</li>
+<li>
+Added navigation links (Next, Previous and Up). These can be utilized as 
+part of the navigation bar of Mozilla/Opera/etc., or in the buttons in the
+top and bottom of the sites' navigation column. They also have access keys.
+</li>
+<li>
+Added a breadcrumbs trail.
+(e.g: "Better SCM &rarr; Alternatives &rarr; Subversion &rarr;
+Win32 Installation Guide")
+</li>
+</ul>
+
+<h2>Visual Elements and Web Standards</h2>
+
+<ul>
+<li>
+Much improved CSS stylesheet, with a better look.
+</li>
+<li>
+Added a stylesheet for print.
+</li>
+<li>
+Markup is 100% valid XHTML 1.1. CSS is valid CSS.
+</li>
+<li>
+A new <tt>&lt;div&gt;</tt>-based layout that replaces the old table-layout.
+</li>
+<li>
+A better page footer, with a version control ID and a Creative Commons 
+license notice.
+</li>
+<li>
+A logo was added to the top-left corner of the page.
+</li>
+<li>
+More affiliate link buttons were added to the navigation bar.
+</li>
+<li>
+Multiple paragraphs were converted to itemized lists, and other markup
+cleanups.
+</li>
+</ul>
+
+<h2>Changes to the <a href="$(ROOT)/comparison/">Comparison</a></h2>
+
+<ul>
+<li>
+Added some more content and incorporated recent developments.
+</li>
+<li>
+A better and fixed CSS stylesheet.
+</li>
+<li>
+The Perl back-end used to convert the comparison to HTML and DocBook,
+was span as <a href="http://web-cpan.berlios.de/modules/XML-CompareML/">a 
+separate re-usable CPAN module</a>.
+</li>
+<li>
+Added a version control timestamp.
+</li>
+<li>
+The <tt>id</tt> HTML attribute is now used as part of the element, instead
+of as a separate &lt;a&gt; element.
+</li>
+<li>
+Updated the <a href="$(ROOT)/comparison/bk-license.html">Problems in the 
+BitKeeper License</a> page.
+</li>
+</ul>
+
+<h2>Changes to the Internals</h2>
+
+<ul>
+<li>
+The comparison is now built as part of the site, not separately.
+</li>
+<li>
+The navigation menu and site flow makes use of 
+<a href="http://web-cpan.berlios.de/modules/HTML-Widgets-NavMenu/">the 
+HTML-Widgets-NavMenu</a> module.
+</li>
+<li>
+Many refactorings and cleanups were done to the comparison's code.
+</li>
+<li>
+The content now carries a Creative Commons Attribution license notice.
+</li>
+<li>
+Added author and keywords <tt>&lt;meta /&gt;</tt> tags.
+</li>
+</ul>
+
