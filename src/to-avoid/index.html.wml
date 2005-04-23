@@ -1,8 +1,8 @@
 #include '../template.wml'
 
-<subject "Version Control Systems to Avoid" />
-<version_control_id "$Id$" />
-<more_keywords "Visual SourceSafe, VSS" />
+<latemp_subject "Version Control Systems to Avoid" />
+<latemp_version_control_id "$Id$" />
+<latemp_more_keywords "Visual SourceSafe, VSS" />
 
 <h2>Introduction</h2>
 
