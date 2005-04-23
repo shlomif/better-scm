@@ -1,0 +1,6 @@
+MANIFEST
+Makefile.PL
+README
+Changes
+BetterScm.pm
+META.yml                                 Module meta-data (added by MakeMaker)

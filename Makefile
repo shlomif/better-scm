@@ -17,12 +17,7 @@ HTMLS = $(addprefix $(D)/,$(HTMLS_PROTO))
 
 INCLUDES = lib/MyNavData.pm lib/MyNavLinks.pm
 
-# SUBDIRS_WITH_INDEXES = $(D)/win32_build $(D)/win32_build/bootstrap $(D)/win32_build/dynamic $(D)/win32_build/static
-SUBDIRS_WITH_INDEXES = 
-
 SUBDIRS = $(SUBDIRS_WITH_INDEXES) $(D) $(addprefix $(D)/,$(SUBDIRS_PROTO))
-
-INDEXES = $(addsuffix /index.html,$(SUBDIRS_WITH_INDEXES))
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
@@ -31,7 +26,7 @@ all: dummy
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
 	--passoption=3,-w -I../lib/ -DROOT~.
 
-dummy : $(SUBDIRS) $(HTMLS) $(IMAGES) $(RAW_SUBDIRS) $(INDEXES)
+dummy : $(SUBDIRS) $(IMAGES) $(HTMLS)
 
 $(SUBDIRS) :: % : 
 	@if [ ! -e $@ ] ; then \
@@ -44,19 +39,11 @@ $(HTMLS) :: $(D)/% : src/%.wml template.wml $(INCLUDES)
 $(IMAGES) :: $(D)/% : src/%
 	cp -f $< $@
 
-$(RAW_SUBDIRS) :: $(D)/% : src/%
-	rm -fr $@
-	cp -r $< $@
-
 .PHONY: 
 
 
 src/comparison/comparison.html: src/comparison/scm-comparison.xml
 	(cd src/comparison && make)
-
-# Build index.html pages for the appropriate sub-directories.
-$(INDEXES) :: $(D)/%/index.html : src/% gen_index.pl
-	perl gen_index.pl $< $@
 
 upload_beta: all
 	cd $(D) && \

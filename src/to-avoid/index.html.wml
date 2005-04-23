@@ -25,7 +25,9 @@ this page is to list exactly those systems.
 <h3>Microsoft Visual SourceSafe</h3>
 
 <p>
-Little positive can be said on MS Visual SourceSafe. Check for example,
+Little positive can be said on 
+<a href="http://msdn.microsoft.com/ssafe/">Microsoft Visual 
+SourceSafe</a>. Check for example,
 <a href="http://www.joelonsoftware.com/articles/fog0000000013.html">this
 entry on the Joel on Software site</a>. It is very weak, unreliable, and
 idiosyncratic even in comparison to CVS. The only reason people are using

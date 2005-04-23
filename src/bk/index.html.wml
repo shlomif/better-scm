@@ -5,6 +5,44 @@
 
 <bk_note />
 
+<h2>Homepage</h2>
+
+<p>
+<a href="http://www.bitkeeper.com/">http://www.bitkeeper.com/</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+BitKeeper is a commercial version control system by BitMover Inc. It comes in
+pay or lease licensing, where lease allows you to receive upgrades. It costs
+quite a bit. BitKeeper is a very powerful, capable and reliable version control
+system, that supports copies, moves and renames, atomic commits, changesets,
+distributed repositories and propagation of changesets, 3-way merging, etc. It
+is portable to all major UNIX flavours, and to Win32.
+</p>
+
+<p>
+A BitKeeper license may be given to developers of open-source software, for
+exclusive work on open-source software. This requires negotiation with 
+BitMover. (There used to be a gratis version 
+available for that purpose under a restrictive license, but it was 
+end-of-lifed.) 
+</p>
+<p>
+BitKeeper used to be utilized by many of the 
+<a href="http://www.kernel.org/">Linux Kernel</a> developers, for managing 
+the kernel source. Due to the fact BitKeeper is not open-source this move was
+quite controversial, and caused several flame-wars in the Linux Kernel 
+Mailing List and elsewhere. When the gratis version was withdrawn in April
+2005, the developers decided to convert to a different alternative.
+</p>
+<p>
+BitKeeper has a few drawbacks. It can only duplicate a repository and work
+against it, and cannot work against a working copy of a snapshot. This makes
+large checkouts over a WAN very slow.
+</p>
+
 <h2>Documents</h2>
 
 <ul class="my">

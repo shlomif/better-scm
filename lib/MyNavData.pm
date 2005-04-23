@@ -145,6 +145,11 @@ my $tree_contents =
             'url' => "mailing-list.html",
         },
         {
+            'text' => "IRC",
+            'url' => "irc/",
+            'title' => "Chat about Version Control using the Internet",
+        },
+        {
             'text' => "Links", 
             'url' => "links.html",
             'title' => "Links of Relevance",

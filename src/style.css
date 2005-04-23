@@ -31,8 +31,26 @@ a:hover { color : red }
 }
 
 p.desc { margin-left : 3em }
-h2 { background-color: #FFEE00  }
+h2 
+{ 
+    background-color: #FFEE00  
+}
+h2, h3, h4
+{
+    padding-left: 0.3em;
+}
+.main p
+{
+    padding-left : 1em;
+}
 .link { background : transparent; }
+/* Opera has a very wide default for margin-left, which causes the navbar
+   to be misrendered. This rule fixes it.
+   */
+.navbar ul
+{
+    margin-left: 0;
+}
 ul.navbarmain
 { 
     padding-left : 1em; 
@@ -123,6 +141,14 @@ ul.my li
     clear : both;
     margin-right : 30px;
     padding-top: 0.5em;
+}
+/* Workaround to get the <hr /> element at the bottom to properly display 
+   with Konqueror 3.3.x
+   */
+.footer hr
+{
+    width:100%;
+    clear:both;
 }
 tt { color : #8a2be2; }
 pre
