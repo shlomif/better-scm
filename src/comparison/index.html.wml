@@ -1,8 +1,8 @@
 #include '../template.wml'
 
-<subject "Better SCM Initiative : Comparison" />
-<version_control_id "$Id$" />
-<more_keywords "comparison" />
+<latemp_subject "Better SCM Initiative : Comparison" />
+<latemp_version_control_id "$Id$" />
+<latemp_more_keywords "comparison" />
 
 <h2>Introduction</h2>
 

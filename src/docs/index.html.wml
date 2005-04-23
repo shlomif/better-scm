@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "General Documents" />
-<version_control_id "$Id$" />
+<latemp_subject "General Documents" />
+<latemp_version_control_id "$Id$" />
 
 
 <p>

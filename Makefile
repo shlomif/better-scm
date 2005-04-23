@@ -5,7 +5,10 @@ DEVEL_VER_USE_CACHE = 1
 
 D = dest
 
-WML_FLAGS = -DBERLIOS=BERLIOS
+WML_FLAGS = -DLATEMP_THEME=better-scm -DBERLIOS=BERLIOS -DLATEMP_SERVER=berlios
+
+LATEMP_WML_INCLUDE_PATH =$(shell latemp-config --wml-include-path)
+
 
 include include.mak
 # IMAGES_PRE1 = $(shell cd src && (ls *.tar.gz *.zip *.patch *.css *.png bk/*.html aegis/*.txt subversion/*.txt))
@@ -24,7 +27,7 @@ SUBDIRS = $(SUBDIRS_WITH_INDEXES) $(D) $(addprefix $(D)/,$(SUBDIRS_PROTO))
 all: dummy
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
-	--passoption=3,-w -I../lib/ -DROOT~.
+	--passoption=3,-w -I../lib/ -DROOT~. -I$(LATEMP_WML_INCLUDE_PATH)
 
 dummy : $(SUBDIRS) $(IMAGES) $(HTMLS)
 
@@ -34,7 +37,7 @@ $(SUBDIRS) :: % :
 	fi
 
 $(HTMLS) :: $(D)/% : src/%.wml template.wml $(INCLUDES)
-	(cd src && wml $(WML_FLAGS) -DFILENAME="$(patsubst src/%.wml,%,$<)"  $(patsubst src/%,%,$<)) > $@
+	(cd src && wml $(WML_FLAGS) -DLATEMP_FILENAME="$(patsubst src/%.wml,%,$<)"  $(patsubst src/%,%,$<)) > $@
 
 $(IMAGES) :: $(D)/% : src/%
 	cp -f $< $@

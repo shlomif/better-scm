@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "Changing the BitKeeper License and Why it is Needed" />
-<version_control_id "$Id$" />
+<latemp_subject "Changing the BitKeeper License and Why it is Needed" />
+<latemp_version_control_id "$Id$" />
  
 <bk_note />
 

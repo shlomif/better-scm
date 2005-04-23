@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "Better SCM Initiative : Subversion" />
-<version_control_id "$Id$" />
+<latemp_subject "Better SCM Initiative : Subversion" />
+<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 

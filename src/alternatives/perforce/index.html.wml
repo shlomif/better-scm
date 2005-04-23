@@ -1,8 +1,8 @@
 #include '../template.wml'
 
-<subject "Better SCM Initiative : Perforce" />
-<version_control_id "$Id$" />
-<more_keywords "Perforce, P4" />
+<latemp_subject "Better SCM Initiative : Perforce" />
+<latemp_version_control_id "$Id$" />
+<latemp_more_keywords "Perforce, P4" />
 
 <h2>Homepage</h2>
 
