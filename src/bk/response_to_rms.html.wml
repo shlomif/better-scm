@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "Response to Richard Stallman's LKML Post" />
-<version_control_id "$Id$" />
+<latemp_subject "Response to Richard Stallman's LKML Post" />
+<latemp_version_control_id "$Id$" />
 
 <p>
 Richard Stallman has written 

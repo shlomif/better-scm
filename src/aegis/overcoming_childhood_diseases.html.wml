@@ -1,7 +1,7 @@
 #include '../template.wml'
 
-<subject "Overcoming Aegis Childhood Diseases" />
-<version_control_id "$Id$" />
+<latemp_subject "Overcoming Aegis Childhood Diseases" />
+<latemp_version_control_id "$Id$" />
 
 <define-tag problem>
 <h3 class="problem">Problem</h3>
