@@ -3,15 +3,49 @@
 <subject "Better SCM Initiative : Aegis" />
 <version_control_id "$Id$" />
 
+<h2>Homepage</h2>
+
 <p>
-<a href="mark_veltzer_transcripts.log.txt">The Mark Veltzer/Shlomi Fish Transcripts</a> - 
-these are IRC transcripts of a session where Mark Veltzer taught me how to use
-Aegis step by step. They could be of use to Aegis beginners.
+<a href="http://aegis.sourceforge.net/">aegis.sourceforge.net - The Aegis Homepage</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Aegis is a source configuration management system by 
+<a href="http://www.canb.auug.org.au/~millerp/README.html">Peter 
+Miller</a>. Being an SCM rather than a plain version control system, it also
+tries to ensure the integrity of the code by various means such as registering 
+automated tests, or code reviews. It is distributed and has other powerful
+features, but is primarily file-system based, and can only be pseudo-networked
+using NFS, or a similar networking file system protocol.
 </p>
 
 <p>
+One downside to using Aegis is that its semantics requires a lot of steps to 
+get started or sometimes even to accomplish certain tasks. As such people 
+who are used to simpler version control systems, may find this very tedious.
+</p>
+
+<h2>Articles</h2>
+
+<ul>
+<li>
 <a href="overcoming_childhood_diseases.html">Overcoming Aegis' Childhood Diseases</a> - Aegis is a mature software configuration management system, but users 
 of other modern systems (such as BitKeeper) may find it unsuitable due to some of its childhood diseases. This article explains what they are and how they can
 be overcome.
-</p>
+</li>
+</ul>
+
+<h2>Resources</h2>
+
+<ul>
+<li>
+<a href="mark_veltzer_transcripts.log.txt">The Mark Veltzer/Shlomi Fish 
+Transcripts</a> - 
+these are IRC transcripts of a session where Mark Veltzer taught me how to use
+Aegis step by step. They could be of use to Aegis beginners.
+</li>
+</ul>
+
 
