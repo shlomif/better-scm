@@ -22,6 +22,12 @@ my @news_items =
             'description' => q{Around 18 April, 2005, the Better SCM Site has seen a lot of changes. Click the link for details on them.},
             'date' => "2005-04-18",
         },
+        {
+            'title' => "The Better SCM RSS Feed",
+            'id' => "2005-04-25-rss-feed",
+            'description' => q{The Better SCM Site now has an RSS feed. It will be periodically updated with news about the site, and possibly latest happening in the Version Control Systems/Source Configuration Management world. To use it, add http://better-scm.berlios.de/rss.xml to your RSS aggregator.},
+            'date' => "2005-04-25",
+        },
         )
     )
 );
