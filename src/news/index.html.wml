@@ -1,0 +1,20 @@
+#include '../template.wml'
+
+<latemp_subject "Better SCM News" />
+<latemp_version_control_id "$Id$" />
+
+<h2>Introduction</h2>
+
+<p>
+This section of the site concentrates the news items of the site. Visit it
+if you'd like to learn what's new here.
+</p>
+
+<h2>News Items</h2>
+
+<h3><a href="./changes-2005-04-18/">Changes as of 18 April 2005</a></h3>
+
+<p>
+The changes in the site as of 18 April 2005. The Better SCM site saw a major
+revamp around that time.
+</p>
