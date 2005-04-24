@@ -20,6 +20,17 @@ my $tree_contents =
             'url' => "",
         },
         {
+            'text' => "News",
+            'url' => "news/",
+            'subs' =>
+            [
+                {
+                    'text' => "2005-04-18",
+                    'url' => "news/changes-2005-04-18/",
+                },
+            ],
+        },
+        {
             'text' => "General Docs",
             'url' => "docs/",
             'title' => ("General Documents that don't Belong to " . 
