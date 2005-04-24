@@ -41,7 +41,9 @@ package HTML::Latemp::News;
 our @ISA=(qw(HTML::Latemp::News::Base));
 
 __PACKAGE__->mk_accessors(qw(copyright docs generator language 
-    link rating title ttl));
+    link managing_editor rating title ttl webmaster));
+
+use XML::RSS;
 
 sub input_items
 {
@@ -89,8 +91,82 @@ sub initialize
     $self->docs($args{'docs'} || "http://blogs.law.harvard.edu/tech/rss");
     $self->ttl($args{'ttl'} || "360");
     $self->generator($args{'generator'} || "Perl and XML::RSS");
+    $self->webmaster($args{'webmaster'});
+    $self->managing_editor($args{'managing_editor'} || $self->webmaster());
 
     return 0;
+}
+
+sub add_item_to_rss_feed
+{
+    my $self = shift;
+    my %args = (@_);
+
+    my $item = $args{'item'};
+    my $rss_feed = $args{'feed'};
+
+    $rss_feed->add_item(
+        'title' => $item->title(),
+        'link' => $item->link(),
+        'permaLink' => $item->link(),
+        'enclosure' => { 'url' => $self->get_item_url($item), },
+        'description' => $item->description(),
+        'author' => $item->author(),
+        'pubDate' => $item->data(),
+        'category' => $item->category(),
+    );
+}
+
+sub get_item_url
+{
+    my $self = shift;
+    my $item = shift;
+    return $self->link() . "/news/" . $item->id() . "/";
+}
+
+sub generate_rss_feed
+{
+    my $self = shift;
+
+    my %args = (@_);
+
+    my $rss_feed = XML::RSS->new('version' => "2.0");
+    $rss_feed->channel(
+        'title' => $self->title(),
+        'link' => $self->link(),
+        'language' => $self->language(),
+        'description' => $self->description(),
+        'rating' => $self->rating(),
+        'copyright' => $self->copyright(),
+        'pubDate' => (scalar(localtime())),
+        'lastBuildDate' => (scalar(localtime())),
+        'docs' => $self->docs(),
+        'ttl' => $self->ttl(),
+        'generator' => $self->generator(),
+        'managingEditor' => $self->managing_editor(),
+        'webMaster' => $self->webmaster(),
+    );
+
+    my $num_items_to_include = $args{'num_items'} || 10;
+
+    my $items = $self->items();
+
+    if (@$items < $num_items_to_include)
+    {
+        $num_items_to_include = scalar(@$items);
+    }
+
+    foreach my $single_item (@$items[(-$num_items_to_include) .. (-1)])
+    {
+        $self->add_item_to_rss_feed(
+            'item' => $single_item,
+            'feed' => $rss_feed,
+        );
+    }
+
+    my $filename = $args{'output_filename'} || "rss.xml";
+    
+    $rss_feed->save($filename);
 }
 
 1;
