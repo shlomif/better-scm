@@ -167,4 +167,11 @@ pre
 {
     border : none;
 }
-
+.links
+{
+    margin-top: 2em;
+}
+.links li
+{
+    margin-bottom: 1em;
+}
