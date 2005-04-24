@@ -109,11 +109,13 @@ sub add_item_to_rss_feed
     my $item = $args{'item'};
     my $rss_feed = $args{'feed'};
 
+    my $item_url = $self->get_item_url($item);
+
     $rss_feed->add_item(
         'title' => $item->title(),
-        'link' => $self->link(),
-        'permaLink' => $self->link(),
-        'enclosure' => { 'url' => $self->get_item_url($item), },
+        'link' => $item_url,
+        'permaLink' => $item_url,
+        'enclosure' => { 'url' => $item_url, },
         'description' => $item->description(),
         'author' => $item->author(),
         'pubDate' => $item->date(),
@@ -125,7 +127,7 @@ sub get_item_url
 {
     my $self = shift;
     my $item = shift;
-    return $self->link() . "/news/" . $item->id() . "/";
+    return $self->link() . "news/" . $item->id() . "/";
 }
 
 sub generate_rss_feed
