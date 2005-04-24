@@ -10,3 +10,9 @@ the XML.
 
 * Make sure that nav links and the such contain the title of the navigation
 page.
+
+* Generate the news page and individual pages automatically from 
+manage-news.pl
+
+* Create a right floaty for the news items in brief.
+
