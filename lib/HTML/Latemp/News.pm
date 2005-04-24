@@ -18,7 +18,10 @@ sub new
 
 package HTML::Latemp::News::Item;
 
-__PACKAGE->mk_accessors(qw(index title id description author date category text));
+our @ISA=(qw(HTML::Latemp::News::Base));
+
+__PACKAGE__->mk_accessors(qw(index title id description author date 
+    category text));
 
 sub initialize
 {
@@ -40,8 +43,8 @@ package HTML::Latemp::News;
 
 our @ISA=(qw(HTML::Latemp::News::Base));
 
-__PACKAGE__->mk_accessors(qw(copyright docs generator language 
-    link managing_editor rating title ttl webmaster));
+__PACKAGE__->mk_accessors(qw(copyright description docs generator items 
+    language link managing_editor rating title ttl webmaster));
 
 use XML::RSS;
 
@@ -93,6 +96,7 @@ sub initialize
     $self->generator($args{'generator'} || "Perl and XML::RSS");
     $self->webmaster($args{'webmaster'});
     $self->managing_editor($args{'managing_editor'} || $self->webmaster());
+    $self->description($args{'description'});
 
     return 0;
 }
@@ -107,12 +111,12 @@ sub add_item_to_rss_feed
 
     $rss_feed->add_item(
         'title' => $item->title(),
-        'link' => $item->link(),
-        'permaLink' => $item->link(),
+        'link' => $self->link(),
+        'permaLink' => $self->link(),
         'enclosure' => { 'url' => $self->get_item_url($item), },
         'description' => $item->description(),
         'author' => $item->author(),
-        'pubDate' => $item->data(),
+        'pubDate' => $item->date(),
         'category' => $item->category(),
     );
 }
