@@ -5,10 +5,10 @@
 
 <p>
 The site source code is present in 
-<a href="svn://svn.berlios.de/better-scm/better-scm-site/trunk/">a
-directory</a> in a <a href="svn://svn.berlios.de/better-scm/">Subversion
-repository</a> kindly hosted by 
-<a href="http://opensvn.csie.org/">BerliOS</a>.
+<a href="http://opensvn.csie.org/betterscm/better-scm-site/trunk/">a
+directory</a> in a <a href="http://opensvn.csie.org/betterscm/">Subversion
+repository</a> kindly hosted by
+<a href="http://opensvn.csie.org/">OpenSVN.csie.org</a>.
 </p>
 
 <p>
@@ -20,11 +20,6 @@ system and issue the command:
 <pre>
 svn checkout http://opensvn.csie.org/betterscm/better-scm-site/trunk/
 </pre>
-
-<p>
-You can browse the repository online using 
-<a href="http://svn.berlios.de/viewcvs/better-scm/">its web-interface</a>.
-</p>
 
 <define-tag cpan_link>
 <li><a href="http://search.cpan.org/%0/">%0</a></li>
