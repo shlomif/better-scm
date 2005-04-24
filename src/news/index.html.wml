@@ -12,6 +12,12 @@ if you'd like to learn what's new here.
 
 <h2>News Items</h2>
 
+<h3><a href="./2005-04-25-rss-feed/">The Better SCM RSS Feed</a></h3>
+
+<p>
+The Better SCM Site now has <a href="$(ROOT)/rss.xml">an RSS Feed</a>.
+</p>
+
 <h3><a href="./changes-2005-04-18/">Changes as of 18 April 2005</a></h3>
 
 <p>
