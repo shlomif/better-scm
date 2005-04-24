@@ -104,4 +104,8 @@ width="100" height="50" /></a>
     alt="Better SCM" class="bless" /></a>
 </latemp_top_left_corner_logo>
 
+<latemp_extra_head_elements>
+<link rel="alternate stylesheet" type="text/css" href="$(ROOT)/alternate1.css" media="screen, projection" title="Kitchy" />
+</latemp_extra_head_elements>
+
 #include '../lib/bk-note.wml'
