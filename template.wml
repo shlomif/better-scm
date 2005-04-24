@@ -68,9 +68,15 @@ License</a>.
 
 <latemp_affiliations_buttons>
 <p>
+<a href="$(ROOT)/rss.xml" rel="rss news"><img
+src="$(ROOT)/images/rss2feed.png"
+alt="RSS Feed" class="bless" style="margin-top:1em"
+title="Receive Site Updates using an RSS Reader" /></a>
+</p>
+<p>
 <a href="http://developer.berlios.de/"><img 
 src="$(ROOT)/images/berlios-logo.png"
-alt="BerliOS Logo" class="bless" style="margin-top:1em"
+alt="BerliOS Logo" class="bless" 
 title="Hosted at BerliOS" /></a>
 </p>
 <p>
@@ -107,6 +113,7 @@ width="100" height="50" /></a>
 
 <latemp_extra_head_elements>
 <link rel="alternate stylesheet" type="text/css" href="$(ROOT)/alternate1.css" media="screen, projection" title="Kitchy" />
+<link rel="alternate" title="Better SCM RSS Feed" href="$(ROOT)/rss.xml" type="application/rss+xml" />
 </latemp_extra_head_elements>
 
 #include '../lib/bk-note.wml'
