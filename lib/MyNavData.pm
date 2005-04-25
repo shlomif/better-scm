@@ -1,5 +1,10 @@
 package MyNavData;
 
+use strict;
+use warnings;
+
+use MyManageNews;
+
 my $hosts =
 {
     'berlios' =>
@@ -7,6 +12,8 @@ my $hosts =
         'base_url' => "http://better-scm.berlios.de/",
     },
 };
+
+my $news_manager = get_news_manager();
 
 my $tree_contents =
 {
@@ -24,10 +31,7 @@ my $tree_contents =
             'url' => "news/",
             'subs' =>
             [
-                {
-                    'text' => "2005-04-18",
-                    'url' => "news/changes-2005-04-18/",
-                },
+                @{$news_manager->get_navmenu_items('num_items' => 5)},
             ],
         },
         {
