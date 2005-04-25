@@ -127,7 +127,31 @@ sub get_item_url
 {
     my $self = shift;
     my $item = shift;
-    return $self->link() . "news/" . $item->id() . "/";
+    return $self->link() . $self->get_item_rel_url($item);
+}
+
+sub get_item_rel_url
+{
+    my $self = shift;
+    my $item = shift;
+    return "news/" . $item->id() . "/";
+}
+
+sub get_items_to_include
+{
+    my $self = shift;
+    my $args = shift;
+
+    my $num_items_to_include = $args->{'num_items'} || 10;
+
+    my $items = $self->items();
+
+    if (@$items < $num_items_to_include)
+    {
+        $num_items_to_include = scalar(@$items);
+    }
+
+    return [ @$items[(-$num_items_to_include) .. (-1)] ];
 }
 
 sub generate_rss_feed
@@ -153,16 +177,7 @@ sub generate_rss_feed
         'webMaster' => $self->webmaster(),
     );
 
-    my $num_items_to_include = $args{'num_items'} || 10;
-
-    my $items = $self->items();
-
-    if (@$items < $num_items_to_include)
-    {
-        $num_items_to_include = scalar(@$items);
-    }
-
-    foreach my $single_item (@$items[(-$num_items_to_include) .. (-1)])
+    foreach my $single_item (@{$self->get_items_to_include(\%args)})
     {
         $self->add_item_to_rss_feed(
             'item' => $single_item,
@@ -173,6 +188,24 @@ sub generate_rss_feed
     my $filename = $args{'output_filename'} || "rss.xml";
     
     $rss_feed->save($filename);
+}
+
+sub get_navmenu_items
+{
+    my $self = shift;
+    my %args = (@_);
+
+    my @ret;
+
+    foreach my $single_item (reverse(@{$self->get_items_to_include(\%args)}))
+    {
+        push @ret, 
+            { 
+                'text' => $single_item->title(), 
+                'url' => $self->get_item_rel_url($single_item),
+            };
+    }
+    return \@ret;
 }
 
 1;
