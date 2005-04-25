@@ -96,6 +96,7 @@ ul.my li
 .foot_left
 {
     float : left;
+    width: 60%;
 }
 .webmaster
 {
