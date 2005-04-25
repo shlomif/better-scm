@@ -3,6 +3,7 @@
 <set-var latemp_nav_links_allowed_places="top-left bottom-left" />
 <set-var latemp_with_timestamp="1" />
 <set-var latemp_html_standard="xhtml1.1" />
+<set-var latemp_with_favicon="1" />
 <define-tag latemp_timestamp_wrapper endtag="required">
 <p class="vcs">
 <b>Version Control ID:</b> <tt>%body</tt>
