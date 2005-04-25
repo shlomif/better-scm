@@ -173,5 +173,13 @@ pre
 }
 .links li
 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0.5em;
+}
+.links li:hover
+{
+    background-color: #E6FAE6;
 }
