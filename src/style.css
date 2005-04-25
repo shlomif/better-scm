@@ -7,6 +7,8 @@
     $Id$
 */
 
+
+
 a:hover { color : red }
 
 .navbar {
@@ -14,6 +16,7 @@ a:hover { color : red }
     background-color : #C5CAE2;
     width : 200px;
     padding-left : 0.5em;
+    padding-right : 0.5em;
     padding-top : 0.5em;
 }
 
@@ -184,4 +187,13 @@ pre
 .links li:hover
 {
     background-color: #E6FAE6;
+}
+.logo
+{
+    margin-top: 0.5em;
+    text-align: center;
+}
+.logo img
+{
+    border : none;
 }

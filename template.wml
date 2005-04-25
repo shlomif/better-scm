@@ -106,9 +106,11 @@ width="100" height="50" /></a>
 </latemp_affiliations_buttons>
 
 <latemp_top_left_corner_logo>
+<div class="logo">
 <a href="$(ROOT)/" title="Home"><img 
     src="$(ROOT)/images/better-scm-logo.png"
-    alt="Better SCM" class="bless" /></a>
+    alt="Better SCM" /></a>
+</div>
 </latemp_top_left_corner_logo>
 
 <latemp_extra_head_elements>
