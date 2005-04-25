@@ -19,14 +19,6 @@ they think.
 </p>
 
 <p>
-You can also find some discussion of it <a href="http://developers.slashdot.org/article.pl?sid=05/04/06/140202&amp;tid=163&amp;tid=8&amp;tid=106">in this 
-Slashdot discussion</a>, <a href="http://linux.slashdot.org/article.pl?sid=05/04/11/1413232&amp;tid=99&amp;tid=106">in 
-this one</a> and 
-<a href="http://linux.slashdot.org/article.pl?sid=05/04/09/2136247&amp;tid=106">in 
-this one</a> 
-</p>
-
-<p>
 As a result, the <a href="http://subversion.tigris.org/">Subversion</a> 
 developers issued 
 <a href="http://subversion.tigris.org/subversion-linus.html">a statement</a>
@@ -38,7 +30,7 @@ BitKeeper.
 </p>
 
 <p>
-Finally one can refer to <a href="http://kerneltrap.org/node/4968">this thread
+One can also refer to <a href="http://kerneltrap.org/node/4968">this thread
 in KernelTrap about "Life after BitKeeper"</a>.
 </p>
 
@@ -58,3 +50,31 @@ pages here will remain, but a notice will be added to indicate that it
 may no longer be relevant.
 </p>
 
+<h2>Coverage of This Story</h2>
+
+<ul class="links">
+<li>
+<a href="http://kerneltrap.org/node/4966">KernelTrap editorial about the 
+dicontinuation of the gratis BitKeeper</a>
+</li>
+<li>
+<a href="http://developers.slashdot.org/article.pl?sid=05/04/06/140202&amp;tid=163&amp;tid=8&amp;tid=106">Slashdot: No More BitKeeper Linux</a>.
+</li>
+<li>
+<a href="http://linux.slashdot.org/article.pl?sid=05/04/09/2136247&amp;tid=106">Slashdot: Linus Drops Bitkeeper</a>
+</li>
+<li>
+<a href="http://linux.slashdot.org/article.pl?sid=05/04/11/1413232&amp;tid=99&amp;tid=106">Slashdot: BitKeeper Love Triangle: McVoy, Linus and Tridge</a>
+</li>
+<li>
+<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;ltid=25&amp;tid=3">Newsforge: BitKeeper and Linux: The end of the road?</a>
+</li>
+<li>
+<a href="http://slashdot.org/pollBooth.pl?qid=1269&amp;aid=-1">Slashdot Poll:
+If I were Linus, I would replace BitKeeper with...</a>.
+</li>
+<li>
+<a href="http://lwn.net/Articles/130746/">Linux Weekly News' coverage of the
+story</a> (with comments).
+</li>
+</ul>
