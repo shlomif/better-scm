@@ -51,15 +51,12 @@ h2, h3, h4
 /* Opera has a very wide default for margin-left, which causes the navbar
    to be misrendered. This rule fixes it.
    */
-.navbar ul
-{
-    margin-left: 0;
-}
 ul.navbarmain
 { 
     padding-left : 1em; 
     font-size: 80%;
     font-family: sans-serif;
+    margin-left: 0.5em;
 }
 ul.navbarnested 
 { 
@@ -121,6 +118,9 @@ ul.my li
     text-align: center;
     padding-left : 0em;
     padding-top : 0em;
+    /* Opera has a very wide default for margin-left, which causes the 
+    nav_links to be misrendered. This rule fixes it. */
+    margin-left: 0em;
 }
 .nav_links li
 {
