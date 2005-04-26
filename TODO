@@ -15,6 +15,3 @@ page.
 manage-news.pl
 
 * Create a right floaty for the news items in brief.
-
-* Point the site sources page to the real svn repository.
-
