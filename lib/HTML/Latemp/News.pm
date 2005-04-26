@@ -6,6 +6,7 @@ use warnings;
 package HTML::Latemp::News::Base;
 
 use base 'Class::Accessor';
+use CGI;
 
 sub new
 {
@@ -199,13 +200,40 @@ sub get_navmenu_items
 
     foreach my $single_item (reverse(@{$self->get_items_to_include(\%args)}))
     {
-        push @ret, 
-            { 
-                'text' => $single_item->title(), 
+        push @ret,
+            {
+                'text' => $single_item->title(),
                 'url' => $self->get_item_rel_url($single_item),
             };
     }
     return \@ret;
 }
+
+sub format_news_page_item
+{
+    my $self = shift;
+    my (%args) = (@_);
+
+    my $item = $args{'item'};
+
+    return "<h3><a href=\"" . $item->id() . "/\">" . 
+        CGI::escapeHTML($item->title()) . "</a></h3>\n" .
+        "<p>\n" . $item->description() . "\n</p>\n";
+}
+
+sub get_news_page_entries
+{
+    my $self = shift;
+    my %args = (@_);
+
+    my $html;
+
+    foreach my $single_item (reverse(@{$self->get_items_to_include(\%args)}))
+    {
+        $html .= $self->format_news_page_item('item' => $single_item);
+    }
+    return $html;
+}
+
 
 1;
