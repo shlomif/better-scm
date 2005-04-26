@@ -4,7 +4,8 @@
 <latemp_version_control_id "$Id$" />
 
 <p>
-<b>Written at:</b> 12-April-2005
+<b>Written at:</b> 12-April-2005<br />
+<b>Updated at:</b> 26-April-2005
 </p>
 
 <p>
@@ -97,5 +98,8 @@ open-source leader comes to the defence of Andrew Tridgell.
 <a href="http://software.newsforge.com/article.pl?sid=05/04/25/130207">NewsForge
 - BitKeeper Bon-voyage is a Happy Ending</a> - an 
 opinionated essay by Richard M. Stallman about BitKeeper and its history.
+Here's
+<a href="http://developers.slashdot.org/article.pl?sid=05/04/25/1936225">the
+coverage on Slashdot</a>.
 </li>
 </ul>
