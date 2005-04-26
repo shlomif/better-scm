@@ -1,3 +1,8 @@
+package MyManageNews;
+
+use base 'Exporter';
+
+our @EXPORT=(qw(get_news_manager));
 
 use strict;
 use warnings;
