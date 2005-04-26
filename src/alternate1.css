@@ -124,6 +124,7 @@ ul.my li
 .foot_left
 {
     float : left;
+    width: 60%;
 }
 .webmaster
 {
@@ -178,15 +179,14 @@ ul.my li
 {
     display: table;
     clear: both;
-    margin-right : 30px;
     background-color: white;
     margin-top: 0.5em;
     margin-right: 1em;
     background-color: white;
     padding-left: 1em;
     padding-right: 1em;
-    width: 90%;
     border: 1.5pt solid teal;
+    width: 100%;
 }
 .footer:hover, .main:hover, .navbar:hover, .leading_path:hover
 {
