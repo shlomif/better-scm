@@ -200,3 +200,22 @@ pre
 {
     border : none;
 }
+.news
+{
+    border: dashed 1.5pt black;
+    float: right;
+    background-color: #ebb9ea;
+    font-size: 60%;
+    font-family: sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.news ul
+{
+    list-style-position: inside;
+    margin-left: 0em;
+    padding-left:0em;
+}
+
