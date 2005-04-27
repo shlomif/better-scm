@@ -226,7 +226,7 @@ sub get_news_page_entries
     my $self = shift;
     my %args = (@_);
 
-    my $html;
+    my $html = "";
 
     foreach my $single_item (reverse(@{$self->get_items_to_include(\%args)}))
     {
@@ -235,5 +235,27 @@ sub get_news_page_entries
     return $html;
 }
 
+sub get_news_box
+{
+    my $self = shift;
+    my (%args) = (@_);
+
+    my $html = "";
+
+    $html .= qq{<div class="news">\n};
+    $html .= qq{<h3>News</h3>\n};
+    $html .= qq{<ul>\n};
+    foreach my $item (reverse(@{$self->get_items_to_include(\%args)}))
+    {
+        $html .= "<li><a href=\"" . 
+            $self->get_item_rel_url($item) . "\">" . 
+        CGI::escapeHTML($item->title()) . "</a></li>\n";
+    }
+    $html .= qq{<li><a href="./news/">More&hellip;</a></li>};
+    $html .= qq{</ul>\n};
+    $html .= qq{</div>\n};
+    return $html;
+}
 
 1;
+

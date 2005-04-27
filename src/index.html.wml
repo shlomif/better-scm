@@ -5,6 +5,16 @@
 
 <h2>Introduction</h2>
 
+<:{
+use MyManageNews;
+
+use vars qw($news_manager);
+
+$news_manager = get_news_manager();
+
+print $news_manager->get_news_box();
+}:>
+
 <p>
 <b>Version control systems</b> (or Source Configuration Management systems) 
 allow developers or authors to keep track of the history of their projects
