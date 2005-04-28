@@ -4,14 +4,13 @@ in the Subversion repository.
 * Comparison: generate a list of systems under comparison/index.html from
 the XML.
 
-* Submit to Open Source Web Designs.
-
 * Create a page for the logo.
 
 * Make sure that nav links and the such contain the title of the navigation
 page.
 
-* Generate the news page and individual pages automatically from 
-manage-news.pl
+Long-Term:
+----------
 
-* Create a right floaty for the news items in brief.
+* Submit to Open Source Web Designs.
+
