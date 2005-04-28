@@ -19,20 +19,15 @@ control systems. It is fully open-source under the LGPL.
 </p>
 
 <p>
-Vesta's main problem is that momentarily, it is the only tool capable of 
-building itself. While I agree that it is probable that the Vesta team came 
-up with something better than Make, Autoconf/Automake/Libtool and friends, I 
-still think the ability to compile from source is important. My suggestion
-to them, should they want it to become popular, is to swallow their pride and
-maintain an Autoconf-based distribution of it. That will make it much more
-accessible. (Peter Miller did the same thing with Aegis, which is fully
-autoconfisicated and can be built as an RPM).
+Vesta is used to build itself, but there's also a make-based bootstrap package
+available that can be used to build it. Vesta was extensively tested on Linux
+(i386 and Alpha AXP) and Compaq Tru64, and is expected to work on other UNIX
+flavours. It remains to be seen whether it can work on Win32-based systems.
 </p>
 
+<h2>Last Update</h2>
+
 <p>
-Until then, an due to the fact binaries for it are only available for Linux
-(i386 and Alpha AXP) and Compaq Tru64, I don't expect it to become very 
-popular. Few people will take a look at a only-self-can-build-self tool like 
-that.
+<b>2005-04-28</b>
 </p>
 
