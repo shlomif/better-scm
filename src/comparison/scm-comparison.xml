@@ -694,8 +694,9 @@ TODO:
                     Medium to Good.  There is a detailed installation guide
                     for setting it up using a binary kit.  RPMs and
                     Debian packages have been recently released.
-                    There are no dependencies on other software.
-                    Vesta, however, is required to build itself.
+                    There are no dependencies on other software. There is a
+                    bootstrap package available to build Vesta from using
+                    "make".
                 </s>
                 <s id="co-op">Very easy to deploy, since there is no central
                     server. Can be configured to use e-mail or LAN (or both) for 
