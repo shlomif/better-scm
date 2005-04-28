@@ -9,7 +9,7 @@ WML_FLAGS = -DLATEMP_THEME=better-scm
 
 LATEMP_WML_FLAGS =$(shell latemp-config --wml-flags)
 
-DOCS_COMMON_DEPS = template.wml lib/MyNavData.pm lib/MyNavLinks.pm
+DOCS_COMMON_DEPS = template.wml lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
 
 all: dummy
 
@@ -20,13 +20,15 @@ include rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
-dummy: latemp_targets
+dummy: latemp_targets $(D)/rss.xml
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
 	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS)
 
 dummy : $(SUBDIRS) $(IMAGES) $(HTMLS)
 
+$(D)/rss.xml: manage-news.pl lib/MyManageNews.pm
+	perl -Ilib manage-news.pl
 
 .PHONY: 
 
