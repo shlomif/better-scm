@@ -975,8 +975,11 @@ TODO:
                     <a href="http://viewsvn.berlios.de/">ViewSVN</a>,
                     <a href="http://www.outoforder.cc/projects/apache/mod_svn_view/">mod_svn_view</a>, 
                     <a href="http://www.horde.org/chora/">Chora</a>,
-                    <a href="http://www.edgewall.com/trac/">Trac</a>, and
-                    <a href="http://web-cpan.berlios.de/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>.
+                    <a href="http://www.edgewall.com/trac/">Trac</a>,
+                    <a href="http://web-cpan.berlios.de/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>,
+                    <a href="http://www.polarion.org/svnbrowser.php">SVN
+                        Browser</a> and
+                    <a href="http://insurrection.tigris.org/">Insurrection</a>.
                     Aside
                     from that, the Subversion Apache service provides a
                     rudimentary web-interface.
