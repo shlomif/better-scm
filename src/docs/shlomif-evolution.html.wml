@@ -224,15 +224,15 @@ will adopt it as well, and this will provide an even more accessible
 alternative to csie.org.
 </p>
 <p>
-An Arch repository can be set up very easily because it just requires a space 
-with a  remote filesystem protocol access. (such as FTP, SFTP or WebDAV). As 
-a result many Arch repositories became hosted on the Net. (Here's a 
-<a href="http://mirrors.sourcecontrol.net/">partial 
+An Arch repository can be set up very easily because it just requires a space
+with a  remote filesystem protocol access. (such as FTP, SFTP or WebDAV). As
+a result many Arch repositories became hosted on the Net. (Here's a
+<a href="http://mirrors.sourcecontrol.net/">partial
 mirror of the public ones</a>)
 </p>
 <p>
-With the accessibility and ease of setup of Arch, Subversion and other similar 
-open source version control systems, it is probable that BitKeeper will 
+With the accessibility and ease of setup of Arch, Subversion and other similar
+open source version control systems, it is probable that BitKeeper will
 eventually have very little use among open source hackers, and have nothing
 too much besides the Linux kernel repositories to show for. (And a whole slew
 of flamewars in the <a href="http://www.tux.org/lkml/">Linux Kernel Mailing 
@@ -242,14 +242,14 @@ List</a> about it).
 
 <div class="note">
 <p>
-<b>More Recent Note: (as of 25-April-2005)</b> There are now 
-<a href="http://subversion.tigris.org/project_links.html">other hosting 
-services for Subversion</a>, including 
-<a href="http://developer.berlios.de/">BerliOS</a>. I now maintain many 
+<b>More Recent Note: (as of 25-April-2005)</b> There are now
+<a href="http://subversion.tigris.org/project_links.html#hosting">other
+hosting services for Subversion</a>, including
+<a href="http://developer.berlios.de/">BerliOS</a>. I now maintain many
 projects using Subversion, and use CVS only for projects on which I don't
 have any control on the choice of the version control system. (usually
 international projects I join as a co-developer). I recently also switched
-Freecell Solver to subversion, by converting its CVS repository using 
+Freecell Solver to subversion, by converting its CVS repository using
 <a href="http://cvs2svn.tigris.org/">cvs2svn</a>. That was a painless and
 pleasant experience.
 </p>
