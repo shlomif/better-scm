@@ -1066,7 +1066,7 @@ TODO:
                 </s>
                 <s id="vesta">
                     No GUIs are available, but the repository has a
-                    C++ API, and it's not be hard to write one.  (At
+                    C++ API, and it is not hard to write one.  (At
                     least three different project-specific ones have
                     been written by users at Compaq and Intel.)
                 </s>
