@@ -29,7 +29,11 @@ Little positive can be said on
 <a href="http://msdn.microsoft.com/ssafe/">Microsoft Visual 
 SourceSafe</a>. Check for example,
 <a href="http://www.joelonsoftware.com/articles/fog0000000013.html">this
-entry on the Joel on Software site</a>. It is very weak, unreliable, and
+entry on the Joel on Software site</a> or 
+<a href="http://www.subversionary.org/subversionary.cgi/WhyNotVSS">the 
+Why not VSS page</a> in the 
+<a href="http://www.subversionary.org/subversionary.cgi/HomePage">Subversionary
+Wiki</a>. It is very weak, unreliable, and
 idiosyncratic even in comparison to CVS. The only reason people are using
 it is because it's the solution offered by Microsoft.
 </p>
@@ -39,9 +43,9 @@ Another bad thing about SourceSafe is the fact it is limited to Microsoft
 Windows alone (if we don't take into account the UNIX ports that Mainsoft are 
 doing, which probably don't work too well.). If you are using SourceSafe now, 
 you should 
-<a href="http://www.riseup.com/~brettw/dev/VSS2Subversion.html">migrate 
+<a href="http://www.riseup.com/~brettw/dev/VSS2Subversion.html">migrate
 to Subversion</a> or a different alternative now. Subversion and other systems
-work very well on Win32, and are much more reliable, robust, feature-rich and 
+work very well on Win32, and are much more reliable, robust, feature-rich and
 portable than Microsoft Visual SourceSafe.
 </p>
 
