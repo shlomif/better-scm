@@ -5,15 +5,12 @@
 
 <h2>Introduction</h2>
 
-<:{
-use MyManageNews;
-
-use vars qw($news_manager);
-
-$news_manager = get_news_manager();
-
-print $news_manager->get_news_box();
-}:>
+<div class="news">
+<h3>News</h3>
+<ul>
+<latemp_news_get_news_box_contents />
+<li><a href="./news/">More&hellip;</a></li></ul>
+</div>
 
 <p>
 <b>Version control systems</b> (or Source Configuration Management systems) 

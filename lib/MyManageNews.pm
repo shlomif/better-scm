@@ -36,7 +36,7 @@ my @news_items =
     )
 );
 
-sub get_news_manager
+sub gen_news_manager
 {
     return
         HTML::Latemp::News->new(
@@ -49,6 +49,20 @@ sub get_news_manager
             'managing_editor' => "Shlomi Fish <shlomif\@iglu.org.il>",
             'description' => "News of the Better SCM Site - a site for Version Control and Source Configuration Management news and advocacy",
         );
+}
+
+# A singleton.
+{
+    my $news_manager;
+
+    sub get_news_manager
+    {
+        if (!defined($news_manager))
+        {
+            $news_manager = gen_news_manager();
+        }
+        return $news_manager;
+    }
 }
 
 1;
