@@ -27,8 +27,8 @@ WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
 
 dummy : $(SUBDIRS) $(IMAGES) $(HTMLS)
 
-$(D)/rss.xml: manage-news.pl lib/MyManageNews.pm
-	perl -Ilib manage-news.pl
+$(D)/rss.xml: gen-feeds.pl lib/MyManageNews.pm
+	perl -Ilib gen-feeds.pl
 
 .PHONY: 
 

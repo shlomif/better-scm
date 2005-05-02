@@ -13,12 +13,5 @@ if you'd like to learn what's new here.
 
 <h2>News Items</h2>
 
-<:{
-use MyManageNews;
+<latemp_news_get_news_page_entries />
 
-use vars qw($news_manager);
-
-$news_manager = get_news_manager();
-
-print $news_manager->get_news_page_entries();
-}:>
