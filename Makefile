@@ -20,15 +20,17 @@ include rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
-dummy: latemp_targets $(D)/rss.xml
+dummy: latemp_targets news_feeds 
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
 	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS)
 
-dummy : $(SUBDIRS) $(IMAGES) $(HTMLS)
+RSS_FEED = $(D)/rss.xml
 
-$(D)/rss.xml: gen-feeds.pl lib/MyManageNews.pm
-	perl -Ilib gen-feeds.pl
+news_feeds: $(RSS_FEED)
+
+$(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
+	perl -Ilib gen-feeds.pl --rss2-out="$@"
 
 .PHONY: 
 
