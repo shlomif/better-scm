@@ -102,8 +102,16 @@ tt { color : #8A2BE2 /* The BlueViolet Color */ }
 
 <xsl:template match="compare">
  <table class="compare">
- <xsl:apply-templates select="s"/>
+  <xsl:apply-templates select="//comparison/meta/implementations/impl">
+  <xsl:with-param name="curcomp" select="." />
+  </xsl:apply-templates>
  </table>
+</xsl:template>
+
+<xsl:template match="impl">
+<xsl:param name="curcomp" />
+<xsl:variable name="curid" select="@id" />
+<xsl:apply-templates select="$curcomp/s[@id=$curid]" />
 </xsl:template>
 
 <xsl:template match="s">
