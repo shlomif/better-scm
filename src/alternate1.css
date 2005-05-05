@@ -4,7 +4,7 @@
     Feel free to use, modify and re-distribute under the terms of the 
     MIT X11 License (http://www.opensource.org/licenses/mit-license.php)
 
-    $Id: style.css 481 2005-04-24 09:14:41Z shlomif $
+    $Id: style.css 521 2005-04-28 08:54:06Z shlomif $
 */
 
 body
@@ -21,7 +21,7 @@ body
 
 a:hover 
 { 
-    color : magenta;
+    color : #FF00FF; /* Magenta */
 }
 
 .main a:hover
@@ -37,23 +37,33 @@ a.bless:hover
 .navbar
 {
     float : left;
-    background-color : #90EE90;
+    background-color : #EEEEA0;
     width : 200px;
     padding-left : 0.5em;
+    padding-right : 0.5em;
     padding-top : 0.5em;
     border: black solid thin;
 }
-
+.navbar, .leading_path, .footer
+{
+    margin-left: 10px;
+}
 .main
 {
     padding-left : 1em;
     padding-bottom : 1em;
     padding-top : 0em;
     padding-right: 1em;
-    margin-left : 220px;
-    margin-right: 1em;
+    margin-left : 240px;
+    margin-right: 10pt;
     background-color : white;
     border: thin solid black;
+}
+
+/* This is so the footer will be separated from the two other divs. */
+.main, .navbar
+{
+    margin-bottom: 1em;
 }
 
 p.desc { margin-left : 3em }
@@ -72,7 +82,7 @@ h2, h3, h4
 {
     padding-left: 0.3em;
 }
-.main p
+.main p, .main img
 {
     padding-left : 1em;
 }
@@ -162,31 +172,34 @@ ul.my li
     padding-left: 0.5em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    background-color : plum;
+    background-color : #DDA0DD; /* plum */
     /* background-color: #FF7070; */
     font-size: 85%;
     border-color: black;
     border-width: thin;
     border-style: solid;
-    margin-bottom: 0.2em;
-    margin-right: 1em;
+    margin-top: 5pt;
+    margin-bottom: 0.5em;
+    margin-right: 10pt;
 }
 .leading_path :hover
 {
     color : yellow;
 }
-.footer 
+.main, .navbar
 {
-    display: table;
+    height: auto;
+}
+.footer
+{
     clear: both;
-    background-color: white;
-    margin-top: 0.5em;
-    margin-right: 1em;
     background-color: white;
     padding-left: 1em;
     padding-right: 1em;
     border: 1.5pt solid teal;
-    width: 100%;
+    margin-right: 10pt;
+    margin-bottom: 1em;
+    overflow: hidden;
 }
 .footer:hover, .main:hover, .navbar:hover, .leading_path:hover
 {
@@ -222,7 +235,7 @@ pre
     margin-left: 1.5em;
     margin-right: 2.5em;
     border-width : 1.5pt;
-    border-color : darkgreen;
+    border-color : #006400; /* darkgreen; */
     border-style: solid;
     margin-bottom : 1em;
     background-color: #E0FF80;
@@ -232,6 +245,52 @@ pre
 {    
     border-color: red;
     background-color:#E0FFA0;
+}
+
+.links
+{
+    list-style-position: inside;
+    padding-left: 1em;
+}
+.links li
+{
+    margin-bottom: 0.5em;
+    padding-left: 0.3em;
+    padding-top: 0.15em;
+    padding-bottom: 0.2em;
+    padding-right: 0.3em;
+}
+.links a
+{
+    font-weight: bold;
+}
+.links li:hover
+{
+    background-color: #E6FAE6;
+}
+.logo
+{
+    margin-top: 0.5em;
+    text-align: center;
+}
+.logo img
+{
+    border : none;
+}
+.image_list
+{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #FF80FF;
+}
+.image_list li
+{
+    vertical-align: middle;
+    margin-bottom: 0.5em;
+}
+.image_list img
+{
+    vertical-align:middle;
 }
 .news
 {
