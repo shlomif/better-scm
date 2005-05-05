@@ -41,6 +41,9 @@ TODO:
             <impl id="perforce">
                 <name>Perforce</name>
             </impl>
+            <impl id="purecm">
+                <name>PureCM</name>
+            </impl>
             <impl id="subversion">
                 <name>Subversion</name>
             </impl>
@@ -93,6 +96,7 @@ TODO:
                 <s id="monotone">Yes.</s>
                 <s id="opencm">Yes. Commits are atomic.</s>
                 <s id="perforce">Yes. Commits are atomic.</s>
+                <s id="purecm">Yes. Commits are atomic.</s>
                 <s id="vesta">Yes. Commits are atomic.</s>
                 <s id="co-op">Yes. Commits are atomic.</s>
                 <s id="vss">No. VSS commits are not atomic.</s>
@@ -124,6 +128,11 @@ TODO:
                     Not directly (you copy and then delete but it manages to 
                     keep track of the branch; the item below allows for this 
                     very feature)
+                </s>
+                <s id="purecm">
+                    Yes. File renames are directly supported. File and folder 
+                    moves require creating a new one and deleting the old one. 
+                    Moved file histories are preserved.
                 </s>
                 <s id="vesta">
                     Yes.  The unit of checkout/checkin is a directory
@@ -173,6 +182,7 @@ TODO:
                 <s id="perforce">Copies are supported (though, because
                     of its architecture, I don't know how well)
                 </s>
+                <s id="purecm">Yes. Copies are supported.</s>
                 <s id="vesta">
                     Yes.  A new package/branch can be based on any
                     existing version without affecting the past
@@ -207,6 +217,7 @@ TODO:
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
+                <s id="purecm">No.</s>
                 <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
                 <s id="co-op">Repositories are always replicated on local machines. 
                     There is no central server.
@@ -238,6 +249,7 @@ TODO:
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Unknown. Probably Not.</s>
+                <s id="purecm">No.</s>
                 <s id="vesta">
                     Yes.
                 </s>
@@ -300,6 +312,10 @@ TODO:
                     Yes. (more than half a dozen of permission levels that can 
                     be set in a file by file basis)
                 </s>
+                <s id="purecm">
+                    Yes. (more than half a dozen of permission levels that can 
+                    be set in a file by file basis)
+                </s>
                 <s id="vesta">
                     Yes.  Access permissions for each package (the
                     unit of checkout/checkin) can be different.
@@ -358,6 +374,9 @@ TODO:
                 <s id="perforce">
                     Yes. Changesets are supported.
                 </s>
+                <s id="purecm">
+                    Yes. Changesets are supported.
+                </s>
                 <s id="vesta">
                     Not exactly.  Vesta uses a related concept of
                     configurations instead, which some has similar
@@ -389,6 +408,7 @@ TODO:
                 <s id="aegis">Yes. aeannotate</s>
                 <s id="opencm">Unknown. Probably not.</s>
                 <s id="perforce">Yes, an annotation feature is present.</s>
+                <s id="purecm">No.</s>
                 <s id="vesta">
                     No, but it would be easy to implement a tool that
                     did this, as the Vesta repository provides direct
@@ -440,6 +460,9 @@ TODO:
                     Yes. Changes to a sub-directory of the repository 
                     are supported.
                 </s>
+                <s id="purecm">
+                    Yes.
+                </s>
                 <s id="vesta">
                     Yes and no. The unit of checkout/checkin (called a
                     package) is a directory tree.  Most projects use
@@ -480,6 +503,7 @@ TODO:
                 <s id="opencm">Yes. Using cm diff</s>
                 <s id="aegis">Yes. Using aediff.</s>
                 <s id="perforce">Yes.</s>
+                <s id="purecm">Yes.</s>
                 <s id="vesta">
                     Yes.  Intermediate immutable snapshots can be
                     taken during an active checkout (with vadvance).
@@ -521,6 +545,9 @@ TODO:
                     Unknown.
                 </s>
                 <s id="perforce">
+                    No. Commit messages are per change.
+                </s>
+                <s id="purecm">
                     No. Commit messages are per change.
                 </s>
                 <s id="vesta">
@@ -601,6 +628,9 @@ TODO:
                     Well documented.
                 </s>
                 <s id="perforce">
+                    Very Good (html and command line help)
+                </s>
+                <s id="purecm">
                     Very Good (html and command line help)
                 </s>
                 <s id="vesta">
@@ -689,6 +719,9 @@ TODO:
                 </s>
                 <s id="perforce">
                     Very good. Perforce is very easy to deploy.
+                </s>
+                <s id="purecm">
+                    Very good. PureCM is very easy to deploy.
                 </s>
                 <s id="vesta">
                     Medium to Good.  There is a detailed installation guide
@@ -779,6 +812,10 @@ TODO:
                 <s id="perforce">
                     Very extensive but not compatible with CVS.
                 </s>
+                <s id="purecm">
+                    A CVS-like command set which is easy to get used to
+                    for CVS-users.
+                </s>
                 <s id="vesta">
                     The command set is unrelated to CVS.  Most of the
                     time, users use about 5 commands.  Few ever need
@@ -858,6 +895,9 @@ TODO:
                 <s id="perforce">
                     Good. (single TCP/IP socket)
                 </s>
+                <s id="purecm">
+                    Good. (single TCP/IP socket)
+                </s>
                 <s id="vesta">
                     Networking is inherent to the system.  The
                     repository exports both an NFS interface and an
@@ -932,6 +972,10 @@ TODO:
                 <s id="perforce">
                     Excellent. Runs on UNIX, Mac OS, BeOS and Windows.
                 </s>
+                <s id="purecm">
+                    Good. Server and gui run on Windows. Command line also 
+                    runs on UNIX and Mac OS.
+                </s>
                 <s id="vesta">
                     Good.  It should be portable to any UNIX system.
                     Currently it runs on Digital/Compaq/HP Tru64 UNIX
@@ -1000,6 +1044,7 @@ TODO:
                 <s id="monotone">No.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes, P4Web.</s>
+                <s id="purecm">No.</s>
                 <s id="vesta">
                     Yes: <a href="http://www.scooter.cx/vestaweb/">Vestaweb</a>.
                 </s>
@@ -1064,6 +1109,9 @@ TODO:
                     Yes, P4Win and others based on the available libp4 
                     library. 
                 </s>
+                <s id="purecm">
+                    Windows has a very user friendly gui.
+                </s>
                 <s id="vesta">
                     No GUIs are available, but the repository has a
                     C++ API, and it is not hard to write one.  (At
@@ -1125,6 +1173,11 @@ TODO:
                     starting at $750 per seat for the first year</a> and then 
                 $150 for continuing support for the subsequent years. Free for 
                 Open Source projects (no support in this case).
+            </s>
+            <s id="purecm">
+                A proprietary, binary only, commercial license. 
+                <a href="http://www.purecm.com/purchase">Price 
+                    starting at $600 for 5 users</a>
             </s>
             <s id="vesta">
                 GNU LGPL (open source)
