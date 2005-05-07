@@ -404,7 +404,7 @@ TODO:
                 <s id="arch">Not in the command line client, but ViewARCH,
                 a web-interface for Arch, has it.</s>
                 <s id="darcs">Yes. (darcs annotate)</s>
-                <s id="monotone">No.</s>
+                <s id="monotone">Yes, as of version 0.19.</s>
                 <s id="aegis">Yes. aeannotate</s>
                 <s id="opencm">Unknown. Probably not.</s>
                 <s id="perforce">Yes, an annotation feature is present.</s>
@@ -452,7 +452,11 @@ TODO:
                     whole.
                 </s>
                 <s id="aegis">No. All changes are made repository-wide.</s>
-                <s id="monotone">No. All changes are tree-wide.</s>
+                <s id="monotone">
+                    It is possible to commit changes only in a subset of the
+                    tree. However, one must extract the entire tree to work
+                    on it.
+                </s>
                 <s id="opencm">No. All changes are made to a project as
                     a unit
                 </s>
@@ -474,9 +478,11 @@ TODO:
                     history separately.
                 </s>
                 <s id="vss">Yes.</s>
-                <s id="cmsynergy">Yes and no.  Files and directories are checked out and in
-					individually, however you have to work in the context of a project,
-					which consists of one or more directories.</s>
+                <s id="cmsynergy">
+                    Yes and no.  Files and directories are checked out and in
+                    individually, however you have to work in the context of a 
+                    project, which consists of one or more directories.
+                </s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
