@@ -1,0 +1,166 @@
+#include "../template.wml"
+
+<latemp_subject "What BitMover Got Wrong?" />
+
+<p>
+<b>Written by:</b> Shlomi Fish<br />
+<b>Date:</b> 14-May-2005<br />
+</p>
+
+<h2>Introduction</h2>
+
+<p>
+BitKeeper could have been big. It could have been used by almost all
+open-source projects that have migrated from CVS. It could have been the
+industry standard. It could have had the best developers and code from all
+of the other open-source version control systems. It could have sprang a
+prosperous community of companies and consultants. It could have been GPLed,
+while still not hurting the profitability of BitMover, BitKeeper's parent
+company. It could have received dozens of patches to the source code, weekly,
+some of them of very high quality.
+</p>
+
+<p>
+But it's not. It is very pricy and its source is not available to the 
+public. The gratis version has been discontinued, and the Linux kernel 
+project, the crown Jewel of the BitKeeper's open-source projects, has decided 
+not to use it any longer. (<a href="http://www.mysql.com/">MySQL</a> has 
+decided to seek a suitable alternative as well, and so will probably most 
+other projects). The entire history of the BitKeeper gratis version has been
+filled with flamewars, license changes (often to the worse), and a lot of bad
+reputation to BitMover.
+</p>
+
+<p>
+Was it worth it? Probably not. If BitKeeper had been a commercial-only product
+from the start, it could have saved itself of all of this frustration. But 
+that's not the only path that they could have followed. This article will 
+point what BitMover, and especially its vigorous (or some say flamboyant) 
+leader <a href="http://www.bitmover.com/lm/">Larry McVoy</a> got wrong and how 
+others can prevent that mistake.
+</p>
+
+<h2>What BitMover Got Wrong</h2>
+
+<p>
+BitMover got one main thing wrong and this is this:
+</p>
+
+<div class="note">
+<p>
+It doesn't matter how many people abuse the spirit or the letter of the 
+license, it matters how many of them would have been paying customers.
+</p>
+</div>
+
+<p>
+BitMover got it wrong all the time. Whenever, someone abused its license,
+they kept restricting it. Even the source was pulled out of the Net, because
+people have downloaded it and patched it to remove some of the built-in
+restrictions, whose removal was prevented by the license. Now, tell me - do 
+people who have this disregard towards copyright, will ever consider buying 
+a license?
+</p>
+
+<p>
+On the other hand, this prevented many people from rolling their changes into
+the product. I recall that when I started to use BitKeeper there was something
+that bothered me and considered to fix, and wanted to send a patch. I couldn't
+because I did not have the source. On the other hand, I recently submitted some
+patches to some Perl modules on <a href="http://www.cpan.org/">CPAN</a> without
+even notifying the authors of my intentions, just because I had the source. I
+did the same with Subversion, The GIMP, and other programs, and most of my 
+patches were integrated into the main product. We all know how successful
+<a href="http://en.wikipedia.org/">Wikipedia</a> is because it's
+world-editable.
+</p>
+
+<p>
+BitMover has similarly employed several other restrictions in time. Yet,
+<a href="http://lwn.net/1999/features/BitKeeper.php3">the original license
+and intentions</a> were pretty acceptable to most open source users, who are
+not as uncomprising as <a href="http://www.stallman.org/">Richard 
+Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it 
+could have been converted to full GPL, without hurting the profitability of
+<a href="http://www.bitmover.com/">BitMover</a> by much as many people 
+wouldn't deploy a version control system without adequate support.
+</p>
+
+<h2>Unnecessary Paranoia</h2>
+
+<p>
+Judging by how Larry McVoy's is trying to protect BitKeeper, he thinks it
+should be a well-guarded castle, surrounded by a 1 km-wide chasm, filled with
+water with dangerous crocodiles, and with canons hurling greek fire. So far,
+Mr. McVoy has:
+</p>
+
+<ol>
+<li>
+Issued several patents on BitKeeper features. He said he plans to enforce them.
+</li>
+<li>
+Posted a message to the Subversion mailing list where he warned them against
+integrating any of BitKeeper's features into Subversion.
+</li>
+<li>
+Added the no-compete clause and no tries to enforce it on paying customers as 
+well.
+</li>
+</ol>
+
+<p>
+All of these actions are pretty much useless and just leave a bad taste in the
+mouth and create antagonism towards BitMover. Even if you have patents, then
+trying to enforce them using a lawsuit against a well-funded competitor will 
+drain the resources of BitMover, and create a lot of further antagonism towards
+it. Many smaller companies did not survive after they started a patent
+law-suit.
+</p>
+
+<p>
+Even if people integrate some of BitKeeper's features and ideas into their
+own products, BitMover would better try to stay ahead of the curve and 
+integrate newer features. That way people will always catch up with it.
+</p>
+
+<p>
+Finally, if BitMover wishes to remain a company friendly to open source
+software, it must realize all of these things are a big no-no. Free Software
+advocates encourage competition. Those that respect the developers of 
+proprietary software developers, believe that they should not try to prevent
+free software (and other developers of proprietary software) from duplicating
+their efforts independently.
+</p>
+
+<h2>A Final Note about Larry McVoy</h2>
+
+<p>
+To be honest, I still like Larry McVoy, BitMover's CEO and founder, and the
+main engineer of BitKeeper. I symphatize him. However, he has many issues,
+and I think he'd better re-consider some of his views and ditch his paranoia.
+</p>
+
+<p>
+I refer him to the following resources regarding software management that he
+can read to get a better perspective on life and software management:
+</p>
+
+<ul>
+<li>
+<a href="http://catb.org/~esr/cathedral-bazaar/">The Cathedral and the 
+Bazaar series</a> by <a href="http://catb.org/~esr/">Eric S. Raymond</a>. Other
+writings by Raymond, who is widely considered as the foremost philosopher of 
+the open source world, are also very good.
+</li>
+<li>
+The excellent <a href="http://www.joelonsoftware.com/">Joel on Software</a>
+site by Joel Spolsky.
+</li>
+<li>
+<a href="http://www.paulgraham.com/">Paul Graham's Essays</a>.
+</li>
+<li>
+<a href="http://www.dwheeler.com/">David A. Wheeler's</a> personal site.
+</li>
+</ul>

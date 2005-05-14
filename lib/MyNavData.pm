@@ -101,6 +101,13 @@ my $tree_contents =
                             'title' => ("The Demise of the Gratis" . 
                                 " BitKeeper Licensing"),
                         },
+                        {
+                            'text' => "What BitMover Got Wrong?",
+                            'url' => "bk/what-bitmover-got-wrong.html",
+                            'title' => ("An essay that explains what BitMover".
+                                " did not understand in the long and sad " .
+                                "history of the BitKeeper gratis license."),
+                        },
                     ],
                 },
                 {
