@@ -65,10 +65,11 @@ a license?
 <p>
 On the other hand, this prevented many people from rolling their changes into
 the product. I recall that when I started to use BitKeeper there was something
-that bothered me and considered to fix, and wanted to send a patch. I couldn't
-because I did not have the source. On the other hand, I recently submitted some
-patches to some Perl modules on <a href="http://www.cpan.org/">CPAN</a> without
-even notifying the authors of my intentions, just because I had the source. I
+that bothered me and which I considered to fix, and wanted to send a patch. I 
+couldn't because I did not have the source. On the other hand, I recently 
+submitted some patches to some Perl modules on 
+<a href="http://www.cpan.org/">CPAN</a> without even notifying the authors of 
+my intentions, just because I had the source. I
 did the same with Subversion, The GIMP, and other programs, and most of my 
 patches were integrated into the main product. We all know how successful
 <a href="http://en.wikipedia.org/">Wikipedia</a> is because it's
@@ -82,11 +83,12 @@ and intentions</a> were pretty acceptable to most open source users, who are
 not as uncomprising as <a href="http://www.stallman.org/">Richard 
 Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it 
 could have been converted to full GPL, without hurting the profitability of
-<a href="http://www.bitmover.com/">BitMover</a> by much as many people 
-wouldn't deploy a version control system without adequate support.
+<a href="http://www.bitmover.com/">BitMover</a> much due to the fact many
+people wouldn't deploy a version control system without the adequate support
+or endorsement of its parent company.
 </p>
 
-<h2>Unnecessary Paranoia</h2>
+<h2 id="paranoia">Unnecessary Paranoia</h2>
 
 <p>
 Judging by how Larry McVoy's is trying to protect BitKeeper, he thinks it
@@ -112,7 +114,7 @@ well.
 <p>
 All of these actions are pretty much useless and just leave a bad taste in the
 mouth and create antagonism towards BitMover. Even if you have patents, then
-trying to enforce them using a lawsuit against a well-funded competitor will 
+trying to enforce them using a lawsuit against a well-funded competitor will
 drain the resources of BitMover, and create a lot of further antagonism towards
 it. Many smaller companies did not survive after they started a patent
 law-suit.
@@ -133,13 +135,14 @@ free software (and other developers of proprietary software) from duplicating
 their efforts independently.
 </p>
 
-<h2>A Final Note about Larry McVoy</h2>
+<h2 id="lm">A Final Note about Larry McVoy</h2>
 
 <p>
 To be honest, I still like Larry McVoy, BitMover's CEO and founder, and the
-main engineer of BitKeeper. I have symphaty for him. However, I believe some
-of his beliefs and things he says frequently are completely false, and have 
-no basis in reality.
+main engineer of BitKeeper. I have symphaty for him, out of respect for him
+as an Engineer and as an Entrepreneur. However, I believe some of his beliefs 
+and things he says frequently are completely false, and have no basis in
+reality.
 </p>
 
 <p>
@@ -149,9 +152,9 @@ regarding software management that you can read to get a better perspective:
 
 <ul>
 <li>
-<a href="http://catb.org/~esr/cathedral-bazaar/">The Cathedral and the 
+<a href="http://catb.org/~esr/cathedral-bazaar/">The Cathedral and the
 Bazaar series</a> by <a href="http://catb.org/~esr/">Eric S. Raymond</a>. Other
-writings by Raymond, who is widely considered as the foremost philosopher of 
+writings by Raymond, who is widely considered as the foremost philosopher of
 the open source world, are also very good.
 </li>
 <li>
@@ -165,3 +168,4 @@ site by Joel Spolsky.
 <a href="http://www.dwheeler.com/">David A. Wheeler's</a> personal site.
 </li>
 </ul>
+

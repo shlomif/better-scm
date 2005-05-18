@@ -32,6 +32,13 @@ my @news_items =
             'description' => q{The Better SCM Site now has an RSS feed. It will be periodically updated with news about the site, and possibly latest happening in the Version Control Systems/Source Configuration Management world. To use it, add http://better-scm.berlios.de/rss.xml to your RSS aggregator.},
             'date' => "2005-04-25",
         },
+        {
+            'title' => "New BitKeeper Essay + PureCM Added to the Comparison",
+            'id' => "changes-2005-05-18",
+            'description' => q{There's a new BitKeeper essay on the Better-SCM 
+            site and PureCM was added to the comparsion.},
+            'date' => "2005-05-18",
+        },        
         )
     )
 );
