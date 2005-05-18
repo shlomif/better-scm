@@ -21,13 +21,13 @@ some of them of very high quality.
 </p>
 
 <p>
-But it's not. It is very pricy and its source is not available to the 
+But it's not. It is very pricey and its source is not available to the 
 public. The gratis version has been discontinued, and the Linux kernel 
 project, the crown Jewel of the BitKeeper's open-source projects, has decided 
 not to use it any longer. (<a href="http://www.mysql.com/">MySQL</a> has 
 decided to seek a suitable alternative as well, and so will probably most 
 other projects). The entire history of the BitKeeper gratis version has been
-filled with flamewars, license changes (often to the worse), and a lot of bad
+filled with flame-wars, license changes (often to the worse), and a lot of bad
 reputation to BitMover.
 </p>
 
@@ -80,7 +80,7 @@ world-editable.
 BitMover has similarly employed several other restrictions in time. Yet,
 <a href="http://lwn.net/1999/features/BitKeeper.php3">the original license
 and intentions</a> were pretty acceptable to most open source users, who are
-not as uncomprising as <a href="http://www.stallman.org/">Richard 
+not as uncompromising as <a href="http://www.stallman.org/">Richard 
 Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it 
 could have been converted to full GPL, without hurting the profitability of
 <a href="http://www.bitmover.com/">BitMover</a> much due to the fact many
@@ -93,7 +93,7 @@ or endorsement of its parent company.
 <p>
 Judging by how Larry McVoy's is trying to protect BitKeeper, he thinks it
 should be a well-guarded castle, surrounded by a 1 km-wide chasm, filled with
-water with dangerous crocodiles, and with canons hurling greek fire. So far,
+water with dangerous crocodiles, and with canons hurling Greek fire. So far,
 Mr. McVoy has:
 </p>
 
@@ -139,7 +139,7 @@ their efforts independently.
 
 <p>
 To be honest, I still like Larry McVoy, BitMover's CEO and founder, and the
-main engineer of BitKeeper. I have symphaty for him, out of respect for him
+main engineer of BitKeeper. I have sympathy for him, out of respect for him
 as an Engineer and as an Entrepreneur. However, I believe some of his beliefs 
 and things he says frequently are completely false, and have no basis in
 reality.
