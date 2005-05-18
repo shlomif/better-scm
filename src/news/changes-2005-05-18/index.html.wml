@@ -1,0 +1,18 @@
+#include '../template.wml'
+
+<latemp_subject "New BitKeeper Essay + PureCM Added to the Comparison" />
+<latemp_version_control_id "$Id: index.html.wml 222 2005-05-02 18:45:20Z shlomif
+ $" />
+
+<p>
+There's <a href="$(ROOT)/bk/what-bitmover-got-wrong.html">a new Essay about
+BitKeeper</a> titled "What BitMover Got Wrong". Thanks should go to all the 
+people who reviewed it and commented on it.
+</p>
+
+<p>
+Plus, PureCM was added to <a href="$(ROOT)/comparison/">the comparison</a>. 
+Thanks to a PureCM representative for filling the details, and agreeing to
+be the PureCM champion for the comparison in the future.
+</p>
+
