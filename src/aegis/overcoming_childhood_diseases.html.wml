@@ -3,6 +3,18 @@
 <latemp_subject "Overcoming Aegis Childhood Diseases" />
 <latemp_version_control_id "$Id$" />
 
+<div class="note">
+<h2>Note</h2>
+
+<p>
+This document has now been deprecated. Some items in it are inaccurate or
+irrelevant, and it is possible that Aegis has more serious problems than
+those that are mentioned here. It is kept here so it will remain
+on the web.
+</p>
+</div>
+
+
 <define-tag problem>
 <h3 class="problem">Problem</h3>
 </define-tag>
@@ -11,6 +23,9 @@
 <h3 class="solution">Solution</h3>
 </define-tag>
 
+<p>
+<b>By:</b> Shlomi Fish
+</p>
 
 <p>
 Aegis is a mature SCM with many powerful features and may seem like a good
