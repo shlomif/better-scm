@@ -1,3 +1,20 @@
+Near-Term:
+----------------
+
+* Link to Gabor Szabo's Subversion Compared page (see his use.perl.org journal)
+
+* Go over the E-mails, and implement their suggestions.
+
+* Split Bazaar/Bazaar-NG off the Arch page. (see the thread in the mailing 
+list archive)
+
+* Darcs and no way to mark files as executable?
+
+* Add a note to the Aegis Childhood diseases document saying it is
+deprecated.
+
+-------------------------------------------------------------------------
+
 * Make sure the files that are added to the buckets of src/ are present
 in the Subversion repository.
 
