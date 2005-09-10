@@ -103,3 +103,22 @@ the comparison into DocBook/XML.</li>
 the XML into HTML.</li>
 </ul>
 
+<h2>Other Comparisons</h2>
+
+<ul>
+<li>
+<a href="http://www.szabgab.com/subversion_vs_xyz.html">How does Subversion
+compare to the XYZ Version Control System?</a> - a list of links to
+comparisons and other resources by <a href="http://www.szabgab.com/">Gabor
+Szabo</a>.
+</li>
+<li>
+<a href="http://wiki.gnuarch.org/SubVersionAndCvsComparison">Comparison of
+Arch to Subversion and CVS</a> - on the Arch wiki.
+</li>
+<li>
+<a href="http://www.dwheeler.com/essays/scm.html">Comments on Open Source SCM 
+Systems</a> - by David A. Wheeler.
+</li>
+</ul>
+

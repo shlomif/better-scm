@@ -26,12 +26,16 @@ incompatible with tla, and has some advantages.
 <A href="http://bazaar.canonical.com/">Bazaar</a> - a fork of tla, which aims
 to provide better Subversion compatibility, and other nice features.
 </li>
-<li>
-<a href="http://www.bazaar-ng.org/">Bazaar-NG</a> - a rewrite of Bazaar (from
-the same source) written in <a href="http://www.python.org/">Python</a>, which 
-offers some advantages.
-</li>
 </ul>
+
+<p>
+<b>Note</b>: related to Bazaar, is
+<a href="http://www.bazaar-ng.org/">Bazaar-NG</a>, which is written from
+scratch by the same parent company. It aims to offer some advantages over
+Bazaar, but is not an Arch implementation, nor is it compatible with Bazaar.
+A tool is available to convert Bazaar repositories into Bazaar-NG, but not
+the other way around.
+</p>
 
 <h2>Summary</h2>
 
