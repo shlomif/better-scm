@@ -23,6 +23,9 @@ TODO:
             <impl id="bitkeeper">
                 <name>BitKeeper</name>
             </impl>
+            <impl id="clearcase">
+                <name>ClearCase</name>
+            </impl>
             <impl id="cmsynergy">
                 <name>CMSynergy</name>
             </impl>
@@ -101,6 +104,7 @@ TODO:
                 <s id="co-op">Yes. Commits are atomic.</s>
                 <s id="vss">No. VSS commits are not atomic.</s>
                 <s id="cmsynergy">Yes. Commits are atomic.</s>
+                <s id="clearcase">Yes. Commits (checkins) are atomic.</s>
             </compare>
         </section>
         <section id="move">
@@ -151,6 +155,11 @@ TODO:
                     want.
                 </s>
                 <s id="cmsynergy">Yes. Renames are supported.</s>
+                <s id="clearcase">
+                  Yes. Directories are first-class controlled entities
+                  in Clearcase. Even supports controlling of
+                  symbolic/hard links.
+                </s>
            </compare>
         </section>
         <section id="copy">
@@ -193,6 +202,10 @@ TODO:
                 <s id="cmsynergy">Yes, and it's a very cheap operation (update the target
 					directory to include the new file/directory).
 				</s>
+                <s id="clearcase">
+                  Yes, through use of hard links. (But some
+                  limitations in Windows environments)
+                </s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -227,6 +240,9 @@ TODO:
                     command line tools; ssarc and ssrestor might be useable
                 </s>
                 <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
+                <s id="clearcase">
+                  Not really applicable for clearcase, but see next point.
+                </s>
             </compare>
         </section>
         <section id="push">
@@ -261,6 +277,7 @@ TODO:
                     command line tools; ssarc and ssrestor might be useable
                 </s>
                 <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
+                <s id="clearcase">Yes, using Clearcase Multisite.</s>
             </compare>
         </section>
         <section id="permissions">
@@ -333,6 +350,11 @@ TODO:
                     accidental damage but cannot prevent intentional damage.
                 </s>
                 <s id="cmsynergy">No, though a single server can serve many repositories.</s>
+                <s id="clearcase">
+                  Yes, a unix-like permissions model is used, which maps
+                  onto Windows domain-based authentication in
+                  multi-platform environments.
+                </s>
             </compare>
         </section>
         <section id="changesets">
@@ -386,6 +408,13 @@ TODO:
                 <s id="vss">No.  Changes are file-specific.</s>
                 <s id="cmsynergy">Yes.  Changesets (or tasks) are fundamental
                 	to the way Synergy works.</s>
+                <s id="clearcase">
+                  Not supported in this way. Extensive branching
+                  support gives similar benefits. (eg each changeset
+                  can be given a branch). Also optional UCM feature
+                  gives something like this (each changeset is a
+                  "stream").
+                </s>
            </compare>
         </section>
         <section id="annotate">
@@ -423,6 +452,7 @@ TODO:
                 <s id="cmsynergy">Probably, if you're a sufficiently proficient hacker with
 					their scripting language.
                 </s>
+                <s id="clearcase">Yes, "cleartool annotate"</s>
            </compare>
         </section>
     </section>
@@ -483,6 +513,7 @@ TODO:
                     individually, however you have to work in the context of a 
                     project, which consists of one or more directories.
                 </s>
+                <s id="clearcase">Yes, using snapshot view load rules.</s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -522,6 +553,7 @@ TODO:
                 <s id="vss">Yes, using integrated diff tool.</s>
                 <s id="cmsynergy">Yes, either using integrated diff tool or user-configured
 					external diff tool</s>
+                <s id="clearcase">Yes, "cleartool diff"</s>
             </compare>
         </section>
         <section id="per_file_commit_messages">
@@ -568,6 +600,10 @@ TODO:
                 </s>
                 <s id="vss">Since changesets are not supported, yes.</s>
                 <s id="cmsynergy">Yes.</s>
+                <s id="clearcase">
+                  Yes, assuming a comment on the branch is sufficient
+                  for a per-changeset message.
+                </s>
            </compare>
         </section>
     </section>
@@ -655,6 +691,12 @@ TODO:
                 	which can cause real problems really quickly.  They recommend
                 	a day's training for basic users, more for more advanced users.
                 	Took a while to become fluent.
+                </s>
+                <s id="clearcase">
+                  Extensive online help in Windows Help / UNIX manpage
+                  format, also PDF-based documentation. However the
+                  complexity of the tool can mean a lengthy ramp-up
+                  time.
                 </s>
             </compare>
         </section>
@@ -754,6 +796,12 @@ TODO:
                 	configured.  The Windows client is a slightly clunky Windows
                 	installer.
                 </s>
+                <s id="clearcase">
+                  Poor. Clearcase is very difficult to install in
+                  general. At least, setup for a new site is quite
+                  complex. Installing additional servers (eg
+                  repository servers) is less so.
+                </s>
            </compare>
         </section>
         <section id="command_set">
@@ -836,6 +884,10 @@ TODO:
                 	which has some CVS similarity, though the architecture
                 	is so different that it quickly moves away for anything
                 	but the basics.
+                </s>
+                <s id="clearcase">
+                  Excellent. All tools are available through the
+                  command-line. Not very compatible with CVS though.
                 </s>
            </compare>
         </section>
@@ -923,6 +975,13 @@ TODO:
                     slow network connection.
                 </s>
                 <s id="cmsynergy">Good (single TCP/IP socket)</s>
+                <s id="clearcase">
+                  Poor. Uses an *extremely* chatty RPC protocol for
+                  most clearcase operations, plus NFS or SMB for
+                  accessing the files themselves. Typically servers
+                  should be deployed locally (ie on the same LAN) as
+                  the client workstations for acceptable performance.
+                </s>
             </compare>
         </section>
         <section id="portability">
@@ -1000,6 +1059,11 @@ TODO:
                     Windows (only NT family for the server), VMS, and 
                     possibly other systems.
                 </s>
+                <s id="clearcase">
+                  Medium. Available on Windows, and several selected
+                  flavours of UNIX (not including MacOS X, or any
+                  other Linux other than Red Hat).
+                </s>
             </compare>
         </section>
     </section>
@@ -1062,6 +1126,9 @@ TODO:
                     or third-party one exists.
                 </s>
                 <s id="cmsynergy">Possibly.</s>
+                <s id="clearcase">
+                  Yes. Web views are supported.
+                </s>
             </compare>
         </section>
         <section id="availability_of_guis">
@@ -1137,6 +1204,11 @@ TODO:
                     administrative stuff. Has an SCCI plug-in, though it 
                     doesn't handle network problems well.
                 </s>
+                <s id="clearcase">
+                  Supplied for both Windows and UNIX. GUI tools are
+                  typically not as solid as the command-line tools
+                  though.
+                </s>
            </compare>
         </section>
     </section>
@@ -1202,6 +1274,15 @@ TODO:
                 Server is typically roughly 20,000 British Pounds.  
                 Clients are 4,000 British Pounds.  Per-year costs of 18% 
                 of original.
+            </s>
+            <s id="clearcase">
+              Proprietary, with floating license supported. License
+              server contacted for each clearcase operation, which
+              obtains a license to be used for the next 30-60
+              mins. Prices are several $k per license plus yearly
+              maintenance fee. Typically 1-3 users per license
+              required, depending on activity. Multisite requires
+              additional licensing.
             </s>
         </compare>
     </section>
