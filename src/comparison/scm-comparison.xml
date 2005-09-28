@@ -790,11 +790,11 @@ TODO:
                     directory and you can run them from there if you need to.
                 </s>
                 <s id="cmsynergy">
-                    Medium.  There is a detailed install guide for
-                	setting it up using a binary kit and a set of scripts.  However
-                	it still took several tries to get it properly installed and
-                	configured.  The Windows client is a slightly clunky Windows
-                	installer.
+                    Medium. There is a detailed install guide for setting it
+                    up using a binary kit and a set of scripts.  However
+                    it still took several tries to get it properly installed
+                    and configured.  The Windows client has a slightly clunky
+                    Windows installer.
                 </s>
                 <s id="clearcase">
                   Poor. Clearcase is very difficult to install in
