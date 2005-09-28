@@ -21,11 +21,11 @@ some of them of very high quality.
 </p>
 
 <p>
-But it's not. It is very pricey and its source is not available to the 
-public. The gratis version has been discontinued, and the Linux kernel 
-project, the crown Jewel of the BitKeeper's open-source projects, has decided 
-not to use it any longer. (<a href="http://www.mysql.com/">MySQL</a> has 
-decided to seek a suitable alternative as well, and so will probably most 
+But it's not. It is very pricey and its source is not available to the
+public. The gratis version has been discontinued, and the Linux kernel
+project, the crown Jewel of the BitKeeper's open-source projects, has decided
+not to use it any longer. (<a href="http://www.mysql.com/">MySQL</a> has
+decided to seek a suitable alternative as well, and so will probably most
 other projects). The entire history of the BitKeeper gratis version has been
 filled with flame-wars, license changes (often to the worse), and a lot of bad
 reputation to BitMover.
@@ -33,10 +33,10 @@ reputation to BitMover.
 
 <p>
 Was it worth it? Probably not. If BitKeeper had been a commercial-only product
-from the start, it could have saved itself of all of this frustration. But 
-that's not the only path that they could have followed. This article will 
-point what BitMover, and especially its vigorous (or some say flamboyant) 
-leader <a href="http://www.bitmover.com/lm/">Larry McVoy</a> got wrong and how 
+from the start, it could have saved itself of all of this frustration. But
+that's not the only path that they could have followed. This article will
+point what BitMover, and especially its vigorous (or some say flamboyant)
+leader <a href="http://www.bitmover.com/lm/">Larry McVoy</a> got wrong and how
 others can prevent that mistake.
 </p>
 
@@ -65,12 +65,12 @@ a license?
 <p>
 On the other hand, this prevented many people from rolling their changes into
 the product. I recall that when I started to use BitKeeper there was something
-that bothered me and which I considered to fix, and wanted to send a patch. I 
-couldn't because I did not have the source. On the other hand, I recently 
-submitted some patches to some Perl modules on 
-<a href="http://www.cpan.org/">CPAN</a> without even notifying the authors of 
+that bothered me and which I considered to fix, and wanted to send a patch. I
+couldn't because I did not have the source. On the other hand, I recently
+submitted some patches to some Perl modules on
+<a href="http://www.cpan.org/">CPAN</a> without even notifying the authors of
 my intentions, just because I had the source. I
-did the same with Subversion, The GIMP, and other programs, and most of my 
+did the same with Subversion, The GIMP, and other programs, and most of my
 patches were integrated into the main product. We all know how successful
 <a href="http://en.wikipedia.org/">Wikipedia</a> is because it's
 world-editable.
@@ -80,7 +80,7 @@ world-editable.
 BitMover has similarly employed several other restrictions in time. Yet,
 <a href="http://lwn.net/1999/features/BitKeeper.php3">the original license
 and intentions</a> were pretty acceptable to most open source users, who are
-not as uncompromising as <a href="http://www.stallman.org/">Richard 
+not as uncompromising as <a href="http://www.stallman.org/">Richard
 Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it 
 could have been converted to full GPL, without hurting the profitability of
 <a href="http://www.bitmover.com/">BitMover</a> much due to the fact many
@@ -106,8 +106,8 @@ Posted a message to the Subversion mailing list where he warned them against
 integrating any of BitKeeper's features into Subversion.
 </li>
 <li>
-Added the no-compete clause and no tries to enforce it on paying customers as 
-well.
+Added the no-compete clause and is now trying to enforce it on paying 
+customers as well.
 </li>
 </ol>
 
@@ -173,7 +173,7 @@ site by Joel Spolsky.
 
 <ul>
 <li>
-<a href="http://osnews.com/comment.php?news_id=10628">Discussion at 
+<a href="http://osnews.com/comment.php?news_id=10628">Discussion at
 OSNews.com</a>
 </li>
 <li>
