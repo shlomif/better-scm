@@ -1,0 +1,34 @@
+The module will be called HTML::Latemp::News.
+
+Its purpose would be to:
+
+1. Generate the RSS Feed.
+
+2. Generate the entries in the navigation menu.
+
+3. Generate the HTML in the news page.
+    - also for old news items archive.
+
+4. Generate the pages of the news items themselves.
+
+------------------------------------------------------------------------------
+
+Each news item contains the following information:
+
+1. Title
+
+2. ID (used to generate a link.
+
+3. Description. (short for the RSS)
+
+4. Author.
+
+5. Date.
+
+6. Category.
+
+7. WML content of the page itself.
+
+They will be placed in an array for input into the news generator.
+
+
