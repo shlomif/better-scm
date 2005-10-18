@@ -63,6 +63,11 @@ Licensing</a> and its implications for free software developers.
 the core strategical-philosophical mistakes that guided BitMover in the long and
 unfortunate history of the gratis BitKeeper license.
 </li>
+<li>
+<a href="the-bitkeeper-ghost.html">The BitKeeper Ghost</a> - an essay about
+the remaining effects of BitKeeper, by inspiration from the letter of 
+Bryan O'Sullivan, and what should version control users do about it.
+</li>
 </ul>
 
 <h2>Deprecated but Still Pertinent</h2>

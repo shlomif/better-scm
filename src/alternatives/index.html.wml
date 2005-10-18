@@ -27,9 +27,9 @@ server). Has several open-source implementations.
 <h3><a href="$(ROOT)/bk/">BitKeeper</a></h3>
 
 <p>
-A proprietary revision control system by BitMover Inc. that is available for
-free software developers under a gratis license. There are many strings attached
-to it, so <a href="$(ROOT)/bk/">read on</a>.
+A proprietary revision control system by BitMover Inc. that used to be 
+available for free software developers under a gratis license. There are many 
+strings attached to it, so <a href="$(ROOT)/bk/">read on</a>.
 </p>
 
 <h3><a href="./darcs/">Darcs</a></h3>

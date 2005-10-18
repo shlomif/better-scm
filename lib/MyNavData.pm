@@ -108,6 +108,10 @@ my $tree_contents =
                                 " did not understand in the long and sad " .
                                 "history of the BitKeeper gratis license."),
                         },
+                        {
+                            'text' => "The BitKeeper Ghost",
+                            'url' => "bk/the-bitkeeper-ghost.html",
+                        },
                     ],
                 },
                 {

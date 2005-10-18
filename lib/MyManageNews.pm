@@ -38,7 +38,16 @@ my @news_items =
             'description' => q{There's a new BitKeeper essay on the Better-SCM 
             site and PureCM was added to the comparsion.},
             'date' => "2005-05-18",
-        },        
+        },
+        {
+            'title' => "\"The BitKeeper Ghost\"",
+            'id' => "changes-2005-10-18",
+            'description' => q{A New Essay: "The BitKeeper Ghost" was added
+            to the Better-SCM Site. It covers the latest developments in 
+            the BitKeeper Saga after the department of Bryan O'Sullivan
+            from Mercurial.},
+            'date' => "2005-05-18",
+        },
         )
     )
 );

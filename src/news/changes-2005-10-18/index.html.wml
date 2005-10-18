@@ -1,0 +1,13 @@
+#include '../template.wml'
+
+<latemp_subject "\"The BitKeeper Ghost\"" />
+<latemp_version_control_id "$Id: index.html.wml 222 2005-05-02 18:45:20Z shlomif
+ $" />
+
+<p>
+There's <a href="$(ROOT)/bk/the-bitkeeper-ghost.html">a new Essay titled 
+"The BitKeeper Ghost"</a>. It discusses the recent developments in the 
+BitKeeper saga after the department of Bryan O'Sullivan from the Mercurial
+development team.
+</p>
+
