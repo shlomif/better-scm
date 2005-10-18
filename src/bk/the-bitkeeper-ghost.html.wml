@@ -1,0 +1,166 @@
+#include "../template.wml"
+
+<latemp_subject "The BitKeeper Ghost" />
+<latemp_version_control_id "$Id$" />
+
+<p>
+<b>Written by:</b> Shlomi Fish<br />
+<b>Date:</b> 17-October-2005<br />
+</p>
+
+<p>
+<a href="http://en.wikipedia.org/wiki/BitKeeper">BitKeeper</a> is a commercial
+closed-source version control system that was once available under a gratis
+license for use by open-source projects. After he was criticized for a slow
+patch merging speed, Linus Torvalds, the originator and project head of the
+Linux kernel, decided to use it as the primary version control system for the
+Linux kernel. Several other developers (but not all) joined him in making use
+of this system.
+</p>
+
+<p>
+BitKeeper accelerated the speed of kernel development considerably. However,
+in April, 2005 <a href="./demise-of-gratis-bitkeeper.html">BitKeeper's parent
+company decided to end-of-life the gratis version</a>, which left the Linux
+kernel developers and developers of other projects in Limbo. The kernel
+developers tested several version control systems, and ended up developing
+their own tool called <a href="http://git.or.cz/">git</a>, which have since
+then undergone an active development. Many other open-source alternatives to
+BitKeeper have been developed before it or afterward.
+</p>
+
+<p>
+On 30 September 2005, Bryan O'Sullivan, a developer of Mercurial, a version
+control system similar to git, 
+<a href="http://www.selenic.com/pipermail/mercurial/2005-September/004745.html">published a note to the Mercurial mailing list</a> where he explained why he
+no longer could be working on Mercurial:
+</p>
+
+<blockquote>
+<p>
+As I mentioned the other day, I will not be contributing to Mercurial
+development for a while.  Several people have asked me why.
+</p>
+<p>
+At my workplace, we use a commercial SCM tool called BitKeeper to
+manage a number of source trees.  Last week, Larry McVoy (the CEO of
+BitMover, which produces BitKeeper) contacted my company's management.
+</p>
+<p>
+Larry expressed concern that I might be moving BitKeeper technology
+into Mercurial.  In a phone conversation that followed, I told Larry
+that of course I hadn't done so.
+</p>
+<p>
+However, Larry conveyed his very legitimate worry that a fast,
+stable open source project such as Mercurial poses a threat to his
+business, and that he considered it "unacceptable" that an employee of
+a customer should work on a free project that he sees as competing.
+</p>
+<p>
+To avoid any possible perception of conflict, I have volunteered to
+Larry that as long as I continue to use the commercial version of
+BitKeeper, I will not contribute to the development of Mercurial.
+</p>
+<p>
+As such, Mercurial can stand entirely on its own merits in comparison
+to BitKeeper.  This, I am sure, is a situation that we would all
+prefer.
+</p>
+</blockquote>
+
+<p>
+Following is my analysis and conclusions of this latest development.
+</p>
+
+<h2>The Issue</h2>
+
+<p>
+First of all, I'd like to note that I'm not worried about the future of
+Mercurial due to O'Sullivan's leave of absence. Mercurial has many other active users
+and developers. So do many other open-source version control systems. That's
+not the issue here.
+</p>
+
+<p>
+The real issue is whether Larry McVoy, the CEO of the BitKeeper parent
+company, can and should prevent the employees of his customers' from
+contributing to competing version control system. Unfortunately for McVoy,
+the Law is not on his side. Someone who bought the product, is allowed to 
+contribute to a competing product under the laws of most countries. While 
+it may be marginally legal to impose a non-compete clause for a gratis version
+of a program, a paying customer should be allowed to do so. (Including
+a company that makes a competing product).
+</p>
+
+<p>
+Judging by what O'Sullivan said, though, Larry McVoy did not imply that he
+was obliged to do so, and O'Sullivan did it out of good will. Still, the 
+question still remains: why should BitMover care that employees of its 
+customers are contributing to competing products?
+</p>
+
+<h3>Paranoia</h3>
+
+<p>
+The answer is simple: 
+<a href="what-bitmover-got-wrong.html#paranoia">Paranoia</a>. Larry McVoy is
+positively paranoid and possessive about BitKeeper. He believes that it is the 
+best product in the market, and that in order to stay ahead others must not be
+able to borrow features or ideas from it. During the entire course of BitKeeper
+history, there were more and more measures taken to ensure that people would 
+not abuse the license, or attempt to compete with BitKeeper. 
+I <a href="what-bitmover-got-wrong.html#what_got_wrong">wrote about it earlier</a>.
+</p>
+
+<p>
+As we all know, such paranoia only brings a lot of frustrations, and doesn't
+actually help you to keep ahead. BitMover should try to stay ahead by making
+sure the development of BitKeeper is rapid enough for BitKeeper to become
+better and better, rather than harass its customers and competitors.
+</p>
+
+<h2>So What Should I Do About It?</h2>
+
+<p>
+BitKeeper is, from experience, a fine piece of engineering. However, the CEO
+of its parent company has too much bad attitude, and doesn't understand the
+value of a free and open competition. While I respect him as an engineer
+and as an entrepreneur, his personality and behaviour are extremely annoying
+and are doing a lot of harm, both to him and others. Furthermore, BitMover is
+practically entirely his entity, and as such is entirely affected with his
+attitude.
+</p>
+
+<p>
+As such, I believe any self-respecting businessman should not buy his
+products. There are enough other alternatives around, both open-source and
+commercial, and some of them are superior to BitKeeper in many respects.
+BitKeeper has its share of short-comings, despite what BitMover would like
+you to believe. If you are already using BitKeeper, you are hereby being 
+recommend to switch to a different version control system.
+</p>
+
+<p>
+BitKeeper was probably never meant to have any long-term significance on the
+version control world, at least not with the personality that its lead
+developer and CEO of its parent company possess. We may see BitKeeper concepts
+and ideas in other version control systems, but we can hope that BitKeeper
+would be dead, and no longer actively used.
+</p>
+
+<p>
+A completely alternative route is for BitKeeper to become open source or
+something very close. This is a decision only Larry McVoy can make. I wish he
+would do just that, but it seems unlikely at this point.
+</p>
+
+<h2>Links</h2>
+
+<ul>
+<li>
+<a href="http://lwn.net/Articles/153990/">Linux Weekly News Coverage of
+Bryan O'Sullivan's Email</a>.
+</li>
+</ul>
+
