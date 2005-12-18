@@ -77,6 +77,12 @@ alt="RSS Feed" class="bless" style="margin-top:1em"
 title="Receive Site Updates using an RSS Reader" /></a>
 </p>
 <affil_collection_berlios />
+<a 
+href="https://developer.berlios.de/project/make_donation.php?group_id=526" 
+rel="donate" title="Please donate to show your appreciation for the hard
+work conducted on the Better SCM Site"><img src="$(ROOT)/images/paypal.gif"
+alt="PayPal Donate" class="paypal" /></a>
+
 </latemp_affiliations_buttons>
 
 <latemp_top_left_corner_logo>
