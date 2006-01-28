@@ -1093,8 +1093,9 @@ TODO:
                     <a href="http://www.edgewall.com/trac/">Trac</a>,
                     <a href="http://web-cpan.berlios.de/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>,
                     <a href="http://www.polarion.org/svnbrowser.php">SVN
-                        Browser</a> and
-                    <a href="http://insurrection.tigris.org/">Insurrection</a>.
+                        Browser</a>,
+                    <a href="http://insurrection.tigris.org/">Insurrection</a>
+                    and <a href="http://www.osdevel.org/projects/show/16?lang=en">perl_svn</a>.
                     Aside
                     from that, the Subversion Apache service provides a
                     rudimentary web-interface.
