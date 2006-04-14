@@ -35,6 +35,9 @@ TODO:
             <impl id="darcs">
                 <name>Darcs</name>
             </impl>
+            <impl id="mercurial">
+                <name>Mercurial</name>
+            </impl>
             <impl id="monotone">
                 <name>Monotone</name>
             </impl>
@@ -96,6 +99,7 @@ TODO:
                 <s id="svk">Commits are atomic.</s>
                 <s id="aegis">Commits are atomic.</s>
                 <s id="bitkeeper">Yes (but need to verify)</s>
+                <s id="mercurial">Yes.</s>
                 <s id="monotone">Yes.</s>
                 <s id="opencm">Yes. Commits are atomic.</s>
                 <s id="perforce">Yes. Commits are atomic.</s>
@@ -126,6 +130,7 @@ TODO:
                 <s id="darcs">Yes. Renames are supported.</s>
                 <s id="bitkeeper">Yes. Renames are supported.</s>
                 <s id="aegis">Yes. Renames are supported.</s>
+                <s id="mercurial">Yes. Renames are supported.</s>
                 <s id="monotone">Yes. Renames are supported.</s>
                 <s id="opencm">Yes. Renames are supported</s>
                 <s id="perforce">
@@ -186,6 +191,7 @@ TODO:
                     Yes. Copies are supported.
                 </s>
                 <s id="aegis">No. Copies are not supported.</s>
+                <s id="mercurial">Yes. Copies are supported</s>
                 <s id="monotone">Yes. Copies are supported</s>
                 <s id="opencm">No. Copies are not supported.</s>
                 <s id="perforce">Copies are supported (though, because
@@ -227,6 +233,7 @@ TODO:
                 <s id="darcs">Yes.</s>
                 <s id="bitkeeper">Yes.</s>
                 <s id="aegis">Yes.</s>
+                <s id="mercurial">Yes.</s>
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
@@ -262,6 +269,7 @@ TODO:
                 <s id="darcs">Yes.</s>
                 <s id="bitkeeper">Yes.</s>
                 <s id="aegis">Yes.</s>
+                <s id="mercurial">Yes.</s>
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Unknown. Probably Not.</s>
@@ -315,6 +323,10 @@ TODO:
                 </s>
                 <s id="svk">
                     Same as subversion.
+                </s>
+                <s id="mercurial">
+                    Yes. It is possible to lock down repositories,
+                    subdirectories, or files using hooks.
                 </s>
                 <s id="monotone">
                     Yes. It is possible to restrict incoming changes
@@ -387,6 +399,9 @@ TODO:
                 <s id="darcs">
                     Yes. Changesets are supported.
                 </s>
+                <s id="mercurial">
+                    Yes. Changesets are supported.
+                </s>
                 <s id="monotone">
                     Yes. Changesets are supported.
                 </s>
@@ -433,6 +448,7 @@ TODO:
                 <s id="arch">Not in the command line client, but ViewARCH,
                 a web-interface for Arch, has it.</s>
                 <s id="darcs">Yes. (darcs annotate)</s>
+                <s id="mercurial">Yes. (hg annotate)</s>
                 <s id="monotone">Yes, as of version 0.19.</s>
                 <s id="aegis">Yes. aeannotate</s>
                 <s id="opencm">Unknown. Probably not.</s>
@@ -482,6 +498,10 @@ TODO:
                     whole.
                 </s>
                 <s id="aegis">No. All changes are made repository-wide.</s>
+                <s id="mercurial">
+                    It is possible to commit changes only in a subset of the
+                    tree. There are plans for partial checkouts.
+                </s>
                 <s id="monotone">
                     It is possible to commit changes only in a subset of the
                     tree. However, one must extract the entire tree to work
@@ -536,6 +556,7 @@ TODO:
                     Yes, using "darcs whatsnew".
                 </s>
                 <s id="aegis">Yes. Using aediff</s>
+                <s id="mercurial">Yes. Using hg diff.</s>
                 <s id="monotone">Yes. In a similar fashion to CVS.</s>
                 <s id="opencm">Yes. Using cm diff</s>
                 <s id="aegis">Yes. Using aediff.</s>
@@ -573,6 +594,9 @@ TODO:
                     No.
                 </s>
                 <s id="darcs">
+                    No.
+                </s>
+                <s id="mercurial">
                     No.
                 </s>
                 <s id="monotone">
@@ -660,6 +684,10 @@ TODO:
                     site. Each command is documented in its own man page, 
                     and the client contains a help tool that offers
                     an integrated help system.
+                </s>
+                <s id="mercurial">
+                    Very good. There's an overview and tutorial on the
+                    web site, and integrated help for every command.
                 </s>
                 <s id="monotone">
                     Good. There's an overview and tutorial written in Texi,
@@ -755,6 +783,11 @@ TODO:
                     In addition to installing subversion, users are required
                     to install the subversion perl bindings and a few modules
                     from CPAN.
+                </s>
+                <s id="mercurial">
+                    Excellent.  Binary packages are available for all
+                    popular platforms.  Building from source requires
+                    only Python 2.3 (or later) and a C compiler.
                 </s>
                 <s id="monotone">
                     Excellent. It is possible to copy or compile the executable
@@ -855,6 +888,10 @@ TODO:
                     but since the model is different most commands are
                     unique.
                 </s>
+                <s id="mercurial">
+                    Tries to follow CVS conventions, but deviates where there
+                    is a different design.
+                </s>
                 <s id="monotone">
                     Tries to follow CVS conventions, but deviates where there
                     is a different design.
@@ -944,6 +981,11 @@ TODO:
                     There exists some HTTP-functionality, but it is quite
                     limited.
                 </s>
+                <s id="mercurial">
+                    Excellent.  Uses HTTP or ssh.  Remote access also
+                    works safely without locks over read-only network
+                    filesystems.
+                </s>
                 <s id="monotone">
                     Good. Uses a custom protocol called "netsync".
                 </s>
@@ -1026,6 +1068,11 @@ TODO:
                 <s id="darcs">
                     Very good. Supports many UNIXes, Mac OS X, and Windows,
                     and is written in a portable language.
+                </s>
+                <s id="mercurial">
+                    Excellent. Runs on all platforms supported by
+                    Python.  Repositories are portable across CPU
+                    architectures and endian conventions.
                 </s>
                 <s id="monotone">
                     Excellent. Executable is portable across all UNIXes and
@@ -1113,6 +1160,7 @@ TODO:
                     is included in the distribution.
                 </s>
                 <s id="aegis">Yes.</s>
+                <s id="mercurial">Yes.  The web interface is a bundled component.</s>
                 <s id="monotone">No.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes, P4Web.</s>
@@ -1173,6 +1221,12 @@ TODO:
                 </s>
                 <s id="aegis">
                     There is tkaegis.
+                </s>
+                <s id="mercurial">
+                    History viewing available with hgit extension;
+                    check-in extension (hgct) makes committing easier.
+                    Some third-party IDEs and GUI tools (e.g. eric3,
+                    meld) have integrated Mercurial support.
                 </s>
                 <s id="monotone">
                     No GUIs are available.
@@ -1242,6 +1296,7 @@ TODO:
                 GNU GPL (open-source)
             </s>
             <s id="svk">Perl License. (open source)</s>
+            <s id="mercurial">GNU GPL (open source)</s>
             <s id="monotone">GNU GPL (open source)</s>
             <s id="opencm">
                 GNU GPL (open source), but moving soon to

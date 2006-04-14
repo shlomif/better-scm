@@ -1,0 +1,35 @@
+#include '../template.wml'
+
+<latemp_subject "Better SCM Initiative : Mercurial" />
+<latemp_version_control_id "$Id$" />
+
+<h2>Homepage</h2>
+
+<p>
+<a href="http://www.selenic.com/mercurial/">http://www.selenic.com/mercurial/</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Mercurial is one of the two distributed SCM projects that were started
+in response to the end of the availability of BitKeeper to open source
+projects.  It was designed with the intention of being small, easy to
+use, and highly scalable.
+</p>
+
+<p>
+Although Mercurial was initially taken up by a subset of the Linux
+kernel development community, it has since seen wider use both by open
+source projects and companies.
+</p>
+
+<p>
+The primary strengths of Mercurial are its simplicity and speed.  Even
+though it has a very different conceptual model than CVS and
+Subversion, its command line interface is similar enough that picking
+it up just takes a few minutes.  Because it was targeted specifically
+for work on large repositories, Mercurial is in many cases the fastest
+SCM tool available.
+</p>
+
