@@ -121,6 +121,12 @@ my $tree_contents =
                         "Version Control System"),
                 },
                 {
+                    'text' => "Mercurial",
+                    'url' => "alternatives/mercurial/",
+                    'title' => ("Mercurial - an Open Source Distributed" . 
+                        "Version Control System"),
+                },
+                {
                     'text' => "Monotone",
                     'url' => "monotone/",
                     'title' => ("Monotone - an Open Source Distributed " .
