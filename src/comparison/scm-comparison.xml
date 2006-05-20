@@ -1129,13 +1129,14 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">Yes. 
-                    WebCVS, <a href="http://viewcvs.sourceforge.net/">ViewCVS</a>,
-                    ,<a href="http://www.horde.org/chora/">Chora</a>
+                    <a href="http://www.freebsd.org/projects/cvsweb.html">CVSweb</a>,
+                    <a href="http://www.viewvc.org/">ViewVC</a>,
+                    <a href="http://www.horde.org/chora/">Chora</a>,
                     and <a href="http://wwcvs.republika.pl/">wwCVS</a>.
                 </s>
                 <s id="bitkeeper">Yes. Its own built-in web-interface.</s>
                 <s id="subversion">Yes. 
-                    <a href="http://viewcvs.sourceforge.net/">ViewCVS</a>,
+                    <a href="http://www.viewvc.org/">ViewVC</a>,
                     <a href="http://freshmeat.net/projects/svnweb/">SVN::Web</a>,
                     <a href="http://websvn.tigris.org/">WebSVN</a>, 
                     <a href="http://viewsvn.berlios.de/">ViewSVN</a>,
