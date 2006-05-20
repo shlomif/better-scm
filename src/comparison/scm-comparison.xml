@@ -223,9 +223,18 @@ TODO:
                 server except for normal repository access.
             </expl>
             <compare>
-                <s id="cvs">No.</s>
-                <s id="subversion">Indirectly, by using Chia-Ling Kao's SVN::Mirror 
-                    add-on or Shlomi Fish' svn-push utility.
+                <s id="cvs">
+                    Indirectly, by using
+                    <a href="http://www.cvsup.org/">CVSup</a> 
+                    by John Polstra (which requires running the cvsupd 
+                    daemon on the server)
+                </s>
+                <s id="subversion">
+                    Indirectly, by using Chia-liang Kao's 
+                    <a href="http://search.cpan.org/dist/SVN-Mirror/">SVN::Mirror</a>
+                    add-on or Shlomi Fish' 
+                    <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a> 
+                    utility.
                 </s>
                 <s id="superversion">Yes.</s>
                 <s id="svk">Yes.</s>
