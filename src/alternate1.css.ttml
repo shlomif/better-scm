@@ -19,10 +19,7 @@ body
     padding-right: 0.1em;        
 }
 
-a:hover 
-{ 
-    color : #FF00FF; /* Magenta */
-}
+[% SET a_hover_color = "#FF00FF" %]
 
 .main a:hover
 {

@@ -1,3 +1,7 @@
+a:hover
+{ 
+    color : [% a_hover_color %];
+}
 .main
 {
     padding-left : 1em;
