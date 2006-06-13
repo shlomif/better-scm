@@ -36,10 +36,8 @@ a.bless:hover
 [% SET navbar_width = "200px" %]
 [% PROCESS "shlomif/navbar.ttml" %]
 
-.navbar
-{
-    background-color : #EEEEA0;
-}
+[% SET navbar_bgcolor = "#EEEEA0" %]
+
 .navbar, .leading_path, .footer
 {
     margin-left: 10px;
@@ -67,10 +65,7 @@ h1
     padding-left: 0.2em;
     padding-bottom: 0.2em;
 }
-h2 
-{ 
-    background-color: #8080FF;
-}
+[% SET h2_bgcolor = "#8080FF" %]
 [% INCLUDE "shlomif/note.ttml" %]
 [% SET leading_path_bgcolor = "#DDA0DD" %]
 [% PROCESS "common-styles.css.ttml" %]
