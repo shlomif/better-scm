@@ -46,14 +46,7 @@ a.bless:hover
 }
 .main
 {
-    padding-left : 1em;
-    padding-bottom : 1em;
-    padding-top : 0em;
-    padding-right: 1em;
-    margin-left : 240px;
     margin-right: 10pt;
-    background-color : white;
-
 }
 
 .main, .navbar, .leading_path
@@ -115,42 +108,13 @@ ul.navbarmain
 {
     border-color: red;
 }
-.example
-{
-    margin-left: 1.5em;
-    margin-right: 2.5em;
-    border-width : 1.5pt;
-    border-color : #006400; /* darkgreen; */
-    border-style: solid;
-    margin-bottom : 1em;
-    background-color: #E0FF80;
-    padding-right: 0.5em;
-}
-.example:hover
-{    
-    border-color: red;
-    background-color:#E0FFA0;
-}
-
 .links
 {
     list-style-position: inside;
     padding-left: 1em;
 }
-.links li
-{
-    margin-bottom: 0.5em;
-    padding-left: 0.3em;
-    padding-top: 0.15em;
-    padding-bottom: 0.2em;
-    padding-right: 0.3em;
-}
 .links a
 {
     font-weight: bold;
-}
-.links li:hover
-{
-    background-color: #E6FAE6;
 }
 

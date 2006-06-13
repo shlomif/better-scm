@@ -1,3 +1,18 @@
+.main
+{
+    padding-left : 1em;
+    padding-bottom : 1em;
+    padding-top : 0em;
+    padding-right: 1em;
+
+    margin-left : 240px;
+}
+
+.main
+{
+    background-color: white;
+}
+
 /* This is so list items will have spacing between them. */
 .main li
 {
@@ -111,5 +126,17 @@ pre
 .logo img
 {
     border : none;
+}
+.links li
+{
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0.5em;
+}
+.links li:hover
+{
+    background-color: #E6FAE6;
 }
 
