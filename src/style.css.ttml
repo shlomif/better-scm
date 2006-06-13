@@ -29,26 +29,13 @@ h2
 { 
     background-color: #FFEE00  
 }
-h2, h3, h4
-{
-    padding-left: 0.3em;
-}
-.main p
-{
-    padding-left : 1em;
-}
-.link { background : transparent; }
-ul.navbarmain
-{ 
-    font-size: 80%;
-    font-family: sans-serif;
-}
 [% INCLUDE "shlomif/note.ttml" %]
 [% SET leading_path_bgcolor = "#40C040" %]
 [% INCLUDE "common-styles.css.ttml" %]
 [% INCLUDE "nav_links.ttml" %]
-.footer {
-    clear : both;
+.footer
+{
+    clear: both;
     margin-right : 30px;
     padding-top: 0.5em;
 }
