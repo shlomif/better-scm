@@ -21,14 +21,8 @@ a:hover { color : red }
 
 .main
 {
-    padding-left : 1em;
-    padding-bottom : 1em;
-    padding-top : 0em;
-    padding-right: 1em;
-    margin-left : 240px;
     margin-top: 2em;
     margin-right: 1em;
-    background-color : white;
     border: thin solid black;
 }
 h2 
@@ -63,17 +57,5 @@ ul.navbarmain
     margin-top: 2em;
     padding-left:1.5em;
     margin-left: 0em;
-}
-.links li
-{
-    margin-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    padding-right: 0.5em;
-}
-.links li:hover
-{
-    background-color: #E6FAE6;
 }
 [% PROCESS "shlomif/common_defs.ttml" %]
