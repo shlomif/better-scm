@@ -4,50 +4,23 @@
     Feel free to use, modify and re-distribute under the terms of the 
     MIT X11 License (http://www.opensource.org/licenses/mit-license.php)
 
-    $Id: style.css 521 2005-04-28 08:54:06Z shlomif $
+    $Id$
 */
 
-body
-{
-    background-image: url(images/wood022.jpg); 
-}
 
-.main a
-{
-    border: thin solid transparent;
-    padding-left: 0.1em;
-    padding-right: 0.1em;        
-}
 
-a:hover 
-{ 
-    color : #FF00FF; /* Magenta */
-}
+a:hover { color : red }
 
-.main a:hover
-{
-    border: thin solid blue;
-}
-
-a.bless:hover
-{
-    border: none;
-}
-
-.navbar
-{
+.navbar {
     float : left;
-    background-color : #EEEEA0;
+    background-color : #C5CAE2;
     width : 200px;
     padding-left : 0.5em;
     padding-right : 0.5em;
     padding-top : 0.5em;
-    border: black solid thin;
+    padding-bottom : 1.5em;
 }
-.navbar, .leading_path, .footer
-{
-    margin-left: 10px;
-}
+
 .main
 {
     padding-left : 1em;
@@ -55,34 +28,22 @@ a.bless:hover
     padding-top : 0em;
     padding-right: 1em;
     margin-left : 240px;
-    margin-right: 10pt;
+    margin-top: 2em;
+    margin-right: 1em;
     background-color : white;
     border: thin solid black;
 }
 
-/* This is so the footer will be separated from the two other divs. */
-.main, .navbar
-{
-    margin-bottom: 1em;
-}
-
 p.desc { margin-left : 3em }
-h1
-{
-    background-color : #FFB060;
-    border: 4pt double green;
-    padding-left: 0.2em;
-    padding-bottom: 0.2em;
-}
 h2 
 { 
-    background-color: #8080FF;
+    background-color: #FFEE00  
 }
 h2, h3, h4
 {
     padding-left: 0.3em;
 }
-.main p, .main img
+.main p
 {
     padding-left : 1em;
 }
@@ -90,32 +51,19 @@ h2, h3, h4
 /* Opera has a very wide default for margin-left, which causes the navbar
    to be misrendered. This rule fixes it.
    */
-.navbar ul
-{
-    margin-left: 0;
-}
 ul.navbarmain
 { 
     padding-left : 1em; 
     font-size: 80%;
     font-family: sans-serif;
+    margin-left: 0.5em;
 }
 ul.navbarnested 
 { 
     padding-left : 0em ; 
     margin-left : 2em;
 }
-.note 
-{ 
-    border-color : black; 
-    border-style : double;
-    padding : 0.5em;
-    background-color : #98FB98; /* PaleGreen */
-}
-.note h2
-{
-   background: transparent;
-}
+[% INCLUDE "shlomif/note.ttml" %]
 ul.my li
 {
     padding-bottom: 0.5em;
@@ -159,6 +107,9 @@ ul.my li
     text-align: center;
     padding-left : 0em;
     padding-top : 0em;
+    /* Opera has a very wide default for margin-left, which causes the 
+    nav_links to be misrendered. This rule fixes it. */
+    margin-left: 0em;
 }
 .nav_links li
 {
@@ -172,38 +123,19 @@ ul.my li
     padding-left: 0.5em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    background-color : #DDA0DD; /* plum */
+    background-color : #40C040;
     /* background-color: #FF7070; */
+    margin-bottom : 0.2em;
     font-size: 85%;
-    border-color: black;
-    border-width: thin;
-    border-style: solid;
-    margin-top: 5pt;
-    margin-bottom: 0.5em;
-    margin-right: 10pt;
 }
 .leading_path :hover
 {
     color : yellow;
 }
-.main, .navbar
-{
-    height: auto;
-}
-.footer
-{
-    clear: both;
-    background-color: white;
-    padding-left: 1em;
-    padding-right: 1em;
-    border: 1.5pt solid teal;
-    margin-right: 10pt;
-    margin-bottom: 1em;
-    overflow: hidden;
-}
-.footer:hover, .main:hover, .navbar:hover, .leading_path:hover
-{
-    border-color: red;
+.footer {
+    clear : both;
+    margin-right : 30px;
+    padding-top: 0.5em;
 }
 /* Workaround to get the <hr /> element at the bottom to properly display 
    with Konqueror 3.3.x
@@ -230,39 +162,19 @@ pre
 {
     border : none;
 }
-.example
-{
-    margin-left: 1.5em;
-    margin-right: 2.5em;
-    border-width : 1.5pt;
-    border-color : #006400; /* darkgreen; */
-    border-style: solid;
-    margin-bottom : 1em;
-    background-color: #E0FF80;
-    padding-right: 0.5em;
-}
-.example:hover
-{    
-    border-color: red;
-    background-color:#E0FFA0;
-}
-
 .links
 {
-    list-style-position: inside;
-    padding-left: 1em;
+    margin-top: 2em;
+    padding-left:1.5em;
+    margin-left: 0em;
 }
 .links li
 {
     margin-bottom: 0.5em;
-    padding-left: 0.3em;
-    padding-top: 0.15em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
     padding-bottom: 0.2em;
-    padding-right: 0.3em;
-}
-.links a
-{
-    font-weight: bold;
+    padding-right: 0.5em;
 }
 .links li:hover
 {
@@ -276,21 +188,6 @@ pre
 .logo img
 {
     border : none;
-}
-.image_list
-{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    background-color: #FF80FF;
-}
-.image_list li
-{
-    vertical-align: middle;
-    margin-bottom: 0.5em;
-}
-.image_list img
-{
-    vertical-align:middle;
 }
 .news
 {
@@ -316,4 +213,3 @@ pre
 {
     margin-top:0.5em;
 }
-
