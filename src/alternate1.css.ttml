@@ -39,7 +39,6 @@ a.bless:hover
 .navbar
 {
     background-color : #EEEEA0;
-    border: black solid thin;
 }
 .navbar, .leading_path, .footer
 {
@@ -54,6 +53,11 @@ a.bless:hover
     margin-left : 240px;
     margin-right: 10pt;
     background-color : white;
+
+}
+
+.main, .navbar, .leading_path
+{
     border: thin solid black;
 }
 
@@ -96,27 +100,9 @@ ul.navbarmain
     font-family: sans-serif;
 }
 [% INCLUDE "shlomif/note.ttml" %]
+[% SET leading_path_bgcolor = "#DDA0DD" %]
 [% PROCESS "common-styles.css.ttml" %]
 [% INCLUDE "nav_links.ttml" %]
-.leading_path
-{
-    padding-left: 0.5em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    background-color : #DDA0DD; /* plum */
-    /* background-color: #FF7070; */
-    font-size: 85%;
-    border-color: black;
-    border-width: thin;
-    border-style: solid;
-    margin-top: 5pt;
-    margin-bottom: 0.5em;
-    margin-right: 10pt;
-}
-.leading_path :hover
-{
-    color : yellow;
-}
 .main, .navbar
 {
     height: auto;
