@@ -33,15 +33,12 @@ a.bless:hover
 {
     border: none;
 }
+[% SET navbar_width = "200px" %]
+[% PROCESS "shlomif/navbar.ttml" %]
 
 .navbar
 {
-    float : left;
     background-color : #EEEEA0;
-    width : 200px;
-    padding-left : 0.5em;
-    padding-right : 0.5em;
-    padding-top : 0.5em;
     border: black solid thin;
 }
 .navbar, .leading_path, .footer
