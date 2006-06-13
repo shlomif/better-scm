@@ -6,14 +6,9 @@
 
     $Id$
 */
-
-
-
-a:hover { color : red }
-
+[% SET a_hover_color = "red" %]
 [% SET navbar_width = "200px" %]
 [% PROCESS "shlomif/navbar.ttml" %]
-
 [% SET navbar_bgcolor = "#C5CAE2" %]
 
 .main
