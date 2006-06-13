@@ -1,0 +1,39 @@
+/* This is so list items will have spacing between them. */
+.main li
+{
+    padding-bottom: 0.5em;
+}
+.righty
+{
+   float: right;
+   text-align: center;
+   font-size: 80%;
+   width: 30%;
+}
+.righty img
+{
+    border : 0;
+}
+.foot_left
+{
+    float : left;
+    width: 60%;
+}
+.webmaster
+{
+    margin-bottom: 0em;
+}
+.vcs
+{    
+    margin-top: 0.5em;
+    clear: left;
+}
+.vcs tt
+{
+    font-size: 83%;
+}
+.center
+{
+    text-align : center;
+}
+

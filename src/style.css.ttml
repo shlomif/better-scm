@@ -31,8 +31,6 @@ a:hover { color : red }
     background-color : white;
     border: thin solid black;
 }
-
-p.desc { margin-left : 3em }
 h2 
 { 
     background-color: #FFEE00  
@@ -46,60 +44,13 @@ h2, h3, h4
     padding-left : 1em;
 }
 .link { background : transparent; }
-/* Opera has a very wide default for margin-left, which causes the navbar
-   to be misrendered. This rule fixes it.
-   */
 ul.navbarmain
 { 
-    padding-left : 1em; 
     font-size: 80%;
     font-family: sans-serif;
-    margin-left: 0.5em;
-}
-ul.navbarnested 
-{ 
-    padding-left : 0em ; 
-    margin-left : 2em;
 }
 [% INCLUDE "shlomif/note.ttml" %]
-ul.my li
-{
-    padding-bottom: 0.5em;
-}
-.righty
-{
-   float: right;
-   text-align: center;
-   font-size: 80%;
-   width: 30%;
-}
-.righty img
-{
-    border : 0;
-}
-.foot_left
-{
-    float : left;
-    width: 60%;
-}
-.webmaster
-{
-    margin-bottom: 0em;
-}
-.vcs
-{    
-    margin-top: 0.5em;
-    clear: left;
-}
-.vcs tt
-{
-    font-size: 83%;
-}
-
-.center
-{
-    text-align : center;
-}
+[% INCLUDE "common-styles.css.ttml" %]
 [% INCLUDE "nav_links.ttml" %]
 .leading_path
 {
@@ -196,3 +147,4 @@ pre
 {
     margin-top:0.5em;
 }
+[% PROCESS "shlomif/common_defs.ttml" %]

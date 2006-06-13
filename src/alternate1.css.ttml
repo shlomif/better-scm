@@ -62,8 +62,7 @@ a.bless:hover
 {
     margin-bottom: 1em;
 }
-
-p.desc { margin-left : 3em }
+[% PROCESS "shlomif/common_defs.ttml" %]
 h1
 {
     background-color : #FFB060;
@@ -93,54 +92,11 @@ h2, h3, h4
 }
 ul.navbarmain
 { 
-    padding-left : 1em; 
     font-size: 80%;
     font-family: sans-serif;
 }
-ul.navbarnested 
-{ 
-    padding-left : 0em ; 
-    margin-left : 2em;
-}
 [% INCLUDE "shlomif/note.ttml" %]
-ul.my li
-{
-    padding-bottom: 0.5em;
-}
-.righty
-{
-   float: right;
-   text-align: center;
-   font-size: 80%;
-   width: 30%;
-}
-.righty img
-{
-    border : 0;
-}
-.foot_left
-{
-    float : left;
-    width: 60%;
-}
-.webmaster
-{
-    margin-bottom: 0em;
-}
-.vcs
-{    
-    margin-top: 0.5em;
-    clear: left;
-}
-.vcs tt
-{
-    font-size: 83%;
-}
-
-.center
-{
-    text-align : center;
-}
+[% PROCESS "common-styles.css.ttml" %]
 [% INCLUDE "nav_links.ttml" %]
 .leading_path
 {
@@ -266,6 +222,7 @@ pre
 .image_list img
 {
     vertical-align:middle;
+
 }
 .news
 {
