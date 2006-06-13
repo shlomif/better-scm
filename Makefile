@@ -6,7 +6,7 @@ DEVEL_VER_USE_CACHE = 1
 D = dest
 
 WML_FLAGS = -DLATEMP_THEME=better-scm
-TTML_FLAGS = -I $$HOME/.latemp/lib
+TTML_FLAGS = -I $$HOME/.latemp/lib -I lib
 
 LATEMP_WML_FLAGS =$(shell latemp-config --wml-flags)
 

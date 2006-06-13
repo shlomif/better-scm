@@ -102,22 +102,7 @@ ul.my li
 {
     text-align : center;
 }
-.nav_links
-{
-    text-align: center;
-    padding-left : 0em;
-    padding-top : 0em;
-    /* Opera has a very wide default for margin-left, which causes the 
-    nav_links to be misrendered. This rule fixes it. */
-    margin-left: 0em;
-}
-.nav_links li
-{
-    display: inline;
-    list-style-type: none;
-    padding-right: 0.2em;
-    padding-top: 0em;
-}
+[% INCLUDE "nav_links.ttml" %]
 .leading_path
 {
     padding-left: 0.5em;
