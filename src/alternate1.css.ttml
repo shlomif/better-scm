@@ -153,13 +153,4 @@ ul.navbarmain
 {
     background-color: #E6FAE6;
 }
-.logo
-{
-    margin-top: 0.5em;
-    text-align: center;
-}
-.logo img
-{
-    border : none;
-}
 
