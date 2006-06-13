@@ -103,4 +103,13 @@ pre
 {
     margin-top:0.5em;
 }
+.logo
+{
+    margin-top: 0.5em;
+    text-align: center;
+}
+.logo img
+{
+    border : none;
+}
 
