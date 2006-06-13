@@ -36,4 +36,21 @@
 {
     text-align : center;
 }
+.leading_path a:hover
+{
+    color : yellow;
+}
+.leading_path
+{
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 
+    background-color : [% leading_path_bgcolor %];
+
+    font-size: 85%;
+
+    margin-top: 5pt;
+    margin-bottom: 0.5em;
+    margin-right: 10pt;
+}
