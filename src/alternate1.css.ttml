@@ -71,20 +71,6 @@ h2
 { 
     background-color: #8080FF;
 }
-h2, h3, h4
-{
-    padding-left: 0.3em;
-}
-.main p, .main img
-{
-    padding-left : 1em;
-}
-.link { background : transparent; }
-ul.navbarmain
-{ 
-    font-size: 80%;
-    font-family: sans-serif;
-}
 [% INCLUDE "shlomif/note.ttml" %]
 [% SET leading_path_bgcolor = "#DDA0DD" %]
 [% PROCESS "common-styles.css.ttml" %]
