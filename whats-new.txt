@@ -1,0 +1,10 @@
+* Added links to "How subversion compares to XYW" by Gabor Szabo.
+
+* Added a page about Mercurial.
+
+* Added ClearCase and Mercurial to the comparison.
+
+* Added a list of other comparisons to the comparison page.
+
+* Corrected Bazaar-NG on the Arch page.
+
