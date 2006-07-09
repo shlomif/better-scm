@@ -28,22 +28,22 @@ only had a vague idea of what revision control was and what it was good for.
 <p>
 I remember reading the <a href="http://www.joelonsoftware.com/articles/fog0000000043.html">Joel Test</a> 
 and was surprised that Joel Spolsky necessitated the use of source control and 
-actually sais CVS is fine in comparison to commercial offerings. This made me
+actually said CVS is fine in comparison to commercial offerings. This made me
 intrigued of what I had done wrong so far.
 </p>
 
 <h2>The Pleasant CVS Experience</h2>
 
 <p>
-When I worked on 
-<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell 
-Solver</a>, I kept a tar.gz containing every single 
-minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise 
-Simulator project Roy Glasberg and I took for the Technion, I decided to use
-<a href="http://www.cvshome.org/">CVS</a>. So, we registered a project at 
+When I worked on
+<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell
+Solver</a>, I kept a tar.gz containing every single
+minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise
+Simulator project my partner and I took for the Technion, I decided to use
+<a href="http://www.cvshome.org/">CVS</a>. So, we registered a project at
 <a href="http://developer.berlios.de/">BerliOS</a> and started using it. The 
 CVS <tt>import</tt> command gave us some
-trouble as we did not really know how to use it, but eventually we were back
+trouble as we did not really know how to use it, but eventually we were right
 on track, and were amazed at the convenience.
 </p>
 
@@ -81,7 +81,7 @@ editorial had been written).
 I contacted BitMover through the E-mails I found at the site, and got to 
 ask them a few questions. They were polite and explained to me what to do to
 set everything up. As it turned out, I should have used the bitkeeper-users 
-mailing list instead, as that specific address was geared towards paying 
+mailing list instead, as that specific address was geared towards paying
 customers.
 </p>
 
@@ -94,16 +94,16 @@ power. I was very much impressed.
 </p>
 
 <p>
-I ran into a few problems for which I consulted the mailing list or was able 
+I ran into a few problems for which I consulted the mailing list or was able
 to solve on my own and I recall that I was once able to help a newbie out
-myself. I also discovered the BitKeeper source code was no longer available 
-online for all to download, which did not bother me much, as I was hoping I 
+myself. I also discovered the BitKeeper source code was no longer available
+online for all to download, which did not bother me much, as I was hoping I
 could eventually win the vendor's trust to get it myself.
 </p>
 
 <p>
 In any case, I liked BitKeeper so much, that I even thought about eventually
-converting Freecell Solver (that was converted to CVS a few monthes back) to 
+converting Freecell Solver (that was converted to CVS a few monthes back) to
 BitKeeper and BKbits.
 </p>
 
@@ -114,13 +114,13 @@ This all changed when Larry McVoy announced a change in the BitKeeper license
 that required all the contents of the free users' repositories to be made 
 available online. I did not think too much of it at the
 time, but then I realized it was not something <a href="http://www.advogato.org/person/shlomif/diary.html?start=78">I could agree with ideologically</a>. 
-The BitKeeper license forced me to use the most recent version, even if it had 
+The BitKeeper license forced me to use the most recent version, even if it had
 a different license. So BitKeeper was taken right out of my hands.
 </p>
 
 <p>
-I sent a letter to bitkeeper-users titled "Larry - You Lost Me". Larry calmly 
-responded that he was sorry to hear that, but such discussions were off topic 
+I sent a letter to bitkeeper-users titled "Larry - You Lost Me". Larry calmly
+responded that he was sorry to hear that, but such discussions were off topic
 their. This caused an entire chain of events whose end results were:
 </p>
 
@@ -142,8 +142,8 @@ I decided that I wished to contribute to one source control project or another.
 </ol>
 
 <p>
-I liked BitKeeper and still would love to use it, but was appalled by Mr. 
-McVoy's attitude towards free users. Note that this was before the fiasco 
+I liked BitKeeper and still would love to use it, but was appalled by Mr.
+McVoy's attitude towards free users. Note that this was before the fiasco
 with the non-compete clause was Slashdotted. (Note that I still respect Larry
 as an engineer and a software vendor who is trying to sell BitKeeper to
 software houses.)
@@ -164,16 +164,16 @@ capabilites.
 </p>
 
 <p>
-I joined the Aegis mailing list introduced myself as a BitKeeper refuge and 
-asked for interactive tutoring at a timezone close to Israel. The first things 
+I joined the Aegis mailing list introduced myself as a BitKeeper refuge and
+asked for interactive tutoring at a timezone close to Israel. The first things
 I found two people who could help me, one of them was Mark Veltzer, who
 was living in Israel and used Aegis.
 </p>
 
 <p>
-He tutored me through the IRC for two days, in a session of several hours on 
+He tutored me through the IRC for two days, in a session of several hours on
 setting it up and getting a change in. From the transcript I could gather the
-process for the other stuff, and I could continue work on it. However, I 
+process for the other stuff, and I could continue work on it. However, I
 noticed the Aegis process was an overkill for the small projects I wanted to 
 manage with it and for my programming habits.
 </p>
@@ -195,9 +195,9 @@ and install it.
 </p>
 
 <p>
-As opposed to BitKeeper, Subversion is not distributed, but this feature is 
-planned. Still, it is very stable and usable, (with a few quirks that can be 
-avoided with some expertise), so I have used it ever since. I still maintain 
+As opposed to BitKeeper, Subversion is not distributed, but this feature is
+planned. Still, it is very stable and usable, (with a few quirks that can be
+avoided with some expertise), so I have used it ever since. I still maintain
 Freecell Solver with CVS, because I don't have Subversion hosting.
 Nevertheless, I can probably become a junior partner in a Co-oped server
 hosted at an Israeli ISP, where I can set up Subversion hosting. I'll have to
@@ -220,7 +220,7 @@ for more. If you cannot afford maintaining your own host it is a viable option.
 Furthermore, Subversion now has a zero bug count before its scheduled 1.0
 release, which is going to be towards late February. After 1.0, it is expected
 that software hubs such as <a href="http://sourceforge.net/">SourceForge</a>
-will adopt it as well, and this will provide an even more accessible 
+will adopt it as well, and this will provide an even more accessible
 alternative to csie.org.
 </p>
 <p>
@@ -258,12 +258,12 @@ pleasant experience.
 <h2>Verdict</h2>
 
 <p>
-I use revision control even at home for such things as doing my homework (in 
-LaTeX, C, or Scheme). I used CVS for this, but now converted to using 
-Subversion. Aegis seems very powerful, reliable and nice. Still, it suffers 
-from some childhood  diseases that make it unsuitable for me: its operation is 
+I use revision control even at home for such things as doing my homework (in
+LaTeX, C, or Scheme). I used CVS for this, but now converted to using
+Subversion. Aegis seems very powerful, reliable and nice. Still, it suffers
+from some childhood  diseases that make it unsuitable for me: its operation is
 complicated and tedious, and it is a file-system only system (which can
-only be pseudo-networked over NFS) with many non-Win32 UNIXisms. Subversion, 
+only be pseudo-networked over NFS) with many non-Win32 UNIXisms. Subversion,
 on the other hand, is easy and fun and just works.
 </p>
 
@@ -284,7 +284,7 @@ surpass in quality those of competing commercial companies who seemingly had
 much more personnel and resources on their hands. (e.g: gcc, GNU Emacs, The 
 GIMP, KDE and GNOME, GNU/Linux itself, Perl/Python/PHP, Apache, Zope) While I 
 cannot  guarantee that the same will happen to BitKeeper (which at the moment 
-deviates very much from the Bazaar style of development), it is a 
+deviates very much from the Bazaar style of development), it is a
 possibility if a few dedicated hackers populate the competing projects. 
 </p>
 
@@ -293,5 +293,3 @@ And even if this will not be the case, I am certain BitKeeper will not become
 the de-facto standard of the Open-Source World that CVS is today. It's like 
 saying that Microsoft IIS+ASP will replace Apache and PHP or Perl soon.
 </p>
-
-
