@@ -49,3 +49,26 @@ work very well on Win32, and are much more reliable, robust, feature-rich and
 portable than Microsoft Visual SourceSafe.
 </p>
 
+<p>
+Here are some other anti-VSS links:
+</p>
+
+<ol>
+<li>
+<a href="http://www.highprogrammer.com/alan/windev/sourcesafe.html">Visual
+SourceSafe: Microsoft's Source Destruction System</a>
+</li>
+<li>
+<a href="http://www.michaelbolton.net/testing/VSSDefects.html">Visual
+SourceSafe Version Control: Unsafe at any speed?</a>
+</li>
+<li>
+<a href="http://codebetter.com/blogs/sam.gentile/archive/2006/03/02/139641.aspx">No
+more VSS, It's Subversion</a>
+</li>
+</ol>
+
+<p>
+(<a href="http://www.ericsink.com/articles/Buzz.html">Thanks to Eric Sink
+for the links</a>)
+</p>
