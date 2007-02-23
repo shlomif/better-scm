@@ -5,7 +5,6 @@ Near-Term:
 
 * Darcs and no way to mark files as executable. (?)
 
-* Add a new news item about the ClearCase addition and the other reworks.
 
 Near-Term Done:
 ---------------
@@ -18,6 +17,9 @@ journal)
 
 * Split Bazaar/Bazaar-NG off the Arch page. (see the thread in the mailing
 list archive)
+
+* Add a new news item about the ClearCase, AccuRev and Mercurial 
+additions.
 
 -------------------------------------------------------------------------
 
