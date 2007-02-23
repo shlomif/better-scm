@@ -48,6 +48,15 @@ my @news_items =
             from Mercurial.},
             'date' => "2005-05-18",
         },
+        {
+            'title' => "ClearCase, Mercurial and AccuRev Added to the Comparison",
+            'id' => "changes-2007-02-23",
+            'description' => q{Three new (and important) systems were added
+            to the comparison recently: the commercial and renowed ClearCase, 
+            the open-source Mercurial, and the commercial AccuRev.
+            },
+            date => "2007-02-23",
+        },
         )
     )
 );

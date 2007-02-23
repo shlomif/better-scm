@@ -1,0 +1,34 @@
+#include '../template.wml'
+
+<latemp_subject "ClearCase, Mercurial and AccuRev were added to the Comparison" />
+<latemp_version_control_id "$Id$" />
+
+
+<p>
+Recently three new version control systems were added to 
+<a href="$(ROOT)/comparison/">the comparison</a>:
+</p>
+
+<ol>
+
+<li>
+<a href="http://www-306.ibm.com/software/awdtools/clearcase/">Rational 
+ClearCase</a> by IBM - a commercial and renowed source configuration management
+system.
+</li>
+
+<li>
+The open-source Python-based 
+<a href="http://www.selenic.com/mercurial/wiki/">Mercurial</a>.
+</li>
+
+<li>
+The commercial <a href="http://www.accurev.com/">AccuRev</a>.
+</li>
+
+</ol>
+
+<p>
+<b>Date:</b> 2007-February-23
+</p>
+

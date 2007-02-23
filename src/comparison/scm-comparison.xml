@@ -14,6 +14,9 @@ TODO:
             <impl id="cvs">
                 <name>CVS</name>
             </impl>
+            <impl id="accurev">
+                <name>AccuRev</name>
+            </impl>
             <impl id="aegis">
                 <name>Aegis</name>
             </impl>
@@ -92,6 +95,7 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">No. CVS commits are not atomic.</s>
+                <s id="accurev">Yes. Commits are atomic</s>
                 <s id="arch">Yes. Commits are atomic.</s>
                 <s id="darcs">Yes. Commits are atomic.</s>
                 <s id="subversion">Commits are atomic.</s>
@@ -122,6 +126,10 @@ TODO:
                 <s id="cvs">
                     No. Renames are not supported and a manual one
                     may break history in two.
+                </s>
+                <s id="accurev">
+                    Yes. Renames of both files and directories are supported.
+                    Supports controlling of symbolic links as well.
                 </s>
                 <s id="subversion">Yes. Renames are supported.</s>
                 <s id="superversion">No. Renames are not supported.</s>
@@ -176,6 +184,12 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">No. Copies are not supported.</s>
+                <s id="accurev">
+                    Copying is suppported through symbolic links
+                    (but all linked files are treated as the same file 
+                    version).  Moves are fully supported with the history
+                    retained.
+                </s>
                 <s id="subversion">Yes. And it's a very cheap operation (O(1)) that 
                     is also utilized for branching
                 </s>
@@ -236,6 +250,7 @@ TODO:
                     <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a> 
                     utility.
                 </s>
+                <s id="accurev">Yes.</s>
                 <s id="superversion">Yes.</s>
                 <s id="svk">Yes.</s>
                 <s id="arch">Yes.</s>
@@ -269,6 +284,12 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">No.</s>
+                <s id="accurev">
+                    With AccuReplica, the replica server has all the meta-data 
+                    and  fetches file data as needed by replica users; all 
+                    write operations pass automatically from the replica to 
+                    the master server.
+                </s>
                 <s id="subversion">Yes, using either Chia-Ling Kao's SVN::Mirror
                     script or the svn-push utility by Shlomi Fish.
                 </s>
@@ -307,6 +328,10 @@ TODO:
                 <s id="cvs">
                     Limited. "pre-commit hook scripts" can be used to 
                     implement various permissions systems.
+                </s>
+                <s id="accurev">
+                    Yes. Access can be defined per stream (branch) using 
+                    access control lists.
                 </s>
                 <s id="arch">
                     Yes. It is possible to define permissions on access to
@@ -391,6 +416,12 @@ TODO:
                 <s id="subversion">Partial support. There are implicit 
                     changeset that are generated on each commit.
                 </s>
+                <s id="accurev">
+                    Yes, AccuRev provides robust functionality for change 
+                    sets (called change packages in AccuRev) including viewing 
+                    differences by change packages and merging changes from 
+                    stream to stream by change package.
+                </s>
                 <s id="superversion">Partial support. Changes are grouped into changesets,
                     but cannot be cancelled invididually yet.
                 </s>
@@ -450,6 +481,7 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">Yes. cvs annotate</s>
+                <s id="accurev">Yes. Available from both the gui and cli.</s>
                 <s id="subversion">Yes. (svn blame)</s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. (svk blame)</s>
@@ -492,6 +524,13 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">Yes.</s>
+                <s id="accurev">
+                    Yes. AccuRev provides functionality to define
+                    feature streams in which only the subset of code is seen.
+                    A group of developers can then be retricted to work only
+                    from that stream so they are only allowed to check in
+                    changes to that subset of code.
+                </s>
                 <s id="subversion">Yes.</s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes.</s>
@@ -553,6 +592,10 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">Yes. Using cvs diff</s>
+                <s id="accurev">
+                    Yes. The functionality is available through both the GUI
+                    and the command line interface.
+                </s>
                 <s id="subversion">Yes. Using svn diff</s>
                 <s id="superversion">Yes. Local changes are detected and shown immediately. Changes can be
                   collected in a local buffer before being committed to the repository.</s>
@@ -594,6 +637,7 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">No. Commit messages are per change.</s>
+                <s id="accurev">No. Commit messages are per change.</s>
                 <s id="subversion">No. There is no such feature.</s>
                 <s id="superversion">Yes.</s>
                 <s id="svk">No. There is no such feature.</s>
@@ -652,6 +696,13 @@ TODO:
                 <s id="cvs">Excellent. There are many online tutorials and 
                     resources and an online book. The command line client
                     also provides an online comprehensive help system.
+                </s>
+                <s id="accurev">
+                    Excellent.  There is a full set of documentation available 
+                    in pdf format available at 
+                    <a href="http://www.accurev.com/documentation.html">AccuRev 
+                        Documentation</a> as well as context-sensitive help 
+                    in the GUI.
                 </s>
                 <s id="subversion">
                     Very good. There is a free online book and some online
@@ -752,6 +803,14 @@ TODO:
                     Good. Out of being the de-facto standard, 
                     CVS is available on most systems and is easy
                     to deploy.
+                </s>
+                <s id="accurev">
+                    Excellent.  All that is required is to download the
+                    binaries for the appropriate platform and run the
+                    installer.  The installation package is self-contained.  No
+                    additional software is needed.  AccuRev supports most UNIX,
+                    Linux, and Windows platforms and deploying AccuRev to a
+                    multi-platform environment is straight-forward.
                 </s>
                 <s id="arch">
                     Excellent. An arch service is nothing but a 
@@ -863,6 +922,9 @@ TODO:
                     used commands (cvs commit, cvs update and cvs checkout)
                     and several others.
                 </s>
+                <s id="accurev">
+                    Very extensive but not compatible with cvs.
+                </s>
                 <s id="subversion">
                     A CVS-like command set which is easy to get used to
                     for CVS-users.
@@ -953,6 +1015,9 @@ TODO:
                     variations for its client/server protocol. This protocol
                     can be tunneled over an SSH-connection to support 
                     encryption.
+                </s>
+                <s id="accurev">
+                    Good. (proprietary protocol using TCP/IP)
                 </s>
                 <s id="arch">
                     Excellent. Arch can utilize a multitude of protocols
@@ -1047,9 +1112,15 @@ TODO:
                 types of systems?
             </expl>
             <compare>
-                <s id="cvs">Good. Client works on UNIX, Windows and Mac OS.
+                <s id="cvs">
+                    Good. Client works on UNIX, Windows and Mac OS.
                     Server works on UNIXes and on Windows with a UNIX
                     emulation layer.
+                </s>
+                <s id="accurev">
+                    Excellent. The server runs on most UNIX, Linux 
+                    and Windows platforms. The client runs on all of these 
+                    platforms and on Mac OS X.
                 </s>
                 <s id="subversion">
                     Excellent. Clients and Servers work on UNIX, 
@@ -1143,6 +1214,7 @@ TODO:
                     <a href="http://www.horde.org/chora/">Chora</a>,
                     and <a href="http://wwcvs.republika.pl/">wwCVS</a>.
                 </s>
+                <s id="accurev">No.</s>
                 <s id="bitkeeper">Yes. Its own built-in web-interface.</s>
                 <s id="subversion">Yes. 
                     <a href="http://www.viewvc.org/">ViewVC</a>,
@@ -1206,11 +1278,18 @@ TODO:
                     WinCVS, Cervisia (for KDE),
                     TortoiseCVS (Windows Explorer plug-in).
                 </s>
-                <s id="bitkeeper">Good. BitKeeper ships with several
+                <s id="accurev">
+                    A single, comprehensive,
+                    java-based GUI is provided.  The GUI has the same 
+                    look-and-feel on all platforms.
+                </s> 
+                <s id="bitkeeper">
+                    Good. BitKeeper ships with several
                     GUIs for performing common tasks. I'm not aware
                     of any third-part GUIs.
                 </s>
-                <s id="subversion">Very good. There are many available
+                <s id="subversion">
+                    Very good. There are many available
                     GUIs: RapidSVN (cross-platform),
                     TortoiseSVN (Windows Explorer plug-in), Jsvn (Java), etc.
                     Most of them are still under development.
@@ -1289,6 +1368,7 @@ TODO:
         </expl>
         <compare>
             <s id="cvs">GNU GPL (open source)</s>
+            <s id="accurev">Proprietary, named-user licensing.</s>
             <s id="arch">GNU GPL (open source)</s>
             <s id="darcs">GNU GPL (open source)</s>
             <s id="bitkeeper">
