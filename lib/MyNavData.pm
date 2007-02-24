@@ -194,6 +194,14 @@ my $tree_contents =
             'url' => "comparison/",
             'text' => "Comparison",
             'title' => "A Detailed Comparison of Many Version Control Systems",
+            'subs' =>
+            [
+                {
+                    'url' => "comparison/comparison.html",
+                    'text' => "The Comparison Itself",
+                    'title' => "The Comparison Text Itself",
+                },
+            ],
         },
         {
             'separator' => 1,

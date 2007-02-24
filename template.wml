@@ -25,7 +25,7 @@ Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto
 </p>
 </latemp_webmaster>
 
-<latemp_license>
+<define-tag cc_by_license>
 <p>
 <!-- Creative Commons License -->
 <a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img 
@@ -67,6 +67,10 @@ License</a>.
 </rdf:RDF>
 
 -->
+</define-tag>
+
+<latemp_license>
+<ifeq "$(LATEMP_FILENAME)" "comparison/comparison.html" "" "<cc_by_license />" />
 </latemp_license>
 
 <latemp_affiliations_buttons>
