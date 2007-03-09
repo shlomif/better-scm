@@ -37,9 +37,8 @@ $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 
 .PHONY: 
 
-
-#src/comparison/comparison.html: src/comparison/scm-comparison.xml
-#	(cd src/comparison && make)
+src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
+	touch $@
 
 upload_beta: all
 	cd $(D) && \
