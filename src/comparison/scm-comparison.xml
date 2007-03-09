@@ -1397,10 +1397,12 @@ TODO:
                 BSD or CPL (also open source).
             </s>
             <s id="perforce">
-                A proprietary, binary only, commercial license. 
-                <a href="http://perforce.com/perforce/price.html">Price 
-                    starting at $800 per seat for the first year</a> and then 
-                $160 for continuing support for the subsequent years. Free for 
+                A proprietary, binary only, commercial license.
+                <a href="http://perforce.com/perforce/price.html">Price
+                    starting at $800 per seat for the first year</a> and then
+                a $160 for continuing support for the subsequent years. The
+                latter payment is optional and required only for support,
+                as the product can be used without it. Free for 
                 Open Source projects (no support in this case).
             </s>
             <s id="purecm">
