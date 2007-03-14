@@ -220,6 +220,7 @@ my $tree_contents =
             'url' => "contribute/",
             'text' => "Contribute",
             'title' => "How to Contribute to this Site",
+            'expand' => { 're' => ""},
             'subs' =>
             [
                 {
