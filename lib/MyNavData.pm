@@ -217,9 +217,18 @@ my $tree_contents =
             'skip' => 1,
         },
         {
-            'url' => "source/",
-            'text' => "Site Sources",
-            'title' => "How to Get and Manipulate the Source Code of this Site",
+            'url' => "contribute/",
+            'text' => "Contribute",
+            'title' => "How to Contribute to this Site",
+            'subs' =>
+            [
+                {
+                    'url' => "source/",
+                    'text' => "Site Sources",
+                    'title' => ("How to Get and Manipulate the Source"
+                        . " Code of this Site"),
+                },
+            ],
         },
     ],
 };

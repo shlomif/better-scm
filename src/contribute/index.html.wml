@@ -1,0 +1,72 @@
+#include '../template.wml'
+
+<latemp_subject "How to Contribute to this Site" />
+<latemp_version_control_id "$Id$" />
+
+<p>
+There are several ways in which you can contribute to this site:
+</p>
+
+<h2 id="comprison_new_system">Add a New System to the Comparison</h2>
+
+<p>
+In order to add a new system to the comparison, follow the following steps:
+</p>
+
+<ol>
+
+<li>
+<p>
+Commit to become the "champion" of your system and agree to be added to the
+comparison's maintainers' distribution list, and maintain it into the future.
+In order to be a champion for the system, you have to be experienced with it to
+a substantial amount.
+</p>
+</li>
+
+<li>
+<p>
+Checkout the <a href="$(ROOT)/source/">sources for the
+site</a> using Subversion.
+</p>
+</li>
+
+<li>
+<p>
+Edit the file src/comparison/scm-comparison.xml using a decent text editor.
+By decent, I don't mean 
+<a href="http://en.wikipedia.org/wiki/Notepad">Notepad</a>, 
+<a href="http://en.wikipedia.org/wiki/Pico_(text_editor)">Pico</a> or
+<a href="http://en.wikipedia.org/wiki/Nano_(text_editor)">Nano</a>. Also
+please avoid XML editors, unless you're sure they can be used to manipulate
+the text directly. Make sure the patch is well-formed and follows the
+conventions in the rest of the XML file. 
+</p>
+</li>
+
+<li>
+<p>
+Run the command "svn diff" on the working copy and
+<a href="mailto:shlomif@iglu.org.il">send me its output</a>. By sending it,
+you agree to license your modifications under the <a href="http://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain</a>. If your
+patch is bad in some regards it will be sent back for corrections.
+</p>
+</li>
+
+<li>
+<p>
+Make sure to send the email from an email address where you'd like to receive
+further notifications for updating of the comparison, or consulation with 
+queries, or else specify this email in your message.
+</p>
+</li>
+
+<li>
+<p>
+Thanks for taking the time for contributing!
+</p>
+</li>
+
+</ol>
+
+
