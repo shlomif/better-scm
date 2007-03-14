@@ -1,4 +1,5 @@
 #include '../template.wml'
+#include "xhtml/1.x/std/toc.wml"
 
 <latemp_subject "How to Contribute to this Site" />
 <latemp_version_control_id "$Id$" />
@@ -6,6 +7,9 @@
 <p>
 There are several ways in which you can contribute to this site:
 </p>
+
+<h2*>Table of Contents</h2*>
+<toc />
 
 <h2 id="comprison_new_system">Add a New System to the Comparison</h2>
 
