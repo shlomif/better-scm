@@ -68,6 +68,9 @@ TODO:
             <impl id="vss">
                 <name>Visual SourceSafe</name>
             </impl>
+            <impl id="ls-sync">
+                <name>LibreSource Synchronizer</name>
+            </impl>
         </implementations>
         <timestamp>
             $Id$
@@ -113,6 +116,7 @@ TODO:
                 <s id="vss">No. VSS commits are not atomic.</s>
                 <s id="cmsynergy">Yes. Commits are atomic.</s>
                 <s id="clearcase">Yes. Commits (checkins) are atomic.</s>
+                <s id="ls-sync">Yes. Commits and updates are atomic.</s>
             </compare>
         </section>
         <section id="move">
@@ -173,6 +177,11 @@ TODO:
                   in Clearcase. Even supports controlling of
                   symbolic/hard links.
                 </s>
+                <s id="ls-sync">
+                    Yes. Renames and move are supported but the working copy
+                    needs to be up-to-date before doing a rename/move operation. 
+                    This operation will be committed directly.
+                </s>
            </compare>
         </section>
         <section id="copy">
@@ -226,6 +235,7 @@ TODO:
                   Yes, through use of hard links. (But some
                   limitations in Windows environments)
                 </s>
+                <s id="ls-sync">No, copies will start there own history.</s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -274,6 +284,10 @@ TODO:
                 <s id="clearcase">
                   Not really applicable for clearcase, but see next point.
                 </s>
+                <s id="ls-sync">
+                  Yes, but is not documented and its based on the dataflow feature of the
+                  LibreSource Synchronizer.
+                </s>
             </compare>
         </section>
         <section id="push">
@@ -316,6 +330,7 @@ TODO:
                 </s>
                 <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
                 <s id="clearcase">Yes, using Clearcase Multisite.</s>
+                <s id="ls-sync">Yes, it's what we call a dataflow.</s>
             </compare>
         </section>
         <section id="permissions">
@@ -401,6 +416,7 @@ TODO:
                   onto Windows domain-based authentication in
                   multi-platform environments.
                 </s>
+                <s id="ls-sync">Permissions are set for the whole repository or branch.</s>
             </compare>
         </section>
         <section id="changesets">
@@ -470,6 +486,10 @@ TODO:
                   gives something like this (each changeset is a
                   "stream").
                 </s>
+                <s id="ls-sync">
+                  Partial support. There are implicit changeset that are generated on
+                  each commit.
+                </s>
            </compare>
         </section>
         <section id="annotate">
@@ -510,6 +530,10 @@ TODO:
 					their scripting language.
                 </s>
                 <s id="clearcase">Yes, "cleartool annotate"</s>
+                <s id="ls-sync">
+                    Yes locally without any server connection with the standard graphical
+                    Java client.
+                </s>
            </compare>
         </section>
     </section>
@@ -582,6 +606,10 @@ TODO:
                     project, which consists of one or more directories.
                 </s>
                 <s id="clearcase">Yes, using snapshot view load rules.</s>
+                <s id="ls-sync">
+                   It is possible to commit only a certain directory. However, one must
+                   check out the entire repository as a whole.
+                </s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -627,6 +655,10 @@ TODO:
                 <s id="cmsynergy">Yes, either using integrated diff tool or user-configured
 					external diff tool</s>
                 <s id="clearcase">Yes, "cleartool diff"</s>
+                <s id="ls-sync">
+                  Yes, with the Synchronizer Studio (default Java client) or with the
+                  standard diff command (diff -r . .so6/xxx/REFCOPY/)
+                </s>
             </compare>
         </section>
         <section id="per_file_commit_messages">
@@ -681,6 +713,7 @@ TODO:
                   Yes, assuming a comment on the branch is sufficient
                   for a per-changeset message.
                 </s>
+                <s id="ls-sync">No. Commit messages are per changeset.</s>
            </compare>
         </section>
     </section>
@@ -789,6 +822,11 @@ TODO:
                   format, also PDF-based documentation. However the
                   complexity of the tool can mean a lengthy ramp-up
                   time.
+                </s>
+                <s id="ls-sync">
+                  Medium. There are an online tutorial and some comprehensive online
+                  documentation. Installing and getting started with the GUI is very easy
+                  though. (update/commit-next-next-next-finished)
                 </s>
             </compare>
         </section>
@@ -907,6 +945,11 @@ TODO:
                   complex. Installing additional servers (eg
                   repository servers) is less so.
                 </s>
+                <s id="ls-sync">
+                  Excellent. It is managed by JavaWebStart with links on any
+                  LibreSource repository web page. 
+                  (links: create workspace, update, commit, studio...)
+                </s>
            </compare>
         </section>
         <section id="command_set">
@@ -1000,6 +1043,10 @@ TODO:
                 <s id="clearcase">
                   Excellent. All tools are available through the
                   command-line. Not very compatible with CVS though.
+                </s>
+                <s id="ls-sync">
+                  Basic commands available (commit/update), but it's really simple to
+                  use the GUI. Ant task are also available.
                 </s>
            </compare>
         </section>
@@ -1102,6 +1149,9 @@ TODO:
                   should be deployed locally (ie on the same LAN) as
                   the client workstations for acceptable performance.
                 </s>
+                <s id="ls-sync">
+                  Good. Use of HTTP to get through firwalls. 
+                </s>
             </compare>
         </section>
         <section id="portability">
@@ -1195,6 +1245,10 @@ TODO:
                   flavours of UNIX (not including MacOS X, or any
                   other Linux other than Red Hat).
                 </s>
+                <s id="ls-sync">
+                  Excellent. Clients and servers work on any Java 1.5-compatible
+                  platform. (Windows, Linux and Mac OS X )
+                </s>
             </compare>
         </section>
     </section>
@@ -1264,6 +1318,10 @@ TODO:
                 <s id="cmsynergy">Possibly.</s>
                 <s id="clearcase">
                   Yes. Web views are supported.
+                </s>
+                <s id="ls-sync">
+                  Yes, without diff features but with a better awareness support.
+                  (allow to know at any time on each version each one is working on) 
                 </s>
             </compare>
         </section>
@@ -1358,6 +1416,11 @@ TODO:
                   typically not as solid as the command-line tools
                   though.
                 </s>
+                <s id="ls-sync">
+                  One written in Java/SWING and available on any OS that
+                  is automatically launched from the repository web page and 
+                  another one which is an Eclipse plugin.
+                </s>
            </compare>
         </section>
     </section>
@@ -1437,6 +1500,7 @@ TODO:
               required, depending on activity. Multisite requires
               additional licensing.
             </s>
+            <s id="ls-sync">QPL - The Qt Public License (OpenSource)</s>
         </compare>
     </section>
 </section>
