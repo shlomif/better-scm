@@ -22,7 +22,7 @@ svn checkout http://opensvn.csie.org/betterscm/better-scm-site/trunk/
 </pre>
 
 <define-tag cpan_link>
-<a href="http://search.cpan.org/%0/">%0</a>
+<a href="http://search.cpan.org/dist/%0/">%0</a>
 </define-tag>
 
 <p>
