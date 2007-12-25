@@ -1,0 +1,19 @@
+#include '../template.wml'
+
+<latemp_subject "Better SCM Initiative : Bazaar" />
+<latemp_version_control_id "$Id: index.html.wml 259 2006-04-14 17:15:57Z shlomif $" />
+
+<h2>Homepage</h2>
+
+<p>
+<a href="http://bazaar-vcs.org/">http://bazaar-vcs.org/</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Bazaar is an open-source, distributed, version control system sponsored by 
+Canonical Ltd., the company behind the 
+<a href="http://www.ubuntu.com/">Ubuntu distribution</a>.
+</p>
+

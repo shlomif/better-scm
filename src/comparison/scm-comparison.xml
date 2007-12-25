@@ -23,6 +23,9 @@ TODO:
             <impl id="arch">
                 <name>Arch</name>
             </impl>
+            <impl id="bazaar">
+                <name>Bazaar</name>
+            </impl>
             <impl id="bitkeeper">
                 <name>BitKeeper</name>
             </impl>
@@ -89,17 +92,19 @@ TODO:
         <section id="atomic_commits">
             <title>Atomic Commits</title>
             <expl>
-                Support for atomic commits means that if an operation on the 
-                repository is interrupted in the middle, the repository will 
-                not be left in an inconsistant state. Are the check-in 
-                operations atomic? Are the check-in operations atomic, or can 
-                interrupting an operation leave the repository in an 
-                intermediate state?
+                Support for atomic commits means that if an
+                operation on the repository is interrupted
+                in the middle, the repository will not be
+                left in an inconsistent state. Are the
+                check-in operations atomic, or can
+                interrupting an operation leave the
+                repository in an intermediate state?
             </expl>
             <compare>
                 <s id="cvs">No. CVS commits are not atomic.</s>
                 <s id="accurev">Yes. Commits are atomic</s>
                 <s id="arch">Yes. Commits are atomic.</s>
+                <s id="bazaar">Yes. Commits are atomic.</s>
                 <s id="darcs">Yes. Commits are atomic.</s>
                 <s id="subversion">Commits are atomic.</s>
                 <s id="superversion">Commits are atomic.</s>
@@ -139,6 +144,7 @@ TODO:
                 <s id="superversion">No. Renames are not supported.</s>
                 <s id="svk">Yes. Renames are supported.</s>
                 <s id="arch">Yes. Renames are supported.</s>
+                <s id="bazaar">Yes. Renames are supported for files and directories.</s>
                 <s id="darcs">Yes. Renames are supported.</s>
                 <s id="bitkeeper">Yes. Renames are supported.</s>
                 <s id="aegis">Yes. Renames are supported.</s>
@@ -187,7 +193,7 @@ TODO:
         <section id="copy">
             <title>File and Directories Copies</title>
             <expl>
-                Does the version control system supports copying
+                Does the version control system support copying
                 files or directories to a different location at the
                 repository level, while retaining the history?
             </expl>
@@ -207,6 +213,7 @@ TODO:
                 <s id="arch">No. Copies of files and directory structures are
                     not supported. 
                 </s>
+                <s id="bazaar">No. Copies are not supported.</s>
                 <s id="darcs">No. Copies of files and directory structures are
                     not supported. 
                 </s>
@@ -264,6 +271,7 @@ TODO:
                 <s id="superversion">Yes.</s>
                 <s id="svk">Yes.</s>
                 <s id="arch">Yes.</s>
+                <s id="bazaar">Yes.</s>
                 <s id="darcs">Yes.</s>
                 <s id="bitkeeper">Yes.</s>
                 <s id="aegis">Yes.</s>
@@ -310,6 +318,7 @@ TODO:
                 <s id="superversion">No.</s>
                 <s id="svk">Yes.</s>
                 <s id="arch">Yes.</s>
+                <s id="bazaar">Yes.</s>
                 <s id="darcs">Yes.</s>
                 <s id="bitkeeper">Yes.</s>
                 <s id="aegis">Yes.</s>
@@ -352,6 +361,11 @@ TODO:
                     Yes. It is possible to define permissions on access to
                     different parts of a remote repository based on the 
                     permission systems of the underlying protocol.
+                </s>
+                <s id="bazaar">
+                    Basic access control can be implemented through a
+                    contributed hook script.  ACL support for the
+                    Bazaar server is planned.
                 </s>
                 <s id="darcs">
                     No.
@@ -422,7 +436,7 @@ TODO:
         <section id="changesets">
             <title>Changesets' Support</title>
             <expl>
-                Does the repository supports changesets? Changesets are a way
+                Does the repository support changesets? Changesets are a way
                 to group a number of modifications that are relevant to each
                 other in one atomic package, that can be cancelled or 
                 propagated as needed.
@@ -450,6 +464,9 @@ TODO:
                     Yes. Changesets are supported.
                 </s>
                 <s id="arch">
+                    Yes. Changesets are supported.
+                </s>
+                <s id="bazaar">
                     Yes. Changesets are supported.
                 </s>
                 <s id="darcs">
@@ -495,8 +512,8 @@ TODO:
         <section id="annotate">
             <title>Tracking Line-wise File History</title>
             <expl>
-                Does the version control system has an option to track the
-                history of the file line-by-line? I.e: for each line show
+                Does the version control system have an option to track the
+                history of the file line-by-line? I.e., can it show for each line
                 at which revision it was most recently changed, and by whom?
             </expl>
             <compare>
@@ -508,6 +525,7 @@ TODO:
                 <s id="bitkeeper">Yes. (bk annotate)</s>
                 <s id="arch">Not in the command line client, but ViewARCH,
                 a web-interface for Arch, has it.</s>
+                <s id="bazaar">Yes. (bzr annotate).</s>
                 <s id="darcs">Yes. (darcs annotate)</s>
                 <s id="mercurial">Yes. (hg annotate)</s>
                 <s id="monotone">Yes, as of version 0.19.</s>
@@ -564,6 +582,7 @@ TODO:
                     However, one must check out the entire repository as a
                     whole.
                 </s>
+                <s id="bazaar">For checkouts: No. For checkins: Yes.</s>
                 <s id="darcs">
                     It is possible to commit only a certain directory. 
                     However, one must check out the entire repository as a
@@ -615,8 +634,8 @@ TODO:
         <section id="tracking_uncommited_changes">
             <title>Tracking Uncommited Changes</title>
             <expl>
-                Does the software has an ability to track the changes in the 
-                working copy that were not yet commited to the repository?
+                Does the software have an ability to track the changes in the
+                working copy that were not yet committed to the repository?
             </expl>
             <compare>
                 <s id="cvs">Yes. Using cvs diff</s>
@@ -632,6 +651,7 @@ TODO:
                 <s id="arch">
                     Yes, using "tla changes".
                 </s>
+                <s id="bazaar">Yes, using "bzr diff".</s>
                 <s id="darcs">
                     Yes, using "darcs whatsnew".
                 </s>
@@ -664,7 +684,7 @@ TODO:
         <section id="per_file_commit_messages">
             <title>Per-File Commit Messages</title>
             <expl>
-                Does the system has a way to assign a per-file commit message
+                Does the system have a way to assign a per-file commit message
                 to the changeset, as well as a per-changeset message?
             </expl>
             <compare>
@@ -677,6 +697,10 @@ TODO:
                     commit message</s>
                 <s id="arch">
                     No.
+                </s>
+                <s id="bazaar">
+                    With respect to pure Bazaar: No.  At least one
+                    plugin (bzr-gtk) supports it though.
                 </s>
                 <s id="darcs">
                     No.
@@ -722,7 +746,7 @@ TODO:
         <section id="documentation">
             <title>Documentation</title>
             <expl>
-                How well is the system documented? How easy it is to
+                How well is the system documented? How easy is it to
                 get started using it?
             </expl>
             <compare>
@@ -769,6 +793,19 @@ TODO:
                     comprehensive online documentation. The command line
                     client also supplies a reference page. However, some of 
                     the documentation is out of date or incomplete.
+                </s>
+                <s id="bazaar">
+                    Excellent.  Apart from online help in the command
+                    line client there exist tutorials, a reference
+                    card ("Quick Start Guide"), several full fledged
+                    guides and references, and documents on
+                    specialized topics, such as migration from other
+                    VCS systems and different workflows.  The
+                    documentation comes in html and plain-text formats.  The
+                    API of the underlying library is fully documented.
+                    In the UI design of the command line client
+                    special attention was paid to make it easy to get
+                    started with Bazaar.
                 </s>
                 <s id="darcs">
                     Good. The manual contains a brief tutorial and a solid
@@ -833,8 +870,8 @@ TODO:
         <section id="ease_of_deployment">
             <title>Ease of Deployment</title>
             <expl>
-                How easy it is to deploy the software? What are
-                the depenedencies and how can they be satisfied?
+                How easy is it to deploy the software? What are
+                the dependencies and how can they be satisfied?
             </expl>
             <compare>
                 <s id="cvs">
@@ -856,6 +893,13 @@ TODO:
                     protocols (FTP, SFTP, WebDAV, etc.). The arch client
                     is written in C, and is portable across UNIX systems
                     (and on Win32 only with a UNIX emulation layer).
+                </s>
+                <s id="bazaar">
+                    Very easy.  Bazaar has an installer for MS Windows
+                    and packages for some major Linux distributions,
+                    FreeBSD, and Mac OS X.  The dependencies for
+                    manual installation are listed on the Bazaar
+                    website.
                 </s>
                 <s id="darcs">
                     Very good. darcs requires few external libraries,
@@ -955,7 +999,7 @@ TODO:
         <section id="command_set">
             <title>Command Set</title>
             <expl>
-                What is the command set? How compatible it is with
+                What is the command set? How compatible is it with
                 the commands of CVS (the current open-source defacto
                 standard)?
             </expl>
@@ -999,6 +1043,10 @@ TODO:
                     there are many other commands for it for different uses. 
                     Aliasing of commands is possible so it it may be possible
                     to make it more compatible.
+                </s>
+                <s id="bazaar">
+                    Tries to follow CVS conventions, but deviates
+                    where there is a different design.
                 </s>
                 <s id="darcs">
                     The command set is fairly compact and the core commands
@@ -1053,8 +1101,8 @@ TODO:
         <section id="networking">
             <title>Networking Support</title>
             <expl>
-                How well is the networking integration in the system?
-                How compliant it with existing protocols and infra-structure.
+                How good is the networking integration of the system?
+                How compliant is it with existing protocols and infra-structure?
             </expl>
             <compare>
                 <s id="cvs">
@@ -1072,6 +1120,14 @@ TODO:
                     filesystem server. Currently supported protocols include
                     FTP, SFTP, WebDAV (remote file access over HTTP), 
                     as well as any remote filesystem protocol (NFS, SMB).
+                </s>
+                <s id="bazaar">
+                    Excellent. Works natively over HTTP (read-only),
+                    FTP and SFTP without having Bazaar installed at
+                    the remote end.  Works over HTTP, SSH and a custom
+                    protocol when talking to a remote Bazaar
+                    server. Supports RSYNC and WebDAV (experimental)
+                    through plugins.
                 </s>
                 <s id="darcs">
                     Good. Darcs supports getting patches over HTTP, and
@@ -1199,6 +1255,16 @@ TODO:
                     verify). A service can be hosted on any platform
                     that sports a suitable Internet service.
                 </s>
+                <s id="bazaar">
+                    Works on MS Windows, Linux, Mac OS X, FreeBSD,
+                    UNIX, and basically on any system that has a
+                    recent Python port.  With case-insensitive file
+                    systems there are some issues that can be avoided
+                    by using a graphical frontend.  On MS Windows
+                    there is a plugin to support tracking of symlinks
+                    even if they are not supported natively by the
+                    file system.
+                </s>
                 <s id="darcs">
                     Very good. Supports many UNIXes, Mac OS X, and Windows,
                     and is written in a portable language.
@@ -1295,6 +1361,14 @@ TODO:
                     which are 
                     works in progress.
                 </s>
+                <s id="bazaar">
+                    Yes, several:
+                    <a href="http://www.lag.net/loggerhead/">Loggerhead</a>,
+                    <a href="http://goffredo-baroncelli.homelinux.net/bazaar/">Webserve</a>,
+                    <a href="http://mccormick.cx/dev/bzrweb/index.py/log/bzrweb/head">Bzrweb</a>,
+                    and
+                    <a href="http://bazaar-vcs.org/TracBzr">Trac</a>.
+                </s>
                 <s id="darcs">
                     <a href="http://abridgegame.org/cgi-bin/darcs.cgi/darcs/">darcs.cgi</a>
                     is included in the distribution.
@@ -1365,6 +1439,19 @@ TODO:
                     and <a href="http://www.nongnu.org/archway/">ArchWay</a>
                     and possibly others under development.
                 </s>
+                <s id="bazaar">
+                    There are several graphical frontends in
+                    development,
+                    see <a href="http://bazaar-vcs.org/BzrPlugins">the Bazaar Plugins page</a>
+                    and <a href="http://bazaar-vcs.org/3rdPartyTools">the Third-party Tools page</a>.
+                    Notable
+                    are <a href="http://bazaar-vcs.org/QBzr">QBzr
+                    (Qt)</a> and 
+                    <a href="http://bazaar-vcs.org/bzr-gtk">bzr-gtk (GTK+)</a>, which
+                    can be considered beta quality.  Work is also
+                    being done on integrating Bazaar with Windows
+                    Explorer, Eclipse, Nautilus, and Meld.
+                </s>
                 <s id="darcs">
                     None to speak of.  (There is a modest graphical
                     interface to a few commands in the distribution, but it
@@ -1433,6 +1520,7 @@ TODO:
             <s id="cvs">GNU GPL (open source)</s>
             <s id="accurev">Proprietary, named-user licensing.</s>
             <s id="arch">GNU GPL (open source)</s>
+            <s id="bazaar">GNU GPL (open source)</s>
             <s id="darcs">GNU GPL (open source)</s>
             <s id="bitkeeper">
                 Proprietary, binary only license. Pay per use license,
