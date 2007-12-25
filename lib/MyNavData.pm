@@ -77,6 +77,12 @@ my $tree_contents =
                     'title'=> "A Distributed Version Control System",
                 },
                 {
+                    'text' => "Bazaar",
+                    'url' => "alternatives/bazaar/",
+                    'title' => ("Bazaar - an Open Source Distributed " .
+                        "Version Control System"),
+                },
+                {
                     'text' => "BitKeeper",
                     'url' => "bk/",
                     'title' => ("A Proprietary Distributed Version" . 
