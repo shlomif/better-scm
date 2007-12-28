@@ -1,0 +1,24 @@
+#include '../template.wml'
+
+<latemp_subject "Bazaar has been added to the Comparison and the Site" />
+<latemp_version_control_id "$Id$" />
+
+<p>
+Recently, the <a href="http://bazaar-vcs.org/">Bazaar version control 
+system</a> has been added to <a href="$(ROOT)/comparison/">the comparison</a>,
+and <a href="$(ROOT)/alternatives/bazaar/">a summary page</a> about it 
+has been added to the main site.
+</p>
+
+<p>
+In addition, the <a href="$(ROOT)/arch/">Arch summary page</a> that referenced
+it and its predecessor "Baz" was corrected to update their name change.
+</p>
+
+<p>
+Thanks should go to the volunteer who contributed the material.
+</p>
+
+<p>
+<b>Date:</b> 2007-December-28
+</p>
