@@ -57,6 +57,14 @@ my @news_items =
             },
             date => "2007-02-23",
         },
+        {
+            'title' => "Bazaar Added to the Comparison and Site",
+            'id' => "changes-2007-12-28",
+            'description' => q{The open-source Bazaar version control
+            system has been added to the comparison and site.
+            },
+            date => "2007-12-28",
+        },
         )
     )
 );
