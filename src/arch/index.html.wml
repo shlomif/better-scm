@@ -23,18 +23,18 @@ of Arch.
 incompatible with tla, and has some advantages.
 </li>
 <li>
-<A href="http://bazaar.canonical.com/">Bazaar</a> - a fork of tla, which aims
+<A href="http://bazaar-vcs.org/Baz1x">baz</a> - a fork of tla, which aims
 to provide better Subversion compatibility, and other nice features.
 </li>
 </ul>
 
 <p>
-<b>Note</b>: related to Bazaar, is
-<a href="http://www.bazaar-ng.org/">Bazaar-NG</a>, which is written from
-scratch by the same parent company. It aims to offer some advantages over
-Bazaar, but is not an Arch implementation, nor is it compatible with Bazaar.
-A tool is available to convert Bazaar repositories into Bazaar-NG, but not
-the other way around.
+<b>Note</b>: related to baz is the project
+<a href="http://bazaar-vcs.org/">Bazaar</a>.  Its new program, bzr, is
+written from scratch. It aims to offer some advantages over baz, but
+is not an Arch implementation, nor is it compatible with baz.  A tool
+is available to convert baz repositories into bzr, but not the other
+way around.
 </p>
 
 <h2>Summary</h2>

@@ -12,8 +12,32 @@
 <h2>Summary</h2>
 
 <p>
-Bazaar is an open-source, distributed, version control system sponsored by 
-Canonical Ltd., the company behind the 
-<a href="http://www.ubuntu.com/">Ubuntu distribution</a>.
+Bazaar is an open-source distributed version control system, sponsored
+by <a href="http://canonical.com/">Canonical Limited</a>, the founders
+of <a href="http://ubuntu.com/">Ubuntu</a>
+and released under the <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GNU GPL</a>. 
+</p>
+
+<p>
+It is written in Python and designed for correctness, performance,
+simplicity, and familiarity for developers who are familiar with CVS or
+Subversion. Its main program, 'bzr', has been self-hosting since March
+2005 and is mature enough to host large projects such as
+<a href="https://launchpad.net/">Launchpad.net</a>.
+</p>
+
+<p>
+Bazaar has a full set of 
+<a href="http://bazaar-vcs.org/BzrPlugins">plugins</a>, and there are many
+<a href="http://bazaar-vcs.org/3rdPartyTools">third-party utilities</a> 
+under active development. Bazaar has been adopted by 
+<a href="http://bazaar-vcs.org/WhoUsesBzr">many projects</a>.
+</p>
+
+<p>
+It should be noted that Bazaar (also known as "bzr" after its command line)
+used to be called Bazaar-NG, while its predecessor "Baz" (originally derived 
+from <a href="$(ROOT)/arch/">GNU Arch</a>) used to be called "Bazaar". 
+However, now after bzr has matured, it assumed the name "Bazaar" instead.
 </p>
 
