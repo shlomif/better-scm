@@ -32,6 +32,9 @@ TODO:
             <impl id="clearcase">
                 <name>ClearCase</name>
             </impl>
+            <impl id="cmplus">
+                <name>CM+</name>
+            </impl>
             <impl id="cmsynergy">
                 <name>CMSynergy</name>
             </impl>
@@ -120,6 +123,7 @@ TODO:
                 <s id="co-op">Yes. Commits are atomic.</s>
                 <s id="vss">No. VSS commits are not atomic.</s>
                 <s id="cmsynergy">Yes. Commits are atomic.</s>
+                <s id="cmplus">Yes. Commits are atomic.</s>
                 <s id="clearcase">Yes. Commits (checkins) are atomic.</s>
                 <s id="ls-sync">Yes. Commits and updates are atomic.</s>
             </compare>
@@ -141,6 +145,7 @@ TODO:
                     Supports controlling of symbolic links as well.
                 </s>
                 <s id="subversion">Yes. Renames are supported.</s>
+                <s id="cmplus">Yes. Both moves and renames are supported, while maintaining history.</s>
                 <s id="superversion">No. Renames are not supported.</s>
                 <s id="svk">Yes. Renames are supported.</s>
                 <s id="arch">Yes. Renames are supported.</s>
@@ -208,6 +213,10 @@ TODO:
                 <s id="subversion">Yes. And it's a very cheap operation (O(1)) that 
                     is also utilized for branching
                 </s>
+                <s id="cmplus">Yes. An inexpensive operation that can be used for
+                    sharing files in multiple places.  On deploy, you have the
+                    option of deploying only one of the shared files or all of them.
+                </s>
                 <s id="superversion">No. Copies are not supported.</s>
                 <s id="svk">Yes. Same as subversion.</s>
                 <s id="arch">No. Copies of files and directory structures are
@@ -267,6 +276,11 @@ TODO:
                     <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a> 
                     utility.
                 </s>
+                <s id="cmplus">Yes. CM+MultiSite can be configured to clone a repository
+                    so that it continues to act as a single repository. Options include
+                    cloning only from the main site (i.e. not allowing updates from the
+                    clone) and restricting the set of files transferred to a cloned site.
+                </s>
                 <s id="accurev">Yes.</s>
                 <s id="superversion">Yes.</s>
                 <s id="svk">Yes.</s>
@@ -314,6 +328,12 @@ TODO:
                 </s>
                 <s id="subversion">Yes, using either Chia-Ling Kao's SVN::Mirror
                     script or the svn-push utility by Shlomi Fish.
+                </s>
+                <s id="cmplus">
+                    Yes.  In CM+MultiSite, changes made at the slave are,
+                    by default, propagated to the Main(master) library, as well as
+                    to all other Clones (slaves).  You may also propagate changes
+                    between unrelated repositories containing some of the same source.
                 </s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes.</s>
@@ -381,6 +401,14 @@ TODO:
                     Yes. The WebDAV-based service supports defining HTTP
                     permissions for various directories of the repository.
                 </s>
+                <s id="cmplus">
+                    Yes.  Permissions are defined by data, primarily,
+                    not by location.  If location is a part of the data, it may
+                    be used to define permissions by location.  Permissions may
+                    apply to a branch, file, problem report, test case, etc.
+                    Access may be extended based on peer group, manager, and
+                    access lists.
+                </s>
                 <s id="superversion">
                     No.
                 </s>
@@ -445,6 +473,16 @@ TODO:
                 <s id="cvs">No. Changes are file-specific.</s>
                 <s id="subversion">Partial support. There are implicit 
                     changeset that are generated on each commit.
+                </s>
+                <s id="cmplus">
+                    Yes. Change packages are known as updates.  By
+                    default, an update is required to make any change.  The
+                    update may be checked-in, differenced, promoted, retrieved,
+                    propagated, yanked (i.e. removed from history), etc. each in
+                    a single operation.  Baseline alignment is performed
+                    based on the status (i.e. promotion level) of the update.
+                    Updates also record changes to directory structure: move,
+                    add, remove.
                 </s>
                 <s id="accurev">
                     Yes, AccuRev provides robust functionality for change 
@@ -520,6 +558,7 @@ TODO:
                 <s id="cvs">Yes. cvs annotate</s>
                 <s id="accurev">Yes. Available from both the gui and cli.</s>
                 <s id="subversion">Yes. (svn blame)</s>
+                <s id="cmplus">Yes.  View revision tags. </s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. (svk blame)</s>
                 <s id="bitkeeper">Yes. (bk annotate)</s>
@@ -574,6 +613,11 @@ TODO:
                     changes to that subset of code.
                 </s>
                 <s id="subversion">Yes.</s>
+                <s id="cmplus">
+                    Yes.  Any arbitrary set can be checked out
+                    and worked on.  Similarly, arbitrary restrictions may be
+                    applied for check-in, including file ownership.
+                </s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes.</s>
                 <s id="bitkeeper">No. All changes are made repository-wide.</s>
@@ -644,6 +688,10 @@ TODO:
                     and the command line interface.
                 </s>
                 <s id="subversion">Yes. Using svn diff</s>
+                <s id="cmplus">
+                    Yes. Use Updates | Delta | Delta Update. Or
+                    right click a file or directory and do a compare to workspace.
+                </s>
                 <s id="superversion">Yes. Local changes are detected and shown immediately. Changes can be
                   collected in a local buffer before being committed to the repository.</s>
                 <s id="svk">Yes. Using svk diff</s>
@@ -691,6 +739,14 @@ TODO:
                 <s id="cvs">No. Commit messages are per change.</s>
                 <s id="accurev">No. Commit messages are per change.</s>
                 <s id="subversion">No. There is no such feature.</s>
+                <s id="cmplus">
+                    Yes.  Out of the box CM+ is configured to
+                    prompt for messages (i.e. comments) only per change.
+                    However, the schema is pre-configured so that you may
+                    prompt on a per file basis as well (typically done at
+                    checkout time as the entire change is normally checked
+                    in with a single operation.
+                </s>
                 <s id="superversion">Yes.</s>
                 <s id="svk">No. There is no such feature.</s>
                 <s id="bitkeeper">Yes. It is possible to have a per-file
@@ -768,6 +824,17 @@ TODO:
                     formats. The command-line client also provides a good 
                     online help system that can be used as a reference.
                 </s>
+                <s id="cmplus">
+                    Very good.  There is a self-demo/tutorial
+                    to get you started quickly.  Administration is minimal.
+                    So normal developer use requires only a 1 to 2 hour
+                    training session (or equivalent guide) to introduce you
+                    to concepts and capabilities (e.g. like updates, options).
+                    Customization documentation is also extensive but should
+                    normally be accompanied by a 2-day to 4-day course for
+                    GUI, Process, Data and Application set customization.
+                </s>
+
                 <s id="superversion">
                     Fairly poor. There are two tutorials, but there is no
                     reference. Installing and getting started with the GUI
@@ -929,6 +996,17 @@ TODO:
                     some work, assuming Subversion does not come prepackaged
                     for one's system.
                 </s>
+                <s id="cmplus">
+                    Yes. Typical installation need only be done
+                    on the server (with a single shortcut established on the
+                    client).  This assumes file system connectivity. For IP
+                    only connectivity, installation is also required on
+                    remote clients.  Installation is typically a couple of
+                    minutes. No dependencies unless web interface is used,
+                    in which case an Apache server is required. A download
+                    is available from Neuma's web site and takes you right
+                    into a self-guided fully working demo version.
+                </s>
                 <s id="superversion">
                     If Java 1.4 is installed, deployment of Superversion
                     usually takes two clicks.
@@ -1015,6 +1093,15 @@ TODO:
                 <s id="subversion">
                     A CVS-like command set which is easy to get used to
                     for CVS-users.
+                </s>
+                <s id="cmplus">
+                        CM+ has several dozen commands that can
+                    be used both for operation and configuration of the product.
+                    As CM+ is change-based, commands are substantially
+                    different than CVS.  The GUI is used primarily and implemented
+                    on top of the command set.  As well, CM+ covers a full ALM
+                    suite and can be extended beyond, so there are many more
+                    generic commands for browsing, reporting, etc. 
                 </s>
                 <s id="superversion">
                     There is little need to memorize a command set because
@@ -1139,6 +1226,12 @@ TODO:
                     underylying protocol, or its own proprietary protocol
                     that can be channeled over an SSH connection.
                 </s>
+                <s id="cmplus">
+                    Very good.  File system connectivity,
+                    TCP/IP connectivity and Web connectivity may be
+                    intermixed. MultiSite connectivity is over TCP/IP,
+                    as is License server. Works well with SSH, NFS, SMB, etc.
+                </s>
                 <s id="superversion">
                     Good. Network support based on RMI is integrated
                     seamlessly. Encryption and HTTP tunnelling are planned
@@ -1231,6 +1324,14 @@ TODO:
                 <s id="subversion">
                     Excellent. Clients and Servers work on UNIX, 
                     Windows and Mac OS X.
+                </s>
+                <s id="cmplus">
+                    Good.  Clients and Servers work on Unix,
+                    Linux, and Windows.  MAC OS X port pending.  Moving server
+                    from one platform to another is a copy operation only. Can
+                    have different platforms for different servers in a MultiSite
+                    configuration. Easily configurable Web client also supported.
+                    No CR/LF issues. Scripts are all portable as well.
                 </s>
                 <s id="superversion">
                     Excellent. Clients and servers work on any Java
@@ -1353,6 +1454,11 @@ TODO:
                     from that, the Subversion Apache service provides a
                     rudimentary web-interface.
                     </s>
+                <s id="cmplus">
+                    Yes.  Can be configured to restrict which operations
+                    are allowed by which users, so that customers may access their
+                    requests without seeing development team data.
+                </s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. Same as Subversion.</s>
                 <s id="arch">
@@ -1425,6 +1531,15 @@ TODO:
                     GUIs: RapidSVN (cross-platform),
                     TortoiseSVN (Windows Explorer plug-in), Jsvn (Java), etc.
                     Most of them are still under development.
+                </s>
+                <s id="cmplus">
+                    Excellent.  Windows and Unix/Linux GUI as well
+                    as web GUI.  Extensively configurable via simple menu files,
+                    browser files, etc.  Can customize the set of to-do lists by
+                    user/role, same for menus, pop-up menus, default visible tabbed
+                    reports, etc.  GUI also used for all admin and for process
+                    and data schema customization.  Also plug-in for Visual Studio,
+                    Eclipse, etc. and File Browser (Windows).
                 </s>
                 <s id="superversion">
                     A GUI is integrated.
@@ -1536,6 +1651,13 @@ TODO:
             </s>
             <s id="subversion">
                 Apache/BSD-style license. (open-source)
+            </s>
+            <s id="cmplus"> Network licenses and user licenses. No minimum
+                checkout time, and automatic license checkin on idle. License
+                server included in product. Professional and Enterprise editions.
+                Enterprise includes customizations, additional applications, and
+                full multiple site capability.  One Server license per site. Total
+                license cost per user typically less than $1000 + 18% annual mtce.
             </s>
             <s id="superversion">
                 GNU GPL (open-source)
