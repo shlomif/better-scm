@@ -251,7 +251,7 @@ TODO:
                   Yes, through use of hard links. (But some
                   limitations in Windows environments)
                 </s>
-                <s id="ls-sync">No, copies will start there own history.</s>
+                <s id="ls-sync">No, copies will start their own history.</s>
            </compare>
         </section>
         <section id="repos_clone">
