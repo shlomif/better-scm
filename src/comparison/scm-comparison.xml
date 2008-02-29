@@ -13,72 +13,102 @@ TODO:
         <implementations>
             <impl id="cvs">
                 <name>CVS</name>
+                <url>http://www.cvshome.org/</url>
             </impl>
             <impl id="accurev">
                 <name>AccuRev</name>
+                <url>http://www.accurev.com/</url>
             </impl>
             <impl id="aegis">
                 <name>Aegis</name>
+                <url>http://aegis.sourceforge.net/</url>
             </impl>
             <impl id="arch">
                 <name>Arch</name>
+                <url>http://gnuarch.org/</url>
+                <fullname>Arch Revision Control System</fullname>
             </impl>
             <impl id="bazaar">
                 <name>Bazaar</name>
+                <url>http://bazaar-vcs.org/</url>
             </impl>
             <impl id="bitkeeper">
                 <name>BitKeeper</name>
+                <url>http://www.bitkeeper.com/</url>
             </impl>
             <impl id="clearcase">
                 <name>ClearCase</name>
+                <url>http://www-306.ibm.com/software/awdtools/clearcase/</url>
+                <fullname>IBM Rational ClearCase</fullname>
             </impl>
             <impl id="cmplus">
                 <name>CM+</name>
+                <url>http://www.neuma.com/</url>
+                <vendor>Neuma</vendor>
             </impl>
             <impl id="cmsynergy">
                 <name>CMSynergy</name>
+                <url>http://www.telelogic.com/products/synergy/index.cfm</url>
+                <vendor>Telelogic</vendor>
             </impl>
             <impl id="co-op">
                 <name>Co-Op</name>
+                <url>http://www.relisoft.com/co_op/</url>
+                <fullname>Code Co-Op</fullname>
             </impl>
             <impl id="darcs">
                 <name>Darcs</name>
-            </impl>
-            <impl id="mercurial">
-                <name>Mercurial</name>
-            </impl>
-            <impl id="monotone">
-                <name>Monotone</name>
-            </impl>
-            <impl id="opencm">
-                <name>OpenCM</name>
-            </impl>
-            <impl id="perforce">
-                <name>Perforce</name>
-            </impl>
-            <impl id="purecm">
-                <name>PureCM</name>
-            </impl>
-            <impl id="SourceAnywhere">
-                <name>SourceAnywhere</name>
-            </impl>
-            <impl id="subversion">
-                <name>Subversion</name>
-            </impl>
-            <impl id="superversion">
-                <name>Superversion</name>
-            </impl>
-            <impl id="svk">
-                <name>svk</name>
-            </impl>
-            <impl id="vesta">
-                <name>Vesta</name>
-            </impl>
-            <impl id="vss">
-                <name>Visual SourceSafe</name>
+                <url>http://abridgegame.org/darcs/</url>
             </impl>
             <impl id="ls-sync">
                 <name>LibreSource Synchronizer</name>
+                <url>http://dev.libresource.org/</url>
+            </impl>            
+            <impl id="mercurial">
+                <name>Mercurial</name>
+                <url>http://www.selenic.com/mercurial/</url>
+            </impl>
+            <impl id="monotone">
+                <name>Monotone</name>
+                <url>http://www.venge.net/monotone/</url>
+            </impl>
+            <impl id="opencm">
+                <name>OpenCM</name>
+                <url>http://www.opencm.org/</url>
+            </impl>
+            <impl id="perforce">
+                <name>Perforce</name>
+                <url>http://www.perforce.com/</url>
+            </impl>
+            <impl id="purecm">
+                <name>PureCM</name>
+                <url>http://www.purecm.com/</url>
+            </impl>
+            <impl id="SourceAnywhere">
+                <name>SourceAnywhere</name>
+                <url>http://www.dynamsoft.com/Products/SAWStandalone_Overview.aspx</url>
+                <vendor>DynamSoft</vendor>
+            </impl>
+            <impl id="subversion">
+                <name>Subversion</name>
+                <url>http://subversion.tigris.org/</url>
+            </impl>
+            <impl id="superversion">
+                <name>Superversion</name>
+                <url>http://www.superversion.org/</url>
+            </impl>
+            <impl id="svk">
+                <name>svk</name>
+                <url>http://svk.elixus.org/</url>
+            </impl>
+            <impl id="vesta">
+                <name>Vesta</name>
+                <url>http://www.vestasys.org/</url>
+            </impl>
+            <impl id="vss">
+                <name>Visual SourceSafe</name>
+                <url>http://msdn.microsoft.com/ssafe/</url>
+                <vendor>Microsoft Corp.</vendor>
             </impl>
         </implementations>
         <timestamp>
