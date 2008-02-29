@@ -24,75 +24,17 @@ page</a>.
 <h2>Covered Systems</h2>
 
 <ul>
-<li>
-<a href="http://www.cvshome.org/">CVS</a>
-</li>
-<li>
-<a href="http://www.accurev.com/">AccuRev</a>
-</li>
-<li>
-<a href="http://aegis.sourceforge.net/">Aegis</a>
-</li>
-<li>
-<a href="http://gnuarch.org/">Arch Revision Control System</a>
-</li>
-<li>
-<a href="http://bazaar-vcs.org/">Bazaar</a>
-</li>
-<li>
-<a href="http://www.bitkeeper.com/">BitKeeper</a>
-</li>
-<li>
-<a href="http://www-306.ibm.com/software/awdtools/clearcase/">IBM Rational
-ClearCase</a>
-</li>
-<li>
-<a href="http://www.neuma.com/">CM+</a> by Neuma.
-</li>
-<li>
-<a href="http://www.telelogic.com/products/synergy/index.cfm">CM Synergy</a>
-by Telelogic.
-</li>
-<li>
-<a href="http://www.relisoft.com/co_op/">Code Co-Op</a>
-</li>
-<li>
-<a href="http://abridgegame.org/darcs/">Darcs</a>
-</li>
-<li>
-<a href="http://www.selenic.com/mercurial/">Mercurial</a>
-</li>
-<li>
-<a href="http://www.venge.net/monotone/">Monotone</a>
-</li>
-<li>
-<a href="http://www.opencm.org/">OpenCM</a>
-</li>
-<li>
-<a href="http://www.perforce.com/">Perforce</a>
-</li>
-<li>
-<a href="http://www.purecm.com/">PureCM</a>
-</li>
-<li>
-<a href="http://www.dynamsoft.com/Products/SAWStandalone_Overview.aspx">SourceAnyWhere</a> by DynamSoft
-</li>
-<li>
-<a href="http://subversion.tigris.org/">Subversion</a>
-</li>
-<li>
-<a href="http://www.superversion.org/">Superversion</a>
-</li>
-<li>
-<a href="http://svk.elixus.org/">svk</a>
-</li>
-<li>
-<a href="http://www.vestasys.org/">Vesta</a>
-</li>
-<li>
-<a href="http://msdn.microsoft.com/ssafe/">Visual SourceSafe</a> by Microsoft
-Corp.
-</li>
+<:{
+use XML::CompareML::HTML;
+
+my $converter =
+    XML::CompareML::HTML->new(
+        'input_filename' => "./comparison/scm-comparison.xml",
+        'output_handle' => \*STDOUT,
+    );
+
+$converter->gen_systems_list(output_handle => \*STDOUT);
+}:>
 </ul>
 
 <h2>Sources of the Comparison</h2>
