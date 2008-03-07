@@ -1442,8 +1442,9 @@ TODO:
                     Excellent. Runs on UNIX, Mac OS, BeOS and Windows.
                 </s>
                 <s id="purecm">
-                    Good. Server and gui run on Windows. Command line also 
-                    runs on UNIX and Mac OS.
+                    Excellent. Client and Server run on Windows, Linux,
+                    Solaris and other UNIXes. The client also runs on Mac
+                    OS X.
                 </s>
                 <s id="vesta">
                     Good.  It should be portable to any UNIX system.
@@ -1543,7 +1544,7 @@ TODO:
                 <s id="monotone">No.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes, P4Web.</s>
-                <s id="purecm">No.</s>
+                <s id="purecm">Yes.</s>
                 <s id="vesta">
                     Yes: <a href="http://www.scooter.cx/vestaweb/">Vestaweb</a>.
                 </s>
@@ -1652,7 +1653,8 @@ TODO:
                     library. 
                 </s>
                 <s id="purecm">
-                    Windows has a very user friendly gui.
+                    Cross-platform GUI for Windows, Linux, Mac OS X
+                    and other UNIXes.
                 </s>
                 <s id="vesta">
                     No GUIs are available, but the repository has a
@@ -1742,7 +1744,7 @@ TODO:
             <s id="purecm">
                 A proprietary, binary only, commercial license. 
                 <a href="http://www.purecm.com/purchase">Price 
-                    starting at $600 for 5 users</a>
+                    starting at $1000 for 5 users</a>
             </s>
             <s id="vesta">
                 GNU LGPL (open source)
