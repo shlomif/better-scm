@@ -329,7 +329,10 @@ TODO:
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
-                <s id="purecm">No.</s>
+                <s id="purecm">
+                    No. (But a proxy feature is planned for 
+                    inclusion in the next releases.)
+                </s>
                 <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
                 <s id="co-op">Repositories are always replicated on local machines. 
                     There is no central server.
@@ -611,7 +614,7 @@ TODO:
                 <s id="aegis">Yes. aeannotate</s>
                 <s id="opencm">Unknown. Probably not.</s>
                 <s id="perforce">Yes, an annotation feature is present.</s>
-                <s id="purecm">No.</s>
+                <s id="purecm">Yes, annotation is available through the GUI.</s>
                 <s id="vesta">
                     No, but it would be easy to implement a tool that
                     did this, as the Vesta repository provides direct
