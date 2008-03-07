@@ -40,6 +40,9 @@ $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 	touch $@
 
+src/comparison/index.html.wml: src/comparison/scm-comparison.xml
+	touch $@
+
 upload_beta: all
 	cd $(D) && \
 	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
