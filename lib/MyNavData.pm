@@ -223,6 +223,11 @@ my $tree_contents =
             'skip' => 1,
         },
         {
+            'url' => "faq/",
+            'text' => "FAQ - Frequently Asked Questions",
+            'title' => "Frequently Asked Questions with Answers about the Site",
+        },
+        {
             'url' => "contribute/",
             'text' => "Contribute",
             'title' => "How to Contribute to this Site",
