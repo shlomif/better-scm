@@ -1,0 +1,126 @@
+#include '../template.wml'
+#include "xhtml/1.x/std/toc.wml"
+
+<latemp_subject "F.A.Q. (Frequently Asked Questions) for the Better-SCM Site" />
+<latemp_version_control_id "$Id: index.html.wml 182 2005-04-17 10:10:22Z shlomif $" />
+<latemp_more_keywords "git" />
+
+<div class="toc">
+<toc /> 
+</div>
+
+<p>
+This is a list of frequently asked questions and answers about the Better
+SCM Site and its version control systems' comparison.
+</p>
+
+<h2 id="comparison">Questions About the Comparison</h2>
+
+<h3 id="system-missing-from-comparison">Why is the Version Control System
+"Foo" Missing from the Comparison?</h3>
+
+<p>
+The maintainer of the comparison (= Shlomi Fish) does not have time to
+try out or fill in the details about every version control system out there.
+As such, he relies on a so-called "champion" for each version control system
+to:
+</p>
+
+<ol>
+
+<li>
+Send him a patch that adds the version control system to its XML sources. 
+</li>
+
+<li>
+Maintain the system into the future, when and if new criteria are added,
+or new features are added to the system.
+</li>
+
+<li>
+Be able to answer questions and comments from people who enquire about it.
+</li>
+
+</ol>
+
+<p>
+If you feel you are familiar with a given system enough, then you can
+<a href="http://better-scm.berlios.de/contribute/#comparison_new_system">follow
+the instructions to become a champion</a>. If not, you'll have to find someone
+who is. You don't have to be a vendor or a developer of this system to
+fill in the details, but if you are, then it wouldn't hurt.
+</p>
+
+<h4 id="git-missing">Why is git missing from the comparison?</h4>
+
+<p>
+<a href="http://git.or.cz/">git</a> is a popular version control system
+originally written for use for development of the Linux kernel, but
+has been adopted by many other projects since. Its absense in both
+the comparison and the main site, is a well-noted deficiency of them.
+</p>
+
+<p>
+The reason it's not there is that while many people have complained about
+its absense, no one suitable has volunteered to become its champion and
+supplied a good enough patch. If you have a substantial amount of git
+expertise, have good English writing skills, and wish to volunteer,
+then we'll be happy to hear from you. If not - at least don't complain about
+it.
+</p>
+
+<p>
+In addition to everything that was said here, it seems that the originator
+and maintainer of the site and comparison is now banned from sending
+messages to vger.kernel.org, which hosts several Linux-kernel-related 
+mailing-lists, including the git one. This has interfered with some of his
+Linux-related open-source work, including trying to find a "Better SCM"
+maintainer for git. This is unfortunate, but changing this situation,
+is currently beyond his control.
+</p>
+
+<h3 id="system-missing-from-comparison">Why is the comparison missing
+a lot of important criteria?</h3>
+
+<p>
+The comparison was started with about 5 version control systems, and with
+a large number of criteria that seemed adequate at the time. A few critiria
+were added later, but since then most of the contributions were just patches
+to add a new version control system.
+</p>
+
+<p>
+We are well-aware of the fact that the comparison is missing many important
+criteria. The chief maintainer hope to work on it sometime, but that will 
+involve contacting all the champions and asking them to fill in the details
+for their respective system, for each of the criteria that will be added.
+</p>
+
+<h3 id="tracked-releases">Which Releases of the Respective Systems are 
+Tracked in the Comparison?</h3>
+
+<p>
+Fill in.
+</p>
+
+<h2 id="general">General Questions</h2>
+
+<h3 id="inaccuracies">I've detected an inaccuracy in the site or the comparison. What should I do?</h3>
+
+<p>
+It is our aim to be as accurate and not to mislead as possible. However,
+we could have got our facts wrong or that a fact has changed over time as
+a system has made progress. If you find an inaccuracy in the site (or
+any other dis-information) contact the webmasters, using the address at the
+footer.
+</p>
+
+<h4 id="bad-site">This site has too many problems to be effective. It's a bad 
+site!</h4>
+
+<p>
+Please find a list of several factual problems in the site 
+(not necessarily all) and submit them to me, and I'll correct them. The 
+<a href="http://en.wikipedia.org/wiki/Burden_of_proof_(logical_fallacy)">burden
+of proof</a> in that case is on you.
+</p>
