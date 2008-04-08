@@ -6,13 +6,13 @@
 
 <p>
 We would love to feature the git version control system here, but
-so far <a href="http://better-scm.berlios.de/faq/#git-missing"><b>no one
+so far <a href="$(ROOT)/faq/#git-missing"><b>no one
 volunteered to add it</b> and maintain the information about it 
 into the future.</a>
 </p>
 
 <p>
-Read the link and <a href="http://better-scm.berlios.de/faq/#git-missing">this
+Read the link and <a href="$(ROOT)/faq/#system-missing-from-comparison">this
 one</a> for more information.
 </p>
 
