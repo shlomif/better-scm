@@ -60,6 +60,10 @@ TODO:
                 <name>Darcs</name>
                 <url>http://abridgegame.org/darcs/</url>
             </impl>
+            <impl id="git">
+                <name>Git</name>
+                <url>http://git.or.cz/</url>
+            </impl>
             <impl id="ls-sync">
                 <name>LibreSource Synchronizer</name>
                 <url>http://dev.libresource.org/</url>
@@ -160,6 +164,7 @@ TODO:
                 <s id="clearcase">Yes. Commits (checkins) are atomic.</s>
                 <s id="ls-sync">Yes. Commits and updates are atomic.</s>
                 <s id="SourceAnywhere">Yes. Commits are atomic.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="move">
@@ -228,6 +233,7 @@ TODO:
                     This operation will be committed directly.
                 </s>
                 <s id="SourceAnywhere">Yes. Both moves and renames are supported, while maintaining history.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="copy">
@@ -288,6 +294,7 @@ TODO:
                 </s>
                 <s id="ls-sync">No, copies will start their own history.</s>
                 <s id="SourceAnywhere">Copying doesn't retain history, moving does.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -350,6 +357,7 @@ TODO:
                   LibreSource Synchronizer.
                 </s>
                 <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="push">
@@ -401,6 +409,7 @@ TODO:
                 <s id="clearcase">Yes, using Clearcase Multisite.</s>
                 <s id="ls-sync">Yes, it's what we call a dataflow.</s>
                 <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="permissions">
@@ -501,6 +510,7 @@ TODO:
                 </s>
                 <s id="ls-sync">Permissions are set for the whole repository or branch.</s>
                 <s id="SourceAnywhere">Yes. SourceAnywhere Server Manager can define access to a repository per user or group and user access rights to a project.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="changesets">
@@ -588,6 +598,7 @@ TODO:
                   each commit.
                 </s>
                 <s id="SourceAnywhere">Not exactly. SourceAnywhere uses a related concept of configurations instead, which some has similar properties.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="annotate">
@@ -635,6 +646,7 @@ TODO:
                     Java client.
                 </s>
                 <s id="SourceAnywhere">Yes. (SAW annotate)</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
     </section>
@@ -719,6 +731,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Yes. SourceAnywhere can define the user access right to each project
                  and users can be restricted to work only on the projects they have check out/in right.</s>
+             <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -774,6 +787,7 @@ TODO:
                   standard diff command (diff -r . .so6/xxx/REFCOPY/)
                 </s>
                 <s id="SourceAnywhere">Yes. Using saw diff.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="per_file_commit_messages">
@@ -842,6 +856,7 @@ TODO:
                 </s>
                 <s id="ls-sync">No. Commit messages are per changeset.</s>
                 <s id="SourceAnywhere">No. There is no such feature.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
     </section>
@@ -982,6 +997,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Good. There's an overview and tutorial on the web site,
                  and integrated help for every command.</s>
+             <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="ease_of_deployment">
@@ -1126,6 +1142,7 @@ TODO:
                  It is totally written in C++ from scratch,
                   which means that you don't need any additional components
                    and frameworks to support the installation.</s>
+               <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="command_set">
@@ -1238,6 +1255,7 @@ TODO:
                   use the GUI. Ant task are also available.
                 </s>
                 <s id="SourceAnywhere">Very extensive but not compatible with CVS.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
         <section id="networking">
@@ -1357,6 +1375,7 @@ TODO:
                   Good. Use of HTTP to get through firwalls. 
                 </s>
                 <s id="SourceAnywhere">Good. (single TCP/IP socket)</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="portability">
@@ -1476,6 +1495,7 @@ TODO:
                 <s id="SourceAnywhere">Good. The server runs on Windows only.
                  Clients can work on any platform that SWT (Standard Widget Toolkit) supports,
                   including Windows, Linux, Mac, Solaris, AIX, HP-UX, SCO Unix, FreeBSD and so on.</s>
+              <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
     </section>
@@ -1564,6 +1584,7 @@ TODO:
                   (allow to know at any time on each version each one is working on) 
                 </s>
                 <s id="SourceAnywhere">Currently not.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
             </compare>
         </section>
         <section id="availability_of_guis">
@@ -1686,6 +1707,7 @@ TODO:
                   another one which is an Eclipse plugin.
                 </s>
                 <s id="SourceAnywhere">The system is GUI-based by design.</s>
+                <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
            </compare>
         </section>
     </section>
@@ -1775,6 +1797,7 @@ TODO:
             </s>
             <s id="ls-sync">QPL - The Qt Public License (OpenSource)</s>
             <s id="SourceAnywhere">Proprietary, named-user licensing.</s>
+            <s id="git">Unknown. Due to <a href="http://better-scm.berlios.de/faq/#git-missing">a lack of a maintainer</a> for this system.</s>
         </compare>
     </section>
 </section>
