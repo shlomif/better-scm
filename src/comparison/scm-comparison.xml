@@ -950,8 +950,9 @@ TODO:
                     an integrated help system.
                 </s>
                 <s id="mercurial">
-                    Very good. There's an overview and tutorial on the
-                    web site, and integrated help for every command.
+                    Very good.  There is a 
+                    <a href="http://hgbook.red-bean.com/">companion 
+                        book</a> and a wiki. Every command has integrated help.
                 </s>
                 <s id="monotone">
                     Good. There's an overview and tutorial written in Texi,
