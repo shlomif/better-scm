@@ -6,6 +6,8 @@ TODO:
 
 * Add intelligent merging of renamed paths.
 * Add IDE integration.
+* Integration with build/testing management.
+* Check-In policies.
 * Add Speed (?)
 -->
 <comparison>
@@ -105,6 +107,11 @@ TODO:
                 <name>svk</name>
                 <url>http://svk.elixus.org/</url>
             </impl>
+            <impl id="tfs">
+                <name>Team Foundation Server</name>
+                <url>http://msdn2.microsoft.com/tfs2008/default.aspx</url>
+                <vendor>Microsoft Corp.</vendor>
+            </impl>
             <impl id="vesta">
                 <name>Vesta</name>
                 <url>http://www.vestasys.org/</url>
@@ -165,6 +172,7 @@ TODO:
                 <s id="ls-sync">Yes. Commits and updates are atomic.</s>
                 <s id="SourceAnywhere">Yes. Commits are atomic.</s>
                 <s id="git">Yes. Commits are atomic.</s>
+                <s id="tfs">Yes. Commits are atomic.</s>
             </compare>
         </section>
         <section id="move">
@@ -238,6 +246,10 @@ TODO:
                 changed afterward the rename.  However, due to a peculiar
                 repository structure, renames are not recorded
                 explicitly, and Git has to deduce them (which works well in practice).</s>
+                <s id="tfs">
+                  Yes. Both moves and renames are supported,
+                  while maintaining history.
+                </s>
            </compare>
         </section>
         <section id="copy">
@@ -299,6 +311,13 @@ TODO:
                 <s id="ls-sync">No, copies will start their own history.</s>
                 <s id="SourceAnywhere">Copying doesn't retain history, moving does.</s>
                 <s id="git">No.  Copies are not supported.</s>
+                <s id="tfs">
+                  Yes - you can create a branch. But the GUI has no option to
+                  view the old history. The <a 
+                  href="http://msdn.microsoft.com/en-us/tfs2008/bb980963.aspx">
+                  Power-Tool tfpt</a> has the option /followbranches to show
+                  the history of the file branch's ancestors
+                </s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -362,6 +381,10 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
                 <s id="git">Yes.  This is very intrinsic feature of Git.</s>
+                <s id="tfs">
+                  TFS Proxy is available but the replica isn't an
+                  equivalent copy.
+                </s>
             </compare>
         </section>
         <section id="push">
@@ -414,6 +437,7 @@ TODO:
                 <s id="ls-sync">Yes, it's what we call a dataflow.</s>
                 <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
                 <s id="git">Yes.  (The Linux kernel development process uses this extremely often).</s>
+                <s id="tfs">No.</s>
             </compare>
         </section>
         <section id="permissions">
@@ -515,6 +539,10 @@ TODO:
                 <s id="ls-sync">Permissions are set for the whole repository or branch.</s>
                 <s id="SourceAnywhere">Yes. SourceAnywhere Server Manager can define access to a repository per user or group and user access rights to a project.</s>
                 <s id="git">No, but a single server can serve many repositories.  Also, UNIX permissions can be used to some extent.</s>
+                <s id="tfs">
+                  Yes. You get set permissions for each team project, folder,
+                  file.
+                </s>
             </compare>
         </section>
         <section id="changesets">
@@ -603,6 +631,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Not exactly. SourceAnywhere uses a related concept of configurations instead, which some has similar properties.</s>
                 <s id="git">Yes, Changesets are supported, and there's some flexibility in creating them.</s>
+                <s id="tfs">Yes. Changesets are only possibility.</s>
            </compare>
         </section>
         <section id="annotate">
@@ -651,6 +680,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Yes. (SAW annotate)</s>
                 <s id="git">Yes. (git blame).</s>
+                <s id="tfs">Yes. (tf annotate).</s>
            </compare>
         </section>
     </section>
@@ -736,6 +766,7 @@ TODO:
                 <s id="SourceAnywhere">Yes. SourceAnywhere can define the user access right to each project
                  and users can be restricted to work only on the projects they have check out/in right.</s>
              <s id="git">No.  However, commits could be restricted somewhat, see the "Repository Permissions".</s>
+                <s id="tfs">Yes.</s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -794,6 +825,9 @@ TODO:
                 <s id="git">Yes.
                 Also, branches are very lightweight in Git, and
                 could be considered a kind of storage for "uncommitted" code in some workflows.
+                </s>
+                <s id="tfs">
+                  Yes. Using tf diff or "Pending Changes" in Visual Studio.
                 </s>
             </compare>
         </section>
@@ -863,7 +897,8 @@ TODO:
                 </s>
                 <s id="ls-sync">No. Commit messages are per changeset.</s>
                 <s id="SourceAnywhere">No. There is no such feature.</s>
-                <s id="git">No.  Commit messages are per-changeset.</s>
+                <s id="git">No. Commit messages are per changeset.</s>
+                <s id="tfs">No. Commit messages are per changeset.</s>
            </compare>
         </section>
     </section>
@@ -1009,6 +1044,10 @@ TODO:
                  Medium. The short help is too terse and obscure. The man pages are extensive,
                  but tend to be confusing. The are many tutorials.
              </s>
+                <s id="tfs">
+                  Good. A comprehensive documentation in the MSDN Library.
+                  Many Step-by-Step tutorial videos online.
+                </s>
             </compare>
         </section>
         <section id="ease_of_deployment">
@@ -1159,6 +1198,12 @@ TODO:
                    required. Requires cygwin on Windows, and has some
                    UNIXisms.
                </s>
+                <s id="tfs">
+                  Installation is quite complex. Needs IIS, MS-SQL Server and
+                  Reporting Services. A own installation guide with
+                  step-by-step guide is available.
+                  Allows separating in data and app tier.
+                </s>
            </compare>
         </section>
         <section id="command_set">
@@ -1272,6 +1317,10 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Very extensive but not compatible with CVS.</s>
                 <s id="git">Command set is very feature-rich, and not compatible with CVS.</s>
+                <s id="tfs">
+                  The command set allows more operations than the GUI
+                  but isn't compatible with CVS.
+                </s>
            </compare>
         </section>
         <section id="networking">
@@ -1393,6 +1442,7 @@ TODO:
                 <s id="SourceAnywhere">Good. (single TCP/IP socket)</s>
                 <s id="git">Excellent.  Can use native Git protocol,
                 but works over rsync, ssh, HTTP and HTTPS also.</s>
+                <s id="tfs">Good. Use of HTTP(S).</s>
             </compare>
         </section>
         <section id="portability">
@@ -1516,6 +1566,12 @@ TODO:
                   The client works on most UNIXes, but not on native MS-Windows. The cygwin build
                   seems to be workable, though.
               </s>
+              <s id="tfs">
+                The Server and Client needs Windows. A thirdparty company,
+                Teamprise, has developed a client for Eclipse, which means 
+                Linux, Mac and other UNIXes support. The Project SvnBridge 
+                allows access using SVN clients but needs to run on Windows.
+              </s>
             </compare>
         </section>
     </section>
@@ -1607,6 +1663,7 @@ TODO:
                 <s id="git">
                     Yes.  Gitweb is included in distribution.
                 </s>
+                <s id="tfs">Web Access is available as download for free.</s>
             </compare>
         </section>
         <section id="availability_of_guis">
@@ -1732,6 +1789,7 @@ TODO:
                 <s id="git">
                     Gitk is included in distribution.  Qgit and Git-gui tools are also available.
                 </s>
+                <s id="tfs">TFS client integrates into Visual Studio.</s>
            </compare>
         </section>
     </section>
@@ -1822,6 +1880,7 @@ TODO:
             <s id="ls-sync">QPL - The Qt Public License (OpenSource)</s>
             <s id="SourceAnywhere">Proprietary, named-user licensing.</s>
             <s id="git">GNU GPL v2 (open source).</s>
+            <s id="tfs">Commercial license.</s>
         </compare>
     </section>
 </section>
