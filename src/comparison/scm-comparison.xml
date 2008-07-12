@@ -180,7 +180,8 @@ TODO:
             <expl>
                 Does the system support moving a file or directory to
                 a different location while still retaining the history
-                of the file?
+                of the file? <b>Note:</b> also see the next section
+                about intelligent merging of renamed paths.
             </expl>
             <compare>
                 <s id="cvs">
@@ -205,8 +206,7 @@ TODO:
                 <s id="opencm">Yes. Renames are supported</s>
                 <s id="perforce">
                     Not directly (you copy and then delete but it manages to 
-                    keep track of the branch; the item below allows for this 
-                    very feature)
+                    keep track of the branch)
                 </s>
                 <s id="purecm">
                     Yes. File renames are directly supported. File and folder 
@@ -241,14 +241,98 @@ TODO:
                     This operation will be committed directly.
                 </s>
                 <s id="SourceAnywhere">Yes. Both moves and renames are supported, while maintaining history.</s>
-                <s id="git">Renames are supported for most practical
-                purposes.  Git even detects renames when a file has been
-                changed afterward the rename.  However, due to a peculiar
-                repository structure, renames are not recorded
-                explicitly, and Git has to deduce them (which works well in practice).</s>
+                <s id="git">
+                    Renames are supported for most practical
+                    purposes.  Git even detects renames when a file has been
+                    changed afterward the rename.  However, due to a peculiar
+                    repository structure, renames are not recorded
+                    explicitly, and Git has to deduce them (which works well
+                    in practice).
+                </s>
                 <s id="tfs">
                   Yes. Both moves and renames are supported,
                   while maintaining history.
+                </s>
+           </compare>
+        </section>
+        <section id="intelligent_renames">
+            <title>Intelligent Merging after Moves or Renames</title>
+            <expl>
+                If the system keeps tracks of renames, does it support
+                intelligent merging of the files in the history after
+                the rename? (For example, changing a file in a renamed
+                directory, and trying to merge it).
+            </expl>
+            <compare>
+                <s id="cvs">
+                    Renames are not supported at all, much less intelligent
+                    ones.
+                </s>
+                <s id="accurev">
+                    Unknown. FILL IN.
+                </s>
+                <s id="subversion">
+                    "svn help me" says "Note: this subcommand is equivalent to 
+                    a 'copy' and 'delete'." There's <a 
+                        href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a 
+                        bug report about it</a>.
+                </s>
+                <s id="cmplus">Unknown. FILL IN.</s>
+                <s id="superversion">No. Renames are not supported.</s>
+                <s id="svk">Same as Subversion.</s>
+                <s id="arch">Yes. Renames can be merged intelligently.</s>
+                <s id="bazaar">Yes. Renames are intelligent.</s>
+                <s id="darcs">Unknown.</s>
+                <s id="bitkeeper">Probably Yes.</s>
+                <s id="aegis">Unknown. FILL IN.</s>
+                <s id="mercurial">
+                    No. <a 
+                        href="http://hgbook.red-bean.com/hgbookch5.html#x9-1030005.4">the
+                        Mercurial book says:</a>
+                    "When you use the 'hg rename' command, Mercurial makes a 
+                    copy of each source file, then deletes it and marks the
+                    file as removed. "
+                </s>
+                <s id="monotone">Unknown. FILL IN.</s>
+                <s id="opencm">Unknown.</s>
+                <s id="perforce">
+                    No, renames are not intelligent.
+                </s>
+                <s id="purecm">
+                    Unknown. FILL IN.
+                </s>
+                <s id="vesta">
+                    Unknown. FILL IN.
+                </s>
+                <s id="co-op">
+                    Unkown. FILL IN.
+                </s>
+                <s id="vss">
+                    No, renames are not intelligent.
+                </s>
+                <s id="cmsynergy">
+                    Unknown. FILL IN.
+                </s>
+                <s id="clearcase">
+                    Unknown. FILL IN.
+                </s>
+                <s id="ls-sync">
+                    Unknown. FILL IN.
+                </s>
+                <s id="SourceAnywhere">
+                    Unknown. FILL IN.
+                </s>
+                <s id="git">
+                    As detailed in the <a 
+                        href="http://git.or.cz/gitwiki/GitFaq#rename-tracking">Git
+                        FAQ</a>:
+                    "Git has a rename command git mv, but that is just a
+                    convenience. The effect is indistinguishable from removing
+                    the file and adding another with different name and the
+                    same content."
+                </s>
+                <s id="tfs">
+                    Unknown. FILL IN.
                 </s>
            </compare>
         </section>
