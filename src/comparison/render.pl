@@ -4,11 +4,17 @@ use strict;
 
 use XML::CompareML::HTML;
 
-system("xsltproc", 
-    "--output", "comparison.html",
-    "compare-ml.xsl",
-    "scm-comparison.xml",
-);
+open O, ">comparison.html.source";
+
+my $converter = 
+    XML::CompareML::HTML->new(
+        'input_filename' => "./scm-comparison.xml",
+        'output_handle' => \*O,
+    );
+
+$converter->process();
+
+close(O);
 
 1;
 
