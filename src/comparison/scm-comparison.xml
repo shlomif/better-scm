@@ -265,25 +265,26 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">
-                    Renames are not supported at all, much less intelligent
-                    ones.
+                    No. Renames are not supported at all, much less
+                    intelligent ones.
                 </s>
                 <s id="accurev">
                     Unknown. FILL IN.
                 </s>
                 <s id="subversion">
-                    "svn help me" says "Note: this subcommand is equivalent to 
+                    No. "svn help me" says "Note: this subcommand is 
+                    equivalent to 
                     a 'copy' and 'delete'." There's <a 
                         href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a 
                         bug report about it</a>.
                 </s>
                 <s id="cmplus">Unknown. FILL IN.</s>
                 <s id="superversion">No. Renames are not supported.</s>
-                <s id="svk">Same as Subversion.</s>
+                <s id="svk">No. Same as Subversion.</s>
                 <s id="arch">Yes. Renames can be merged intelligently.</s>
                 <s id="bazaar">Yes. Renames are intelligent.</s>
                 <s id="darcs">Unknown.</s>
-                <s id="bitkeeper">Probably Yes.</s>
+                <s id="bitkeeper">Unknown. Probably Yes.</s>
                 <s id="aegis">Unknown. FILL IN.</s>
                 <s id="mercurial">
                     No. <a 
@@ -299,7 +300,7 @@ TODO:
                     No, renames are not intelligent.
                 </s>
                 <s id="purecm">
-                    Unknown. FILL IN.
+                    Yes, intelligent renames are supported.
                 </s>
                 <s id="vesta">
                     Unknown. FILL IN.
