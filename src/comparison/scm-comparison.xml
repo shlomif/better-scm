@@ -318,7 +318,9 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="ls-sync">
-                    Unknown. FILL IN.
+                    Yes. Renames are intelligent. However, the rename should
+                    be made by the system, in order to be detected in the right
+                    manner.
                 </s>
                 <s id="SourceAnywhere">
                     Unknown. FILL IN.
