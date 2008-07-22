@@ -278,7 +278,7 @@ TODO:
                         href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a 
                         bug report about it</a>.
                 </s>
-                <s id="cmplus">Unknown. FILL IN.</s>
+                <s id="cmplus">Yes. Renames are Intelligent.</s>
                 <s id="superversion">No. Renames are not supported.</s>
                 <s id="svk">No. Same as Subversion.</s>
                 <s id="arch">Yes. Renames can be merged intelligently.</s>
@@ -297,7 +297,11 @@ TODO:
                 <s id="monotone">Unknown. FILL IN.</s>
                 <s id="opencm">Unknown.</s>
                 <s id="perforce">
-                    No, renames are not intelligent.
+                    Partial. While perforce doesn't explicitly support 
+                    renames (one hsa to do a copy+delete), it does keep track 
+                    of the full revision and integration history across
+                    copying, so changing a file in the copied directory
+                    and trying to merge it does the right thing.
                 </s>
                 <s id="purecm">
                     Yes, intelligent renames are supported.
