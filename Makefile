@@ -43,6 +43,8 @@ src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 src/comparison/index.html.wml: src/comparison/scm-comparison.xml
 	touch $@
 
+upload: upload_stable
+
 upload_beta: all
 	cd $(D) && \
 	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
