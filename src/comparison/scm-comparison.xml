@@ -330,7 +330,7 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="git">
-                    As detailed in the <a 
+                    No. As detailed in the <a
                         href="http://git.or.cz/gitwiki/GitFaq#rename-tracking">Git
                         FAQ</a>:
                     "Git has a rename command git mv, but that is just a
