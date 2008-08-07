@@ -47,17 +47,17 @@ upload: upload_stable
 
 upload_beta: all
 	cd $(D) && \
-	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
+	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
 	
 upload_stable: all
 	cd $(D) && \
-	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/
+	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/
 
 upload_bk: all
 	cd $(D) && \
-	$(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Bk-essay-f567j/
+	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Bk-essay-f567j/
 
 upload_bk2: all
 	cd $(D) && \
-	$(RSYNC) -r * shlomif@iglu.org.il:Home-Site/__Bk-essay-f567j/
+	$(RSYNC) -a * shlomif@iglu.org.il:Home-Site/__Bk-essay-f567j/
 

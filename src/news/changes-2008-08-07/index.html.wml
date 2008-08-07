@@ -1,0 +1,59 @@
+#include '../template.wml'
+
+<latemp_subject "New Systems Added to the Comparison and a New Criterion" />
+<latemp_version_control_id "$Id$" />
+
+<p>
+The following version control systems have been added to
+<a href="$(ROOT)/comparison/">the comparison</a>:
+</p>
+
+<ol>
+
+<li>
+<a href="http://git.or.cz/">Git</a>
+</li>
+
+<li>
+<a href="http://www.neuma.com/">CM+</a>
+</li>
+
+<li>
+<a href="http://dev.libresource.org/">LibreSource Synchronizer</a>
+</li>
+
+<li>
+<a href="http://www.dynamsoft.com/Products/SAWStandalone_Overview.aspx">DynamSoft's
+SourceAnywhere</a>
+</li>
+
+<li>
+<a href="http://msdn2.microsoft.com/tfs2008/default.aspx">Microsoft's Team 
+Foundation Server</a>
+</li>
+
+<li>
+<a href="http://www.intasoft.net/">AllChange</a>
+</li>
+
+</ol>
+
+<p>
+Furthermore, after a long time of no activity, the comparison has a new 
+criterion:
+<a href="http://better-scm.berlios.de/comparison/comparison.html#intelligent_renames">"Intelligent 
+Merging after Moves or Renames"</a>
+</p>
+
+<p>
+<a href="$(ROOT)/faq/">A list of Frequently Asked Questions (FAQ)</a>
+was added to the site to answer some common questions.
+</p>
+
+<p>
+Enjoy!
+</p>
+
+<p>
+<b>Date:</b> 2008-August-07
+</p>
