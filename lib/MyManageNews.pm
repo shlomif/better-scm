@@ -65,6 +65,14 @@ my @news_items =
             },
             date => "2007-12-28",
         },
+        {
+            'title' => "Comparison: 6 New Systems + New Criterion",
+            'id' => "changes-2008-08-07",
+            'description' => q{6 New systems have been added
+            to the comparison as well as a new criterion.
+            },
+            date => "2008-08-07",
+        },
         )
     )
 );
