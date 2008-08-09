@@ -107,6 +107,10 @@ TODO:
                 <name>Superversion</name>
                 <url>http://www.superversion.org/</url>
             </impl>
+            <impl id="surround">
+                <name>Surround SCM</name>
+                <url>http://www.seapine.com/surroundscm.html/</url>
+            </impl>
             <impl id="svk">
                 <name>svk</name>
                 <url>http://svk.elixus.org/</url>
@@ -160,6 +164,7 @@ TODO:
                 <s id="darcs">Yes. Commits are atomic.</s>
                 <s id="subversion">Commits are atomic.</s>
                 <s id="superversion">Commits are atomic.</s>
+                <s id="surround">Commits are atomic.</s>
                 <s id="svk">Commits are atomic.</s>
                 <s id="aegis">Commits are atomic.</s>
                 <s id="bitkeeper">Yes (but need to verify)</s>
@@ -201,6 +206,7 @@ TODO:
                 <s id="subversion">Yes. Renames are supported.</s>
                 <s id="cmplus">Yes. Both moves and renames are supported, while maintaining history.</s>
                 <s id="superversion">No. Renames are not supported.</s>
+                <s id="surround">Renames are supported, moves can be accomplished similiar to SourceSafe.</s>
                 <s id="svk">Yes. Renames are supported.</s>
                 <s id="arch">Yes. Renames are supported.</s>
                 <s id="bazaar">Yes. Renames are supported for files and directories.</s>
@@ -291,6 +297,7 @@ TODO:
                 </s>
                 <s id="cmplus">Yes. Renames are Intelligent.</s>
                 <s id="superversion">No. Renames are not supported.</s>
+                <s id="surround">Yes. Renames can be merged intelligently.</s>
                 <s id="svk">No. Same as Subversion.</s>
                 <s id="arch">Yes. Renames can be merged intelligently.</s>
                 <s id="bazaar">Yes. Renames are intelligent.</s>
@@ -378,6 +385,7 @@ TODO:
                     option of deploying only one of the shared files or all of them.
                 </s>
                 <s id="superversion">No. Copies are not supported.</s>
+                <s id="surround">No. Copies are not supported.</s>
                 <s id="svk">Yes. Same as subversion.</s>
                 <s id="arch">No. Copies of files and directory structures are
                     not supported. 
@@ -453,6 +461,7 @@ TODO:
                 <s id="accurev">Yes.</s>
                 <s id="allchange">No.</s>
                 <s id="superversion">Yes.</s>
+                <s id="surround">Yes, using the proxy server.</s>
                 <s id="svk">Yes.</s>
                 <s id="arch">Yes.</s>
                 <s id="bazaar">Yes.</s>
@@ -516,6 +525,7 @@ TODO:
                     between unrelated repositories containing some of the same source.
                 </s>
                 <s id="superversion">No.</s>
+                <s id="surround">Yes.</s>
                 <s id="svk">Yes.</s>
                 <s id="arch">Yes.</s>
                 <s id="bazaar">Yes.</s>
@@ -587,6 +597,9 @@ TODO:
                 <s id="subversion">
                     Yes. The WebDAV-based service supports defining HTTP
                     permissions for various directories of the repository.
+                </s>
+                <s id="surround">
+                    Yes. Permissions can be defined at all levels of the system.
                 </s>
                 <s id="cmplus">
                     Yes.  Permissions are defined by data, primarily,
@@ -666,6 +679,9 @@ TODO:
                 <s id="cvs">No. Changes are file-specific.</s>
                 <s id="subversion">Partial support. There are implicit 
                     changeset that are generated on each commit.
+                </s>
+                <s id="surround">Yes. Changesets (called changellists) as
+                    well as labels are fully supported.
                 </s>
                 <s id="cmplus">
                     Yes. Change packages are known as updates.  By
@@ -759,6 +775,7 @@ TODO:
                 <s id="accurev">Yes. Available from both the gui and cli.</s>
                 <s id="allchange">Yes</s>
                 <s id="subversion">Yes. (svn blame)</s>
+                <s id="surround">No.</s>
                 <s id="cmplus">Yes.  View revision tags. </s>
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. (svk blame)</s>
@@ -821,6 +838,7 @@ TODO:
                     checked out or in.
                 </s>
                 <s id="subversion">Yes.</s>
+                <s id="surround">Yes.</s>
                 <s id="cmplus">
                     Yes.  Any arbitrary set can be checked out
                     and worked on.  Similarly, arbitrary restrictions may be
@@ -913,6 +931,7 @@ TODO:
                     Yes, using "tla changes".
                 </s>
                 <s id="bazaar">Yes, using "bzr diff".</s>
+                <s id="surround">Yes, using the repository difference.</s>
                 <s id="darcs">
                     Yes, using "darcs whatsnew".
                 </s>
@@ -970,6 +989,7 @@ TODO:
                     in with a single operation.
                 </s>
                 <s id="superversion">Yes.</s>
+                <s id="surround">Yes.</s>
                 <s id="svk">No. There is no such feature.</s>
                 <s id="bitkeeper">Yes. It is possible to have a per-file
                     commit message</s>
@@ -1046,7 +1066,11 @@ TODO:
                     Excellent. There is a full set of documentation available as 
                     both help and PDF.
                 </s>
-                <s id="subversion">
+                 <s id="surround">
+                    Excellent. There is a full set of documentation available as
+                    both help and PDF.
+                </s>
+               <s id="subversion">
                     Very good. There is a free online book and some online
                     tutorials and resources. The book is written in 
                     DocBook/XML and so is convertible to many different 
@@ -1198,6 +1222,14 @@ TODO:
                     Good. Various out-of-the-box configurations supplied including
                     ITIL support. These may be tailored or used as is. Time to
                     deploy depends on how much configuring is done
+                </s>
+                <s id="surround">
+                    Excellent.  All that is required is to download the
+                    binaries for the appropriate platform and run the
+                    installer.  The installation package is self-contained.  No
+                    additional software is needed.  Surround SCM supports Windows, Mac OS X,
+                    Linux, and Solaris platforms and deploying Surround SCM to a
+                    multi-platform environment is straight-forward.
                 </s>
                 <s id="arch">
                     Excellent. An arch service is nothing but a 
@@ -1354,6 +1386,9 @@ TODO:
                 <s id="allchange">
                     Very extensive but not compatible with cvs.
                 </s>
+                <s id="surround">
+                    Very extensive but not compatible with cvs.
+                </s>
                 <s id="subversion">
                     A CVS-like command set which is easy to get used to
                     for CVS-users.
@@ -1489,6 +1524,9 @@ TODO:
                     server. Supports RSYNC and WebDAV (experimental)
                     through plugins.
                 </s>
+                <s id="surround">
+                    Good. (proprietary protocol using TCP/IP)
+                </s>
                 <s id="darcs">
                     Good. Darcs supports getting patches over HTTP, and
                     getting and sending patches over SSH and email.
@@ -1604,6 +1642,11 @@ TODO:
                 <s id="subversion">
                     Excellent. Clients and Servers work on UNIX, 
                     Windows and Mac OS X.
+                </s>
+                <s id="surround">
+                    Excellent. The server runs on Windows, Mac OS X, Linux
+                    and Solaris platforms. The client runs on all of these
+                    platforms.
                 </s>
                 <s id="cmplus">
                     Good.  Clients and Servers work on Unix,
@@ -1762,6 +1805,7 @@ TODO:
                     which are 
                     works in progress.
                 </s>
+                <s id="surround">Yes, using WebDAV.</s>
                 <s id="bazaar">
                     Yes, several:
                     <a href="http://www.lag.net/loggerhead/">Loggerhead</a>,
@@ -1834,6 +1878,9 @@ TODO:
                     GUIs: RapidSVN (cross-platform),
                     TortoiseSVN (Windows Explorer plug-in), Jsvn (Java), etc.
                     Most of them are still under development.
+                </s>
+                <s id="surround">
+                    A complete native GUI is available for all platforms.
                 </s>
                 <s id="cmplus">
                     Excellent.  Windows and Unix/Linux GUI as well
@@ -1956,6 +2003,7 @@ TODO:
                     problematic license</a>,
                 and was discontinued starting at April 2005.
             </s>
+            <s id="surround">Proprietary, named and floating licensing.</s>
             <s id="aegis">
                 GNU GPL (open source)
             </s>
