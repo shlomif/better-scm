@@ -221,9 +221,8 @@ TODO:
                     keep track of the branch)
                 </s>
                 <s id="purecm">
-                    Yes. File renames are directly supported. File and folder 
-                    moves require creating a new one and deleting the old one. 
-                    Moved file histories are preserved.
+                    Yes. File and folder renames and moves are directly 
+                    supported.
                 </s>
                 <s id="vesta">
                     Yes.  The unit of checkout/checkin is a directory
@@ -472,10 +471,7 @@ TODO:
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
-                <s id="purecm">
-                    No. (But a proxy feature is planned for 
-                    inclusion in the next releases.)
-                </s>
+                <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
                 <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
                 <s id="co-op">Repositories are always replicated on local machines. 
                     There is no central server.
@@ -633,8 +629,9 @@ TODO:
                     be set in a file by file basis)
                 </s>
                 <s id="purecm">
-                    Yes. (more than half a dozen of permission levels that can 
-                    be set in a file by file basis)
+                    Yes. Permissions can be set against repositories, streams
+                    (branches/labels), folders and files using Access Control 
+                    Lists.
                 </s>
                 <s id="vesta">
                     Yes.  Access permissions for each package (the
@@ -2038,7 +2035,7 @@ TODO:
             </s>
             <s id="purecm">
                 A proprietary, binary only, commercial license. 
-                <a href="http://www.purecm.com/purchase">Price 
+                <a href="http://www.purecm.com/purchase.php">Price 
                     starting at $1000 for 5 users</a>
             </s>
             <s id="vesta">
