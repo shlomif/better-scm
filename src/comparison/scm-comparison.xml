@@ -304,12 +304,15 @@ TODO:
                 <s id="bitkeeper">Unknown. Probably Yes.</s>
                 <s id="aegis">Unknown. FILL IN.</s>
                 <s id="mercurial">
-                    No. <a 
-                        href="http://hgbook.red-bean.com/hgbookch5.html#x9-1030005.4">the
+                    Yes, intelligent merging after renames is supported. <a 
+                        href="http://hgbook.red-bean.com/read/mercurial-in-daily-use.html#id496680">the
                         Mercurial book says:</a>
-                    "When you use the 'hg rename' command, Mercurial makes a 
-                    copy of each source file, then deletes it and marks the
-                    file as removed. "
+                    "If I modify a file, and you rename it to a new name, and
+                    then we merge our respective changes, my modifications to
+                    the file under its original name will be propagated into
+                    the file under its new name. (This is something you might
+                    expect to 'simply work,' but not all revision control
+                    systems actually do this.)"
                 </s>
                 <s id="monotone">Unknown. FILL IN.</s>
                 <s id="opencm">Unknown.</s>
