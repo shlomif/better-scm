@@ -327,7 +327,7 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="co-op">
-                    Unkown. FILL IN.
+                    Unknown. FILL IN.
                 </s>
                 <s id="vss">
                     No, renames are not intelligent.
@@ -336,7 +336,10 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="clearcase">
-                    Unknown. FILL IN.
+                    Yes, renames and moves are intelligent in ClearCase and 
+                    are handled well. Every unique file is given a UUID and 
+                    directory entries map names to UUIDs, so moving a file
+                    around preserves its UUID. Doesn't work across VOBs.
                 </s>
                 <s id="ls-sync">
                     Yes. Renames are intelligent. However, the rename should
