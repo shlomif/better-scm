@@ -10,6 +10,7 @@ use XML::CompareML::HTML;
 
 my $comparison;
 open O, ">", \$comparison;
+binmode O, ":utf8";
 
 my $converter = 
     XML::CompareML::HTML->new(
