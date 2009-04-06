@@ -77,7 +77,7 @@ TODO:
             <impl id="ls-sync">
                 <name>LibreSource Synchronizer</name>
                 <url>http://dev.libresource.org/</url>
-            </impl>            
+            </impl>
             <impl id="mercurial">
                 <name>Mercurial</name>
                 <url>http://www.selenic.com/mercurial/</url>
@@ -147,7 +147,7 @@ TODO:
     <title>Version Control System Comparison</title>
     <expl>
         This is a comparison of version-control systems. It is split
-        into several categories and sub-categories under which the 
+        into several categories and sub-categories under which the
         systems are checked.
     </expl>
     <section id="repos_operations">
@@ -228,11 +228,11 @@ TODO:
                 <s id="monotone">Yes. Renames are supported.</s>
                 <s id="opencm">Yes. Renames are supported</s>
                 <s id="perforce">
-                    Not directly (you copy and then delete but it manages to 
+                    Not directly (you copy and then delete but it manages to
                     keep track of the branch)
                 </s>
                 <s id="purecm">
-                    Yes. File and folder renames and moves are directly 
+                    Yes. File and folder renames and moves are directly
                     supported.
                 </s>
                 <s id="vesta">
@@ -240,15 +240,15 @@ TODO:
                     tree.  Files and directories can be added,
                     deleted, and renamed between versions.
                 </s>
-                <s id="co-op">Renames of files are supported. 
-                    Renaming a directory requires creating a new one, 
-                    moving the files and deleting the old one. 
+                <s id="co-op">Renames of files are supported.
+                    Renaming a directory requires creating a new one,
+                    moving the files and deleting the old one.
                     Moved file histories are preserved.
                 </s>
                 <s id="vss">
-                    Affects the whole history, it's like renaming a 
-                    file in the CVS repository. There is a kludgy workaround 
-                    using "share-rename,move,delete" that gets what you 
+                    Affects the whole history, it's like renaming a
+                    file in the CVS repository. There is a kludgy workaround
+                    using "share-rename,move,delete" that gets what you
                     want.
                 </s>
                 <s id="cmsynergy">Yes. Renames are supported.</s>
@@ -259,7 +259,7 @@ TODO:
                 </s>
                 <s id="ls-sync">
                     Yes. Renames and move are supported but the working copy
-                    needs to be up-to-date before doing a rename/move operation. 
+                    needs to be up-to-date before doing a rename/move operation.
                     This operation will be committed directly.
                 </s>
                 <s id="SourceAnywhere">Yes. Both moves and renames are supported, while maintaining history.</s>
@@ -276,11 +276,11 @@ TODO:
                   while maintaining history.
                 </s>
                 <s id="vault">
-                    Yes. Both moves and renames are supported, while maintaining 
+                    Yes. Both moves and renames are supported, while maintaining
                     history.
                 </s>
                 <s id="fortress">
-                    Yes. Both moves and renames are supported,                   
+                    Yes. Both moves and renames are supported,
                     while maintaining history.
                 </s>
            </compare>
@@ -307,10 +307,10 @@ TODO:
                     copied directory does the right thing.
                 </s>
                 <s id="subversion">
-                    No. "svn help me" says "Note: this subcommand is 
-                    equivalent to 
-                    a 'copy' and 'delete'." There's <a 
-                        href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a 
+                    No. "svn help me" says "Note: this subcommand is
+                    equivalent to
+                    a 'copy' and 'delete'." There's <a
+                        href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a
                         bug report about it</a>.
                 </s>
                 <s id="cmplus">Yes. Renames are Intelligent.</s>
@@ -323,7 +323,7 @@ TODO:
                 <s id="bitkeeper">Unknown. Probably Yes.</s>
                 <s id="aegis">Unknown. FILL IN.</s>
                 <s id="mercurial">
-                    Yes, intelligent merging after renames is supported. <a 
+                    Yes, intelligent merging after renames is supported. <a
                         href="http://hgbook.red-bean.com/read/mercurial-in-daily-use.html#id496680">the
                         Mercurial book says:</a>
                     "If I modify a file, and you rename it to a new name, and
@@ -336,8 +336,8 @@ TODO:
                 <s id="monotone">Unknown. FILL IN.</s>
                 <s id="opencm">Unknown.</s>
                 <s id="perforce">
-                    Partial. While perforce doesn't explicitly support 
-                    renames (one hsa to do a copy+delete), it does keep track 
+                    Partial. While perforce doesn't explicitly support
+                    renames (one hsa to do a copy+delete), it does keep track
                     of the full revision and integration history across
                     copying, so changing a file in the copied directory
                     and trying to merge it does the right thing.
@@ -358,8 +358,8 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="clearcase">
-                    Yes, renames and moves are intelligent in ClearCase and 
-                    are handled well. Every unique file is given a UUID and 
+                    Yes, renames and moves are intelligent in ClearCase and
+                    are handled well. Every unique file is given a UUID and
                     directory entries map names to UUIDs, so moving a file
                     around preserves its UUID. Doesn't work across VOBs.
                 </s>
@@ -398,12 +398,12 @@ TODO:
                 <s id="cvs">No. Copies are not supported.</s>
                 <s id="accurev">
                     Copying is supported through symbolic links
-                    (but all linked files are treated as the same file 
+                    (but all linked files are treated as the same file
                     version).  Moves are fully supported with the history
                     retained.
                 </s>
                 <s id="allchange">Yes. Copies are supported.</s>
-                <s id="subversion">Yes. And it's a very cheap operation (O(1)) that 
+                <s id="subversion">Yes. And it's a very cheap operation (O(1)) that
                     is also utilized for branching.
                 </s>
                 <s id="cmplus">Yes. An inexpensive operation that can be used for
@@ -414,11 +414,11 @@ TODO:
                 <s id="surround">No. Copies are not supported.</s>
                 <s id="svk">Yes. Same as subversion.</s>
                 <s id="arch">No. Copies of files and directory structures are
-                    not supported. 
+                    not supported.
                 </s>
                 <s id="bazaar">No. Copies are not supported.</s>
                 <s id="darcs">No. Copies of files and directory structures are
-                    not supported. 
+                    not supported.
                 </s>
                 <s id="bitkeeper">
                     Yes. Copies are supported.
@@ -450,17 +450,17 @@ TODO:
                 <s id="git">No.  Copies are not supported.</s>
                 <s id="tfs">
                   Yes - you can create a branch. But the GUI has no option to
-                  view the old history. The <a 
+                  view the old history. The <a
                   href="http://msdn.microsoft.com/en-us/tfs2008/bb980963.aspx">
                   Power-Tool tfpt</a> has the option /followbranches to show
                   the history of the file branch's ancestors
                 </s>
                 <s id="vault">
-                    No, copies are supported, but will start their own 
+                    No, copies are supported, but will start their own
                     history.
                 </s>
                 <s id="fortress">
-                    No, copies are supported, but will start their own 
+                    No, copies are supported, but will start their own
                     history.
                 </s>
            </compare>
@@ -469,22 +469,22 @@ TODO:
             <title>Remote Repository Replication</title>
             <expl>
                 Does the system support cloning a remote repository to get
-                a functionally equivalent copy in the local system? That 
-                should be done without any special access to the remote 
+                a functionally equivalent copy in the local system? That
+                should be done without any special access to the remote
                 server except for normal repository access.
             </expl>
             <compare>
                 <s id="cvs">
                     Indirectly, by using
-                    <a href="http://www.cvsup.org/">CVSup</a> 
-                    by John Polstra (which requires running the cvsupd 
+                    <a href="http://www.cvsup.org/">CVSup</a>
+                    by John Polstra (which requires running the cvsupd
                     daemon on the server)
                 </s>
                 <s id="subversion">
-                    Indirectly, by using Chia-liang Kao's 
+                    Indirectly, by using Chia-liang Kao's
                     <a href="http://search.cpan.org/dist/SVN-Mirror/">SVN::Mirror</a>
-                    add-on or Shlomi Fish' 
-                    <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a> 
+                    add-on or Shlomi Fish'
+                    <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a>
                     utility.
                 </s>
                 <s id="cmplus">Yes. CM+MultiSite can be configured to clone a repository
@@ -508,11 +508,11 @@ TODO:
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
                 <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
                 <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
-                <s id="co-op">Repositories are always replicated on local machines. 
+                <s id="co-op">Repositories are always replicated on local machines.
                     There is no central server.
                 </s>
                 <s id="vss">
-                    Not directly possible with the included GUI or 
+                    Not directly possible with the included GUI or
                     command line tools; ssarc and ssrestor might be useable
                 </s>
                 <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
@@ -536,15 +536,15 @@ TODO:
         <section id="push">
             <title>Propagating Changes to Parent Repositories</title>
             <expl>
-                Can the system propagate changes from one repository to 
+                Can the system propagate changes from one repository to
                 another?
             </expl>
             <compare>
                 <s id="cvs">No.</s>
                 <s id="accurev">
-                    With AccuReplica, the replica server has all the meta-data 
-                    and  fetches file data as needed by replica users; all 
-                    write operations pass automatically from the replica to 
+                    With AccuReplica, the replica server has all the meta-data
+                    and  fetches file data as needed by replica users; all
+                    write operations pass automatically from the replica to
                     the master server.
                 </s>
                 <s id="allchange">No.</s>
@@ -573,11 +573,11 @@ TODO:
                 <s id="vesta">
                     Yes.
                 </s>
-                <s id="co-op">It's a peer-to-peer system, 
+                <s id="co-op">It's a peer-to-peer system,
                     which keeps all replicas of the repository in sync.
                 </s>
                 <s id="vss">
-                    Not directly possible with the included GUI or 
+                    Not directly possible with the included GUI or
                     command line tools; ssarc and ssrestor might be useable
                 </s>
                 <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
@@ -594,15 +594,15 @@ TODO:
             <title>Repository Permissions</title>
             <expl>
                 Is it possible to define permissions on access to different
-                parts of a remote repository? Or is access open for all? 
+                parts of a remote repository? Or is access open for all?
             </expl>
             <compare>
                 <s id="cvs">
-                    Limited. "pre-commit hook scripts" can be used to 
+                    Limited. "pre-commit hook scripts" can be used to
                     implement various permissions systems.
                 </s>
                 <s id="accurev">
-                    Yes. Access can be defined per stream (branch) using 
+                    Yes. Access can be defined per stream (branch) using
                     access control lists.
                 </s>
                 <s id="allchange">
@@ -611,7 +611,7 @@ TODO:
                 </s>
                 <s id="arch">
                     Yes. It is possible to define permissions on access to
-                    different parts of a remote repository based on the 
+                    different parts of a remote repository based on the
                     permission systems of the underlying protocol.
                 </s>
                 <s id="bazaar">
@@ -664,12 +664,12 @@ TODO:
                     basis.
                 </s>
                 <s id="perforce">
-                    Yes. (more than half a dozen of permission levels that can 
+                    Yes. (more than half a dozen of permission levels that can
                     be set in a file by file basis)
                 </s>
                 <s id="purecm">
                     Yes. Permissions can be set against repositories, streams
-                    (branches/labels), folders and files using Access Control 
+                    (branches/labels), folders and files using Access Control
                     Lists.
                 </s>
                 <s id="vesta">
@@ -678,14 +678,14 @@ TODO:
                     Access permissions for a branch can be different
                     from the basis package.
                 </s>
-                <s id="co-op">First access (joining the project) 
+                <s id="co-op">First access (joining the project)
                     requires administrator's approval.
                     Subsequent access to that project is not controlled.
                 </s>
                 <s id="vss">
                     Project specific permissions (read, write, delete, destroy)
                     can be set per user; but see "Networking Support":
-                    this makes "Repository Permissions" a hindrance to 
+                    this makes "Repository Permissions" a hindrance to
                     accidental damage but cannot prevent intentional damage.
                 </s>
                 <s id="cmsynergy">No, though a single server can serve many repositories.</s>
@@ -702,11 +702,11 @@ TODO:
                   file.
                 </s>
                 <s id="vault">
-                    Yes. Revisions can be set, and overridden, and the 
+                    Yes. Revisions can be set, and overridden, and the
                     repository, project and folder level.
                 </s>
                 <s id="fortress">
-                    Yes. Revisions can be set, and overridden, and the 
+                    Yes. Revisions can be set, and overridden, and the
                     repository, project and folder level.
                 </s>
             </compare>
@@ -716,12 +716,12 @@ TODO:
             <expl>
                 Does the repository support changesets? Changesets are a way
                 to group a number of modifications that are relevant to each
-                other in one atomic package, that can be cancelled or 
+                other in one atomic package, that can be cancelled or
                 propagated as needed.
             </expl>
             <compare>
                 <s id="cvs">No. Changes are file-specific.</s>
-                <s id="subversion">Partial support. There are implicit 
+                <s id="subversion">Partial support. There are implicit
                     changeset that are generated on each commit.
                 </s>
                 <s id="surround">Yes. Changesets (called changellists) as
@@ -738,9 +738,9 @@ TODO:
                     add, remove.
                 </s>
                 <s id="accurev">
-                    Yes, AccuRev provides robust functionality for change 
-                    sets (called change packages in AccuRev) including viewing 
-                    differences by change packages and merging changes from 
+                    Yes, AccuRev provides robust functionality for change
+                    sets (called change packages in AccuRev) including viewing
+                    differences by change packages and merging changes from
                     stream to stream by change package.
                 </s>
                 <s id="allchange">
@@ -841,10 +841,10 @@ TODO:
                     did this, as the Vesta repository provides direct
                     filesystem access to all versions.
                 </s>
-                <s id="co-op">Not directly, but it's possible to compare 
+                <s id="co-op">Not directly, but it's possible to compare
                     any two versions using a visual differ.
                 </s>
-                <s id="vss">Not directly, but it's possible to compare 
+                <s id="vss">Not directly, but it's possible to compare
                     any two versions using a visual differ.
                 </s>
                 <s id="cmsynergy">Probably, if you're a sufficiently proficient hacker with
@@ -863,7 +863,7 @@ TODO:
                     sections of a file) are supported.
                 </s>
                 <s id="fortress">
-                    Yes. Both standard Blame and Line History (Blame on selected 
+                    Yes. Both standard Blame and Line History (Blame on selected
                     sections of a file) are supported.
                 </s>
            </compare>
@@ -875,7 +875,7 @@ TODO:
             <title>Ability to Work only on One Directory of the Repository</title>
             <expl>
                 Can the version control system checkout only one directory of
-                the repository? Or restrict the check-ins to only one 
+                the repository? Or restrict the check-ins to only one
                 directory?
             </expl>
             <compare>
@@ -902,13 +902,13 @@ TODO:
                 <s id="svk">Yes.</s>
                 <s id="bitkeeper">No. All changes are made repository-wide.</s>
                 <s id="arch">
-                    It is possible to commit only a certain directory. 
+                    It is possible to commit only a certain directory.
                     However, one must check out the entire repository as a
                     whole.
                 </s>
                 <s id="bazaar">For checkouts: No. For checkins: Yes.</s>
                 <s id="darcs">
-                    It is possible to commit only a certain directory. 
+                    It is possible to commit only a certain directory.
                     However, one must check out the entire repository as a
                     whole.
                 </s>
@@ -926,7 +926,7 @@ TODO:
                     a unit
                 </s>
                 <s id="perforce">
-                    Yes. Changes to a sub-directory of the repository 
+                    Yes. Changes to a sub-directory of the repository
                     are supported.
                 </s>
                 <s id="purecm">
@@ -945,7 +945,7 @@ TODO:
                 <s id="vss">Yes.</s>
                 <s id="cmsynergy">
                     Yes and no.  Files and directories are checked out and in
-                    individually, however you have to work in the context of a 
+                    individually, however you have to work in the context of a
                     project, which consists of one or more directories.
                 </s>
                 <s id="clearcase">Yes, using snapshot view load rules.</s>
@@ -1111,19 +1111,19 @@ TODO:
                 get started using it?
             </expl>
             <compare>
-                <s id="cvs">Excellent. There are many online tutorials and 
+                <s id="cvs">Excellent. There are many online tutorials and
                     resources and an online book. The command line client
                     also provides an online comprehensive help system.
                 </s>
                 <s id="accurev">
-                    Excellent.  There is a full set of documentation available 
-                    in pdf format available at 
-                    <a href="http://www.accurev.com/documentation.html">AccuRev 
-                        Documentation</a> as well as context-sensitive help 
+                    Excellent.  There is a full set of documentation available
+                    in pdf format available at
+                    <a href="http://www.accurev.com/documentation.html">AccuRev
+                        Documentation</a> as well as context-sensitive help
                     in the GUI.
                 </s>
                 <s id="allchange">
-                    Excellent. There is a full set of documentation available as 
+                    Excellent. There is a full set of documentation available as
                     both help and PDF.
                 </s>
                  <s id="surround">
@@ -1132,9 +1132,9 @@ TODO:
                 </s>
                <s id="subversion">
                     Very good. There is a free online book and some online
-                    tutorials and resources. The book is written in 
-                    DocBook/XML and so is convertible to many different 
-                    formats. The command-line client also provides a good 
+                    tutorials and resources. The book is written in
+                    DocBook/XML and so is convertible to many different
+                    formats. The command-line client also provides a good
                     online help system that can be used as a reference.
                 </s>
                 <s id="cmplus">
@@ -1154,24 +1154,24 @@ TODO:
                     is very easy though.
                 </s>
                 <s id="svk">
-                    Relatively poor, but improving. There's 
-                    <a href="http://svkbook.elixus.org/">a work-in-progress 
-                        book</a> as well as 
+                    Relatively poor, but improving. There's
+                    <a href="http://svkbook.elixus.org/">a work-in-progress
+                        book</a> as well as
                     <a href="http://svk.elixus.org/">the Wiki</a> and some
                     external Articles and Tutorials.
                 </s>
                 <s id="aegis">
                     Medium. The documentation is given in several large scope
                     troff documents, that are only usable as not-so-PDFish
-                    PDF documents, and as text documents that lack any 
+                    PDF documents, and as text documents that lack any
                     formatting. It is very hard to get started using
                     it with the online resources. The content is of good
                     quality, but otherwise not made very accessible.
                 </s>
                 <s id="arch">
-                    Medium. There are two online tutorials and a 
+                    Medium. There are two online tutorials and a
                     comprehensive online documentation. The command line
-                    client also supplies a reference page. However, some of 
+                    client also supplies a reference page. However, some of
                     the documentation is out of date or incomplete.
                 </s>
                 <s id="bazaar">
@@ -1195,13 +1195,13 @@ TODO:
                 </s>
                 <s id="bitkeeper">
                     Very good. There is a comprehensive help at the BitKeeper
-                    site. Each command is documented in its own man page, 
+                    site. Each command is documented in its own man page,
                     and the client contains a help tool that offers
                     an integrated help system.
                 </s>
                 <s id="mercurial">
-                    Very good.  There is a 
-                    <a href="http://hgbook.red-bean.com/">companion 
+                    Very good.  There is a
+                    <a href="http://hgbook.red-bean.com/">companion
                         book</a> and a wiki. Every command has integrated help.
                 </s>
                 <s id="monotone">
@@ -1257,11 +1257,11 @@ TODO:
                   Many Step-by-Step tutorial videos online.
                 </s>
                 <s id="vault">
-                    Good. All features are documented, plus a getting-started 
+                    Good. All features are documented, plus a getting-started
                     guide.
                 </s>
                 <s id="fortress">
-                    Good. All features are documented, plus a getting-started 
+                    Good. All features are documented, plus a getting-started
                     guide.
                 </s>
             </compare>
@@ -1274,7 +1274,7 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">
-                    Good. Out of being the de-facto standard, 
+                    Good. Out of being the de-facto standard,
                     CVS is available on most systems and is easy
                     to deploy.
                 </s>
@@ -1300,7 +1300,7 @@ TODO:
                     multi-platform environment is straight-forward.
                 </s>
                 <s id="arch">
-                    Excellent. An arch service is nothing but a 
+                    Excellent. An arch service is nothing but a
                     filesystem-space hosted by any of its supported
                     protocols (FTP, SFTP, WebDAV, etc.). The arch client
                     is written in C, and is portable across UNIX systems
@@ -1390,13 +1390,13 @@ TODO:
                     "make".
                 </s>
                 <s id="co-op">Very easy to deploy, since there is no central
-                    server. Can be configured to use e-mail or LAN (or both) for 
-                    synchronization. For e-mail, requires MAPI-compliant 
+                    server. Can be configured to use e-mail or LAN (or both) for
+                    synchronization. For e-mail, requires MAPI-compliant
                     e-mail client.
                 </s>
                 <s id="vss">
                     Very good - an installation package which does the work.
-                    When you create a repository it installs the exe's in a 
+                    When you create a repository it installs the exe's in a
                     directory and you can run them from there if you need to.
                 </s>
                 <s id="cmsynergy">
@@ -1414,7 +1414,7 @@ TODO:
                 </s>
                 <s id="ls-sync">
                   Excellent. It is managed by JavaWebStart with links on any
-                  LibreSource repository web page. 
+                  LibreSource repository web page.
                   (links: create workspace, update, commit, studio...)
                 </s>
                 <s id="SourceAnywhere">Excellent. Dynamsoft SourceAnywhere is extremely easy to install.
@@ -1434,11 +1434,11 @@ TODO:
                   Allows separating in data and app tier.
                 </s>
                 <s id="vault">
-                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.  
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.
                     Install takes minutes.
                 </s>
                 <s id="fortress">
-                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.  
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.
                     Install takes minutes.
                 </s>
            </compare>
@@ -1476,7 +1476,7 @@ TODO:
                     different than CVS.  The GUI is used primarily and implemented
                     on top of the command set.  As well, CM+ covers a full ALM
                     suite and can be extended beyond, so there are many more
-                    generic commands for browsing, reporting, etc. 
+                    generic commands for browsing, reporting, etc.
                 </s>
                 <s id="superversion">
                     There is little need to memorize a command set because
@@ -1489,7 +1489,7 @@ TODO:
                 </s>
                 <s id="bitkeeper">
                     A CVS-like command set with some easy-to-get-used-to
-                    complications due to its different way of work and 
+                    complications due to its different way of work and
                     philosophy.
                 </s>
                 <s id="aegis">
@@ -1497,12 +1497,12 @@ TODO:
                     just to get started. Not CVS-compatible. (albeit
                     support for such basic operations was contemplated)
                     Note that Aegis is a Software Configuration Management
-                    system and not just a simple version control system, 
+                    system and not just a simple version control system,
                     which may justify this extra complexity.
                 </s>
                 <s id="arch">
                     Many commands are compatible with CVS or BitKeeper. However,
-                    there are many other commands for it for different uses. 
+                    there are many other commands for it for different uses.
                     Aliasing of commands is possible so it it may be possible
                     to make it more compatible.
                 </s>
@@ -1565,11 +1565,11 @@ TODO:
                   but isn't compatible with CVS.
                 </s>
                 <s id="vault">
-                    Extensive command set via command line and GUI.  Not 
+                    Extensive command set via command line and GUI.  Not
                     compatible with CVS.
                 </s>
                 <s id="fortress">
-                    Extensive command set via command line and GUI.  Not 
+                    Extensive command set via command line and GUI.  Not
                     compatible with CVS.
                 </s>
            </compare>
@@ -1582,9 +1582,9 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">
-                    Good. CVS uses a proprietary protocol with various 
+                    Good. CVS uses a proprietary protocol with various
                     variations for its client/server protocol. This protocol
-                    can be tunneled over an SSH-connection to support 
+                    can be tunneled over an SSH-connection to support
                     encryption.
                 </s>
                 <s id="accurev">
@@ -1595,9 +1595,9 @@ TODO:
                 </s>
                 <s id="arch">
                     Excellent. Arch can utilize a multitude of protocols
-                    for its service, which is nothing but a dumb remote 
+                    for its service, which is nothing but a dumb remote
                     filesystem server. Currently supported protocols include
-                    FTP, SFTP, WebDAV (remote file access over HTTP), 
+                    FTP, SFTP, WebDAV (remote file access over HTTP),
                     as well as any remote filesystem protocol (NFS, SMB).
                 </s>
                 <s id="bazaar">
@@ -1616,8 +1616,8 @@ TODO:
                     getting and sending patches over SSH and email.
                 </s>
                 <s id="subversion">
-                    Very good. The Subversion service can use either 
-                    WebDAV+DeltaV (which is HTTP or HTTPS based) as its 
+                    Very good. The Subversion service can use either
+                    WebDAV+DeltaV (which is HTTP or HTTPS based) as its
                     underylying protocol, or its own proprietary protocol
                     that can be channeled over an SSH connection.
                 </s>
@@ -1674,15 +1674,15 @@ TODO:
                     automatically contact a remote repository when
                     required to perform an operation.
                 </s>
-                <s id="co-op">Uses the simplest LAN interface: 
+                <s id="co-op">Uses the simplest LAN interface:
                     copying files between shared directories.
                 </s>
                 <s id="vss">
                     VSS uses a Windows network share which has to be writable
                     for the VSS users (since this means doubling maintenance
-                    for new users). Add user in VSS and to share permissions. 
+                    for new users). Add user in VSS and to share permissions.
                     the share is most often world-writable, as is the default
-                    when creating a share) It does not perform well over a 
+                    when creating a share) It does not perform well over a
                     slow network connection.
                 </s>
                 <s id="cmsynergy">Good (single TCP/IP socket)</s>
@@ -1694,7 +1694,7 @@ TODO:
                   the client workstations for acceptable performance.
                 </s>
                 <s id="ls-sync">
-                  Good. Use of HTTP to get through firwalls. 
+                  Good. Use of HTTP to get through firwalls.
                 </s>
                 <s id="SourceAnywhere">Good. (single TCP/IP socket)</s>
                 <s id="git">Excellent.  Can use native Git protocol,
@@ -1707,7 +1707,7 @@ TODO:
         <section id="portability">
             <title>Portability</title>
             <expl>
-                How portable is the version-control system to various 
+                How portable is the version-control system to various
                 operating systems, computer architectures, and other
                 types of systems?
             </expl>
@@ -1718,15 +1718,15 @@ TODO:
                     emulation layer.
                 </s>
                 <s id="accurev">
-                    Excellent. The server runs on most UNIX, Linux 
-                    and Windows platforms. The client runs on all of these 
+                    Excellent. The server runs on most UNIX, Linux
+                    and Windows platforms. The client runs on all of these
                     platforms and on Mac OS X.
                 </s>
                 <s id="allchange">
                     Available only for windows platforms.
                 </s>
                 <s id="subversion">
-                    Excellent. Clients and Servers work on UNIX, 
+                    Excellent. Clients and Servers work on UNIX,
                     Windows and Mac OS X.
                 </s>
                 <s id="surround">
@@ -1761,7 +1761,7 @@ TODO:
                 </s>
                 <s id="arch">
                     Good. The source is portable across all UNIXes,
-                    but requires a UNIX emulation layer on Windows. (need to 
+                    but requires a UNIX emulation layer on Windows. (need to
                     verify). A service can be hosted on any platform
                     that sports a suitable Internet service.
                 </s>
@@ -1808,13 +1808,13 @@ TODO:
                 </s>
                 <s id="co-op">Windows only: starting with Win95.</s>
                 <s id="vss">
-                    The Microsoft Product is Windows only. 
+                    The Microsoft Product is Windows only.
                     <a href="http://www.mainsoft.com/">MainSoft</a>
                     ships a version of it for some UNIX platforms.
                 </s>
                 <s id="cmsynergy">
                     Very good - various flavours of Unix,
-                    Windows (only NT family for the server), VMS, and 
+                    Windows (only NT family for the server), VMS, and
                     possibly other systems.
                 </s>
                 <s id="clearcase">
@@ -1835,18 +1835,18 @@ TODO:
               </s>
               <s id="tfs">
                 The Server and Client needs Windows. A thirdparty company,
-                Teamprise, has developed a client for Eclipse, which means 
-                Linux, Mac and other UNIXes support. The Project SvnBridge 
+                Teamprise, has developed a client for Eclipse, which means
+                Linux, Mac and other UNIXes support. The Project SvnBridge
                 allows access using SVN clients but needs to run on Windows.
               </s>
               <s id="vault">
-                  The server, and standalone client, are Windows only. The 
-                  Eclipse plugin is cross-platform, as is the command-line 
+                  The server, and standalone client, are Windows only. The
+                  Eclipse plugin is cross-platform, as is the command-line
                   client.
               </s>
               <s id="fortress">
-                  The server, and standalone client, are Windows only. The 
-                  Eclipse plugin is cross-platform, as is the command-line 
+                  The server, and standalone client, are Windows only. The
+                  Eclipse plugin is cross-platform, as is the command-line
                   client.
               </s>
             </compare>
@@ -1862,7 +1862,7 @@ TODO:
                 files, perform arbitrary diffs, etc?
             </expl>
             <compare>
-                <s id="cvs">Yes. 
+                <s id="cvs">Yes.
                     <a href="http://www.freebsd.org/projects/cvsweb.html">CVSweb</a>,
                     <a href="http://www.viewvc.org/">ViewVC</a>,
                     <a href="http://www.horde.org/chora/">Chora</a>,
@@ -1871,12 +1871,12 @@ TODO:
                 <s id="accurev">No.</s>
                 <s id="allchange">Yes.</s>
                 <s id="bitkeeper">Yes. Its own built-in web-interface.</s>
-                <s id="subversion">Yes. 
+                <s id="subversion">Yes.
                     <a href="http://www.viewvc.org/">ViewVC</a>,
                     <a href="http://freshmeat.net/projects/svnweb/">SVN::Web</a>,
-                    <a href="http://websvn.tigris.org/">WebSVN</a>, 
+                    <a href="http://websvn.tigris.org/">WebSVN</a>,
                     <a href="http://viewsvn.berlios.de/">ViewSVN</a>,
-                    <a href="http://www.outoforder.cc/projects/apache/mod_svn_view/">mod_svn_view</a>, 
+                    <a href="http://www.outoforder.cc/projects/apache/mod_svn_view/">mod_svn_view</a>,
                     <a href="http://www.horde.org/chora/">Chora</a>,
                     <a href="http://www.edgewall.com/trac/">Trac</a>,
                     <a href="http://web-cpan.berlios.de/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>,
@@ -1896,9 +1896,9 @@ TODO:
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. Same as Subversion.</s>
                 <s id="arch">
-                    There's <a href="http://arch.bluegate.org/viewarch.html">ViewARCH</a>, and 
+                    There's <a href="http://arch.bluegate.org/viewarch.html">ViewARCH</a>, and
                     <a href="http://migo.sixbit.org/software/archzoom/">ArchZoom</a>
-                    which are 
+                    which are
                     works in progress.
                 </s>
                 <s id="surround">Yes, using WebDAV.</s>
@@ -1923,7 +1923,7 @@ TODO:
                 <s id="vesta">
                     Yes: <a href="http://www.scooter.cx/vestaweb/">Vestaweb</a>.
                 </s>
-                <s id="co-op">Since this functionality is always 
+                <s id="co-op">Since this functionality is always
                     available locally, there is no need for web interface.
                 </s>
                 <s id="vss">
@@ -1936,7 +1936,7 @@ TODO:
                 </s>
                 <s id="ls-sync">
                   Yes, without diff features but with a better awareness support.
-                  (allow to know at any time on each version each one is working on) 
+                  (allow to know at any time on each version each one is working on)
                 </s>
                 <s id="SourceAnywhere">Currently not.</s>
                 <s id="git">
@@ -1960,9 +1960,9 @@ TODO:
                 </s>
                 <s id="accurev">
                     A single, comprehensive,
-                    java-based GUI is provided.  The GUI has the same 
+                    java-based GUI is provided.  The GUI has the same
                     look-and-feel on all platforms.
-                </s> 
+                </s>
                 <s id="allchange">
                     A single windows based interface is provided.
                 </s>
@@ -2009,7 +2009,7 @@ TODO:
                     and <a href="http://bazaar-vcs.org/3rdPartyTools">the Third-party Tools page</a>.
                     Notable
                     are <a href="http://bazaar-vcs.org/QBzr">QBzr
-                    (Qt)</a> and 
+                    (Qt)</a> and
                     <a href="http://bazaar-vcs.org/bzr-gtk">bzr-gtk (GTK+)</a>, which
                     can be considered beta quality.  Work is also
                     being done on integrating Bazaar with Windows
@@ -2036,8 +2036,8 @@ TODO:
                     No GUIs are available.
                 </s>
                 <s id="perforce">
-                    Yes, P4Win and others based on the available libp4 
-                    library. 
+                    Yes, P4Win and others based on the available libp4
+                    library.
                 </s>
                 <s id="purecm">
                     Cross-platform GUI for Windows, Linux, Mac OS X
@@ -2051,15 +2051,15 @@ TODO:
                 </s>
                 <s id="co-op">The system is GUI-based by design.</s>
                 <s id="vss">
-                    Standalone GUI comes with it, plus SCCI plug-in for 
-                    MS Visual Developer Studio. There is an Eclipse 
+                    Standalone GUI comes with it, plus SCCI plug-in for
+                    MS Visual Developer Studio. There is an Eclipse
                     plug-in.
                 </s>
                 <s id="cmsynergy">
                     A couple of GUIs.  A motif-based one
                     (even on Windows) allows most functionality but is clunky.
-                    A nicer Java one allows developer work but not much 
-                    administrative stuff. Has an SCCI plug-in, though it 
+                    A nicer Java one allows developer work but not much
+                    administrative stuff. Has an SCCI plug-in, though it
                     doesn't handle network problems well.
                 </s>
                 <s id="clearcase">
@@ -2069,7 +2069,7 @@ TODO:
                 </s>
                 <s id="ls-sync">
                   One written in Java/SWING and available on any OS that
-                  is automatically launched from the repository web page and 
+                  is automatically launched from the repository web page and
                   another one which is an Eclipse plugin.
                 </s>
                 <s id="SourceAnywhere">The system is GUI-based by design.</s>
@@ -2078,11 +2078,11 @@ TODO:
                 </s>
                 <s id="tfs">TFS client integrates into Visual Studio.</s>
                 <s id="vault">
-                    Standalone Windows GUI, Visual Studio integration, and 
+                    Standalone Windows GUI, Visual Studio integration, and
                     cross-platform Eclipse integration.
                 </s>
                 <s id="fortress">
-                    Standalone Windows GUI, Visual Studio integration, and 
+                    Standalone Windows GUI, Visual Studio integration, and
                     cross-platform Eclipse integration.
                 </s>
            </compare>
@@ -2091,7 +2091,7 @@ TODO:
     <section id="license">
         <title>License</title>
         <expl>
-            What are the licensing terms for the software? 
+            What are the licensing terms for the software?
         </expl>
         <compare>
             <s id="cvs">GNU GPL (open source)</s>
@@ -2103,9 +2103,9 @@ TODO:
             <s id="bitkeeper">
                 Proprietary, binary only license. Pay per use license,
                 with an option for a costless license for developers of
-                open-source software. Used to have a gratis, downloadable 
+                open-source software. Used to have a gratis, downloadable
                 license, which was intended for the develpoment of open
-                source software. It had <a href="bk-license.html">a 
+                source software. It had <a href="bk-license.html">a
                     problematic license</a>,
                 and was discontinued starting at April 2005.
             </s>
@@ -2139,19 +2139,19 @@ TODO:
                     starting at $800 per seat for the first year</a> and then
                 a $160 for continuing support for the subsequent years. The
                 latter payment is optional and required only for support,
-                as the product can be used without it. Free for 
+                as the product can be used without it. Free for
                 Open Source projects (no support in this case).
             </s>
             <s id="purecm">
-                A proprietary, binary only, commercial license. 
-                <a href="http://www.purecm.com/purchase.php">Price 
+                A proprietary, binary only, commercial license.
+                <a href="http://www.purecm.com/purchase.php">Price
                     starting at $1000 for 5 users</a>
             </s>
             <s id="vesta">
                 GNU LGPL (open source)
             </s>
-            <s id="co-op">Proprietary, short text key. 30-day 
-                full-featured trial. Free to "observers" 
+            <s id="co-op">Proprietary, short text key. 30-day
+                full-featured trial. Free to "observers"
                 (members who don't make changes).
                 $159 per workstation.
             </s>
@@ -2161,8 +2161,8 @@ TODO:
             </s>
             <s id="cmsynergy">
                 Prices negotiable with salesman.
-                Server is typically roughly 20,000 British Pounds.  
-                Clients are 4,000 British Pounds.  Per-year costs of 18% 
+                Server is typically roughly 20,000 British Pounds.
+                Clients are 4,000 British Pounds.  Per-year costs of 18%
                 of original.
             </s>
             <s id="clearcase">
