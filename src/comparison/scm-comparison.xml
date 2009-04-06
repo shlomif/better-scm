@@ -66,6 +66,10 @@ TODO:
                 <name>Darcs</name>
                 <url>http://abridgegame.org/darcs/</url>
             </impl>
+            <impl id="fortress">
+                <name>Fortress</name>
+                <url>http://sourcegear.com/fortress/</url>
+            </impl>
             <impl id="git">
                 <name>Git</name>
                 <url>http://git.or.cz/</url>
@@ -119,6 +123,10 @@ TODO:
                 <name>Team Foundation Server</name>
                 <url>http://msdn2.microsoft.com/tfs2008/default.aspx</url>
                 <vendor>Microsoft Corp.</vendor>
+            </impl>
+            <impl id="vault">
+                <name>Vault</name>
+                <url>http://sourcegear.com/vault/</url>
             </impl>
             <impl id="vesta">
                 <name>Vesta</name>
@@ -183,6 +191,9 @@ TODO:
                 <s id="SourceAnywhere">Yes. Commits are atomic.</s>
                 <s id="git">Yes. Commits are atomic.</s>
                 <s id="tfs">Yes. Commits are atomic.</s>
+                <s id="vault">Yes. Commits are atomic.</s>
+                <s id="fortress">Yes. Commits are atomic.</s>
+
             </compare>
         </section>
         <section id="move">
@@ -263,6 +274,14 @@ TODO:
                 <s id="tfs">
                   Yes. Both moves and renames are supported,
                   while maintaining history.
+                </s>
+                <s id="vault">
+                    Yes. Both moves and renames are supported, while maintaining 
+                    history.
+                </s>
+                <s id="fortress">
+                    Yes. Both moves and renames are supported,                   
+                    while maintaining history.
                 </s>
            </compare>
         </section>
@@ -364,6 +383,8 @@ TODO:
                 <s id="tfs">
                     Unknown. FILL IN.
                 </s>
+                <s id="vault">Yes, intelligent renames are supported.</s>
+                <s id="fortress">Yes, intelligent renames are supported.</s>
            </compare>
         </section>
         <section id="copy">
@@ -434,6 +455,14 @@ TODO:
                   Power-Tool tfpt</a> has the option /followbranches to show
                   the history of the file branch's ancestors
                 </s>
+                <s id="vault">
+                    No, copies are supported, but will start their own 
+                    history.
+                </s>
+                <s id="fortress">
+                    No, copies are supported, but will start their own 
+                    history.
+                </s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -500,6 +529,8 @@ TODO:
                   TFS Proxy is available but the replica isn't an
                   equivalent copy.
                 </s>
+                <s id="vault">No.</s>
+                <s id="fortress">No.</s>
             </compare>
         </section>
         <section id="push">
@@ -555,6 +586,8 @@ TODO:
                 <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
                 <s id="git">Yes.  (The Linux kernel development process uses this extremely often).</s>
                 <s id="tfs">No.</s>
+                <s id="vault">No</s>
+                <s id="fortress">No</s>
             </compare>
         </section>
         <section id="permissions">
@@ -668,6 +701,14 @@ TODO:
                   Yes. You get set permissions for each team project, folder,
                   file.
                 </s>
+                <s id="vault">
+                    Yes. Revisions can be set, and overridden, and the 
+                    repository, project and folder level.
+                </s>
+                <s id="fortress">
+                    Yes. Revisions can be set, and overridden, and the 
+                    repository, project and folder level.
+                </s>
             </compare>
         </section>
         <section id="changesets">
@@ -764,6 +805,8 @@ TODO:
                 <s id="SourceAnywhere">Not exactly. SourceAnywhere uses a related concept of configurations instead, which some has similar properties.</s>
                 <s id="git">Yes, Changesets are supported, and there's some flexibility in creating them.</s>
                 <s id="tfs">Yes. Changesets are only possibility.</s>
+                <s id="vault">Yes. Changesets are supported.</s>
+                <s id="fortress">Yes. Changesets are supported.</s>
            </compare>
         </section>
         <section id="annotate">
@@ -815,6 +858,14 @@ TODO:
                 <s id="SourceAnywhere">Yes. (SAW annotate)</s>
                 <s id="git">Yes. (git blame).</s>
                 <s id="tfs">Yes. (tf annotate).</s>
+                <s id="vault">
+                    Yes. Both standard Blame and Line History (Blame on selected
+                    sections of a file) are supported.
+                </s>
+                <s id="fortress">
+                    Yes. Both standard Blame and Line History (Blame on selected 
+                    sections of a file) are supported.
+                </s>
            </compare>
         </section>
     </section>
@@ -906,6 +957,8 @@ TODO:
                  and users can be restricted to work only on the projects they have check out/in right.</s>
              <s id="git">No.  However, commits could be restricted somewhat, see the "Repository Permissions".</s>
                 <s id="tfs">Yes.</s>
+                <s id="vault">Yes.</s>
+                <s id="fortress">Yes.</s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -970,6 +1023,8 @@ TODO:
                 <s id="tfs">
                   Yes. Using tf diff or "Pending Changes" in Visual Studio.
                 </s>
+                <s id="vault">Yes. Using DiffMerge.</s>
+                <s id="fortress">Yes. Using DiffMerge.</s>
             </compare>
         </section>
         <section id="per_file_commit_messages">
@@ -1042,6 +1097,8 @@ TODO:
                 <s id="SourceAnywhere">No. There is no such feature.</s>
                 <s id="git">No. Commit messages are per changeset.</s>
                 <s id="tfs">No. Commit messages are per changeset.</s>
+                <s id="vault">No. Commit messages are per-changeset.</s>
+                <s id="fortress">No. Commit messages are per-changeset.</s>
            </compare>
         </section>
     </section>
@@ -1198,6 +1255,14 @@ TODO:
                 <s id="tfs">
                   Good. A comprehensive documentation in the MSDN Library.
                   Many Step-by-Step tutorial videos online.
+                </s>
+                <s id="vault">
+                    Good. All features are documented, plus a getting-started 
+                    guide.
+                </s>
+                <s id="fortress">
+                    Good. All features are documented, plus a getting-started 
+                    guide.
                 </s>
             </compare>
         </section>
@@ -1368,6 +1433,14 @@ TODO:
                   step-by-step guide is available.
                   Allows separating in data and app tier.
                 </s>
+                <s id="vault">
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.  
+                    Install takes minutes.
+                </s>
+                <s id="fortress">
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.  
+                    Install takes minutes.
+                </s>
            </compare>
         </section>
         <section id="command_set">
@@ -1490,6 +1563,14 @@ TODO:
                 <s id="tfs">
                   The command set allows more operations than the GUI
                   but isn't compatible with CVS.
+                </s>
+                <s id="vault">
+                    Extensive command set via command line and GUI.  Not 
+                    compatible with CVS.
+                </s>
+                <s id="fortress">
+                    Extensive command set via command line and GUI.  Not 
+                    compatible with CVS.
                 </s>
            </compare>
         </section>
@@ -1619,6 +1700,8 @@ TODO:
                 <s id="git">Excellent.  Can use native Git protocol,
                 but works over rsync, ssh, HTTP and HTTPS also.</s>
                 <s id="tfs">Good. Use of HTTP(S).</s>
+                <s id="vault">Good.  HTTP and HTTPS only.</s>
+                <s id="fortress">Good.  HTTP and HTTPS only.</s>
             </compare>
         </section>
         <section id="portability">
@@ -1756,6 +1839,16 @@ TODO:
                 Linux, Mac and other UNIXes support. The Project SvnBridge 
                 allows access using SVN clients but needs to run on Windows.
               </s>
+              <s id="vault">
+                  The server, and standalone client, are Windows only. The 
+                  Eclipse plugin is cross-platform, as is the command-line 
+                  client.
+              </s>
+              <s id="fortress">
+                  The server, and standalone client, are Windows only. The 
+                  Eclipse plugin is cross-platform, as is the command-line 
+                  client.
+              </s>
             </compare>
         </section>
     </section>
@@ -1850,6 +1943,8 @@ TODO:
                     Yes.  Gitweb is included in distribution.
                 </s>
                 <s id="tfs">Web Access is available as download for free.</s>
+                <s id="vault">Yes.</s>
+                <s id="fortress">Yes.</s>
             </compare>
         </section>
         <section id="availability_of_guis">
@@ -1982,6 +2077,14 @@ TODO:
                     Gitk is included in distribution.  Qgit and Git-gui tools are also available.
                 </s>
                 <s id="tfs">TFS client integrates into Visual Studio.</s>
+                <s id="vault">
+                    Standalone Windows GUI, Visual Studio integration, and 
+                    cross-platform Eclipse integration.
+                </s>
+                <s id="fortress">
+                    Standalone Windows GUI, Visual Studio integration, and 
+                    cross-platform Eclipse integration.
+                </s>
            </compare>
         </section>
     </section>
@@ -2075,6 +2178,12 @@ TODO:
             <s id="SourceAnywhere">Proprietary, named-user licensing.</s>
             <s id="git">GNU GPL v2 (open source).</s>
             <s id="tfs">Commercial license.</s>
+            <s id="vault">
+                Commercial, per-user with no separate server license.
+            </s>
+            <s id="fortress">
+                Commercial, per-user with no separate server license.
+            </s>
         </compare>
     </section>
 </section>
