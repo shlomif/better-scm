@@ -1089,8 +1089,7 @@ TODO:
                     No.
                 </s>
                 <s id="monotone">
-                    Yes. It is possible to attach a comment to a certain
-                    file at a certain revision.
+                    No. Commit messages are per-changeset.
                 </s>
                 <s id="opencm">
                     Unknown.
@@ -2065,13 +2064,14 @@ TODO:
                 </s>
                 <s id="monotone">
                     Yes, there is 
-                    <a href="http://oandrieu.nerim.net/monotone-viz/">monotone-viz</a>,
-                    <a href="http://guitone.thomaskeller.biz/">guitone</a>
-                    and mtn-browse, which is currently only available from
-                    <a href="http://viewmtn.angrygoats.net/all/branch/changes/net.venge.monotone.contrib.mtn-browse">its
-                        repository</a>. There's
-                    a <a href="http://monotone.ca/wiki/InterfacesFrontendsAndTools/">complete 
-                        list of tools</a>.
+                    <a href="http://www.coosoft.plus.com/software.html">mtn-browse</a> (which 
+                    should be considered the "best of breed"),
+                    <a href="http://oandrieu.nerim.net/monotone-viz/">monotone-viz</a>
+                    and <a href="http://guitone.thomaskeller.biz/">guitone</a>
+                    (whose development was abandoned). There's
+                    a 
+                    <a href="http://monotone.ca/wiki/InterfacesFrontendsAndTools/">complete 
+                        list of tools</a> available on the Monotone wiki.
                 </s>
                 <s id="opencm">
                     No GUIs are available.
