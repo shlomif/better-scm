@@ -702,12 +702,21 @@ TODO:
                   onto Windows domain-based authentication in
                   multi-platform environments.
                 </s>
-                <s id="ls-sync">Permissions are set for the whole repository or branch.</s>
-                <s id="SourceAnywhere">Yes. SourceAnywhere Server Manager can define access to a repository per user or group and user access rights to a project.</s>
-                <s id="git">No, but a single server can serve many repositories.  Also, UNIX permissions can be used to some extent.</s>
+                <s id="ls-sync">
+                    Permissions are set for the whole repository or branch.
+                </s>
+                <s id="SourceAnywhere">
+                    Yes. SourceAnywhere Server Manager can define access to a 
+                    repository per user or group and user access rights to a 
+                    project.
+                </s>
+                <s id="git">
+                    See contrib/hooks/update-paranoid that ships with Git. See 
+                    the path_rules code for the closest equivalent to svnperms.
+                </s>
                 <s id="tfs">
-                  Yes. You get set permissions for each team project, folder,
-                  file.
+                    Yes. You get set permissions for each team project, folder,
+                    file.
                 </s>
                 <s id="vault">
                     Yes. Revisions can be set, and overridden, and the
@@ -985,10 +994,14 @@ TODO:
                 <s id="subversion">Yes. Using svn diff</s>
                 <s id="cmplus">
                     Yes. Use Updates | Delta | Delta Update. Or
-                    right click a file or directory and do a compare to workspace.
+                    right click a file or directory and do a compare to 
+                    workspace.
                 </s>
-                <s id="superversion">Yes. Local changes are detected and shown immediately. Changes can be
-                  collected in a local buffer before being committed to the repository.</s>
+                <s id="superversion">
+                    Yes. Local changes are detected and shown immediately.
+                    Changes can be collected in a local buffer before being 
+                    committed to the repository.
+                </s>
                 <s id="svk">Yes. Using svk diff</s>
                 <s id="bitkeeper">Yes. Using bk diff.</s>
                 <s id="arch">
@@ -1020,16 +1033,19 @@ TODO:
 					external diff tool</s>
                 <s id="clearcase">Yes, "cleartool diff"</s>
                 <s id="ls-sync">
-                  Yes, with the Synchronizer Studio (default Java client) or with the
-                  standard diff command (diff -r . .so6/xxx/REFCOPY/)
+                    Yes, with the Synchronizer Studio (default Java client) or
+                    with the standard diff command (diff -r .
+                    .so6/xxx/REFCOPY/)
                 </s>
                 <s id="SourceAnywhere">Yes. Using saw diff.</s>
-                <s id="git">Yes.
-                Also, branches are very lightweight in Git, and
-                could be considered a kind of storage for "uncommitted" code in some workflows.
+                <s id="git">
+                    Yes. Also, branches are very lightweight in Git, 
+                    and could be considered a kind of storage for 
+                    "uncommitted" code in some workflows. Also see the
+                    "git stash" command.
                 </s>
                 <s id="tfs">
-                  Yes. Using tf diff or "Pending Changes" in Visual Studio.
+                    Yes. Using tf diff or "Pending Changes" in Visual Studio.
                 </s>
                 <s id="vault">Yes. Using DiffMerge.</s>
                 <s id="fortress">Yes. Using DiffMerge.</s>
