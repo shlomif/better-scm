@@ -84,7 +84,7 @@ TODO:
             </impl>
             <impl id="monotone">
                 <name>Monotone</name>
-                <url>http://www.venge.net/monotone/</url>
+                <url>http://monotone.ca/</url>
             </impl>
             <impl id="opencm">
                 <name>OpenCM</name>
