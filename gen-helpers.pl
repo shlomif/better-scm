@@ -10,13 +10,13 @@ my $generator =
         'hosts' =>
         [
             {
-                'id' => "berlios",
-                'source_dir' => "src",
+                'id' => "common",
+                'source_dir' => "common",
                 'dest_dir' => "\$(D)",
             },
             {
-                'id' => "common",
-                'source_dir' => "common",
+                'id' => "berlios",
+                'source_dir' => "src",
                 'dest_dir' => "\$(D)",
             },
         ],
