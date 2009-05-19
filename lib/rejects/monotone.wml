@@ -1,0 +1,7 @@
+Finally it identifies the various revisions of
+files by their cryptographical digests, which makes it have some not 
+so-user-friendly identifiers 
+(such as: <tt>9fb38dee24fa6f6a7afc2bfd4b09f1dd65edcd79</tt>). Another potential
+problem is that because the common history is only in the depot, it is possible
+the repositories of the individual developers will become unsyncrhonized with
+each other.
