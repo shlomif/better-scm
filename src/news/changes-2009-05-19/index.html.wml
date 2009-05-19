@@ -1,0 +1,39 @@
+#include '../template.wml'
+
+<latemp_subject "Updated Comparison and Monotone Updates" />
+<latemp_version_control_id "$Id$" />
+
+<p>
+The following version control systems have been added to
+<a href="$(ROOT)/comparison/">the comparison</a>:
+</p>
+
+<ol>
+
+<li>
+<a href="http://sourcegear.com/fortress/">SourceGear Fortress</a>
+</li>
+
+<li>
+<a href="http://sourcegear.com/vault/">SourceGear Vault</a>
+</li>
+
+<li>
+<a href="http://www.seapine.com/surroundscm.html/">Surround SCM</a>
+</li>
+
+</ol>
+
+<p>
+Moreover, the comparison was updated with more up-to-date information on
+Monotone and other systems.
+</p>
+
+<p>
+Finally <a href="$(ROOT)/monotone/">the Monotone web page</a> in the main 
+site was updated.
+</p>
+
+<p>
+<b>Date:</b> 2009-May-19
+</p>
