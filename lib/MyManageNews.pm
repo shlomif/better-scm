@@ -73,6 +73,15 @@ my @news_items =
             },
             date => "2008-08-07",
         },
+        {
+            'title' => "Updated Comparison and Monotone Updates",
+            'id' => "changes-2009-05-19",
+            'description' => q{3 new systems have been added to the 
+            comparison, the comparison was updated in general, and Monotone
+            now has more up-to-date information.
+            },
+            date => "2009-05-19",
+        },
         )
     )
 );
