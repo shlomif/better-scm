@@ -1477,7 +1477,7 @@ TODO:
             <title>Command Set</title>
             <expl>
                 What is the command set? How compatible is it with
-                the commands of CVS (the current open-source defacto
+                the commands of CVS (the current open source defacto
                 standard)?
             </expl>
             <compare>
@@ -2144,7 +2144,7 @@ TODO:
             <s id="bitkeeper">
                 Proprietary, binary only license. Pay per use license,
                 with an option for a costless license for developers of
-                open-source software. Used to have a gratis, downloadable
+                open source software. Used to have a gratis, downloadable
                 license, which was intended for the develpoment of open
                 source software. It had <a href="bk-license.html">a
                     problematic license</a>,
@@ -2155,7 +2155,7 @@ TODO:
                 GNU GPL (open source)
             </s>
             <s id="subversion">
-                Apache/BSD-style license. (open-source)
+                Apache/BSD-style license. (open source)
             </s>
             <s id="cmplus"> Network licenses and user licenses. No minimum
                 checkout time, and automatic license checkin on idle. License
@@ -2165,7 +2165,7 @@ TODO:
                 license cost per user typically less than $1000 + 18% annual mtce.
             </s>
             <s id="superversion">
-                GNU GPL (open-source)
+                GNU GPL (open source)
             </s>
             <s id="svk">Perl License. (open source)</s>
             <s id="mercurial">GNU GPL (open source)</s>
@@ -2215,7 +2215,7 @@ TODO:
               required, depending on activity. Multisite requires
               additional licensing.
             </s>
-            <s id="ls-sync">QPL - The Qt Public License (OpenSource)</s>
+            <s id="ls-sync">QPL - The Qt Public License (open source)</s>
             <s id="SourceAnywhere">Proprietary, named-user licensing.</s>
             <s id="git">GNU GPL v2 (open source).</s>
             <s id="tfs">Commercial license.</s>
