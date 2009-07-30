@@ -12,6 +12,7 @@
 </define-tag>
 #include "latemp/latemp-main.wml"
 #include "shlomif/affiliations.wml"
+#include "share-this.wml"
 
 <latemp_lang "en-US" />
 <latemp_encoding "iso-8859-1" />
@@ -101,5 +102,9 @@ alt="PayPal Donate" class="paypal" /></a>
 <link rel="alternate stylesheet" type="text/css" href="$(ROOT)/alternate1.css" media="screen, projection" title="Kitchy" />
 <link rel="alternate" title="Better SCM RSS Feed" href="$(ROOT)/rss.xml" type="application/rss+xml" />
 </latemp_extra_head_elements>
+
+<latemp_after_body>
+<share_this_button />
+</latemp_after_body>
 
 #include '../lib/bk-note.wml'
