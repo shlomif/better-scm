@@ -21,20 +21,25 @@ version control systems</b> (VCSes).
 </p>
 
 <p>
-<a href="https://www.cvshome.org/">CVS</a> is the most commonly used 
-revision control system in the Open-Source world as of this writing. It 
-works well and is relatively reliable but has many limitations. It does not
+When Better-SCM started, <a href="https://www.cvshome.org/">CVS</a> was the 
+most commonly used version control system in the Open-Source world. It 
+worked well and was relatively reliable but had many limitations. It did not
 do file renames or copies, send the files to the server, no atomicity of 
-operations, and no good handling of binary files. Clearly it is showing its
-age.
+operations, and no good handling of binary files. 
 </p>
 
 <p>
 To address this problem several alternatives emerged, some of which are either
 open-source or available to the community of open-source developers. The 
-<b>Better SCM</b> project aims to empower them, to compare them, and criticize
+<b>Better SCM</b> project aimed to empower them, to compare them, and criticize
 them, hopefully leading to each being a more complete and accessible 
 replacement.
+</p>
+
+<p>
+Nowadays most open-source projects are no longer using CVS, and its
+numerous alternatives have matured. So Better SCM continues with its mission
+to improve the current state of the art of version control systems.
 </p>
 
 <h2 class="link"><a href="$(ROOT)/alternatives/">Available
