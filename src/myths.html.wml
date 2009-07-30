@@ -1,0 +1,85 @@
+#include '../template.wml'
+
+<latemp_subject "Common Version Control Myths" />
+
+<h2 id="write-in-a-few-days">You 
+can write a decent version control system in a matter of days</h2>
+
+<p>
+You <b>can</b> write a decent version control system in a matter of days. But
+it probably won't be feature-by-feature compatible with CVS, much less up to
+par with BitKeeper. A good software configuration management needs to have
+a lot of useful features that every user out there wants, and should work
+through common Internet protocols like HTTP or FTP. It should support file
+renames and copies, be fast enough and be easy to install and use.
+</p>
+
+<p>
+The SCM you will write on your free time, might fit your needs like a matching
+shoe to a foot, and may eventually be converted into something very powerful
+and usable. But writing a <b>great</b> SCM tool takes a lot of time and a lot
+of effort. In "The Cathedral and the Bazaar" Eric Raymond tells how he found
+several tools that could fetch mail from a pop server. But it took him a lot
+of work to turn one of these tools into the ultimate such tool - fetchmail.
+</p>
+
+<p>
+Many version control systems out there originated from such that were
+internally used: Arch, Vesta, CVS itself and others. BitKeeper and Subversion,
+on the other hand, were written from the grounds up to be marketplace,
+shrinkwrap software. Many software houses have their own internal SCM,
+that works fine for them but isn't worth much to the general public. There
+is no such thing as a free lunch.
+</p>
+
+<h2 id="do-not-need-to-use-vcs">I 
+do not need to use a Version Control System</h2>
+
+<p>
+Yes you do. Source control is required for projects of all sizes, and for
+teams of any size. There are still many software houses that do not realize
+that, and use various snapshots of the code and windiff to keep track of
+changes. These are all poor man's source control systems that do not scale
+well.
+</p>
+
+<p>
+I take a more radical approach that thinks that even Aunt Tillie needs version
+control to keep track of its MS-Word Documents, Excel Spreadsheets, and saved
+games. Hans Reiser wishes to implement source control capabilities in ReiserFS,
+and I believe VMS versioned files too. Even if you are not a full-fledged
+hacker, you can benefit from source control.
+</p>
+
+<h2 id="internal-scm">My software house would rather use our internal SCM</h2>
+
+<p>
+You have an internal or incomplete SCM - it works, and it does so nicely. OK.
+But there are publicly available ones that are better in most ways. If a
+certain key feature is missing from them, you may wish to allocate some time
+to feeling it and releasing the results to the world. That way, the publicly
+available SCM will gain a feature, and you can use it instead of the ad-hoc
+solution you have used until now.
+</p>
+
+<p> 
+People prefer the developers of Perl, Python, Ruby, Tcl, etc. to maintain
+interpreters for languages instead of everyone inventing their own toy language
+that will probably never do much and will be quite useless. Likewise, it is a
+better idea to maintain a shrinkwrap Linux kernel (and corresponding FreeBSD
+and OpenBSD kernels - choice is good) instead of each system vendor having his
+own pet version of UNIX.
+</p>
+
+<p>
+I do not believe in concentration of efforts - that investing all the effort
+into one project (like all KDE hackers moving to GNOME or vice versa) will
+give us a better product than with each hacking on what he wants. But I do
+believe sharing results and releasing code as shrinkwrap (with all the
+discipline involved) will eventually benefit everybody. You can do with Perl
+in a matter of hours, things, that once took a team of C programmers several
+monthes. That's because the Perl people shared their efforts. Similarly,
+by having several good publicly available SCMs, we can eventually feel
+the needs of every version control user out there.
+</p>
+
