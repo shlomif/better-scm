@@ -20,12 +20,12 @@ of this system.
 
 <p>
 BitKeeper accelerated the speed of kernel development considerably. However,
-in April, 2005 <a href="./demise-of-gratis-bitkeeper.html">BitKeeper's parent
+in April, 2005 <a href="emise-of-gratis-bitkeeper.html">BitKeeper's parent
 company decided to end-of-life the gratis version</a>, which left the Linux
 kernel developers and developers of other projects in Limbo. The kernel
 developers tested several version control systems, and ended up developing
-their own tool called <a href="http://git.or.cz/">git</a>, which have since
-then undergone an active development. Many other open-source alternatives to
+their own tool called <a href="http://git.or.cz/">git</a>, which has since
+then undergone some active development. Many other open-source alternatives to
 BitKeeper have been developed before it or afterward.
 </p>
 
@@ -77,16 +77,16 @@ Following is my analysis and conclusions of this latest development.
 
 <p>
 First of all, I'd like to note that I'm not worried about the future of
-Mercurial due to O'Sullivan's leave of absence. Mercurial has many other active users
-and developers. So do many other open-source version control systems. That's
-not the issue here.
+Mercurial due to O'Sullivan's leave of absence. Mercurial has many other
+active users and developers. So do many other open-source version control
+systems. That's not the issue here.
 </p>
 
 <p>
 The real issue is whether Larry McVoy, the CEO of the BitKeeper parent
 company, can and should prevent the employees of his customers' from
 contributing to competing version control system. Unfortunately for McVoy,
-the Law is not on his side. Someone who bought the product, is allowed to 
+the Law is not on his side. Someone who bought the product, is allowed to
 contribute to a competing product under the laws of most countries. While 
 it may be marginally legal to impose a non-compete clause for a gratis version
 of a program, a paying customer should be allowed to do so. (Including
@@ -110,7 +110,8 @@ best product in the market, and that in order to stay ahead others must not be
 able to borrow features or ideas from it. During the entire course of BitKeeper
 history, there were more and more measures taken to ensure that people would 
 not abuse the license, or attempt to compete with BitKeeper. 
-I <a href="what-bitmover-got-wrong.html#what_got_wrong">wrote about it earlier</a>.
+I <a href="what-bitmover-got-wrong.html#what_got_wrong">wrote about
+it earlier</a>.
 </p>
 
 <p>
