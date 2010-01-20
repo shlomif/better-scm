@@ -3,12 +3,21 @@
 <latemp_subject "Site Source Code" />
 <latemp_version_control_id "$Id$" />
 
+<define-tag repos_url whitespace="delete">
+http://svn.berlios.de/svnroot/repos/better-scm
+</define-tag>
+
+<define-tag trunk_url whitespace="delete">
+<repos_url />/better-scm-site/trunk/
+</define-tag>
+
 <p>
 The site source code is present in 
-<a href="http://opensvn.csie.org/betterscm/better-scm-site/trunk/">a
-directory</a> in a <a href="http://opensvn.csie.org/betterscm/">Subversion
+<a href="<trunk_url />">a
+directory</a> in a 
+<a href="<repos_url />/">Subversion
 repository</a> kindly hosted by
-<a href="http://opensvn.csie.org/">OpenSVN.csie.org</a>.
+<a href="http://developer.berlios.de/">Berlios.de</a>.
 </p>
 
 <p>
@@ -18,7 +27,7 @@ system and issue the command:
 </p>
 
 <pre>
-svn checkout http://opensvn.csie.org/betterscm/better-scm-site/trunk/
+svn checkout <trunk_url />
 </pre>
 
 <define-tag cpan_link>
