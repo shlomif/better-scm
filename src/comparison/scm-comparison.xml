@@ -302,12 +302,12 @@ TODO:
                     Unknown. FILL IN.
                 </s>
                 <s id="allchange">
-                    Partial. Move is implemented as copy+delete/obsolete, full revision
-                    history is maintained across copying, so changing a file in the
-                    copied directory does the right thing.
+                    Partial. Move is implemented as copy+delete/obsolete, full
+                    revision history is maintained across copying, so changing 
+                    a file in the copied directory does the right thing.
                 </s>
                 <s id="subversion">
-                    No. "svn help me" says "Note: this subcommand is
+                    No. "svn help mv" says "Note: this subcommand is
                     equivalent to
                     a 'copy' and 'delete'." There's <a
                         href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a
