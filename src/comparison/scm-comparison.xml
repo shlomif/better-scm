@@ -2059,8 +2059,10 @@ TODO:
                 <s id="mercurial">
                     History viewing available with hgit extension;
                     check-in extension (hgct) makes committing easier.
-                    Some third-party IDEs and GUI tools (e.g. eric3,
-                    meld) have integrated Mercurial support.
+                    <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a>
+                    provides a Windows shell extension, and GNOME/Nautilus
+                    integration. Some third-party IDEs and GUI tools (e.g. 
+                    eric3, meld) have integrated Mercurial support. 
                 </s>
                 <s id="monotone">
                     Yes, there is 
