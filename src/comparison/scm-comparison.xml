@@ -319,7 +319,11 @@ TODO:
                 <s id="svk">No. Same as Subversion.</s>
                 <s id="arch">Yes. Renames can be merged intelligently.</s>
                 <s id="bazaar">Yes. Renames are intelligent.</s>
-                <s id="darcs">Unknown.</s>
+                <s id="darcs">
+                    Yes, renames are intelligent but should be explicitly
+                    specified using "darcs mv" because they are not detected
+                    automatically.
+                </s>
                 <s id="bitkeeper">Unknown. Probably Yes.</s>
                 <s id="aegis">Unknown. FILL IN.</s>
                 <s id="mercurial">
