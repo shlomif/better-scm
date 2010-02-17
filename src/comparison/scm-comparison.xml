@@ -1977,7 +1977,8 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Currently not.</s>
                 <s id="git">
-                    Yes.  Gitweb is included in distribution.
+                    Yes.  Gitweb is included in distribution and there's
+                    also <a href="http://hjemli.net/git/cgit/">cgit</a>.
                 </s>
                 <s id="tfs">Web Access is available as download for free.</s>
                 <s id="vault">Yes.</s>
