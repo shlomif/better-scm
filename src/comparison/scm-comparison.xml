@@ -1240,10 +1240,10 @@ TODO:
                     Well documented.
                 </s>
                 <s id="perforce">
-                    Very Good (html and command line help)
+                    Very Good (HTML and command line help).
                 </s>
                 <s id="purecm">
-                    Very Good (html and command line help)
+                    Very Good (HTML and command line help).
                 </s>
                 <s id="vesta">
                     Quite thoroughly (HTML, man pages, published
@@ -1282,9 +1282,11 @@ TODO:
                     and integrated help for every command.
                 </s>
                 <s id="git">
-                    Medium. The short help is too terse and obscure. The man
-                    pages are extensive, but tend to be confusing. There are
-                    many tutorials.
+                    Good. There's an online help for every command detailing
+                    all the flags. The man pages are extensive, but tended to 
+                    be confusing (possibly improved by now). There are many
+                    tutorials, blog posts and some books (some of which are
+                    online).
                 </s>
                 <s id="tfs">
                     Good. A comprehensive documentation in the MSDN Library.
@@ -1852,37 +1854,42 @@ TODO:
                     possibly other systems.
                 </s>
                 <s id="clearcase">
-                  Medium. Available on Windows, and several selected
-                  flavours of UNIX (not including MacOS X, or any
-                  other Linux other than Red Hat).
+                    Medium. Available on Windows, and several selected
+                    flavours of UNIX (not including MacOS X, or any
+                    other Linux other than Red Hat).
                 </s>
                 <s id="ls-sync">
-                  Excellent. Clients and servers work on any Java 1.5-compatible
-                  platform. (Windows, Linux and Mac OS X )
+                    Excellent. Clients and servers work on any Java
+                    1.5-compatible platform. (Windows, Linux and Mac OS X )
                 </s>
-                <s id="SourceAnywhere">Good. The server runs on Windows only.
-                 Clients can work on any platform that SWT (Standard Widget Toolkit) supports,
-                  including Windows, Linux, Mac, Solaris, AIX, HP-UX, SCO Unix, FreeBSD and so on.</s>
-              <s id="git">
-                  The client works on most UNIXes, but not on native MS-Windows. The cygwin build
-                  seems to be workable, though.
-              </s>
-              <s id="tfs">
-                The Server and Client needs Windows. A thirdparty company,
-                Teamprise, has developed a client for Eclipse, which means
-                Linux, Mac and other UNIXes support. The Project SvnBridge
-                allows access using SVN clients but needs to run on Windows.
-              </s>
-              <s id="vault">
-                  The server, and standalone client, are Windows only. The
-                  Eclipse plugin is cross-platform, as is the command-line
-                  client.
-              </s>
-              <s id="fortress">
-                  The server, and standalone client, are Windows only. The
-                  Eclipse plugin is cross-platform, as is the command-line
-                  client.
-              </s>
+                <s id="SourceAnywhere">
+                    Good. The server runs on Windows only. Clients can work on
+                    any platform that SWT (Standard Widget Toolkit) supports,
+                    including Windows, Linux, Mac, Solaris, AIX, HP-UX, SCO
+                    Unix, FreeBSD and so on.
+                </s>
+                <s id="git">
+                    The client works on most UNIXes, and there's a native 
+                    MS-Windows build. The cygwin build seems to be workable as
+                    well.
+                </s>
+                <s id="tfs">
+                    The Server and Client needs Windows. A thirdparty company,
+                    Teamprise, has developed a client for Eclipse, which means
+                    Linux, Mac and other UNIXes support. The Project SvnBridge
+                    allows access using SVN clients but needs to run on
+                    Windows.
+                </s>
+                <s id="vault">
+                    The server, and standalone client, are Windows only. The
+                    Eclipse plugin is cross-platform, as is the command-line
+                    client.
+                </s>
+                <s id="fortress">
+                    The server, and standalone client, are Windows only. The
+                    Eclipse plugin is cross-platform, as is the command-line
+                    client.
+                </s>
             </compare>
         </section>
     </section>
