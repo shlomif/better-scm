@@ -1,0 +1,25 @@
+#include '../template.wml'
+
+<latemp_subject "Version Control Humour" />
+<latemp_version_control_id "$Id: index.html.wml 312 2008-07-10 21:39:06Z shlomif $" />
+<latemp_more_keywords "humour, humor" />
+
+<h2 id="intro">Introduction</h2>
+
+<p>
+This page lists some version control humour that we ran into throughout
+the years.
+</p>
+
+<h2 id="list">The List</h2>
+
+<ul>
+<li>
+<a href="http://www.shlomifish.org/humour/fortunes/subversion.html">Shlomi 
+Fish's "Subversion" Fortune Cookies</a>.
+</li>
+<li>
+<a href="http://blog.red-bean.com/sussman/?p=226">Ben Collins-Sussman's
+"Git man, man git"</a>
+</li>
+</ul>

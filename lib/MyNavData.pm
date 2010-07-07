@@ -199,6 +199,11 @@ my $tree_contents =
             'title' => "Links of Relevance",
         },
         {
+            'text' => "Humour",
+            'url' => "humour/",
+            'title' => "Version Control Humour",
+        },
+        {
             'separator' => 1,
             'skip' => 1,
         },
