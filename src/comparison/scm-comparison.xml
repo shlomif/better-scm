@@ -484,22 +484,29 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">
-                    Indirectly, by using
+                    That used to be the case indirectly, by using
                     <a href="http://www.cvsup.org/">CVSup</a>
                     by John Polstra (which requires running the cvsupd
-                    daemon on the server)
+                    daemon on the server). However, cvsupd has become
+                    unmaintained, now has problems with CVS 1.12.13, and is
+                    written in Modula-3, which makes it non-recommended.
                 </s>
                 <s id="subversion">
-                    Indirectly, by using Chia-liang Kao's
+                    Indirectly, either by using the
+                    <a href="http://svnbook.red-bean.com/en/1.4/svn.ref.svnsync.html">svnsync</a>
+                    tool which is part of the Subversion distribution on
+                    recent versions, or by using Chia-liang Kao's
                     <a href="http://search.cpan.org/dist/SVN-Mirror/">SVN::Mirror</a>
-                    add-on or Shlomi Fish'
+                    add-on or Shlomi Fish's
                     <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a>
                     utility.
                 </s>
-                <s id="cmplus">Yes. CM+MultiSite can be configured to clone a repository
-                    so that it continues to act as a single repository. Options include
-                    cloning only from the main site (i.e. not allowing updates from the
-                    clone) and restricting the set of files transferred to a cloned site.
+                <s id="cmplus">
+                    Yes. CM+MultiSite can be configured to clone a repository
+                    so that it continues to act as a single repository. Options
+                    include cloning only from the main site (i.e. not allowing
+                    updates from the clone) and restricting the set of files
+                    transferred to a cloned site.
                 </s>
                 <s id="accurev">Yes.</s>
                 <s id="allchange">No.</s>
@@ -517,26 +524,33 @@ TODO:
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
                 <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
                 <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
-                <s id="co-op">Repositories are always replicated on local machines.
+                <s id="co-op">
+                    Repositories are always replicated on local machines.
                     There is no central server.
                 </s>
                 <s id="vss">
                     Not directly possible with the included GUI or
                     command line tools; ssarc and ssrestor might be useable
                 </s>
-                <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
+                <s id="cmsynergy">
+                    Yes, as long as you have the (more expensive) Distributed 
+                    package.
+                </s>
                 <s id="clearcase">
-                  Not really applicable for clearcase, but see next point.
+                    Not really applicable for clearcase, but see next point.
                 </s>
                 <s id="ls-sync">
-                  Yes, but is not documented and its based on the dataflow feature of the
-                  LibreSource Synchronizer.
+                    Yes, but is not documented and its based on the dataflow
+                    feature of the LibreSource Synchronizer.
                 </s>
-                <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
-                <s id="git">Yes.  This is very intrinsic feature of Git.</s>
+                <s id="SourceAnywhere">
+                    Not directly possible with the included GUI or command
+                    line tools; Some SQL Server tool might be useable.
+                </s>
+                <s id="git">Yes. Using the "git clone" command.</s>
                 <s id="tfs">
-                  TFS Proxy is available but the replica isn't an
-                  equivalent copy.
+                    TFS Proxy is available but the replica isn't an
+                    equivalent copy.
                 </s>
                 <s id="vault">No.</s>
                 <s id="fortress">No.</s>
@@ -1855,8 +1869,9 @@ TODO:
                 </s>
                 <s id="clearcase">
                     Medium. Available on Windows, and several selected
-                    flavours of UNIX (not including MacOS X, or any
-                    other Linux other than Red Hat).
+                    flavours of UNIX (not including any other Linux 
+                    distribution than some versions of Red Hat Enterprise 
+                    Linux, SUSE Liunx Enterprise Desktop and Ubuntu Linux).
                 </s>
                 <s id="ls-sync">
                     Excellent. Clients and servers work on any Java
@@ -2221,13 +2236,14 @@ TODO:
                 of original.
             </s>
             <s id="clearcase">
-              Proprietary, with floating license supported. License
-              server contacted for each clearcase operation, which
-              obtains a license to be used for the next 30-60
-              mins. Prices are several $k per license plus yearly
-              maintenance fee. Typically 1-3 users per license
-              required, depending on activity. Multisite requires
-              additional licensing.
+                Proprietary, with floating license supported. License
+                server contacted for each clearcase operation, which
+                obtains a license to be used for a next duration (8 hours
+                by default - most people lower it to 2 hours or less,
+                while 30 minutes is the minimum). Prices are several $k per
+                license plus a yearly maintenance fee. Typically 1-3 users per 
+                license required, depending on activity. Multisite requires
+                additional licensing.
             </s>
             <s id="ls-sync">QPL - The Qt Public License (open source)</s>
             <s id="SourceAnywhere">Proprietary, named-user licensing.</s>
