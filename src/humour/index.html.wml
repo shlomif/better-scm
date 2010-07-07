@@ -23,3 +23,34 @@ Fish's "Subversion" Fortune Cookies</a>.
 "Git man, man git"</a>
 </li>
 </ul>
+
+<h3 id="more-advanced-than-CVS"><a href="http://www.shlomifish.org/humour/fortunes/shlomif.html#more-advanced-than-CVS">More Advanced than CVS</a></h3>
+
+<pre class="raw">
+On Sunday 01 April 2007, chromatic wrote:
+&gt; On Saturday 31 March 2007 15:26, Yuval Kogman wrote:
+&gt; &gt; uses_version_control sounds more like lacks_manifest_skip_file which
+&gt; &gt; should deduct kwalitee IMHO.
+&gt;
+&gt; Maybe so, but how else can CPANTS detect that you use the world's most
+
+&gt; advanced version control system: CVS?
+&gt;
+
+Are you kidding?
+
+CVS is not advanced as:
+
+1. Microsoft Visual SourceSafe - the only sane choice for good data integrity
+and portability.
+
+2. tarballs/zip-files and patches. This one excels in convenience, and
+robustness.
+
+CVS is a very advanced version control system, however. I do wish that
+Subversion (which is a VCS that I have to use against my will) was as good as
+it is.
+
+    -- Shlomi Fish answering to chromatic on 01-April-2007
+</pre>
+
