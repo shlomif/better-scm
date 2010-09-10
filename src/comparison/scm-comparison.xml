@@ -30,7 +30,7 @@ TODO:
                 <name>Aegis</name>
                 <url>http://aegis.sourceforge.net/</url>
             </impl>
-            <impl id="AllChange">
+            <impl id="allchange">
                 <name>AllChange</name>
                 <url>http://www.intasoft.net/</url>
             </impl>
@@ -1071,8 +1071,8 @@ TODO:
                     Yes. The functionality is available through both the GUI
                     and the command line interface.
                 </s>
-                <s id="allchange">Yes. Using svn comparison facilities</s>
-                <s id="subversion">Yes. Using svn diff</s>
+                <s id="allchange">Yes. Using the comparison facilities.</s>
+                <s id="subversion">Yes. Using svn diff.</s>
                 <s id="cmplus">
                     Yes. Use Updates | Delta | Delta Update. Or
                     right click a file or directory and do a compare to 
@@ -1083,7 +1083,7 @@ TODO:
                     Changes can be collected in a local buffer before being 
                     committed to the repository.
                 </s>
-                <s id="svk">Yes. Using svk diff</s>
+                <s id="svk">Yes. Using svk diff.</s>
                 <s id="bitkeeper">Yes. Using bk diff.</s>
                 <s id="arch">
                     Yes, using "tla changes".
@@ -1093,7 +1093,7 @@ TODO:
                 <s id="darcs">
                     Yes, using "darcs whatsnew".
                 </s>
-                <s id="aegis">Yes. Using aediff</s>
+                <s id="aegis">Yes. Using aediff.</s>
                 <s id="mercurial">Yes. Using hg diff.</s>
                 <s id="monotone">Yes. In a similar fashion to CVS.</s>
                 <s id="opencm">Yes. Using cm diff</s>
@@ -1109,10 +1109,12 @@ TODO:
                     branches.
                 </s>
                 <s id="co-op">Yes, using built-in visual differ/editor.</s>
-                <s id="vss">Yes, using integrated diff tool.</s>
-                <s id="cmsynergy">Yes, either using integrated diff tool or user-configured
-					external diff tool</s>
-                <s id="clearcase">Yes, "cleartool diff"</s>
+                <s id="vss">Yes, using the integrated diff tool.</s>
+                <s id="cmsynergy">
+                    Yes, either using the integrated diff tool or
+                    a user-configured external diff tool.
+                </s>
+                <s id="clearcase">Yes, "cleartool diff".</s>
                 <s id="ls-sync">
                     Yes, with the Synchronizer Studio (default Java client) or
                     with the standard diff command (diff -r .
