@@ -1156,8 +1156,10 @@ TODO:
                 <s id="superversion">Yes.</s>
                 <s id="surround">Yes.</s>
                 <s id="svk">No. There is no such feature.</s>
-                <s id="bitkeeper">Yes. It is possible to have a per-file
-                    commit message</s>
+                <s id="bitkeeper">
+                    Yes. It is possible to have a per-file
+                    commit message.
+                </s>
                 <s id="arch">
                     No.
                 </s>
@@ -1196,8 +1198,8 @@ TODO:
                 <s id="vss">Since changesets are not supported, yes.</s>
                 <s id="cmsynergy">Yes.</s>
                 <s id="clearcase">
-                  Yes, assuming a comment on the branch is sufficient
-                  for a per-changeset message.
+                    Yes, assuming a comment on the branch is sufficient
+                    for a per-changeset message.
                 </s>
                 <s id="ls-sync">No. Commit messages are per changeset.</s>
                 <s id="SourceAnywhere">No. There is no such feature.</s>
@@ -1229,14 +1231,15 @@ TODO:
                     in the GUI.
                 </s>
                 <s id="allchange">
-                    Excellent. There is a full set of documentation available as
+                    Excellent. There is a full set of documentation available
+                    as both help and PDF.
+                </s>
+                <s id="surround">
+                    Excellent. There is a full set of documentation available
+                    as
                     both help and PDF.
                 </s>
-                 <s id="surround">
-                    Excellent. There is a full set of documentation available as
-                    both help and PDF.
-                </s>
-               <s id="subversion">
+                <s id="subversion">
                     Very good. There is a free online book and some online
                     tutorials and resources. The book is written in
                     DocBook/XML and so is convertible to many different
@@ -1253,7 +1256,6 @@ TODO:
                     normally be accompanied by a 2-day to 4-day course for
                     GUI, Process, Data and Application set customization.
                 </s>
-
                 <s id="superversion">
                     Fairly poor. There are two tutorials, but there is no
                     reference. Installing and getting started with the GUI
@@ -1402,17 +1404,19 @@ TODO:
                     multi-platform environment is straight-forward.
                 </s>
                 <s id="allchange">
-                    Good. Various out-of-the-box configurations supplied including
-                    ITIL support. These may be tailored or used as is. Time to
-                    deploy depends on how much configuring is done
+                    Good. Various out-of-the-box configurations supplied
+                    including ITIL support. These may be tailored or used as
+                    is. Time to deploy depends on how much configuring is
+                    done.
                 </s>
                 <s id="surround">
                     Excellent.  All that is required is to download the
                     binaries for the appropriate platform and run the
-                    installer.  The installation package is self-contained.  No
-                    additional software is needed.  Surround SCM supports Windows, Mac OS X,
-                    Linux, and Solaris platforms and deploying Surround SCM to a
-                    multi-platform environment is straight-forward.
+                    installer.  The installation package is self-contained.
+                    No additional software is needed.  Surround SCM supports
+                    Windows, Mac OS X, Linux, and Solaris platforms and
+                    deploying Surround SCM to a multi-platform environment is
+                    straight-forward.
                 </s>
                 <s id="arch">
                     Excellent. An arch service is nothing but a
@@ -1522,39 +1526,41 @@ TODO:
                     Windows installer.
                 </s>
                 <s id="clearcase">
-                  Poor. Clearcase is very difficult to install in
-                  general. At least, setup for a new site is quite
-                  complex. Installing additional servers (eg
-                  repository servers) is less so.
+                    Poor. Clearcase is very difficult to install in
+                    general. At least, setup for a new site is quite
+                    complex. Installing additional servers (eg
+                    repository servers) is less so.
                 </s>
                 <s id="ls-sync">
-                  Excellent. It is managed by JavaWebStart with links on any
-                  LibreSource repository web page.
-                  (links: create workspace, update, commit, studio...)
+                    Excellent. It is managed by JavaWebStart with links on any
+                    LibreSource repository web page.
+                    (links: create workspace, update, commit, studio...)
                 </s>
-                <s id="SourceAnywhere">Excellent. Dynamsoft SourceAnywhere is extremely easy to install.
-                 It is totally written in C++ from scratch,
-                  which means that you don't need any additional components
-                   and frameworks to support the installation.</s>
-               <s id="git">
-                   Good.  Binary packages are available
-                   for modern platforms.  C compiler and Perl are
-                   required. Requires cygwin on Windows, and has some
-                   UNIXisms.
-               </s>
+                <s id="SourceAnywhere">
+                    Excellent. Dynamsoft SourceAnywhere is extremely easy to
+                    install.  It is totally written in C++ from scratch, which
+                    means that you don't need any additional components and
+                    frameworks to support the installation.
+                </s>
+                <s id="git">
+                    Good.  Binary packages are available
+                    for modern platforms.  C compiler and Perl are
+                    required. Requires cygwin on Windows, and has some
+                    UNIXisms.
+                </s>
                 <s id="tfs">
-                  Installation is quite complex. Needs IIS, MS-SQL Server and
-                  Reporting Services. A own installation guide with
-                  step-by-step guide is available.
-                  Allows separating in data and app tier.
+                    Installation is quite complex. Needs IIS, MS-SQL Server
+                    and Reporting Services. A own installation guide with
+                    step-by-step guide is available.  Allows separating in
+                    data and app tier.
                 </s>
                 <s id="vault">
-                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.
-                    Install takes minutes.
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or
+                    higher.  Install takes minutes.
                 </s>
                 <s id="fortress">
-                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or higher.
-                    Install takes minutes.
+                    Easy. Prerequisites are IIS 5 or higher, SQL 2000 or
+                    higher.  Install takes minutes.
                 </s>
            </compare>
         </section>
@@ -1666,18 +1672,23 @@ TODO:
                 	but the basics.
                 </s>
                 <s id="clearcase">
-                  Excellent. All tools are available through the
-                  command-line. Not very compatible with CVS though.
+                    Excellent. All tools are available through the
+                    command-line. Not very compatible with CVS though.
                 </s>
                 <s id="ls-sync">
-                  Basic commands available (commit/update), but it's really simple to
-                  use the GUI. Ant task are also available.
+                    Basic commands available (commit/update), but it's really
+                    simple to use the GUI. Ant task are also available.
                 </s>
-                <s id="SourceAnywhere">Very extensive but not compatible with CVS.</s>
-                <s id="git">Command set is very feature-rich, and not compatible with CVS.</s>
+                <s id="SourceAnywhere">
+                    Very extensive but not compatible with CVS.
+                </s>
+                <s id="git">
+                    Command set is very feature-rich, and not compatible with 
+                    CVS.
+                </s>
                 <s id="tfs">
-                  The command set allows more operations than the GUI
-                  but isn't compatible with CVS.
+                    The command set allows more operations than the GUI
+                    but isn't compatible with CVS.    
                 </s>
                 <s id="vault">
                     Extensive command set via command line and GUI.  Not
@@ -1693,7 +1704,8 @@ TODO:
             <title>Networking Support</title>
             <expl>
                 How good is the networking integration of the system?
-                How compliant is it with existing protocols and infra-structure?
+                How compliant is it with existing protocols and
+                infra-structure?
             </expl>
             <compare>
                 <s id="cvs">
