@@ -7,38 +7,3 @@ Near-Term:
 
 * Link to Eric Sink's articles about version control systems (git, etc.)
 
-Near-Term Done:
----------------
-
-* Add a note to the Aegis Childhood diseases document saying it is
-deprecated.
-
-* Link to Gabor Szabo's Subversion Compared page (see his use.perl.org 
-journal)
-
-* Split Bazaar/Bazaar-NG off the Arch page. (see the thread in the mailing
-list archive)
-
-* Add a new news item about the ClearCase, AccuRev and Mercurial 
-additions.
-
--------------------------------------------------------------------------
-
-* Make sure the files that are added to the buckets of src/ are present
-in the Subversion repository.
-
-* Comparison: generate a list of systems under comparison/index.html from
-the XML.
-
-* Comparison: fix the XSL output not to put CMSynergy at the end.
-
-* Create a page for the logo.
-
-* Make sure that nav links and the such contain the title of the navigation
-page.
-
-Long-Term:
-----------
-
-* Submit to Open Source Web Designs.
-
