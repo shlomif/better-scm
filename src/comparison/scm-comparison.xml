@@ -9,7 +9,12 @@ TODO:
 * Integration with build/testing management.
 * Check-In policies.
 * Add Speed (?)
+* Add tracking of executable flags and other file-system permissions.
+* Add interrupted checkouts/clones.
+    - git won't let you resume a clone if interrupted - it even deletes
+    the clone directory.
 -->
+
 <comparison>
     <meta>
         <implementations>
