@@ -1814,18 +1814,20 @@ TODO:
                 </s>
                 <s id="cmsynergy">Good (single TCP/IP socket)</s>
                 <s id="clearcase">
-                  Poor. Uses an *extremely* chatty RPC protocol for
-                  most clearcase operations, plus NFS or SMB for
-                  accessing the files themselves. Typically servers
-                  should be deployed locally (ie on the same LAN) as
-                  the client workstations for acceptable performance.
+                    Poor. Uses an *extremely* chatty RPC protocol for
+                    most clearcase operations, plus NFS or SMB for
+                    accessing the files themselves. Typically servers
+                    should be deployed locally (ie on the same LAN) as
+                    the client workstations for acceptable performance.
                 </s>
                 <s id="ls-sync">
-                  Good. Use of HTTP to get through firwalls.
+                    Good. Use of HTTP to get through firwalls.
                 </s>
                 <s id="SourceAnywhere">Good. (single TCP/IP socket)</s>
-                <s id="git">Excellent.  Can use native Git protocol,
-                but works over rsync, ssh, HTTP and HTTPS also.</s>
+                <s id="git">
+                    Excellent.  Can use the native Git protocol,
+                    but also works over rsync, ssh, HTTP and HTTPS.
+                </s>
                 <s id="tfs">Good. Use of HTTP(S).</s>
                 <s id="vault">Good.  HTTP and HTTPS only.</s>
                 <s id="fortress">Good.  HTTP and HTTPS only.</s>
@@ -1862,12 +1864,13 @@ TODO:
                     platforms.
                 </s>
                 <s id="cmplus">
-                    Good.  Clients and Servers work on Unix,
-                    Linux, and Windows.  MAC OS X port pending.  Moving server
-                    from one platform to another is a copy operation only. Can
-                    have different platforms for different servers in a MultiSite
-                    configuration. Easily configurable Web client also supported.
-                    No CR/LF issues. Scripts are all portable as well.
+                    Good.  Clients and Servers work on Unix, Linux, and
+                    Windows.  MAC OS X port pending.  Moving server from one
+                    platform to another is a copy operation only. Can have
+                    different platforms for different servers in a MultiSite
+                    configuration. Easily configurable Web client also
+                    supported.  No CR/LF issues. Scripts are all portable as
+                    well.
                 </s>
                 <s id="superversion">
                     Excellent. Clients and servers work on any Java
@@ -2029,10 +2032,11 @@ TODO:
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. Same as Subversion.</s>
                 <s id="arch">
-                    There's <a href="http://arch.bluegate.org/viewarch.html">ViewARCH</a>, and
-                    <a href="http://migo.sixbit.org/software/archzoom/">ArchZoom</a>
-                    which are
-                    works in progress.
+                    There's <a
+                        href="http://arch.bluegate.org/viewarch.html">ViewARCH</a>,
+                    and <a
+                        href="http://migo.sixbit.org/software/archzoom/">ArchZoom</a>
+                    which are works in progress.
                 </s>
                 <s id="surround">Yes, using WebDAV.</s>
                 <s id="bazaar">
@@ -2071,8 +2075,9 @@ TODO:
                   Yes. Web views are supported.
                 </s>
                 <s id="ls-sync">
-                  Yes, without diff features but with a better awareness support.
-                  (allow to know at any time on each version each one is working on)
+                  Yes, without diff features but with a better awareness
+                  support.  (allow to know at any time on each version each
+                  one is working on)
                 </s>
                 <s id="SourceAnywhere">Currently not.</s>
                 <s id="git">
@@ -2091,7 +2096,8 @@ TODO:
                 the system? How many GUI clients are present for it?
             </expl>
             <compare>
-                <s id="cvs">Very good. There are many available GUIs:
+                <s id="cvs">
+                    Very good. There are many available GUIs:
                     WinCVS, Cervisia (for KDE),
                     TortoiseCVS (Windows Explorer plug-in).
                 </s>
@@ -2118,13 +2124,13 @@ TODO:
                     A complete native GUI is available for all platforms.
                 </s>
                 <s id="cmplus">
-                    Excellent.  Windows and Unix/Linux GUI as well
-                    as web GUI.  Extensively configurable via simple menu files,
-                    browser files, etc.  Can customize the set of to-do lists by
-                    user/role, same for menus, pop-up menus, default visible tabbed
-                    reports, etc.  GUI also used for all admin and for process
-                    and data schema customization.  Also plug-in for Visual Studio,
-                    Eclipse, etc. and File Browser (Windows).
+                    Excellent.  Windows and Unix/Linux GUI as well as web GUI.
+                    Extensively configurable via simple menu files, browser
+                    files, etc.  Can customize the set of to-do lists by
+                    user/role, same for menus, pop-up menus, default visible
+                    tabbed reports, etc.  GUI also used for all admin and for
+                    process and data schema customization.  Also plug-in for
+                    Visual Studio, Eclipse, etc. and File Browser (Windows).
                 </s>
                 <s id="superversion">
                     A GUI is integrated.
@@ -2140,16 +2146,15 @@ TODO:
                     and possibly others under development.
                 </s>
                 <s id="bazaar">
-                    There are several graphical frontends in
-                    development,
-                    see <a href="http://bazaar-vcs.org/BzrPlugins">the Bazaar Plugins page</a>
-                    and <a href="http://bazaar-vcs.org/3rdPartyTools">the Third-party Tools page</a>.
-                    Notable
-                    are <a href="http://bazaar-vcs.org/QBzr">QBzr
-                    (Qt)</a> and
-                    <a href="http://bazaar-vcs.org/bzr-gtk">bzr-gtk (GTK+)</a>, which
-                    can be considered beta quality.  Work is also
-                    being done on integrating Bazaar with Windows
+                    There are several graphical frontends in development, see
+                    <a href="http://bazaar-vcs.org/BzrPlugins">the Bazaar
+                        Plugins page</a> and <a
+                        href="http://bazaar-vcs.org/3rdPartyTools">the
+                        Third-party Tools page</a>.  Notable are <a
+                        href="http://bazaar-vcs.org/QBzr">QBzr (Qt)</a> and <a
+                        href="http://bazaar-vcs.org/bzr-gtk">bzr-gtk
+                        (GTK+)</a>, which can be considered beta quality.
+                    Work is also being done on integrating Bazaar with Windows
                     Explorer, Eclipse, Nautilus, and Meld.
                 </s>
                 <s id="darcs">
@@ -2170,8 +2175,8 @@ TODO:
                 </s>
                 <s id="monotone">
                     Yes, there is 
-                    <a href="http://www.coosoft.plus.com/software.html">mtn-browse</a> (which 
-                    should be considered the "best of breed"),
+                    <a href="http://www.coosoft.plus.com/software.html">mtn-browse</a>
+                    (which should be considered the "best of breed"),
                     <a href="http://oandrieu.nerim.net/monotone-viz/">monotone-viz</a>
                     and <a href="http://guitone.thomaskeller.biz/">guitone</a>
                     (whose development was abandoned). There's
@@ -2263,12 +2268,14 @@ TODO:
             <s id="subversion">
                 Apache/BSD-style license. (open source)
             </s>
-            <s id="cmplus"> Network licenses and user licenses. No minimum
-                checkout time, and automatic license checkin on idle. License
-                server included in product. Professional and Enterprise editions.
-                Enterprise includes customizations, additional applications, and
-                full multiple site capability.  One Server license per site. Total
-                license cost per user typically less than $1000 + 18% annual mtce.
+            <s id="cmplus">
+                Network licenses and user licenses. No minimum checkout time,
+                and automatic license checkin on idle. License server included
+                in product. Professional and Enterprise editions.  Enterprise
+                includes customizations, additional applications, and full
+                multiple site capability.  One Server license per site. Total
+                license cost per user typically less than $1000 + 18% annual
+                mtce.
             </s>
             <s id="superversion">
                 GNU GPL (open source)
