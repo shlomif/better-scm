@@ -220,12 +220,20 @@ TODO:
                 </s>
                 <s id="allchange">Yes. Renames are supported.</s>
                 <s id="subversion">Yes. Renames are supported.</s>
-                <s id="cmplus">Yes. Both moves and renames are supported, while maintaining history.</s>
+                <s id="cmplus">
+                    Yes. Both moves and renames are supported, while
+                    maintaining history.
+                </s>
                 <s id="superversion">No. Renames are not supported.</s>
-                <s id="surround">Renames are supported, moves can be accomplished similiar to SourceSafe.</s>
+                <s id="surround">
+                    Renames are supported, moves can be accomplished similiar
+                    to SourceSafe.
+                </s>
                 <s id="svk">Yes. Renames are supported.</s>
                 <s id="arch">Yes. Renames are supported.</s>
-                <s id="bazaar">Yes. Renames are supported for files and directories.</s>
+                <s id="bazaar">
+                    Yes. Renames are supported for files and directories.
+                </s>
                 <s id="darcs">Yes. Renames are supported.</s>
                 <s id="bitkeeper">Yes. Renames are supported.</s>
                 <s id="aegis">Yes. Renames are supported.</s>
@@ -264,10 +272,13 @@ TODO:
                 </s>
                 <s id="ls-sync">
                     Yes. Renames and move are supported but the working copy
-                    needs to be up-to-date before doing a rename/move operation.
-                    This operation will be committed directly.
+                    needs to be up-to-date before doing a rename/move
+                    operation.  This operation will be committed directly.
                 </s>
-                <s id="SourceAnywhere">Yes. Both moves and renames are supported, while maintaining history.</s>
+                <s id="SourceAnywhere">
+                    Yes. Both moves and renames are supported, while
+                    maintaining history.
+                </s>
                 <s id="git">
                     Renames are supported for most practical
                     purposes.  Git even detects renames when a file has been
@@ -281,8 +292,8 @@ TODO:
                   while maintaining history.
                 </s>
                 <s id="vault">
-                    Yes. Both moves and renames are supported, while maintaining
-                    history.
+                    Yes. Both moves and renames are supported, while
+                    maintaining history.
                 </s>
                 <s id="fortress">
                     Yes. Both moves and renames are supported,
@@ -308,7 +319,7 @@ TODO:
                 </s>
                 <s id="allchange">
                     Partial. Move is implemented as copy+delete/obsolete, full
-                    revision history is maintained across copying, so changing 
+                    revision history is maintained across copying, so changing
                     a file in the copied directory does the right thing.
                 </s>
                 <s id="subversion">
@@ -414,12 +425,15 @@ TODO:
                     retained.
                 </s>
                 <s id="allchange">Yes. Copies are supported.</s>
-                <s id="subversion">Yes. And it's a very cheap operation (O(1)) that
+                <s id="subversion">
+                    Yes. And it's a very cheap operation (O(1)) that
                     is also utilized for branching.
                 </s>
-                <s id="cmplus">Yes. An inexpensive operation that can be used for
-                    sharing files in multiple places.  On deploy, you have the
-                    option of deploying only one of the shared files or all of them.
+                <s id="cmplus">
+                    Yes. An inexpensive operation that can be used for
+                    sharing files in multiple places.  On deploy, you have
+                    the option of deploying only one of the shared files or
+                    all of them.
                 </s>
                 <s id="superversion">No. Copies are not supported.</s>
                 <s id="surround">No. Copies are not supported.</s>
@@ -452,7 +466,8 @@ TODO:
                 </s>
                 <s id="co-op">Copying doesn't retain history, moving does.</s>
                 <s id="vss">Yes. Copies are supported up to a point.</s>
-                <s id="cmsynergy">Yes, and it's a very cheap operation (update the target
+                <s id="cmsynergy">
+                    Yes, and it's a very cheap operation (update the target
 					directory to include the new file/directory).
 				</s>
                 <s id="clearcase">
@@ -460,7 +475,9 @@ TODO:
                   limitations in Windows environments)
                 </s>
                 <s id="ls-sync">No, copies will start their own history.</s>
-                <s id="SourceAnywhere">Copying doesn't retain history, moving does.</s>
+                <s id="SourceAnywhere">
+                    Copying doesn't retain history, moving does.
+                </s>
                 <s id="git">No.  Copies are not supported.</s>
                 <s id="tfs">
                   Yes - you can create a branch. But the GUI has no option to
@@ -528,7 +545,10 @@ TODO:
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
                 <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
-                <s id="vesta">Yes.  Replication is a fundamental part of the design.</s>
+                <s id="vesta">
+                    Yes.  Replication is a fundamental part
+                    of the design.
+                </s>
                 <s id="co-op">
                     Repositories are always replicated on local machines.
                     There is no central server.
@@ -576,14 +596,16 @@ TODO:
                     the master server.
                 </s>
                 <s id="allchange">No.</s>
-                <s id="subversion">Yes, using either Chia-Ling Kao's SVN::Mirror
+                <s id="subversion">
+                    Yes, using either Chia-Ling Kao's SVN::Mirror
                     script or the svn-push utility by Shlomi Fish.
                 </s>
                 <s id="cmplus">
-                    Yes.  In CM+MultiSite, changes made at the slave are,
-                    by default, propagated to the Main(master) library, as well as
-                    to all other Clones (slaves).  You may also propagate changes
-                    between unrelated repositories containing some of the same source.
+                    Yes.  In CM+MultiSite, changes made at the slave are, by
+                    default, propagated to the Main(master) library, as well
+                    as to all other Clones (slaves).  You may also propagate
+                    changes between unrelated repositories containing some of
+                    the same source.
                 </s>
                 <s id="superversion">No.</s>
                 <s id="surround">Yes.</s>
@@ -601,18 +623,27 @@ TODO:
                 <s id="vesta">
                     Yes.
                 </s>
-                <s id="co-op">It's a peer-to-peer system,
-                    which keeps all replicas of the repository in sync.
+                <s id="co-op">
+                    It's a peer-to-peer system, which keeps all replicas of
+                    the repository in sync.
                 </s>
                 <s id="vss">
                     Not directly possible with the included GUI or
                     command line tools; ssarc and ssrestor might be useable
                 </s>
-                <s id="cmsynergy">Yes, as long as you have the (more expensive) Distributed package.</s>
+                <s id="cmsynergy">
+                    Yes, as long as you have the (more expensive) Distributed
+                    package.
+                </s>
                 <s id="clearcase">Yes, using Clearcase Multisite.</s>
                 <s id="ls-sync">Yes, it's what we call a dataflow.</s>
-                <s id="SourceAnywhere">Not directly possible with the included GUI or command line tools; Some SQL Server tool might be useable.</s>
-                <s id="git">Yes.  (The Linux kernel development process uses this extremely often).</s>
+                <s id="SourceAnywhere">
+                    Not directly possible with the included GUI or command
+                    line tools; Some SQL Server tool might be useable.
+                </s>
+                <s id="git">
+                    Yes, it is possible.
+                </s>
                 <s id="tfs">No.</s>
                 <s id="vault">No</s>
                 <s id="fortress">No</s>
@@ -662,7 +693,8 @@ TODO:
                     permissions for various directories of the repository.
                 </s>
                 <s id="surround">
-                    Yes. Permissions can be defined at all levels of the system.
+                    Yes. Permissions can be defined at all levels of the
+                    system.
                 </s>
                 <s id="cmplus">
                     Yes.  Permissions are defined by data, primarily,
@@ -719,7 +751,9 @@ TODO:
                     this makes "Repository Permissions" a hindrance to
                     accidental damage but cannot prevent intentional damage.
                 </s>
-                <s id="cmsynergy">No, though a single server can serve many repositories.</s>
+                <s id="cmsynergy">
+                    No, though a single server can serve many repositories.
+                </s>
                 <s id="clearcase">
                   Yes, a unix-like permissions model is used, which maps
                   onto Windows domain-based authentication in
@@ -768,14 +802,13 @@ TODO:
                     well as labels are fully supported.
                 </s>
                 <s id="cmplus">
-                    Yes. Change packages are known as updates.  By
-                    default, an update is required to make any change.  The
-                    update may be checked-in, differenced, promoted, retrieved,
-                    propagated, yanked (i.e. removed from history), etc. each in
-                    a single operation.  Baseline alignment is performed
-                    based on the status (i.e. promotion level) of the update.
-                    Updates also record changes to directory structure: move,
-                    add, remove.
+                    Yes. Change packages are known as updates.  By default, an
+                    update is required to make any change.  The update may be
+                    checked-in, differenced, promoted, retrieved, propagated,
+                    yanked (i.e. removed from history), etc. each in a single
+                    operation.  Baseline alignment is performed based on the
+                    status (i.e. promotion level) of the update.  Updates also
+                    record changes to directory structure: move, add, remove.
                 </s>
                 <s id="accurev">
                     Yes, AccuRev provides robust functionality for change
@@ -784,10 +817,11 @@ TODO:
                     stream to stream by change package.
                 </s>
                 <s id="allchange">
-                    Partial. Changes may be associated with Change Requests and promoted
-                    /baselined/released as a set.
+                    Partial. Changes may be associated with Change Requests
+                    and promoted /baselined/released as a set.
                 </s>
-                <s id="superversion">Partial support. Changes are grouped into changesets,
+                <s id="superversion">
+                    Partial support. Changes are grouped into changesets,
                     but cannot be cancelled invididually yet.
                 </s>
                 <s id="svk">Same as subversion.
@@ -829,22 +863,31 @@ TODO:
                 </s>
                 <s id="co-op">Yes. Changesets are the default.</s>
                 <s id="vss">No.  Changes are file-specific.</s>
-                <s id="cmsynergy">Yes.  Changesets (or tasks) are fundamental
-                	to the way Synergy works.</s>
+                <s id="cmsynergy">
+                    Yes.  Changesets (or tasks) are fundamental
+                    to the way Synergy works.
+                </s>
                 <s id="clearcase">
-                  Not supported in this way. Extensive branching
-                  support gives similar benefits. (eg each changeset
-                  can be given a branch). Also optional UCM feature
-                  gives something like this (each changeset is a
-                  "stream").
+                    Not supported in this way. Extensive branching
+                    support gives similar benefits. (eg each changeset
+                    can be given a branch). Also optional UCM feature
+                    gives something like this (each changeset is a
+                    "stream").
                 </s>
                 <s id="ls-sync">
-                  Partial support. There are implicit changeset that are generated on
-                  each commit.
+                    Partial support. There are implicit changeset that are
+                    generated on each commit.
                 </s>
-                <s id="SourceAnywhere">Not exactly. SourceAnywhere uses a related concept of configurations instead, which some has similar properties.</s>
-                <s id="git">Yes, Changesets are supported, and there's some flexibility in creating them.</s>
-                <s id="tfs">Yes. Changesets are only possibility.</s>
+                <s id="SourceAnywhere">
+                    Not exactly. SourceAnywhere uses a related concept of
+                    configurations instead, which some has similar
+                    properties.
+                </s>
+                <s id="git">
+                    Yes, Changesets are supported, and there's some
+                    flexibility in creating them.
+                </s>
+                <s id="tfs">Yes. Changesets are the only possibility.</s>
                 <s id="vault">Yes. Changesets are supported.</s>
                 <s id="fortress">Yes. Changesets are supported.</s>
            </compare>
@@ -853,8 +896,9 @@ TODO:
             <title>Tracking Line-wise File History</title>
             <expl>
                 Does the version control system have an option to track the
-                history of the file line-by-line? I.e., can it show for each line
-                at which revision it was most recently changed, and by whom?
+                history of the file line-by-line? I.e., can it show for each
+                line at which revision it was most recently changed, and by
+                whom?
             </expl>
             <compare>
                 <s id="cvs">Yes. cvs annotate</s>
@@ -866,8 +910,10 @@ TODO:
                 <s id="superversion">No.</s>
                 <s id="svk">Yes. (svk blame)</s>
                 <s id="bitkeeper">Yes. (bk annotate)</s>
-                <s id="arch">Not in the command line client, but ViewARCH,
-                a web-interface for Arch, has it.</s>
+                <s id="arch">
+                    Not in the command line client, but ViewARCH,
+                    a web-interface for Arch, has it.
+                </s>
                 <s id="bazaar">Yes. (bzr annotate).</s>
                 <s id="darcs">Yes. (darcs annotate)</s>
                 <s id="mercurial">Yes. (hg annotate)</s>
@@ -875,36 +921,41 @@ TODO:
                 <s id="aegis">Yes. aeannotate</s>
                 <s id="opencm">Unknown. Probably not.</s>
                 <s id="perforce">Yes, an annotation feature is present.</s>
-                <s id="purecm">Yes, annotation is available through the GUI.</s>
+                <s id="purecm">
+                    Yes, annotation is available through the GUI.
+                </s>
                 <s id="vesta">
                     No, but it would be easy to implement a tool that
                     did this, as the Vesta repository provides direct
                     filesystem access to all versions.
                 </s>
-                <s id="co-op">Not directly, but it's possible to compare
+                <s id="co-op">
+                    Not directly, but it's possible to compare
                     any two versions using a visual differ.
                 </s>
-                <s id="vss">Not directly, but it's possible to compare
+                <s id="vss">
+                    Not directly, but it's possible to compare
                     any two versions using a visual differ.
                 </s>
-                <s id="cmsynergy">Probably, if you're a sufficiently proficient hacker with
+                <s id="cmsynergy">
+                    Probably, if you're a sufficiently proficient hacker with
 					their scripting language.
                 </s>
                 <s id="clearcase">Yes, "cleartool annotate"</s>
                 <s id="ls-sync">
-                    Yes, locally without any server connection with the standard graphical
-                    Java client.
+                    Yes, locally without any server connection with the
+                    standard graphical Java client.
                 </s>
                 <s id="SourceAnywhere">Yes. (SAW annotate)</s>
                 <s id="git">Yes. (git blame).</s>
                 <s id="tfs">Yes. (tf annotate).</s>
                 <s id="vault">
-                    Yes. Both standard Blame and Line History (Blame on selected
-                    sections of a file) are supported.
+                    Yes. Both standard Blame and Line History (Blame on
+                    selected sections of a file) are supported.
                 </s>
                 <s id="fortress">
-                    Yes. Both standard Blame and Line History (Blame on selected
-                    sections of a file) are supported.
+                    Yes. Both standard Blame and Line History (Blame on
+                    selected sections of a file) are supported.
                 </s>
            </compare>
         </section>
@@ -990,12 +1041,19 @@ TODO:
                 </s>
                 <s id="clearcase">Yes, using snapshot view load rules.</s>
                 <s id="ls-sync">
-                   It is possible to commit only a certain directory. However, one must
-                   check out the entire repository as a whole.
+                    It is possible to commit only a certain directory.
+                    However, one must check out the entire repository as a
+                    whole.
                 </s>
-                <s id="SourceAnywhere">Yes. SourceAnywhere can define the user access right to each project
-                 and users can be restricted to work only on the projects they have check out/in right.</s>
-             <s id="git">No.  However, commits could be restricted somewhat, see the "Repository Permissions".</s>
+                <s id="SourceAnywhere">
+                    Yes. SourceAnywhere can define the user access right to
+                    each project and users can be restricted to work only on
+                    the projects they have check out/in right.
+                </s>
+                <s id="git">
+                    No.  However, commits could be restricted somewhat, see 
+                    the "Repository Permissions" item.
+                </s>
                 <s id="tfs">Yes.</s>
                 <s id="vault">Yes.</s>
                 <s id="fortress">Yes.</s>
