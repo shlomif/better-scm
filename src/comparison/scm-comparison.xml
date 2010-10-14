@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type="text/xml" href="compare-ml.xsl"?>
 <!DOCTYPE comparison SYSTEM "comparison.dtd">
 <!--
@@ -74,6 +74,10 @@ TODO:
             <impl id="fortress">
                 <name>Fortress</name>
                 <url>http://sourcegear.com/fortress/</url>
+            </impl>
+            <impl id="fossil">
+                <name>Fossil</name>
+                <url>http://www.fossil-scm.org/</url>
             </impl>
             <impl id="git">
                 <name>Git</name>
@@ -198,7 +202,7 @@ TODO:
                 <s id="tfs">Yes. Commits are atomic.</s>
                 <s id="vault">Yes. Commits are atomic.</s>
                 <s id="fortress">Yes. Commits are atomic.</s>
-
+                <s id="fossil">Yes. Commits are atomic.</s>
             </compare>
         </section>
         <section id="move">
@@ -299,7 +303,10 @@ TODO:
                     Yes. Both moves and renames are supported,
                     while maintaining history.
                 </s>
-           </compare>
+                <s id="fossil">
+                    Moves and renames are supported. History is retained.
+                </s>
+            </compare>
         </section>
         <section id="intelligent_renames">
             <title>Intelligent Merging after Moves or Renames</title>
@@ -407,6 +414,10 @@ TODO:
                 </s>
                 <s id="vault">Yes, intelligent renames are supported.</s>
                 <s id="fortress">Yes, intelligent renames are supported.</s>
+                <s id="fossil">
+                    No, renames are not intelligent (feature is on the 
+                    TODO list).
+                </s>
            </compare>
         </section>
         <section id="copy">
@@ -494,6 +505,11 @@ TODO:
                     No, copies are supported, but will start their own
                     history.
                 </s>
+                <s id="fossil">
+                    Copying is not directly supported. Duplicating
+                    the file and adding it to the tracking would not copy
+                    the original file's history.
+                </s>
            </compare>
         </section>
         <section id="repos_clone">
@@ -579,6 +595,14 @@ TODO:
                 </s>
                 <s id="vault">No.</s>
                 <s id="fortress">No.</s>
+                <s id="fossil">
+                    Yes. Entire repository can be downloaded without special
+                    permission (the copy will not track upstream changes).
+                    More traditional
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/faq.wiki#q6">cloning</a>
+                    requires authorization (this is typically provided to
+                    'anonymous' users).
+                </s>
             </compare>
         </section>
         <section id="push">
@@ -647,6 +671,7 @@ TODO:
                 <s id="tfs">No.</s>
                 <s id="vault">No</s>
                 <s id="fortress">No</s>
+                <s id="fossil">Yes.</s>
             </compare>
         </section>
         <section id="permissions">
@@ -783,6 +808,9 @@ TODO:
                     Yes. Revisions can be set, and overridden, and the
                     repository, project and folder level.
                 </s>
+                <s id="fossil">
+                    Permissions are set for the whole repository.
+                </s>
             </compare>
         </section>
         <section id="changesets">
@@ -890,6 +918,11 @@ TODO:
                 <s id="tfs">Yes. Changesets are the only possibility.</s>
                 <s id="vault">Yes. Changesets are supported.</s>
                 <s id="fortress">Yes. Changesets are supported.</s>
+                <s id="fossil">
+                    Not directly. Changeset information is available in
+                    "manifest" files but no commands are provided to
+                    automate changeset operations.
+                </s>
            </compare>
         </section>
         <section id="annotate">
@@ -956,6 +989,12 @@ TODO:
                 <s id="fortress">
                     Yes. Both standard Blame and Line History (Blame on
                     selected sections of a file) are supported.
+                </s>
+                <s id="fossil">
+                    Yes. This capability is provided with the
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/reference.wiki">'fossil annotate'</a>
+                    command as well as through the
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in web interface</a>.
                 </s>
            </compare>
         </section>
@@ -1057,6 +1096,11 @@ TODO:
                 <s id="tfs">Yes.</s>
                 <s id="vault">Yes.</s>
                 <s id="fortress">Yes.</s>
+                <s id="fossil">
+                    No. Checkouts are of the entire repository, however,
+                    commits can be limited to any subset of files (e.g., just
+                    the contents of a subdirectory).
+                </s>
            </compare>
         </section>
         <section id="tracking_uncommited_changes">
@@ -1132,6 +1176,11 @@ TODO:
                 </s>
                 <s id="vault">Yes. Using DiffMerge.</s>
                 <s id="fortress">Yes. Using DiffMerge.</s>
+                <s id="fossil">
+                    Yes. Using
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/reference.wiki">'fossil diff' or 'fossil gdiff'</a>.
+                    Tracking status of all files is also available.
+                </s>
             </compare>
         </section>
         <section id="per_file_commit_messages">
@@ -1207,6 +1256,7 @@ TODO:
                 <s id="tfs">No. Commit messages are per changeset.</s>
                 <s id="vault">No. Commit messages are per-changeset.</s>
                 <s id="fortress">No. Commit messages are per-changeset.</s>
+                <s id="fossil">No. Commit messages are per check in.</s>
            </compare>
         </section>
     </section>
@@ -1380,6 +1430,18 @@ TODO:
                 <s id="fortress">
                     Good. All features are documented, plus a getting-started
                     guide.
+                </s>
+                <s id="fossil">
+                    Fossil is well documented. Manpage-type help is available
+                    for all commands using 'fossil help'. Fossil also includes a
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in web interface</a>
+                    permitting easy visual exploration and administration.
+                    There are also
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/quickstart.wiki">tutorials</a>,
+                    <a href="http://www.fossil-scm.org/schimpf-book/index">user guides</a>,
+                    and
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/index.wiki">a wiki</a>
+                    available on the Web.
                 </s>
             </compare>
         </section>
@@ -1562,6 +1624,13 @@ TODO:
                     Easy. Prerequisites are IIS 5 or higher, SQL 2000 or
                     higher.  Install takes minutes.
                 </s>
+                <s id="fossil">
+                    Fossil is a single, stand-alone executable file that
+                    can be installed anywhere in the user's execution path.
+                    Precompiled binaries are available for GNU/Linux, Windows,
+                    and Mac OS X. Fossil only has the ZLIB compression tools
+                    library as its only dependency.
+                </s>
            </compare>
         </section>
         <section id="command_set">
@@ -1698,6 +1767,10 @@ TODO:
                     Extensive command set via command line and GUI.  Not
                     compatible with CVS.
                 </s>
+                <s id="fossil">
+                    Basic command set with most core commands identical
+                    to CVS (though the option switches are often different).
+                </s>
            </compare>
         </section>
         <section id="networking">
@@ -1831,6 +1904,17 @@ TODO:
                 <s id="tfs">Good. Use of HTTP(S).</s>
                 <s id="vault">Good.  HTTP and HTTPS only.</s>
                 <s id="fortress">Good.  HTTP and HTTPS only.</s>
+                <s id="fossil">
+                    Excellent. Fossil integrates both server and client into
+                    a single application. A
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in webserver</a>
+                    permits graphical administration and navigation over 
+                    HTTP and HTTPS; as well as providing a
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/bugtheory.wiki">bug ticketing system</a>
+                    and a
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/wikitheory.wiki">simple wiki</a>
+                    for documentation.
+                </s>
             </compare>
         </section>
         <section id="portability">
@@ -1985,6 +2069,12 @@ TODO:
                     Eclipse plugin is cross-platform, as is the command-line
                     client.
                 </s>
+                <s id="fossil">
+                    Fossil integrates both server and client into
+                    a single application which can run on any POSIX-like
+                    operating system (e.g., GNU/Linux, Mac OS X, MS Windows,
+                    et al).
+                </s>
             </compare>
         </section>
     </section>
@@ -2087,6 +2177,12 @@ TODO:
                 <s id="tfs">Web Access is available as download for free.</s>
                 <s id="vault">Yes.</s>
                 <s id="fortress">Yes.</s>
+                <s id="fossil">
+                    Yes. Fossil also includes a web-based
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/bugtheory.wiki">bug ticketing system</a>
+                    and
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/wikitheory.wiki">built-in wiki</a>.
+                </s>
             </compare>
         </section>
         <section id="availability_of_guis">
@@ -2236,6 +2332,9 @@ TODO:
                     Standalone Windows GUI, Visual Studio integration, and
                     cross-platform Eclipse integration.
                 </s>
+                <s id="fossil">
+                    None except the built-in web-interface.
+                </s>
            </compare>
         </section>
     </section>
@@ -2337,6 +2436,10 @@ TODO:
             </s>
             <s id="fortress">
                 Commercial, per-user with no separate server license.
+            </s>
+            <s id="fossil">
+                <a href="http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29">Simplified BSD license</a>,
+                also known as the BSD 2-clause license (open source).
             </s>
         </compare>
     </section>
