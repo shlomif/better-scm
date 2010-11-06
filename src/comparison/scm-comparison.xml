@@ -114,7 +114,7 @@ TODO:
             </impl>
             <impl id="subversion">
                 <name>Subversion</name>
-                <url>http://subversion.tigris.org/</url>
+                <url>http://subversion.apache.org/</url>
             </impl>
             <impl id="superversion">
                 <name>Superversion</name>
