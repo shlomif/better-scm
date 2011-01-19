@@ -414,10 +414,7 @@ TODO:
                 </s>
                 <s id="vault">Yes, intelligent renames are supported.</s>
                 <s id="fortress">Yes, intelligent renames are supported.</s>
-                <s id="fossil">
-                    No, renames are not intelligent (feature is on the 
-                    TODO list).
-                </s>
+                <s id="fossil">Yes, intelligent renames are supported.</s>
            </compare>
         </section>
         <section id="copy">
