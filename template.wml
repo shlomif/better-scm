@@ -15,7 +15,7 @@
 #include "share-this.wml"
 
 <latemp_lang "en-US" />
-<latemp_encoding "iso-8859-1" />
+<latemp_encoding "utf-8" />
 <latemp_author "Shlomi Fish" />
 <latemp_common_keywords "Better SCM, SCM, version control, source control, revision control, source configuration management, CVS, Subversion, BitKeeper, open source, Shlomi Fish" />
 <latemp_meta_desc "Better SCM: A Site for Version Control and Source Configuration Management Information and Advocacy" />
