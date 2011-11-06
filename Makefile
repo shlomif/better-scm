@@ -53,4 +53,4 @@ upload_beta: all
 	
 upload_stable: all
 	cd $(D) && \
-	$(RSYNC) -a * $(UPLOAD_BASE)/
+	$(RSYNC) * $(UPLOAD_BASE)/
