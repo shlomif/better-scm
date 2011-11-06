@@ -50,8 +50,8 @@ conventions in the rest of the XML file.
 
 <li>
 <p>
-Run the command "svn diff" on the working copy and
-<a href="mailto:shlomif@iglu.org.il">send me its output</a>. By sending it,
+Run the command "hg diff" on the working copy and
+<a href="mailto:shlomif@shlomifish.org">send me its output</a>. By sending it,
 you agree to license your modifications under the <a href="http://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain</a>. If your
 patch is bad in some regards it will be sent back for corrections.
 </p>
