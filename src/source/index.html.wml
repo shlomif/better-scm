@@ -4,30 +4,24 @@
 <latemp_version_control_id "$Id$" />
 
 <define-tag repos_url whitespace="delete">
-http://svn.berlios.de/svnroot/repos/better-scm
-</define-tag>
-
-<define-tag trunk_url whitespace="delete">
-<repos_url />/better-scm-site/trunk/
+https://bitbucket.org/shlomif/better-scm
 </define-tag>
 
 <p>
 The site source code is present in 
-<a href="<trunk_url />">a
-directory</a> in a 
-<a href="<repos_url />/">Subversion
+<a href="<repos_url />/">Mercurial
 repository</a> kindly hosted by
-<a href="http://developer.berlios.de/">Berlios.de</a>.
+<a href="http://bitbucket.org">Bitbucket.</a>.
 </p>
 
 <p>
-To check it out, install a 
-<a href="http://subversion.apache.org/">Subversion</a> client for your 
+To check it out, install a
+<a href="http://mercurial.selenic.com/">Mercurial</a> client for your 
 system and issue the command:
 </p>
 
 <pre>
-svn checkout <trunk_url />
+hg clone <trunk_url />
 </pre>
 
 <define-tag cpan_link>
@@ -35,7 +29,7 @@ svn checkout <trunk_url />
 </define-tag>
 
 <p>
-To build the site you'll need the following extra software:
+To build the site you'll need the following extra software packages:
 </p>
 <ol>
 <li>
