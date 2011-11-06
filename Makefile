@@ -1,5 +1,5 @@
 
-RSYNC = rsync --progress --verbose --rsh=ssh
+RSYNC = rsync --progress --verbose --rsh=ssh --inplace -a
 
 DEVEL_VER_USE_CACHE = 1
 
@@ -43,21 +43,14 @@ src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 src/comparison/index.html.wml: src/comparison/scm-comparison.xml
 	touch $@
 
+UPLOAD_BASE = hostgator:domains/better-scm/public_html
+
 upload: upload_stable
 
 upload_beta: all
 	cd $(D) && \
-	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Beta-Site/
+	$(RSYNC) * $(UPLOAD_BASE)/__Beta-Site/
 	
 upload_stable: all
 	cd $(D) && \
-	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/
-
-upload_bk: all
-	cd $(D) && \
-	$(RSYNC) -a * shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/__Bk-essay-f567j/
-
-upload_bk2: all
-	cd $(D) && \
-	$(RSYNC) -a * shlomif@iglu.org.il:Home-Site/__Bk-essay-f567j/
-
+	$(RSYNC) -a * $(UPLOAD_BASE)/
