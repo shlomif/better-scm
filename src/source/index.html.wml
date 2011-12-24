@@ -31,10 +31,10 @@ hg clone <trunk_url />
 <p>
 To build the site you'll need the following extra software packages:
 </p>
+
 <ol>
 <li>
-<a href="http://www.perl.org/">perl</a> - preferablly 5.8.x or above. May
-work with 5.6.x, but was not tested.
+<a href="http://www.perl.org/">perl</a> - 5.8.x or above.
 </li>
 <li>
 <a href="http://thewml.org/">Website Meta Language</a>
