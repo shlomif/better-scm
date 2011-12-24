@@ -33,3 +33,23 @@ for work on large repositories, Mercurial is in many cases the fastest
 SCM tool available.
 </p>
 
+<h2>Resources for Learning</h2>
+
+<ul class="links">
+
+<li>
+<a href="http://hgbook.red-bean.com/"><i>Mercurial:
+The Definitive Guide</i></a> - a comprehensive book about Mercurial.
+</li>
+
+<li>
+<a href="http://mercurial.selenic.com/wiki/Tutorial">A Tutorial on Using 
+Mercurial</a> - on the Mercurial wiki.
+</li>
+
+<li>
+<a href="http://hginit.com/">Hg Init</a> - a Mercurial Tutorial by Joel
+Spolsky.
+</li>
+
+</ul>
