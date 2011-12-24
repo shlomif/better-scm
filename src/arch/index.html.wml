@@ -4,6 +4,19 @@
 <latemp_version_control_id "$Id$" />
 <latemp_more_keywords "Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" />
 
+<div class="note">
+
+<h2>Note about Arch</h2>
+
+<p>
+GNU Arch has been deprecated, and is no longer widely used. Most of the former
+GNU Arch users have migrated to 
+<a href="$(ROOT)/alternatives/bazaar/">Bazaar</a> and other version control
+systems. As a result, the information on this page is no longer very relevant.
+</p>
+
+</div>
+
 <h2>Homepage</h2>
 
 <p>
