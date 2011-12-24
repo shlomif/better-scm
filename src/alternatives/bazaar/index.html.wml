@@ -1,7 +1,7 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Bazaar" />
-<latemp_version_control_id "$Id: index.html.wml 259 2006-04-14 17:15:57Z shlomif $" />
+<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 
@@ -35,9 +35,9 @@ under active development. Bazaar has been adopted by
 </p>
 
 <p>
-It should be noted that Bazaar (also known as "bzr" after its command line)
-used to be called Bazaar-NG, while its predecessor "Baz" (originally derived 
-from <a href="$(ROOT)/arch/">GNU Arch</a>) used to be called "Bazaar". 
+It should be noted that Bazaar (also known as "bzr" after its command line
+program) used to be called Bazaar-NG, while its predecessor "Baz" (originally
+derived from <a href="$(ROOT)/arch/">GNU Arch</a>) used to be called "Bazaar". 
 However, now after bzr has matured, it assumed the name "Bazaar" instead.
 </p>
 
