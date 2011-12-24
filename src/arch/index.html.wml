@@ -20,7 +20,7 @@ systems. As a result, the information on this page is no longer very relevant.
 <h2>Homepage</h2>
 
 <p>
-<a href="http://gnuarch.org/">Homepage of Arch</a>
+<a href="http://www.gnu.org/software/gnu-arch/">Homepage of Arch</a>
 </p>
 
 <h2>Implementations</h2>
@@ -43,7 +43,7 @@ to provide better Subversion compatibility, and other nice features.
 
 <p>
 <b>Note</b>: related to baz is the project
-<a href="http://bazaar-vcs.org/">Bazaar</a>.  Its new program, bzr, is
+<a href="$(ROOT)/alternatives/bazaar/">Bazaar</a>.  Its new program, bzr, is
 written from scratch. It aims to offer some advantages over baz, but
 is not an Arch implementation, nor is it compatible with baz.  A tool
 is available to convert baz repositories into bzr, but not the other
@@ -73,11 +73,14 @@ This makes it very easy to set up a service of it.
 <h2>Links</h2>
 
 <ul>
+<!--
 <li>
-<a href="http://gnuarch.org/">gnuarch.org</a> - a portal for all things Arch.
+<a href="http://www.gnu.org/software/gnu-arch/">gnuarch.org</a> - a portal for 
+all things Arch.
 Contains a wiki, many links, bug list, a roadmap, popular essays, and other
 resources.
 </li>
+-->
 <li>
 <a href="http://dmoz.org/Computers/Software/Configuration_Management/Tools/Arch/">Dmoz.org 
 Category of Arch Resource</a> - contains other links.
