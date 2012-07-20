@@ -1,7 +1,7 @@
 #include '../template.wml'
 
 <latemp_subject "Version Control Humour" />
-<latemp_version_control_id "$Id: index.html.wml 312 2008-07-10 21:39:06Z shlomif $" />
+<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "humour, humor" />
 
 <h2 id="intro">Introduction</h2>
@@ -15,7 +15,7 @@ the years.
 
 <ul>
 <li>
-<a href="http://www.shlomifish.org/humour/fortunes/subversion.html">Shlomi 
+<a href="http://www.shlomifish.org/humour/fortunes/subversion.html">Shlomi
 Fish's "Subversion" Fortune Cookies</a>.
 </li>
 <li>
