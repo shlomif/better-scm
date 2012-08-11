@@ -48,7 +48,7 @@ BitMover got one main thing wrong and this is this:
 
 <div class="note">
 <p>
-It doesn't matter how many people abuse the spirit or the letter of the 
+It doesn't matter how many people abuse the spirit or the letter of the
 license, it matters how many of them would have been paying customers.
 </p>
 </div>
@@ -57,8 +57,8 @@ license, it matters how many of them would have been paying customers.
 BitMover got it wrong all the time. Whenever, someone abused its license,
 they kept restricting it. Even the source was pulled out of the Net, because
 people have downloaded it and patched it to remove some of the built-in
-restrictions, whose removal was prevented by the license. Now, tell me - do 
-people who have this disregard towards copyright, will ever consider buying 
+restrictions, whose removal was prevented by the license. Now, tell me - do
+people who have this disregard towards copyright, will ever consider buying
 a license?
 </p>
 
@@ -81,7 +81,7 @@ BitMover has similarly employed several other restrictions in time. Yet,
 <a href="http://lwn.net/1999/features/BitKeeper.php3">the original license
 and intentions</a> were pretty acceptable to most open source users, who are
 not as uncompromising as <a href="http://www.stallman.org/">Richard
-Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it 
+Stallman</a>. Furthermore, once BitKeeper has gained a lot of momentum, it
 could have been converted to full GPL, without hurting the profitability of
 <a href="http://www.bitmover.com/">BitMover</a> much due to the fact many
 people wouldn't deploy a version control system without the adequate support
@@ -106,7 +106,7 @@ Posted a message to the Subversion mailing list where he warned them against
 integrating any of BitKeeper's features into Subversion.
 </li>
 <li>
-Added the no-compete clause and is now trying to enforce it on paying 
+Added the no-compete clause and is now trying to enforce it on paying
 customers as well.
 </li>
 </ol>
@@ -122,14 +122,14 @@ law-suit.
 
 <p>
 Even if people integrate some of BitKeeper's features and ideas into their
-own products, BitMover would better try to stay ahead of the curve and 
+own products, BitMover would better try to stay ahead of the curve and
 integrate newer features. That way people will always catch up with it.
 </p>
 
 <p>
 Finally, if BitMover wishes to remain a company friendly to open source
 software, it must realize all of these things are a big no-no. Free Software
-advocates encourage competition. Those that respect the developers of 
+advocates encourage competition. Those that respect the developers of
 proprietary software developers, believe that they should not try to prevent
 free software (and other developers of proprietary software) from duplicating
 their efforts independently.
@@ -140,7 +140,7 @@ their efforts independently.
 <p>
 To be honest, I still like Larry McVoy, BitMover's CEO and founder, and the
 main engineer of BitKeeper. I have sympathy for him, out of respect for him
-as an Engineer and as an Entrepreneur. However, I believe some of his beliefs 
+as an Engineer and as an Entrepreneur. However, I believe some of his beliefs
 and things he says frequently are completely false, and have no basis in
 reality.
 </p>
@@ -177,8 +177,8 @@ site by Joel Spolsky.
 OSNews.com</a>
 </li>
 <li>
-<a 
-href="http://linuxtoday.com/news_story.php3?ltsn=2005-05-20-014-26-OP-KN-DV">Linux 
+<a
+href="http://linuxtoday.com/news_story.php3?ltsn=2005-05-20-014-26-OP-KN-DV">Linux
 Today</a>
 </li>
 <li>

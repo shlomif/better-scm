@@ -2,7 +2,7 @@
 
 <latemp_subject "Common Version Control Myths" />
 
-<h2 id="write-in-a-few-days">You 
+<h2 id="write-in-a-few-days">You
 can write a decent version control system in a matter of days</h2>
 
 <p>
@@ -32,7 +32,7 @@ that works fine for them but isn't worth much to the general public. There
 is no such thing as a free lunch.
 </p>
 
-<h2 id="do-not-need-to-use-vcs">I 
+<h2 id="do-not-need-to-use-vcs">I
 do not need to use a Version Control System</h2>
 
 <p>
@@ -62,7 +62,7 @@ available SCM will gain a feature, and you can use it instead of the ad-hoc
 solution you have used until now.
 </p>
 
-<p> 
+<p>
 People prefer the developers of Perl, Python, Ruby, Tcl, etc. to maintain
 interpreters for languages instead of everyone inventing their own toy language
 that will probably never do much and will be quite useless. Likewise, it is a

@@ -6,7 +6,7 @@ use XML::CompareML::HTML;
 
 open O, ">comparison2.html";
 
-my $converter = 
+my $converter =
     XML::CompareML::HTML->new(
         'input_filename' => "./scm-comparison.xml",
         'output_handle' => \*O,

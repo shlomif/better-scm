@@ -5,20 +5,20 @@
 
 
 <p>
-Recently three new version control systems were added to 
+Recently three new version control systems were added to
 <a href="$(ROOT)/comparison/">the comparison</a>:
 </p>
 
 <ol>
 
 <li>
-<a href="http://www-306.ibm.com/software/awdtools/clearcase/">Rational 
+<a href="http://www-306.ibm.com/software/awdtools/clearcase/">Rational
 ClearCase</a> by IBM - a commercial and renowed source configuration management
 system.
 </li>
 
 <li>
-The open-source Python-based 
+The open-source Python-based
 <a href="http://www.selenic.com/mercurial/wiki/">Mercurial</a>.
 </li>
 

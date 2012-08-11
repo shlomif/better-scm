@@ -11,7 +11,7 @@ if (! -e "docbook")
 
 open O, ">docbook/scm-comparison.xml";
 
-my $converter = 
+my $converter =
     XML::CompareML::DocBook->new(
         'input_filename' => "./scm-comparison.xml",
         'output_handle' => \*O,

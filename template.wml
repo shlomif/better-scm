@@ -29,11 +29,11 @@ Webmaster: <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto
 <define-tag cc_by_license>
 <p>
 <!-- Creative Commons License -->
-<a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img 
+<a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img
 alt="Creative Commons License"
 src="$(ROOT)/images/somerights20.png" /></a><br />
-This work is licensed under the <a rel="license" 
-href="http://creativecommons.org/licenses/by/2.0/">Creative Commons 
+This work is licensed under the <a rel="license"
+href="http://creativecommons.org/licenses/by/2.0/">Creative Commons
 Attribution License version 2.0</a> (or at your option - any later version).
 <!-- /Creative Commons License -->
 </p>
@@ -82,8 +82,8 @@ alt="RSS Feed" class="bless" style="margin-top:1em"
 title="Receive Site Updates using an RSS Reader" /></a>
 </p>
 <affil_collection_berlios />
-<a 
-href="https://developer.berlios.de/project/make_donation.php?group_id=526" 
+<a
+href="https://developer.berlios.de/project/make_donation.php?group_id=526"
 rel="donate" title="Please donate to show your appreciation for the hard
 work conducted on the Better SCM Site"><img src="$(ROOT)/images/paypal.gif"
 alt="PayPal Donate" class="paypal" /></a>
@@ -92,7 +92,7 @@ alt="PayPal Donate" class="paypal" /></a>
 
 <latemp_top_left_corner_logo>
 <div class="logo">
-<a href="$(ROOT)/" title="Home"><img 
+<a href="$(ROOT)/" title="Home"><img
     src="$(ROOT)/images/better-scm-logo.png"
     alt="Better SCM" /></a>
 </div>

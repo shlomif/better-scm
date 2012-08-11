@@ -11,11 +11,11 @@ use HTML::Latemp::News;
 
 my @news_items =
 (
-    (map 
-        { 
-            +{%$_, 
-                'author' => "Shlomi Fish", 
-                'category' => "Better SCM", 
+    (map
+        {
+            +{%$_,
+                'author' => "Shlomi Fish",
+                'category' => "Better SCM",
                 'text' => "Hello"
             }
         }
@@ -35,7 +35,7 @@ my @news_items =
         {
             'title' => "New BitKeeper Essay + PureCM Added to the Comparison",
             'id' => "changes-2005-05-18",
-            'description' => q{There's a new BitKeeper essay on the Better-SCM 
+            'description' => q{There's a new BitKeeper essay on the Better-SCM
             site and PureCM was added to the comparsion.},
             'date' => "2005-05-18",
         },
@@ -43,7 +43,7 @@ my @news_items =
             'title' => "\"The BitKeeper Ghost\"",
             'id' => "changes-2005-10-18",
             'description' => q{A New Essay: "The BitKeeper Ghost" was added
-            to the Better-SCM Site. It covers the latest developments in 
+            to the Better-SCM Site. It covers the latest developments in
             the BitKeeper Saga after the department of Bryan O'Sullivan
             from Mercurial.},
             'date' => "2005-05-18",
@@ -52,7 +52,7 @@ my @news_items =
             'title' => "ClearCase, Mercurial and AccuRev Added to the Comparison",
             'id' => "changes-2007-02-23",
             'description' => q{Three new (and important) systems were added
-            to the comparison recently: the commercial and renowed ClearCase, 
+            to the comparison recently: the commercial and renowed ClearCase,
             the open-source Mercurial, and the commercial AccuRev.
             },
             date => "2007-02-23",
@@ -76,7 +76,7 @@ my @news_items =
         {
             'title' => "Updated Comparison and Monotone Updates",
             'id' => "changes-2009-05-19",
-            'description' => q{3 new systems have been added to the 
+            'description' => q{3 new systems have been added to the
             comparison, the comparison was updated in general, and Monotone
             now has more up-to-date information.
             },

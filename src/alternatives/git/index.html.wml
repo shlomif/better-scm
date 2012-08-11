@@ -7,7 +7,7 @@
 <p>
 We would love to feature the git version control system here, but
 so far <a href="$(ROOT)/faq/#git-missing"><b>no one
-volunteered to add it</b> and maintain the information about it 
+volunteered to add it</b> and maintain the information about it
 into the future.</a>
 </p>
 
@@ -19,6 +19,6 @@ one</a> for more information.
 <p>
 (The reason this page was added is because users of software or web-sites
 <a href="http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html">have
-very selective reading</a>, and wouldn't normally read the 
+very selective reading</a>, and wouldn't normally read the
 <a href="$(ROOT)/faq/">Frequently Asked Questions List</a>.)
 </p>

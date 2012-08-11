@@ -7,15 +7,15 @@
 <h2>Introduction</h2>
 
 <p>
-This is a comparison between various version control systems, on an 
+This is a comparison between various version control systems, on an
 item-by-item basis. Its HTML file is self-contained and can be easily
 sent as an attachment.
 </p>
 
 <p>
 If there's something you feel should be added, or wish to correct the
-information of a version control system or add information about a 
-new one, <a href="$(ROOT)/contribute">see the "How to Contribute" 
+information of a version control system or add information about a
+new one, <a href="$(ROOT)/contribute">see the "How to Contribute"
 page</a>.
 </p>
 
@@ -41,23 +41,23 @@ $converter->gen_systems_list(output_handle => \*STDOUT);
 
 <p>
 The comparison is generated from an XML file by a Perl script. The script
-uses the <a href="http://search.cpan.org/dist/XML-LibXML/">XML::LibXML 
+uses the <a href="http://search.cpan.org/dist/XML-LibXML/">XML::LibXML
 bindings</a> to libxml, and
-<a href="http://web-cpan.berlios.de/modules/XML-CompareML/">XML::CompareML</a>. 
-To use the makefile, you need 
-<a href="http://www.gnu.org/software/make/">GNU Make</a>. Following are the 
+<a href="http://web-cpan.berlios.de/modules/XML-CompareML/">XML::CompareML</a>.
+To use the makefile, you need
+<a href="http://www.gnu.org/software/make/">GNU Make</a>. Following are the
 sources:
 </p>
 
 <ul>
-<li><a href="scm-comparison.xml">scm-comparison.xml</a> - the XML 
+<li><a href="scm-comparison.xml">scm-comparison.xml</a> - the XML
 source of the comparison</li>
 <li><a href="gen-dtd.pl">gen-dtd.pl</a> - a Perl script to generate the DTD.</li>
 <li><a href="render.pl">render.pl</a> - a Perl script to render the comparison
 into HTML.</li>
 <li><a href="bk-license.html">bk-license.html</a> - a note about the
 BitKeeper license.</li>
-<li><a href="Makefile">Makefile</a> - a makefile to automate the task of 
+<li><a href="Makefile">Makefile</a> - a makefile to automate the task of
 maintaining the comparison.</li>
 <li><a href="render-docbook.pl">render-docbook.pl</a> - a Perl script to render
 the comparison into DocBook/XML.</li>
@@ -79,7 +79,7 @@ Szabo</a>.
 Arch to Subversion and CVS</a> - on the Arch wiki.
 </li>
 <li>
-<a href="http://www.dwheeler.com/essays/scm.html">Comments on Open Source SCM 
+<a href="http://www.dwheeler.com/essays/scm.html">Comments on Open Source SCM
 Systems</a> - by David A. Wheeler.
 </li>
 <li>

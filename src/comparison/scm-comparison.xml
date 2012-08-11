@@ -459,8 +459,8 @@ TODO:
                 <s id="aegis">No. Copies are not supported.</s>
                 <s id="mercurial">Yes. Copies are supported</s>
                 <s id="monotone">
-                    No. "Tracked" copies are currently not supported, i.e. 
-                    monotone does not track information about copied files. 
+                    No. "Tracked" copies are currently not supported, i.e.
+                    monotone does not track information about copied files.
                 </s>
                 <s id="opencm">No. Copies are not supported.</s>
                 <s id="perforce">Copies are supported (though, because
@@ -571,7 +571,7 @@ TODO:
                     command line tools; ssarc and ssrestor might be useable
                 </s>
                 <s id="cmsynergy">
-                    Yes, as long as you have the (more expensive) Distributed 
+                    Yes, as long as you have the (more expensive) Distributed
                     package.
                 </s>
                 <s id="clearcase">
@@ -737,11 +737,11 @@ TODO:
                     subdirectories, or files using hooks.
                 </s>
                 <s id="monotone">
-                    Current monotone has specific read permissions with which 
-                    you can control the access to certain parts (aka branch 
-                    patterns) for known user ids, but less specific write 
-                    permissions. Basically, if a user is allowed to write to 
-                    a server, they can write everything there pretty 
+                    Current monotone has specific read permissions with which
+                    you can control the access to certain parts (aka branch
+                    patterns) for known user ids, but less specific write
+                    permissions. Basically, if a user is allowed to write to
+                    a server, they can write everything there pretty
                     much unrestricted.
                 </s>
                 <s id="opencm">
@@ -785,12 +785,12 @@ TODO:
                     Permissions are set for the whole repository or branch.
                 </s>
                 <s id="SourceAnywhere">
-                    Yes. SourceAnywhere Server Manager can define access to a 
-                    repository per user or group and user access rights to a 
+                    Yes. SourceAnywhere Server Manager can define access to a
+                    repository per user or group and user access rights to a
                     project.
                 </s>
                 <s id="git">
-                    See contrib/hooks/update-paranoid that ships with Git. See 
+                    See contrib/hooks/update-paranoid that ships with Git. See
                     the path_rules code for the closest equivalent to svnperms.
                 </s>
                 <s id="tfs">
@@ -1087,7 +1087,7 @@ TODO:
                     the projects they have check out/in right.
                 </s>
                 <s id="git">
-                    No.  However, commits could be restricted somewhat, see 
+                    No.  However, commits could be restricted somewhat, see
                     the "Repository Permissions" item.
                 </s>
                 <s id="tfs">Yes.</s>
@@ -1116,12 +1116,12 @@ TODO:
                 <s id="subversion">Yes. Using svn diff.</s>
                 <s id="cmplus">
                     Yes. Use Updates | Delta | Delta Update. Or
-                    right click a file or directory and do a compare to 
+                    right click a file or directory and do a compare to
                     workspace.
                 </s>
                 <s id="superversion">
                     Yes. Local changes are detected and shown immediately.
-                    Changes can be collected in a local buffer before being 
+                    Changes can be collected in a local buffer before being
                     committed to the repository.
                 </s>
                 <s id="svk">Yes. Using svk diff.</s>
@@ -1163,8 +1163,8 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Yes. Using saw diff.</s>
                 <s id="git">
-                    Yes. Also, branches are very lightweight in Git, 
-                    and could be considered a kind of storage for 
+                    Yes. Also, branches are very lightweight in Git,
+                    and could be considered a kind of storage for
                     "uncommitted" code in some workflows. Also see the
                     "git stash" command.
                 </s>
@@ -1361,7 +1361,7 @@ TODO:
                 </s>
                 <s id="monotone">
                     Good. There's a lot of documentation available in PDF
-                    and HTML formats. The client supplies documentation 
+                    and HTML formats. The client supplies documentation
                     for every command.
                 </s>
                 <s id="opencm">
@@ -1402,7 +1402,7 @@ TODO:
                 <s id="ls-sync">
                     Medium. There are an online tutorial and some comprehensive
                     online documentation. Installing and getting started with
-                    the GUI is very easy though.  
+                    the GUI is very easy though.
                     (update/commit-next-next-next-finished)
                 </s>
                 <s id="SourceAnywhere">
@@ -1411,7 +1411,7 @@ TODO:
                 </s>
                 <s id="git">
                     Good. There's an online help for every command detailing
-                    all the flags. The man pages are extensive, but tended to 
+                    all the flags. The man pages are extensive, but tended to
                     be confusing (possibly improved by now). There are many
                     tutorials, blog posts and some books (some of which are
                     online).
@@ -1749,12 +1749,12 @@ TODO:
                     Very extensive but not compatible with CVS.
                 </s>
                 <s id="git">
-                    Command set is very feature-rich, and not compatible with 
+                    Command set is very feature-rich, and not compatible with
                     CVS.
                 </s>
                 <s id="tfs">
                     The command set allows more operations than the GUI
-                    but isn't compatible with CVS.    
+                    but isn't compatible with CVS.
                 </s>
                 <s id="vault">
                     Extensive command set via command line and GUI.  Not
@@ -1905,7 +1905,7 @@ TODO:
                     Excellent. Fossil integrates both server and client into
                     a single application. A
                     <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in webserver</a>
-                    permits graphical administration and navigation over 
+                    permits graphical administration and navigation over
                     HTTP and HTTPS; as well as providing a
                     <a href="http://www.fossil-scm.org/index.html/doc/tip/www/bugtheory.wiki">bug ticketing system</a>
                     and a
@@ -2030,8 +2030,8 @@ TODO:
                 </s>
                 <s id="clearcase">
                     Medium. Available on Windows, and several selected
-                    flavours of UNIX (not including any other Linux 
-                    distribution than some versions of Red Hat Enterprise 
+                    flavours of UNIX (not including any other Linux
+                    distribution than some versions of Red Hat Enterprise
                     Linux, SUSE Liunx Enterprise Desktop and Ubuntu Linux).
                 </s>
                 <s id="ls-sync">
@@ -2045,7 +2045,7 @@ TODO:
                     Unix, FreeBSD and so on.
                 </s>
                 <s id="git">
-                    The client works on most UNIXes, and there's a native 
+                    The client works on most UNIXes, and there's a native
                     MS-Windows build. The cygwin build seems to be workable as
                     well.
                 </s>
@@ -2263,17 +2263,17 @@ TODO:
                     check-in extension (hgct) makes committing easier.
                     <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a>
                     provides a Windows shell extension, and GNOME/Nautilus
-                    integration. Some third-party IDEs and GUI tools (e.g. 
-                    eric3, meld) have integrated Mercurial support. 
+                    integration. Some third-party IDEs and GUI tools (e.g.
+                    eric3, meld) have integrated Mercurial support.
                 </s>
                 <s id="monotone">
-                    Yes, there is 
+                    Yes, there is
                     <a href="http://www.coosoft.plus.com/software.html">mtn-browse</a>
                     (which should be considered the "best of breed"),
                     <a href="http://oandrieu.nerim.net/monotone-viz/">monotone-viz</a>
                     and <a href="http://guitone.thomaskeller.biz/">guitone</a>.
-                    There's a 
-                    <a href="http://monotone.ca/wiki/InterfacesFrontendsAndTools/">complete 
+                    There's a
+                    <a href="http://monotone.ca/wiki/InterfacesFrontendsAndTools/">complete
                         list of tools</a> available on the Monotone wiki.
                 </s>
                 <s id="opencm">
@@ -2420,7 +2420,7 @@ TODO:
                 obtains a license to be used for a next duration (8 hours
                 by default - most people lower it to 2 hours or less,
                 while 30 minutes is the minimum). Prices are several $k per
-                license plus a yearly maintenance fee. Typically 1-3 users per 
+                license plus a yearly maintenance fee. Typically 1-3 users per
                 license required, depending on activity. Multisite requires
                 additional licensing.
             </s>

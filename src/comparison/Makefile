@@ -1,10 +1,10 @@
-all: comparison.html 
+all: comparison.html
 
 db: scm-comparison.pdf
 
 comparison.dtd: gen-dtd.pl
 	perl $< > $@
-	
+
 comparison.html: render.pl scm-comparison.xml comparison.dtd
 	perl render.pl
 
@@ -39,7 +39,7 @@ upload: all arc $(FILES)
 	rsync --progress -v --rsh=ssh --relative all-files.tar.gz $(FILES) shlomif@shell.berlios.de:/home/groups/better-scm/htdocs/comparison
 
 xslt: comparison-xsl.html
-	
+
 comparison-xsl.html: scm-comparison.xml compare-ml.xsl
 	xsltproc compare-ml.xsl scm-comparison.xml > $@
 

@@ -12,7 +12,7 @@ my $comparison;
 open O, ">", \$comparison;
 binmode O, ":utf8";
 
-my $converter = 
+my $converter =
     XML::CompareML::HTML->new(
         'input_filename' => "./comparison/scm-comparison.xml",
         'output_handle' => \*O,

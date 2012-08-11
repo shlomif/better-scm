@@ -23,7 +23,7 @@ include rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
-dummy: latemp_targets news_feeds 
+dummy: latemp_targets news_feeds
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
 	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS)
@@ -35,7 +35,7 @@ news_feeds: $(RSS_FEED)
 $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 	perl -Ilib gen-feeds.pl --rss2-out="$@"
 
-.PHONY: 
+.PHONY:
 
 src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 	touch $@
@@ -50,7 +50,13 @@ upload: upload_stable
 upload_beta: all
 	cd $(D) && \
 	$(RSYNC) * $(UPLOAD_BASE)/__Beta-Site/
-	
+
 upload_stable: all
 	cd $(D) && \
 	$(RSYNC) * $(UPLOAD_BASE)/
+
+test: all
+	prove Tests/*.t
+
+runtest: all
+	runprove Tests/*.t

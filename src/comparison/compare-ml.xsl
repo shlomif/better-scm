@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" 
+<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"
@@ -16,15 +16,15 @@
 <style type="text/css">
 h2 { background-color : #98FB98; /* PaleGreen */ }
 h3 { background-color : #FFA500; /* Orange */ }
-table.compare 
+table.compare
 {
     margin-left : 1em;
-    margin-right : 1em; 
+    margin-right : 1em;
     width: 90%;
     max-width : 40em;
 }
-.compare td 
-{ 
+.compare td
+{
     border-color : black; border-style : solid ; border-width : thin;
     vertical-align : top;
     padding : 0.2em;
@@ -35,8 +35,8 @@ ul.toc
 }
 .toc ul
 {
-    list-style-type : none ; 
-    padding-left : 0em; 
+    list-style-type : none ;
+    padding-left : 0em;
     margin-left : 2em;
 }
 .expl
@@ -71,7 +71,7 @@ tt { color : #8A2BE2 /* The BlueViolet Color */ }
     <xsl:apply-templates select="expl"/>
     <xsl:if test="@id = 'main'">
         <xsl:if test="/comparison/meta/timestamp">
-            <p><b>Timestamp:</b> 
+            <p><b>Timestamp:</b>
                 <tt><xsl:value-of select="/comparison/meta/timestamp"/></tt>
             </p>
         </xsl:if>

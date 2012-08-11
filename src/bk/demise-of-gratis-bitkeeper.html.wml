@@ -10,21 +10,21 @@
 
 <p>
 BitMover, <a href="http://www.bitkeeper.com/">BitKeeper</a>'s parent company,
-<a href="http://www.bitkeeper.com/press/2005-04-05.html">announced 
-that it will discontinue</a> the gratis version of BitKeeper intended for 
-development of Open Source Software. The implications of this 
+<a href="http://www.bitkeeper.com/press/2005-04-05.html">announced
+that it will discontinue</a> the gratis version of BitKeeper intended for
+development of Open Source Software. The implications of this
 are layed out in <a href="http://kerneltrap.org/node/4966">this KernelTrap
-editorial</a>. A NewsForge article 
+editorial</a>. A NewsForge article
 <a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;tid=25&amp;tid=3">interviews the parties involved in this decision</a> and what
 they think.
 </p>
 
 <p>
-As a result, the <a href="http://subversion.apache.org/">Subversion</a> 
-developers issued 
+As a result, the <a href="http://subversion.apache.org/">Subversion</a>
+developers issued
 <a href="http://subversion.tigris.org/subversion-linus.html">a statement</a>
-in which they say that Subversion is not a suitable alternative to 
-BitKeeper for the distributed development-model used by the kernel 
+in which they say that Subversion is not a suitable alternative to
+BitKeeper for the distributed development-model used by the kernel
 developers, and that Subversion advocates should
 not attempt to convince people to use it instead of the no-longer-available
 BitKeeper.
@@ -38,15 +38,15 @@ in KernelTrap about "Life after BitKeeper"</a>.
 <p>
 The implication of all of this is that developers of open source software
 who desire to use BitKeeper to maintain their codebase, will require getting
-a commercial license proper from BitMover (possibly for no charge). Linus 
-Torvalds, the chief developer of the Linux kernel, has announced that he will 
-not take this option, and instead that he is seeking an alternative to 
+a commercial license proper from BitMover (possibly for no charge). Linus
+Torvalds, the chief developer of the Linux kernel, has announced that he will
+not take this option, and instead that he is seeking an alternative to
 BitKeeper for maintaining the Linux kernel.
 </p>
 
 <p>
 These announcements invalidate a large part of what was said about BitKeeper
-and its licensing terms, on this site and elsewhere. The content of the 
+and its licensing terms, on this site and elsewhere. The content of the
 pages here will remain, but a notice will be added to indicate that it
 may no longer be relevant.
 </p>
@@ -55,7 +55,7 @@ may no longer be relevant.
 
 <ul class="links">
 <li>
-<a href="http://kerneltrap.org/node/4966">KernelTrap editorial about the 
+<a href="http://kerneltrap.org/node/4966">KernelTrap editorial about the
 dicontinuation of the gratis BitKeeper</a>
 </li>
 <li>
@@ -79,47 +79,47 @@ If I were Linus, I would replace BitKeeper with...</a>.
 story</a> (with comments).
 </li>
 <li>
-<a href="http://www.osnews.com/comment.php?news_id=10223">OSNews.com - No More 
+<a href="http://www.osnews.com/comment.php?news_id=10223">OSNews.com - No More
 Free BitKeeper</a>. (with comments).
 </li>
 <li>
 <a href="http://www.theregister.co.uk/2005/04/14/torvalds_attacks_tridgell/">The
 Register - Torvalds knifes Tridgell</a> - a piece about criticism that Linus
-Torvalds voiced against Andrew Tridgell, who was accused by BitMover for 
+Torvalds voiced against Andrew Tridgell, who was accused by BitMover for
 attempting to reverse engineer the BitKeeper protocols. (which in turn caused
 the dis-continuation of the gratis BitKeeper licensing).
 </li>
 <li>
 <a href="http://www.theregister.co.uk/2005/04/15/perens_on_torvalds/">The
-Register - 'Cool it, Linus' - Bruce Perens</a> - Bruce Perens, the renowed 
+Register - 'Cool it, Linus' - Bruce Perens</a> - Bruce Perens, the renowed
 open-source leader comes to the defence of Andrew Tridgell.
 </li>
 <li>
 <a href="http://software.newsforge.com/article.pl?sid=05/04/25/130207">NewsForge
-- BitKeeper Bon-voyage is a Happy Ending</a> - an 
+- BitKeeper Bon-voyage is a Happy Ending</a> - an
 opinionated essay by Richard M. Stallman about BitKeeper and its history.
 Here's
 <a href="http://developers.slashdot.org/article.pl?sid=05/04/25/1936225">the
 coverage on Slashdot</a>.
 </li>
 <li>
-<a href="http://www.infoworld.com/article/05/05/02/18OPopenent_1.html">"Linus 
+<a href="http://www.infoworld.com/article/05/05/02/18OPopenent_1.html">"Linus
 Torvalds' BitKeeper blunder"</a> - an InfoWorld coverage of the case. Also see
 <a href="http://lwn.net/Articles/134404/">the discussion of the article on
 Linux Weekly News</a>.
 </li>
 <li>
-<a href="http://lwn.net/Articles/132938/">Linux Weekly News - How Tridge 
+<a href="http://lwn.net/Articles/132938/">Linux Weekly News - How Tridge
 Reverse Engineered BitKeeper</a> - a feature along with some discussion.
 </li>
 <li>
 <a href="http://lwn.net/Articles/137459/">Linux Weekly News - A Setback for
-Linux (Forbes)</a> - an LWN coverage of the article by Daniel Lyons that 
+Linux (Forbes)</a> - an LWN coverage of the article by Daniel Lyons that
 predicts bad news to the Kernel development as a result of the BitKeeper
 demise.
 </li>
 <li>
-<a href="http://www.computerworld.com/softwaretopics/os/linux/story/0,10801,102216,00.html">Linux 
+<a href="http://www.computerworld.com/softwaretopics/os/linux/story/0,10801,102216,00.html">Linux
 Dispute Boils over to MySQL, Other Projects</a> - an article in ComputerWorld
 about how other Open Source projects which use BitKeeper need to adapt to its
 discontinuation. Also see <a href="http://lwn.net/Articles/138519/">a coverage
