@@ -95,7 +95,7 @@ Sep 23 20:45:55 <rindolf>	Exactly.
 Sep 23 20:45:56 <Mark27>	The actual script has something like [% perl_runline %] in the first line
 Sep 23 20:46:07 <rindolf>	OK.
 Sep 23 20:46:17 <Mark27>	And it gets transferred using Perl Template toolkit or autoconf to the script which is run...
-Sep 23 20:46:21 <Mark27>	There is no problem. 
+Sep 23 20:46:21 <Mark27>	There is no problem.
 Sep 23 20:46:28 <Mark27>	Just define this rule in your build system.
 Sep 23 20:46:32 <Mark27>	It has nothing to do with Aegis...
 Sep 23 20:46:33 <rindolf>	And can Aegis do it transparently?
@@ -110,7 +110,7 @@ Sep 23 20:48:02 <rindolf>	And what if I modify myscript.pl?
 Sep 23 20:48:10 <Mark27>	Would you modify an object file ?
 Sep 23 20:48:12 <Mark27>	:)
 Sep 23 20:48:24 <Mark27>	You don't modify products unless you want them overwritten the next time around
-Sep 23 20:48:39 <rindolf>	No, but I was hoping for a trigger like that - 
+Sep 23 20:48:39 <rindolf>	No, but I was hoping for a trigger like that -
 Sep 23 20:48:52 <rindolf>	a patch that would be applied upon checkout
 Sep 23 20:48:58 <rindolf>	and would be unapplied upon checkin
 Sep 23 20:49:12 <Mark27>	Oh!!!!
@@ -133,7 +133,7 @@ Sep 23 20:51:27 <rindolf>	It feels very slick, and is very nice.
 Sep 23 20:51:35 <Mark27>	(BK doesn't have that)
 Sep 23 20:51:52 <Mark27>	For instance: aegis won't let you commit changes which don't compile or pass tests
 Sep 23 20:52:32 <rindolf>	And we should rob ideas out of it.
-Sep 23 20:52:33 <Mark27>	Also the multi-path feature is an advantage as far as I see it... 
+Sep 23 20:52:33 <Mark27>	Also the multi-path feature is an advantage as far as I see it...
 Sep 23 20:53:03 <rindolf>	OK. Got to sleep now. Talk to you later.
 Sep 23 20:53:08 <Mark27>	(NO other, and I mean NO OTHER SCS has that feature...:)
 Sep 23 20:53:27 <Mark27>	Ok. Good night. I'll send you my contact info...
@@ -664,7 +664,7 @@ Sep 25 21:53:31 <rindolf>	Fixed a typo and I'm on.
 Sep 25 21:53:54 <rindolf>	Listen, I'm completely tired right now. Can we stop at this point?
 Sep 25 21:54:02 <Mark27>	Sure
 Sep 25 21:54:35 <Mark27>	Have a nice night...:)
-Sep 25 21:54:44 <rindolf>	You've been a great heko. Send me the transcript. Hopefully I can make a nice quick start guide out of it 
+Sep 25 21:54:44 <rindolf>	You've been a great heko. Send me the transcript. Hopefully I can make a nice quick start guide out of it
 Sep 25 21:54:48 <rindolf>	Yeah, you too.
 Sep 25 21:54:56 <rindolf>	s/heko/help/
 Sep 25 21:55:19 <rindolf>	Or I can cook a nice quick start guide out of it.
@@ -916,14 +916,14 @@ Sep 26 14:33:41 <rindolf>	aegis: project "i-bex": change 10: applying the change
 Sep 26 14:33:41 <rindolf>	        directory
 Sep 26 14:33:41 <rindolf>	aegis: logging to "/home/shlomi/Projects/Aegis//delta2348.001/aegis.log"
 Sep 26 14:33:41 <rindolf>	aegis: project "i-bex": change 10: integration has begun
-Sep 26 14:33:45 <mark>	great. 
+Sep 26 14:33:45 <mark>	great.
 Sep 26 14:33:49 <mark>	Now aeb to build.
 Sep 26 14:33:59 <rindolf>	aegis: appending log to "/home/shlomi/Projects/Aegis/delta2348.001/aegis.log"
 Sep 26 14:33:59 <rindolf>	aegis: project "i-bex": change 10: integration build started 14:19
 Sep 26 14:33:59 <rindolf>	aegis: cd /home/shlomi/Projects/Aegis/delta2348.001
 Sep 26 14:33:59 <rindolf>	aegis: true
 Sep 26 14:33:59 <rindolf>	aegis: project "i-bex": change 10: integration build complete 14:19
-Sep 26 14:34:06 <mark>	Great. 
+Sep 26 14:34:06 <mark>	Great.
 Sep 26 14:34:14 <mark>	Now aeipass (aegis integration pass)
 Sep 26 14:34:35 <rindolf>	egis: project "i-bex": change 10: adjusting file modification times
 Sep 26 14:34:35 <rindolf>	aegis: project "i-bex": change 10: discarding old directories

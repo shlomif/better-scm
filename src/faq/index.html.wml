@@ -2,11 +2,11 @@
 #include "xhtml/1.x/std/toc.wml"
 
 <latemp_subject "F.A.Q. (Frequently Asked Questions) for the Better-SCM Site" />
-<latemp_version_control_id "$Id: index.html.wml 182 2005-04-17 10:10:22Z shlomif $" />
+<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "git" />
 
 <div class="toc">
-<toc /> 
+<toc />
 </div>
 
 <p>
@@ -29,7 +29,7 @@ to:
 <ol>
 
 <li>
-Send him a patch that adds the version control system to its XML sources. 
+Send him a patch that adds the version control system to its XML sources.
 </li>
 
 <li>
@@ -72,7 +72,7 @@ it.
 <p>
 In addition to everything that was said here, it seems that the originator
 and maintainer of the site and comparison is now banned from sending
-messages to vger.kernel.org, which hosts several Linux-kernel-related 
+messages to vger.kernel.org, which hosts several Linux-kernel-related
 mailing-lists, including the git one. This has interfered with some of his
 Linux-related open-source work, including trying to find a "Better SCM"
 maintainer for git. This is unfortunate, but changing this situation,
@@ -91,12 +91,12 @@ to add a new version control system.
 
 <p>
 We are well-aware of the fact that the comparison is missing many important
-criteria. The chief maintainer hope to work on it sometime, but that will 
+criteria. The chief maintainer hope to work on it sometime, but that will
 involve contacting all the champions and asking them to fill in the details
 for their respective system, for each of the criteria that will be added.
 </p>
 
-<h3 id="tracked-releases">Which Releases of the Respective Systems are 
+<h3 id="tracked-releases">Which Releases of the Respective Systems are
 Tracked in the Comparison?</h3>
 
 <p>
@@ -115,12 +115,12 @@ any other dis-information) contact the webmasters, using the address at the
 footer.
 </p>
 
-<h4 id="bad-site">This site has too many problems to be effective. It's a bad 
+<h4 id="bad-site">This site has too many problems to be effective. It's a bad
 site!</h4>
 
 <p>
-Please find a list of several factual problems in the site 
-(not necessarily all) and submit them to me, and I'll correct them. The 
+Please find a list of several factual problems in the site
+(not necessarily all) and submit them to me, and I'll correct them. The
 <a href="http://en.wikipedia.org/wiki/Burden_of_proof_(logical_fallacy)">burden
 of proof</a> in that case is on you.
 </p>

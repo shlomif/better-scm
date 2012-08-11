@@ -1,5 +1,5 @@
 a:hover
-{ 
+{
     color : [% a_hover_color %];
 }
 .main
@@ -43,7 +43,7 @@ a:hover
     margin-bottom: 0em;
 }
 .vcs
-{    
+{
     margin-top: 0.5em;
     clear: left;
 }
@@ -73,7 +73,7 @@ a:hover
     margin-bottom: 0.5em;
     margin-right: 10pt;
 }
-/* Workaround to get the <hr /> element at the bottom to properly display 
+/* Workaround to get the <hr /> element at the bottom to properly display
    with Konqueror 3.3.x
    */
 .footer hr
@@ -145,7 +145,7 @@ pre
 }
 .link { background : transparent; }
 ul.navbarmain
-{ 
+{
     font-size: 80%;
     font-family: sans-serif;
 }
@@ -157,12 +157,12 @@ h2, h3, h4
 {
     padding-left: 0.3em;
 }
-.navbar 
+.navbar
 {
     background-color : [% navbar_bgcolor %];
 }
-h2 
-{ 
+h2
+{
     background-color: [% h2_bgcolor %];
 }
 

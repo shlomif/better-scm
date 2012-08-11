@@ -8,7 +8,7 @@ __END__
 
 =head1 NAME
 
-Bundle::Sites::BetterScm - A bundle to install external CPAN modules used by 
+Bundle::Sites::BetterScm - A bundle to install external CPAN modules used by
 the Better-SCM site
 
 =head1 SYNOPSIS
@@ -24,7 +24,7 @@ Use of CPAN.pm in interactive mode:
   cpan> quit
 
 Just like the manual installation of perl modules, the user may
-need root access during this process to insure write permission 
+need root access during this process to insure write permission
 is allowed within the intstallation directory.
 
 

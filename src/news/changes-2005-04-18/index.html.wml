@@ -37,7 +37,7 @@ should be avoided</a>.
 Added content to <a href="$(ROOT)/monotone/">the Monotone page</a>.
 </li>
 <li>
-Added a page about <a href="$(ROOT)/irc/">our new 
+Added a page about <a href="$(ROOT)/irc/">our new
 IRC channel</a>.
 </li>
 <li>
@@ -52,7 +52,7 @@ New links were added.
 Created a better navigation menu. More pages were made part to it.
 </li>
 <li>
-Added navigation links (Next, Previous and Up). These can be utilized as 
+Added navigation links (Next, Previous and Up). These can be utilized as
 part of the navigation bar of Mozilla/Opera/etc., or in the buttons in the
 top and bottom of the sites' navigation column. They also have access keys.
 </li>
@@ -79,7 +79,7 @@ Markup is 100% valid XHTML 1.1. CSS is valid CSS.
 A new <tt>&lt;div&gt;</tt>-based layout that replaces the old table-layout.
 </li>
 <li>
-A better page footer, with a version control ID and a Creative Commons 
+A better page footer, with a version control ID and a Creative Commons
 license notice.
 </li>
 <li>
@@ -105,7 +105,7 @@ A better and fixed CSS stylesheet.
 </li>
 <li>
 The Perl back-end used to convert the comparison to HTML and DocBook,
-was span as <a href="http://web-cpan.berlios.de/modules/XML-CompareML/">a 
+was span as <a href="http://web-cpan.berlios.de/modules/XML-CompareML/">a
 separate re-usable CPAN module</a>.
 </li>
 <li>
@@ -116,7 +116,7 @@ The <tt>id</tt> HTML attribute is now used as part of the element, instead
 of as a separate &lt;a&gt; element.
 </li>
 <li>
-Updated the <a href="$(ROOT)/comparison/bk-license.html">Problems in the 
+Updated the <a href="$(ROOT)/comparison/bk-license.html">Problems in the
 BitKeeper License</a> page.
 </li>
 </ul>
@@ -128,8 +128,8 @@ BitKeeper License</a> page.
 The comparison is now built as part of the site, not separately.
 </li>
 <li>
-The navigation menu and site flow makes use of 
-<a href="http://web-cpan.berlios.de/modules/HTML-Widgets-NavMenu/">the 
+The navigation menu and site flow makes use of
+<a href="http://web-cpan.berlios.de/modules/HTML-Widgets-NavMenu/">the
 HTML-Widgets-NavMenu</a> module.
 </li>
 <li>

@@ -24,16 +24,16 @@ is portable to all major UNIX flavours, and to Win32.
 
 <p>
 A BitKeeper license may be given to developers of open-source software, for
-exclusive work on open-source software. This requires negotiation with 
-BitMover. (There used to be a gratis version 
-available for that purpose under a restrictive license, but it was 
-end-of-lifed.) 
+exclusive work on open-source software. This requires negotiation with
+BitMover. (There used to be a gratis version
+available for that purpose under a restrictive license, but it was
+end-of-lifed.)
 </p>
 <p>
-BitKeeper used to be utilized by many of the 
-<a href="http://www.kernel.org/">Linux Kernel</a> developers, for managing 
+BitKeeper used to be utilized by many of the
+<a href="http://www.kernel.org/">Linux Kernel</a> developers, for managing
 the kernel source. Due to the fact BitKeeper is not open-source this move was
-quite controversial, and caused several flame-wars in the Linux Kernel 
+quite controversial, and caused several flame-wars in the Linux Kernel
 Mailing List and elsewhere. When the gratis version was withdrawn in April
 2005, the developers decided to convert to a different alternative.
 </p>
@@ -65,7 +65,7 @@ unfortunate history of the gratis BitKeeper license.
 </li>
 <li>
 <a href="the-bitkeeper-ghost.html">The BitKeeper Ghost</a> - an essay about
-the remaining effects of BitKeeper, by inspiration from the letter of 
+the remaining effects of BitKeeper, by inspiration from the letter of
 Bryan O'Sullivan, and what should version control users do about it.
 </li>
 </ul>

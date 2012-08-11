@@ -4,9 +4,9 @@
 <latemp_version_control_id "$Id$" />
 
 <p>
-Recently, the <a href="http://bazaar-vcs.org/">Bazaar version control 
+Recently, the <a href="http://bazaar-vcs.org/">Bazaar version control
 system</a> has been added to <a href="$(ROOT)/comparison/">the comparison</a>,
-and <a href="$(ROOT)/alternatives/bazaar/">a summary page</a> about it 
+and <a href="$(ROOT)/alternatives/bazaar/">a summary page</a> about it
 has been added to the main site.
 </p>
 

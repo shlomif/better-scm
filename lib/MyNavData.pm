@@ -37,7 +37,7 @@ my $tree_contents =
         {
             'text' => "General Docs",
             'url' => "docs/",
-            'title' => ("General Documents that don't Belong to " . 
+            'title' => ("General Documents that don't Belong to " .
                 "Anywhere More Specific."),
             'subs' =>
             [
@@ -64,7 +64,7 @@ my $tree_contents =
             'text' => "Alternatives",
             'url' => "alternatives/",
             'expand' => { 're' => ""},
-            'subs' => 
+            'subs' =>
             [
                 {
                     'text' => "Aegis",
@@ -85,7 +85,7 @@ my $tree_contents =
                 {
                     'text' => "BitKeeper",
                     'url' => "bk/",
-                    'title' => ("A Proprietary Distributed Version" . 
+                    'title' => ("A Proprietary Distributed Version" .
                         " Control System"),
                     'subs' =>
                     [
@@ -98,13 +98,13 @@ my $tree_contents =
                         {
                             'text' => "Relicensing BK",
                             'url' => "bk/relicensing_bk.html",
-                            'title' => ("Changing the BitKeeper License and" . 
+                            'title' => ("Changing the BitKeeper License and" .
                                 " Why it is Needed")
                         },
                         {
                             'text' => "Demise of Gratis Version",
                             'url' => "bk/demise-of-gratis-bitkeeper.html",
-                            'title' => ("The Demise of the Gratis" . 
+                            'title' => ("The Demise of the Gratis" .
                                 " BitKeeper Licensing"),
                         },
                         {
@@ -135,7 +135,7 @@ my $tree_contents =
                 {
                     'text' => "Mercurial",
                     'url' => "alternatives/mercurial/",
-                    'title' => ("Mercurial - an Open Source Distributed" . 
+                    'title' => ("Mercurial - an Open Source Distributed" .
                         "Version Control System"),
                 },
                 {
@@ -153,20 +153,20 @@ my $tree_contents =
                 {
                     'text' => "Subversion",
                     'url' => "subversion/",
-                    'title' => ("A Version Control System that Aims to " . 
+                    'title' => ("A Version Control System that Aims to " .
                         "Provide a Good Alternative to CVS"),
                     'subs' =>
                     [
                         {
                             'text' => "A Compelling Alternative",
                             'url' => "subversion/compelling_alternative.html",
-                            'title' => ("Subversion - A Compelling " . 
+                            'title' => ("Subversion - A Compelling " .
                                 "Alternative to CVS and BitKeeper"),
                         },
                         {
                             'text' => "Win32 Installation Guide",
                             'url' => "subversion/Svn-Win32-Inst-Guide.html",
-                            'title' => ("A Quick-start guide for Installing " . 
+                            'title' => ("A Quick-start guide for Installing " .
                                 "Subversion on a Microsoft Windows System"),
                         },
                     ],
@@ -174,7 +174,7 @@ my $tree_contents =
                 {
                     'text' => "Vesta",
                     'url' => "vesta/",
-                    'title' => ("Vesta - a Distributed SCM with a " . 
+                    'title' => ("Vesta - a Distributed SCM with a " .
                         "special filesystem service"),
                 },
             ],
@@ -194,7 +194,7 @@ my $tree_contents =
             'title' => "Chat about Version Control using the Internet",
         },
         {
-            'text' => "Links", 
+            'text' => "Links",
             'url' => "links.html",
             'title' => "Links of Relevance",
         },
@@ -258,7 +258,7 @@ my $tree_contents =
 
 sub get_params
 {
-    return 
+    return
         (
             'hosts' => $hosts,
             'tree_contents' => $tree_contents,
