@@ -245,8 +245,9 @@ TODO:
                 <s id="monotone">Yes. Renames are supported.</s>
                 <s id="opencm">Yes. Renames are supported</s>
                 <s id="perforce">
-                    Not directly (you copy and then delete but it manages to
-                    keep track of the branch)
+                    Yes, <a
+                        href="http://www.perforce.com/perforce/doc.current/manuals/p4guide/04_files.html#1060858">supported
+                        since version 2011.1</a>.
                 </s>
                 <s id="purecm">
                     Yes. File and folder renames and moves are directly
@@ -365,11 +366,7 @@ TODO:
                 </s>
                 <s id="opencm">Unknown.</s>
                 <s id="perforce">
-                    Partial. While perforce doesn't explicitly support
-                    renames (one hsa to do a copy+delete), it does keep track
-                    of the full revision and integration history across
-                    copying, so changing a file in the copied directory
-                    and trying to merge it does the right thing.
+                    See point above.
                 </s>
                 <s id="purecm">
                     Yes, intelligent renames are supported.
@@ -463,8 +460,9 @@ TODO:
                     monotone does not track information about copied files.
                 </s>
                 <s id="opencm">No. Copies are not supported.</s>
-                <s id="perforce">Copies are supported (though, because
-                    of its architecture, I don't know how well)
+                <s id="perforce">
+                    Yes, fully <a href="http://www.perforce.com/perforce/doc.current/manuals/p4guide/06_codemgmt.html#1085309">supported</a> with full
+                    history.
                 </s>
                 <s id="purecm">Yes. Copies are supported.</s>
                 <s id="vesta">
@@ -556,7 +554,10 @@ TODO:
                 <s id="mercurial">Yes.</s>
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
-                <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool.</s>
+                <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool,
+                    and <a href="http://www.perforce.com/perforce/doc.current/manuals/p4sag/10_replication.html#1056059">full
+                    repository replacion</a>.
+                </s>
                 <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
                 <s id="vesta">
                     Yes.  Replication is a fundamental part
@@ -639,7 +640,9 @@ TODO:
                 <s id="mercurial">Yes.</s>
                 <s id="monotone">Yes.</s>
                 <s id="opencm">No.</s>
-                <s id="perforce">Unknown. Probably Not.</s>
+                <s id="perforce">Yes, via
+                    <a href="http://www.perforce.com/perforce/doc.current/manuals/p4sag/03_superuser.html#1065679">remote depots</a>.
+                </s>
                 <s id="purecm">No.</s>
                 <s id="vesta">
                     Yes.
@@ -2280,8 +2283,9 @@ TODO:
                     No GUIs are available.
                 </s>
                 <s id="perforce">
-                    Yes, P4Win and others based on the available libp4
-                    library.
+                    Yes, P4Win, P4V and others based on the available libp4
+                    library. There are also plugins for Eclipse, Visual
+                    Studio and other environments.
                 </s>
                 <s id="purecm">
                     Cross-platform GUI for Windows, Linux, Mac OS X
@@ -2389,7 +2393,8 @@ TODO:
                 a $160 for continuing support for the subsequent years. The
                 latter payment is optional and required only for support,
                 as the product can be used without it. Free for
-                open source projects (no support in this case).
+                open source projects (no support in this case), and there
+                is also a ‘free for 20 users’ offer.
             </s>
             <s id="purecm">
                 A proprietary, binary only, commercial license.
