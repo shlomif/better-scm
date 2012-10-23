@@ -45,7 +45,7 @@ well.
 
 <p>
 I take a more radical approach that thinks that even Aunt Tillie needs version
-control to keep track of its MS-Word Documents, Excel Spreadsheets, and saved
+control to keep track of her MS-Word Documents, Excel Spreadsheets, and saved
 games. Hans Reiser wishes to implement source control capabilities in ReiserFS,
 and I believe VMS versioned files too. Even if you are not a full-fledged
 hacker, you can benefit from source control.
@@ -79,7 +79,7 @@ believe sharing results and releasing code as shrinkwrap (with all the
 discipline involved) will eventually benefit everybody. You can do with Perl
 in a matter of hours, things, that once took a team of C programmers several
 monthes. That's because the Perl people shared their efforts. Similarly,
-by having several good publicly available SCMs, we can eventually feel
+by having several good publicly available SCMs, we can eventually fill
 the needs of every version control user out there.
 </p>
 
