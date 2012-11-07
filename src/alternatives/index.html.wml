@@ -44,7 +44,24 @@ strings attached to it, so <a href="$(ROOT)/bk/">read on</a>.
 <p>
 An open source version control system written in
 <a href="http://www.haskell.org/">Haskell</a>. Distributed, easy to set up
-and serve, supports renames, and incorporates the author "Theory of Patches".
+and serve, supports renames, and incorporates the author’s "Theory of Patches".
+</p>
+
+<h3><a href="git/">Git</a></h3>
+
+<p>
+A distributed version control created by Linus Torvalds (also known as the
+originator and chief maintainer of the Linux kernel) after the demise of
+the BitKeeper for open-source projects. Distributed, fast, but may exhibit
+some counter-intuitive behaviours.
+</p>
+
+<h3><a href="mercurial/">Mercurial</a></h3>
+
+<p>
+Mercurial (also known as hg) is a distributed version control system written
+in Python, that aims to combine the best aspects of Git and Subversion, and
+so be fast and easy to use.
 </p>
 
 <h3><a href="$(ROOT)/monotone/">Monotone</a></h3>
