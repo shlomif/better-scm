@@ -1128,7 +1128,7 @@ TODO:
                     committed to the repository.
                 </s>
                 <s id="svk">Yes. Using svk diff.</s>
-                <s id="bitkeeper">Yes. Using bk diff.</s>
+                <s id="bitkeeper">Yes. Using "bk diffs".</s>
                 <s id="arch">
                     Yes, using "tla changes".
                 </s>
