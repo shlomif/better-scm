@@ -5,3 +5,5 @@ META.yml                                 Module meta-data (added by MakeMaker)
 README
 lib/Bundle/Sites/BetterScm.pm
 META.json
+t/00-load.t
+t/pod.t
