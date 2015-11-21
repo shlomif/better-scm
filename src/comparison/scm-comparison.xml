@@ -2334,7 +2334,10 @@ TODO:
                     cross-platform Eclipse integration.
                 </s>
                 <s id="fossil">
-                    None except the built-in web-interface.
+                    Aside from the built-in web-interface, there is
+                    <a href="http://fuel-scm.org/">Fuel</a>, which is
+                    a cross-platform and open-source GUI for Fossil, written
+                    using the Qt toolkit.
                 </s>
            </compare>
         </section>
