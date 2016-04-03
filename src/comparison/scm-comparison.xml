@@ -230,7 +230,7 @@ TODO:
                 </s>
                 <s id="superversion">No. Renames are not supported.</s>
                 <s id="surround">
-                    Renames are supported, moves can be accomplished similiar
+                    Renames are supported, moves can be accomplished similarly
                     to SourceSafe.
                 </s>
                 <s id="svk">Yes. Renames are supported.</s>
