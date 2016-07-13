@@ -5,8 +5,26 @@
 
 <p>
 <b>Written at:</b> 12-April-2005<br />
-<b>Updated at:</b> 03-May-2005
+<b>Updated at:</b> 13-July-2016
 </p>
+
+<div class="note">
+
+<h2 id="note-July-2016">13-July-2016: Recent Note: BitKeeper was made
+open source</h2>
+
+<p>
+BitKeeper was recently <a href="https://lwn.net/Articles/686986/">made open
+source</a> and its source code is available on
+<a href="https://www.bitkeeper.org/">bitkeeper.org</a> under the Apache 2.0
+License. This twist of events may invalidate some what was said
+here, but note that following the demise of the gratis BitKeeper licence,
+several open source distributed version control systems were developed,
+including Git that became very popular. So this move may be too little to
+save BitKeeper - and too late.
+</p>
+
+</div>
 
 <p>
 BitMover, <a href="http://www.bitkeeper.com/">BitKeeper</a>'s parent company,
