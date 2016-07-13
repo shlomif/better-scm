@@ -21,7 +21,7 @@ system and issue the command:
 </p>
 
 <pre>
-hg clone <trunk_url />
+hg clone <repos_url />
 </pre>
 
 <define-tag cpan_link>
