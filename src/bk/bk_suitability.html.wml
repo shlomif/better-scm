@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "The Suitability of BitKeeper and bkbits.net for Free Software Projects" />
-<latemp_version_control_id "$Id$" />
 
 <bk_note />
 
@@ -12,7 +11,7 @@
 <h2>Introduction</h2>
 
 <p>
-The purpose of this document is to analyze how suitable are
+The purpose of this document is to analyse how suitable are
 of <a href="http://www.bitkeeper.com/">BitKeeper</a> and the
 <a href="http://bkbits.net/">bkbits.net</a> hosting service offered by
 BitMover (BitKeeper's parent company), for use by free software
@@ -43,7 +42,7 @@ changesets be sent by E-mail to
 <a href="http://www.bitkeeper.com/v2_logging/">OpenLogging</a>. This
 should not be a problem for most developers of publicly hosted
 Open-Source projects as they expect the history of the project in
-the repositories to be publicly available anyways. (there is a
+the repositories to be publicly available, anyway. (there is a
 small amount of added network traffic, however)
 </p>
 
@@ -111,7 +110,7 @@ I suggested to Mr. McVoy and Co. that BitKeeper would cache the
 OpenLogging comments and send them after many were collected. That way,
 the Technion's relatively poor connection to the Internet backbone
 would not be constantly flooded with E-mail messages, should it adopt
-BitKeeper system-wide. I believe he implictly agreed it would be a
+BitKeeper system-wide. I believe he implicitly agreed it would be a
 good idea. I thought about implementing it myself and sending him the
 patch, but I evidently discovered that I could not in a straightforward
 way.
@@ -167,7 +166,7 @@ and wants people to leave him alone.
 Due to its license, BitKeeper has a bad effect on the community of
 developers of the project. For once, more "idealistic" developers who
 refrain from using non-free software packages, will need to find a
-different way to contribute. (patches, etc). The non-compete clause
+different way to contribute. (patches, etc.). The non-compete clause
 also limits contributors to other version control alternatives to
 contribute. (or limits those who may wish to contribute to them
 in the future).

@@ -272,7 +272,7 @@ TODO:
                 <s id="cmsynergy">Yes. Renames are supported.</s>
                 <s id="clearcase">
                   Yes. Directories are first-class controlled entities
-                  in Clearcase. Even supports controlling of
+                  in ClearCase. Even supports controlling of
                   symbolic/hard links.
                 </s>
                 <s id="ls-sync">
@@ -287,7 +287,7 @@ TODO:
                 <s id="git">
                     Renames are supported for most practical
                     purposes.  Git even detects renames when a file has been
-                    changed afterward the rename.  However, due to a peculiar
+                    changed afterwards the rename.  However, due to a peculiar
                     repository structure, renames are not recorded
                     explicitly, and Git has to deduce them (which works well
                     in practice).
@@ -556,7 +556,7 @@ TODO:
                 <s id="opencm">No.</s>
                 <s id="perforce">Yes. Via the Perforce Proxy (P4P) tool,
                     and <a href="http://www.perforce.com/perforce/doc.current/manuals/p4sag/10_replication.html#1056059">full
-                    repository replacion</a>.
+                    repository replication</a>.
                 </s>
                 <s id="purecm">Yes. Using the PureCM Proxy Server.</s>
                 <s id="vesta">
@@ -569,14 +569,14 @@ TODO:
                 </s>
                 <s id="vss">
                     Not directly possible with the included GUI or
-                    command line tools; ssarc and ssrestor might be useable
+                    command line tools; ssarc and ssrestor might be usable
                 </s>
                 <s id="cmsynergy">
                     Yes, as long as you have the (more expensive) Distributed
                     package.
                 </s>
                 <s id="clearcase">
-                    Not really applicable for clearcase, but see next point.
+                    Not really applicable for ClearCase, but see next point.
                 </s>
                 <s id="ls-sync">
                     Yes, but is not documented and its based on the dataflow
@@ -584,7 +584,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">
                     Not directly possible with the included GUI or command
-                    line tools; Some SQL Server tool might be useable.
+                    line tools; Some SQL Server tool might be usable.
                 </s>
                 <s id="git">Yes. Using the "git clone" command.</s>
                 <s id="tfs">
@@ -619,7 +619,7 @@ TODO:
                 </s>
                 <s id="allchange">No.</s>
                 <s id="subversion">
-                    Yes, using either Chia-Ling Kao's SVN::Mirror
+                    Yes, using either Chia-liang Kao's SVN::Mirror
                     script or the svn-push utility by Shlomi Fish.
                 </s>
                 <s id="cmplus">
@@ -653,17 +653,17 @@ TODO:
                 </s>
                 <s id="vss">
                     Not directly possible with the included GUI or
-                    command line tools; ssarc and ssrestor might be useable
+                    command line tools; ssarc and ssrestor might be usable
                 </s>
                 <s id="cmsynergy">
                     Yes, as long as you have the (more expensive) Distributed
                     package.
                 </s>
-                <s id="clearcase">Yes, using Clearcase Multisite.</s>
+                <s id="clearcase">Yes, using ClearCase Multisite.</s>
                 <s id="ls-sync">Yes, it's what we call a dataflow.</s>
                 <s id="SourceAnywhere">
                     Not directly possible with the included GUI or command
-                    line tools; Some SQL Server tool might be useable.
+                    line tools; Some SQL Server tool might be usable.
                 </s>
                 <s id="git">
                     Yes, it is possible.
@@ -780,7 +780,7 @@ TODO:
                     No, though a single server can serve many repositories.
                 </s>
                 <s id="clearcase">
-                  Yes, a unix-like permissions model is used, which maps
+                  Yes, a Unix-like permissions model is used, which maps
                   onto Windows domain-based authentication in
                   multi-platform environments.
                 </s>
@@ -850,7 +850,7 @@ TODO:
                 </s>
                 <s id="superversion">
                     Partial support. Changes are grouped into changesets,
-                    but cannot be cancelled invididually yet.
+                    but cannot be cancelled individually yet.
                 </s>
                 <s id="svk">Same as subversion.
                 </s>
@@ -935,7 +935,7 @@ TODO:
             </expl>
             <compare>
                 <s id="cvs">Yes. cvs annotate</s>
-                <s id="accurev">Yes. Available from both the gui and cli.</s>
+                <s id="accurev">Yes. Available from both the GUI and CLI.</s>
                 <s id="allchange">Yes</s>
                 <s id="subversion">Yes. (svn blame)</s>
                 <s id="surround">No.</s>
@@ -1013,7 +1013,7 @@ TODO:
                 <s id="accurev">
                     Yes. AccuRev provides functionality to define
                     feature streams in which only the subset of code is seen.
-                    A group of developers can then be retricted to work only
+                    A group of developers can then be restricted to work only
                     from that stream so they are only allowed to check in
                     changes to that subset of code.
                 </s>
@@ -1275,7 +1275,7 @@ TODO:
                 </s>
                 <s id="accurev">
                     Excellent.  There is a full set of documentation available
-                    in pdf format available at
+                    in PDF format available at
                     <a href="http://www.accurev.com/documentation.html">AccuRev
                         Documentation</a> as well as context-sensitive help
                     in the GUI.
@@ -1397,7 +1397,7 @@ TODO:
                     while to become fluent.
                 </s>
                 <s id="clearcase">
-                    Extensive online help in Windows Help / UNIX manpage
+                    Extensive online help in Windows Help / UNIX man page
                     format, also PDF-based documentation. However the
                     complexity of the tool can mean a lengthy ramp-up
                     time.
@@ -1432,7 +1432,7 @@ TODO:
                     guide.
                 </s>
                 <s id="fossil">
-                    Fossil is well documented. Manpage-type help is available
+                    Fossil is well documented. Man page-type help is available
                     for all commands using 'fossil help'. Fossil also includes a
                     <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in web interface</a>
                     permitting easy visual exploration and administration.
@@ -1577,8 +1577,8 @@ TODO:
                 </s>
                 <s id="vss">
                     Very good - an installation package which does the work.
-                    When you create a repository it installs the exe's in a
-                    directory and you can run them from there if you need to.
+                    When you create a repository it installs the executables in
+                    a directory and you can run them from there if you need to.
                 </s>
                 <s id="cmsynergy">
                     Medium. There is a detailed install guide for setting it
@@ -1588,7 +1588,7 @@ TODO:
                     Windows installer.
                 </s>
                 <s id="clearcase">
-                    Poor. Clearcase is very difficult to install in
+                    Poor. ClearCase is very difficult to install in
                     general. At least, setup for a new site is quite
                     complex. Installing additional servers (eg
                     repository servers) is less so.
@@ -1599,7 +1599,7 @@ TODO:
                     (links: create workspace, update, commit, studio...)
                 </s>
                 <s id="SourceAnywhere">
-                    Excellent. Dynamsoft SourceAnywhere is extremely easy to
+                    Excellent. DynamSoft SourceAnywhere is extremely easy to
                     install.  It is totally written in C++ from scratch, which
                     means that you don't need any additional components and
                     frameworks to support the installation.
@@ -1784,7 +1784,7 @@ TODO:
                 <s id="cvs">
                     Good. CVS uses a proprietary protocol with various
                     variations for its client/server protocol. This protocol
-                    can be tunneled over an SSH-connection to support
+                    can be tunnelled over an SSH-connection to support
                     encryption.
                 </s>
                 <s id="accurev">
@@ -1818,7 +1818,7 @@ TODO:
                 <s id="subversion">
                     Very good. The Subversion service can use either
                     WebDAV+DeltaV (which is HTTP or HTTPS based) as its
-                    underylying protocol, or its own proprietary protocol
+                    underlying protocol, or its own proprietary protocol
                     that can be channeled over an SSH connection.
                 </s>
                 <s id="cmplus">
@@ -1835,7 +1835,7 @@ TODO:
                 <s id="svk">
                     Very good. svk uses SVN::Mirror to retrieve remote
                     repository. There has been plans to add VCP support
-                    to SVN::Mirror so it will be able to mirror from arbitary
+                    to SVN::Mirror so it will be able to mirror from arbitrary
                     remote version control systems.
                 </s>
                 <s id="bitkeeper">
@@ -1878,23 +1878,23 @@ TODO:
                     copying files between shared directories.
                 </s>
                 <s id="vss">
-                    VSS uses a Windows network share which has to be writable
+                    VSS uses a Windows network share which has to be writeable
                     for the VSS users (since this means doubling maintenance
                     for new users). Add user in VSS and to share permissions.
-                    the share is most often world-writable, as is the default
+                    the share is most often world-writeable, as is the default
                     when creating a share) It does not perform well over a
                     slow network connection.
                 </s>
                 <s id="cmsynergy">Good (single TCP/IP socket)</s>
                 <s id="clearcase">
                     Poor. Uses an *extremely* chatty RPC protocol for
-                    most clearcase operations, plus NFS or SMB for
+                    most ClearCase operations, plus NFS or SMB for
                     accessing the files themselves. Typically servers
-                    should be deployed locally (ie on the same LAN) as
+                    should be deployed locally (i.e.: on the same LAN) as
                     the client workstations for acceptable performance.
                 </s>
                 <s id="ls-sync">
-                    Good. Use of HTTP to get through firwalls.
+                    Good. Use of HTTP to get through firewalls.
                 </s>
                 <s id="SourceAnywhere">Good. (single TCP/IP socket)</s>
                 <s id="git">
@@ -1907,7 +1907,7 @@ TODO:
                 <s id="fossil">
                     Excellent. Fossil integrates both server and client into
                     a single application. A
-                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in webserver</a>
+                    <a href="http://www.fossil-scm.org/index.html/doc/tip/www/webui.wiki">built-in web server</a>
                     permits graphical administration and navigation over
                     HTTP and HTTPS; as well as providing a
                     <a href="http://www.fossil-scm.org/index.html/doc/tip/www/bugtheory.wiki">bug ticketing system</a>
@@ -1984,8 +1984,8 @@ TODO:
                     UNIX, and basically on any system that has a
                     recent Python port.  With case-insensitive file
                     systems there are some issues that can be avoided
-                    by using a graphical frontend.  On MS Windows
-                    there is a plugin to support tracking of symlinks
+                    by using a graphical front-end.  On MS Windows
+                    there is a plugin to support tracking of symbolic links
                     even if they are not supported natively by the
                     file system.
                 </s>
@@ -2035,7 +2035,7 @@ TODO:
                     Medium. Available on Windows, and several selected
                     flavours of UNIX (not including any other Linux
                     distribution than some versions of Red Hat Enterprise
-                    Linux, SUSE Liunx Enterprise Desktop and Ubuntu Linux).
+                    Linux, SUSE Linux Enterprise Desktop and Ubuntu Linux).
                 </s>
                 <s id="ls-sync">
                     Excellent. Clients and servers work on any Java
@@ -2053,7 +2053,7 @@ TODO:
                     well.
                 </s>
                 <s id="tfs">
-                    The Server and Client needs Windows. A thirdparty company,
+                    The Server and Client needs Windows. A third party company,
                     Teamprise, has developed a client for Eclipse, which means
                     Linux, Mac and other UNIXes support. The Project SvnBridge
                     allows access using SVN clients but needs to run on
@@ -2171,7 +2171,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">Currently not.</s>
                 <s id="git">
-                    Yes.  Gitweb is included in distribution and there's
+                    Yes.  Gitweb is included in the distribution and there's
                     also <a href="http://hjemli.net/git/cgit/">cgit</a>.
                 </s>
                 <s id="tfs">Web Access is available as download for free.</s>
@@ -2199,7 +2199,7 @@ TODO:
                 </s>
                 <s id="accurev">
                     A single, comprehensive,
-                    java-based GUI is provided.  The GUI has the same
+                    Java-based GUI is provided.  The GUI has the same
                     look-and-feel on all platforms.
                 </s>
                 <s id="allchange">
@@ -2242,7 +2242,7 @@ TODO:
                     and possibly others under development.
                 </s>
                 <s id="bazaar">
-                    There are several graphical frontends in development, see
+                    There are several graphical front-ends in development, see
                     <a href="http://bazaar-vcs.org/BzrPlugins">the Bazaar
                         Plugins page</a> and <a
                         href="http://bazaar-vcs.org/3rdPartyTools">the
@@ -2322,7 +2322,7 @@ TODO:
                 </s>
                 <s id="SourceAnywhere">The system is GUI-based by design.</s>
                 <s id="git">
-                    Gitk is included in distribution.  Qgit and Git-gui tools are also available.
+                    Gitk is included in the distribution.  Qgit and Git-gui tools are also available.
                 </s>
                 <s id="tfs">TFS client integrates into Visual Studio.</s>
                 <s id="vault">
@@ -2358,7 +2358,7 @@ TODO:
                 Proprietary, binary only license. Pay per use license,
                 with an option for a costless license for developers of
                 open source software. Used to have a gratis, downloadable
-                license, which was intended for the develpoment of open
+                license, which was intended for the development of open
                 source software. It had <a href="bk-license.html">a
                     problematic license</a>,
                 and was discontinued starting at April 2005.
@@ -2424,7 +2424,7 @@ TODO:
             </s>
             <s id="clearcase">
                 Proprietary, with floating license supported. License
-                server contacted for each clearcase operation, which
+                server contacted for each ClearCase operation, which
                 obtains a license to be used for a next duration (8 hours
                 by default - most people lower it to 2 hours or less,
                 while 30 minutes is the minimum). Prices are several $k per

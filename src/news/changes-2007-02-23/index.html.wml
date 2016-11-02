@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "ClearCase, Mercurial and AccuRev were added to the Comparison" />
-<latemp_version_control_id "$Id$" />
 
 
 <p>
@@ -13,8 +12,8 @@ Recently three new version control systems were added to
 
 <li>
 <a href="http://www-306.ibm.com/software/awdtools/clearcase/">Rational
-ClearCase</a> by IBM - a commercial and renowed source configuration management
-system.
+ClearCase</a> by IBM - a commercial and well-known source configuration
+management system.
 </li>
 
 <li>

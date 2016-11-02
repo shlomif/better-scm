@@ -1,14 +1,13 @@
 #include '../template.wml'
 
 <latemp_subject "Shlomi Fish - Evolution of a Revision Control User" />
-<latemp_version_control_id "$Id$" />
 
 <h3>Last Updated: 30-April-2005</h3>
 
 <h2>Genesis</h2>
 
 <p>
-When you are a DOS programmer in the late 80's and early 90's people don't
+When you are a DOS programmer in the late 80s and early 90s, people don't
 tell you about UNIX or about Source Control. Even when you start programming
 in Windows and then in UNIX, not everybody use it. So you use poor man's methods
 of <tt>cp myfile myfile.bak</tt> or <tt>myfile.txt.1</tt> <tt>myfile.txt.2</tt>
@@ -103,7 +102,7 @@ could eventually win the vendor's trust to get it myself.
 
 <p>
 In any case, I liked BitKeeper so much, that I even thought about eventually
-converting Freecell Solver (that was converted to CVS a few monthes back) to
+converting Freecell Solver (that was converted to CVS a few months back) to
 BitKeeper and BKbits.
 </p>
 
@@ -160,7 +159,7 @@ When I was first directed to the Aegis homepage by a user who read my Advogato
 diary where I had said I was looking for something better than CVS, I could not
 understand half of the features that were presented there. But after I used
 BitKeeper, all those features made sense, and I was impressed by its
-capabilites.
+capabilities.
 </p>
 
 <p>
@@ -199,7 +198,7 @@ As opposed to BitKeeper, Subversion is not distributed, but this feature is
 planned. Still, it is very stable and usable, (with a few quirks that can be
 avoided with some expertise), so I have used it ever since. I still maintain
 Freecell Solver with CVS, because I don't have Subversion hosting.
-Nevertheless, I can probably become a junior partner in a Co-oped server
+Nevertheless, I can probably become a junior partner in a co-oped server
 hosted at an Israeli ISP, where I can set up Subversion hosting. I'll have to
 pay some money for it, but I guess there's no such thing as a free lunch
 (at least until the hosting services start supporting Subversion as well,
@@ -235,7 +234,7 @@ With the accessibility and ease of setup of Arch, Subversion and other similar
 open source version control systems, it is probable that BitKeeper will
 eventually have very little use among open source hackers, and have nothing
 too much besides the Linux kernel repositories to show for. (And a whole slew
-of flamewars in the <a href="http://www.tux.org/lkml/">Linux Kernel Mailing
+of flame-wars in the <a href="http://www.tux.org/lkml/">Linux Kernel Mailing
 List</a> about it).
 </p>
 </div>

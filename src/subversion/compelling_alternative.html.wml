@@ -1,13 +1,12 @@
 #include '../template.wml'
 
 <latemp_subject "Subversion - A Compelling Alternative to CVS and BitKeeper" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Introduction</h2>
 
 <p>
 First of all note, that I said alternative and not replacement. While
-Subversion can easily take on CVS anyday, (except for a few missing features,
+Subversion can easily take on CVS any day, (except for a few missing features,
 which are going to be implemented soon enough), it by no means has everything
 BitKeeper has to offer. At least not yet. Still, Subversion is good enough to
 be used instead of either CVS or BitKeeper.
@@ -62,7 +61,7 @@ Most programmers who use CVS like it enough and for a good reason. It keeps
 several versions of the files, lets you branch them, tag them, and merge them,
 and does it quickly and in a straightforward manner. For the same reason people
 will like Subversion (or BitKeeper) as well. What it does not do is enforce
-a particular working model that differes from this simple minded approach.
+a particular working model that differs from this simple minded approach.
 </p>
 
 <p>
@@ -86,7 +85,7 @@ houses cannot afford or are not willing to pay.
 </p>
 
 <p>
-For the record, despite its limitations in comparsion to BitKeeper, I found
+For the record, despite its limitations in comparison to BitKeeper, I found
 Subversion very nice and enjoyable to use, which is expected as I can even
 get myself to use CVS. While it is possible that I would have preferred to
 use BitKeeper, if it were possible to me. But since it isn't, I must say, that

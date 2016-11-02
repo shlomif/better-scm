@@ -2,7 +2,6 @@
 #include "xhtml/1.x/std/toc.wml"
 
 <latemp_subject "How to Contribute to this Site" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 There are several ways in which you can contribute to this site:
@@ -60,8 +59,8 @@ patch is bad in some regards it will be sent back for corrections.
 <li>
 <p>
 Make sure to send the email from an email address where you'd like to receive
-further notifications for updating of the comparison, or consulation with
-queries, or else specify this email in your message.
+further notifications for updating of the comparison, or queries about it, or
+else specify this email in your message.
 </p>
 </li>
 

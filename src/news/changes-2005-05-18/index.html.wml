@@ -1,8 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "New BitKeeper Essay + PureCM Added to the Comparison" />
-<latemp_version_control_id "$Id: index.html.wml 222 2005-05-02 18:45:20Z shlomif
- $" />
 
 <p>
 There's <a href="$(ROOT)/bk/what-bitmover-got-wrong.html">a new Essay about

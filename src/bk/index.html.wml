@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : BitKeeper" />
-<latemp_version_control_id "$Id$" />
 
 <bk_note />
 
@@ -52,7 +51,7 @@ Developers</a>
 </li>
 <li>
 <a href="relicensing_bk.html">Why a change of the BitKeeper licensing would
-be a good idea</a>. (from BitMover's POV).
+be a good idea</a>. (from BitMover's point-of-view).
 </li>
 <li>
 <a href="demise-of-gratis-bitkeeper.html">The Demise of the Gratis BitKeeper

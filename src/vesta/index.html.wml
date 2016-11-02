@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Vesta" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 
@@ -14,7 +13,7 @@
 <p>
 Vesta is a mature software configuration management system that originated
 from an internal use by Digital Equipment Corporation (now Compaq/HP). It
-is a replacement for both CVS and make and provides more than mundane revison
+is a replacement for both CVS and make and provides more than mundane revision
 control systems. It is fully open-source under the LGPL.
 </p>
 

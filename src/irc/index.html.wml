@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Discuss on IRC" />
-<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "IRC, Internet Relay Chat, Freenode" />
 
 <p>

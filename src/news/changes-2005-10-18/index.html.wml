@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "\"The BitKeeper Ghost\"" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 There's <a href="$(ROOT)/bk/the-bitkeeper-ghost.html">a new Essay titled

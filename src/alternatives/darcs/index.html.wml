@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Darcs" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 
@@ -27,6 +26,6 @@ the language.
 </p>
 
 <p>
-Neverthelss Darcs is worth looking at.
+Nevertheless Darcs is worth looking at.
 </p>
 

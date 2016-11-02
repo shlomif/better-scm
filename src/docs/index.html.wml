@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "General Documents" />
-<latemp_version_control_id "$Id$" />
 
 <ul class="links">
 

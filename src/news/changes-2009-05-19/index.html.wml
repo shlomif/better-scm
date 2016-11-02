@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Updated Comparison and Monotone Updates" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 The following version control systems have been added to

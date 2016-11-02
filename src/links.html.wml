@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Links" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Articles</h2>
 

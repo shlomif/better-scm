@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Subversion Installation Tutorial for Win32" />
-<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "installation, tutorial, win32" />
 
 <pre style="background: transparent;">
@@ -76,7 +75,7 @@ Install.
 
     to the end of the LoadModule block.
 
-    C. In the command prompt, goto an empty directory
+    C. In the command prompt, go to an empty directory
     and type the command:
 
         svnadmin create myrepos

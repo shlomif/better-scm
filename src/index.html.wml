@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Introduction</h2>
 

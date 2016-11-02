@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "The Demise of the Gratis BitKeeper Licensing" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 <b>Written at:</b> 12-April-2005<br />
@@ -31,7 +30,7 @@ BitMover, <a href="http://www.bitkeeper.com/">BitKeeper</a>'s parent company,
 <a href="http://www.bitkeeper.com/press/2005-04-05.html">announced
 that it will discontinue</a> the gratis version of BitKeeper intended for
 development of Open Source Software. The implications of this
-are layed out in <a href="http://kerneltrap.org/node/4966">this KernelTrap
+are laid out in <a href="http://kerneltrap.org/node/4966">this KernelTrap
 editorial</a>. A NewsForge article
 <a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;tid=25&amp;tid=3">interviews the parties involved in this decision</a> and what
 they think.
@@ -74,19 +73,19 @@ may no longer be relevant.
 <ul class="links">
 <li>
 <a href="http://kerneltrap.org/node/4966">KernelTrap editorial about the
-dicontinuation of the gratis BitKeeper</a>
+discontinuation of the gratis BitKeeper</a>
 </li>
 <li>
 <a href="http://developers.slashdot.org/article.pl?sid=05/04/06/140202&amp;tid=163&amp;tid=8&amp;tid=106">Slashdot: No More BitKeeper Linux</a>.
 </li>
 <li>
-<a href="http://linux.slashdot.org/article.pl?sid=05/04/09/2136247&amp;tid=106">Slashdot: Linus Drops Bitkeeper</a>
+<a href="http://linux.slashdot.org/article.pl?sid=05/04/09/2136247&amp;tid=106">Slashdot: Linus Drops BitKeeper</a>
 </li>
 <li>
 <a href="http://linux.slashdot.org/article.pl?sid=05/04/11/1413232&amp;tid=99&amp;tid=106">Slashdot: BitKeeper Love Triangle: McVoy, Linus and Tridge</a>
 </li>
 <li>
-<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;ltid=25&amp;tid=3">Newsforge: BitKeeper and Linux: The end of the road?</a>
+<a href="http://os.newsforge.com/os/05/04/11/118211.shtml?tid=152&amp;tid=2&amp;ltid=25&amp;tid=3">NewsForge: BitKeeper and Linux: The end of the road?</a>
 </li>
 <li>
 <a href="http://slashdot.org/pollBooth.pl?qid=1269&amp;aid=-1">Slashdot Poll:
@@ -109,7 +108,7 @@ the dis-continuation of the gratis BitKeeper licensing).
 </li>
 <li>
 <a href="http://www.theregister.co.uk/2005/04/15/perens_on_torvalds/">The
-Register - 'Cool it, Linus' - Bruce Perens</a> - Bruce Perens, the renowed
+Register - 'Cool it, Linus' - Bruce Perens</a> - Bruce Perens, the well-known
 open-source leader comes to the defence of Andrew Tridgell.
 </li>
 <li>
