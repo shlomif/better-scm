@@ -21,6 +21,7 @@ AXP
 AccuRev
 Advogato
 AllChange
+Altreus's
 Apache2
 ArX
 ArchWay
@@ -46,6 +47,7 @@ CLI
 CMSynergy
 CPAN
 CPANPLUS
+CPANTS
 CR
 CSS
 CVS
@@ -61,6 +63,7 @@ Chatzilla
 Chora
 ClearCase
 Collins-Sussman
+Collins-Sussman's
 CompareML
 ComputerWorld
 Corel-Draw
@@ -109,6 +112,7 @@ Init
 JavaWebStart
 Jsvn
 KernelTrap
+Kogman
 LF
 LGPL
 LKML
@@ -261,6 +265,7 @@ XML
 XP
 XSLT
 XYZ
+Yuval
 Z-setup
 ZLIB
 Zadka
@@ -285,11 +290,13 @@ bitkeeper-users
 bkbits
 blog
 blogs
+borg
 bzr
 bzr-gtk
 ca
 cgi
 cgit
+ch's
 changesets
 channeled
 checkered
@@ -342,6 +349,8 @@ hyperlinks
 i386
 init
 kludgy
+kwalitee
+lacks_manifest_skip_file
 libp4
 libxml
 localhost
@@ -404,6 +413,7 @@ svn
 svn-X
 svnadmin
 tarball
+tarballs
 timestamp
 timezone
 tkaegis
@@ -413,6 +423,7 @@ toolkit
 troff
 txt
 userland
+uses_version_control
 v2
 vadvance
 versioned
