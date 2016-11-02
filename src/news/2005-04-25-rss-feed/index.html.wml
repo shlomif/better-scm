@@ -2,8 +2,6 @@
 
 <latemp_subject "The Better SCM RSS Feed" />
 <latemp_more_keywords "RSS, news" />
-<latemp_version_control_id "$Id: index.html.wml 167 2005-04-23 22:04:36Z shlomif
- $" />
 
 <p>
 <a href="$(ROOT)">The Better SCM Site</a> now has

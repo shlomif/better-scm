@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Overcoming Aegis Childhood Diseases" />
-<latemp_version_control_id "$Id$" />
 
 <div class="note">
 <h2>Note</h2>
@@ -32,12 +31,12 @@ Aegis is a mature SCM with many powerful features and may seem like a good
 candidate for an open-source alternative that can take on both BitKeeper
 and ClearCase. However, as a former CVS and BitKeeper user I was not able
 to properly use it for my relatively limited projects due to its complexity
-and idiosyncrecies. I believe Aegis suffers from several childhood diseases
+and idiosyncrasies. I believe Aegis suffers from several childhood diseases
 that should be remedied in order for it to be widely accepted by the community
 at large.
 </p>
 <p>
-This document should be considered as a todo list.
+This document should be considered as a to-do list.
 </p>
 <h2>File Copies</h2>
 
@@ -58,7 +57,7 @@ Implement another command that does just that. (more job for me.)
 
 <h2>An Internal Permission System</h2>
 <p>
-Aegis relies on the UNIX Filesystem permissions' system to decide who can do
+Aegis relies on the UNIX file system’s permissions' system to decide who can do
 what in the project. While this gives greater security, it also means it is
 harder to run it in userland, and harder to port to other systems such as
 Win32. Aegis in-fact runs SUID root.
@@ -120,10 +119,10 @@ done very largely.
 
 <p>
 Most of Aegis' documentation is released as PostScripts or PDFs. Furthermore,
-the PDFs are not very Acrobat Readerish: they have no Bookmarks, hyperlinks or
-other bells and whistles. I believe HTML documentation and better PDFs (and
-possibly MS-Word documents) are in order, which could be achieved by converting
-the documentation to DocBook/XML.
+the PDFs are not very Acrobat Reader-friendly: they have no Bookmarks,
+hyperlinks or other bells and whistles. I believe HTML documentation and better
+PDFs (and possibly MS-Word documents) are in order, which could be achieved by
+converting the documentation to DocBook/XML.
 </p>
 
 <p>

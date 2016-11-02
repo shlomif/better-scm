@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Changing the BitKeeper License and Why it is Needed" />
-<latemp_version_control_id "$Id$" />
 
 <bk_note />
 
@@ -44,7 +43,7 @@ a reduced functionality, freely distributable but required a license.
 MySQL started as an internally used database by T.c.X DataKonsulter,
 a Swedish consultants company. They decided to release it as
 shrinkwrap as a not fully free but usable license, that required no
-payment for depolyment on UNIX. As a result, MySQL became very popular
+payment for deployment on UNIX. As a result, MySQL became very popular
 and is the most widely used Database server today.
 </p>
 
@@ -83,7 +82,7 @@ Domain was a very good choice for
 <a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell Solver</a>
 (shameless plug) because it made it an excellent choice for vendors of
 freeware and shareware Freecell implementations who cannot comply with the
-restrictions of the GPL. Similarily, I believe the change of Wine's
+restrictions of the GPL. Similarly, I believe the change of Wine's
 license to LGPL was a mistake and that they should have kept it as X11.
 </p>
 
@@ -151,7 +150,7 @@ directory lists many such implementations most of them are yet to make
 a difference somewhere. SCCS died because it was made proprietary by
 AT&amp;T and replaced by RCS and later on CVS. BitKeeper may might as
 well be a footnote in the history of SCMs, something very good that
-persisted for a while until superceded by something better or more
+persisted for a while until superseded by something better or more
 readily available. Like ClearCase.
 </p>
 
@@ -183,7 +182,7 @@ can hardly be expected to become paying customers.
 
 <p>
 Requiring the source to be published under a free software license is
-draconic. Many times, free software developers keep not-so-free content
+draconian. Many times, free software developers keep not-so-free content
 in the repositories, which they did not originate with. Other times, the
 software is close to being open-source but not quite. OpenLogging and a
 requirement that the repository be made online is enough. Even if the
@@ -196,7 +195,7 @@ BitKeeper while keeping the source for himself.
 The non-compete clause is especially useless. Even if I'm a developer
 of a competing solution, using the BitKeeper binary will only help me
 learn about its features. Even the source would only be enough to learn
-about how it is implemented as I cannot directly use the soure in my
+about how it is implemented as I cannot directly use the source in my
 project, legally and practically. (the codebases may be completely
 different)
 </p>
@@ -212,7 +211,7 @@ who wish to happily use it, without doing anything wrong.
 <ol>
     <li>
     BitKeeper is distributed as part of major distributions such as
-    RedHat, Mandrake, S.u.s.e.
+    Red Hat, Mandrake, S.u.s.e.
     </li>
     <li>
     BitKeeper is the most commonly used revision control system in

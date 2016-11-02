@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Site Source Code" />
-<latemp_version_control_id "$Id$" />
 
 <define-tag repos_url whitespace="delete">
 https://bitbucket.org/shlomif/better-scm

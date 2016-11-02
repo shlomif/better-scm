@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Response to Richard Stallman's LKML Post" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 Richard Stallman has written
@@ -28,7 +27,7 @@ I used BitKeeper at a point. The reason for it is that I ran into CVS'
 limitations and was looking for a better alternative. Of all the alternatives
 I could find (BitKeeper, Aegis, Arch and Subversion) only BitKeeper had a
 public hosting service - bkbits.net. Eventually, the license change that
-restricted the contents of the repositories to be free software drived me
+restricted the contents of the repositories to be free software has driven me
 away from it, but until then I was very happy with the service.
 </p>
 
@@ -38,7 +37,7 @@ BitKeeper, is certainly very delightful to work with. But I don't have a public
 server somewhere. If Stallman wishes to eliminate BitKeeper's edge, it needs to
 give a centralized service (a la
 <a href="http://sourceforge.net/">SourceForge</a> and friends) for Subversion
-, Aegis or Arch and preferablly all of them. The Free Software Foundation runs
+, Aegis or Arch and preferably all of them. The Free Software Foundation runs
 <a href="http://savannah.gnu.org/">Savannah</a> and he can introduce public
 hosting there for free software to use with an open-source tool.
 </p>
@@ -60,9 +59,9 @@ I don't hold McVoy as guilty for trying to sell BitKeeper, which is an
 excellent product that took a long time to develop and produce, to vendors
 of internal, closed-source and hardware-assisting software, which are his
 main market. (despite the fact that the free software movement holds internal
-software as sacred and even FS licenses must give way to it) However, I think
-he is over-possesive of BitKeeper to the extent that open-source developers
-(who are his main evangelizers) cannot use it. And without them, BitKeeper would
+software as sacred and even free software licenses must give way to it) However, I think
+he is over-possessive of BitKeeper to the extent that open-source developers
+(who are his main advocates) cannot use it. And without them, BitKeeper would
 be very slowly accepted or even eventually replaced by an equivalent open-source
 alternative.
 </p>
@@ -70,7 +69,7 @@ alternative.
 <p>
 In <a href="relicensing_bk.html">this document</a> I outlined why a change
 of license would do good for BitMover in the long run. Meanwhile, while Mr.
-McVoy is being stubburn and irrational, we can at least force him to re-think
+McVoy is being stubborn and irrational, we can at least force him to re-think
 the license (which is the only problem BitKeeper has), by offering a similar
 service.
 </p>

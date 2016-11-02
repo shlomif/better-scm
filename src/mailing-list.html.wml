@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Mailing List" />
-<latemp_version_control_id "$Id$" />
 
 <set-var mailing-list-url="https://lists.berlios.de/mailman/listinfo/better-scm-discuss/" />
 

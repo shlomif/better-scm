@@ -1,7 +1,6 @@
 #include "../template.wml"
 
 <latemp_subject "The BitKeeper Ghost" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 <b>Written by:</b> Shlomi Fish<br />
@@ -26,7 +25,7 @@ kernel developers and developers of other projects in Limbo. The kernel
 developers tested several version control systems, and ended up developing
 their own tool called <a href="http://git.or.cz/">git</a>, which has since
 then undergone some active development. Many other open-source alternatives to
-BitKeeper have been developed before it or afterward.
+BitKeeper have been developed before it or afterwards.
 </p>
 
 <p>

@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM : Nice tries but" />
-<latemp_version_control_id "$Id$" />
 
 <p>
 There are some attempts at creating better version control systems that I
@@ -29,7 +28,7 @@ plain CVS usage. Plus, some inherent flaws of the CVS system
 I don't view attempts to keep CVS alive very optimistically. CVS is merely
 a group of scripts over RCS, that is very limited in what it can do, and so
 provide little room for improvement. Projects like Subversion aim to provide
-everythin CVS has and more, while requiring an upgrade of the server.
+everything CVS has and more, while requiring an upgrade of the server.
 I believe upgrading the servers is not such an issue that one has to try
 and create clients that overcome the servers' inherent deficiencies.
 </p>
@@ -57,7 +56,7 @@ alternative.
 
 <p>
 OpenCM seems like an ad-hoc version control system that was written to
-suit the needs and whims of a specific team. I don't see it becoming Shrinkwrap
+suit the needs and whims of a specific team. I don't see it becoming shrinkwrap
 material unless it acquires all of CVS features. I suggest the OpenCM team
 to take a look at Subversion which aims to provide all of CVS' features and
 then some, and even eventually acquire the features present in BitKeeper. But

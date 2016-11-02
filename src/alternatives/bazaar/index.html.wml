@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Bazaar" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 
@@ -21,7 +20,7 @@ and released under the <a href="http://en.wikipedia.org/wiki/GNU_General_Public_
 <p>
 It is written in Python and designed for correctness, performance,
 simplicity, and familiarity for developers who are familiar with CVS or
-Subversion. Its main program, 'bzr', has been self-hosting since March
+Subversion. Its main program, “bzr”, has been self-hosting since March
 2005 and is mature enough to host large projects such as
 <a href="https://launchpad.net/">Launchpad.net</a>.
 </p>
@@ -35,7 +34,7 @@ under active development. Bazaar has been adopted by
 </p>
 
 <p>
-It should be noted that Bazaar (also known as "bzr" after its command line
+It should be noted that Bazaar (also known as “bzr” after its command line
 program) used to be called Bazaar-NG, while its predecessor "Baz" (originally
 derived from <a href="$(ROOT)/arch/">GNU Arch</a>) used to be called "Bazaar".
 However, now after bzr has matured, it assumed the name "Bazaar" instead.

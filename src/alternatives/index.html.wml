@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Available CVS Alternatives" />
-<latemp_version_control_id "$Id$" />
 
 <latemp_more_keywords "Arch, Aegis, Monotone, Vesta" />
 
@@ -16,7 +15,7 @@ by large projects and large teams.
 <h3><a href="$(ROOT)/arch/">Arch</a></h3>
 
 <p>
-A revision control architecutre originally developed by
+A revision control architecture originally developed by
 <a href="http://regexps.srparish.net/www/">Tom Lord</a> that
 is distributed, and can be networked and serviced by a large number of
 common networking protocols (without a special configuration of the

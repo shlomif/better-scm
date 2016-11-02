@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Site Map" />
-<latemp_version_control_id "$Id$" />
 
 <div class="sitemap">
 <:{

@@ -135,7 +135,7 @@ my $tree_contents =
                 {
                     'text' => "Mercurial",
                     'url' => "alternatives/mercurial/",
-                    'title' => ("Mercurial - an Open Source Distributed" .
+                    'title' => ("Mercurial - an Open Source Distributed " .
                         "Version Control System"),
                 },
                 {

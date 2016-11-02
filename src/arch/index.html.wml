@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Arch" />
-<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" />
 
 <div class="note">

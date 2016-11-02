@@ -2,7 +2,6 @@
 #include "xhtml/1.x/std/toc.wml"
 
 <latemp_subject "F.A.Q. (Frequently Asked Questions) for the Better-SCM Site" />
-<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "git" />
 
 <div class="toc">
@@ -56,13 +55,13 @@ fill in the details, but if you are, then it wouldn't hurt.
 <p>
 <a href="http://git.or.cz/">git</a> is a popular version control system
 originally written for use for development of the Linux kernel, but
-has been adopted by many other projects since. Its absense in both
+has been adopted by many other projects since. Its absence in both
 the comparison and the main site, is a well-noted deficiency of them.
 </p>
 
 <p>
 The reason it's not there is that while many people have complained about
-its absense, no one suitable has volunteered to become its champion and
+its absence, no one suitable has volunteered to become its champion and
 supplied a good enough patch. If you have a substantial amount of git
 expertise, have good English writing skills, and wish to volunteer,
 then we'll be happy to hear from you. If not - at least don't complain about
@@ -84,7 +83,7 @@ a lot of important criteria?</h3>
 
 <p>
 The comparison was started with about 5 version control systems, and with
-a large number of criteria that seemed adequate at the time. A few critiria
+a large number of criteria that seemed adequate at the time. A few criteria
 were added later, but since then most of the contributions were just patches
 to add a new version control system.
 </p>

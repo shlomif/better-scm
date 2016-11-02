@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Monotone" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 

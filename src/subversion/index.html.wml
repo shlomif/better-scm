@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Better SCM Initiative : Subversion" />
-<latemp_version_control_id "$Id$" />
 
 <h2>Homepage</h2>
 
@@ -15,8 +14,8 @@
 Subversion is a project that was meant to be a better replacement for CVS
 - solving the main issues that CVS has and offering some other power.
 As opposed to other revision control systems, Subversion did not start
-as an internally used system that was eventaully made public, but was
-rather designed from the grounds up as "Shrinkwrap".
+as an internally used system that was eventually made public, but was
+rather designed from the grounds up as "shrinkwrap".
 </p>
 
 <p>
@@ -30,7 +29,7 @@ under the Apache License.
 
 <p>
 Among its extra features are versioned file renames and copies, atomic commits
-and implicit changesets, a comperhensive API, ability to be networked over
+and implicit changesets, a comprehensive API, ability to be networked over
 HTTP and HTTPS, versioned directories, and efficient handling of binary
 files.
 </p>

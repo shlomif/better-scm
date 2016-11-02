@@ -36,7 +36,7 @@ my @news_items =
             'title' => "New BitKeeper Essay + PureCM Added to the Comparison",
             'id' => "changes-2005-05-18",
             'description' => q{There's a new BitKeeper essay on the Better-SCM
-            site and PureCM was added to the comparsion.},
+            site and PureCM was added to the comparison.},
             'date' => "2005-05-18",
         },
         {
@@ -52,7 +52,7 @@ my @news_items =
             'title' => "ClearCase, Mercurial and AccuRev Added to the Comparison",
             'id' => "changes-2007-02-23",
             'description' => q{Three new (and important) systems were added
-            to the comparison recently: the commercial and renowed ClearCase,
+            to the comparison recently: the commercial and well-known ClearCase,
             the open-source Mercurial, and the commercial AccuRev.
             },
             date => "2007-02-23",
