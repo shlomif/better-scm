@@ -1,7 +1,6 @@
 #include '../template.wml'
 
 <latemp_subject "Version Control Humour" />
-<latemp_version_control_id "$Id$" />
 <latemp_more_keywords "humour, humor" />
 
 <h2 id="intro">Introduction</h2>
