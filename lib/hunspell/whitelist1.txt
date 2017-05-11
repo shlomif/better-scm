@@ -58,7 +58,6 @@ CVSweb
 Cervisia
 Changeset
 Changesets
-Changesets
 Chatzilla
 Chora
 ClearCase
@@ -170,8 +169,6 @@ Qgit
 RCS
 REFCOPY
 RPC
-RPC
-RPM
 RPM
 RPMs
 RSS
@@ -223,7 +220,6 @@ TortoiseCVS
 TortoiseHg
 TortoiseSVN
 Torvalds
-Trac
 Trac
 Tridge
 Tridgell
@@ -497,4 +493,3 @@ svnsync
 tf
 tfpt
 whatsnew
-
