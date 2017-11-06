@@ -51,9 +51,9 @@ CPANPLUS.pm command.
 </ol>
 
 <p>
-To build the site, first issue the command <tt>perl gen-helpers.pl</tt>
-and then type <tt>make</tt>. You'll need to run <tt>gen-helpers.pl</tt>
-again whenever you add or remove files from the <tt>./src</tt> directory.
+To build the site, first issue the command <code>perl gen-helpers.pl</code>
+and then type <code>make</code>. You'll need to run <code>gen-helpers.pl</code>
+again whenever you add or remove files from the <code>./src</code> directory.
 </p>
 
 <p>

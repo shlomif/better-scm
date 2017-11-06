@@ -75,7 +75,7 @@ Added a stylesheet for print.
 Markup is 100% valid XHTML 1.1. CSS is valid CSS.
 </li>
 <li>
-A new <tt>&lt;div&gt;</tt>-based layout that replaces the old table-layout.
+A new <code>&lt;div&gt;</code>-based layout that replaces the old table-layout.
 </li>
 <li>
 A better page footer, with a version control ID and a Creative Commons
@@ -111,7 +111,7 @@ separate re-usable CPAN module</a>.
 Added a version control timestamp.
 </li>
 <li>
-The <tt>id</tt> HTML attribute is now used as part of the element, instead
+The <code>id</code> HTML attribute is now used as part of the element, instead
 of as a separate &lt;a&gt; element.
 </li>
 <li>
@@ -138,7 +138,7 @@ Many refactorings and cleanups were done to the comparison's code.
 The content now carries a Creative Commons Attribution license notice.
 </li>
 <li>
-Added author and keywords <tt>&lt;meta /&gt;</tt> tags.
+Added author and keywords <code>&lt;meta /&gt;</code> tags.
 </li>
 </ul>
 

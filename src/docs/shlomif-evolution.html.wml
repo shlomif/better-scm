@@ -10,7 +10,7 @@
 When you are a DOS programmer in the late 80s and early 90s, people don't
 tell you about UNIX or about Source Control. Even when you start programming
 in Windows and then in UNIX, not everybody use it. So you use poor man's methods
-of <tt>cp myfile myfile.bak</tt> or <tt>myfile.txt.1</tt> <tt>myfile.txt.2</tt>
+of <code>cp myfile myfile.bak</code> or <code>myfile.txt.1</code> <code>myfile.txt.2</code>
 or copying everything to a different directory. Stuff like that.
 </p>
 
@@ -41,7 +41,7 @@ minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise
 Simulator project my partner and I took for the Technion, I decided to use
 <a href="http://www.cvshome.org/">CVS</a>. So, we registered a project at
 <a href="http://developer.berlios.de/">BerliOS</a> and started using it. The
-CVS <tt>import</tt> command gave us some
+CVS <code>import</code> command gave us some
 trouble as we did not really know how to use it, but eventually we were right
 on track, and were amazed at the convenience.
 </p>

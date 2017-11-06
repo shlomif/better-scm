@@ -85,16 +85,16 @@ Use Aegis' Branches - it's there and it's working.
 <h2>The Command Organization</h2>
 <problem />
 <p>
-When invoked on the command line, the command <tt>aegis</tt> is followed by
-a verbose command like <tt>-Change_Directory</tt> or <tt>-ReMove_Project</tt>,
-or alternatively there are the <tt>ae*</tt> shortcuts that are present as shell
+When invoked on the command line, the command <code>aegis</code> is followed by
+a verbose command like <code>-Change_Directory</code> or <code>-ReMove_Project</code>,
+or alternatively there are the <code>ae*</code> shortcuts that are present as shell
 functions. Most other revision control systems (CVS, Arch, BitKeeper and
-Subversion) use a <tt>[Program] [short-command] [parameters]</tt> scheme, which
+Subversion) use a <code>[Program] [short-command] [parameters]</code> scheme, which
 make more sense.
 </p>
 <p>
-The <tt>ae</tt> shortcuts pollute the main shell namespace and are confusing.
-I suggest aegis converts to <tt>aegis [mycommand] parameters</tt> like:
+The <code>ae</code> shortcuts pollute the main shell namespace and are confusing.
+I suggest aegis converts to <code>aegis [mycommand] parameters</code> like:
 </p>
 
 <pre>
@@ -111,7 +111,7 @@ Which is the more standard and more sensible.
 <solution />
 
 <p>
-It is possible. <tt>aegis -cp</tt> will copy a file and abbreviations can be
+It is possible. <code>aegis -cp</code> will copy a file and abbreviations can be
 done very largely.
 </p>
 
