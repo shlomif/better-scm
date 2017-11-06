@@ -7,7 +7,7 @@
 The IRC (Internet Relay Chat) is a mechanism to have textual conversations
 with several people at once over the Internet. We have set up
 <a href="irc://irc.freenode.net/scm">a channel</a> for discussing
-version control and source configuration management. It is <tt>#scm</tt>
+version control and source configuration management. It is <code>#scm</code>
 on the <a href="http://www.freenode.net/">Freenode</a> IRC Network. Hope to
 see you all there.
 </p>

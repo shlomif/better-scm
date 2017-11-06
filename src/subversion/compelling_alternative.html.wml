@@ -29,8 +29,8 @@ on a day to day basis, is more similar than not.
 <p>
 There is such a principle as the "Keep it Simple, Stupid" (KISS). CVS is
 easy to get used to because it adheres to this principles. Most newbies can
-get by with <tt>cvs commit</tt>, <tt>cvs checkout</tt>, and <tt>add</tt>.
-Afterwards, they can learn about <tt>cvs update</tt>, branching, tagging,
+get by with <code>cvs commit</code>, <code>cvs checkout</code>, and <code>add</code>.
+Afterwards, they can learn about <code>cvs update</code>, branching, tagging,
 merging and everything else. BitKeeper is a bit more complex due to its
 explicit changesets and distributed nature, but it is still fairly easy
 to use with a subset of the commands. The same is true of Subversion, where
