@@ -11,9 +11,6 @@ required:
         File::Basename: 0
         File::Copy: 0
         File::Find: 0
-        File::Find::Object: 0
-        File::Find::Object::Rule: 0
-        File::Path: 0
         File::Spec: 0
         File::Spec::Functions: 0
         File::Which: 0
@@ -34,9 +31,7 @@ required:
         JSON::MaybeXS: 0
         List::MoreUtils: 0
         List::Util: 0
-        Path::Tiny: 0
         POSIX: 0
-        String::ShellQuote: 0
         Template: 0
         Template::Preprocessor::TTML: 0
         Test::HTML::Recursive::DeprecatedTags: 0
@@ -45,16 +40,12 @@ required:
         Test::More: 0
         Test::TrailingSpace: 0
         Text::Hunspell: 0
-        Text::VimColor: 0
         Text::WrapAsUtf8: 0
         XML::CompareML::HTML: 0
-        XML::Grammar::Vered: 0
         XML::LibXML: 0
         XML::LibXML::Reader: 0
-        XML::LibXML::XPathContext: 0
         XML::LibXSLT: 0
         XML::Parser: 0
-        XML::Writer: 0
         autodie: 0
         base: 0
         constant: 0
