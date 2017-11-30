@@ -45,6 +45,7 @@ required:
         Text::Hunspell: 0
         Text::VimColor: 0
         Text::WrapAsUtf8: 0
+        XML::CompareML::HTML: 0
         XML::Grammar::Vered: 0
         XML::LibXML: 0
         XML::LibXML::Reader: 0
