@@ -1,4 +1,4 @@
-#include '../template.wml'
+#include "template.wml"
 
 <latemp_subject "Better SCM Initiative : Arch" />
 <latemp_more_keywords "Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" />

@@ -12,14 +12,12 @@ TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
 LATEMP_WML_FLAGS =$(shell latemp-config --wml-flags)
 
-DOCS_COMMON_DEPS = template.wml lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
+DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
 
 all: dummy
 
 include include.mak
 include rules.mak
-
-
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 

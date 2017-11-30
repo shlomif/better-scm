@@ -1,4 +1,4 @@
-#include '../template.wml'
+#include "template.wml"
 
 <latemp_subject "Subversion Installation Tutorial for Win32" />
 <latemp_more_keywords "installation, tutorial, win32" />

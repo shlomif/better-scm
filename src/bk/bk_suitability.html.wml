@@ -1,4 +1,4 @@
-#include '../template.wml'
+#include "template.wml"
 
 <latemp_subject "The Suitability of BitKeeper and bkbits.net for Free Software Projects" />
 
