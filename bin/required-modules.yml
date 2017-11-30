@@ -38,6 +38,7 @@ required:
         POSIX: 0
         String::ShellQuote: 0
         Template: 0
+        Template::Preprocessor::TTML: 0
         Test::HTML::Recursive::DeprecatedTags: 0
         Test::HTML::Tidy::Recursive: 0
         Test::HTML::Tidy::Recursive::Strict: 0
