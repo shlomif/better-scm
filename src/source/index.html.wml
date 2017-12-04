@@ -3,28 +3,28 @@
 <latemp_subject "Site Source Code" />
 
 <define-tag repos_url whitespace="delete">
-https://bitbucket.org/shlomif/better-scm
+https://github.com/shlomif/better-scm
 </define-tag>
 
 <p>
-The site source code is present in
-<a href="<repos_url />/">Mercurial
+The site source code is present in a
+<a href="<repos_url />/">Git
 repository</a> kindly hosted by
-<a href="http://bitbucket.org">Bitbucket.</a>.
+<a href="http://github.com/">GitHub</a>.
 </p>
 
 <p>
 To check it out, install a
-<a href="http://mercurial.selenic.com/">Mercurial</a> client for your
+git client for your
 system and issue the command:
 </p>
 
 <pre>
-hg clone <repos_url />
+git clone <repos_url />
 </pre>
 
 <define-tag cpan_link>
-<a href="http://search.cpan.org/dist/%0/">%0</a>
+<a href="http://metacpan.org/release/%0">%0</a>
 </define-tag>
 
 <p>
@@ -36,17 +36,17 @@ To build the site you'll need the following extra software packages:
 <a href="http://www.perl.org/">perl</a> - 5.8.x or above.
 </li>
 <li>
-<a href="http://thewml.org/">Website Meta Language</a>
+<a href="http://www.shlomifish.org/open-source/projects/website-meta-language/">Website Meta Language</a>
 </li>
 <li>
-<a href="http://web-cpan.berlios.de/latemp/">Latemp</a>
+<a href="http://web-cpan.shlomifish.org/latemp/">Latemp</a>
 </li>
 <li>
 <a href="http://www.gnu.org/software/make/">GNU Make</a>.
 </li>
 <li>
-The <a href="http://www.cpan.org/">CPAN</a> modules listed in <cpan_link "Bundle-Sites-BetterScm" />. They can be installed using the a CPAN.pm or
-CPANPLUS.pm command.
+The <a href="http://www.cpan.org/">CPAN</a> modules listed in <cpan_link "Bundle-Sites-BetterScm" />. They can be installed using a CPAN.pm or
+a CPANPLUS.pm command.
 </li>
 </ol>
 
@@ -69,4 +69,3 @@ content.
 <p>
 Happy Hacking!
 </p>
-

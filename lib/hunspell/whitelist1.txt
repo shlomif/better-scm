@@ -93,6 +93,7 @@ GTK
 GUIs
 Gabor
 Git-gui
+GitHub
 Gitk
 Gitweb
 Google
@@ -333,6 +334,7 @@ filesystems
 freeware
 gcc
 gen-dtd
+github
 gray
 guitone
 gz
