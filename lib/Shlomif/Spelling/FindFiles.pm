@@ -8,9 +8,7 @@ use List::MoreUtils qw/any/;
 
 use HTML::Spelling::Site::Finder;
 
-my @prunes =
-(
-);
+my @prunes = ();
 
 sub list_htmls
 {

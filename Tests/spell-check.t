@@ -14,7 +14,6 @@ else
     plan tests => 1;
 }
 
-
 {
     my $output = `./bin/spell-checker-iface 2>&1`;
     chomp($output);
@@ -22,7 +21,7 @@ else
     my $status = $?;
 
     # TEST
-    is ($output, '', "No spelling errors.");
+    is( $output, '', "No spelling errors." );
 
     if ($status)
     {

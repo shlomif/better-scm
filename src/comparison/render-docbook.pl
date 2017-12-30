@@ -1,25 +1,23 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 use strict;
+use warnings;
+use autodie;
 
 use XML::CompareML::DocBook;
 
-if (! -e "docbook")
+if ( !-e "docbook" )
 {
     mkdir("docbook");
 }
 
-open O, ">docbook/scm-comparison.xml";
+open my $out, '>', 'docbook/scm-comparison.xml';
 
-my $converter =
-    XML::CompareML::DocBook->new(
-        'input_filename' => "./scm-comparison.xml",
-        'output_handle' => \*O,
-    );
+my $converter = XML::CompareML::DocBook->new(
+    'input_filename' => "./scm-comparison.xml",
+    'output_handle'  => \$out,
+);
 
 $converter->process();
 
-close(O);
-
-1;
-
+close($out);
