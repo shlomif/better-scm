@@ -31,6 +31,7 @@ required:
         JSON::MaybeXS: 0
         List::MoreUtils: 0
         List::Util: 0
+        Perl::Tidy: 0
         POSIX: 0
         Template: 0
         Template::Preprocessor::TTML: 0
@@ -39,6 +40,7 @@ required:
         Test::HTML::Tidy::Recursive: 0
         Test::HTML::Tidy::Recursive::Strict: 0
         Test::More: 0
+        Test::Perl::Critic: 0
         Test::TrailingSpace: 0
         Text::Hunspell: 0
         Text::WrapAsUtf8: 0
