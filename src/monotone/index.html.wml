@@ -31,4 +31,3 @@ The Monotone architecture makes implementation of many features easier. It
 is not without it flaws, however. For example, Monotone is slow, and doesn't
 scale well to large codebases and histories.
 </p>
-

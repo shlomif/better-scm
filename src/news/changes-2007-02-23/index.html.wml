@@ -2,7 +2,6 @@
 
 <latemp_subject "ClearCase, Mercurial and AccuRev were added to the Comparison" />
 
-
 <p>
 Recently three new version control systems were added to
 <a href="$(ROOT)/comparison/">the comparison</a>:
@@ -30,4 +29,3 @@ The commercial <a href="http://www.accurev.com/">AccuRev</a>.
 <p>
 <b>Date:</b> 2007-February-23
 </p>
-

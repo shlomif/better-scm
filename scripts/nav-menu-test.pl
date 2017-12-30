@@ -22,9 +22,3 @@ my $nav_links        = $rendered_results->{nav_links};
 
 print join( "\n", @$nav_html ), "\n";
 print Dumper( [$rendered_results], ["\$r"] );
-
-#print MyNavLinks->new(
-#        'nav_links' => $nav_links,
-#        'root' => "../",
-#        )->get_nav_buttons_html('with_accesskey' => 1);
-

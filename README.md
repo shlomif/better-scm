@@ -5,4 +5,3 @@ To build see
 [the Site’s source code page](http://better-scm.shlomifish.org/source/) .
 
 [![Travis-CI Build Status](https://travis-ci.org/shlomif/better-scm.svg?branch=master)](https://travis-ci.org/shlomif/better-scm)
-

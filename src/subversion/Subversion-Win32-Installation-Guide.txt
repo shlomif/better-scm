@@ -89,7 +89,6 @@ Install.
     G. Point your browser at http://localhost:8080/svn/myrepos/ and make
     sure you see a "Revision 0" notice at the top.
 
-
 5. Congratulations!
 
     You can now run:
@@ -98,5 +97,3 @@ Install.
 
     from the command line and start populating your repository. Read the
     Subversion book for more information on Subversion usage.
-
-

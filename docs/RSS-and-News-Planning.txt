@@ -30,5 +30,3 @@ Each news item contains the following information:
 7. WML content of the page itself.
 
 They will be placed in an array for input into the news generator.
-
-

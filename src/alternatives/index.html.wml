@@ -94,4 +94,3 @@ A software configuration management system originally designed by Digital
 Corp. Now distributed under the LGPL. Replaces both Make and CVS, and so
 can only be built with itself for the time being.
 </p>
-

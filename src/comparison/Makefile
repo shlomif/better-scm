@@ -42,4 +42,3 @@ xslt: comparison-xsl.html
 
 comparison-xsl.html: scm-comparison.xml compare-ml.xsl
 	xsltproc compare-ml.xsl scm-comparison.xml > $@
-

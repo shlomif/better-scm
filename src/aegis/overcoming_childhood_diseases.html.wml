@@ -13,7 +13,6 @@ on the web.
 </p>
 </div>
 
-
 <define-tag problem>
 <h3 class="problem">Problem</h3>
 </define-tag>
@@ -129,5 +128,3 @@ converting the documentation to DocBook/XML.
 Naturally, it will require a lot of work, but even I was personally bothered by
 it.
 </p>
-
-

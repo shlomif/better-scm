@@ -7,4 +7,3 @@ eval "$find_command" |     \
 
 eval "$find_command" |      \
     xargs svn propset svn:keywords Id
-

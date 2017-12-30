@@ -165,4 +165,3 @@ h2
 {
     background-color: [% h2_bgcolor %];
 }
-

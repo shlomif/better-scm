@@ -1,4 +1,3 @@
-
 #include "template.wml"
 
 <latemp_subject "Better SCM News" />
@@ -13,4 +12,3 @@ if you'd like to learn what's new here.
 <h2>News Items</h2>
 
 <latemp_news_get_news_page_entries />
-

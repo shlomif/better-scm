@@ -12,4 +12,3 @@ install modules.
 
 The syntax for doing this would be something like:
 $ perl -MCPAN -e 'install Bundle::Sites::BetterScm'
-
