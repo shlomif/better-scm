@@ -1,5 +1,15 @@
+.perltidyrc
+.tidyall.d/
+.tidyallrc
 Makefile
+Tests/case-insense-file-collision.t
 Tests/data/cache/spelling-timestamp.json
+Tests/spell-check-is-sorted.t
+Tests/tidyall.t
+bin/clean-up-docbook-xhtml-1.1.xslt
+bin/gen-build-deps
+bin/sort-check-spelling-file
+bin/translate-Vered-XML
 bundle/Bundle-Sites-BetterScm/Build
 bundle/Bundle-Sites-BetterScm/Bundle-Sites-BetterScm-*
 bundle/Bundle-Sites-BetterScm/META.json
@@ -9,4 +19,7 @@ bundle/Bundle-Sites-BetterScm/MYMETA.yml
 bundle/Bundle-Sites-BetterScm/_build
 dest
 include.mak
+lib/Shlomif/Spelling/Check.pm
+lib/Shlomif/Spelling/Iface.pm
+lib/Shlomif/Spelling/Whitelist.pm
 rules.mak
