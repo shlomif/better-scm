@@ -37,6 +37,10 @@ my $tree_contents = {
             ),
             'subs' => [
                 {
+                    'text' => "This site became mostly irrelevant",
+                    'url'  => "docs/this-site-is-irrelevant/"
+                },
+                {
                     'text'       => "Call for Arms",
                     'url'        => "http://www.advogato.org/article/546.html",
                     'skip'       => 1,

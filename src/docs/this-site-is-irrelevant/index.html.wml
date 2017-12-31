@@ -1,0 +1,45 @@
+#include "template.wml"
+
+<latemp_subject "As of 2018, this site is mostly irrelevant" />
+
+<p>
+<b>Written at:</b> 31-December-2017<br />
+<b>Updated at:</b> 31-December-2017
+</p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<ol>
+
+<li>
+<p>
+Unless you have a good reason to do otherwise, you should use
+<a href="https://en.wikipedia.org/wiki/Git">Git</a> as a version control
+system. Git is pretty good and established itself as the de-facto standard.
+</p>
+</li>
+
+<li>
+<p>
+If your requirements are particularly heavy, then you may wish to look at
+<a href="$(ROOT)/subversion/">Subversion</a> or
+<a href="$(ROOT)/alternatives/perforce/">Perforce</a>
+</p>
+</li>
+
+<li>
+<p>
+VCSes that also provide distributed bug trackers and other integrated
+services, such as <a href="https://en.wikipedia.org/wiki/Fossil_(software)">Fossil</a>
+and <a href="https://en.wikipedia.org/wiki/Veracity_(software)">Veracity</a>
+, provide an interesting approach to watch in the future.
+</p>
+</li>
+
+<li>
+<p>
+Due to Git's dominance and other factors, the contents of this site are of
+mostly historical relevance and a limited one at that.
+</p>
+</li>
+</ol>
