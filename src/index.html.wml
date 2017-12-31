@@ -21,8 +21,8 @@ version control systems</b> (VCSes).
 
 <p>
 When Better-SCM started, <a href="https://www.cvshome.org/">CVS</a> was the
-most commonly used version control system in the Open-Source world. It
-worked well and was relatively reliable but had many limitations. It did not
+most commonly used version control system in the <a href="http://en.wikipedia.org/wiki/Open_source_model">open source</a> world. It
+worked well and was relatively reliable, but it had many limitations. It did not
 perform file renames or copies, did not send the files to the server, had no
 atomicity of operations, and it did not have good handling of binary files.
 </p>
