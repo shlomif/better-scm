@@ -4,7 +4,7 @@
 
 <p>
 <b>Written at:</b> 31-December-2017<br />
-<b>Updated at:</b> 31-December-2017
+<b>Updated at:</b> 20-January-2017
 </p>
 
 <h2 id="tldr">TL;DR</h2>
@@ -15,7 +15,7 @@
 <p>
 Unless you have a good reason to do otherwise, you should use
 <a href="https://en.wikipedia.org/wiki/Git">Git</a> as a version control
-system. Git is pretty good and established itself as the de-facto standard.
+system. Git is pretty good, and established itself as the de-facto standard.
 </p>
 </li>
 
@@ -42,4 +42,35 @@ Due to Git's dominance and other factors, the contents of this site are of
 mostly historical relevance and a limited one at that.
 </p>
 </li>
+</ol>
+
+<h2 id="braindump">Braindump</h2>
+
+<ol>
+
+<li>
+<p>
+I might as well admit by now that the main motivation for setting up this
+site was my unhappiness from one of <a href="$(ROOT)/bk/">BitKeeper</a>’s
+licence changes, which made it unavailable to me.
+</p>
+</li>
+
+<li>
+<p>
+BitKeeper was aimed to be used by FOSS projects, as an alternative to the
+limited CVS, while not being FOSS itself. After a series of licence changes,
+and adoption by the Linux kernel and some other projects, its gratis version
+was terminated. This lead to the initiation of several FOSS alternatives,
+including Git which established itself as the de-facto standard and drove
+BitKeeper into obscurity (not that it was ever too high profile).
+</p>
+
+<p>
+Many years after that, BitKeeper was made open source, which may be too little
+, too late. All of this left a bad taste in the mouth that could have been
+prevented if BitKeeper had been made FOSS to start with.
+</p>
+</li>
+
 </ol>
