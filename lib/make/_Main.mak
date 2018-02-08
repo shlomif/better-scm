@@ -1,6 +1,3 @@
-
-RSYNC = rsync --progress --verbose --rsh=ssh --inplace -a
-
 DEVEL_VER_USE_CACHE = 1
 
 D = dest
@@ -16,6 +13,7 @@ DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/te
 
 all: dummy
 
+include lib/make/shlomif_common.mak
 include include.mak
 include rules.mak
 
@@ -32,8 +30,6 @@ news_feeds: $(RSS_FEED)
 
 $(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
 	perl -Ilib gen-feeds.pl --rss2-out="$@"
-
-.PHONY:
 
 src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 	touch $@
@@ -52,9 +48,3 @@ upload_beta: all
 upload_stable: all
 	cd $(D) && \
 	$(RSYNC) * $(UPLOAD_BASE)/
-
-test: all
-	prove Tests/*.t
-
-runtest: all
-	runprove Tests/*.t
