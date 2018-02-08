@@ -22,7 +22,8 @@ One possible drawback to it is that it is written in
 <a href="http://www.haskell.org/ghc/">GHC</a>. GHC is a Haskell compiler
 which is itself written in Haskell, with a problematic bootstrapping
 procedure, and Haskell may not be entirely scalable due to the limitations of
-the language.
+the language. Another drawback is that it does not support marking files
+as executable.
 </p>
 
 <p>
