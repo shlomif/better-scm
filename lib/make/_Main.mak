@@ -28,8 +28,10 @@ RSS_FEED = $(D)/rss.xml
 
 news_feeds: $(RSS_FEED)
 
-$(RSS_FEED): gen-feeds.pl lib/MyManageNews.pm
-	perl -Ilib gen-feeds.pl --rss2-out="$@"
+GEN_FEED = bin/gen-feeds.pl
+
+$(RSS_FEED): $(GEN_FEED) lib/MyManageNews.pm
+	perl -Ilib $(GEN_FEED) --rss2-out="$@"
 
 src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
 	touch $@
