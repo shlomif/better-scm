@@ -25,6 +25,11 @@ _exec(
     'cookiecutter failed.'
 );
 
+if ( system( "make", "--silent", "-f", "lib/make/build-deps/build-deps.mak" ) )
+{
+    die "build-deps failed!";
+}
+
 my $generator = HTML::Latemp::GenMakeHelpers->new(
     'hosts' => [
         {
