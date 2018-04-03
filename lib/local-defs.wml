@@ -1,0 +1,12 @@
+<: use Carp::Always; :>
+<set-var latemp_with_xml_declaration="1" />
+<set-var latemp_with_breadcrumbs_trail="1" />
+<set-var latemp_nav_links_allowed_places="top-left bottom-left" />
+<set-var latemp_with_timestamp="1" />
+<set-var latemp_html_standard="xhtml1.1" />
+<set-var latemp_with_favicon="1" />
+<set-var latemp_with_head_meta_tags="1" />
+<define-tag latemp_timestamp_wrapper endtag="required">
+</define-tag>
+<set-var latemp_gen_plain_page="$(PRINTABLE)" />
+<set-var latemp_with_html_head_stylesheets="<latemp_mynot "$(PRINTABLE)" />" />

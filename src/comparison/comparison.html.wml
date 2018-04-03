@@ -4,26 +4,6 @@
 <latemp_more_keywords "comparison" />
 
 <:{
-use strict;
-
-use XML::CompareML::HTML;
-
-my $comparison;
-open O, ">", \$comparison;
-binmode O, ":utf8";
-
-my $converter =
-    XML::CompareML::HTML->new(
-        'input_filename' => "./comparison/scm-comparison.xml",
-        'output_handle' => \*O,
-    );
-
-$converter->process();
-
-close(O);
-
-$comparison =~ s{\A.*?<body>}{}s;
-$comparison =~ s{</body>.*}{}s;
-
-print qq{<div class="comparison">\n$comparison\n</div>\n};
+use MyCompareGen;
+MyCompareGen->run();
 }:>
