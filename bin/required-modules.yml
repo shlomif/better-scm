@@ -1,5 +1,6 @@
 ---
 required:
+    files: []
     perl5_modules:
         CGI: 0
         Carp: 0
@@ -59,3 +60,4 @@ required:
         utf8: 0
         vars: 0
         warnings: 0
+    py3_modules:
