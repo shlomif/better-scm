@@ -20,6 +20,7 @@ bundle/Bundle-Sites-BetterScm/MYMETA.yml
 bundle/Bundle-Sites-BetterScm/_build
 dest
 include.mak
+lib/Inc/cpan_dists.wml
 lib/Shlomif/Spelling/Check.pm
 lib/Shlomif/Spelling/Iface.pm
 lib/Shlomif/Spelling/Whitelist.pm
