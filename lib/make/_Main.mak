@@ -45,8 +45,8 @@ upload: upload_stable
 
 upload_beta: all
 	cd $(D) && \
-	$(RSYNC) * $(UPLOAD_BASE)/__Beta-Site/
+	$(RSYNC) -a * $(UPLOAD_BASE)/__Beta-Site/
 
 upload_stable: all
 	cd $(D) && \
-	$(RSYNC) * $(UPLOAD_BASE)/
+	$(RSYNC) -a * $(UPLOAD_BASE)/
