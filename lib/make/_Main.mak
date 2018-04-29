@@ -7,7 +7,7 @@ WML_FLAGS += -DLATEMP_THEME=better-scm -I $$HOME/apps/wml
 WML_FLAGS += $(COMMON_PREPROC_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
-LATEMP_WML_FLAGS =$(shell latemp-config --wml-flags)
+LATEMP_WML_FLAGS := $(shell latemp-config --wml-flags)
 
 DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
 
