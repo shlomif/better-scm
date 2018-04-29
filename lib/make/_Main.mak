@@ -2,12 +2,9 @@ DEVEL_VER_USE_CACHE = 1
 
 D = dest
 
-COMMON_PREPROC_FLAGS = -I $$HOME/conf/wml/Latemp/lib -I lib
 WML_FLAGS += -DLATEMP_THEME=better-scm -I $$HOME/apps/wml
 WML_FLAGS += $(COMMON_PREPROC_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
-
-LATEMP_WML_FLAGS := $(shell latemp-config --wml-flags)
 
 DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
 
