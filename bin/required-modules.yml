@@ -1,5 +1,14 @@
 ---
 required:
+    executables:
+        - exe: "cookiecutter"
+          url: "ht"
+        - exe: "latemp-config"
+          url: "ht"
+        - exe: "ttml"
+          url: "ht"
+        - exe: "wml"
+          url: "ht"
     files: []
     perl5_modules:
         CGI: 0
