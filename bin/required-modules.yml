@@ -2,13 +2,13 @@
 required:
     executables:
         - exe: "cookiecutter"
-          url: "ht"
+          url: "https://github.com/audreyr/cookiecutter"
         - exe: "latemp-config"
-          url: "ht"
+          url: "http://web-cpan.shlomifish.org/latemp/"
         - exe: "ttml"
-          url: "ht"
+          url: "https://metacpan.org/release/Template-Preprocessor-TTML"
         - exe: "wml"
-          url: "ht"
+          url: "http://www.shlomifish.org/open-source/projects/website-meta-language/"
     files: []
     perl5_modules:
         CGI: 0
