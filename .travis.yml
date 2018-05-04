@@ -14,4 +14,5 @@ before_install:
     - ( hg clone https://shlomif@bitbucket.org/shlomif/wml-extended-apis && cd wml-extended-apis/xhtml/1.x && bash Install.bash )
     - ( hg clone https://shlomif@bitbucket.org/shlomif/wml-affiliations && cd wml-affiliations/wml && bash Install.bash )
     - ( cd .. && hg clone https://shlomif@bitbucket.org/shlomif/latemp && cd latemp/support-headers && perl install.pl )
-script: "m() { make DOCBOOK5_XSL_STYLESHEETS_PATH=/usr/share/xml/docbook/stylesheet/docbook-xsl-ns \"$@\" ; } ; export SKIP_SPELL_CHECK=1; ./gen-helpers && m && m test"
+script:
+    - bash -x bin/run-ci-build.bash
