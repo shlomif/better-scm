@@ -30,6 +30,8 @@ if ( system( "make", "--silent", "-f", "lib/make/build-deps/build-deps.mak" ) )
     die "build-deps failed!";
 }
 
+my $DIR = "lib/make/";
+
 my $generator = HTML::Latemp::GenMakeHelpers->new(
     'hosts' => [
         {
@@ -43,10 +45,11 @@ my $generator = HTML::Latemp::GenMakeHelpers->new(
             'dest_dir'   => "\$(D)",
         },
     ],
+    out_dir => $DIR,
 );
 
 $generator->process_all();
 
 open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
-print {$out_fh} "include lib/make/_Main.mak\n";
+print {$out_fh} "include $DIR/_Main.mak\n";
 close($out_fh);

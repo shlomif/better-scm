@@ -11,8 +11,8 @@ DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/te
 all: dummy
 
 include lib/make/shlomif_common.mak
-include include.mak
-include rules.mak
+include lib/make/include.mak
+include lib/make/rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 

@@ -21,7 +21,6 @@
 /bundle/Bundle-Sites-BetterScm/MYMETA.yml
 /bundle/Bundle-Sites-BetterScm/_build
 /dest
-/include.mak
 /lib/Inc/cpan_dists.wml
 /lib/Shlomif/Out.pm
 /lib/Shlomif/Spelling/Check.pm
@@ -29,6 +28,7 @@
 /lib/Shlomif/Spelling/Whitelist.pm
 /lib/make/build-deps/build-deps.mak
 /lib/make/build-deps/build-deps.stamp
+/lib/make/include.mak
+/lib/make/rules.mak
 /lib/make/shlomif_common.mak
-/rules.mak
 /tslint.json
