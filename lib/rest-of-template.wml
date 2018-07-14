@@ -24,36 +24,6 @@ Attribution License version 2.0</a> (or at your option - any later version).
 <!-- /Creative Commons License -->
 </p>
 
-<!--
-
-<rdf:RDF xmlns="http://web.resource.org/cc/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<Work rdf:about="">
-   <dc:title>Better SCM Site Contents</dc:title>
-   <dc:date>2004</dc:date>
-   <dc:description>A Version Control Systems Information and Advocacy carrying site</dc:description>
-   <dc:creator><Agent>
-      <dc:title>Shlomi Fish</dc:title>
-   </Agent></dc:creator>
-   <dc:rights><Agent>
-      <dc:title>Shlomi Fish</dc:title>
-   </Agent></dc:rights>
-   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
-   <license rdf:resource="http://creativecommons.org/licenses/by/2.0/" />
-</Work>
-
-<License rdf:about="http://creativecommons.org/licenses/by/2.0/">
-   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
-   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
-   <requires rdf:resource="http://web.resource.org/cc/Notice" />
-   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
-   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
-</License>
-
-</rdf:RDF>
-
--->
 </define-tag>
 
 <latemp_license>
@@ -61,19 +31,7 @@ Attribution License version 2.0</a> (or at your option - any later version).
 </latemp_license>
 
 <latemp_affiliations_buttons>
-<p>
-<a href="$(ROOT)/rss.xml" rel="rss news"><img
-src="$(ROOT)/images/rss2feed.png"
-alt="RSS Feed" class="bless" style="margin-top:1em"
-title="Receive Site Updates using an RSS Reader" /></a>
-</p>
 <affil_collection_berlios />
-<a
-href="https://developer.berlios.de/project/make_donation.php?group_id=526"
-rel="donate" title="Please donate to show your appreciation for the hard
-work conducted on the Better SCM Site"><img src="$(ROOT)/images/paypal.gif"
-alt="PayPal Donate" class="paypal" /></a>
-
 </latemp_affiliations_buttons>
 
 <latemp_top_left_corner_logo>
