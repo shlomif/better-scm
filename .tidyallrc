@@ -5,4 +5,4 @@ ignore = dest/**/*
 
 [PerlCritic]
 select = **/*.{pl,pm,t}
-ignore = dest/**/*
+ignore = dest/**/* lib/App/Deps/Verify.pm
