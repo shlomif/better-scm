@@ -29,9 +29,10 @@ my $tree_contents = {
                 [ @{ $news_manager->get_navmenu_items( 'num_items' => 5 ) }, ],
         },
         {
-            'text'  => "General Docs",
-            'url'   => "docs/",
-            'title' => (
+            'text'   => "General Docs",
+            'url'    => "docs/",
+            'expand' => { 're' => "" },
+            'title'  => (
                       "General Documents that don't Belong to "
                     . "Anywhere More Specific."
             ),
