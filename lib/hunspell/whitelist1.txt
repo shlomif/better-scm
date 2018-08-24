@@ -431,6 +431,7 @@ versioned
 versioning
 vestasys
 vger
+vs
 walkthrough
 webmasters
 wiki
@@ -439,6 +440,7 @@ wml
 workflows
 wwCVS
 www
+xkcd
 xml
 xsl
 xxx
