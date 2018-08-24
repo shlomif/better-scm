@@ -51,5 +51,5 @@ my $generator = HTML::Latemp::GenMakeHelpers->new(
 $generator->process_all();
 
 open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
-print {$out_fh} "include $DIR/_Main.mak\n";
+print {$out_fh} "include $DIR/main.mak\n";
 close($out_fh);
