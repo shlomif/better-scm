@@ -1,7 +1,7 @@
 cache:
     ccache: true
     directories:
-    - $HOME/perl_modules
+        - $HOME/perl_modules
 os: linux
 dist: trusty
 before_install:
