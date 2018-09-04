@@ -1,24 +1,22 @@
 cache:
-    ccache: true
     directories:
         - $HOME/perl_modules
 os: linux
 dist: trusty
 before_install:
     - sudo apt-get update -qq
-    - sudo apt-get install -y cmake cpanminus docbook-defguide docbook-xsl docbook-xsl-ns hunspell mercurial myspell-en-gb libhunspell-dev libperl-dev perl python3 python3-setuptools python3-pip wml xsltproc
-    - sudo -H `which python3` -m pip install cookiecutter
+    - sudo apt-get install -y ack-grep cmake cpanminus docbook-defguide docbook-xsl docbook-xsl-ns hunspell mercurial myspell-en-gb libhunspell-dev libperl-dev perl python3 python3-setuptools python3-pip valgrind wml xsltproc
     - sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
     - cpanm local::lib
     - eval "$(perl -Mlocal::lib=$HOME/perl_modules)"
     - cpanm Alien::Tidyp App::XML::DocBook::Builder Pod::Xhtml YAML::XS
-    - cpanm -n HTML::Tidy
+    - cpanm --notest HTML::Tidy
     - "cpanm $(perl -MYAML::XS=LoadFile -e 'print join q( ), sort {$a cmp $b} keys(%{LoadFile(q(bin/required-modules.yml))->{required}->{perl5_modules}})')"
-    - gem install sass compass compass-blueprint
-    # - a='latemp' ; v='0.8.0' ; b="$a-$v" ; arc="$b.tar.xz"; ( cd .. && wget http://web-cpan.shlomifish.org/latemp/download/"$arc" && tar -xvf "$arc" && cd "$b" && mkdir b && cd b && cmake .. && make && sudo make install)
-    - bash bin/install-git-cmakey-program-system-wide.bash 'git' 'installer' 'https://github.com/thewml/latemp.git'
+    - gem install compass compass-blueprint
+    - sudo -H `which python3` -m pip install cookiecutter
+    - a='latemp' ; v='0.8.0' ; b="$a-$v" ; arc="$b.tar.xz"; ( wget http://web-cpan.shlomifish.org/latemp/download/"$arc" && tar -xvf "$arc" && (cd "$b" && mkdir b && cd b && cmake .. && make && sudo make install) && rm -fr "$b" )
     - ( cd .. && git clone https://github.com/thewml/wml-extended-apis.git && cd wml-extended-apis/xhtml/1.x && bash Install.bash )
-    - ( cd .. && git clone https://github.com/shlomif/wml-affiliations.git && cd wml-affiliations/wml && bash Install.bash )
     - ( cd .. && git clone https://github.com/thewml/latemp.git && cd latemp/support-headers && perl install.pl )
+    - bash -x bin/install-npm-deps.sh
 script:
     - bash -x bin/run-ci-build.bash
