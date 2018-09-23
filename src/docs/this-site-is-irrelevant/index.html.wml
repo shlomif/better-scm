@@ -90,6 +90,48 @@ At a previous workplace, I was the resident git "guru" that (usually
 successfully) handled people's
 troubles and I do not think of myself as a git expert. Someone on freenode
 told me that has been the case for him as well.
+<a href="https://xkcd.com/1597/">This xkcd comics about git</a> is spot on.
+</p>
+</li>
+
+<li>
+<p>
+In theory, I should now be happy, because:
+</p>
+
+<ol>
+
+<li>
+<p>
+Subversion, which I contributed a little to and used for several years, has
+matured and saw several 1.x releases with enhancements.
+</p>
+</li>
+
+<li>
+<p>
+There are now some usable open source distributed VCS alternatives.
+</p>
+</li>
+
+<li>
+<p>
+There are some <a href="https://en.wikipedia.org/wiki/Forge_(software)">software
+"forges"</a> (or software development hubs) that can be used at no cost by
+developers.
+</p>
+</li>
+
+<li>
+<p>
+BitKeeper was made open source, in case anyone needs or wants to use it.
+</p>
+</li>
+</ol>
+
+<p>
+But like the <a href="http://pernhome.com/tjm/?p=3699">Chinese curse</a>
+go: <q>May all your wishes be granted</q>. Something is bothering me.
 </p>
 </li>
 
