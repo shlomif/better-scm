@@ -62,14 +62,34 @@ BitKeeper was aimed to be used by <a href="https://en.wikipedia.org/wiki/Free_an
 limited CVS, while not being FOSS itself. After a series of licence changes,
 and adoption by the Linux kernel and some other projects, its gratis version
 was terminated. This lead to the initiation of several FOSS alternatives,
-including Git which established itself as the de-facto standard and drove
-BitKeeper into obscurity (not that it was ever too high profile).
+including Git, which established itself as the de-facto standard.
+This in turn, drove BitKeeper into obscurity (not that it was ever too
+high profile).
 </p>
 
 <p>
 Many years after that, BitKeeper <a href="https://news.slashdot.org/story/16/05/10/1840255/11-years-after-git-bitkeeper-is-open-sourced">was made open source</a>, which may be too little
 , too late. All of this left a bad taste in the mouth that could have been
 prevented if BitKeeper had been made FOSS to start with.
+</p>
+</li>
+
+<li>
+<p>
+While I have adopted git and formerly
+<a href="$(ROOT)/alternatives/mercurial/">mercurial</a> as part of my
+work-flow and am happy using distributed VCSes, I still miss the simplicity
+and transparency of the client/server model of Subversion. Distributed VCSes,
+while in general an improvement, often throw me off leaving me to need to
+consult a web search, <a href="https://git-scm.com/community">the #git
+chat-room on freenode</a> (you guys rock!), or other resources, and I do not
+feel that I understand its underlying model.  </p>
+
+<p>
+At a previous workplace, I was the resident git "guru" that (usually
+successfully) handled people's
+troubles and I do not think of myself as a git expert. Someone on freenode
+told me that has been the case for him as well.
 </p>
 </li>
 
