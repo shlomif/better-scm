@@ -33,7 +33,7 @@ To build the site you'll need the following extra software packages:
 
 <ol>
 <li>
-<a href="http://www.perl.org/">perl</a> - 5.8.x or above.
+<a href="http://www.perl.org/">perl</a> - 5.14.x or above.
 </li>
 <li>
 <a href="http://www.shlomifish.org/open-source/projects/website-meta-language/">Website Meta Language</a>
@@ -51,15 +51,15 @@ a CPANPLUS.pm command.
 </ol>
 
 <p>
-To build the site, first issue the command <code>perl gen-helpers.pl</code>
-and then type <code>make</code>. You'll need to run <code>gen-helpers.pl</code>
+To build the site, first issue the command <code>perl gen-helpers</code>
+and then type <code>make</code>. You'll need to run <code>gen-helpers</code>
 again whenever you add or remove files from the <code>./src</code> directory.
 </p>
 
 <p>
 The programming code for the site is distributed under the
 <a href="http://www.opensource.org/licenses/mit-license.php">MIT
-X11 license</a> and the content (except for the comparison) is distributed
+Expat license</a> and the content (except for the comparison) is distributed
 under the <a href="http://creativecommons.org/licenses/by/2.0/">Creative
 Commons Attribution-License 2.0</a> (or at your option any greater version).
 Both of these licenses allow an almost completely unrestricted use of the
@@ -69,3 +69,12 @@ content.
 <p>
 Happy Hacking!
 </p>
+
+<h2 id="ci">Continuous Integration</h2>
+
+<p>
+We have a <a href="https://travis-ci.org/shlomif/better-scm"><b>CI service</b></a>
+running the build and tests kindly provided by <a href="https://travis-ci.org/dashboard">Travis-CI</a>. Here is <a href="https://perlhacks.com/2012/03/you-must-hate-version-control-systems/">more information about CI</a>.
+Other services may be added in the future.
+</p>
+

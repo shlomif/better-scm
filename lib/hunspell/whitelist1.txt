@@ -44,6 +44,7 @@ Bon-voyage
 Braindump
 Bundle-Sites-BetterScm
 Bzrweb
+CI
 CLI
 CMSynergy
 CPAN
@@ -79,6 +80,7 @@ Dmoz
 DocBook
 DynamSoft
 DynamSoft's
+Expat
 Foo
 FreeBSD
 Freecell
@@ -225,6 +227,7 @@ TortoiseHg
 TortoiseSVN
 Torvalds
 Trac
+Travis-CI
 Tridge
 Tridgell
 Tru64
