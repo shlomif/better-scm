@@ -57,7 +57,7 @@ top and bottom of the sites' navigation column. They also have access keys.
 </li>
 <li>
 Added a breadcrumbs trail.
-(e.g: "Better SCM &rarr; Alternatives &rarr; Subversion &rarr;
+(e.g: "Better SCM → Alternatives → Subversion →
 Win32 Installation Guide")
 </li>
 </ul>
