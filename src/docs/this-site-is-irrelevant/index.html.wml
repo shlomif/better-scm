@@ -13,7 +13,7 @@
 
 <li>
 <p>
-Unless you have a good reason to do otherwise, you should use
+Unless you have a good reason to choose otherwise, you should use
 <a href="https://en.wikipedia.org/wiki/Git">Git</a> as a version control
 system. Git is pretty good, and established itself as the de-facto standard.
 </p>
@@ -23,7 +23,11 @@ system. Git is pretty good, and established itself as the de-facto standard.
 <p>
 If your requirements are particularly heavy, then you may wish to look at
 <a href="$(ROOT)/subversion/">Subversion</a> or
-<a href="$(ROOT)/alternatives/perforce/">Perforce</a>
+<a href="$(ROOT)/alternatives/perforce/">Perforce</a>. This is because keeping
+the size of the history on every working copy may be prohibitive, and because
+git does not have shallow clones or a resumable "git clone" operation. One can
+still use <a href="https://git-scm.com/docs/git-svn">git-svn</a> or
+similar.
 </p>
 </li>
 
@@ -60,7 +64,7 @@ licence changes, which made it unavailable to me.
 <p>
 BitKeeper was aimed to be used by <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> projects, as an alternative to the
 limited CVS, while not being FOSS itself. After a series of licence changes,
-and adoption by the Linux kernel and some other projects, its gratis version
+and adoption by the Linux kernel project and some other projects, its gratis version
 was terminated. This lead to the initiation of several FOSS alternatives,
 including Git, which established itself as the de-facto standard.
 This in turn, drove BitKeeper into obscurity (not that it was ever too
@@ -83,7 +87,8 @@ and transparency of the client/server model of Subversion. Distributed VCSes,
 while in general an improvement, often throw me off leaving me to need to
 consult a web search, <a href="https://git-scm.com/community">the #git
 chat-room on freenode</a> (you guys rock!), or other resources, and I do not
-feel that I understand its underlying model.  </p>
+feel that I understand its underlying model.
+</p>
 
 <p>
 At a previous workplace, I was the resident git "guru" that (usually
@@ -131,7 +136,7 @@ BitKeeper was made open source, in case anyone needs or wants to use it.
 
 <p>
 But like the <a href="http://pernhome.com/tjm/?p=3699">Chinese curse</a>
-go: <q>May all your wishes be granted</q>. Something is bothering me.
+goes: <q>May all your wishes be granted</q>. Something is bothering me.
 </p>
 </li>
 

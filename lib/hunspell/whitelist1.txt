@@ -341,6 +341,7 @@ freenode
 freeware
 gcc
 gen-dtd
+git-svn
 github
 gray
 guitone
@@ -395,6 +396,7 @@ rcs
 refactorings
 render-docbook
 repos
+resumable
 rss
 rsync
 scm
