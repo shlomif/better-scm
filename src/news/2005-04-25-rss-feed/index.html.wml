@@ -1,4 +1,4 @@
-#include "template.wml"
+#include "template5.wml"
 
 <latemp_subject "The Better SCM RSS Feed" />
 <latemp_more_keywords "RSS, news" />
