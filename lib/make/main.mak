@@ -48,3 +48,5 @@ upload_beta: all
 upload_stable: all
 	cd $(D) && \
 	$(RSYNC) -a * $(UPLOAD_BASE)/
+
+TEST_TARGETS = Tests/*.{py,t}
