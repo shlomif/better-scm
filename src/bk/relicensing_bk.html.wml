@@ -247,9 +247,7 @@ scheme. Without it, BitKeeper would never become the next CVS, which
 was his intention in the first place.
 </p>
 
-<table border="1" summary="A Quote">
-<tr>
-<td>
+<blockquote>
 <p>
 "Far better it is to dare mighty things, to win glorious triumphs,
 even though checkered by failure, than to rank with those poor
@@ -257,9 +255,7 @@ spirits who neither enjoy much nor suffer much, because they
 live in the gray twilight that knows not victory nor defeat."
 (Theodore Roosevelt)
 </p>
-</td>
-</tr>
-</table>
+</blockquote>
 
 <p>
 The choice McVoy and Co. must make is now. Subversion and other

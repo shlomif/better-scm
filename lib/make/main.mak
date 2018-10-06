@@ -19,7 +19,8 @@ include lib/make/rules.mak
 dummy: latemp_targets news_feeds
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
-	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS)
+	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS) \
+	--passoption=7,-Simgsize,summary
 
 RSS_FEED = $(D)/rss.xml
 

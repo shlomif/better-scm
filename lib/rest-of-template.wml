@@ -43,7 +43,7 @@ Attribution License version 2.0</a> (or at your option - any later version).
 </latemp_top_left_corner_logo>
 
 <latemp_extra_head_elements>
-<link rel="alternate stylesheet" type="text/css" href="$(ROOT)/alternate1.css" media="screen, projection" title="Kitchy" />
+<link rel="alternate stylesheet" type="text/css" href="$(ROOT)/alternate1.css" media="screen" title="Kitchy" />
 <link rel="alternate" title="Better SCM RSS Feed" href="$(ROOT)/rss.xml" type="application/rss+xml" />
 </latemp_extra_head_elements>
 
