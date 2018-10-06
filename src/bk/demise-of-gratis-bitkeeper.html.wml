@@ -16,8 +16,8 @@ open source</h2>
 BitKeeper was recently <a href="https://lwn.net/Articles/686986/">made open
 source</a> and its source code is available on
 <a href="https://www.bitkeeper.org/">bitkeeper.org</a> under the Apache 2.0
-License. This twist of events may invalidate some what was said
-here, but note that following the demise of the gratis BitKeeper licence,
+License. This twist of events may invalidate some of what was said
+here. However, note that following the demise of the gratis BitKeeper licence,
 several open source distributed version control systems were developed,
 including Git that became very popular. So this move may be too little to
 save BitKeeper - and too late.

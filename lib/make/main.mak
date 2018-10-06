@@ -42,11 +42,20 @@ UPLOAD_BASE = hostgator:domains/better-scm/public_html
 upload: upload_stable
 
 upload_beta: all
-	cd $(D) && \
-	$(RSYNC) -a * $(UPLOAD_BASE)/__Beta-Site/
+	$(RSYNC) -a $(D)/ $(UPLOAD_BASE)/__Beta-Site/
 
 upload_stable: all
-	cd $(D) && \
-	$(RSYNC) -a * $(UPLOAD_BASE)/
+	$(RSYNC) -a $(D)/ $(UPLOAD_BASE)/
 
 TEST_TARGETS = Tests/*.{py,t}
+htacc = $(addsuffix /.htaccess,$(1))
+
+ALL_HTACCESSES = $(call htacc,$(D))
+
+dummy: htaccesses_target
+
+htaccesses_target: $(ALL_HTACCESSES)
+
+$(ALL_HTACCESSES): $(D)/%.htaccess: $(BERLIOS_SRC_DIR)/%my_htaccess.conf
+	$(call COPY)
+
