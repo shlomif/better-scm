@@ -26,7 +26,9 @@
 /bundle/Bundle-Sites-BetterScm/_build
 /dest
 /lib/App/Deps/Verify.pm
+/lib/HTML/Latemp/GenWmlHSects.pm
 /lib/Inc/cpan_dists.wml
+/lib/Inc/html5-shims.wml
 /lib/Shlomif/Spelling/Check.pm
 /lib/Shlomif/Spelling/Iface.pm
 /lib/Shlomif/Spelling/Whitelist.pm
@@ -35,4 +37,5 @@
 /lib/make/include.mak
 /lib/make/rules.mak
 /lib/make/shlomif_common.mak
+/node_modules/
 /tslint.json
