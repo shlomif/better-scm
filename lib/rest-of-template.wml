@@ -37,7 +37,7 @@ Attribution License version 2.0</a> (or at your option - any later version).
 <latemp_top_left_corner_logo>
 <div class="logo">
 <a href="$(ROOT)/" title="Home"><img
-    src="$(ROOT)/images/better-scm-logo.png"
+    src="$(ROOT)/images/better-scm.min.svg"
     alt="Better SCM" /></a>
 </div>
 </latemp_top_left_corner_logo>

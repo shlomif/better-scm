@@ -1,0 +1,320 @@
+/*
+    CSS Stylesheet for better-scm.berlios.de
+    Copyright (c) Shlomi Fish, 2003-2005
+    Feel free to use, modify and re-distribute under the terms of the
+    MIT X11 License (http://www.opensource.org/licenses/mit-license.php)
+
+    $Id: style.css.ttml 275 2006-06-13 21:11:53Z shlomif $
+*/
+
+.navbar {
+    float: left;
+    width: 200px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+ul {
+    &.navbarmain {
+        padding-left: 1em;
+        margin-left: 1em;
+    }
+
+    &.navbarnested {
+        padding-left: 0em;
+        margin-left: 2em;
+    }
+}
+
+.main {
+    margin-top: 2em;
+    margin-right: 1em;
+    border: thin solid black;
+}
+
+.note {
+    border-color: black;
+    border-style: double;
+    border-width: medium;
+    padding: 0.5em;
+    background-color: #98FB98;
+    margin-top: 1em;
+    overflow: hidden;
+
+    h2 {
+        background: transparent;
+    }
+}
+
+a:hover {
+    color: red;
+}
+
+.main {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+    padding-right: 1em;
+    margin-left: 240px;
+    background-color: white;
+
+    li {
+        padding-bottom: 0.5em;
+    }
+}
+
+/* This is so list items will have spacing between them. */
+
+/* This is so Table-of-Contents items won't have a spacing between
+them, because they are nested and it looks weird */
+
+.toc li {
+    padding-bottom: 0;
+}
+
+.righty {
+    float: right;
+    text-align: center;
+    font-size: 80%;
+    width: 30%;
+
+    img {
+        border: 0;
+    }
+}
+
+.foot_left {
+    float: left;
+    width: 60%;
+}
+
+.webmaster {
+    margin-bottom: 0em;
+}
+
+.vcs {
+    margin-top: 0.5em;
+    clear: left;
+
+    tt {
+        font-size: 83%;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.leading_path {
+    a:hover {
+        color: yellow;
+    }
+
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #40C040;
+    font-size: 85%;
+    margin-top: 5pt;
+    margin-bottom: 0.5em;
+    margin-right: 10pt;
+}
+
+/* Workaround to get the <hr /> element at the bottom to properly display
+   with Konqueror 3.3.x
+   */
+
+.footer hr {
+    width: 100%;
+    clear: both;
+}
+
+tt {
+    color: #8a2be2;
+
+    /* The BlueViolet Color */
+}
+
+pre {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background-color: #D0FFD0;
+    border-width: thin;
+    border-color: #004000;
+    border-style: solid;
+}
+
+/* Border-less */
+
+.bless {
+    border: none;
+}
+
+.news {
+    border: dashed 1.5pt black;
+    float: right;
+    background-color: #ebb9ea;
+    font-size: 60%;
+    font-family: sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 1em;
+
+    ul {
+        list-style-position: inside;
+        margin-left: 0em;
+        padding-left: 0em;
+        margin-bottom: 0em;
+    }
+
+    h3 {
+        margin-top: 0.5em;
+    }
+}
+
+.logo {
+    margin-top: 0.5em;
+    text-align: center;
+
+    img {
+        border: none;
+        width: 90%;
+        padding: 0.5em;
+    }
+}
+
+.links li {
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0.5em;
+
+    &:hover {
+        background-color: #E6FAE6;
+    }
+}
+
+.link {
+    background: transparent;
+}
+
+ul.navbarmain {
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
+.main {
+    p, img {
+        padding-left: 1em;
+    }
+}
+
+h2, h3, h4 {
+    padding-left: 0.3em;
+}
+
+.navbar {
+    background-color: #C5CAE2;
+}
+
+h2 {
+    background-color: #FFEE00;
+}
+
+.comparison {
+    h2 {
+        background-color: #98FB98;
+
+        /* PaleGreen */
+    }
+
+    h3 {
+        background-color: #FFA500;
+
+        /* Orange */
+    }
+}
+
+table.compare {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 90%;
+    max-width: 40em;
+}
+
+.compare td {
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    vertical-align: top;
+    padding: 0.2em;
+}
+
+.comparison {
+    ul.toc {
+        list-style-type: none;
+        padding-left: 0em;
+    }
+
+    .toc ul {
+        list-style-type: none;
+        padding-left: 0em;
+        margin-left: 2em;
+    }
+
+    .expl {
+        border-style: solid;
+        border-width: thin;
+        background-color: #E6E6FA;
+
+        /* Lavender */
+        border-color: black;
+        padding: 0.3em;
+    }
+
+    li {
+        padding-bottom: 0;
+    }
+}
+
+.nav_links {
+    text-align: center;
+    padding-left: 0em;
+    padding-top: 0em;
+
+    li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 0.2em;
+        padding-top: 0em;
+    }
+}
+
+.footer {
+    clear: both;
+    margin-right: 30px;
+    padding-top: 0.5em;
+}
+
+.links {
+    margin-top: 2em;
+    padding-left: 1.5em;
+    margin-left: 0em;
+}
+
+p.desc {
+    margin-left: 3em;
+}
+
+.invisible {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
