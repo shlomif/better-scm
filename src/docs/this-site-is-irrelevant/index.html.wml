@@ -25,7 +25,8 @@ If your requirements are particularly heavy, then you may wish to look at
 <a href="$(ROOT)/subversion/">Subversion</a> or
 <a href="$(ROOT)/alternatives/perforce/">Perforce</a>. This is because keeping
 the size of the history on every working copy may be prohibitive, and because
-git does not have shallow clones or a resumable "git clone" operation. One can
+git, while having shallow clones, does not have a resumable "git clone"
+operation. One can
 still use <a href="https://git-scm.com/docs/git-svn">git-svn</a> or
 similar.
 </p>
@@ -136,7 +137,7 @@ BitKeeper was made open source, in case anyone needs or wants to use it.
 
 <p>
 But like the <a href="http://pernhome.com/tjm/?p=3699">Chinese curse</a>
-goes: <q>May all your wishes be granted</q>. Something is bothering me.
+goes: <q>May all your wishes be granted</q>. Something is still bothering me.
 </p>
 </li>
 
