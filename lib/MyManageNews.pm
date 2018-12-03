@@ -17,7 +17,7 @@ my @news_items = (
                 'author'   => "Shlomi Fish",
                 'category' => "Better SCM",
                 'text'     => "Hello"
-                }
+            }
         } (
             {
                 'title' => "Changes of 18-April-2005",
