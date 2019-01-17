@@ -341,6 +341,7 @@ freenode
 freeware
 gcc
 gen-dtd
+git-scm
 git-svn
 github
 gray

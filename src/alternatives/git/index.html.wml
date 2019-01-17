@@ -1,7 +1,38 @@
 #include "template5.wml"
 
-<latemp_subject "Git" />
+<latemp_subject "Better SCM Initiative : Git" />
 
+<h2>Homepage</h2>
+
+<p>
+<a href="https://git-scm.com/">https://git-scm.com/</a>
+</p>
+
+<h2>Summary</h2>
+
+<p>
+Git is a distributed and open source version control system originally created by the
+<a href="https://en.wikipedia.org/wiki/Linux_kernel">Linux kernel</a>
+developers after BitKeeper became unavailable for gratis use. It since
+established itself as the most popular version control system and
+the go-to solution for most new projects.
+</p>
+
+<h2>Resources for Learning</h2>
+
+<ul class="links">
+
+<li>
+<p>
+<a href="https://git-scm.com/book/en/v2">Pro Git book</a> - a free online book.
+</p>
+</li>
+
+</ul>
+
+
+
+<when>
 <h2 id="note">Note!!! This page is empty due to lack of contribution</h2>
 
 <p>
@@ -22,3 +53,4 @@ one</a> for more information.
 very selective reading</a>, and wouldn't normally read the
 <a href="$(ROOT)/faq/">Frequently Asked Questions List</a>.)
 </p>
+</when>
