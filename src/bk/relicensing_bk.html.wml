@@ -287,5 +287,5 @@ ship his platform.
 </p>
 
 <p>
-<a href="http://better-scm.berlios.de/bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
+<a href="$(ROOT)/bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
 </p>

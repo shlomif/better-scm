@@ -56,10 +56,10 @@ dummy: htaccesses_target
 
 htaccesses_target: $(ALL_HTACCESSES)
 
-$(ALL_HTACCESSES): $(D)/%.htaccess: $(BERLIOS_SRC_DIR)/%my_htaccess.conf
+$(ALL_HTACCESSES): $(D)/%.htaccess: $(SCM_SRC_DIR)/%my_htaccess.conf
 	$(call COPY)
 
-T2_SVGS__BASE := $(filter %.svg,$(BERLIOS_IMAGES_DEST))
+T2_SVGS__BASE := $(filter %.svg,$(SCM_IMAGES_DEST))
 T2_SVGS__MIN := $(T2_SVGS__BASE:%.svg=%.min.svg)
 T2_SVGS__svgz := $(T2_SVGS__BASE:%.svg=%.svgz)
 
@@ -75,9 +75,9 @@ SASS_STYLE = compressed
 # SASS_STYLE = expanded
 SASS_CMD = sass --style $(SASS_STYLE)
 
-BERLIOS_CSS_TARGETS = $(D)/style.css
+SCM_CSS_TARGETS = $(D)/style.css
 
-$(BERLIOS_CSS_TARGETS): $(D)/%.css: lib/sass/%.scss $(COMMON_SASS_DEPS)
+$(SCM_CSS_TARGETS): $(D)/%.css: lib/sass/%.scss $(COMMON_SASS_DEPS)
 	$(SASS_CMD) $< $@
 
-css_targets: $(BERLIOS_CSS_TARGETS)
+css_targets: $(SCM_CSS_TARGETS)

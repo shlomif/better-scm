@@ -5,7 +5,7 @@
 
 <p>
 The purpose of this document is to list the recent changes that were applied
-to the <a href="http://better-scm.berlios.de/">Better SCM</a> site. It is
+to the Better SCM site. It is
 our sincere hope that you will find these changes.
 </p>
 
@@ -104,7 +104,7 @@ A better and fixed CSS stylesheet.
 </li>
 <li>
 The Perl back-end used to convert the comparison to HTML and DocBook,
-was span as <a href="http://web-cpan.berlios.de/modules/XML-CompareML/">a
+was span as <a href="https://metacpan.org/release/XML-CompareML">a
 separate re-usable CPAN module</a>.
 </li>
 <li>
@@ -128,7 +128,7 @@ The comparison is now built as part of the site, not separately.
 </li>
 <li>
 The navigation menu and site flow makes use of
-<a href="http://web-cpan.berlios.de/modules/HTML-Widgets-NavMenu/">the
+<a href="https://web-cpan.shlomifish.org/modules/HTML-Widgets-NavMenu/">the
 HTML-Widgets-NavMenu</a> module.
 </li>
 <li>

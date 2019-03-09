@@ -33,7 +33,7 @@ my $generator = HTML::Latemp::GenMakeHelpers->new(
             'dest_dir'   => "\$(D)",
         },
         {
-            'id'         => "berlios",
+            'id'         => "scm",
             'source_dir' => "src",
             'dest_dir'   => "\$(D)",
         },

@@ -11,7 +11,7 @@ my $filename = "/aegis/";
 
 my $nav_bar = HTML::Widgets::NavMenu->new(
     'path_info'    => $filename,
-    'current_host' => "berlios",
+    'current_host' => "scm",
     MyNavData::get_params(),
     'ul_classes' => [ "navbarmain", ("navbarnested") x 10 ],
 );

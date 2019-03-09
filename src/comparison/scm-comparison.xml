@@ -2101,11 +2101,11 @@ TODO:
                     <a href="http://www.viewvc.org/">ViewVC</a>,
                     <a href="http://freshmeat.net/projects/svnweb/">SVN::Web</a>,
                     <a href="http://websvn.tigris.org/">WebSVN</a>,
-                    <a href="http://viewsvn.berlios.de/">ViewSVN</a>,
+                    <a href="https://sourceforge.net/projects/viewsvn.berlios/">ViewSVN</a>,
                     <a href="http://www.outoforder.cc/projects/apache/mod_svn_view/">mod_svn_view</a>,
                     <a href="http://www.horde.org/chora/">Chora</a>,
                     <a href="http://www.edgewall.com/trac/">Trac</a>,
-                    <a href="http://web-cpan.berlios.de/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>,
+                    <a href="https://web-cpan.shlomifish.org/modules/SVN-RaWeb-Light/">SVN::RaWeb::Light</a>,
                     <a href="http://www.polarion.org/svnbrowser.php">SVN
                         Browser</a>,
                     <a href="http://insurrection.tigris.org/">Insurrection</a>

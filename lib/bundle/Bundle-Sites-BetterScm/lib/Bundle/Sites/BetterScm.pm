@@ -57,7 +57,7 @@ XML::CompareML
 
 This bundle installs modules needed by the Better SCM site:
 
-L<http://better-scm.berlios.de/source/>
+L<https://better-scm.shlomifish.org/source/>
 
 =head1 AUTHOR
 

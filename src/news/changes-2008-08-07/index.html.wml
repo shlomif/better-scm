@@ -40,7 +40,7 @@ Foundation Server</a>
 <p>
 Furthermore, after a long time of no activity, the comparison has a new
 criterion:
-<a href="http://better-scm.berlios.de/comparison/comparison.html#intelligent_renames">"Intelligent
+<a href="$(ROOT)/comparison/comparison.html#intelligent_renames">"Intelligent
 Merging after Moves or Renames"</a>
 </p>
 

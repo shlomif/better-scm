@@ -42,7 +42,7 @@ $converter->gen_systems_list(output_handle => \*STDOUT);
 The comparison is generated from an XML file by a Perl script. The script
 uses the <a href="http://search.cpan.org/dist/XML-LibXML/">XML::LibXML
 bindings</a> to libxml, and
-<a href="http://web-cpan.berlios.de/modules/XML-CompareML/">XML::CompareML</a>.
+<a href="https://web-cpan.shlomifish.org/modules/XML-CompareML/">XML::CompareML</a>.
 To use the makefile, you need
 <a href="http://www.gnu.org/software/make/">GNU Make</a>. Following are the
 sources:

@@ -6,15 +6,15 @@ use warnings;
 use MyManageNews;
 
 my $hosts = {
-    'berlios' => {
-        'base_url' => "http://better-scm.berlios.de/",
+    'scm' => {
+        'base_url' => "http://better-scm.shlomifish.org/",
     },
 };
 
 my $news_manager = get_news_manager();
 
 my $tree_contents = {
-    'host'  => "berlios",
+    'host'  => "scm",
     'text'  => "Better SCM",
     'title' => "Better SCM Initiative",
     'subs'  => [

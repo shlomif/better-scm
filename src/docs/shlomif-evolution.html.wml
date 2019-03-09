@@ -40,7 +40,7 @@ Solver</a>, I kept a tar.gz containing every single
 minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise
 Simulator project my partner and I took for the Technion, I decided to use
 <a href="http://www.cvshome.org/">CVS</a>. So, we registered a project at
-<a href="http://developer.berlios.de/">BerliOS</a> and started using it. The
+<a href="https://en.wikipedia.org/wiki/BerliOS">BerliOS</a> and started using it. The
 CVS <code>import</code> command gave us some
 trouble as we did not really know how to use it, but eventually we were right
 on track, and were amazed at the convenience.
@@ -208,11 +208,11 @@ which I hope will happen soon).
 <div class="note">
 <p>
 <b>Recent Note: (as of 25-February-2004)</b> There is now
-<a href="http://opensvn.csie.org/">a Subversion hosting</a> at
+a Subversion hosting at
 opensvn.csie.org. It is very discreet and requires
 no human intervention to register a project. It also seems very nice, and I
 am using it now for one of my projects
-(<a href="http://perl-begin.berlios.de/">perl-begin</a>) and plan to use it
+(<a href="https://perl-begin.org/">perl-begin</a>) and plan to use it
 for more. If you cannot afford maintaining your own host it is a viable option.
 </p>
 <p>
@@ -244,7 +244,7 @@ List</a> about it).
 <b>More Recent Note: (as of 25-April-2005)</b> There are now
 <a href="http://subversion.apache.org/project_links.html#hosting">other
 hosting services for Subversion</a>, including
-<a href="http://developer.berlios.de/">BerliOS</a>. I now maintain many
+BerliOS. I now maintain many
 projects using Subversion, and use CVS only for projects on which I don't
 have any control on the choice of the version control system. (usually
 international projects I join as a co-developer). I recently also switched
