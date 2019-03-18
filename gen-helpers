@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use HTML::Latemp::GenMakeHelpers ();
+use Path::Tiny qw/ path /;
 
 sub _exec
 {
@@ -46,3 +47,11 @@ $generator->process_all();
 open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
 print {$out_fh} "include $DIR/main.mak\n";
 close($out_fh);
+
+my $render = path('bin/render');
+$render->spew_utf8(
+    path('bin/render-source.pl')->slurp_utf8() =~ s#^(?:use lib[^\n]+\n)+#
+    "use lib \"" . (`wml-params-conf --show-privlib` =~ s%[\n\r]+\z%%r) . "\";\n";
+    #emrs
+);
+$render->chmod(0755);

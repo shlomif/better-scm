@@ -16,6 +16,16 @@ include lib/make/rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
+WML_FLAGS += -DLATEMP_THEME=better-scm
+LATEMP_WML_FLAGS += $(COMMON_PREPROC_FLAGS) -I $$HOME/apps/wml $(SCM_WML_FLAGS)
+TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
+
+WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
+
+DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
+
+all_deps: make-dirs
+
 dummy: latemp_targets news_feeds min_svgs css_targets
 
 WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
@@ -81,3 +91,13 @@ $(SCM_CSS_TARGETS): $(D)/%.css: lib/sass/%.scss $(COMMON_SASS_DEPS)
 	$(SASS_CMD) $< $@
 
 css_targets: $(SCM_CSS_TARGETS)
+
+fastrender: $(SCM_DOCS:%=$(SCM_SRC_DIR)/%.wml) all_deps
+	@echo $(MAKE) fastrender
+	@$(call WML_RENDER,) $(SCM_DOCS)
+	@$(PROCESS_ALL_INCLUDES) $(HTMLS)
+
+SUBDIRS = $(addprefix $(D)/,$(SCM_DIRS))
+
+make-dirs: $(SUBDIRS)
+	@mkdir -p $(SUBDIRS)
