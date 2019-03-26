@@ -18,7 +18,7 @@ or copying everything to a different directory. Stuff like that.
 Those methods worked for me, and I rarely lost too much code. But still
 they were kludgy. By and by I started hearing buzzwords like <b>RCS</b> or
 <b>CVS</b> floating around. When working on the
-<a href="http://www.iglu.org.il/">IGLU server</a>, I was told that we can keep
+<a href="http://www.linux.org.il/">IGLU server</a>, I was told that we can keep
 different copies of the files by an obscure "rcs" command. Also, I received
 an account on the KDE CVS repository where I uploaded some code I had. But I
 only had a vague idea of what revision control was and what it was good for.
@@ -35,7 +35,7 @@ intrigued of what I had done wrong so far.
 
 <p>
 When I worked on
-<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell
+<a href="https://fc-solve.shlomifish.org/">Freecell
 Solver</a>, I kept a tar.gz containing every single
 minor digit on my hard-disk. I have 295 of them here. But for the IP-Noise
 Simulator project my partner and I took for the Technion, I decided to use
@@ -56,7 +56,7 @@ Technion project (a Seminars Management web-interface), and was quite happy.
 
 <p>
 When I started working on
-<a href="http://vipe.technion.ac.il/~shlomif/lm-solve/">LM-Solve</a>, I used
+<a href="https://www.shlomifish.org/lm-solve/">LM-Solve</a>, I used
 CVS (naturally) and quickly ran into some of its limitations like no file
 renames, copies, etc. I had previously attended a lecture by Moshe Zadka about
 CVS (half of which I did not understand or it was still too advanced for me),

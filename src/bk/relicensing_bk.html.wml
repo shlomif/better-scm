@@ -79,7 +79,7 @@ Note that I'm not one of those people who believe the GPL is ideal for
 everything. I think every project has an appropriate license depending
 on the niche it is trying to fill. For example, I believe the Public
 Domain was a very good choice for
-<a href="http://vipe.technion.ac.il/~shlomif/freecell-solver/">Freecell Solver</a>
+<a href="https://fc-solve.shlomifish.org/">Freecell Solver</a>
 (shameless plug) because it made it an excellent choice for vendors of
 freeware and shareware Freecell implementations who cannot comply with the
 restrictions of the GPL. Similarly, I believe the change of Wine's

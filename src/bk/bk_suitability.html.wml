@@ -30,7 +30,7 @@ founder of the "Better SCM" initiative.
 <p>
 BitKeeper itself is a very feature-rich, powerful and impressive
 product, and free users receive access to its full capabilities. For
-my limited use of it for <a href="http://vipe.technion.ac.il/~shlomif/lm-solve">LM-Solve</a>, which is a very small-scale project, it worked very well,
+my limited use of it for <a href="https://www.shlomifish.org/lm-solve/">LM-Solve</a>, which is a very small-scale project, it worked very well,
 but naturally, I did not stress test it. Nevertheless, the Linux kernel
 developers probably stress test it enough, which proves BitKeeper
 scales for large-scale projects.

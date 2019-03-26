@@ -8,7 +8,6 @@ required:
         Fcntl: 0
         HTML::Latemp::News: 0
         HTML::Parser: '3.00'
-        HTML::Tidy: 0
         Perl::Tidy: 0
         Template::Preprocessor::TTML: 0
         XML::CompareML::HTML: 0

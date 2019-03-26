@@ -98,8 +98,8 @@ sub gen_news_manager
         'link'            => "http://better-scm.berlios.de/",
         'language'        => "en-US",
         'copyright'       => "Copyright by Shlomi Fish, (c) 2005",
-        'webmaster'       => "Shlomi Fish <shlomif\@iglu.org.il>",
-        'managing_editor' => "Shlomi Fish <shlomif\@iglu.org.il>",
+        'webmaster'       => "Shlomi Fish <shlomif\@shlomifish.org>",
+        'managing_editor' => "Shlomi Fish <shlomif\@shlomifish.org>",
         'description' =>
 "News of the Better SCM Site - a site for Version Control and Source Configuration Management news and advocacy",
     );
