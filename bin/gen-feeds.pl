@@ -3,8 +3,8 @@
 use strict;
 use warnings;
 
-use MyManageNews;
-use Getopt::Long;
+use MyManageNews qw/ get_news_manager /;
+use Getopt::Long qw/ GetOptions /;
 
 my $rss2_out = "dest/rss.xml";
 GetOptions( "rss2-out=s" => \$rss2_out );

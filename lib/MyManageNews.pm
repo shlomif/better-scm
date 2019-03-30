@@ -3,11 +3,12 @@ package MyManageNews;
 use strict;
 use warnings;
 
-use base 'Exporter';
+use parent 'Exporter';
 
-our @EXPORT = (qw(get_news_manager));
+our @EXPORT    = (qw(get_news_manager));
+our @EXPORT_OK = (qw(get_news_manager));
 
-use HTML::Latemp::News;
+use HTML::Latemp::News v0.2.1 ();
 
 my @news_items = (
     (
@@ -92,8 +93,11 @@ q{The Better SCM Site now has an RSS feed. It will be periodically updated with 
 
 sub gen_news_manager
 {
+    my $date = scalar( localtime(1553979880) );
     return HTML::Latemp::News->new(
         'news_items'      => \@news_items,
+        pubDate           => $date,
+        lastBuildDate     => $date,
         'title'           => "Better SCM News",
         'link'            => "http://better-scm.berlios.de/",
         'language'        => "en-US",
@@ -106,17 +110,15 @@ sub gen_news_manager
 }
 
 # A singleton.
-{
-    my $news_manager;
+my $news_manager;
 
-    sub get_news_manager
+sub get_news_manager
+{
+    if ( !defined($news_manager) )
     {
-        if ( !defined($news_manager) )
-        {
-            $news_manager = gen_news_manager();
-        }
-        return $news_manager;
+        $news_manager = gen_news_manager();
     }
+    return $news_manager;
 }
 
 1;

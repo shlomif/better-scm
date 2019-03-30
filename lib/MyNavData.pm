@@ -3,7 +3,7 @@ package MyNavData;
 use strict;
 use warnings;
 
-use MyManageNews;
+use MyManageNews qw/ get_news_manager /;
 
 my $hosts = {
     'scm' => {

@@ -6,7 +6,7 @@ required:
     files: []
     perl5_modules:
         Fcntl: 0
-        HTML::Latemp::News: 0
+        HTML::Latemp::News: '0.2.1'
         HTML::Parser: '3.00'
         Perl::Tidy: 0
         Template::Preprocessor::TTML: 0
