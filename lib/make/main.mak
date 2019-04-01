@@ -101,3 +101,6 @@ SUBDIRS = $(addprefix $(D)/,$(SCM_DIRS))
 
 make-dirs: $(SUBDIRS)
 	@mkdir -p $(SUBDIRS)
+
+bulk-make-dirs:
+	@mkdir -p $(SUBDIRS)

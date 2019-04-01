@@ -55,3 +55,4 @@ $render->spew_utf8(
     #emrs
 );
 $render->chmod(0755);
+_exec( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );
