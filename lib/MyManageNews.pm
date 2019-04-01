@@ -5,7 +5,6 @@ use warnings;
 
 use parent 'Exporter';
 
-our @EXPORT    = (qw(get_news_manager));
 our @EXPORT_OK = (qw(get_news_manager));
 
 use HTML::Latemp::News v0.2.1 ();
