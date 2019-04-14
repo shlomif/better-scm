@@ -21,6 +21,7 @@ LATEMP_WML_FLAGS += $(COMMON_PREPROC_FLAGS) -I $$HOME/apps/wml $(SCM_WML_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
 WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
+SCM_INCLUDE_WML_RENDER = $(WML_RENDER)
 
 DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
 
