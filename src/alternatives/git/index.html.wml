@@ -37,13 +37,13 @@ the go-to solution for most new projects.
 
 <p>
 We would love to feature the git version control system here, but
-so far <a href="$(ROOT)/faq/#git-missing"><b>no one
+so far <a href="$(PATH_TO_ROOT)faq/#git-missing"><b>no one
 volunteered to add it</b> and maintain the information about it
 into the future.</a>
 </p>
 
 <p>
-Read the link and <a href="$(ROOT)/faq/#system-missing-from-comparison">this
+Read the link and <a href="$(PATH_TO_ROOT)faq/#system-missing-from-comparison">this
 one</a> for more information.
 </p>
 
@@ -51,6 +51,6 @@ one</a> for more information.
 (The reason this page was added is because users of software or web-sites
 <a href="http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html">have
 very selective reading</a>, and wouldn't normally read the
-<a href="$(ROOT)/faq/">Frequently Asked Questions List</a>.)
+<a href="$(PATH_TO_ROOT)faq/">Frequently Asked Questions List</a>.)
 </p>
 </when>

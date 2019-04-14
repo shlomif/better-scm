@@ -4,7 +4,7 @@
 
 <p>
 The following version control systems have been added to
-<a href="$(ROOT)/comparison/">the comparison</a>:
+<a href="$(PATH_TO_ROOT)comparison/">the comparison</a>:
 </p>
 
 <ol>
@@ -29,7 +29,7 @@ Monotone and other systems.
 </p>
 
 <p>
-Finally <a href="$(ROOT)/monotone/">the Monotone web page</a> in the main
+Finally <a href="$(PATH_TO_ROOT)monotone/">the Monotone web page</a> in the main
 site was updated.
 </p>
 

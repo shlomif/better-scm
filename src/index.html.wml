@@ -41,10 +41,10 @@ numerous alternatives have matured. So Better SCM continues with its mission
 to improve the current state of the art of version control systems.
 </p>
 
-<h2 class="link"><a href="$(ROOT)/alternatives/">Available
+<h2 class="link"><a href="$(PATH_TO_ROOT)alternatives/">Available
 CVS Alternatives</a></h2>
 
-<h2 class="link"><a href="./docs/">General Documents</a></h2>
+<h2 class="link"><a href="docs/">General Documents</a></h2>
 
 <define-tag OLD_sponsorship__REMOVED>
 

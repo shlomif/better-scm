@@ -36,6 +36,6 @@ under active development. Bazaar has been adopted by
 <p>
 It should be noted that Bazaar (also known as “bzr” after its command line
 program) used to be called Bazaar-NG, while its predecessor "Baz" (originally
-derived from <a href="$(ROOT)/arch/">GNU Arch</a>) used to be called "Bazaar".
+derived from <a href="$(PATH_TO_ROOT)arch/">GNU Arch</a>) used to be called "Bazaar".
 However, now after bzr has matured, it assumed the name "Bazaar" instead.
 </p>

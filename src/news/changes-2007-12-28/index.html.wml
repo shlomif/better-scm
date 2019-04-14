@@ -4,13 +4,13 @@
 
 <p>
 Recently, the <a href="http://bazaar-vcs.org/">Bazaar version control
-system</a> has been added to <a href="$(ROOT)/comparison/">the comparison</a>,
-and <a href="$(ROOT)/alternatives/bazaar/">a summary page</a> about it
+system</a> has been added to <a href="$(PATH_TO_ROOT)comparison/">the comparison</a>,
+and <a href="$(PATH_TO_ROOT)alternatives/bazaar/">a summary page</a> about it
 has been added to the main site.
 </p>
 
 <p>
-In addition, the <a href="$(ROOT)/arch/">Arch summary page</a> that referenced
+In addition, the <a href="$(PATH_TO_ROOT)arch/">Arch summary page</a> that referenced
 it and its predecessor "Baz" was corrected to update their name change.
 </p>
 

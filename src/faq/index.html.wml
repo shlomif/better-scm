@@ -44,7 +44,7 @@ Be able to answer questions and comments from people who enquire about it.
 
 <p>
 If you feel you are familiar with a given system enough, then you can
-<a href="$(ROOT)/contribute/#comparison_new_system">follow
+<a href="$(PATH_TO_ROOT)contribute/#comparison_new_system">follow
 the instructions to become a champion</a>. If not, you'll have to find someone
 who is. You don't have to be a vendor or a developer of this system to
 fill in the details, but if you are, then it wouldn't hurt.

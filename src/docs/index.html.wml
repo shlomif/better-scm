@@ -26,7 +26,7 @@ solution.
 </li>
 
 <li>
-<a href="$(ROOT)/myths.html">Myths about Version Control</a>
+<a href="$(PATH_TO_ROOT)myths.html">Myths about Version Control</a>
 </li>
 
 </ul>

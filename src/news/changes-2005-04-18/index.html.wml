@@ -13,30 +13,30 @@ our sincere hope that you will find these changes.
 
 <ul>
 <li>
-Added <a href="$(ROOT)/bk/demise-of-gratis-bitkeeper.html">a
+Added <a href="$(PATH_TO_ROOT)bk/demise-of-gratis-bitkeeper.html">a
 page about the dis-continuation of the gratis BitKeeper license</a>. This page
 is linked from other pages that are relevant to BitKeeper.
 </li>
 <li>
-Modified the <a href="$(ROOT)/aegis/">page about Aegis</a>, to have a more
+Modified the <a href="$(PATH_TO_ROOT)aegis/">page about Aegis</a>, to have a more
 meaningful content.
 </li>
 <li>
-Added <a href="$(ROOT)/alternatives/darcs/">a page about the Darcs version
+Added <a href="$(PATH_TO_ROOT)alternatives/darcs/">a page about the Darcs version
 control system.</a>.
 </li>
 <li>
-Added <a href="$(ROOT)/alternatives/perforce/">a page about Perforce</a>.
+Added <a href="$(PATH_TO_ROOT)alternatives/perforce/">a page about Perforce</a>.
 </li>
 <li>
-Added <a href="$(ROOT)/to-avoid/">a page with version control systems that
+Added <a href="$(PATH_TO_ROOT)to-avoid/">a page with version control systems that
 should be avoided</a>.
 </li>
 <li>
-Added content to <a href="$(ROOT)/monotone/">the Monotone page</a>.
+Added content to <a href="$(PATH_TO_ROOT)monotone/">the Monotone page</a>.
 </li>
 <li>
-Added a page about <a href="$(ROOT)/irc/">our new
+Added a page about <a href="$(PATH_TO_ROOT)irc/">our new
 IRC channel</a>.
 </li>
 <li>
@@ -93,7 +93,7 @@ cleanups.
 </li>
 </ul>
 
-<h2>Changes to the <a href="$(ROOT)/comparison/">Comparison</a></h2>
+<h2>Changes to the <a href="$(PATH_TO_ROOT)comparison/">Comparison</a></h2>
 
 <ul>
 <li>
@@ -115,7 +115,7 @@ The <code>id</code> HTML attribute is now used as part of the element, instead
 of as a separate &lt;a&gt; element.
 </li>
 <li>
-Updated the <a href="$(ROOT)/comparison/bk-license.html">Problems in the
+Updated the <a href="$(PATH_TO_ROOT)comparison/bk-license.html">Problems in the
 BitKeeper License</a> page.
 </li>
 </ul>

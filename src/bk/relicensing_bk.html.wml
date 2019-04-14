@@ -287,5 +287,5 @@ ship his platform.
 </p>
 
 <p>
-<a href="$(ROOT)/bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
+<a href="$(PATH_TO_ROOT)bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
 </p>

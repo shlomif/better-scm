@@ -29,7 +29,7 @@ a substantial amount.
 
 <li>
 <p>
-Checkout the <a href="$(ROOT)/source/">sources for the
+Checkout the <a href="$(PATH_TO_ROOT)source/">sources for the
 site</a> using Subversion.
 </p>
 </li>

@@ -6,10 +6,10 @@
 <h2>Introduction</h2>
 
 <p>
-Based on the <a href="$(ROOT)/">front page</a> you've probably guessed that
+Based on the <a href="$(PATH_TO_ROOT)">front page</a> you've probably guessed that
 CVS is no longer a good option for a version control system to use for your
 projects. If you're looking for a VCS that is a much better superset of CVS,
-take a look at <a href="$(ROOT)/subversion/">Subversion</a>; other version
+take a look at <a href="$(PATH_TO_ROOT)subversion/">Subversion</a>; other version
 control systems may fit the bill even better.
 </p>
 

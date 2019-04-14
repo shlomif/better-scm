@@ -4,7 +4,7 @@
 
 <p>
 Recently three new version control systems were added to
-<a href="$(ROOT)/comparison/">the comparison</a>:
+<a href="$(PATH_TO_ROOT)comparison/">the comparison</a>:
 </p>
 
 <ol>

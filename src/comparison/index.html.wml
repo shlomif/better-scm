@@ -14,7 +14,7 @@ sent as an attachment.
 <p>
 If there's something you feel should be added, or wish to correct the
 information of a version control system or add information about a
-new one, <a href="$(ROOT)/contribute">see the "How to Contribute"
+new one, <a href="$(PATH_TO_ROOT)contribute">see the "How to Contribute"
 page</a>.
 </p>
 

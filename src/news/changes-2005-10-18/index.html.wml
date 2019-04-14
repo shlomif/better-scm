@@ -3,7 +3,7 @@
 <latemp_subject "\"The BitKeeper Ghost\"" />
 
 <p>
-There's <a href="$(ROOT)/bk/the-bitkeeper-ghost.html">a new Essay titled
+There's <a href="$(PATH_TO_ROOT)bk/the-bitkeeper-ghost.html">a new Essay titled
 "The BitKeeper Ghost"</a>. It discusses the recent developments in the
 BitKeeper saga after the department of Bryan O'Sullivan from the Mercurial
 development team.
