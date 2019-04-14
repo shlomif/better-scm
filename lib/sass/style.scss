@@ -39,7 +39,7 @@ ul {
     border-style: double;
     border-width: medium;
     padding: 0.5em;
-    background-color: #98FB98;
+    background-color: #98fb98;
     margin-top: 1em;
     overflow: hidden;
 
@@ -115,7 +115,7 @@ them, because they are nested and it looks weird */
     padding-left: 0.5em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    background-color: #40C040;
+    background-color: #40c040;
     font-size: 85%;
     margin-top: 5pt;
     margin-bottom: 0.5em;
@@ -142,7 +142,7 @@ pre {
     padding-right: 1em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    background-color: #D0FFD0;
+    background-color: #d0ffd0;
     border-width: thin;
     border-color: #004000;
     border-style: solid;
@@ -197,7 +197,7 @@ pre {
     padding-right: 0.5em;
 
     &:hover {
-        background-color: #E6FAE6;
+        background-color: #e6fae6;
     }
 }
 
@@ -211,32 +211,35 @@ ul.navbarmain {
 }
 
 .main {
-    p, img {
+    p,
+    img {
         padding-left: 1em;
     }
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     padding-left: 0.3em;
 }
 
 .navbar {
-    background-color: #C5CAE2;
+    background-color: #c5cae2;
 }
 
 h2 {
-    background-color: #FFEE00;
+    background-color: #ffee00;
 }
 
 .comparison {
     h2 {
-        background-color: #98FB98;
+        background-color: #98fb98;
 
         /* PaleGreen */
     }
 
     h3 {
-        background-color: #FFA500;
+        background-color: #ffa500;
 
         /* Orange */
     }
@@ -272,7 +275,7 @@ table.compare {
     .expl {
         border-style: solid;
         border-width: thin;
-        background-color: #E6E6FA;
+        background-color: #e6e6fa;
 
         /* Lavender */
         border-color: black;
