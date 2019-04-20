@@ -1,0 +1,27 @@
+{
+  "name": "better-scm",
+  "version": "0.0.1",
+  "description": "Sources of the [“Better SCM” site](http://better-scm.shlomifish.org/) which is a site for advocacy and information about version control systems.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "prettier": "^1.17.0",
+    "sass": "^1.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shlomif/better-scm.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/shlomif/better-scm/issues"
+  },
+  "homepage": "https://github.com/shlomif/better-scm#readme"
+}
