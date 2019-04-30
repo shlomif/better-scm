@@ -1,4 +1,4 @@
-#include "template5.wml"
+#include "template.wml"
 
 <latemp_subject "ClearCase, Mercurial and AccuRev were added to the Comparison" />
 

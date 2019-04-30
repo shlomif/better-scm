@@ -1,4 +1,4 @@
-#include "template5.wml"
+#include "template.wml"
 
 <latemp_subject "Recent Changes in the Better SCM Site" />
 <latemp_more_keywords "recent changes, log" />
