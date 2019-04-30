@@ -6,3 +6,6 @@ ignore = dest/**/*
 [PerlCritic]
 select = **/*.{pl,pm,t}
 ignore = dest/**/* lib/App/Deps/Verify.pm
+
+[TestCount]
+select = Tests/*.t
