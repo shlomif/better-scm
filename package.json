@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
+    "html-minifier": "^4.0.0",
     "prettier": "^1.17.0",
     "sass": "^1.19.0"
   },

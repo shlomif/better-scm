@@ -1,6 +1,7 @@
 DEVEL_VER_USE_CACHE = 1
 
 D = dest
+TARGET = $(D)
 
 WML_FLAGS += -DLATEMP_THEME=better-scm -I $$HOME/apps/wml
 WML_FLAGS += $(COMMON_PREPROC_FLAGS)
@@ -22,6 +23,13 @@ TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
 WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
 SCM_INCLUDE_WML_RENDER = $(WML_RENDER)
+
+PROCESS_ALL_INCLUDES = APPLY_TEXTS=1 perl bin/post-incs-v2.pl --mode=minify \
+               --minifier-conf=bin/html-min-cli-config-file.conf \
+               --texts-dir=lib/ads \
+               --source-dir=$(TARGET) \
+               --dest-dir=$(TARGET) \
+               --
 
 DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
 
@@ -96,7 +104,7 @@ css_targets: $(SCM_CSS_TARGETS)
 fastrender: $(SCM_DOCS:%=$(SCM_SRC_DIR)/%.wml) all_deps
 	@echo $(MAKE) fastrender
 	@$(call WML_RENDER,) $(SCM_DOCS)
-	@$(PROCESS_ALL_INCLUDES) $(HTMLS)
+	@$(PROCESS_ALL_INCLUDES) $(SCM_DOCS)
 
 SUBDIRS = $(addprefix $(D)/,$(SCM_DIRS))
 
