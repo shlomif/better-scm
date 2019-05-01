@@ -24,9 +24,8 @@ TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
 SCM_INCLUDE_WML_RENDER = $(WML_RENDER)
 
-PROCESS_ALL_INCLUDES = APPLY_TEXTS=1 perl bin/post-incs-v2.pl --mode=minify \
+PROCESS_ALL_INCLUDES = ALWAYS_MIN=1 perl bin/post-incs-v2.pl --mode=minify \
                --minifier-conf=bin/html-min-cli-config-file.conf \
-               --texts-dir=lib/ads \
                --source-dir=$(TARGET) \
                --dest-dir=$(TARGET) \
                --
