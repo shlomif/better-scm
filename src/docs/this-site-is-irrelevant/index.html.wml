@@ -36,8 +36,8 @@ similar.
 <p>
 VCSes that also provide distributed bug trackers and other integrated
 services, such as <a href="https://en.wikipedia.org/wiki/Fossil_(software)">Fossil</a>
-and <a href="https://en.wikipedia.org/wiki/Veracity_(software)">Veracity</a>
-, provide an interesting approach to watch in the future.
+and <a href="https://en.wikipedia.org/wiki/Veracity_(software)">Veracity</a>,
+provide an interesting approach to watch in the future.
 </p>
 </li>
 
@@ -73,8 +73,8 @@ high profile).
 </p>
 
 <p>
-Many years after that, BitKeeper <a href="https://news.slashdot.org/story/16/05/10/1840255/11-years-after-git-bitkeeper-is-open-sourced">was made open source</a>, which may be too little
-, too late. All of this left a bad taste in the mouth that could have been
+Many years after that, BitKeeper <a href="https://news.slashdot.org/story/16/05/10/1840255/11-years-after-git-bitkeeper-is-open-sourced">was made open source</a>, which may be too
+little, too late. All of this left a bad taste in the mouth that could have been
 prevented if BitKeeper had been made FOSS to start with.
 </p>
 </li>
@@ -88,7 +88,7 @@ and transparency of the client/server model of Subversion. Distributed VCSes,
 while in general an improvement, often throw me off leaving me to need to
 consult a web search, <a href="https://git-scm.com/community">the #git
 chat-room on freenode</a> (you guys rock!), or other resources, and I do not
-feel that I understand its underlying model.
+feel that I understand their underlying model.
 </p>
 
 <p>
