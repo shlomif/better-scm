@@ -92,7 +92,7 @@ q{The Better SCM Site now has an RSS feed. It will be periodically updated with 
 
 sub gen_news_manager
 {
-    my $date = scalar( localtime(1553979880) );
+    my $date = scalar( gmtime(1563197532) );
     return HTML::Latemp::News->new(
         'news_items'      => \@news_items,
         pubDate           => $date,
