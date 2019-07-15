@@ -18,6 +18,11 @@ if ! ./gen-helpers | perl bin/filter-make.pl ; then
     exit -1
 fi
 
+if ! m fastrender ; then
+    echo "Error in executing make fastrender." 1>&2
+    exit -1
+fi
+
 if ! m 2>&1 | perl bin/filter-make.pl ; then
     echo "Error in executing make." 1>&2
     exit -1
