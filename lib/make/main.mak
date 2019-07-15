@@ -22,7 +22,8 @@ LATEMP_WML_FLAGS += $(COMMON_PREPROC_FLAGS) -I $$HOME/apps/wml $(SCM_WML_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
 WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
-SCM_INCLUDE_WML_RENDER = $(WML_RENDER)
+# needed by rules.mak / non-fastrender make test
+SCM_INCLUDE_WML_RENDER = $(WML_RENDER) $(patsubst $(SCM_SRC_DIR)/%.wml,%,$<)
 
 PROCESS_ALL_INCLUDES = ALWAYS_MIN=1 perl bin/post-incs-v2.pl --mode=minify \
                --minifier-conf=bin/html-min-cli-config-file.conf \
