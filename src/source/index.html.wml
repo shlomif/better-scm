@@ -10,7 +10,7 @@ https://github.com/shlomif/better-scm
 The site source code is present in a
 <a href="<repos_url />/">Git
 repository</a> kindly hosted by
-<a href="http://github.com/">GitHub</a>.
+<a href="https://github.com/">GitHub</a>.
 </p>
 
 <p>
@@ -24,7 +24,10 @@ git clone <repos_url />
 </pre>
 
 <define-tag cpan_link>
-<a href="http://metacpan.org/release/%0">%0</a>
+<preserve dist />
+<set-var %attributes />
+<a href="https://metacpan.org/release/<get-var dist />"><get-var dist /></a>
+<restore dist />
 </define-tag>
 
 <p>
@@ -33,20 +36,22 @@ To build the site you'll need the following extra software packages:
 
 <ol>
 <li>
-<a href="http://www.perl.org/">perl</a> - 5.14.x or above.
+<a href="https://www.perl.org/">perl</a> - 5.14.x or above.
 </li>
 <li>
-<a href="http://www.shlomifish.org/open-source/projects/website-meta-language/">Website Meta Language</a>
+<a href="https://www.shlomifish.org/open-source/projects/website-meta-language/">Website Meta Language</a>
 </li>
 <li>
-<a href="http://web-cpan.shlomifish.org/latemp/">Latemp</a>
+<a href="https://web-cpan.shlomifish.org/latemp/">Latemp</a>
 </li>
 <li>
-<a href="http://www.gnu.org/software/make/">GNU Make</a>.
+<a href="https://www.gnu.org/software/make/">GNU Make</a>.
 </li>
 <li>
-The <a href="http://www.cpan.org/">CPAN</a> modules listed in <cpan_link "Bundle-Sites-BetterScm" />. They can be installed using a CPAN.pm or
-a CPANPLUS.pm command.
+The <a href="https://www.cpan.org/">CPAN</a> modules listed in <cpan_link
+dist="Task-Sites-BetterScm" />. They can be installed using a CPAN.pm,
+CPANPLUS.pm, or a <a href="https://metacpan.org/pod/App::cpanminus">cpanminus</a>
+command, e.g: <tt>cpanm Task::Sites::BetterScm</tt>.
 </li>
 </ol>
 
@@ -58,9 +63,9 @@ again whenever you add or remove files from the <code>./src</code> directory.
 
 <p>
 The programming code for the site is distributed under the
-<a href="http://www.opensource.org/licenses/mit-license.php">MIT
+<a href="https://www.opensource.org/licenses/mit-license.php">MIT
 Expat license</a> and the content (except for the comparison) is distributed
-under the <a href="http://creativecommons.org/licenses/by/2.0/">Creative
+under the <a href="https://creativecommons.org/licenses/by/2.0/">Creative
 Commons Attribution-License 2.0</a> (or at your option any greater version).
 Both of these licenses allow an almost completely unrestricted use of the
 content.
@@ -73,7 +78,7 @@ Happy Hacking!
 <h2 id="ci">Continuous Integration</h2>
 
 <p>
-We have a <a href="https://travis-ci.org/shlomif/better-scm"><b>CI service</b></a>
+We have a <a href="httpss://travis-ci.org/shlomif/better-scm"><b>CI service</b></a>
 running the build and tests kindly provided by <a href="https://travis-ci.org/dashboard">Travis-CI</a>. Here is <a href="https://perlhacks.com/2012/03/you-must-hate-version-control-systems/">more information about CI</a>.
 Other services may be added in the future.
 </p>
