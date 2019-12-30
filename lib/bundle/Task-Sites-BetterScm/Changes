@@ -1,23 +1,4 @@
-Revision history for Task-Latemp:
+Revision history for Task-Sites-BetterScm
 
-0.0105  2019-09-10
-    - Add META.json
-        - https://github.com/thewml/latemp/pull/2
-        - Thanks to MANWAR.
-
-0.0104  2019-09-10
-    - Correct typos and links.
-
-0.0103  2016-11-11
-    - Convert to Dist-Zilla.
-
-0.0102  2015-05-30
-    - META.yml: add repository, homepage and keywords.
-
-0.0101  2014-01-31
-    - Minimal version of perl
-    - Convert to Module::Build
-    - Add LICENSE file (CPANTS).
-
-0.0100  2006-06-12
-    - First version, released on an unsuspecting world.
+0.0.1   2019-12-30
+    - First version
