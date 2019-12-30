@@ -34,6 +34,7 @@ Bazaar-NG
 BeOS
 BerliOS
 Better-SCM
+BetterScm
 BitKeeper
 BitKeeper's
 BitMover
@@ -214,6 +215,7 @@ Superversion
 SvnBridge
 Szabo
 TL
+Task-Sites-BetterScm
 Tcl
 Teamprise
 Technion
@@ -316,6 +318,8 @@ collab
 com
 conf
 cp
+cpanm
+cpanminus
 csie
 cvs
 cvs2svn
