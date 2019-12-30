@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+set -e -x
+deps-app plupdatetask -i bin/common-required-deps.yml -i bin/required-modules.yml --mutate lib/bundle/Task-Sites-BetterScm/lib/Task/Sites/BetterScm.pm
