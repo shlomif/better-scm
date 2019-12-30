@@ -1,16 +1,12 @@
 package Task::Sites::BetterScm;
 
+use 5.014;
 use warnings;
 use strict;
-use 5.008;
 
 =head1 NAME
 
 Task::Sites::BetterScm - Specifications for modules needed by the better scm site.
-
-=cut
-
-our $VERSION = '0.0105';
 
 =pkgroup Foo
 
@@ -108,4 +104,4 @@ This program is released under the following license: MIT / Expat .
 
 =cut
 
-1; # End of Task::Latemp
+1;    # End of Task::Latemp
