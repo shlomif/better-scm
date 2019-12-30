@@ -52,9 +52,7 @@ our $VERSION = '0.0105';
 
 =head1 DESCRIPTION
 
-Latemp ( L<https://web-cpan.shlomifish.org/latemp/> ) is a static site
-generator based on Website Meta Language. This task installs all of its
-required dependencies.
+See L<https://better-scm.shlomifish.org/> and L<https://github.com/shlomif/better-scm> .
 
 =head1 AUTHOR
 
