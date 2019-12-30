@@ -5,8 +5,5 @@
 #
 # Distributed under terms of the MIT license.
 #
-npm install \
-    html-minifier \
-    prettier \
-    sass \
-
+set -e
+npm install
