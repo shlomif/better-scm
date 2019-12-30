@@ -14,9 +14,42 @@ our $VERSION = '0.0105';
 
 =pkgroup Foo
 
+=pkg App::Deps::Verify
+
+=pkg App::XML::DocBook::Builder
+
+=pkg Bit::Vector
+
+=pkg Carp::Always
+
+=pkg Class::XSAccessor
+
+=pkg Class::XSAccessor
+
+=pkg Config::IniFiles
+
+=pkg GD
+
+=pkg Getopt::Long
+
+=pkg HTML::Links::Localize
+
+=pkg HTML::T5
+
+=pkg IO::All
+
+=pkg Image::Size
+
+=pkg List::MoreUtils
+
+=pkg Path::Tiny
+
+=pkg Pod::Xhtml
+
 =pkg Task::Latemp
 
-=pkg 
+=pkg Term::ReadKey
+
 =head1 DESCRIPTION
 
 Latemp ( L<https://web-cpan.shlomifish.org/latemp/> ) is a static site
