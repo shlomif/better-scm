@@ -63,19 +63,22 @@ licence changes, which made it unavailable to me.
 
 <li>
 <p>
-BitKeeper was aimed to be used by <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> projects, as an alternative to the
-limited CVS, while not being FOSS itself. After a series of licence changes,
-and adoption by the Linux kernel project and some other projects, its gratis version
-was terminated. This lead to the initiation of several FOSS alternatives,
-including Git, which established itself as the de-facto standard.
-This in turn, drove BitKeeper into obscurity (not that it was ever too
-high profile).
+BitKeeper was aimed to be used by <a
+href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
+projects, as an alternative to the limited CVS, while not being FOSS itself.
+After a series of licence changes, and adoption by the Linux kernel project and
+some other projects, its gratis version was terminated. This lead to the
+initiation of several FOSS alternatives, including Git, which established
+itself as the de-facto standard.  This in turn, drove BitKeeper into obscurity
+(not that it was ever too high profile).
 </p>
 
 <p>
-Many years after that, BitKeeper <a href="https://news.slashdot.org/story/16/05/10/1840255/11-years-after-git-bitkeeper-is-open-sourced">was made open source</a>, which may be too
-little, too late. All of this left a bad taste in the mouth that could have been
-prevented if BitKeeper had been made FOSS to start with.
+Many years after that, BitKeeper <a
+href="https://news.slashdot.org/story/16/05/10/1840255/11-years-after-git-bitkeeper-is-open-sourced">was
+made open source</a>, which may be too little, too late. All of this left a bad
+taste in the mouth that could have been prevented if BitKeeper had been made
+FOSS to start with.
 </p>
 </li>
 
