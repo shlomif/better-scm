@@ -52,3 +52,15 @@ Attribution License version 2.0</a> (or at your option - any later version).
 </latemp_after_body>
 
 #include "bk-note.wml"
+<define-tag better_scm__relevance_note>
+<div class="note">
+<h2>Note about Relevance</h2>
+<p>
+As of 2018, this site has become <a href="$(ROOT)/docs/this-site-is-irrelevant/index.html.wml">mostly irrelevant</a>.
+</p>
+</div>
+</define-tag>
+
+<when "<not "<match "$(LATEMP_FILENAME)" "docs/this-site-is-irrelevant" action=report />" />" >
+<better_scm__relevance_note />
+</when>
