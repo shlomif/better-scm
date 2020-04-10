@@ -23,4 +23,3 @@ use warnings;
 #include "local-defs.wml"
 
 #include "share-this.wml"
-#include "sponsored_ad.wml"
