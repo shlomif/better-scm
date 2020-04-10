@@ -6,4 +6,4 @@ To build see
 [its local .wml source](./src/source/index.html.wml) and
 [the travis.yml](./.travis.yml) .
 
-[![Travis-CI Build Status](https://travis-ci.org/shlomif/better-scm.svg?branch=master)](https://travis-ci.org/shlomif/better-scm)
+[![Travis-CI Build Status](https://travis-ci.org/github/shlomif/better-scm.svg?branch=master)](https://travis-ci.org/github/shlomif/better-scm)

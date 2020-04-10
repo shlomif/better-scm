@@ -78,8 +78,7 @@ Happy Hacking!
 <h2 id="ci">Continuous Integration</h2>
 
 <p>
-We have a <a href="httpss://travis-ci.org/shlomif/better-scm"><b>CI service</b></a>
-running the build and tests kindly provided by <a href="https://travis-ci.org/dashboard">Travis-CI</a>. Here is <a href="https://perlhacks.com/2012/03/you-must-hate-version-control-systems/">more information about CI</a>.
+We have a <a href="https://travis-ci.org/github/shlomif/better-scm"><b>CI service</b></a>
+running the build and tests kindly provided by <a href="https://travis-ci.org/">Travis-CI</a>. Here is some <a href="https://perlhacks.com/2012/03/you-must-hate-version-control-systems/">more information about CI</a>.
 Other services may be added in the future.
 </p>
-
