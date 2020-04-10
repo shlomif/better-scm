@@ -94,7 +94,7 @@ SASS_STYLE = compressed
 # SASS_STYLE = expanded
 SASS_CMD = sass --style $(SASS_STYLE)
 
-SCM_CSS_TARGETS = $(D)/style.css
+SCM_CSS_TARGETS = $(D)/alternate1.css $(D)/style.css
 
 $(SCM_CSS_TARGETS): $(D)/%.css: lib/sass/%.scss $(COMMON_SASS_DEPS)
 	$(SASS_CMD) $< $@
