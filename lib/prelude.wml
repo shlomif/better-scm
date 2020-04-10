@@ -17,7 +17,6 @@ use warnings;
 </define-tag>
 
 #include "utils.wml"
-#include "paypal.wml"
 
 <define-tag software_patents>1</define-tag>
 #include "latemp/latemp-prelude.wml"
