@@ -3,11 +3,9 @@ DEVEL_VER_USE_CACHE = 1
 D = dest
 TARGET = $(D)
 
-WML_FLAGS += -DLATEMP_THEME=better-scm -I $$HOME/apps/wml
-WML_FLAGS += $(COMMON_PREPROC_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
 
-DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
+DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
 
 all: dummy
 
@@ -17,13 +15,7 @@ include lib/make/rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
-WML_FLAGS += -DLATEMP_THEME=better-scm
-LATEMP_WML_FLAGS += $(COMMON_PREPROC_FLAGS) -I $$HOME/apps/wml $(SCM_WML_FLAGS)
 TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
-
-WML_RENDER = LATEMP_WML_FLAGS="$(LATEMP_WML_FLAGS)" $1 bin/render $(D)
-# needed by rules.mak / non-fastrender make test
-SCM_INCLUDE_WML_RENDER = $(WML_RENDER) $(patsubst $(SCM_SRC_DIR)/%.wml,%,$<)
 
 PROCESS_ALL_INCLUDES = ALWAYS_MIN=1 perl bin/post-incs-v2.pl --mode=minify \
                --minifier-conf=bin/html-min-cli-config-file.conf \
@@ -31,15 +23,11 @@ PROCESS_ALL_INCLUDES = ALWAYS_MIN=1 perl bin/post-incs-v2.pl --mode=minify \
                --dest-dir=$(TARGET) \
                --
 
-DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm lib/template.wml
+DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
 
 all_deps: make-dirs
 
 dummy: latemp_targets news_feeds min_svgs css_targets
-
-WML_FLAGS += --passoption=2,-X3074 --passoption=3,-I../lib/ \
-	--passoption=3,-w -I../lib/ -DROOT~. $(LATEMP_WML_FLAGS) \
-	--passoption=7,-Simgsize,summary
 
 RSS_FEED = $(D)/rss.xml
 
@@ -49,12 +37,6 @@ GEN_FEED = bin/gen-feeds.pl
 
 $(RSS_FEED): $(GEN_FEED) lib/MyManageNews.pm
 	perl -Ilib $(GEN_FEED) --rss2-out="$@"
-
-src/comparison/comparison.html.wml: src/comparison/scm-comparison.xml
-	touch $@
-
-src/comparison/index.html.wml: src/comparison/scm-comparison.xml
-	touch $@
 
 UPLOAD_BASE = hostgator:domains/better-scm/public_html
 
@@ -101,9 +83,8 @@ $(SCM_CSS_TARGETS): $(D)/%.css: lib/sass/%.scss $(COMMON_SASS_DEPS)
 
 css_targets: $(SCM_CSS_TARGETS)
 
-fastrender: $(SCM_DOCS:%=$(SCM_SRC_DIR)/%.wml) all_deps
+fastrender: all_deps
 	@echo $(MAKE) fastrender
-	@$(call WML_RENDER,) $(SCM_DOCS)
 	perl bin/tt-render.pl
 	@$(PROCESS_ALL_INCLUDES) $(SCM_DOCS) $$(cat lib/make/tt2.txt)
 
