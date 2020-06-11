@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Vesta" -%]
 
-<latemp_subject "Better SCM Initiative : Vesta" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -29,3 +30,5 @@ flavours. It remains to be seen whether it can work on Win32-based systems.
 <p>
 <b>2005-04-28</b>
 </p>
+
+[% END %]
