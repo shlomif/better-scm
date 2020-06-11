@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Common Version Control Myths" -%]
 
-<latemp_subject "Common Version Control Myths" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2 id="write-in-a-few-days">You
 can write a decent version control system in a matter of days</h2>
@@ -82,3 +83,5 @@ months. That's because the Perl people shared their efforts. Similarly,
 by having several good publicly available SCMs, we can eventually fill
 the needs of every version control user out there.
 </p>
+
+[% END %]

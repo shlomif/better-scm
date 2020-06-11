@@ -1,14 +1,13 @@
-#include "template.wml"
+[%- SET title = "Site Source Code" -%]
 
-<latemp_subject "Site Source Code" />
 
-<define-tag repos_url whitespace="delete">
-https://github.com/shlomif/better-scm
-</define-tag>
+[%- WRAPPER wrap_html -%]
+
+[% SET repos_url="https://github.com/shlomif/better-scm" %]
 
 <p>
 The site source code is present in a
-<a href="<repos_url />/">Git
+<a href="[% repos_url %]/">Git
 repository</a> kindly hosted by
 <a href="https://github.com/">GitHub</a>.
 </p>
@@ -20,15 +19,8 @@ system and issue the command:
 </p>
 
 <pre>
-git clone <repos_url />
+git clone [% repos_url %]
 </pre>
-
-<define-tag cpan_link>
-<preserve dist />
-<set-var %attributes />
-<a href="https://metacpan.org/release/<get-var dist />"><get-var dist /></a>
-<restore dist />
-</define-tag>
 
 <p>
 To build the site you'll need the following extra software packages:
@@ -48,8 +40,7 @@ To build the site you'll need the following extra software packages:
 <a href="https://www.gnu.org/software/make/">GNU Make</a>.
 </li>
 <li>
-The <a href="https://www.cpan.org/">CPAN</a> modules listed in <cpan_link
-dist="Task-Sites-BetterScm" />. They can be installed using a CPAN.pm,
+The <a href="https://www.cpan.org/">CPAN</a> modules listed in [% cpan.self_dist( d="Task-Sites-BetterScm" )%]. They can be installed using a CPAN.pm,
 CPANPLUS.pm, or a <a href="https://metacpan.org/pod/App::cpanminus">cpanminus</a>
 command, e.g: <code>cpanm Task::Sites::BetterScm</code>.
 </li>
@@ -82,3 +73,5 @@ We have a <a href="https://travis-ci.org/github/shlomif/better-scm"><b>CI servic
 running the build and tests kindly provided by <a href="https://travis-ci.org/">Travis-CI</a>. Here is some <a href="https://perlhacks.com/2012/03/you-must-hate-version-control-systems/">more information about CI</a>.
 Other services may be added in the future.
 </p>
+
+[% END %]

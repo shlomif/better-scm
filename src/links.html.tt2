@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Links" -%]
 
-<latemp_subject "Links" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Articles</h2>
 
@@ -8,3 +9,5 @@
 <a href="http://aegis.sourceforge.net/auug96.pdf">Using Revision Control for
 other things beside software</a> - an article by Peter Miller.
 </p>
+
+[% END %]

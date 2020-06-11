@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Version Control Humour" -%]
+[%- SET more_keywords = ", humour, humor" -%]
 
-<latemp_subject "Version Control Humour" />
-<latemp_more_keywords "humour, humor" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2 id="intro">Introduction</h2>
 
@@ -105,3 +106,5 @@ commit. And then he waits for the commit to finish.
 <p>
 -- <a href="http://mail.perl.org.il/pipermail/perl/2010-April/010928.html">Context</a>
 </p>
+
+[% END %]

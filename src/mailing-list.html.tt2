@@ -1,0 +1,31 @@
+[%- SET title = "Mailing List" -%]
+
+
+[%- WRAPPER wrap_html -%]
+
+[% SET mailing_list_url="https://lists.berlios.de/mailman/listinfo/better-scm-discuss/" %]
+
+[% BLOCK link_to %]
+<a href="[% mailing_list_url %]">[% content %]</a>
+[% END %]
+
+<p>
+The "Better SCM" project has
+[% WRAPPER link_to %]a
+mailing list[% END %] hosted at <a href="http://lists.berlios.de/">the BerliOS
+mailing lists server</a>.
+</p>
+
+<h2>Subscribing</h2>
+
+<p>
+Go to [% WRAPPER link_to %]the mailing list subscription page[% END %] and fill and submit the subscription form.
+</p>
+
+<h2><a href="https://lists.berlios.de/pipermail/better-scm-discuss/">Archive</a></h2>
+
+<p>
+This is an archive of past discussions.
+</p>
+
+[% END %]
