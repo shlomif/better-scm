@@ -96,6 +96,30 @@ qq#\\tan{\\left[\\arcsin{\\left(\\frac{1}{2 \\sin{36°}}\\right)}\\right]}#,
             retrieved_slurp => \&retrieved_slurp,
             path_slurp      => \&path_slurp,
             shlomif_include_colorized_file => \&_shlomif_include_colorized_file,
+            gen_vcs_comparison_systems_list => sub {
+                require XML::CompareML::HTML;
+                my $buf = '';
+                open my $fh, '>', \$buf;
+                my $converter = XML::CompareML::HTML->new(
+                    'input_filename' => "./src/comparison/scm-comparison.xml",
+                    'output_handle'  => $fh,
+                );
+
+                $converter->gen_systems_list( output_handle => $fh );
+                close $fh;
+                return $buf;
+            },
+            my_compare_gen => sub {
+                require MyCompareGen;
+                return decode_utf8( ${ MyCompareGen->run() } );
+            },
+            latemp_news_get_news_page_entries => sub {
+                require MyManageNews;
+
+                my $news_manager = MyManageNews::get_news_manager();
+
+                return $news_manager->get_news_page_entries();
+            },
         };
     }
 );
@@ -114,16 +138,7 @@ my $template = Template->new(
     }
 );
 
-my @DEST       = ( '.', "dest", );
-my $INC_PREF   = qq#\n(((((include "cache/combined/$LATEMP_SERVER#;
-my $INC_SUFFIX = qq#")))))\n#;
-
-sub _inc
-{
-    my ( $input_tt2_page_path, $id ) = @_;
-    return sprintf( "%s/%s/%s%s",
-        $INC_PREF, $input_tt2_page_path, $id, $INC_SUFFIX );
-}
+my @DEST = ( '.', "dest", );
 
 sub _render_leading_path_component
 {
@@ -154,11 +169,6 @@ sub proc
     $vars->{fn_path}   = $input_tt2_page_path;
     $vars->{raw_fn_path} =
         $input_tt2_page_path =~ s#(?:\A|/)\Kindex\.x?html\z##r;
-    my $set = sub {
-        my ( $name, $inc ) = @_;
-        $vars->{$name} = _inc( $input_tt2_page_path, $inc );
-        return;
-    };
     my $nav_bar = HTML::Widgets::NavMenu->new(
         'path_info'    => ( join( '/', @fn_nav ) || '/' ),
         'current_host' => $LATEMP_SERVER,
@@ -210,50 +220,15 @@ LINKS:
         $get_nav_links->('');
     $vars->{leading_path_string} = $leading_path_string;
     $vars->{nav_bar}             = $nav_bar;
-    $set->( 'html_head_nav_links',           "html_head_nav_links" );
-    $set->( 'shlomif_main_expanded_nav_bar', "shlomif_main_expanded_nav_bar" );
-    $set->(
-        'nav_links_without_accesskey',
-        "shlomif_nav_links_renderer-with_accesskey=0"
-    );
-    $set->(
-        'nav_links_with_accesskey',
-        "shlomif_nav_links_renderer-with_accesskey=1"
-    );
-    $vars->{nav_links} = $nav_links_html;
+    $vars->{nav_links}           = $nav_links_html;
     my $nav_html = $rendered_results->{html};
     $vars->{nav_menu_html} = join( '', @$nav_html );
-    $set->( 'sect_nav_menu_html', "sect-navmenu" );
-    $vars->{share_link} = escape_html(
+    $vars->{share_link}    = escape_html(
         uri_escape(
             MyNavData::get_hosts()->{ $nav_bar->current_host() }->{'base_url'}
                 . $nav_bar->path_info()
         )
     );
-    $vars->{gen_vcs_comparison_systems_list} = sub {
-        require XML::CompareML::HTML;
-        my $buf = '';
-        open my $fh, '>', \$buf;
-        my $converter = XML::CompareML::HTML->new(
-            'input_filename' => "./src/comparison/scm-comparison.xml",
-            'output_handle'  => $fh,
-        );
-
-        $converter->gen_systems_list( output_handle => $fh );
-        close $fh;
-        return $buf;
-    };
-    $vars->{my_compare_gen} = sub {
-        require MyCompareGen;
-        return decode_utf8( ${ MyCompareGen->run() } );
-    };
-    $vars->{latemp_news_get_news_page_entries} = sub {
-        require MyManageNews;
-
-        my $news_manager = MyManageNews::get_news_manager();
-
-        return $news_manager->get_news_page_entries();
-    };
     my $html = '';
     $template->process( "src/$input_tt2_page_path.tt2",
         $vars, \$html, binmode => ':utf8', )
