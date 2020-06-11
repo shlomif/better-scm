@@ -1,9 +1,0 @@
-#include "template.wml"
-
-<latemp_subject "Better SCM Initiative : Comparison" />
-<latemp_more_keywords "comparison" />
-
-<:{
-use MyCompareGen;
-MyCompareGen->run();
-}:>

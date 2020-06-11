@@ -7,7 +7,7 @@ package MyCompareGen;
 use strict;
 use warnings;
 
-use XML::CompareML::HTML;
+use XML::CompareML::HTML ();
 
 sub run
 {
@@ -16,7 +16,7 @@ sub run
     binmode $out, ":encoding(UTF-8)";
 
     my $converter = XML::CompareML::HTML->new(
-        'input_filename' => "./comparison/scm-comparison.xml",
+        'input_filename' => "./src/comparison/scm-comparison.xml",
         'output_handle'  => $out,
     );
 
@@ -27,9 +27,7 @@ sub run
     $comparison =~ s{\A.*?<body>}{}s;
     $comparison =~ s{</body>.*}{}s;
 
-    print qq{<div class="comparison">\n$comparison\n</div>\n};
-
-    return;
+    return \qq{<div class="comparison">\n$comparison\n</div>\n};
 }
 
 1;

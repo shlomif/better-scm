@@ -1,0 +1,9 @@
+[%- SET title = "Better SCM Initiative : Comparison" -%]
+[%- SET more_keywords = ", comparison" -%]
+
+
+[%- WRAPPER wrap_html -%]
+
+[% my_compare_gen() %]
+
+[% END %]

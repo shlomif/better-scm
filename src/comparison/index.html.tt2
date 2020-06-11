@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Comparison" -%]
+[%- SET more_keywords = ", comparison" -%]
 
-<latemp_subject "Better SCM Initiative : Comparison" />
-<latemp_more_keywords "comparison" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
 
@@ -14,7 +15,7 @@ sent as an attachment.
 <p>
 If there's something you feel should be added, or wish to correct the
 information of a version control system or add information about a
-new one, <a href="$(PATH_TO_ROOT)contribute">see the "How to Contribute"
+new one, <a href="[% base_path %]contribute">see the "How to Contribute"
 page</a>.
 </p>
 
@@ -23,17 +24,7 @@ page</a>.
 <h2>Covered Systems</h2>
 
 <ul>
-<:{
-use XML::CompareML::HTML;
-
-my $converter =
-    XML::CompareML::HTML->new(
-        'input_filename' => "./comparison/scm-comparison.xml",
-        'output_handle' => \*STDOUT,
-    );
-
-$converter->gen_systems_list(output_handle => \*STDOUT);
-}:>
+[% gen_vcs_comparison_systems_list() %]
 </ul>
 
 <h2>Sources of the Comparison</h2>
@@ -86,3 +77,5 @@ Systems</a> - by David A. Wheeler.
 Wikipedia Comparison of Version Control Software</a>
 </li>
 </ul>
+
+[% END %]

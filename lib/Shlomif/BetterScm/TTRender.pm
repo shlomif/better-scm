@@ -230,6 +230,23 @@ LINKS:
                 . $nav_bar->path_info()
         )
     );
+    $vars->{gen_vcs_comparison_systems_list} = sub {
+        require XML::CompareML::HTML;
+        my $buf = '';
+        open my $fh, '>', \$buf;
+        my $converter = XML::CompareML::HTML->new(
+            'input_filename' => "./src/comparison/scm-comparison.xml",
+            'output_handle'  => $fh,
+        );
+
+        $converter->gen_systems_list( output_handle => $fh );
+        close $fh;
+        return $buf;
+    };
+    $vars->{my_compare_gen} = sub {
+        require MyCompareGen;
+        return decode_utf8( ${ MyCompareGen->run() } );
+    };
     $vars->{latemp_news_get_news_page_entries} = sub {
         require MyManageNews;
 

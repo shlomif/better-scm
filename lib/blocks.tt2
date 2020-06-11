@@ -250,6 +250,7 @@ class="bless" alt="Share/Bookmark" /></a></p>
 <div id="footer" class="footer">
 <hr />
 <div class="righty">
+[% IF raw_fn_path != "comparison/comparison.html" %]
 <p><!-- Creative Commons License --> <a rel="license" href=
 "http://creativecommons.org/licenses/by/2.0/"><img alt=
 "Creative Commons License" src=
@@ -258,6 +259,7 @@ This work is licensed under the <a rel="license" href=
 "http://creativecommons.org/licenses/by/2.0/">Creative Commons
 Attribution License version 2.0</a> (or at your option - any later
 version).<!-- /Creative Commons License --></p>
+[% END %]
 </div>
 <div class="foot_left">
 <p class="webmaster">Webmaster: <a href=
