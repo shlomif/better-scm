@@ -67,4 +67,16 @@ s#^(\$\(SCM_DOCS_DEST\)[^\n]+\n\t)[^\n]+#${1}\$(call SCM_INCLUDE_WML_RENDER)#ms
 
 $r_fh->spew_utf8($text);
 
+my $iter = path("./src")->iterator( { recurse => 1, } );
+my @tt;
+while ( my $next = $iter->() )
+{
+    my $s = "$next";
+    if ( ( not -d $next ) and $s =~ s#\.tt2\z## )
+    {
+        push @tt, ( $s =~ s#\A(\./)?src/##r );
+    }
+}
+
+path("$DIR/tt2.txt")->spew_raw( join "\n", ( sort @tt ), "" );
 _exec( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );

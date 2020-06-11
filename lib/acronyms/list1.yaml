@@ -1,0 +1,28 @@
+API:
+    abbr: API
+    title: Application programming interface
+    url: https://en.wikipedia.org/wiki/Application_programming_interface
+CGI:
+    abbr: CGI
+    title: Common Gateway Interface
+    url: https://en.wikipedia.org/wiki/Common_Gateway_Interface
+IANAL:
+    abbr: IANAL
+    title: I am not a lawyer
+    url: https://en.wikipedia.org/wiki/IANAL
+IRC:
+    abbr: IRC
+    title: Internet Relay Chat
+    url: https://en.wikipedia.org/wiki/Internet_Relay_Chat
+NSFW:
+    abbr: NSFW
+    title: Not safe for work
+    url: https://en.wiktionary.org/wiki/NSFW
+SQL:
+    abbr: SQL
+    title: Structured Query Language
+    url: https://en.wikipedia.org/wiki/SQL
+SVG:
+    abbr: SVG
+    title: Scalable Vector Graphics
+    url: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
