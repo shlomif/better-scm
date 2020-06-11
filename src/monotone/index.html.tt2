@@ -1,6 +1,6 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Monotone" -%]
 
-<latemp_subject "Better SCM Initiative : Monotone" />
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -31,3 +31,5 @@ The Monotone architecture makes implementation of many features easier. It
 is not without it flaws, however. For example, Monotone is slow, and doesn't
 scale well to large codebases and histories.
 </p>
+
+[% END %]

@@ -67,6 +67,18 @@ s#^(\$\(SCM_DOCS_DEST\)[^\n]+\n\t)[^\n]+#${1}\$(call SCM_INCLUDE_WML_RENDER)#ms
 
 $r_fh->spew_utf8($text);
 
+sub _remtt2
+{
+    my $s = shift;
+    $s =~ s% *\S+\.tt2(\s)%$1%gms or die;
+    return $s;
+}
+path("$DIR/include.mak")->edit_raw(
+    sub {
+        s#^SCM_IMAGES :=\K([^\n]+\n)#_remtt2($1)
+        #ems or die;
+    }
+);
 my $iter = path("./src")->iterator( { recurse => 1, } );
 my @tt;
 while ( my $next = $iter->() )

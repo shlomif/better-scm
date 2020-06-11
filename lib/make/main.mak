@@ -104,7 +104,8 @@ css_targets: $(SCM_CSS_TARGETS)
 fastrender: $(SCM_DOCS:%=$(SCM_SRC_DIR)/%.wml) all_deps
 	@echo $(MAKE) fastrender
 	@$(call WML_RENDER,) $(SCM_DOCS)
-	@$(PROCESS_ALL_INCLUDES) $(SCM_DOCS)
+	perl bin/tt-render.pl
+	@$(PROCESS_ALL_INCLUDES) $(SCM_DOCS) $$(cat lib/make/tt2.txt)
 
 SUBDIRS = $(addprefix $(D)/,$(COMMON_DIRS) $(SCM_DIRS))
 

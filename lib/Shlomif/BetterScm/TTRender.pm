@@ -7,18 +7,21 @@ use utf8;
 use Encode qw/ decode_utf8 /;
 use Moo;
 use Path::Tiny qw/ path /;
-use YAML::XS ();
+use YAML::XS               ();
+use HTML::Widgets::NavMenu ();
+use HTML::Widgets::NavMenu::EscapeHtml qw( escape_html );
 
 use Shlomif::Homepage::TocDiv     ();
 use Shlomif::Homepage::CPAN_Links ();
 use HTML::Acronyms                ();
 use HTML::Latemp::AddToc          ();
 use Template                      ();
+use MyNavData                     ();
 
 has printable => ( is => 'ro', required => 1 );
 has stdout    => ( is => 'ro', required => 1 );
 
-my $LATEMP_SERVER = "t2";
+my $LATEMP_SERVER = "scm";
 my $toc           = HTML::Latemp::AddToc->new;
 
 my $DEFAULT_TOC_DIV = Shlomif::Homepage::TocDiv::toc_div();
@@ -109,7 +112,7 @@ my $template = Template->new(
     }
 );
 
-my @DEST       = ( '.', "dest", "pre-incs", $LATEMP_SERVER, );
+my @DEST       = ( '.', "dest", );
 my $INC_PREF   = qq#\n(((((include "cache/combined/$LATEMP_SERVER#;
 my $INC_SUFFIX = qq#")))))\n#;
 
@@ -118,6 +121,18 @@ sub _inc
     my ( $input_tt2_page_path, $id ) = @_;
     return sprintf( "%s/%s/%s%s",
         $INC_PREF, $input_tt2_page_path, $id, $INC_SUFFIX );
+}
+
+sub _render_leading_path_component
+{
+    my $component  = shift;
+    my $title      = $component->title;
+    my $title_attr = defined($title) ? qq# title="$title"# : "";
+    return
+          "<a href=\""
+        . escape_html( $component->direct_url )
+        . "\"$title_attr>"
+        . $component->label() . "</a>";
 }
 
 sub proc
@@ -142,7 +157,19 @@ sub proc
         $vars->{$name} = _inc( $input_tt2_page_path, $inc );
         return;
     };
-    $set->( 'leading_path_string',           "breadcrumbs-trail" );
+    my $nav_bar = HTML::Widgets::NavMenu->new(
+        'path_info'    => ( join( '/', @fn_nav ) || '/' ),
+        'current_host' => $LATEMP_SERVER,
+        MyNavData::get_params(),
+        'ul_classes'     => [],
+        'no_leading_dot' => 1,
+    );
+    my $rendered_results = $nav_bar->render();
+    my $leading_path     = $rendered_results->{leading_path};
+
+    my $leading_path_string = join( " → ",
+        ( map { _render_leading_path_component($_) } @$leading_path ) );
+    $vars->{leading_path_string} = $leading_path_string;
     $set->( 'html_head_nav_links',           "html_head_nav_links" );
     $set->( 'shlomif_main_expanded_nav_bar', "shlomif_main_expanded_nav_bar" );
     $set->(
@@ -153,7 +180,8 @@ sub proc
         'nav_links_with_accesskey',
         "shlomif_nav_links_renderer-with_accesskey=1"
     );
-    $set->( 'nav_menu_html',      "main_nav_menu_html" );
+    my $nav_html = $rendered_results->{html};
+    $vars->{nav_menu_html} = join( '', @$nav_html );
     $set->( 'sect_nav_menu_html', "sect-navmenu" );
     my $html = '';
     $template->process( "src/$input_tt2_page_path.tt2",
