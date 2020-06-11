@@ -209,6 +209,7 @@ LINKS:
     $vars->{latemp_get_html_body_nav_links__no_accesskey} =
         $get_nav_links->('');
     $vars->{leading_path_string} = $leading_path_string;
+    $vars->{nav_bar}             = $nav_bar;
     $set->( 'html_head_nav_links',           "html_head_nav_links" );
     $set->( 'shlomif_main_expanded_nav_bar', "shlomif_main_expanded_nav_bar" );
     $set->(

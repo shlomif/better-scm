@@ -1,11 +1,11 @@
-#include "template.wml"
-#include "xhtml/1.x/std/toc.wml"
+[%- SET title = "F.A.Q. (Frequently Asked Questions) for the Better-SCM Site" -%]
+[%- SET more_keywords = ", git" -%]
 
-<latemp_subject "F.A.Q. (Frequently Asked Questions) for the Better-SCM Site" />
-<latemp_more_keywords "git" />
+
+[%- WRAPPER wrap_html -%]
 
 <div class="toc">
-<toc />
+[% toc_div() %]
 </div>
 
 <p>
@@ -44,7 +44,7 @@ Be able to answer questions and comments from people who enquire about it.
 
 <p>
 If you feel you are familiar with a given system enough, then you can
-<a href="$(PATH_TO_ROOT)contribute/#comparison_new_system">follow
+<a href="[% base_path %]contribute/#comparison_new_system">follow
 the instructions to become a champion</a>. If not, you'll have to find someone
 who is. You don't have to be a vendor or a developer of this system to
 fill in the details, but if you are, then it wouldn't hurt.
@@ -123,3 +123,5 @@ Please find a list of several factual problems in the site
 <a href="http://en.wikipedia.org/wiki/Burden_of_proof_(logical_fallacy)">burden
 of proof</a> in that case is on you.
 </p>
+
+[% END %]

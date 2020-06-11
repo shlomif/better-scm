@@ -1,13 +1,14 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative" -%]
 
-<latemp_subject "Better SCM Initiative" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
 
 <div class="news">
 <h3>News</h3>
 <ul>
-<latemp_news_get_news_box_contents />
+[% latemp_news_get_news_box_contents() %]
 <li><a href="./news/">More…</a></li></ul>
 </div>
 
@@ -41,12 +42,12 @@ numerous alternatives have matured. So Better SCM continues with its mission
 to improve the current state of the art of version control systems.
 </p>
 
-<h2 class="link"><a href="$(PATH_TO_ROOT)alternatives/">Available
+<h2 class="link"><a href="[% base_path %]alternatives/">Available
 CVS Alternatives</a></h2>
 
 <h2 class="link"><a href="docs/">General Documents</a></h2>
 
-<define-tag OLD_sponsorship__REMOVED>
+[% IF 0 %]
 
 <h2 id="notice_whs">Notice</h2>
 
@@ -59,8 +60,7 @@ source LAMP platform (e.g. like
 hosting</a>) might also find it useful to read and evaluate their reviews.
 </p>
 
-</define-tag>
-
+[% END %]
 <h2>General Links</h2>
 
 <ul class="links">
@@ -87,3 +87,5 @@ of implementations.
 </li>
 
 </ul>
+
+[% END %]

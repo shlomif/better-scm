@@ -1,9 +1,0 @@
-#include "template.wml"
-
-<latemp_subject "Site Map" />
-
-<div class="sitemap">
-<:{
-print (map { "$_\n" } @{$nav_bar->gen_site_map()});
-}:>
-</div>

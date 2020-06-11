@@ -1,0 +1,10 @@
+[%- SET title = "Site Map" -%]
+
+
+[%- WRAPPER wrap_html -%]
+
+<div class="sitemap">
+[% nav_bar.gen_site_map().join("") %]
+</div>
+
+[% END %]
