@@ -192,6 +192,10 @@ title="Study group for Perl Beginners: ask questions, get answers and share stud
 <div id="container-all">
 <p class="invisible"><a href="#main">Go to main content</a></p>
 <div class="navbar" id="navbar">
+<p class="invisible"><a href="#nav_menu">Go to the navigation menu</a></p>
+<div class="logo"><a href="[% base_path %]" title="Home"><img src=
+"[% base_path %]images/better-scm.min.svg" alt="Better SCM" /></a></div>
+[% latemp_get_html_body_nav_links %]
 [% nav_menu_html %]
 <object data=
 "https://duckduckgo.com/search.html?width=100&amp;site=perl-begin.org&amp;prefill=Search%20DuckDuckGo"

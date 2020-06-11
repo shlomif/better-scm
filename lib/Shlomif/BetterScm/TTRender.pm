@@ -18,6 +18,7 @@ use HTML::Acronyms                ();
 use HTML::Latemp::AddToc          ();
 use Template                      ();
 use MyNavData                     ();
+use MyNavLinks                    ();
 
 has printable => ( is => 'ro', required => 1 );
 has stdout    => ( is => 'ro', required => 1 );
@@ -165,9 +166,15 @@ sub proc
         'ul_classes'     => [],
         'no_leading_dot' => 1,
     );
-    my $rendered_results = $nav_bar->render();
-    my $nav_links_obj    = $rendered_results->{nav_links_obj};
-    my $leading_path     = $rendered_results->{leading_path};
+    my $rendered_results   = $nav_bar->render();
+    my $nav_links_obj      = $rendered_results->{nav_links_obj};
+    my $nav_links          = $rendered_results->{nav_links};
+    my $leading_path       = $rendered_results->{leading_path};
+    my $nav_links_renderer = MyNavLinks->new(
+        'nav_links'     => $nav_links,
+        'nav_links_obj' => $nav_links_obj,
+        'root'          => $base_path,
+    );
 
     my $nav_links_html = '';
 
@@ -186,7 +193,19 @@ LINKS:
     }
     my $leading_path_string = join( " → ",
         ( map { _render_leading_path_component($_) } @$leading_path ) );
-    $vars->{leading_path_string} = $leading_path_string;
+    my $get_nav_links = sub {
+        my $ret            = '';
+        my $with_accesskey = 1;
+        my @params;
+        if ( $with_accesskey ne "" )
+        {
+            push @params, ( 'with_accesskey' => $with_accesskey );
+        }
+        $ret .= $nav_links_renderer->get_total_html(@params);
+        return $ret;
+    };
+    $vars->{latemp_get_html_body_nav_links} = $get_nav_links->();
+    $vars->{leading_path_string}            = $leading_path_string;
     $set->( 'html_head_nav_links',           "html_head_nav_links" );
     $set->( 'shlomif_main_expanded_nav_bar', "shlomif_main_expanded_nav_bar" );
     $set->(
