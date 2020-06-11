@@ -227,10 +227,12 @@ class="bless"><img src="[% base_path %]images/logo-wml.png" alt=
 </div>
 <div class="main" id="main">
 <h1>[% title %]</h1>
+[% IF raw_fn_path != "docs/this-site-is-irrelevant/" %]
 <div class="note">
 <h2>Note about Relevance</h2>
 <p>As of 2018, this site has become <a href="[% base_path %]docs/this-site-is-irrelevant/index.html.wml">mostly irrelevant</a>.</p>
 </div>
+[%- END -%]
 [%- END -%]
 
 [%- BLOCK end_html -%]

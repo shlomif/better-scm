@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Shlomi Fish - Evolution of a Revision Control User" -%]
 
-<latemp_subject "Shlomi Fish - Evolution of a Revision Control User" />
+
+[%- WRAPPER wrap_html -%]
 
 <h3>Last Updated: 30-April-2005</h3>
 
@@ -292,3 +293,5 @@ And even if this will not be the case, I am certain BitKeeper will not become
 the de-facto standard of the Open-Source World that CVS is today. It's like
 saying that Microsoft IIS+ASP will replace Apache and PHP or Perl soon.
 </p>
+
+[% END %]

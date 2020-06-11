@@ -1,14 +1,15 @@
-#include "template.wml"
-#include "xhtml/1.x/std/toc.wml"
+[%- SET title = "How to Contribute to this Site" -%]
 
-<latemp_subject "How to Contribute to this Site" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 There are several ways in which you can contribute to this site:
 </p>
 
-<h2*>Table of Contents</h2*>
-<toc />
+<h2>Table of Contents</h2>
+
+[% toc_div() %]
 
 <h2 id="comparison_new_system">Add a New System to the Comparison</h2>
 
@@ -29,7 +30,7 @@ a substantial amount.
 
 <li>
 <p>
-Checkout the <a href="$(PATH_TO_ROOT)source/">sources for the
+Checkout the <a href="[% base_path %]source/">sources for the
 site</a> using Subversion.
 </p>
 </li>
@@ -71,3 +72,5 @@ Thanks for taking the time for contributing!
 </li>
 
 </ol>
+
+[% END %]

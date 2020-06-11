@@ -4,7 +4,7 @@ mkdir -p "$dir"
 adest="$dir/have.xhtml"
 bdest="$dir/want.xhtml"
 rm -f "$adest" "$bdest"
-for a in "dest/alternatives/darcs/index.html"
+for a in "dest/contribute/index.html"
 do
 b=/home/shlomif/Backup/Arcs/better-scm-post-dest/post-incs/"${a##dest/}"
 f()

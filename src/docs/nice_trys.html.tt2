@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM : Nice tries but" -%]
 
-<latemp_subject "Better SCM : Nice tries but" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 There are some attempts at creating better version control systems that I
@@ -62,3 +63,5 @@ to take a look at Subversion which aims to provide all of CVS' features and
 then some, and even eventually acquire the features present in BitKeeper. But
 it should know how to do everything CVS does.
 </p>
+
+[% END %]

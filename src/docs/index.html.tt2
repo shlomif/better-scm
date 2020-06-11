@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "General Documents" -%]
 
-<latemp_subject "General Documents" />
+
+[%- WRAPPER wrap_html -%]
 
 <ul class="links">
 
@@ -26,7 +27,9 @@ solution.
 </li>
 
 <li>
-<a href="$(PATH_TO_ROOT)myths.html">Myths about Version Control</a>
+<a href="[% base_path %]myths.html">Myths about Version Control</a>
 </li>
 
 </ul>
+
+[% END %]

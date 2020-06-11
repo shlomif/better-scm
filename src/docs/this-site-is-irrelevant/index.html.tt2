@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "As of 2018, this site is mostly irrelevant" -%]
 
-<latemp_subject "As of 2018, this site is mostly irrelevant" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 <b>Written at:</b> 31-December-2017<br />
@@ -22,8 +23,8 @@ system. Git is pretty good, and established itself as the de-facto standard.
 <li>
 <p>
 If your requirements are particularly heavy, then you may wish to look at
-<a href="$(PATH_TO_ROOT)subversion/">Subversion</a> or
-<a href="$(PATH_TO_ROOT)alternatives/perforce/">Perforce</a>. This is because keeping
+<a href="[% base_path %]subversion/">Subversion</a> or
+<a href="[% base_path %]alternatives/perforce/">Perforce</a>. This is because keeping
 the size of the history on every working copy may be prohibitive, and because
 git, while having shallow clones, does not have a resumable "git clone"
 operation. One can
@@ -56,7 +57,7 @@ mostly historical relevance and a limited one at that.
 <li>
 <p>
 I might as well admit by now that the main motivation for setting up this
-site was my unhappiness from one of <a href="$(PATH_TO_ROOT)bk/">BitKeeper</a>’s
+site was my unhappiness from one of <a href="[% base_path %]bk/">BitKeeper</a>’s
 licence changes, which made it unavailable to me.
 </p>
 </li>
@@ -85,7 +86,7 @@ FOSS to start with.
 <li>
 <p>
 While I have adopted git and formerly
-<a href="$(PATH_TO_ROOT)alternatives/mercurial/">mercurial</a> as part of my
+<a href="[% base_path %]alternatives/mercurial/">mercurial</a> as part of my
 work-flow and am happy using distributed VCSes, I still miss the simplicity
 and transparency of the client/server model of Subversion. Distributed VCSes,
 while in general an improvement, often throw me off leaving me to need to
@@ -145,3 +146,5 @@ goes: <q>May all your wishes be granted</q>. Something is still bothering me.
 </li>
 
 </ol>
+
+[% END %]
