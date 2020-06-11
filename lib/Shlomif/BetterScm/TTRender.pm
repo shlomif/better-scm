@@ -194,8 +194,8 @@ LINKS:
     my $leading_path_string = join( " → ",
         ( map { _render_leading_path_component($_) } @$leading_path ) );
     my $get_nav_links = sub {
+        my $with_accesskey = shift;
         my $ret            = '';
-        my $with_accesskey = 1;
         my @params;
         if ( $with_accesskey ne "" )
         {
@@ -205,8 +205,10 @@ LINKS:
         $ret =~ s#"(\.\./)+/#"$1#g;
         return $ret;
     };
-    $vars->{latemp_get_html_body_nav_links} = $get_nav_links->();
-    $vars->{leading_path_string}            = $leading_path_string;
+    $vars->{latemp_get_html_body_nav_links} = $get_nav_links->(1);
+    $vars->{latemp_get_html_body_nav_links__no_accesskey} =
+        $get_nav_links->('');
+    $vars->{leading_path_string} = $leading_path_string;
     $set->( 'html_head_nav_links',           "html_head_nav_links" );
     $set->( 'shlomif_main_expanded_nav_bar', "shlomif_main_expanded_nav_bar" );
     $set->(

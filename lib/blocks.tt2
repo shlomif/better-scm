@@ -223,17 +223,7 @@ class="bless"><img src="../images/logo-wml.png" alt=
 "Made with Latemp" class="bless"><img src=
 "../images/latemp-button-rounded.png" alt="Made with Latemp" class=
 "bless" /></a></p>
-<ul class="nav_links">
-<li><a href="../alternatives/mercurial/" title=
-"Previous Page (Alt+P)"><img src="../images/arrow-left.png" alt=
-"Previous Page" class="bless" /></a></li>
-<li><a href="../alternatives/" title=
-"Up in the Site (Alt+U)"><img src="../images/arrow-up.png" alt=
-"Up in the Site" class="bless" /></a></li>
-<li><a href="../alternatives/perforce/" title=
-"Next Page (Alt+N)"><img src="../images/arrow-right.png" alt=
-"Next Page" class="bless" /></a></li>
-</ul>
+[% latemp_get_html_body_nav_links__no_accesskey %]
 </div>
 <div class="main" id="main">
 <h1>[% title %]</h1>

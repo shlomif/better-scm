@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Arch" -%]
+[%- SET more_keywords = ", Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" -%]
 
-<latemp_subject "Better SCM Initiative : Arch" />
-<latemp_more_keywords "Arch, tla, ArX, Bazaar, Bazaar-NG, distributed" />
+
+[%- WRAPPER wrap_html -%]
 
 <div class="note">
 
@@ -10,7 +11,7 @@
 <p>
 GNU Arch has been deprecated, and is no longer widely used. Most of the former
 GNU Arch users have migrated to
-<a href="$(PATH_TO_ROOT)alternatives/bazaar/">Bazaar</a> and other version control
+<a href="[% base_path %]alternatives/bazaar/">Bazaar</a> and other version control
 systems. As a result, the information on this page is no longer very relevant.
 </p>
 
@@ -42,7 +43,7 @@ to provide better Subversion compatibility, and other nice features.
 
 <p>
 <b>Note</b>: related to baz is the project
-<a href="$(PATH_TO_ROOT)alternatives/bazaar/">Bazaar</a>.  Its new program, bzr, is
+<a href="[% base_path %]alternatives/bazaar/">Bazaar</a>.  Its new program, bzr, is
 written from scratch. It aims to offer some advantages over baz, but
 is not an Arch implementation, nor is it compatible with baz.  A tool
 is available to convert baz repositories into bzr, but not the other
@@ -91,3 +92,5 @@ Category of Arch Resource</a> - contains other links.
 Arch to BitKeeper, CVS, Darcs, Monotone and Subversion.</a>.
 </p>
 -->
+
+[% END %]
