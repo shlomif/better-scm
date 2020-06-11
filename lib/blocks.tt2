@@ -175,7 +175,8 @@ title="Study group for Perl Beginners: ask questions, get answers and share stud
 <link rel="stylesheet" href="[% base_path %]print.css" media="print" />
 <link rel="shortcut icon" href="[% base_path %]favicon.ico" type="image/x-icon" />
 [%- nav_links -%]
-<script src="[% base_path %]js/jq.js"></script>
+<link rel="alternate stylesheet" type="text/css" href="[% base_path %]alternate1.css" media="screen" title="Kitchy" />
+<link rel="alternate" title="Better SCM RSS Feed" href="[% base_path %]rss.xml" type="application/rss+xml" />
 
 [% TRY %]
 [% INCLUDE page_extra_head_elements %]
@@ -185,25 +186,12 @@ title="Study group for Perl Beginners: ask questions, get answers and share stud
 </head>
 
 <body[% body_params %]>
-
-<header id="header">
-<div class="site-name" id="js-site-name">
-<h1><a href="[% base_path %]">Perl Beginners' Site</a></h1>
-</div>
-<div class="site-slogan" id="js-site-slogan">Perl - because programming should be fun.</div>
-</header>
-
-<div class="nav-main">
-<h3 class="hide">Breadcrumbs Trail</h3>
-<p class="breadcrumbs">[% leading_path_string %]</p>
-<h3 class="hide">Global Navigation</h3>
-<ul class="about-links">
-<li><a href="[% base_path %]about.html">About Us</a></li>
-<li><a href="[% base_path %]contact/">Contact</a></li>
-</ul>
-</div>
-<div id="page-container">
-<div id="nav_menu">
+<div class="header" id="header">
+<div class="leading_path">[% leading_path_string %]</div>
+<div id="faux">
+<div id="container-all">
+<p class="invisible"><a href="#main">Go to main content</a></p>
+<div class="navbar" id="navbar">
 [% nav_menu_html %]
 <object data=
 "https://duckduckgo.com/search.html?width=100&amp;site=perl-begin.org&amp;prefill=Search%20DuckDuckGo"
@@ -246,11 +234,12 @@ class="bless"><img src="../images/logo-wml.png" alt=
 </ul>
 </div>
 <h3 class="hide">Content</h3>
-<main id="content">
+<div class="main" id="main">
 <h1>[% title %]</h1>
-<div class="full_width_notice"><b><a href="[% base_path %]learn/">Learn Perl
-Now!</a></b><br />
-And <a href="[% base_path %]learn/get-a-job/">get a job</a> doing Perl.</div>
+<div class="note">
+<h2>Note about Relevance</h2>
+<p>As of 2018, this site has become <a href="[% base_path %]docs/this-site-is-irrelevant/index.html.wml">mostly irrelevant</a>.</p>
+</div>
 [%- END -%]
 
 [%- BLOCK end_html -%]
@@ -258,7 +247,10 @@ And <a href="[% base_path %]learn/get-a-job/">get a job</a> doing Perl.</div>
 "http://www.addtoany.com/share_save?linkurl=[% share_link %]&amp;linkname=">
 <img src="[% base_path %]images/share_save_171_16.png" width="171" height="16"
 class="bless" alt="Share/Bookmark" /></a></p>
-</main>
+</div>
+<div id="container-footer"></div>
+</div>
+</div>
 [% IF perl_begin_sidebar %]
 [% perl_begin_sidebar %]
 [% END %]

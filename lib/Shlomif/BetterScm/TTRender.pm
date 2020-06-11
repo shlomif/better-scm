@@ -5,6 +5,7 @@ use warnings;
 use utf8;
 
 use Encode qw/ decode_utf8 /;
+use URI::Escape qw( uri_escape );
 use Moo;
 use Path::Tiny qw/ path /;
 use YAML::XS               ();
@@ -165,8 +166,24 @@ sub proc
         'no_leading_dot' => 1,
     );
     my $rendered_results = $nav_bar->render();
+    my $nav_links_obj    = $rendered_results->{nav_links_obj};
     my $leading_path     = $rendered_results->{leading_path};
 
+    my $nav_links_html = '';
+
+LINKS:
+    foreach my $key ( sort { $a cmp $b } keys(%$nav_links_obj) )
+    {
+        if ( ( $key eq 'top' ) or ( $key eq 'up' ) )
+        {
+            next LINKS;
+        }
+        my $val        = $nav_links_obj->{$key};
+        my $url        = escape_html( $val->direct_url() );
+        my $title      = $val->title();
+        my $title_attr = defined($title) ? " title=\"$title\"" : "";
+        $nav_links_html .= "<link rel=\"$key\" href=\"$url\"$title_attr />\n";
+    }
     my $leading_path_string = join( " → ",
         ( map { _render_leading_path_component($_) } @$leading_path ) );
     $vars->{leading_path_string} = $leading_path_string;
@@ -180,9 +197,16 @@ sub proc
         'nav_links_with_accesskey',
         "shlomif_nav_links_renderer-with_accesskey=1"
     );
+    $vars->{nav_links} = $nav_links_html;
     my $nav_html = $rendered_results->{html};
     $vars->{nav_menu_html} = join( '', @$nav_html );
     $set->( 'sect_nav_menu_html', "sect-navmenu" );
+    $vars->{share_link} = escape_html(
+        uri_escape(
+            MyNavData::get_hosts()->{ $nav_bar->current_host() }->{'base_url'}
+                . $nav_bar->path_info()
+        )
+    );
     my $html = '';
     $template->process( "src/$input_tt2_page_path.tt2",
         $vars, \$html, binmode => ':utf8', )
