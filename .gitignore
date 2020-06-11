@@ -50,6 +50,7 @@
 /lib/make/include.mak
 /lib/make/rules.mak
 /lib/make/shlomif_common.mak
+/lib/make/tt2.txt
 /lib/sgml/docbook-css/docbook-css-0.4/COPYING
 /lib/sgml/docbook-css/docbook-css-0.4/CREDITS
 /lib/sgml/docbook-css/docbook-css-0.4/core.css
