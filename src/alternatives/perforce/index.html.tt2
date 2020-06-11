@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Perforce" -%]
+[%- SET more_keywords = ", Perforce, P4" -%]
 
-<latemp_subject "Better SCM Initiative : Perforce" />
-<latemp_more_keywords "Perforce, P4" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -20,5 +21,7 @@ available for interested open-source developers under a gratis license.
 
 <p>
 (If you're looking for something open-source which is more or less equivalent,
-then look at <a href="$(PATH_TO_ROOT)subversion/">Subversion</a>.)
+then look at <a href="[% base_path %]subversion/">Subversion</a>.)
 </p>
+
+[% END %]

@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Bazaar" -%]
 
-<latemp_subject "Better SCM Initiative : Bazaar" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -36,6 +37,8 @@ under active development. Bazaar has been adopted by
 <p>
 It should be noted that Bazaar (also known as “bzr” after its command line
 program) used to be called Bazaar-NG, while its predecessor "Baz" (originally
-derived from <a href="$(PATH_TO_ROOT)arch/">GNU Arch</a>) used to be called "Bazaar".
+derived from <a href="[% base_path %]arch/">GNU Arch</a>) used to be called "Bazaar".
 However, now after bzr has matured, it assumed the name "Bazaar" instead.
 </p>
+
+[% END %]
