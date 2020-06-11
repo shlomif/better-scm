@@ -9,6 +9,7 @@ required:
         HTML::Acronyms: 0
         HTML::Latemp::News: '0.2.1'
         HTML::Parser: '3.00'
+        HTML::Toc: 0
         Parallel::ForkManager::Segmented: 0
         Perl::Tidy: 0
         Template::Preprocessor::TTML: 0
