@@ -1,8 +1,9 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : BitKeeper" -%]
 
-<latemp_subject "Better SCM Initiative : BitKeeper" />
 
-<bk_note />
+[%- WRAPPER wrap_html -%]
+
+[% INCLUDE "bk_note.tt2" %]
 
 <h2>Homepage</h2>
 
@@ -76,3 +77,5 @@ Bryan O'Sullivan, and what should version control users do about it.
 eventually decided it would not be a good idea to fully open-source it, but
 the document gives some reasons that it could benefit from something similar.
 </p>
+
+[% END %]

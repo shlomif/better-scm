@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "What BitMover Got Wrong?" -%]
 
-<latemp_subject "What BitMover Got Wrong?" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 <b>Written by:</b> Shlomi Fish<br />
@@ -186,3 +187,5 @@ Today</a>
 Linmagazine</a> (in Hebrew)
 </li>
 </ul>
+
+[% END %]

@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "The BitKeeper Ghost" -%]
 
-<latemp_subject "The BitKeeper Ghost" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 <b>Written by:</b> Shlomi Fish<br />
@@ -163,3 +164,5 @@ would do just that, but it seems unlikely at this point.
 Bryan O'Sullivan's Email</a>.
 </li>
 </ul>
+
+[% END %]

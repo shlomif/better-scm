@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "The Demise of the Gratis BitKeeper Licensing" -%]
 
-<latemp_subject "The Demise of the Gratis BitKeeper Licensing" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 <b>Written at:</b> 12-April-2005<br />
@@ -143,3 +144,5 @@ discontinuation. Also see <a href="http://lwn.net/Articles/138519/">a coverage
 in LWN</a>.
 </li>
 </ul>
+
+[% END %]

@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Response to Richard Stallman's LKML Post" -%]
 
-<latemp_subject "Response to Richard Stallman's LKML Post" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 Richard Stallman has written
@@ -73,3 +74,5 @@ McVoy is being stubborn and irrational, we can at least force him to re-think
 the license (which is the only problem BitKeeper has), by offering a similar
 service.
 </p>
+
+[% END %]

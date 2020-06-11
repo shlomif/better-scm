@@ -1,8 +1,9 @@
-#include "template.wml"
+[%- SET title = "The Suitability of BitKeeper and bkbits.net for Free Software Projects" -%]
 
-<latemp_subject "The Suitability of BitKeeper and bkbits.net for Free Software Projects" />
 
-<bk_note />
+[%- WRAPPER wrap_html -%]
+
+[% INCLUDE "bk_note.tt2" %]
 
 <p style="text-align : right">
 <b>Last Updated:</b> 3-January-2003
@@ -235,3 +236,5 @@ free will. Other than that, it is obvious that the limitations of CVS
 and the alternatives to it are the talk of the day in several online
 forums I frequently visit.
 </p>
+
+[% END %]

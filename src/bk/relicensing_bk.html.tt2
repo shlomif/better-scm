@@ -1,8 +1,9 @@
-#include "template.wml"
+[%- SET title = "Changing the BitKeeper License and Why it is Needed" -%]
 
-<latemp_subject "Changing the BitKeeper License and Why it is Needed" />
 
-<bk_note />
+[%- WRAPPER wrap_html -%]
+
+[% INCLUDE "bk_note.tt2" %]
 
 <h2>Introduction</h2>
 
@@ -287,5 +288,7 @@ ship his platform.
 </p>
 
 <p>
-<a href="$(PATH_TO_ROOT)bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
+<a href="[% base_path %]bk/bk_suitability.html">The Suitability of BitKeeper for Free Software Developers</a>
 </p>
+
+[% END %]
