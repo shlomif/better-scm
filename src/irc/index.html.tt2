@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Discuss on IRC" -%]
+[%- SET more_keywords = ", IRC, Internet Relay Chat, Freenode" -%]
 
-<latemp_subject "Better SCM Initiative : Discuss on IRC" />
-<latemp_more_keywords "IRC, Internet Relay Chat, Freenode" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 The IRC (Internet Relay Chat) is a mechanism to have textual conversations
@@ -39,3 +40,5 @@ UNIX  systems including Linux and Mac OS X, and with a
 <a href="http://www.silverex.org/news/">port for Windows</a>. By
 downloading one, you can log in to an IRC network and start chatting.
 </p>
+
+[% END %]
