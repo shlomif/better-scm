@@ -163,7 +163,7 @@ sub proc
         'path_info'    => ( join( '/', @fn_nav ) || '/' ),
         'current_host' => $LATEMP_SERVER,
         MyNavData::get_params(),
-        'ul_classes'     => [],
+        'ul_classes'     => [ "navbarmain", ("navbarnested") x 10 ],
         'no_leading_dot' => 1,
     );
     my $rendered_results   = $nav_bar->render();
@@ -202,6 +202,7 @@ LINKS:
             push @params, ( 'with_accesskey' => $with_accesskey );
         }
         $ret .= $nav_links_renderer->get_total_html(@params);
+        $ret =~ s#"(\.\./)+/#"$1#g;
         return $ret;
     };
     $vars->{latemp_get_html_body_nav_links} = $get_nav_links->();
