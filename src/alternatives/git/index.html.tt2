@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Git" -%]
 
-<latemp_subject "Better SCM Initiative : Git" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -32,18 +33,19 @@ the go-to solution for most new projects.
 
 
 
-<when>
+[% IF 0 %]
+
 <h2 id="note">Note!!! This page is empty due to lack of contribution</h2>
 
 <p>
 We would love to feature the git version control system here, but
-so far <a href="$(PATH_TO_ROOT)faq/#git-missing"><b>no one
+so far <a href="[% base_path %]faq/#git-missing"><b>no one
 volunteered to add it</b> and maintain the information about it
 into the future.</a>
 </p>
 
 <p>
-Read the link and <a href="$(PATH_TO_ROOT)faq/#system-missing-from-comparison">this
+Read the link and <a href="[% base_path %]faq/#system-missing-from-comparison">this
 one</a> for more information.
 </p>
 
@@ -51,6 +53,9 @@ one</a> for more information.
 (The reason this page was added is because users of software or web-sites
 <a href="http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html">have
 very selective reading</a>, and wouldn't normally read the
-<a href="$(PATH_TO_ROOT)faq/">Frequently Asked Questions List</a>.)
+<a href="[% base_path %]faq/">Frequently Asked Questions List</a>.)
 </p>
-</when>
+
+[% END %]
+
+[% END %]

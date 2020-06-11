@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Mercurial" -%]
 
-<latemp_subject "Better SCM Initiative : Mercurial" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -52,3 +53,5 @@ Spolsky.
 </li>
 
 </ul>
+
+[% END %]

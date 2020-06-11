@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Darcs" -%]
 
-<latemp_subject "Better SCM Initiative : Darcs" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -29,3 +30,5 @@ as executable.
 <p>
 Nevertheless Darcs is worth looking at.
 </p>
+
+[% END %]

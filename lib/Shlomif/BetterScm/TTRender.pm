@@ -202,7 +202,7 @@ LINKS:
             push @params, ( 'with_accesskey' => $with_accesskey );
         }
         $ret .= $nav_links_renderer->get_total_html(@params);
-        $ret =~ s#"(\.\./)+/#"$1#g;
+        $ret =~ s#"((?:\.\./)+)/#"$1#g;
         return $ret;
     };
     $vars->{latemp_get_html_body_nav_links} = $get_nav_links->(1);
