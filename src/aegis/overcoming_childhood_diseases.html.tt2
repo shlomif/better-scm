@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Overcoming Aegis Childhood Diseases" -%]
 
-<latemp_subject "Overcoming Aegis Childhood Diseases" />
+
+[%- WRAPPER wrap_html -%]
 
 <div class="note">
 <h2>Note</h2>
@@ -13,13 +14,8 @@ on the web.
 </p>
 </div>
 
-<define-tag problem>
-<h3 class="problem">Problem</h3>
-</define-tag>
-
-<define-tag solution>
-<h3 class="solution">Solution</h3>
-</define-tag>
+[% SET problem = "<h3 class=\"problem\">Problem</h3>" %]
+[% SET solution = "<h3 class=\"solution\">Solution</h3>" %]
 
 <p>
 <b>By:</b> Shlomi Fish
@@ -39,7 +35,7 @@ This document should be considered as a to-do list.
 </p>
 <h2>File Copies</h2>
 
-<problem />
+[% problem %]
 <p>
 Copying one file to another is possible in Aegis, but in a twisted way: you
 have to move the file and then undo the deletion of the old name. In BitKeeper,
@@ -48,7 +44,7 @@ file copies are possible and in Subversion they are one of the most elementary
 copying files. The people want them.
 </p>
 
-<solution />
+[% solution %]
 
 <p>
 Implement another command that does just that. (more job for me.)
@@ -68,7 +64,7 @@ as capabilities and access-control lists). Aegis would still be able to work
 with the raw filesystem permissions, but can also safely deployed in user-land.
 </p>
 <h2>Version Numbers with More than Two Digits</h2>
-<problem />
+[% problem %]
 <p>
 Aegis currently supports only two digits in its version numbers. This is
 inadequate for most projects as most of them use at least three. I suggest
@@ -76,13 +72,13 @@ Aegis convert to using an arbitrary number of digits, that can be chosen
 at the project configuration time. This would make its versioning system
 suitable for more projects to default on.
 </p>
-<solution />
+[% solution %]
 <p>
 Use Aegis' Branches - it's there and it's working.
 </p>
 
 <h2>The Command Organization</h2>
-<problem />
+[% problem %]
 <p>
 When invoked on the command line, the command <code>aegis</code> is followed by
 a verbose command like <code>-Change_Directory</code> or <code>-ReMove_Project</code>,
@@ -107,7 +103,7 @@ aegis annotate myfile
 Which is the more standard and more sensible.
 </p>
 
-<solution />
+[% solution %]
 
 <p>
 It is possible. <code>aegis -cp</code> will copy a file and abbreviations can be
@@ -128,3 +124,5 @@ converting the documentation to DocBook/XML.
 Naturally, it will require a lot of work, but even I was personally bothered by
 it.
 </p>
+
+[% END %]

@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Aegis" -%]
 
-<latemp_subject "Better SCM Initiative : Aegis" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -46,3 +47,5 @@ these are IRC transcripts of a session where Mark Veltzer taught me how to use
 Aegis step by step. They could be of use to Aegis beginners.
 </li>
 </ul>
+
+[% END %]
