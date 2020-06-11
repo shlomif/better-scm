@@ -1,10 +1,11 @@
-#include "template.wml"
+[%- SET title = "Updated Comparison and Monotone Updates" -%]
 
-<latemp_subject "Updated Comparison and Monotone Updates" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 The following version control systems have been added to
-<a href="$(PATH_TO_ROOT)comparison/">the comparison</a>:
+<a href="[% base_path %]comparison/">the comparison</a>:
 </p>
 
 <ol>
@@ -29,10 +30,12 @@ Monotone and other systems.
 </p>
 
 <p>
-Finally <a href="$(PATH_TO_ROOT)monotone/">the Monotone web page</a> in the main
+Finally <a href="[% base_path %]monotone/">the Monotone web page</a> in the main
 site was updated.
 </p>
 
 <p>
 <b>Date:</b> 2009-May-19
 </p>
+
+[% END %]

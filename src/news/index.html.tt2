@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM News" -%]
 
-<latemp_subject "Better SCM News" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
 
@@ -11,4 +12,6 @@ if you'd like to learn what's new here.
 
 <h2>News Items</h2>
 
-<latemp_news_get_news_page_entries />
+[% latemp_news_get_news_page_entries() %]
+
+[% END %]

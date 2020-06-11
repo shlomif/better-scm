@@ -1,10 +1,11 @@
-#include "template.wml"
+[%- SET title = "ClearCase, Mercurial and AccuRev were added to the Comparison" -%]
 
-<latemp_subject "ClearCase, Mercurial and AccuRev were added to the Comparison" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 Recently three new version control systems were added to
-<a href="$(PATH_TO_ROOT)comparison/">the comparison</a>:
+<a href="[% base_path %]comparison/">the comparison</a>:
 </p>
 
 <ol>
@@ -29,3 +30,5 @@ The commercial <a href="http://www.accurev.com/">AccuRev</a>.
 <p>
 <b>Date:</b> 2007-February-23
 </p>
+
+[% END %]

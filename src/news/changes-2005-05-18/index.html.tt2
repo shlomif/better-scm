@@ -1,0 +1,18 @@
+[%- SET title = "New BitKeeper Essay + PureCM Added to the Comparison" -%]
+
+
+[%- WRAPPER wrap_html -%]
+
+<p>
+There's <a href="[% base_path %]bk/what-bitmover-got-wrong.html">a new Essay about
+BitKeeper</a> titled "What BitMover Got Wrong". Thanks should go to all the
+people who reviewed it and commented on it.
+</p>
+
+<p>
+Plus, PureCM was added to <a href="[% base_path %]comparison/">the comparison</a>.
+Thanks to a PureCM representative for filling the details, and agreeing to
+be the PureCM champion for the comparison in the future.
+</p>
+
+[% END %]

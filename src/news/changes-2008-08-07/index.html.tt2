@@ -1,10 +1,11 @@
-#include "template.wml"
+[%- SET title = "New Systems Added to the Comparison and a New Criterion" -%]
 
-<latemp_subject "New Systems Added to the Comparison and a New Criterion" />
+
+[%- WRAPPER wrap_html -%]
 
 <p>
 The following version control systems have been added to
-<a href="$(PATH_TO_ROOT)comparison/">the comparison</a>:
+<a href="[% base_path %]comparison/">the comparison</a>:
 </p>
 
 <ol>
@@ -40,12 +41,12 @@ Foundation Server</a>
 <p>
 Furthermore, after a long time of no activity, the comparison has a new
 criterion:
-<a href="$(PATH_TO_ROOT)comparison/comparison.html#intelligent_renames">"Intelligent
+<a href="[% base_path %]comparison/comparison.html#intelligent_renames">"Intelligent
 Merging after Moves or Renames"</a>
 </p>
 
 <p>
-<a href="$(PATH_TO_ROOT)faq/">A list of Frequently Asked Questions (FAQ)</a>
+<a href="[% base_path %]faq/">A list of Frequently Asked Questions (FAQ)</a>
 was added to the site to answer some common questions.
 </p>
 
@@ -56,3 +57,5 @@ Enjoy!
 <p>
 <b>Date:</b> 2008-August-07
 </p>
+
+[% END %]

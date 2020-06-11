@@ -1,0 +1,26 @@
+[%- SET title = "Bazaar has been added to the Comparison and the Site" -%]
+
+
+[%- WRAPPER wrap_html -%]
+
+<p>
+Recently, the <a href="http://bazaar-vcs.org/">Bazaar version control
+system</a> has been added to <a href="[% base_path %]comparison/">the comparison</a>,
+and <a href="[% base_path %]alternatives/bazaar/">a summary page</a> about it
+has been added to the main site.
+</p>
+
+<p>
+In addition, the <a href="[% base_path %]arch/">Arch summary page</a> that referenced
+it and its predecessor "Baz" was corrected to update their name change.
+</p>
+
+<p>
+Thanks should go to the volunteer who contributed the material.
+</p>
+
+<p>
+<b>Date:</b> 2007-December-28
+</p>
+
+[% END %]

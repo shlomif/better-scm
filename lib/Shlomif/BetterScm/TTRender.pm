@@ -229,6 +229,13 @@ LINKS:
                 . $nav_bar->path_info()
         )
     );
+    $vars->{latemp_news_get_news_page_entries} = sub {
+        require MyManageNews;
+
+        my $news_manager = MyManageNews::get_news_manager();
+
+        return $news_manager->get_news_page_entries();
+    };
     my $html = '';
     $template->process( "src/$input_tt2_page_path.tt2",
         $vars, \$html, binmode => ':utf8', )
