@@ -71,6 +71,8 @@ sub _remtt2
 {
     my $s = shift;
     $s =~ s% *\S+\.tt2(\s)%$1%gms or die;
+    $s =~ s%\s*\n?\z%%ms;
+    $s .= "\n" if $s !~ /\n\z/;
     return $s;
 }
 path("$DIR/include.mak")->edit_raw(

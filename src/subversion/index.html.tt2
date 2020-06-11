@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Better SCM Initiative : Subversion" -%]
 
-<latemp_subject "Better SCM Initiative : Subversion" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Homepage</h2>
 
@@ -95,3 +96,5 @@ comparisons and other resources by <a href="http://www.szabgab.com/">Gabor
 Szabo</a>.
 </li>
 </ul>
+
+[% END %]

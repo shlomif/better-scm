@@ -1,7 +1,8 @@
-#include "template.wml"
+[%- SET title = "Subversion Installation Tutorial for Win32" -%]
+[%- SET more_keywords = ", installation, tutorial, win32" -%]
 
-<latemp_subject "Subversion Installation Tutorial for Win32" />
-<latemp_more_keywords "installation, tutorial, win32" />
+
+[%- WRAPPER wrap_html -%]
 
 <pre style="background: transparent;">
 Subversion Installation Tutorial for Win32
@@ -67,7 +68,7 @@ Install.
     B. Edit the file C:\Program Files\Apache Group\Apache2\conf\httpd.conf
     using a text editor. Uncomment the line:
 
-        \#LoadModule dav_module modules/mod_dav.so
+        #LoadModule dav_module modules/mod_dav.so
 
     and add a line:
 
@@ -105,3 +106,5 @@ Install.
     from the command line and start populating your repository. Read the
     Subversion book for more information on Subversion usage.
 </pre>
+
+[% END %]

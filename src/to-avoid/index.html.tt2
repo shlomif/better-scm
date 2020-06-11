@@ -1,15 +1,16 @@
-#include "template.wml"
+[%- SET title = "Version Control Systems to Avoid" -%]
+[%- SET more_keywords = ", Visual SourceSafe, VSS" -%]
 
-<latemp_subject "Version Control Systems to Avoid" />
-<latemp_more_keywords "Visual SourceSafe, VSS" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
 
 <p>
-Based on the <a href="$(PATH_TO_ROOT)">front page</a> you've probably guessed that
+Based on the <a href="[% base_path %]">front page</a> you've probably guessed that
 CVS is no longer a good option for a version control system to use for your
 projects. If you're looking for a VCS that is a much better superset of CVS,
-take a look at <a href="$(PATH_TO_ROOT)subversion/">Subversion</a>; other version
+take a look at <a href="[% base_path %]subversion/">Subversion</a>; other version
 control systems may fit the bill even better.
 </p>
 
@@ -78,3 +79,5 @@ on the Joel-on-Software Forum: "Ugh.. they use SourceSafe"</a>
 (Thanks to Eric Sink for
 <a href="http://www.ericsink.com/articles/Buzz.html">some of the links</a>.)
 </p>
+
+[% END %]

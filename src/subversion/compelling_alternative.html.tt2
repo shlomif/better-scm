@@ -1,6 +1,7 @@
-#include "template.wml"
+[%- SET title = "Subversion - A Compelling Alternative to CVS and BitKeeper" -%]
 
-<latemp_subject "Subversion - A Compelling Alternative to CVS and BitKeeper" />
+
+[%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
 
@@ -40,7 +41,7 @@ the commands are practically identical to CVS at this point.
 <p>
 A real test of the simplicity of an SCM is how much it takes to set up a
 repository and commit a single file into it. This is fairly trivial to do in
-either of these programs. Aegis, OTOH as the <a href="$(PATH_TO_ROOT)aegis/mark_veltzer_transcripts.log.txt">transcripts of my IRC session with Mark Veltzer show</a>,
+either of these programs. Aegis, OTOH as the <a href="[% base_path %]aegis/mark_veltzer_transcripts.log.txt">transcripts of my IRC session with Mark Veltzer show</a>,
 took a lot of commands, and a lot of tweaking of text files (as well as
 downloading and installing the separate program fhist) just to get started.
 Even Mark did not know the commands by heart.
@@ -74,9 +75,9 @@ without changing the working model.
 </p>
 
 <p>
-As for BitKeeper, it is <a href="$(PATH_TO_ROOT)bk/bk_suitability.html">not
+As for BitKeeper, it is <a href="[% base_path %]bk/bk_suitability.html">not
 suitable for wide deployment by open-source projects</a> because of
-its license. If this license <a href="$(PATH_TO_ROOT)bk/relicensing_bk.html">is
+its license. If this license <a href="[% base_path %]bk/relicensing_bk.html">is
 modified to a much more reasonable one</a>,
 one can expect open source projects to widely convert to it. Still,
 subversion may still be useful for the development of in-house and
@@ -92,3 +93,5 @@ use BitKeeper, if it were possible to me. But since it isn't, I must say, that
 Subversion corrects most of the standing issues with CVS very well, and is
 quite enjoyable to work with. It is even used to maintain this site. ;-)
 </p>
+
+[% END %]
