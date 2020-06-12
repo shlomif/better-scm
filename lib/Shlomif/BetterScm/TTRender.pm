@@ -173,7 +173,7 @@ sub proc
         'path_info'    => ( join( '/', @fn_nav ) || '/' ),
         'current_host' => $LATEMP_SERVER,
         MyNavData::get_params(),
-        'ul_classes'     => [ "navbarmain", ("navbarnested") x 10 ],
+        'ul_classes'     => [],
         'no_leading_dot' => 1,
     );
     my $rendered_results   = $nav_bar->render();

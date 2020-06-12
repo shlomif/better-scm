@@ -24,13 +24,13 @@ a.bless:hover {
     padding-bottom: 2em;
 }
 
-ul {
-    &.navbarmain {
-        padding-left: 1em;
-        margin-left: 1em;
-    }
+#nav_menu > ul {
+    font-size: 80%;
+    font-family: sans-serif;
+    padding-left: 1em;
+    margin-left: 1em;
 
-    &.navbarnested {
+    ul {
         padding-left: 0em;
         margin-left: 2em;
     }
@@ -243,11 +243,6 @@ pre {
 
 .link {
     background: transparent;
-}
-
-ul.navbarmain {
-    font-size: 80%;
-    font-family: sans-serif;
 }
 
 .main {

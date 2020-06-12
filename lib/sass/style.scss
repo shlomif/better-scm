@@ -16,13 +16,13 @@
     padding-bottom: 2em;
 }
 
-ul {
-    &.navbarmain {
-        padding-left: 1em;
-        margin-left: 1em;
-    }
+#nav_menu > ul {
+    padding-left: 1em;
+    margin-left: 1em;
+    font-size: 80%;
+    font-family: sans-serif;
 
-    &.navbarnested {
+    ul {
         padding-left: 0em;
         margin-left: 2em;
     }
@@ -206,8 +206,6 @@ pre {
 }
 
 ul.navbarmain {
-    font-size: 80%;
-    font-family: sans-serif;
 }
 
 .main {

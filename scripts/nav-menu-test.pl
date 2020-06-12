@@ -13,7 +13,7 @@ my $nav_bar = HTML::Widgets::NavMenu->new(
     'path_info'    => $filename,
     'current_host' => "scm",
     MyNavData::get_params(),
-    'ul_classes' => [ "navbarmain", ("navbarnested") x 10 ],
+    'ul_classes' => [],
 );
 
 my $rendered_results = $nav_bar->render();
