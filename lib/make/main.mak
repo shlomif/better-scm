@@ -64,8 +64,15 @@ T2_SVGS__BASE := $(filter %.svg,$(SCM_IMAGES_DEST))
 T2_SVGS__MIN := $(T2_SVGS__BASE:%.svg=%.min.svg)
 T2_SVGS__svgz := $(T2_SVGS__BASE:%.svg=%.svgz)
 
+SVG_MINIFY = minify --svg-precision 5 -o $@ $<
+DISABLE_MINIFY_DUE_TO_DISAPPEARING_ARCS = 1
+
+ifeq ($(DISABLE_MINIFY_DUE_TO_DISAPPEARING_ARCS), 1)
+	SVG_MINIFY = $(call COPY)
+endif
+
 $(T2_SVGS__MIN): %.min.svg: %.svg
-	minify --svg-precision 3 -o $@ $<
+	$(call SVG_MINIFY)
 
 $(T2_SVGS__svgz): %.svgz: %.min.svg
 	gzip --best -n < $< > $@
