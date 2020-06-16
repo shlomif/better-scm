@@ -65,7 +65,10 @@ T2_SVGS__MIN := $(T2_SVGS__BASE:%.svg=%.min.svg)
 T2_SVGS__svgz := $(T2_SVGS__BASE:%.svg=%.svgz)
 
 SVG_MINIFY = minify --svg-precision 5 -o $@ $<
-DISABLE_MINIFY_DUE_TO_DISAPPEARING_ARCS = 1
+# The arcs are only ignored on gwenview / ksvgtopng5
+# whose svg support is quite bad. Firefox / chromi /
+# eog / inkview / inkscape / konqueror handle them fine.
+DISABLE_MINIFY_DUE_TO_DISAPPEARING_ARCS = 0
 
 ifeq ($(DISABLE_MINIFY_DUE_TO_DISAPPEARING_ARCS), 1)
 	SVG_MINIFY = $(call COPY)
