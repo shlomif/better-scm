@@ -3,8 +3,6 @@ DEVEL_VER_USE_CACHE = 1
 D = dest
 TARGET = $(D)
 
-TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
-
 DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
 
 all: dummy
@@ -15,15 +13,11 @@ include lib/make/rules.mak
 
 # IMAGES += $(addprefix $(D)/win32_build/,bootstrap/curl.exe bootstrap/build.bat static/zip.exe static/unzip.exe dynamic/fcs.zip)
 
-TTML_FLAGS += $(COMMON_PREPROC_FLAGS)
-
 PROCESS_ALL_INCLUDES = ALWAYS_MIN=1 perl bin/post-incs-v2.pl --mode=minify \
                --minifier-conf=bin/html-min-cli-config-file.conf \
                --source-dir=$(TARGET) \
                --dest-dir=$(TARGET) \
                --
-
-DOCS_COMMON_DEPS = lib/MyNavData.pm lib/MyNavLinks.pm lib/MyManageNews.pm
 
 all_deps: make-dirs
 
