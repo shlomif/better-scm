@@ -82,6 +82,7 @@ DocBook
 DynamSoft
 DynamSoft's
 Expat
+Firefox
 Foo
 FreeBSD
 Freecell
@@ -511,3 +512,7 @@ svnsync
 tf
 tfpt
 whatsnew
+
+==== In: dest/irc/index.html
+
+HexChat
