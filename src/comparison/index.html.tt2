@@ -31,8 +31,7 @@ page</a>.
 
 <p>
 The comparison is generated from an XML file by a Perl script. The script
-uses the <a href="http://search.cpan.org/dist/XML-LibXML/">XML::LibXML
-bindings</a> to libxml, and
+uses [% cpan.self_dist(d=>'XML-LibXML') %], the Perl 5 bindings to libxml, and
 <a href="https://web-cpan.shlomifish.org/modules/XML-CompareML/">XML::CompareML</a>.
 To use the makefile, you need
 <a href="http://www.gnu.org/software/make/">GNU Make</a>. Following are the

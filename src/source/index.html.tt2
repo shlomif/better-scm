@@ -41,7 +41,7 @@ To build the site you'll need the following extra software packages:
 </li>
 <li>
 The <a href="https://www.cpan.org/">CPAN</a> modules listed in [% cpan.self_dist( d="Task-Sites-BetterScm" )%]. They can be installed using a CPAN.pm,
-CPANPLUS.pm, or a <a href="https://metacpan.org/pod/App::cpanminus">cpanminus</a>
+CPANPLUS.pm, or a [% cpan.module(m=>"App::cpanminus", body=>"cpanminus") %]
 command, e.g: <code>cpanm Task::Sites::BetterScm</code>.
 </li>
 </ol>

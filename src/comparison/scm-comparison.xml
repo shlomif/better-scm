@@ -529,9 +529,9 @@ TODO:
                     <a href="http://svnbook.red-bean.com/en/1.4/svn.ref.svnsync.html">svnsync</a>
                     tool which is part of the Subversion distribution on
                     recent versions, or by using Chia-liang Kao's
-                    <a href="http://search.cpan.org/dist/SVN-Mirror/">SVN::Mirror</a>
+                    <a href="https://metacpan.org/pod/SVN::Mirror">SVN::Mirror</a>
                     add-on or Shlomi Fish's
-                    <a href="http://search.cpan.org/dist/SVN-Pusher/">SVN-Pusher</a>
+                    <a href="https://metacpan.org/release/SVN-Pusher">SVN-Pusher</a>
                     utility.
                 </s>
                 <s id="cmplus">
