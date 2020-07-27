@@ -8,17 +8,16 @@ use Encode qw/ decode_utf8 /;
 use URI::Escape qw( uri_escape );
 use Moo;
 use Path::Tiny qw/ path /;
-use YAML::XS               ();
+use HTML::Acronyms         ();
+use HTML::Latemp::AddToc   ();
 use HTML::Widgets::NavMenu ();
 use HTML::Widgets::NavMenu::EscapeHtml qw( escape_html );
-
-use Shlomif::Homepage::TocDiv     ();
-use Shlomif::Homepage::CPAN_Links ();
-use HTML::Acronyms                ();
-use HTML::Latemp::AddToc          ();
-use Template                      ();
-use MyNavData                     ();
-use MyNavLinks                    ();
+use Module::Format::AsHTML    ();
+use MyNavData                 ();
+use MyNavLinks                ();
+use Shlomif::Homepage::TocDiv ();
+use Template                  ();
+use YAML::XS                  ();
 
 has printable => ( is => 'ro', required => 1 );
 has stdout    => ( is => 'ro', required => 1 );
@@ -27,7 +26,7 @@ my $LATEMP_SERVER = "scm";
 my $toc           = HTML::Latemp::AddToc->new;
 
 my $DEFAULT_TOC_DIV = Shlomif::Homepage::TocDiv::toc_div();
-my $cpan            = Shlomif::Homepage::CPAN_Links->new;
+my $cpan            = Module::Format::AsHTML->new;
 
 my $base_path;
 
