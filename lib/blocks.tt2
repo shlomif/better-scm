@@ -1,4 +1,4 @@
-[% SET html_lang = "en-US" %]
+[% SET html_lang = "en" %]
 
 [% SET desc = "Better SCM: A Site for Version Control and Source Configuration Management Information and Advocacy" %]
 
