@@ -186,42 +186,6 @@ See L<https://better-scm.shlomifish.org/> and L<https://github.com/shlomif/bette
 
 Shlomi Fish, L<https://www.shlomifish.org/> .
 
-=head1 BUGS
-
-Please report any bugs or feature requests to
-C<bug-task-latemp at rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-Latemp>.
-I will be notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Task::Latemp
-
-You can also look for information at:
-
-=over 4
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Task-Latemp>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Task-Latemp>
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-Latemp>
-
-=item * MetaCPAN
-
-L<https://metacpan.org/release/Task-Latemp>
-
-=back
-
 =head1 ACKNOWLEDGEMENTS
 
 =head1 SEE ALSO
