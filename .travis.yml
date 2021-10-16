@@ -63,8 +63,6 @@ cache:
 
 deploy:
     cleanup: true
-    api_key:
-        secure: 
     file: site-dest.tar.xz
     on:
         repo: "/"
