@@ -277,7 +277,8 @@ def main():
                 "perl -lpE 's/^( *)gem/$1sudo gem/;$_=q#    (set -e -x;" +
                 " mkdir -p $HOME/src ; cd $HOME/src ; " +
                 "git clone https://github.com/tdewolff/minify.git " +
-                "; cd minify ; make install ; cd .. ; rm -fr minify )#" +
+                "; cd minify ; make SHELL=/bin/bash install ; cd .. ; " +
+                "rm -fr minify )#" +
                 " if /^ *go get.*minify/'" +
                 " < .travis.bash > " +
                 ".ci-github-actions.bash"
