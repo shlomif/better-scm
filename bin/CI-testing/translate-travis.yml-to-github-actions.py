@@ -274,7 +274,12 @@ def main():
     subprocess.check_call(
             [
                 "bash", "-ce",
-                "perl -lpE 's/^( *)gem/$1sudo gem/' < .travis.bash > " +
+                "perl -lpE 's/^( *)gem/$1sudo gem/;$_=q#    (set -e -x;" +
+                " mkdir -p $HOME/src ; cd $HOME/src ; " +
+                "git clone https://github.com/tdewolff/minify.git " +
+                "; cd minify ; make install ; cd .. ; rm -fr minify )#" +
+                " if /^ *go get.*minify/'" +
+                " < .travis.bash > " +
                 ".ci-github-actions.bash"
             ])
     if False:

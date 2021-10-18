@@ -43,7 +43,7 @@ then
         sudo dnf --color=never install -y hspell-devel perl-devel ruby-devel
     fi
     eval "$(GIMME_GO_VERSION=1.16 gimme)"
-    go get -u github.com/tdewolff/minify/cmd/minify
+    (set -e -x; mkdir -p $HOME/src ; cd $HOME/src ; git clone https://github.com/tdewolff/minify.git ; cd minify ; make install ; cd .. ; rm -fr minify )
     eval "$(perl -I ~/perl_modules/lib/perl5 -Mlocal::lib=$HOME/perl_modules)"
     PERL_CPANM_OPT+=" --quiet "
     export PERL_CPANM_OPT
