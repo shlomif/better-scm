@@ -90,7 +90,8 @@ def generate(output_path, is_act):
     )
     local_lib_shim = 'local_lib_shim() { eval "$(perl ' + \
         '-Mlocal::lib=$HOME/' + \
-        'perl_modules)"; } ; local_lib_shim ; '
+        'perl_modules)"; PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ' + \
+        '; local_lib_shim ; '
     for arr in ['before_install', 'install', 'script']:
         for command in data[arr]:
             if command == 'systemctl --user start dbus' or \
@@ -278,7 +279,7 @@ def main():
                 " mkdir -p $HOME/src ; cd $HOME/src ; " +
                 "git clone https://github.com/tdewolff/minify.git " +
                 "; cd minify ; make SHELL=/bin/bash install ; cd .. ; " +
-                "rm -fr minify )#" +
+                "rm -fr minify ; which minify ; )#" +
                 " if /^ *go get.*minify/'" +
                 " < .travis.bash > " +
                 ".ci-github-actions.bash"

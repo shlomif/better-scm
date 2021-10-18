@@ -16,33 +16,46 @@ jobs:
                 silversearcher-ag strip-nondeterminism tidy valgrind vim wml xsltproc
                 xvfb xz-utils zip
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; . .ci-github-actions.bash --cmd before_install
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                . .ci-github-actions.bash --cmd before_install
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; git clone https://github.com/vim/vim && ( cd
-                vim && git checkout v8.2.2918 && ./configure --with-features=huge
-                && make && sudo make install ) && rm -fr vim
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                git clone https://github.com/vim/vim && ( cd vim && git checkout v8.2.2918
+                && ./configure --with-features=huge && make && sudo make install )
+                && rm -fr vim
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo add-apt-repository -y ppa:inkscape.dev/stable
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo add-apt-repository -y ppa:inkscape.dev/stable
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt-get update -qq
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt-get update -qq
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt-get --only-upgrade install libnss3
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt-get --only-upgrade install libnss3
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt-get install -qq inkscape
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt-get install -qq inkscape
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt update
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt update
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt install dbus-user-session
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt install dbus-user-session
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; sudo apt install at-spi2-core
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                sudo apt install at-spi2-core
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; export XML_CATALOG_FILES="/etc/xml/catalog $HOME/markup-validator/htdocs/sgml-lib/catalog.xml"
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                export XML_CATALOG_FILES="/etc/xml/catalog $HOME/markup-validator/htdocs/sgml-lib/catalog.xml"
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; TIDYALL_DATA_DIR="$HOME/tidyall_d" bash -x bin/run-ci-build.bash
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                TIDYALL_DATA_DIR="$HOME/tidyall_d" bash -x bin/run-ci-build.bash
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; tar -caf site-dest.tar.xz dest/
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                tar -caf site-dest.tar.xz dest/
         -   run: local_lib_shim() { eval "$(perl -Mlocal::lib=$HOME/perl_modules)";
-                } ; local_lib_shim ; set +x
+                PATH="$PATH:$GOBIN:$GOPATH/bin:$HOME/go/bin"; } ; local_lib_shim ;
+                set +x
 name: use-github-actions
 'on':
 - push
