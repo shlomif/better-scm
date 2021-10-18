@@ -20,15 +20,15 @@ my @news_items = (
             }
         } (
             {
-                'title' => "Changes of 18-April-2005",
-                'id'    => "changes-2005-04-18",
+                'title'       => "Changes of 18-April-2005",
+                'id'          => "changes-2005-04-18",
                 'description' =>
 q{Around 18 April, 2005, the Better SCM Site has seen a lot of changes. Click the link for details on them.},
                 'date' => "2005-04-18",
             },
             {
-                'title' => "The Better SCM RSS Feed",
-                'id'    => "2005-04-25-rss-feed",
+                'title'       => "The Better SCM RSS Feed",
+                'id'          => "2005-04-25-rss-feed",
                 'description' =>
 q{The Better SCM Site now has an RSS feed. It will be periodically updated with news about the site, and possibly latest happening in the Version Control Systems/Source Configuration Management world. To use it, add http://better-scm.berlios.de/rss.xml to your RSS aggregator.},
                 'date' => "2005-04-25",
@@ -36,7 +36,7 @@ q{The Better SCM Site now has an RSS feed. It will be periodically updated with 
             {
                 'title' =>
                     "New BitKeeper Essay + PureCM Added to the Comparison",
-                'id' => "changes-2005-05-18",
+                'id'          => "changes-2005-05-18",
                 'description' =>
                     q{There's a new BitKeeper essay on the Better-SCM
             site and PureCM was added to the comparison.},
@@ -103,7 +103,7 @@ sub gen_news_manager
         'copyright'       => "Copyright by Shlomi Fish, (c) 2005",
         'webmaster'       => "Shlomi Fish <shlomif\@shlomifish.org>",
         'managing_editor' => "Shlomi Fish <shlomif\@shlomifish.org>",
-        'description' =>
+        'description'     =>
 "News of the Better SCM Site - a site for Version Control and Source Configuration Management news and advocacy",
     );
 }

@@ -48,8 +48,8 @@ my $tree_contents = {
                     'url_is_abs' => 1,
                 },
                 {
-                    'text' => "Evolution as a VCS User",
-                    'url'  => "docs/shlomif-evolution.html",
+                    'text'  => "Evolution as a VCS User",
+                    'url'   => "docs/shlomif-evolution.html",
                     'title' =>
                         "Shlomi Fish' Evolution as a Revision Control User",
                 },

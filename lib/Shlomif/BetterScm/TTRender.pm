@@ -68,7 +68,7 @@ has vars => (
         my $self = shift;
         return +{
             ( $self->printable ? ( PRINTABLE => 1 ) : () ),
-            cpan => $cpan,
+            cpan  => $cpan,
             mytan =>
 qq#\\tan{\\left[\\arcsin{\\left(\\frac{1}{2 \\sin{36°}}\\right)}\\right]}#,
             d2url           => "http://divisiontwo.shlomifish.org/",
