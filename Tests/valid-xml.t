@@ -9,7 +9,7 @@ use MooX qw/ late /;
 use XML::LibXML ();
 use lib './lib';
 
-my $T2_POST_DEST = "dest";
+my $POST_DEST = "dest";
 
 extends('Test::HTML::Tidy::Recursive');
 
@@ -35,11 +35,9 @@ Test::HTML::Tidy::Recursive::XML->new(
     {
         filename_filter => sub {
             my $fn = shift;
-            return
-                not( exists $whitelist{$fn}
-                or $fn =~
-                m#\A \Q$T2_POST_DEST\E (?: MathVentures | js/jquery-ui/ ) #x, );
+            return not( exists $whitelist{$fn}
+                or $fn =~ m#\A \Q$POST_DEST\E / (?: js/jquery-ui/ ) #x );
         },
-        targets => [$T2_POST_DEST],
+        targets => [$POST_DEST],
     }
 )->run;
