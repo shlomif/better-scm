@@ -6,7 +6,7 @@ use warnings;
 use File::Find::Object ();
 use Path::Tiny         qw/ path /;
 
-sub _exec
+sub _run_cli_command
 {
     my ( $cmd, $err ) = @_;
 
@@ -17,7 +17,7 @@ sub _exec
     return;
 }
 
-_exec( [ $^X, 'bin/my-cookiecutter.pl' ], 'cookiecutter failed.' );
+_run_cli_command( [ $^X, 'bin/my-cookiecutter.pl' ], 'cookiecutter failed.' );
 
 if ( system( "gmake", "--silent", "-f", "lib/make/build-deps/build-deps.mak" ) )
 {
@@ -71,7 +71,5 @@ path("${DIR}/include.mak")->spew_utf8(
 path("${DIR}/tt2.txt")
     ->spew_raw( join "", ( ( map { "$_\n" } @docs_paths ), ) );
 
-open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
-print {$out_fh} "include $DIR/main.mak\n";
-close($out_fh);
-_exec( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );
+path('Makefile')->spew_utf8("include ${DIR}/main.mak\n");
+_run_cli_command( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );
