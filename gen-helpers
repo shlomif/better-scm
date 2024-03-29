@@ -3,8 +3,8 @@
 use strict;
 use warnings;
 
-use HTML::Latemp::GenMakeHelpers ();
-use Path::Tiny qw/ path /;
+use File::Find::Object ();
+use Path::Tiny         qw/ path /;
 
 sub _exec
 {
@@ -26,27 +26,38 @@ if ( system( "gmake", "--silent", "-f", "lib/make/build-deps/build-deps.mak" ) )
 
 my $DIR = "lib/make/";
 
-my $generator = HTML::Latemp::GenMakeHelpers->new(
-    'hosts' => [
-        {
-            'id'         => "common",
-            'source_dir' => "common",
-            'dest_dir'   => "\$(D)",
-        },
-        {
-            'id'         => "scm",
-            'source_dir' => "src",
-            'dest_dir'   => "\$(D)",
-        },
-    ],
-    out_dir => $DIR,
-);
+my @docs_paths;
+my @dirs_paths;
+my @images_paths;
+my $host = "src";
+my $tree = File::Find::Object->new( {}, $host );
 
-$generator->process_all();
-
-open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
-print {$out_fh} "include $DIR/main.mak\n";
-close($out_fh);
+FIND_FILES:
+while ( my $r = $tree->next_obj() )
+{
+    my $path = join "/", @{ $r->full_components() };
+    if ( $r->is_file() )
+    {
+        if ( $path =~ s#\.x?html\K\.tt2\z##ms )
+        {
+            push @docs_paths, $path;
+        }
+        else
+        {
+            push @images_paths, $path;
+        }
+    }
+    elsif ( $r->is_dir() )
+    {
+        if ( length($path) )
+        {
+            push @dirs_paths, $path;
+        }
+    }
+}
+@docs_paths   = sort @docs_paths;
+@dirs_paths   = sort @dirs_paths;
+@images_paths = sort @images_paths;
 
 my $r_fh = path("$DIR/rules.mak");
 my $text = $r_fh->slurp_utf8;
@@ -57,30 +68,19 @@ my $text = $r_fh->slurp_utf8;
 
 $r_fh->spew_utf8($text);
 
-sub _remtt2
-{
-    my $s = shift;
-    $s =~ s% *\S+\.tt2(\s)%$1%gms or die;
-    $s =~ s%\s*\n?\z%%ms;
-    $s .= "\n" if $s !~ /\n\z/;
-    return $s;
-}
-path("$DIR/include.mak")->edit_raw(
-    sub {
-        s#^SCM_IMAGES :=\K([^\n]+\n)#_remtt2($1)
-        #ems or die;
-    }
+path("${DIR}/include.mak")->spew_utf8(
+    map {
+        my ( $key, $paths ) = @{$_};
+        join( " ", uc( "SCM" . "_" . $key ), ":=", @$paths ) . "\n"
+    } [ "images", \@images_paths, ],
+    [ "dirs", \@dirs_paths, ],
+    [ "docs", \@docs_paths, ],
 );
-my $iter = path("./src")->iterator( { recurse => 1, } );
-my @tt;
-while ( my $next = $iter->() )
-{
-    my $s = "$next";
-    if ( ( not -d $next ) and $s =~ s#\.tt2\z## )
-    {
-        push @tt, ( $s =~ s#\A(\./)?src/##r );
-    }
-}
 
-path("$DIR/tt2.txt")->spew_raw( join "\n", ( sort @tt ), "" );
+path("${DIR}/tt2.txt")
+    ->spew_raw( join "", ( ( map { "$_\n" } @docs_paths ), ) );
+
+open my $out_fh, ">", "Makefile" or die "Cannot open Makefile $!";
+print {$out_fh} "include $DIR/main.mak\n";
+close($out_fh);
 _exec( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );
