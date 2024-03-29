@@ -59,15 +59,6 @@ while ( my $r = $tree->next_obj() )
 @dirs_paths   = sort @dirs_paths;
 @images_paths = sort @images_paths;
 
-my $r_fh = path("$DIR/rules.mak");
-my $text = $r_fh->slurp_utf8;
-{
-    my $needle = 'cp -f $< $@';
-    $text =~ s#^\t\Q$needle\E$#\t\$(call COPY)#gms;
-}
-
-$r_fh->spew_utf8($text);
-
 path("${DIR}/include.mak")->spew_utf8(
     map {
         my ( $key, $paths ) = @{$_};
