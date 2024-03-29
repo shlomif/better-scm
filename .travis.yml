@@ -31,7 +31,6 @@ addons:
             - libgdbm-compat-dev
             - libgdbm-dev
             - libgmp-dev
-            - libgoogle-perftools-dev
             - libhunspell-dev
             - libncurses-dev
             - libpcre3-dev
