@@ -2,7 +2,10 @@
 
 use strict;
 use warnings;
+use 5.014;
+use autodie;
 
+use Carp               ();
 use File::Find::Object ();
 use Path::Tiny         qw/ path /;
 
@@ -12,7 +15,8 @@ sub _run_cli_command
 
     if ( system(@$cmd) )
     {
-        die $err;
+        say "Running [@$cmd] failed!";
+        Carp::confess($err);
     }
     return;
 }
