@@ -23,10 +23,10 @@ sub _run_cli_command
 
 _run_cli_command( [ $^X, 'bin/my-cookiecutter.pl' ], 'cookiecutter failed.' );
 
-if ( system( "gmake", "--silent", "-f", "lib/make/build-deps/build-deps.mak" ) )
-{
-    die "build-deps failed!";
-}
+_run_cli_command(
+    [ "gmake", "--silent", "-f", "lib/make/build-deps/build-deps.mak", ],
+    "build-deps failed!",
+);
 
 my $DIR = "lib/make/";
 
