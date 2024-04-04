@@ -59,21 +59,18 @@ while ( my $r = $tree->next_obj() )
         }
     }
 }
-@docs_paths   = sort @docs_paths;
-@dirs_paths   = sort @dirs_paths;
-@images_paths = sort @images_paths;
 
 path("${DIR}/include.mak")->spew_utf8(
     map {
         my ( $key, $paths ) = @{$_};
-        join( " ", uc( "SCM" . "_" . $key ), ":=", @$paths ) . "\n"
+        join( " ", uc( "SCM" . "_" . $key ), ":=", sort @$paths ) . "\n"
     } [ "images", \@images_paths, ],
     [ "dirs", \@dirs_paths, ],
     [ "docs", \@docs_paths, ],
 );
 
 path("${DIR}/tt2.txt")
-    ->spew_raw( join "", ( ( map { "$_\n" } @docs_paths ), ) );
+    ->spew_raw( join "", ( ( map { "$_\n" } sort @docs_paths ), ) );
 
 path('Makefile')->spew_utf8("include ${DIR}/main.mak\n");
 _run_cli_command( [ "gmake", 'bulk-make-dirs' ], "gmake failed" );
