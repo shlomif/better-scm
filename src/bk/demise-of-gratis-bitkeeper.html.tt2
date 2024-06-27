@@ -38,9 +38,9 @@ they think.
 </p>
 
 <p>
-As a result, the <a href="http://subversion.apache.org/">Subversion</a>
+As a result, the <a href="https://subversion.apache.org/">Subversion</a>
 developers issued
-<a href="http://subversion.tigris.org/subversion-linus.html">a statement</a>
+<a href="https://subversion.apache.org/subversion-linus.html">a statement</a>
 in which they say that Subversion is not a suitable alternative to
 BitKeeper for the distributed development-model used by the kernel
 developers, and that Subversion advocates should

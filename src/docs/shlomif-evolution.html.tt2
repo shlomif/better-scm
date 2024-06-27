@@ -247,8 +247,8 @@ List</a> about it).
 hosting services for Subversion</a>, including
 BerliOS. I now maintain many
 projects using Subversion, and use CVS only for projects on which I don't
-have any control on the choice of the version control system. (usually
-international projects I join as a co-developer). I recently also switched
+have any control on the choice of the version control system. (Usually
+international projects I join as a co-developer.) I recently also switched
 Freecell Solver to subversion, by converting its CVS repository using
 <a href="http://cvs2svn.tigris.org/">cvs2svn</a>. That was a painless and
 pleasant experience.

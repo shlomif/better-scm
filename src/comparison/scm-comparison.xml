@@ -334,7 +334,7 @@ TODO:
                     No. "svn help mv" says "Note: this subcommand is
                     equivalent to
                     a 'copy' and 'delete'." There's <a
-                        href="http://subversion.tigris.org/issues/show_bug.cgi?id=898">a
+                        href="https://subversion.apache.org/issues/show_bug.cgi?id=898">a
                         bug report about it</a>.
                 </s>
                 <s id="cmplus">Yes. Renames are Intelligent.</s>
