@@ -1,7 +1,6 @@
 [%- SET title = "Version Control Humour" -%]
 [%- SET more_keywords = ", humour, humor" -%]
 
-
 [%- WRAPPER wrap_html -%]
 
 <h2 id="intro">Introduction</h2>
@@ -14,18 +13,21 @@ the years.
 <h2 id="list">The List</h2>
 
 <ul>
+
 <li>
 <p>
 <a href="http://www.shlomifish.org/humour/fortunes/subversion.html">Shlomi
 Fish's "Subversion" Fortune Cookies</a>.
 </p>
 </li>
+
 <li>
 <p>
 <a href="http://queen.borg.ch/irc/">queen.borg.ch's Subversion IRC fortune
 cookies</a>
 </p>
 </li>
+
 <li>
 <p>
 <a href="http://blog.red-bean.com/sussman/?p=226">Ben Collins-Sussman's
@@ -61,6 +63,12 @@ cookies</a>
 <li>
 <p>
 <a href="http://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-programming-BitKeeper-or-GitHub">Should I use BitKeeper or GitHub?</a>
+</p>
+</li>
+
+<li>
+<p>
+<a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-sharp-programming-fine-literature">Fine Literature (about svn.php.net)</a>
 </p>
 </li>
 

@@ -517,6 +517,10 @@ whatsnew
 
 XML-LibXML
 
+==== In: dest/humour/index.html
+
+php
+
 ==== In: dest/irc/index.html
 
 HexChat
