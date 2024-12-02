@@ -129,11 +129,12 @@ my $template = Template->new(
     {
         COMPILE_DIR  => ( $ENV{TMPDIR} // "/tmp" ) . "/shlomif-hp-tt2-cache",
         COMPILE_EXT  => ".ttc",
-        INCLUDE_PATH => [ ".", "./lib", ],
-        PRE_PROCESS  => ["lib/blocks.tt2"],
-        POST_CHOMP   => 1,
-        RELATIVE     => 1,
         ENCODING     => 'utf8',
+        INCLUDE_PATH => [ ".", "./lib", ],
+        POST_CHOMP   => 1,
+        PRE_PROCESS  => ["lib/blocks.tt2"],
+        RELATIVE     => 1,
+        STRICT       => 1,
     }
 );
 
@@ -231,7 +232,7 @@ LINKS:
     my $html = '';
     $template->process( "src/$input_tt2_page_path.tt2",
         $vars, \$html, binmode => ':utf8', )
-        or die $template->error();
+        or die "[[" . $template->error() . "]]";
 
     $toc->add_toc( \$html );
     if ( $self->stdout )

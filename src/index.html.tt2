@@ -1,6 +1,5 @@
 [%- SET title = "Better SCM Initiative" -%]
 
-
 [%- WRAPPER wrap_html -%]
 
 <h2>Introduction</h2>
@@ -8,8 +7,8 @@
 <div class="news">
 <h3>News</h3>
 <ul>
-[% latemp_news_get_news_box_contents() %]
-<li><a href="./news/">More…</a></li></ul>
+<li><a href="./news/">More…</a></li>
+</ul>
 </div>
 
 <p>

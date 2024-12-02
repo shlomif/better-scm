@@ -1,4 +1,7 @@
+[%- SET body_params = '' -%]
 [% SET html_lang = "en" %]
+[%- SET more_keywords = '' -%]
+[%- SET xhtml1 = '' -%]
 
 [% SET desc = "Better SCM: A Site for Version Control and Source Configuration Management Information and Advocacy" %]
 
