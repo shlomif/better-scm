@@ -3,7 +3,7 @@
 set -x
 set -o pipefail
 
-export PATH="$PWD/node_modules/.bin/:$PATH:/usr/games"
+export PATH="$PWD/bin/build-time-helpers:$PWD/node_modules/.bin/:$PATH:/usr/games"
 export SKIP_SPELL_CHECK=1
 
 m()
