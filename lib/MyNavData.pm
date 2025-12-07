@@ -14,10 +14,11 @@ my $hosts = {
 my $news_manager = get_news_manager();
 
 my $tree_contents = {
-    'host'  => "scm",
-    'text'  => "Better SCM",
-    'title' => "Better SCM Initiative",
-    'subs'  => [
+    'host'        => "scm",
+    'text'        => "Better SCM",
+    'title'       => "Better SCM Initiative",
+    'show_always' => 1,
+    'subs'        => [
         {
             'text' => "Home",
             'url'  => "",
@@ -29,10 +30,9 @@ my $tree_contents = {
                 [ @{ $news_manager->get_navmenu_items( 'num_items' => 5 ) }, ],
         },
         {
-            'text'   => "General Docs",
-            'url'    => "docs/",
-            'expand' => { 're' => "" },
-            'title'  => (
+            'text'  => "General Docs",
+            'url'   => "docs/",
+            'title' => (
                       "General Documents that don't Belong to "
                     . "Anywhere More Specific."
             ),
@@ -64,10 +64,9 @@ my $tree_contents = {
             ],
         },
         {
-            'text'   => "Alternatives",
-            'url'    => "alternatives/",
-            'expand' => { 're' => "" },
-            'subs'   => [
+            'text' => "Alternatives",
+            'url'  => "alternatives/",
+            'subs' => [
                 {
                     'text'  => "Aegis",
                     'url'   => "aegis/",
@@ -266,11 +265,10 @@ my $tree_contents = {
             'title' => "Frequently Asked Questions with Answers about the Site",
         },
         {
-            'url'    => "contribute/",
-            'text'   => "Contribute",
-            'title'  => "How to Contribute to this Site",
-            'expand' => { 're' => "" },
-            'subs'   => [
+            'url'   => "contribute/",
+            'text'  => "Contribute",
+            'title' => "How to Contribute to this Site",
+            'subs'  => [
                 {
                     'url'   => "source/",
                     'text'  => "Site Sources",
