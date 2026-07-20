@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "dependencies": {
-    "html-minifier-next": "^1.1.4",
-    "prettier": "^3.6.2",
-    "sass": "^1.89.2"
+    "html-minifier-next": "^7.5.0",
+    "prettier": "^3.9.5",
+    "sass": "^1.101.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
